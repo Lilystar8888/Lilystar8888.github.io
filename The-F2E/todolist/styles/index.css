@@ -151,7 +151,7 @@ button.active>.icon-expand-more {
     justify-content: center;
     align-items: center;
     height: 71px;
-    font-size: 24px;
+    font-size: 1.2em;
     color: #00408b;
     text-align: center
 }
