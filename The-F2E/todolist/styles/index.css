@@ -375,6 +375,9 @@ label[for=uploadfile] {
     body {
         background: #000
     }
+    .topnav>.wrap>div{
+    	font-size: 2em;
+    }
     .mainwrap {
         width: 1024px;
         margin: 0 auto;
