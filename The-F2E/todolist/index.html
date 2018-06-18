@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--  Meta  -->
+    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>ToDoList</title>
+    <!--  Styles  -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/131726/TheF2E/style.css?qfk5k5">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body class="showAll">
+    <div class="mainwrap">
+        <div class="topnav">
+            <div class="wrap">
+                <div class="active" onclick="showAll();">My Tasks</div>
+                <div class="" onclick="showInprogress();">In progress</div>
+                <div class="" onclick="showCompleted();">Completed</div>
+            </div>
+        </div>
+        <div id="sortable" class="content">
+            <div class="list createnewlist">
+                <div class="wrap addtask">
+                    <i class="icon-add"></i>Add Task
+                </div>
+                <div class="wrap taskblock hide">
+                    <div class="titlecolumn">
+                        <div class="titlewrap">
+                            <div>
+                                <button class="iselect"><i class="icon-square icon-expand"></i><i class="icon-check-square icon-expand-more"></i></button>
+                                <input class="mainttl" type="text" placeholder="Type Something Here..." size="30" />
+                            </div>
+                            <div>
+                                <button class="icollect"><i class="icon-star_border icon-expand"></i><i class="icon-star icon-expand-more"></i></button>
+                                <i class="icon-pen-angled"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentwrap">
+                        <div class="row ttl"><i class="icon-calendar"></i><span>Deadline</span></div>
+                        <div class="row">
+                            <input type="text" placeholder="yyyy/mm/dd" />&nbsp;&nbsp;
+                            <input type="text" placeholder="hh:mm" />
+                        </div>
+                        <div class="row ttl"><i class="icon-document"></i><span>File</span></div>
+                        <div class="row">
+                            <label for="uploadfile"><i class="icon-add"></i>
+                                <input type="file" name="photo" id="uploadfile" />
+                            </label>
+                        </div>
+                        <div class="row ttl"><i class="icon-commenting-o"></i><span>Comment</span></div>
+                        <div class="row">
+                            <textarea class="memobox" rows="5" placeholder="Type your memo here..."></textarea>
+                        </div>
+                    </div>
+                    <div class="btnwrap">
+                        <button class="canceladdtask"><i class="icon-close"></i>Cancel</button>
+                        <button class="active"><i class="icon-add"></i>Add Task</button>
+                    </div>
+                </div>
+            </div>
+            <div class="list collected inprogress">
+                <div class="wrap">
+                    <div class="editwrap titlecolumn">
+                        <div class="titlewrap">
+                            <div>
+                                <button class="iselect"><i class="icon-square icon-expand"></i><i class="icon-check-square icon-expand-more"></i></button>
+                                <p class="mainttl">Type Something Here...</p>
+                            </div>
+                            <div>
+                                <button class="icollect active"><i class="icon-star_border icon-expand"></i><i class="icon-star icon-expand-more"></i></button>
+                                <button class="iedit"><i class="icon-pen-angled2 icon-expand"></i><i class="icon-pen-angled icon-expand-more"></i></button>
+                            </div>
+                        </div>
+                        <div class="iconwrap">
+                            <i class="icon-calendar"></i><span>5/14</span>
+                            <i class="icon-document"></i>
+                            <i class="icon-commenting-o"></i>
+                        </div>
+                    </div>
+                    <div class="editwrap taskblock hide">
+                        <div class="titlewrap">
+                            <div>
+                                <button class="iselect"><i class="icon-square icon-expand"></i><i class="icon-check-square icon-expand-more"></i></button>
+                                <input class="mainttl" type="text" placeholder="Type Something Here..." size="30" />
+                            </div>
+                            <div>
+                                <button class="icollect active"><i class="icon-star_border icon-expand"></i><i class="icon-star icon-expand-more"></i></button>
+                                <i class="icon-pen-angled"></i>
+                            </div>
+                        </div>
+                        <div class="contentwrap">
+                            <div class="row ttl"><i class="icon-calendar"></i><span>Deadline</span></div>
+                            <div class="row">
+                                <input type="text" placeholder="yyyy/mm/dd" />&nbsp;&nbsp;
+                                <input type="text" placeholder="hh:mm" />
+                            </div>
+                            <div class="row ttl"><i class="icon-document"></i><span>File</span></div>
+                            <div class="row">
+                                <label for="uploadfile"><i class="icon-add"></i>
+                                    <input type="file" name="photo" id="uploadfile" />
+                                </label>
+                            </div>
+                            <div class="row ttl"><i class="icon-commenting-o"></i><span>Comment</span></div>
+                            <div class="row">
+                                <textarea class="memobox" rows="5" placeholder="Type your memo here..."></textarea>
+                            </div>
+                        </div>
+                        <div class="btnwrap">
+                            <button class="canceleditdtask"><i class="icon-close"></i>Cancel</button>
+                            <button class="active"><i class="icon-add"></i>Save Task</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list collected inprogress">
+                <div class="wrap">
+                    <div class="editwrap titlecolumn">
+                        <div class="titlewrap">
+                            <div>
+                                <button class="iselect"><i class="icon-square icon-expand"></i><i class="icon-check-square icon-expand-more"></i></button>
+                                <p class="mainttl">Type Something Here...</p>
+                            </div>
+                            <div>
+                                <button class="icollect active"><i class="icon-star_border icon-expand"></i><i class="icon-star icon-expand-more"></i></button>
+                                <button class="iedit"><i class="icon-pen-angled2 icon-expand"></i><i class="icon-pen-angled icon-expand-more"></i></button>
+                            </div>
+                        </div>
+                        <div class="iconwrap">
+                            <i class="icon-calendar"></i><span>5/14</span>
+                            <i class="icon-document"></i>
+                            <i class="icon-commenting-o"></i>
+                        </div>
+                    </div>
+                    <div class="editwrap taskblock hide">
+                        <div class="titlewrap">
+                            <div>
+                                <button class="iselect"><i class="icon-square icon-expand"></i><i class="icon-check-square icon-expand-more"></i></button>
+                                <input class="mainttl" type="text" placeholder="Type Something Here..." size="30" />
+                            </div>
+                            <div>
+                                <button class="icollect active"><i class="icon-star_border icon-expand"></i><i class="icon-star icon-expand-more"></i></button>
+                                <i class="icon-pen-angled"></i>
+                            </div>
+                        </div>
+                        <div class="contentwrap">
+                            <div class="row ttl"><i class="icon-calendar"></i><span>Deadline</span></div>
+                            <div class="row">
+                                <input type="text" placeholder="yyyy/mm/dd" />&nbsp;&nbsp;
+                                <input type="text" placeholder="hh:mm" />
+                            </div>
+                            <div class="row ttl"><i class="icon-document"></i><span>File</span></div>
+                            <div class="row">
+                                <label for="uploadfile"><i class="icon-add"></i>
+                                    <input type="file" name="photo" id="uploadfile" />
+                                </label>
+                            </div>
+                            <div class="row ttl"><i class="icon-commenting-o"></i><span>Comment</span></div>
+                            <div class="row">
+                                <textarea class="memobox" rows="5" placeholder="Type your memo here..."></textarea>
+                            </div>
+                        </div>
+                        <div class="btnwrap">
+                            <button class="canceleditdtask"><i class="icon-close"></i>Cancel</button>
+                            <button class="active"><i class="icon-add"></i>Save Task</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list inprogress">
+                <div class="wrap">
+                    <div class="editwrap titlecolumn">
+                        <div class="titlewrap">
+                            <div>
+                                <button class="iselect"><i class="icon-square icon-expand"></i><i class="icon-check-square icon-expand-more"></i></button>
+                                <p class="mainttl">Type Something Here...</p>
+                            </div>
+                            <div>
+                                <button class="icollect"><i class="icon-star_border icon-expand"></i><i class="icon-star icon-expand-more"></i></button>
+                                <button class="iedit"><i class="icon-pen-angled2 icon-expand"></i><i class="icon-pen-angled icon-expand-more"></i></button>
+                            </div>
+                        </div>
+                        <div class="iconwrap">
+                            <i class="icon-calendar"></i><span>5/14</span>
+                            <i class="icon-document"></i>
+                            <i class="icon-commenting-o"></i>
+                        </div>
+                    </div>
+                    <div class="editwrap taskblock hide">
+                        <div class="titlewrap">
+                            <div>
+                                <button class="iselect"><i class="icon-square icon-expand"></i><i class="icon-check-square icon-expand-more"></i></button>
+                                <input class="mainttl" type="text" placeholder="Type Something Here..." size="30" />
+                            </div>
+                            <div>
+                                <button class="icollect"><i class="icon-star_border icon-expand"></i><i class="icon-star icon-expand-more"></i></button>
+                                <i class="icon-pen-angled"></i>
+                            </div>
+                        </div>
+                        <div class="contentwrap">
+                            <div class="row ttl"><i class="icon-calendar"></i><span>Deadline</span></div>
+                            <div class="row">
+                                <input type="text" placeholder="yyyy/mm/dd" />&nbsp;&nbsp;
+                                <input type="text" placeholder="hh:mm" />
+                            </div>
+                            <div class="row ttl"><i class="icon-document"></i><span>File</span></div>
+                            <div class="row">
+                                <label for="uploadfile"><i class="icon-add"></i>
+                                    <input type="file" name="photo" id="uploadfile" />
+                                </label>
+                            </div>
+                            <div class="row ttl"><i class="icon-commenting-o"></i><span>Comment</span></div>
+                            <div class="row">
+                                <textarea class="memobox" rows="5" placeholder="Type your memo here..."></textarea>
+                            </div>
+                        </div>
+                        <div class="btnwrap">
+                            <button class="canceleditdtask"><i class="icon-close"></i>Cancel</button>
+                            <button class="active"><i class="icon-add"></i>Save Task</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list inprogress">
+                <div class="wrap">
+                    <div class="editwrap titlecolumn">
+                        <div class="titlewrap">
+                            <div>
+                                <button class="iselect"><i class="icon-square icon-expand"></i><i class="icon-check-square icon-expand-more"></i></button>
+                                <p class="mainttl">Type Something Here...</p>
+                            </div>
+                            <div>
+                                <button class="icollect"><i class="icon-star_border icon-expand"></i><i class="icon-star icon-expand-more"></i></button>
+                                <button class="iedit"><i class="icon-pen-angled2 icon-expand"></i><i class="icon-pen-angled icon-expand-more"></i></button>
+                            </div>
+                        </div>
+                        <div class="iconwrap">
+                            <i class="icon-calendar"></i><span>5/14</span>
+                            <i class="icon-document"></i>
+                            <i class="icon-commenting-o"></i>
+                        </div>
+                    </div>
+                    <div class="editwrap taskblock hide">
+                        <div class="titlewrap">
+                            <div>
+                                <button class="iselect"><i class="icon-square icon-expand"></i><i class="icon-check-square icon-expand-more"></i></button>
+                                <input class="mainttl" type="text" placeholder="Type Something Here..." size="30" />
+                            </div>
+                            <div>
+                                <button class="icollect"><i class="icon-star_border icon-expand"></i><i class="icon-star icon-expand-more"></i></button>
+                                <i class="icon-pen-angled"></i>
+                            </div>
+                        </div>
+                        <div class="contentwrap">
+                            <div class="row ttl"><i class="icon-calendar"></i><span>Deadline</span></div>
+                            <div class="row">
+                                <input type="text" placeholder="yyyy/mm/dd" />&nbsp;&nbsp;
+                                <input type="text" placeholder="hh:mm" />
+                            </div>
+                            <div class="row ttl"><i class="icon-document"></i><span>File</span></div>
+                            <div class="row">
+                                <label for="uploadfile"><i class="icon-add"></i>
+                                    <input type="file" name="photo" id="uploadfile" />
+                                </label>
+                            </div>
+                            <div class="row ttl"><i class="icon-commenting-o"></i><span>Comment</span></div>
+                            <div class="row">
+                                <textarea class="memobox" rows="5" placeholder="Type your memo here..."></textarea>
+                            </div>
+                        </div>
+                        <div class="btnwrap">
+                            <button class="canceleditdtask"><i class="icon-close"></i>Cancel</button>
+                            <button class="active"><i class="icon-add"></i>Save Task</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list completed">
+                <div class="wrap">
+                    <div class="editwrap titlecolumn">
+                        <div class="titlewrap">
+                            <div>
+                                <button class="iselect active"><i class="icon-square icon-expand"></i><i class="icon-check-square icon-expand-more"></i></button>
+                                <p class="mainttl">Type Something Here...</p>
+                            </div>
+                            <div>
+                                <button class="icollect"><i class="icon-star_border icon-expand"></i><i class="icon-star icon-expand-more"></i></button>
+                                <button class="iedit"><i class="icon-pen-angled2 icon-expand"></i><i class="icon-pen-angled icon-expand-more"></i></button>
+                            </div>
+                        </div>
+                        <div class="iconwrap">
+                            <i class="icon-calendar"></i><span>5/14</span>
+                            <i class="icon-document"></i>
+                            <i class="icon-commenting-o"></i>
+                        </div>
+                    </div>
+                    <div class="editwrap taskblock hide">
+                        <div class="titlewrap">
+                            <div>
+                                <button class="iselect"><i class="icon-square icon-expand"></i><i class="icon-check-square icon-expand-more"></i></button>
+                                <input class="mainttl" type="text" placeholder="Type Something Here..." size="30" />
+                            </div>
+                            <div>
+                                <button class="icollect"><i class="icon-star_border icon-expand"></i><i class="icon-star icon-expand-more"></i></button>
+                                <i class="icon-pen-angled"></i>
+                            </div>
+                        </div>
+                        <div class="contentwrap">
+                            <div class="row ttl"><i class="icon-calendar"></i><span>Deadline</span></div>
+                            <div class="row">
+                                <input type="text" placeholder="yyyy/mm/dd" />&nbsp;&nbsp;
+                                <input type="text" placeholder="hh:mm" />
+                            </div>
+                            <div class="row ttl"><i class="icon-document"></i><span>File</span></div>
+                            <div class="row">
+                                <label for="uploadfile"><i class="icon-add"></i>
+                                    <input type="file" name="photo" id="uploadfile" />
+                                </label>
+                            </div>
+                            <div class="row ttl"><i class="icon-commenting-o"></i><span>Comment</span></div>
+                            <div class="row">
+                                <textarea class="memobox" rows="5" placeholder="Type your memo here..."></textarea>
+                            </div>
+                        </div>
+                        <div class="btnwrap">
+                            <button class="canceleditdtask"><i class="icon-close"></i>Cancel</button>
+                            <button class="active"><i class="icon-add"></i>Save Task</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="note">
+            <div class="wrap"></div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="scripts/index.js"></script>
+    <script>
+    $(function() {
+        $("#sortable").sortable({
+            placeholder: "ui-state-highlight"
+        });
+        $("#sortable").disableSelection();
+    });
+    </script>
+</body>
+
+</html>
