@@ -1,19 +1,29 @@
 @charset "utf-8";
 
+
 /* CSS Document */
 
 @font-face {
     font-family: 'PingFangTC-Regular';
-    src: local('PingFangTC-Regular'), 
+    src: local('PingFangTC-Regular'),
     url('fonts/PingFangTC-Regular.otf') format('truetype');
 }
 
-html,body{
+html,
+body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
     font-size: 100%;
     font-family: 'PingFangTC-Regular', 'Microsoft JhengHei', Airal !important;
     background-color: #fffef9;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
 }
 
 #kv {
@@ -22,7 +32,7 @@ html,body{
     top: 0;
 }
 
-h1{
+h1 {
     text-align: center;
     font-size: 1.5em;
     font-weight: bold;
@@ -32,10 +42,9 @@ h1{
 
 #footer {
     position: fixed;
-    left: 0px;
-    bottom: 0px;
-    height: 20px;
+    bottom: 0;
     width: 100%;
+    height: 20px;
     text-align: center;
     padding: 10px;
     font-size: 12px;
@@ -58,29 +67,33 @@ h1{
 }
 
 .noshow {
-    display: none;
+    display: block;
 }
 
 .shareb {
     width: 48px;
 }
 
-@media only screen and (max-width: 1680px) {
-}
+@media screen and (min-width: 1025px) {
 
-@media only screen and (max-width: 1367px) {
-}
-
-@media screen and (min-width: 768px) and (max-width: 979px) {
-}
-
-@media screen and (max-width: 767px) {
-}
-
-@media screen and (max-device-width: 480px) {
-
-    .noshow {
-        display: block;
+    body {
+        background-color: #333;
     }
 
+    .wrap {
+        position: relative;
+        width: 800px;
+        height: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+        background-color: #fffef9;
+    }
+
+    #footer{
+        position: absolute;
+    }
+
+    .noshow {
+        display: none;
+    }
 }
