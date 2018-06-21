@@ -35,7 +35,7 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: bold;
     color: #0e8bca;
     white-space: nowrap;
@@ -81,13 +81,18 @@ iframe{
     width: 48px;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 360px) {
+
+    h1 {
+        font-size: 1.5em;
+    }
+
     iframe{
         height: 265px;
     }
 }
 
-@media screen and (min-width: 414px) {
+@media screen and (min-width: 412px) {
     iframe{
         height: 320px;
     }
