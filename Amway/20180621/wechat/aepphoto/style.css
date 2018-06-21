@@ -94,6 +94,11 @@ h1 {
         position: absolute;
     }
 
+    .fbshare {
+        bottom: unset;
+        top: 300px;
+    }
+
     .noshow {
         display: none;
     }
