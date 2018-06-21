@@ -43,7 +43,7 @@ h1 {
 
 iframe{
     width: 100%;
-    height: 266px;
+    height: 215px;
 }
 
 #footer {
@@ -83,13 +83,13 @@ iframe{
 
 @media screen and (min-width: 375px) {
     iframe{
-        height: 340px;
+        height: 290px;
     }
 }
 
 @media screen and (min-width: 414px) {
     iframe{
-        height: 390px;
+        height: 345px;
     }
 }
 
