@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+
+/* CSS Document */
+
+@font-face {
+    font-family: 'PingFangTC-Regular';
+    src: local('PingFangTC-Regular'),
+    url('fonts/PingFangTC-Regular.otf') format('truetype');
+}
+
+html,
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 100%;
+    font-family: 'PingFangTC-Regular', 'Microsoft JhengHei', Airal !important;
+    background-color: #fffef9;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+}
+
+#kv {
+    max-width: 100%;
+    position: relative;
+    top: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #0e8bca;
+    white-space: nowrap;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.fbshare {
+    position: absolute;
+    bottom: 60px;
+    right: 20px;
+    text-align: right;
+    z-index: 99;
+}
+
+.lineshare {
+    position: absolute;
+    bottom: 60px;
+    right: 80px;
+    text-align: right;
+    z-index: 99;
+}
+
+.noshow {
+    display: block;
+}
+
+.shareb {
+    width: 48px;
+}
+
+@media screen and (min-width: 1025px) {
+
+    body {
+        background-color: #333;
+    }
+
+    .wrap {
+        position: relative;
+        width: 800px;
+        height: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+        background-color: #fffef9;
+    }
+
+    #footer{
+        position: absolute;
+    }
+
+    .noshow {
+        display: none;
+    }
+}
