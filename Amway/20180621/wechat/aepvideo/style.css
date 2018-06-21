@@ -71,7 +71,7 @@ h1 {
 
 .fbshare {
     position: absolute;
-    bottom: 60px;
+    bottom: 35px;
     right: 20px;
     text-align: right;
     z-index: 99;
@@ -79,7 +79,7 @@ h1 {
 
 .lineshare {
     position: absolute;
-    bottom: 60px;
+    bottom: 35px;
     right: 80px;
     text-align: right;
     z-index: 99;
