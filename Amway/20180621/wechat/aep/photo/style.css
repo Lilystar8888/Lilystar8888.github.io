@@ -87,7 +87,7 @@ iframe{
     }
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 414px) {
     iframe{
         height: 390px;
     }
