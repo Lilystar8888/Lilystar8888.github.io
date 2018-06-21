@@ -94,6 +94,10 @@ iframe{
         background-color: #333;
     }
 
+    iframe{
+        width: 398px;
+    }
+
     .wrap {
         position: relative;
         width: 800px;
