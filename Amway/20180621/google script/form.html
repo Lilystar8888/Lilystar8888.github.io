@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.0/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    function selfreload(){
+    window.open("https://lilystar8888.github.io/Amway/20180621/wechat/aep/photo/",'_top');
+    }
+    </script>
+    <style>
+       @font-face {
+          font-family: 'PingFangTC-Regular';
+          src: local('PingFangTC-Regular'), 
+          url('https://lilystar8888.github.io/Amway/20180621/wechat/aep/photo/fonts/PingFangTC-Regular.otf') format('truetype');
+       }
+       
+       html,body{
+          margin: 0;
+          padding: 0;
+          font-size: 100%;
+          width: 100%;
+          overflow-x: hidden;
+          font-family: 'PingFangTC-Regular', 'Microsoft JhengHei', Airal !important;
+          background-color: #fffef9;
+       }
+       
+       h4{
+         text-align:left;
+         font-size:12px;
+         line-height:1.2rem;
+       }
+       .fa-check-square{
+         color: #de1030;
+       }
+       #myForm{
+          border: 1px solid rgba(0,0,0,.2);
+          border-radius: .3rem;
+          outline: 0;
+          padding: 1em;
+       }
+       .btn, input[type='file']{
+          -webkit-appearence: none;
+          display:inline-flex;
+          align-items:center;
+          font-size: 1em !important;
+       }
+       .modal-dialog {
+          margin: 0;
+          padding-bottom: 100px;
+       }
+       .modal-backdrop{
+          background-color:transparent;
+       }
+       blockquote{
+          font-size:1em;
+       }
+       #consenttext{
+          padding:0 !important
+       }
+       @media screen and (min-width: 414px) {
+          .btn{
+             font-size: 1.2em;
+          }
+       }
+    </style>
+  </head>
+    <div class="row">
+        <div class="col-lg-6 col-md-12">
+            <center>
+            <form id="myForm">
+              <input type="hidden" name="myName" value="創世代我要去旅行">
+              <input class="btn btn-info btn-block" type="file" name="myFile" accept="image/*">
+              <label for="consent">
+               <h4><i class="fas fa-check-square"></i>我同意我上傳的所有相片將有機會在「安麗創世代」臉書社團公開展示,本人已詳閱並同意<a href="javascript:;" data-toggle="modal" data-target="#consenttext">個資條款</a>
+               </h4>
+              </label>
+              <input class="btn btn-success btn-block" type="submit" value="開始上傳檔案(檔案上限25MB)"
+              onclick="this.value='檔案上傳中，請稍候！';
+              google.script.run.withSuccessHandler(fileUploaded)
+              .uploadFiles(this.parentNode);
+              return false;">
+            </form>
+            
+            <div id="output"></div>
+            </center>
+       </div>
+    </div>
+    
+    <div class="row" style="margin-top:1em">
+        <div class="col-lg-6 col-md-12">
+            <div id="cMsg" role="alert"></div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div id="consenttext" class="modal fade" role="dialog" style="padding:0 !important">
+    <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <h4 class="modal-title">我想去旅行照片上傳區－個人資料條款</h4>
+    </div>
+    <div class="modal-body">
+        <p>依據個人資料保護法（以下稱個資法）向參與本活動消費者告知下列事項，參與本活動前請務必詳閱以下說明。</p>
+        <p>•蒐集個人資料公司：安麗日用品股份有限公司</p>
+        <p>•蒐集之目的：作為參與「我想去旅行-照片上傳區」活動及後續相關程序之使用。</p>
+        <p>•個人資料之類別：包括姓名、照片等個人資料中之識別類。對於安麗以上特定目的範圍之認定，且屬其執行業務所必須，您均表同意；且同意安麗得蒐集、處理、利用及國際傳輸之個人資料包括但不限於：識別類：姓名（中英文）、國籍、身分證號（統編）、生日、職業、性別、地址、電子郵件信箱；以及其他因從事安麗事業或配合安麗活動執行所必須提供予安麗之個人資料等。</p>
+        <p>•個人資料利用之期間、地區、對象及方式：
+        <blockquote>
+        <p>•地區：本國、未受中央目的事業主管機關限制之國際傳輸個人資料之接收者所在地。</p>
+        <p>•對象：本公司、本公司委託機關及執行本活動時之必要相關人員。</p>
+        <p>•方式：以自動化機器或其他非自動化之利用方式。</p>
+        </blockquote>
+        <p>•安麗保有您的個人資料，基於個人資料保護法之規定，您充分知悉可以依法並以書面（付費或免付費則依安麗之公告辦理）行使下述的權利：
+            <BR/> (1)&nbsp;查詢或請求閱覽您的個人資料。
+            <BR/> (2)&nbsp;請求製給您的個人資料複製本。
+            <BR/> (3)&nbsp;請求補充或更正您的個人資料。
+            <BR/> (4)&nbsp;請求停止蒐集、處理或利用您的個人資料。
+            <BR/> (5)&nbsp;請求刪除您的個人資料。
+        </p>
+        <p>您欲行使上述提及之相關權利時，請撥打安麗的客戶服務專線03-3537800，將有專人為您服務。</p>
+        
+        <p>•不提供個人資料所致權益之影響：</p>
+        <p>•本活動參與者可自由選擇是否提供本公司其個人資料，若拒絕提供相關個人資料，則無法參與本活動；且經檢舉或本公司發現不足以確認本活動參與者的身分真實性或其他個人資料冒用、盜用、資料不實等情形，致本公司無法進行必要之確認作業，本公司有權暫時停止提供本活動相關服務，若有不便之處敬請見諒。</p>
+        <p>本人瞭解本公司上開告知事項，並已清楚瞭解貴公司蒐集、處理及利用本人個人資料之目的及用途，並同意貴公司於上開告知事項範圍內，得蒐集、處理、國際傳遞及利用本人資料。</p>
+    </div>
+    <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+    </div>
+    </div>
+    
+    </div>
+    </div>
+    
+    <script type="text/javascript">
+    
+    $('document').ready(function(){
+       $('#warning', window.parent.document).hide();
+    });
+    
+    function fileUploaded(status) {
+    document.getElementById('myForm').style.display = 'none';
+    document.getElementById('output').style.display = 'block';
+    document.getElementById('output').innerHTML = status;
+    }
+    document.getElementById('output').style.display = 'none';
+    </script>
+  </body>
+</html>
+
+
