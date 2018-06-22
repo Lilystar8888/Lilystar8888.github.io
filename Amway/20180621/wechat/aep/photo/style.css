@@ -22,7 +22,7 @@ body {
 }
 
 
-@supports (-webkit-overflow-scrolling: touch) {
+_::-webkit-full-page-media, _:future, :root .safari_only {
     html,
     body {
         height: calc(100% + 50px);
