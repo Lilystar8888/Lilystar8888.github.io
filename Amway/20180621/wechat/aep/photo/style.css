@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-
 /* CSS Document */
 
 @font-face {
@@ -20,6 +19,14 @@ body {
     font-size: 100%;
     font-family: 'PingFangTC-Regular', 'Microsoft JhengHei', Airal !important;
     background-color: #fffef9;
+}
+
+
+@supports (-webkit-overflow-scrolling: touch) {
+    html,
+    body {
+        height: calc(100% + 50px);
+    }
 }
 
 .wrap {
@@ -94,6 +101,7 @@ iframe{
     width: 48px;
 }
 
+
 @media screen and (min-width: 360px) {
 
     h1 {
@@ -144,3 +152,4 @@ iframe{
         display: none;
     }
 }
+
