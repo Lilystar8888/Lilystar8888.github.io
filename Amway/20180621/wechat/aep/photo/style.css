@@ -21,14 +21,6 @@ body {
     background-color: #fffef9;
 }
 
-
-_::-webkit-full-page-media, _:future, :root .safari_only {
-    html,
-    body {
-        height: calc(100% + 50px);
-    }
-}
-
 .wrap {
     width: 100%;
     height: 100%;
