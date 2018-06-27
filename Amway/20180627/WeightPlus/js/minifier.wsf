@@ -1,0 +1,65 @@
+﻿<job>
+<script language="JScript">
+// v20120626
+
+(function () {
+
+    var fso = new ActiveXObject("Scripting.FileSystemObject");
+    var shell = new ActiveXObject("WScript.Shell");
+
+    function alert(s) { WScript.Echo(s) }
+    function GetFiles(folders) {
+        var list = [];
+        var len = folders.length;
+        while (len-- > 0) {
+            var fc = new Enumerator(folders[len].Files);
+            for (; !fc.atEnd(); fc.moveNext()) {
+                var i = fc.item();
+                list.push(i);
+            }
+        }
+        return list;
+    }
+    function GetSubFolders(folder) {
+        var fc = new Enumerator(folder.SubFolders);
+        var list = [];
+        for (; !fc.atEnd(); fc.moveNext()) {
+            var i = fc.item();
+            list.push(i);
+            list = list.concat(GetSubFolders(i));
+        }
+        return list;
+    }
+    String.prototype.format = function () {
+        var s = this;
+        var i = arguments.length;
+        while (i-- > 0) {
+            s = s.replace('{' + i + '}', arguments[i]);
+        }
+        return s;
+    }
+    function Run(cmd) {
+        shell.Run('CMD.exe /c "' + cmd + '"', 0, !0);
+    }
+
+
+    var oFolder = fso.GetFolder(shell.CurrentDirectory);
+    var saFolderList = GetSubFolders(oFolder);
+    saFolderList.push(oFolder);
+    var saFileList = GetFiles(saFolderList);
+    
+    for (var i = 0; i < saFileList.length; i++)
+    {
+	    var sSource = new String(saFileList[i]);
+	    if (/\.js$/.test(sSource) && !/\.min\./.test(sSource))
+	    {
+	        var sNew = sSource.replace(/\.js$/i, '.min.js');
+            if (fso.FileExists(sNew))
+		        Run('"C:\\Program Files (x86)\\Microsoft\\Microsoft Ajax Minifier 4\\ajaxmin.exe" -h -js "{0}" -o "{1}" -clobber'.format(sSource, sNew));
+	    }
+    }
+
+    alert('OK');
+})();
+</script>
+</job>
