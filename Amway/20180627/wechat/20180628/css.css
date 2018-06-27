@@ -251,7 +251,6 @@ h3{
 }
 @media (max-width: 480px){
     .footer-down {
-        padding: 10px 6px;
         font-size: 12px;
     }
     .logo_amway, .footer_logo {
