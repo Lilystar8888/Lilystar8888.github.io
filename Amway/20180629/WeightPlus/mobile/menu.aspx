@@ -21,6 +21,7 @@
             <a href="in-shape.aspx" class="nav6"><span>step.4</span>美型</a>
             <a href="principle.aspx" class="nav7">3大原則</a>
             <a href="showcases.aspx" class="nav8">成功見證</a>
+            <a target="_blank" href="https://weightmanagement.cheeridea.co/" class="nav9">健康美型數位輕漾版</a>
         </nav>
         <div class="nav-overlay"></div>
     </div>

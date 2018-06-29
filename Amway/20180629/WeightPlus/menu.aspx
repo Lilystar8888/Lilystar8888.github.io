@@ -1,4 +1,13 @@
-﻿<div class="navarea">
+﻿<script type="text/javascript" src="js/lib/reference/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+$("document").ready(function(){
+    $(".nav5").hover(function(){
+        $("#menufix").toggleClass('desktopHide');
+        event.preventDefault();
+    })
+});
+</script>
+<div class="navarea">
     <div class="nav-bg"></div>
     <!--點到該頁，在該li上加act-->
     <ul class="nav">
@@ -19,7 +28,14 @@
         <li class="nav3"><a href="principle.aspx">3大原則</a></li>
         <li class="line-nav"></li>
         <li class="nav4"><a href="showcases.aspx">成功見證</a></li>
-        <li class="nav4"><a href="showcases.aspx">成功見證</a></li>
+        <li class="nav5">
+            <div class="link-holder">
+                <div id="menufixbutton"></div>
+                <ul id="menufix" class="animated fadeIn desktopHide">
+                    <li><a target="_blank" href="https://weightmanagement.cheeridea.co/">健康美型數位輕漾版</a></li>
+                </ul>
+            </div>
+        </li>
     </ul>
     <div class="search-nav">
         <input type="text" placeholder="搜尋全站內容"  required/>
