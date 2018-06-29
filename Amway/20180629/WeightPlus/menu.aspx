@@ -19,6 +19,7 @@
         <li class="nav3"><a href="principle.aspx">3大原則</a></li>
         <li class="line-nav"></li>
         <li class="nav4"><a href="showcases.aspx">成功見證</a></li>
+        <li class="nav4"><a href="showcases.aspx">成功見證</a></li>
     </ul>
     <div class="search-nav">
         <input type="text" placeholder="搜尋全站內容"  required/>

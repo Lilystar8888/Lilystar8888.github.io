@@ -21,11 +21,11 @@ body{width:100%; height:100%; font-size:16px; font-family:'Microsoft JhengHei' ,
 .video{ position: absolute; top:18.35em; left:0; padding-bottom: 36%; width:75%; height:0; overflow: hidden;}
 .video iframe, .video object, .video embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
 
-.navarea{ position: absolute; top:0; left: 0; z-index: 999; background: url(../images/bg-navarea.png) repeat-x; width: 100%; min-width: 1000px; height: 95px; overflow: hidden;}
+.navarea{ position: absolute; top:0; left: 0; z-index: 999; background: url(../images/bg-navarea.png) repeat-x; width: 100%; min-width: 1000px; height: 95px;}
 .nav-bg{ position: absolute; top:0; left:50%; background: url(../images/bg-navarea2.png) repeat-x; width: 100%; height: 90px;}
 ul.nav{ position: absolute; top:0; left:50%; margin-left: -500px; width: 1000px; height: 90px; z-index: 2; background: url(../images/bg-nav.png) no-repeat;}
 ul.nav li{ font-size: 15px; margin: 49px 5px 0; color:#ffffcc;}
-ul.nav li a, ul.subnav li a{ display: block; text-decoration: none; color:#fff; padding: 9px 7px 7px;font-size: 18px;}
+ul.nav li a, ul.subnav li a{ display: block; text-decoration: none; color:#fff; padding: 9px 5px 5px;font-size: 16px;}
 ul.nav li a:hover, ul.subnav li a:hover, ul.nav li.act a, ul.subnav li.act a{ color:#000; font-weight: bold;}
 ul.nav li.nutrilite{ margin: 22px 0 0 7px;}
 ul.nav li.logo{margin: 22px 0 0 1px;}
@@ -419,3 +419,70 @@ ol.num li p{ color:#555; font-weight: normal;}
 .btn-exam-back img{ margin-right: 2px; margin-left: 52px;}
 .btn-exam-go img{ margin-right: 4px; margin-left: 41px;}
 .close-tips{ position: absolute; top:-13px; right:-25px; display: block; background-position: -400px -510px; width: 44px; height: 44px; text-indent: -9999px;}
+
+ul.nav li.nav5{
+	height: 100%;
+}
+
+.link-holder {
+  position: relative; 
+  z-index: 99;
+  margin-left: 40px;
+  margin-top: 4px;
+}
+
+.link-holder #menufixbutton {
+    position: absolute;
+    right: 0;
+    width: 34px;
+    height: 34px;
+    background: url(../images/menu-btn.png) 0 0 no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.link-holder #menufix {
+	position: absolute;
+    z-index: 99;
+    width: 160px;
+    right: 4px;
+    top: 37px;
+    border-top: 1px solid #89ad3a;
+}
+
+.link-holder #menufix li {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.1em;
+    font-weight: bolder;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+}
+
+.link-holder #menufix li a{
+    color: #fff;
+    background-color: #91ba36;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 9px 5px 9px 5px;
+}
+
+.link-holder #menufix li a:hover{
+    color: #000;
+    background-color: #afd45e;
+}
+
+.link-holder #menufix li.top{
+    border-top: 0 none;
+}
+
+.desktopHide {
+    display: none !important;
+}
