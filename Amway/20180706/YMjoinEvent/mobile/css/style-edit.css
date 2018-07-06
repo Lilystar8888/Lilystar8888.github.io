@@ -1,0 +1,30 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:;}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:100%;font-weight:inherit;}legend{color:#000;}
+img, a, object{border:0;outline:0;}
+/* clearfix*/
+/* For modern browsers */
+.clearfix:before, .clearfix:after {content:"";display:table;}
+.clearfix:after {clear:both;}
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix {zoom:1;}
+/* inFBApp Tips */
+.tips-ios, .tips-android{display:none;width:100%; height:100%; background-color:rgba(0,0,0,.75); position:fixed; top:0; left:0; text-indent:-9999px; line-height:0; z-index:10;}
+.tips-ios ul, .tips-android ul{width:100%; background:url(../images/tips_inpapp.png) no-repeat 0 0; background-size:100% 200%; margin-top:20%;}
+.tips-ios ul{background-position:0 100%; background-size:100% auto; padding-bottom:59.375%;}
+.tips-android ul{background-size:100% auto; padding-bottom:87.5%;}
+@media screen and (-webkit-device-pixel-ratio:2){
+	/* inFBApp Tips */
+	.tips-ios ul, .tips-android ul{background-image:url(../images/tips_inpapp@2x.png);}
+	
+}
+@media screen and (-webkit-device-pixel-ratio:3){
+	/* inFBApp Tips */
+	.tips-ios ul, .tips-android ul{background-image:url(../images/tips_inpapp@3x.png);}
+	
+}
+
+@import "sass/var";
+@import "sass/mixin";
+@import "sass/layout";
+@import "sass/text";
+@import "sass/btn";
+@import "sass/input";

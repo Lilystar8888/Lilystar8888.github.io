@@ -1,0 +1,195 @@
+.textNone{ text-indent: -9999px;}
+.text18{
+    font-size: 18px;
+}
+.text{
+    &-blue{
+        color:#2bb7ae;
+    }
+    &-pink{
+        color:#e85298;
+    }
+}
+.bold{
+    font-weight: bold;
+}
+p{
+    font-size: 16px;
+    line-height: 1.5em;
+}
+.h1{
+    &-title{
+        font-size: 24px;
+        font-weight: bold;
+        color:#fff;
+    }
+    &-title--page{
+        position: absolute;
+        top:-15px;
+        left: -4px;
+        display: flex;
+        background-color: #e85298;
+        height:45px;
+        line-height: 45px;
+        padding-right: 40px;
+    }
+    &-title--page:before{
+        content:'';
+        background: url(../../images/sprite/h1-titlebgleft-sprite_misc.png) no-repeat;
+        width: 10px;
+        height: 51px;
+        margin-right: 24px;
+    }
+    &-title--page:after{
+        content:'';
+        position: absolute;
+        top:0;
+        right: -20px;
+        background: url(../../images/sprite/h1-titlebgright-sprite_misc.png) no-repeat;
+        width: 20px;
+        height: 51px;
+    }
+}
+.h2{
+    &-title{
+        color:#e85298;
+        font-size: 38px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    &-title--stage4, &-title--stage5{
+        text-align: left;
+        font-weight: normal;
+        line-height: 1.2em;
+        margin-bottom: 0.2em;
+    }
+    &-title--stage4{
+        font-size: 24px;
+    }
+    &-title--gift{
+        background: url(../../images/sprite/h2-title--gift-sprite_text.png) no-repeat;
+        width: 206px;
+        height: 39px;
+        margin-left: 30px;
+    }
+    &-box{
+        color:#e85298;
+        font-size: 24px;
+        text-align: center;
+        padding: 20px;
+    }
+}
+.h3{
+    &-giftbox{
+        color:#e85298;
+        font-size: 24px;
+        font-family:$font-Noto;
+        margin-bottom: 0.1em;
+    }
+    &-giftbox--detail{
+        font-size: 14px;
+        color:#444444;
+        margin-left: 10px;
+    }
+    &-title-video{
+        font-size: 24px;
+        color:#e85298;
+        margin: 8px 0;
+    }
+    &-articlebox{
+        color:#e85298;
+        font-size: 24px;
+        list-style: 1.5em;
+        margin-bottom: 0.2em;
+    }
+}
+.p{
+    &-account{
+        color:#e85298;
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.2em;
+        padding-bottom: 1em;
+        background:url(../../images/line-point.png) left bottom repeat-x;
+    }
+}
+.point{
+    & li{
+        position: relative;
+        padding-left: 20px;
+        line-height: 1.8em;
+        font-size: 14px;
+    }
+    & li:before{
+        content:'●';
+        position: absolute;
+        top:-2px;
+        left: 0;
+        font-size: 14px;
+    }
+}
+.decimal{
+    & li{
+        position: relative;
+        margin-left: 10px;
+        line-height: 1.5em;
+        font-size: 14px;
+        list-style: decimal;
+    }
+}
+.listNum {
+    &--data {
+        margin-left: 70px;
+        margin-top: -40px;
+        padding-top: 60px;
+        line-height: 1.3;
+        background:url(../../images/sample.png) no-repeat;
+        width:730px;
+        height:236px;
+    }
+    &-item {
+        margin-left: 35px;
+        margin-bottom: 8px;
+        list-style: decimal;
+        font-weight: normal;
+    }
+}
+.precautions{
+    padding-left:60px;
+    &-title{
+        @mixin inline top;
+        border:1px solid #2bb7ae;
+        border-radius:100%;
+        color:#2bb7ae;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        margin-right: 20px;
+        padding: 8px;
+    }
+    & .decimal{
+        @mixin inline top;
+        width: 85%;
+    }
+}
+.ocr .precautions-title{
+    padding: 0;
+}
+.data-title--fb{
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../../images/sprite/data-title--fb-sprite_text.png) no-repeat;
+    width: 316px;
+    height: 38px;
+    text-indent: -99999px;
+}
+.btn-icon--fb{
+    display: inline-block;
+    vertical-align: middle;
+    width: 76px;
+    height: 16px;
+}
+p, .justify{
+    text-align: justify;
+    text-justify:inter-ideograph;
+}

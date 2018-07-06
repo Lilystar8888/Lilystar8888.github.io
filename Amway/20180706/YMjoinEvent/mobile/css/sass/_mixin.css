@@ -1,0 +1,22 @@
+@define-mixin inline $valign{
+	display: inline-block;
+	vertical-align: $valign;
+}
+
+@define-mixin sprite $img, $ext{
+	@media screen and (-webkit-min-device-pixel-ratio:2) {
+		background-image: url(../../images/sprite/$img@2x.$ext);
+	}
+	@media screen and (-webkit-min-device-pixel-ratio:3) {
+		background-image: url(../../images/sprite/$img@3x.$ext);
+	}
+}
+
+@define-mixin bg $img, $ext{
+	@media screen and (-webkit-min-device-pixel-ratio:2) {
+		background-image: url(../../images/$img@2x.$ext);
+	}
+	@media screen and (-webkit-min-device-pixel-ratio:3) {
+		background-image: url(../../images/$img@3x.$ext);
+	}
+}

@@ -1,0 +1,175 @@
+.btn{
+    &-read{
+        color:#e85298;
+        text-decoration:underline;
+    }
+    &-read:hover{
+        text-decoration:none;
+    }
+    &-more{
+        position: absolute;
+        bottom:10px;
+        left: 570px;
+        z-index: 2;
+        background-color: #60c1c7;
+        padding: 5px 40px;
+        color:#fff;
+        border-radius: 4em;
+        font-size: 18px;
+        display: inline-flex;
+        align-items:center;
+    }
+    &-more:before{
+        display: inline-block;
+        margin-right: 8px;
+        content:'';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 0 5px 7px;
+        border-color: transparent transparent transparent #ffffff;
+    }
+    &-top{
+        position: fixed;
+        bottom:20px;
+        right:50%;
+        margin-right: -530px;
+        background: url(../../images/sprite/gotop-sprite_misc.png) no-repeat;
+        width: 51px;
+        height: 50px;
+    }
+    &-send{
+        position: relative;
+        display: block;
+        margin: 20px auto;
+        background-color: #e85298;
+        text-align: center;
+        width: 260px;
+        color:#fff;
+        font-size: 20px;
+        line-height: 38px;
+        border-radius: 1.5em;
+    }
+    &-send:before{
+        content:'';
+        display: inline-block;
+        margin-right: 8px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 0 5px 7px;
+        border-color: transparent transparent transparent #ffffff;
+    }
+    &-link--blue{
+        border:1px solid #08286a;
+        border-radius: 2em;
+        color:#08286a;
+        padding: 3px 8px;
+        margin: 0 5px;
+    }
+}
+.btn-tool{
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 30px;
+    height: 35px;
+    &:before{
+        display: block;
+    }
+    &--play{
+        left: 10px;
+    }
+    &--play:before{
+        content:'';
+        background: url(../../images/sprite/tool-play-sprite_tools.png) no-repeat;
+        width: 15px;
+        height: 19px;
+        margin: 8px 0 0 9px;
+    }
+    &--pause{
+        left: 10px;
+    }
+    &--pause:before{
+        content:'';
+        background: url(../../images/sprite/tool-pause-sprite_tools.png) no-repeat;
+        width: 14px;
+        height: 20px;
+    }
+    &--replay{
+        left: 45px;
+    }
+    &--replay:before{
+        content:'';
+        background: url(../../images/sprite/tool-replay-sprite_tools.png) no-repeat;
+        width: 24px;
+        height: 26px;
+        margin: 4px 0 0 4px;
+    }
+    &--sound{
+        right: 10px;
+    }
+    &--sound:before{
+        content:'';
+        background: url(../../images/sprite/tool-sound-sprite_tools.png) no-repeat;
+        width: 25px;
+        height: 25px;
+        margin: 5px 0 0 3px;
+    }
+    &--nosound{
+        right: 10px;
+    }
+    &--nosound:before{
+        content:'';
+        background: url(../../images/sprite/tool-nosound-sprite_tools.png) no-repeat;
+        width: 23px;
+        height: 24px;
+    }
+}
+.addGroup{
+    position: relative;
+    margin: 0 5px;
+    padding: 0 10px;
+    color: #e85298;
+    border: 1px solid #e85298;
+    border-radius:15px;
+    display: inline-flex;
+    align-items:center;
+    vertical-align: middle;
+    &--fb{
+        color:#3b5997;
+        border:1px solid #3b5997;
+    }
+    &--fb:before{
+        content:'';
+        display: inline-block;
+        margin-right: 5px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 0 5px 7px;
+        border-color: transparent transparent transparent #3b5997;
+    }
+    &--pink{
+        padding: 5px 30px;
+        font-size: 18px;
+        border-radius:20px;
+        font-weight:bolder;
+    }
+    &--pink:before{
+        content:'';
+        display: inline-block;
+        margin-right: 5px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 0 5px 7px;
+        border-color: transparent transparent transparent #e85298;
+    }
+    &--nolink{
+        color:#af3e73;
+        background-color: #fadcea;
+        border:none;
+        border-radius: 5px;
+    }
+}

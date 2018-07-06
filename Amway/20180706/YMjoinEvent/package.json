@@ -1,0 +1,51 @@
+{
+	"name": "CampaignBuildTool",
+	"version": "1.0.0",
+	"description": "ISOBAR TW frontend campaign build tool",
+	"dependencies":{
+		"winreg": "1.2.2"
+	},
+	"devDependencies": {
+		"autoprefixer": "latest",
+		"browser-sync": "^2.12.5",
+		"css-mqpacker": "latest",
+		"cssnano": "latest",
+		"imagemin": "5.2.2",
+		"imagemin-jpeg-recompress": "5.1.0",
+		"imagemin-pngquant": "5.0.0",
+		"imagemin-gifsicle": "5.1.0",
+		"imagemin-svgo": "5.1.0",
+		"images": "3.0.0",
+		"ngrok": "^2.1.7",
+		"onchange": "^3.2.1",
+		"parallelshell": "latest",
+		"postcss": "5.2.15",
+		"postcss-clean": "^1.0.1",
+		"postcss-sprites": "4.2.0",
+		"precss": "1.4.0",
+		"postcss-scss": "0.4.1",
+		"tiny-sprintf": "latest",
+		"dev-ip": "1.0.1"
+	},
+	"scripts": {
+		"prepublish": "node task/init.js",
+		"runIIS": "node task/runIIS.js",
+		"watch:css": "onchange css/**/*.css mobile/css/**/*.css -e **/css/style.css -- node task/watch-postcss.js",
+		"watch:image": "onchange \"E:/Irene.Chu/My documents/Desktop/Output/**/*\" -e *.jpg -- node task/imagefolder.js",
+		"watch": "parallelshell \"npm run watch:image\" \"npm run watch:css\"",
+		"deploy:css": "node task/deploy-postcss.js",
+		"deploy:image": "node task/imagemin.js",
+		"deploy": "del /s npm-debug.log.* && npm run deploy:css && npm run deploy:image",
+		"dev": "parallelshell \"npm run watch\" \"node task/browsersync.js\""
+	},
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/isobartw-dev/CampaignBuildTool.git"
+	},
+	"author": "ISOBAR_TW-frontend",
+	"bugs": {
+		"url": "https://github.com/isobartw-dev/CampaignBuildTool.git/issues"
+	},
+	"homepage": "https://github.com/isobartw-dev/CampaignBuildTool.git#readme"
+}

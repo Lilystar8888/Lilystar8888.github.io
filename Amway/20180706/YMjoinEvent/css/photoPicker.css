@@ -1,0 +1,32 @@
+﻿#x-photo-picker .viewport{position:relative;overflow:hidden;}
+#x-photo-picker .overview{position:absolute;top:0;left:0;}
+#x-photo-picker .scrollbar{width:18px;height:100%;position:absolute;right:0;overflow:visible;z-index:999;}
+#x-photo-picker .track{width:18px;height:100%;margin:0 auto;text-indent:0;position:relative;left:0;}
+#x-photo-picker .thumb{background:#d6a453;width:6px;position:absolute;top:0;left:6px;overflow:hidden;cursor:pointer;}
+#x-photo-picker .thumb .end{width:6px;overflow:hidden;}
+#x-photo-picker .scroll .disable{display:none}
+
+#x-photo-picker {color:#8b5528;font:13px/140% Arial, Helvetica, sans-serif normal; padding:5px;width:842px; height:371px;border:1px solid #ca9030;}
+#x-photo-picker .album-area,#x-photo-picker .photo-area,#x-photo-picker .album-area .scroll,#x-photo-picker .album-area .viewport{height:371px;}
+#x-photo-picker .album-area,#x-photo-picker .photo-area{background:#fff;float:left;position:relative;overflow:hidden;}
+#x-photo-picker .album-area,#x-photo-picker .album-area .scroll{width:240px;}
+#x-photo-picker .photo-area,#x-photo-picker .photo-area .scroll,#x-photo-picker .photo-area .viewport{height:361px;}
+#x-photo-picker .photo-area,#x-photo-picker .photo-area .scroll{width:585px;}
+#x-photo-picker .photo-area{padding:5px 0 5px 15px;}
+#x-photo-picker .albums li{cursor:pointer;height:50px;padding:6px 10px;list-style-type: none;}
+#x-photo-picker .albums li:hover,#x-photo-picker .albums li.active{background-color:#8b5528;color:#fff;}
+
+#x-photo-picker .albums li .item{float:left;margin-right:10px;background: none no-repeat scroll center center transparent;width:50px;height:50px;}
+#x-photo-picker .albums li img{float:left;margin-right:10px;}
+#x-photo-picker .photos li .item{float:left;margin-right:10px;background: none no-repeat scroll center center transparent;width:75px;height:75px;}
+#x-photo-picker .photos li{cursor:pointer;width:75px;height:75px;float:left;margin:0 15px 10px 0;border:2px solid transparent;list-style-type: none;}
+#x-photo-picker .photos li img{ width:100%; height:100%;}
+#x-photo-picker .photos li:hover,#x-photo-picker .photos li.active{border-color:#8b5528;}
+#x-photo-picker .album-prev,#x-photo-picker .album-next,#x-photo-picker .photo-prev,#x-photo-picker .photo-next{position:absolute;bottom:0;display: none;}
+
+#x-photo-picker .album-area .scroll,#x-photo-picker .photo-area .scroll{left:0;}
+#x-photo-picker .album-area .thumb,#x-photo-picker .photo-area .thumb{left:-2px;}
+#x-photo-picker .album-area .viewport{width:222px;}
+#x-photo-picker .album-area .scrollbar,#x-photo-picker .photo-area .scrollbar{height:366px;top:3px;}
+#x-photo-picker .album-area .track,#x-photo-picker .photo-area .track{background:#d5a24f;width:1px;margin:0 8px 0 9px;}
+#x-photo-picker .photo-area .viewport{width:567px;}
