@@ -401,6 +401,8 @@
             <div class="live-tab-content">
                 <div class="content animation-content">
                     <div class="animation-live">
+                        <!--会员专属内容-->
+                        <div class="ssmbonly"><img src="../base/img/ssmbonly.png"></div>
                         <!-- 动画内容 BEGIN -->
                         <div id="playground" class="gf">
                             <!--在#playground加class="gf"可换女版动画-->
@@ -729,6 +731,8 @@
                 </div>
                 <!--.animation-content-->
                 <div class="content video-content">
+                    <!--会员专属内容-->
+                    <div class="ssmbonly"><img src="../base/img/ssmbonly.png"></div>
                     <div class="tv-live">
                         <iframe id="livePlayer" src="tvlive.html" frameborder="0"></iframe>
                     </div>
@@ -738,6 +742,8 @@
                 <!--20180518-->
                 <img class="left" src="../base/img/sideadv.jpg">
                 <div class="content zhubo-content">
+                    <!--会员专属内容-->
+                    <div class="ssmbonly"><img src="../base/img/ssmbonly.png"></div>
                     <div class="zhubo-live">
                         <div class="zhubo-panel">
                             <a class="active"><span>线路</span>1</a>
@@ -745,7 +751,7 @@
                             <a><span>线路</span>3</a>
                             <a><span>线路</span>4</a>
                         </div>
-                        <iframe id="zhuboPlayer" src="mlive2.html" frameborder="0"></iframe>
+                        <iframe id="zhuboPlayer" src="mlive.html" frameborder="0"></iframe>
                         <!--hls版本用mlive.html flash版本用mlive2.html-->
                     </div>
                 </div>
@@ -1107,33 +1113,37 @@
 </div>
 <!--登录弹屏-->
 <div class="login-sign-box hide">
-    <!-- 登录退出 BEGIN-->
-    <div class="exit-login hide">
-        <div class="hd-tip"><span>提示</span> <i class="icon-btn_close user-exit-btn"></i></div>
-        <p><i class="icon-hint"></i> 确定退出？</p>
-        <div class="btn-box">
-            <button class="sure-btn" id="exitLogin">确定</button>
-            <button class="cancel-btn">取消</button>
+        <!-- 登录退出 BEGIN-->
+        <div class="exit-login hide">
+            <div class="hd-tip"><span>提示</span> <i class="icon-btn_close user-exit-btn"></i></div>
+            <p>确定退出登录？</p>
+            <div class="btn-box">
+                <button class="sure-btn" id="exitLogin">确定</button>
+                <button class="cancel-btn">取消</button>
+            </div>
         </div>
-    </div>
-    <!-- 登录退出 END-->
-    <div class="grey-bg" id="layoutBg"></div>
-    <div class="login-box" id="loginBox">
-        <div class="box-bd">
-            <img src="../base/img/login-img.png">
-            <div class="login-area"> <i class="icon-btn_close close-login"></i>
-                <div class="other-login">
-                    <div class="tit">第三方登录</div>
-                    <div class="links">
-                        <a href="javascript:;"><i class="icon-btn_tencent40x40_n"></i></a>
-                        <a href="javascript:;"><i class="icon-btn_sina40x40_n disabled"></i></a>
-                        <a href="javascript:;"><i class="icon-btn_wechat40x40_n disabled"></i></a>
+        <!-- 登录退出 END-->
+        <div class="grey-bg" id="layoutBg"></div>
+        <div class="login-box" id="loginBox">
+            <div class="box-bd">
+                <div class="login-area"> <i class="icon-btn_close close-login"></i>
+                    <div class="other-login">
+                        <div class="tit">第三方登录</div>
+                        <div class="links">
+                            <a href="javascript:;"><i class="icon-btn_tencent40x40_n"></i></a>
+                        </div>
+                        <form class="inputbox">
+                            <input type="text" id="fname" name="fname" placeholder="填写您的QQ号">
+                            <input type="button" id="vcode" name="vcode" value="取得验证码">
+                            <input type="text" id="entervcode" name="entervcode" placeholder="验证码">
+                        </form>
+                        <div class="btn-2">
+                            <button class="button-s">送出</button>
+                        </div>
                     </div>
-                    <p>登陆后方可添加收藏、发表留言</p>
                 </div>
             </div>
         </div>
-    </div>
 </div>
 <!-- jQuery (necessary) -->
 <script src="../base/js/jquery-1.11.3.min.js"></script>

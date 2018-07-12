@@ -281,39 +281,36 @@
 </div>
 
     <!--登录弹屏-->
-    <div class="login-sign-box hide"> 
-      
+    <div class="login-sign-box hide">
         <!-- 登录退出 BEGIN-->
         <div class="exit-login hide">
             <div class="hd-tip"><span>提示</span> <i class="icon-btn_close user-exit-btn"></i></div>
-            <p><i class="icon-hint"></i> 确定退出？</p>
+            <p>确定退出登录？</p>
             <div class="btn-box">
-              <button class="sure-btn" id="exitLogin">确定</button>
-              <button class="cancel-btn">取消</button>
+                <button class="sure-btn" id="exitLogin">确定</button>
+                <button class="cancel-btn">取消</button>
             </div>
         </div>
         <!-- 登录退出 END-->
-
         <div class="grey-bg" id="layoutBg"></div>
-
         <div class="login-box" id="loginBox">
-            
             <div class="box-bd">
-
-                <img src="../../base/img/login-img.png">
-              
                 <div class="login-area"> <i class="icon-btn_close close-login"></i>
                     <div class="other-login">
                         <div class="tit">第三方登录</div>
                         <div class="links">
                             <a href="javascript:;"><i class="icon-btn_tencent40x40_n"></i></a>
-                            <a href="javascript:;"><i class="icon-btn_sina40x40_n disabled"></i></a>
-                            <a href="javascript:;"><i class="icon-btn_wechat40x40_n disabled"></i></a>
                         </div>
-                        <p>登陆后方可添加收藏、发表留言</p>
+                        <form class="inputbox">
+                            <input type="text" id="fname" name="fname" placeholder="填写您的QQ号">
+                            <input type="button" id="vcode" name="vcode" value="取得验证码">
+                            <input type="text" id="entervcode" name="entervcode" placeholder="验证码">
+                        </form>
+                        <div class="btn-2">
+                            <button class="button-s">送出</button>
+                        </div>
                     </div>
                 </div>
-              
             </div>
         </div>
     </div>
