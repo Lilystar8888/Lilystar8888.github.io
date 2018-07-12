@@ -1,0 +1,452 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>足球资料库-足球资料-NBA数据|篮球数据|五大联赛|体育数据-星城体育</title>
+<meta name="keywords" content="足球资料,NBA数据,五大联赛,体育数据" />
+<meta name="description" content="联赛数据中心提供最权威的足球资料、NBA数据等世界各大联赛的查询服务，五大联赛数据一应俱全，英超、西甲、德甲、意甲、法甲、中超等排行榜、积分榜、盘路走势等一应俱全" />
+<link rel="stylesheet" href="../base/css/common.css">
+<link rel="stylesheet" href="css/mobile-data.css">
+<link rel="stylesheet" href="css/mobile-data-search.css">
+<link rel="stylesheet" href="../base/css/lityodds.css">
+</head>
+<body>
+<!--头部-->
+<div class="header-nav-wrap">
+  
+  <div class="header-hd">
+    <i class="icon-back" onclick="history.back()"></i>
+    <h1>足球资料库</h1>
+  </div>
+  <!--header-hd--> 
+  <div class="hd-right">
+  </div>
+
+  <!--搜索-->
+  <div class="ui-searchbar-wrap ui-border-b focus">
+    <div class="ui-searchbar ui-border-radius"> <i class="ui-icon-search"></i>
+      <input id="viewState" value="2b01471c84ad6eff4b49d63a675512d3" type="hidden"/>
+      <div class="ui-searchbar-text">搜索</div>
+      <div class="ui-searchbar-input">
+        <input id="searchKey" name="key" class="main-search" type="text" value="" placeholder="请输入国家名称或联赛名称进行搜索" autocapitalize="off">
+      </div>
+      <i class="ui-icon-close hide"></i> </div>
+  </div>
+
+  <!--ui-searchbar-wrap-->
+  <div id="searchpanel" class="hide">
+    <div class="searchmask"></div>
+    <div id="searchResult" class="rlt-con-b">
+      <div id="searchResultContainer" class="hide">
+        <div class="title">国家</div>
+        <ul id="nationResult"></ul>
+        <div class="title">赛事</div>
+        <ul id="eventResult"></ul>
+      </div>
+    </div>
+    <!--#searchResult-->
+    <div class="rlt-con-s "> 
+      <!--联想词-->
+      <div class="search-acc">
+        <p class="font-ss">您可能感兴趣的赛事</p>
+        <ul>
+          <li> <a href="season.html?id=5095"> <img class="img-sp" src="img/eventlogo/c25c72fa5200e996a2eb6c0da6f62ee0.png?imageView2/2/w/22/h/22" alt="西班牙甲组联赛"> <span class="text-sp">西甲</span> </a> </li>
+          <li> <a href="season.html?id=5073"> <img class="img-sp"src="img/eventlogo/e600e746381055bcf6c94691c9819013.png?imageView2/2/w/22/h/22" alt="英格兰超级联赛"> <span class="text-sp">英超</span> </a> </li>
+          <li> <a href="season.html?id=5094"> <img class="img-sp"src="img/eventlogo/50d2b4310c9f8e39756f8df60b4127e5.png?imageView2/2/w/22/h/22" alt="意大利甲组联赛"> <span class="text-sp">意甲</span> </a> </li>
+          <li> <a href="season.html?id=5563"> <img class="img-sp"src="img/eventlogo/fcdfdc75041a3ba3b653348d8b4e9695.png?imageView2/2/w/22/h/22" alt="中国超级联赛"> <span class="text-sp">中超</span> </a> </li>
+          <li> <a href="season.html?id=4899"> <img class="img-sp"src="img/eventlogo/dcba966448ebd28b861fb5784efd387f.png?imageView2/2/w/22/h/22" alt="美洲国家杯"> <span class="text-sp">美洲杯</span> </a> </li>
+          <li> <a href="season.html?id=5074"> <img class="img-sp"src="img/eventlogo/41ce8b9fb5251e3044d994cc447f3322.png?imageView2/2/w/22/h/22" alt="欧洲联赛冠军杯赛"> <span class="text-sp">欧冠杯</span> </a> </li>
+        </ul>
+      </div>
+      <!--search-acc--> 
+    </div>
+    <!--rlt-con-s--> 
+  </div>
+  <!--searchpanel--> 
+
+</div>
+<!--header-nav-wra--> 
+
+
+<!--TABBAR-->
+<div class="tabbar">
+  <a href="index.html" class="tab1"><i></i> 直播</a>
+  <a href="../zuqiu/database.html" class="tab2 active"><i></i> 数据</a>
+  <a href="../zuqiu/info.html" class="tab3"><i></i> 我</a>
+</div>
+
+<!--正文-->
+<div class="main-wrap">
+  <div class="data-content">
+    <div class="nav-box ui-border-b">
+      <div class="across-nav fl ui-scroller">
+        <ul class="nav-filxe">
+          <li class="col-5 current"><a href="javascript:;">欧洲</a></li>
+          <li class="col-5"><a href="javascript:;">亚洲</a></li>
+          <li class="col-5"><a href="javascript:;">美洲</a></li>
+          <li class="col-5"><a href="javascript:;">非洲</a></li>
+          <li class="col-5"><a href="javascript:;">大洋洲</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--nav-box-->
+    <div class="state-wrap">
+      <div class="red-tab-b ui-tab current">
+        <ul class="ui-red-nav ui-row-flex ui-tab-nav">
+          <li class="current ui-col">国家</li>
+          <li class="ui-col">洲际赛事</li>
+        </ul>
+        <ul class="ui-tab-content">
+          <li class="tab-li current">
+            <div id="euro1" class="data-box">
+              <ul class="list">
+                <li> <a data-lity class="nation" href="events.html?id=1"> <img class="img-s lazy" src="img/nationflag/916957927a5ee63e040631bd442ada34.png?imageView2/2/w/22"> <span class="text-s"> 英格兰 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=2"> <img class="img-s lazy" src="img/nationflag/58f599d7d16dda6c6f89841d3c16e16f.png?imageView2/2/w/22"> <span class="text-s"> 意大利 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=3"> <img class="img-s lazy" src="img/nationflag/ad7318c3ee868ab198d5a21fb370393e.png?imageView2/2/w/22"> <span class="text-s"> 西班牙 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=4"> <img class="img-s lazy" src="img/nationflag/ce409783958293f9246ae796a06c2bc0.png?imageView2/2/w/22"> <span class="text-s"> 德国 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=5"> <img class="img-s lazy" src="img/nationflag/f5818fdf0883bea3583d9e5107dbcc1c.png?imageView2/2/w/22"> <span class="text-s"> 法国 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=6"> <img class="img-s lazy" src="img/nationflag/127a3e2b682c7353038736ab615bd09e.png?imageView2/2/w/22"> <span class="text-s"> 葡萄牙 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=7"> <img class="img-s lazy" src="img/nationflag/7aed5bc0c7c6ddc0b13c65e33022e504.png?imageView2/2/w/22"> <span class="text-s"> 苏格兰 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=8"> <img class="img-s lazy" src="img/nationflag/dc946ba9f883da6b8315cb2f5042f1f3.png?imageView2/2/w/22"> <span class="text-s"> 荷兰 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=9"> <img class="img-s lazy" src="img/nationflag/6c258c44b404858a686b0332f1d55d27.png?imageView2/2/w/22"> <span class="text-s"> 比利时 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=10"> <img class="img-s lazy" src="img/nationflag/b20cd06e85e8297598484cc2b6311b8e.png?imageView2/2/w/22"> <span class="text-s"> 瑞典 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=11"> <img class="img-s lazy" src="img/nationflag/4aae145472b1337883dadc01245eda5e.png?imageView2/2/w/22"> <span class="text-s"> 芬兰 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=12"> <img class="img-s lazy" src="img/nationflag/1a348e973f103dc8d85d443dd0290f8e.png?imageView2/2/w/22"> <span class="text-s"> 挪威 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=13"> <img class="img-s lazy" src="img/nationflag/caa34833f73da7b5cec71148309943af.png?imageView2/2/w/22"> <span class="text-s"> 丹麦 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=14"> <img class="img-s lazy" src="img/nationflag/bcf28a4025596bb97e74d2d9171d6f70.png?imageView2/2/w/22"> <span class="text-s"> 奥地利 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=15"> <img class="img-s lazy" src="img/nationflag/5a5e227298ce4912a11fa296fea2b0ca.png?imageView2/2/w/22"> <span class="text-s"> 瑞士 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=16"> <img class="img-s lazy" src="img/nationflag/57944a7d32c24bd3d409f6bcb55d79bf.png?imageView2/2/w/22"> <span class="text-s"> 爱尔兰 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=17"> <img class="img-s lazy" src="img/nationflag/45bb1412af3b169ed12a228df3032f29.png?imageView2/2/w/22"> <span class="text-s"> 北爱尔兰 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=18"> <img class="img-s lazy" src="img/nationflag/7eac3d4db8d7a5a3443c322ab4e33881.png?imageView2/2/w/22"> <span class="text-s"> 俄罗斯 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=19"> <img class="img-s lazy" src="img/nationflag/c1c477865010d7b8ea3e27df44be146e.png?imageView2/2/w/22"> <span class="text-s"> 波兰 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=20"> <img class="img-s lazy" src="img/nationflag/6a9bbb8abdb2273ec078bcbc609c706d.png?imageView2/2/w/22"> <span class="text-s"> 乌克兰 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=21"> <img class="img-s lazy" src="img/nationflag/63467359ae1571f3dc66f93eaf3a4e02.png?imageView2/2/w/22"> <span class="text-s"> 捷克 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=22"> <img class="img-s lazy" src="img/nationflag/13d5814c4000b21ddee8333d6db0090e.png?imageView2/2/w/22"> <span class="text-s"> 希腊 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=23"> <img class="img-s lazy" src="img/nationflag/2a8b3302948fd813d46e79c980978dd5.png?imageView2/2/w/22"> <span class="text-s"> 罗马尼亚 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=24"> <img class="img-s lazy" src="img/nationflag/bdedfd9fc359d3367ef53c5a98447106.png?imageView2/2/w/22"> <span class="text-s"> 斯洛伐克 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=25"> <img class="img-s lazy" src="img/nationflag/feed6a95ee6422d3328523c1216584da.png?imageView2/2/w/22"> <span class="text-s"> 冰岛 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=26"> <img class="img-s lazy" src="img/nationflag/74384495385921666ee321dc4c7e6d90.png?imageView2/2/w/22"> <span class="text-s"> 拉脱维亚 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=27"> <img class="img-s lazy" src="img/nationflag/0017ab3678953052821b0af60ad6474a.png?imageView2/2/w/22"> <span class="text-s"> 白俄罗斯 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=28"> <img class="img-s lazy" src="img/nationflag/0101f400dec0eada34b89bbd44584e8f.png?imageView2/2/w/22"> <span class="text-s"> 立陶宛 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=29"> <img class="img-s lazy" src="img/nationflag/71a2878507a47dc646cdd3b2d6b33d85.png?imageView2/2/w/22"> <span class="text-s"> 威尔士 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=30"> <img class="img-s lazy" src="img/nationflag/511adfc72097b79ebcc48c6f19addc85.png?imageView2/2/w/22"> <span class="text-s"> 匈牙利 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=31"> <img class="img-s lazy" src="img/nationflag/5e12629863bd7a44bcb05eb22fcc4cd0.png?imageView2/2/w/22"> <span class="text-s"> 土耳其 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=32"> <img class="img-s lazy" src="img/nationflag/580e18f4915c2f3a9230de2e87e5c56e.png?imageView2/2/w/22"> <span class="text-s"> 克罗地亚 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=33"> <img class="img-s lazy" src="img/nationflag/429d52257adf076c36fab62ef38362eb.png?imageView2/2/w/22"> <span class="text-s"> 保加利亚 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=34"> <img class="img-s lazy" src="img/nationflag/7e0eabe4cf4a28d4206d233091149487.png?imageView2/2/w/22"> <span class="text-s"> 斯洛文尼亚 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=35"> <img class="img-s lazy" src="img/nationflag/b08e742f165b1247f8e3aa15cf452b05.png?imageView2/2/w/22"> <span class="text-s"> 塞浦路斯 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=36"> <img class="img-s lazy" src="img/nationflag/b675fe2fa84ae04260d17343e4d73b5c.png?imageView2/2/w/22"> <span class="text-s"> 塞尔维亚 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=37"> <img class="img-s lazy" src="img/nationflag/0e5bac3f8a1e5f206301c21a1d6bdff7.png?imageView2/2/w/22"> <span class="text-s"> 以色列 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=38"> <img class="img-s lazy" src="img/nationflag/75f311b3e821141145e57b63e9b0795d.png?imageView2/2/w/22"> <span class="text-s"> 阿尔巴尼亚 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=39"> <img class="img-s lazy" src="img/nationflag/d69356b86e3dd6813fca968996c62e9c.png?imageView2/2/w/22"> <span class="text-s"> 哈萨克斯坦 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=40"> <img class="img-s lazy" src="img/nationflag/942b8cbbd4dc907719c5f53370920c07.png?imageView2/2/w/22"> <span class="text-s"> 波黑 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=41"> <img class="img-s lazy" src="img/nationflag/8d373b705c897f52803b8b91ecf2c998.png?imageView2/2/w/22"> <span class="text-s"> 爱沙尼亚 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=42"> <img class="img-s lazy" src="img/nationflag/2cbe4b598f5c3ea16a5c3a52cd9f7a88.png?imageView2/2/w/22"> <span class="text-s"> 摩尔多瓦 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=43"> <img class="img-s lazy" src="img/nationflag/54df25e92253febb4b76fa6076da2147.png?imageView2/2/w/22"> <span class="text-s"> 阿美尼亚 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=44"> <img class="img-s lazy" src="img/nationflag/d3faa3706f4b6f1eebb7747747ec7003.png?imageView2/2/w/22"> <span class="text-s"> 黑山 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=45"> <img class="img-s lazy" src="img/nationflag/3d696ee87ca4e3c0ef8accebb567ec4c.png?imageView2/2/w/22"> <span class="text-s"> 马耳他 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=46"> <img class="img-s lazy" src="img/nationflag/11b82a6c819decf6fdf972e2a1f6d95e.png?imageView2/2/w/22"> <span class="text-s"> 卢森堡 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=47"> <img class="img-s lazy" src="img/nationflag/b9eafca142cbd5f539a5ad7a1284ad0f.png?imageView2/2/w/22"> <span class="text-s"> 法罗群岛 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=48"> <img class="img-s lazy" src="img/nationflag/4e94a191ccfafff4687282abb001400e.png?imageView2/2/w/22"> <span class="text-s"> 格鲁吉亚 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=49"> <img class="img-s lazy" src="img/nationflag/8e40d268653efb448950484b6778c454.png?imageView2/2/w/22"> <span class="text-s"> 阿塞拜疆 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=50"> <img class="img-s lazy" src="img/nationflag/4b9c3a5dbeb998220b18e953449c9030.png?imageView2/2/w/22"> <span class="text-s"> 马其顿 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=51"> <img class="img-s lazy" src="img/nationflag/55fcbe41351f69d6e6c2829465cededc.png?imageView2/2/w/22"> <span class="text-s"> 安道尔 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=121"> <img class="img-s lazy" src="img/nationflag/a2623df057e3c8ac73560cf648c813e4.png?imageView2/2/w/22"> <span class="text-s"> 圣马力诺 </span> </a> </li>
+              </ul>
+            </div>
+          </li>
+          <li class="tab-li">
+            <div id="euro2" class="data-box">
+              <ul class="list">
+                <li> <a class="league" href="season.html?id=5074"> <img class="img-s lazy" src="img/eventlogo/41ce8b9fb5251e3044d994cc447f3322.png?imageView2/2/w/22"> <span class="text-s"> 欧冠杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5020"> <img class="img-s lazy" src="img/eventlogo/12e50f6f8541dfc47930058eb5cc6dc3.png?imageView2/2/w/22"> <span class="text-s"> 欧洲杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5183"> <img class="img-s lazy" src="img/eventlogo/73278a4a86960eeb576a8fd4c9ec6997.jpg?imageView2/2/w/22"> <span class="text-s"> 欧罗巴杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5021"> <img class="img-s lazy" src="img/eventlogo/2723d092b63885e0d7c260cc007e8b9d.jpg?imageView2/2/w/22"> <span class="text-s"> 超霸杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=286"> <img class="img-s lazy" src="img/eventlogo/05f971b5ec196b8c65b75d2ef8267331.jpg?imageView2/2/w/22"> <span class="text-s"> 酋长杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=353"> <img class="img-s lazy" src="img/eventlogo/301ad0e3bd5cb1627a2044908a42fdc2.jpg?imageView2/2/w/22"> <span class="text-s"> 奥迪杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5583"> <img class="img-s lazy" src="img/eventlogo/115f89503138416a242f40fb7d7f338e.jpg?imageView2/2/w/22"> <span class="text-s"> 女欧国杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=6689"> <img class="img-s lazy" src="img/eventlogo/5fd0b37cd7dbbb00f97ba6ce92bf5add.jpg?imageView2/2/w/22"> <span class="text-s"> 欧青U21外 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5660"> <img class="img-s lazy" src="img/eventlogo/00e26af6ac3b1c1c49d7c3d79c60d000.jpg?imageView2/2/w/22"> <span class="text-s"> 欧青U21 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5199"> <img class="img-s lazy" src="img/eventlogo/c399862d3b9d6b76c8436e924a68c45b.png?imageView2/2/w/22"> <span class="text-s"> 欧女杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=348"> <img class="img-s lazy" src="img/eventlogo/d58072be2820e8682c0a27c0518e805e.jpg?imageView2/2/w/22"> <span class="text-s"> 温布利杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=6799"> <img class="img-s lazy" src="img/eventlogo/4b0a59ddf11c58e7446c9df0da541a84.png?imageView2/2/w/22"> <span class="text-s"> 世女欧预 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=364"> <img class="img-s lazy" src="img/eventlogo/7d771e0e8f3633ab54856925ecdefc5d.jpg?imageView2/2/w/22"> <span class="text-s"> 都柏林杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=372"> <img class="img-s lazy" src="img/eventlogo/4122cb13c7a474c1976c9706ae36521d.jpg?imageView2/2/w/22"> <span class="text-s"> 不列颠杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=201"> <img class="img-s lazy" src="img/eventlogo/d1fe173d08e959397adf34b1d77e88d7.jpg?imageView2/2/w/22"> <span class="text-s"> 图图杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5197"> <img class="img-s lazy" src="img/eventlogo/3b8a614226a953a8cd9526fca6fe9ba5.jpg?imageView2/2/w/22"> <span class="text-s"> 欧青U19 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5198"> <img class="img-s lazy" src="img/eventlogo/6f3ef77ac0e3619e98159e9b6febf557.jpg?imageView2/2/w/22"> <span class="text-s"> 欧青U17 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5200"> <img class="img-s lazy" src="img/eventlogo/f718499c1c8cef6730f9fd03c8125cab.jpg?imageView2/2/w/22"> <span class="text-s"> 女欧U19 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=290"> <img class="img-s lazy" src="img/eventlogo/4f6ffe13a5d75b2d6a3923922b3922e5.jpg?imageView2/2/w/22"> <span class="text-s"> 阿姆杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5201"> <img class="img-s lazy" src="img/eventlogo/85422afb467e9456013a2a51d4dff702.png?imageView2/2/w/22"> <span class="text-s"> 女欧U17 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=313"> <img class="img-s lazy" src="img/eventlogo/cup.jpg?imageView2/2/w/22"> <span class="text-s"> 女北欧U23 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=329"> <img class="img-s lazy" src="img/eventlogo/c361bc7b2c033a83d663b8d9fb4be56e.jpg?imageView2/2/w/22"> <span class="text-s"> CIS杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=333"> <img class="img-s lazy" src="img/eventlogo/5d44ee6f2c3f71b73125876103c8f6c4.jpg?imageView2/2/w/22"> <span class="text-s"> 波罗联 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5606"> <img class="img-s lazy" src="img/eventlogo/d1f255a373a3cef72e03aa9d980c7eca.jpg?imageView2/2/w/22"> <span class="text-s"> TIP杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=342"> <img class="img-s lazy" src="img/eventlogo/996a7fa078cc36c46d02f9af3bef918b.jpg?imageView2/2/w/22"> <span class="text-s"> CO杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=345"> <img class="img-s lazy" src="img/eventlogo/8d5e957f297893487bd98fa830fa6413.jpg?imageView2/2/w/22"> <span class="text-s"> 北欧联 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5205"> <img class="img-s lazy" src="img/eventlogo/e366e37f9d1a8e6c7b85c3a9ca26d783.png?imageView2/2/w/22"> <span class="text-s"> 欧联U19 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=370"> <img class="img-s lazy" src="img/eventlogo/7940ab47468396569a906f75ff3f20ef.png?imageView2/2/w/22"> <span class="text-s"> 地中运 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=375"> <img class="img-s lazy" src="img/eventlogo/25df35de87aa441b88f22a6c2a830a17.jpg?imageView2/2/w/22"> <span class="text-s"> 太阳杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=6797"> <img class="img-s lazy" src="img/eventlogo/5295bd7a0c903d9e2d96399b5731c35a.png?imageView2/2/w/22"> <span class="text-s"> 挪超杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5022"> <img class="img-s lazy" src="img/eventlogo/192fc044e74dffea144f9ac5dc9f3395.jpg?imageView2/2/w/22"> <span class="text-s"> 波罗杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=6796"> <img class="img-s lazy" src="img/eventlogo/58ae749f25eded36f486bc85feb3f0ab.jpg?imageView2/2/w/22"> <span class="text-s"> 欧室锦标 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=347"> <img class="img-s lazy" src="img/eventlogo/cup.jpg?imageView2/2/w/22"> <span class="text-s"> 斯堪彩杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5184"> <img class="img-s lazy" src="img/eventlogo/444796c3d5bcac1d739a03457a568458.png?imageView2/2/w/22"> <span class="text-s"> 北欧女青锦 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=361"> <img class="img-s lazy" src="img/eventlogo/cup.jpg?imageView2/2/w/22"> <span class="text-s"> GF锦U19 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5204"> <img class="img-s lazy" src="img/eventlogo/03c7c29f24f9eb344f7a92d260abac89.png?imageView2/2/w/22"> <span class="text-s"> 北欧U17 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=330"> <img class="img-s lazy" src="img/eventlogo/2e65f2f2fdaf6c699b223c61b1b5ab89.jpg?imageView2/2/w/22"> <span class="text-s"> 欧室U21 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5027"> <img class="img-s lazy" src="img/eventlogo/f014bf3c3dd4e625f6780918b78c85b1.png?imageView2/2/w/22"> <span class="text-s"> 多塞纳杯 </span> </a> </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="red-tab-b ui-tab">
+        <ul class="ui-red-nav ui-row-flex ui-tab-nav">
+          <li class="current ui-col">国家</li>
+          <li class="ui-col">洲际赛事</li>
+        </ul>
+        <ul class="ui-tab-content">
+          <li class="tab-li current">
+            <div id="asia1" class="data-box">
+              <ul class="list">
+                <li> <a data-lity class="nation" href="events.html?id=69"> <img class="img-s lazy" src="img/nationflag/c13dceabcb143acd6c9298265d618a9f.png?imageView2/2/w/22"> <span class="text-s"> 中国 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=70"> <img class="img-s lazy" src="img/nationflag/4dbed2e657457884e67137d3514119b3.png?imageView2/2/w/22"> <span class="text-s"> 日本 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=71"> <img class="img-s lazy" src="img/nationflag/4f2adc9e0c18fcc4fccef4251770e2e7.png?imageView2/2/w/22"> <span class="text-s"> 南韩 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=72"> <img class="img-s lazy" src="img/nationflag/d2f8c75914816a21c27cb017c4153b9e.png?imageView2/2/w/22"> <span class="text-s"> 澳洲 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=73"> <img class="img-s lazy" src="img/nationflag/d474d819c1f0b259db29015f0cca7611.png?imageView2/2/w/22"> <span class="text-s"> 沙地阿拉伯 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=74"> <img class="img-s lazy" src="img/nationflag/b572d23ac56bed1f64644a7188d7dabe.png?imageView2/2/w/22"> <span class="text-s"> 伊朗 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=75"> <img class="img-s lazy" src="img/nationflag/0c9da7f21c04d2ae18c58fe6633484a8.png?imageView2/2/w/22"> <span class="text-s"> 阿联酋 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=76"> <img class="img-s lazy" src="img/nationflag/ce8a7b5b29673d33257febd03fb904ad.png?imageView2/2/w/22"> <span class="text-s"> 新加坡 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=77"> <img class="img-s lazy" src="img/nationflag/3f6d0e1e31c1967ef07d646ad615baa1.png?imageView2/2/w/22"> <span class="text-s"> 马来西亚 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=78"> <img class="img-s lazy" src="img/nationflag/a1be5af267761cbbdc2b10cbb8d898c0.png?imageView2/2/w/22"> <span class="text-s"> 巴林 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=79"> <img class="img-s lazy" src="img/nationflag/fc65c94ccb3d13e8ac04fa71784f623e.png?imageView2/2/w/22"> <span class="text-s"> 卡塔尔 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=80"> <img class="img-s lazy" src="img/nationflag/acad1dd6e938728aedc460c72d18676e.png?imageView2/2/w/22"> <span class="text-s"> 也门 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=81"> <img class="img-s lazy" src="img/nationflag/2eb24f8a3566091085193569ac6a0d60.png?imageView2/2/w/22"> <span class="text-s"> 约旦 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=82"> <img class="img-s lazy" src="img/nationflag/6e4d220d0210e78e38ea4b360e2c2a4c.png?imageView2/2/w/22"> <span class="text-s"> 泰国 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=83"> <img class="img-s lazy" src="img/nationflag/65bd4d60decbd64bd4de05485a6ce930.png?imageView2/2/w/22"> <span class="text-s"> 科威特 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=84"> <img class="img-s lazy" src="img/nationflag/93f660d3c2d894041f996d0e5b61739d.png?imageView2/2/w/22"> <span class="text-s"> 阿曼 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=86"> <img class="img-s lazy" src="img/nationflag/43d99cd45d89fae35cda1c4b0012017a.png?imageView2/2/w/22"> <span class="text-s"> 黎巴嫩 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=87"> <img class="img-s lazy" src="img/nationflag/05928dcaf6acd39a0dad8b652469e5bd.png?imageView2/2/w/22"> <span class="text-s"> 伊拉克 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=88"> <img class="img-s lazy" src="img/nationflag/f0013374b2fcfa1130d64edb48b8d836.png?imageView2/2/w/22"> <span class="text-s"> 印度 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=89"> <img class="img-s lazy" src="img/nationflag/29eeb04d53afd13c6b7e3e41dbbfe1f1.png?imageView2/2/w/22"> <span class="text-s"> 越南 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=90"> <img class="img-s lazy" src="img/nationflag/e6af2431e330eb2b83456c99631c07bc.png?imageView2/2/w/22"> <span class="text-s"> 印度尼西亚 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=123"> <img class="img-s lazy" src="img/nationflag/23d93e6203846a385327ff632c5f9a28.png?imageView2/2/w/22"> <span class="text-s"> 乌兹别克 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=124"> <img class="img-s lazy" src="img/nationflag/c695b1f54d484f6aa540f0736dd42138.png?imageView2/2/w/22"> <span class="text-s"> 叙利亚 </span> </a> </li>
+              </ul>
+            </div>
+          </li>
+          <li class="tab-li">
+            <div id="asia2" class="data-box">
+              <ul class="list">
+                <li> <a class="league" href="season.html?id=5058"> <img class="img-s lazy" src="img/eventlogo/812b4ba287f5ee0bc9d43bbf5bbe87fb.jpg?imageView2/2/w/22"> <span class="text-s"> 亚挑杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5356"> <img class="img-s lazy" src="img/eventlogo/c7635bfd99248a2cdef8249ef7bfbef4.jpg?imageView2/2/w/22"> <span class="text-s"> 东南锦 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3594"> <img class="img-s lazy" src="img/eventlogo/26337353b7962f533d78c762373b3318.jpg?imageView2/2/w/22"> <span class="text-s"> 西亚锦 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3634"> <img class="img-s lazy" src="img/eventlogo/816b112c6105b3ebd537828a39af4818.jpg?imageView2/2/w/22"> <span class="text-s"> 亚运男足 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3637"> <img class="img-s lazy" src="img/eventlogo/bbcbff5c1f1ded46c25d28119a85c6c2.jpg?imageView2/2/w/22"> <span class="text-s"> 亚运女足 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3658"> <img class="img-s lazy" src="img/eventlogo/cf67355a3333e6e143439161adc2d82e.jpg?imageView2/2/w/22"> <span class="text-s"> 海湾锦标 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3660"> <img class="img-s lazy" src="img/eventlogo/92fb0c6d1758261f10d052e6e2c1123c.jpg?imageView2/2/w/22"> <span class="text-s"> 内鲁盃 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3670"> <img class="img-s lazy" src="img/eventlogo/cup.jpg?imageView2/2/w/22"> <span class="text-s"> 海湾奥杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5186"> <img class="img-s lazy" src="img/eventlogo/82f2b308c3b01637c607ce05f52a2fed.png?imageView2/2/w/22"> <span class="text-s"> 女东南锦 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3686"> <img class="img-s lazy" src="img/eventlogo/cup.jpg?imageView2/2/w/22"> <span class="text-s"> 西亚女锦 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3699"> <img class="img-s lazy" src="img/eventlogo/e077e1a544eec4f0307cf5c3c721d944.jpg?imageView2/2/w/22"> <span class="text-s"> 东亚女运 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3735"> <img class="img-s lazy" src="img/eventlogo/352fe25daf686bdb4edca223c921acea.jpg?imageView2/2/w/22"> <span class="text-s"> 亚青U19 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5359"> <img class="img-s lazy" src="img/eventlogo/2b59c41fe23a1987ef0cb53a47c59170.png?imageView2/2/w/22"> <span class="text-s"> 东南亚U19 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3745"> <img class="img-s lazy" src="img/eventlogo/cup.jpg?imageView2/2/w/22"> <span class="text-s"> 亚青U23 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3746"> <img class="img-s lazy" src="img/eventlogo/cup.jpg?imageView2/2/w/22"> <span class="text-s"> 西亚青锦 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5677"> <img class="img-s lazy" src="img/eventlogo/4aaa2c3aee969020233850a6a76497ab.png?imageView2/2/w/22"> <span class="text-s"> 南亚女杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3750"> <img class="img-s lazy" src="img/eventlogo/285e19f20beded7d215102b49d5c09a0.png?imageView2/2/w/22"> <span class="text-s"> 东南亚U20 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3751"> <img class="img-s lazy" src="img/eventlogo/884ce4bb65d328ecb03c598409e2b168.jpg?imageView2/2/w/22"> <span class="text-s"> 阿拉杯U20 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3752"> <img class="img-s lazy" src="img/eventlogo/cup.jpg?imageView2/2/w/22"> <span class="text-s"> 海湾运U20 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=4909"> <img class="img-s lazy" src="img/eventlogo/6e4bf4fd42cd0cda98372ebc9f92e92d.png?imageView2/2/w/22"> <span class="text-s"> 南亚运 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=4911"> <img class="img-s lazy" src="img/eventlogo/3362c423b2d562ef3ae2e43d170d7886.png?imageView2/2/w/22"> <span class="text-s"> 女南亚运 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3578"> <img class="img-s lazy" src="img/eventlogo/9c838d2e45b2ad1094d42f4ef36764f6.jpg?imageView2/2/w/22"> <span class="text-s"> 东亚运 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3583"> <img class="img-s lazy" src="img/eventlogo/53c3bce66e43be4f209556518c2fcb54.jpg?imageView2/2/w/22"> <span class="text-s"> 东南运 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5060"> <img class="img-s lazy" src="img/eventlogo/e520b077d25d4fe85d4fc33444f99aff.png?imageView2/2/w/22"> <span class="text-s"> 麒麟杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3619"> <img class="img-s lazy" src="img/eventlogo/cup.jpg?imageView2/2/w/22"> <span class="text-s"> A3冠军杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5575"> <img class="img-s lazy" src="img/eventlogo/4c5bde74a8f110656874902f07378009.jpg?imageView2/2/w/22"> <span class="text-s"> 阿拉冠 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3625"> <img class="img-s lazy" src="img/eventlogo/a284df1155ec3e67286080500df36a9a.jpg?imageView2/2/w/22"> <span class="text-s"> 阿拉伯杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3631"> <img class="img-s lazy" src="img/eventlogo/bd4c9ab730f5513206b999ec0d90d1fb.jpg?imageView2/2/w/22"> <span class="text-s"> 海湾运 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3639"> <img class="img-s lazy" src="img/eventlogo/2b8a61594b1f4c4db0902a8a395ced93.png?imageView2/2/w/22"> <span class="text-s"> 独立杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3649"> <img class="img-s lazy" src="img/eventlogo/8e98d81f8217304975ccb23337bb5761.jpg?imageView2/2/w/22"> <span class="text-s"> 黄金杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3650"> <img class="img-s lazy" src="img/eventlogo/a9a6653e48976138166de32772b1bf40.jpg?imageView2/2/w/22"> <span class="text-s"> 阿拉运 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3664"> <img class="img-s lazy" src="img/eventlogo/74071a673307ca7459bcf75fbd024e09.jpg?imageView2/2/w/22"> <span class="text-s"> 和平杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5357"> <img class="img-s lazy" src="img/eventlogo/59c33016884a62116be975a9bb8257e3.jpg?imageView2/2/w/22"> <span class="text-s"> 女亚青冠 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3694"> <img class="img-s lazy" src="img/eventlogo/f8c1f23d6a8d8d7904fc0ea8e066b3bb.jpg?imageView2/2/w/22"> <span class="text-s"> 女和平杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3707"> <img class="img-s lazy" src="img/eventlogo/beeaa848305e9c3fc8b46e64e3feb06c.png?imageView2/2/w/22"> <span class="text-s"> 亚青U16 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5061"> <img class="img-s lazy" src="img/eventlogo/8386b93f53329bad4ef98fde9541342f.png?imageView2/2/w/22"> <span class="text-s"> 东南亚U16 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3719"> <img class="img-s lazy" src="img/eventlogo/f3f27a324736617f20abbf2ffd806f6d.png?imageView2/2/w/22"> <span class="text-s"> 东南亚U17 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3721"> <img class="img-s lazy" src="img/eventlogo/cup.jpg?imageView2/2/w/22"> <span class="text-s"> 阿拉青U17 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3729"> <img class="img-s lazy" src="img/eventlogo/f665aed1fad30a4c01b2e39b2b9d115c.png?imageView2/2/w/22"> <span class="text-s"> 海湾U17 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3747"> <img class="img-s lazy" src="img/eventlogo/cup.jpg?imageView2/2/w/22"> <span class="text-s"> 西亚U16 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3748"> <img class="img-s lazy" src="img/eventlogo/cup.jpg?imageView2/2/w/22"> <span class="text-s"> 南亚杯U19 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3599"> <img class="img-s lazy" src="img/eventlogo/1019c8091693ef5c5f55970346633f92.jpg?imageView2/2/w/22"> <span class="text-s"> 亚总杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3604"> <img class="img-s lazy" src="img/eventlogo/3d2d8ccb37df977cb6d9da15b76c3f3a.jpg?imageView2/2/w/22"> <span class="text-s"> 亚室锦标 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3642"> <img class="img-s lazy" src="img/eventlogo/248e844336797ec98478f85e7626de4a.jpg?imageView2/2/w/22"> <span class="text-s"> 东南青冠 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5358"> <img class="img-s lazy" src="img/eventlogo/3245d908a3c236723c96c5a6d0d372f1.png?imageView2/2/w/22"> <span class="text-s"> 女亚冠U16 </span> </a> </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="red-tab-b ui-tab">
+        <ul class="ui-red-nav ui-row-flex ui-tab-nav">
+          <li class="current ui-col">国家</li>
+          <li class="ui-col">洲际赛事</li>
+        </ul>
+        <ul class="ui-tab-content">
+          <li class="tab-li current">
+            <div id="amer1" class="data-box">
+              <ul class="list">
+                <li> <a data-lity class="nation" href="events.html?id=52"> <img class="img-s lazy" src="img/nationflag/eaa5fa27a1d6595fb89925642d3c489c.png?imageView2/2/w/22"> <span class="text-s"> 阿根廷 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=53"> <img class="img-s lazy" src="img/nationflag/86ee59323f1f3b18177adece1029fa23.png?imageView2/2/w/22"> <span class="text-s"> 巴西 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=54"> <img class="img-s lazy" src="img/nationflag/1efc978309b2a7a32b3c8db1bcc5cf58.png?imageView2/2/w/22"> <span class="text-s"> 美国 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=55"> <img class="img-s lazy" src="img/nationflag/45f765d510a1ebffa4202d223443eb2c.png?imageView2/2/w/22"> <span class="text-s"> 智利 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=56"> <img class="img-s lazy" src="img/nationflag/f850343d330092834c72a5c7cf26b098.png?imageView2/2/w/22"> <span class="text-s"> 墨西哥 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=57"> <img class="img-s lazy" src="img/nationflag/029e9211ef6b89b346c01c1fe93853cb.png?imageView2/2/w/22"> <span class="text-s"> 巴拉圭 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=58"> <img class="img-s lazy" src="img/nationflag/799cf2bcf76c72127ab631f4007fb438.png?imageView2/2/w/22"> <span class="text-s"> 秘鲁 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=59"> <img class="img-s lazy" src="img/nationflag/7f36b385d851aedb1509d7e0b3a29cb6.png?imageView2/2/w/22"> <span class="text-s"> 乌拉圭 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=60"> <img class="img-s lazy" src="img/nationflag/5037b9878315cb7252d41e6df6ef32e0.png?imageView2/2/w/22"> <span class="text-s"> 哥伦比亚 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=61"> <img class="img-s lazy" src="img/nationflag/14710989a28a42c22225b4e1cda7be08.png?imageView2/2/w/22"> <span class="text-s"> 厄瓜多尔 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=62"> <img class="img-s lazy" src="img/nationflag/08291346b33950040740493c510d5585.png?imageView2/2/w/22"> <span class="text-s"> 委內瑞拉 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=63"> <img class="img-s lazy" src="img/nationflag/2395765036ece6e0fc15ddc832ed4cf6.png?imageView2/2/w/22"> <span class="text-s"> 玻利维亚 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=64"> <img class="img-s lazy" src="img/nationflag/b99684248199ea86c0257a682eec759a.png?imageView2/2/w/22"> <span class="text-s"> 洪都拉斯 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=65"> <img class="img-s lazy" src="img/nationflag/25b69dbfedaef4bc40e51d58dd92ac3f.png?imageView2/2/w/22"> <span class="text-s"> 加拿大 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=66"> <img class="img-s lazy" src="img/nationflag/6c4f73ad22e6d44536dc2d2487be09c5.png?imageView2/2/w/22"> <span class="text-s"> 哥斯达黎加 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=67"> <img class="img-s lazy" src="img/nationflag/f93466e757cbb79b574f938abdc03d17.png?imageView2/2/w/22"> <span class="text-s"> 危地马拉 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=68"> <img class="img-s lazy" src="img/nationflag/63b56b9e3151f7d48c99a26f28e4ea40.png?imageView2/2/w/22"> <span class="text-s"> 萨尔瓦多 </span> </a> </li>
+              </ul>
+            </div>
+          </li>
+          <li class="tab-li">
+            <div id="amer2" class="data-box">
+              <ul class="list">
+                <li> <a class="league" href="season.html?id=4899"> <img class="img-s lazy" src="img/eventlogo/dcba966448ebd28b861fb5784efd387f.png?imageView2/2/w/22"> <span class="text-s"> 美洲杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5565"> <img class="img-s lazy" src="img/eventlogo/7647966b7343c29048673252e490f736.jpg?imageView2/2/w/22"> <span class="text-s"> 自由杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5590"> <img class="img-s lazy" src="img/eventlogo/8c19f571e251e61cb8dd3612f26d5ecf.jpg?imageView2/2/w/22"> <span class="text-s"> 南球杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=6780"> <img class="img-s lazy" src="img/eventlogo/39059724f73a9969845dfe4146c5660e.jpg?imageView2/2/w/22"> <span class="text-s"> 南美超杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3075"> <img class="img-s lazy" src="img/eventlogo/2cfd4560539f887a5e420412b370b361.jpg?imageView2/2/w/22"> <span class="text-s"> 女南冠 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=6691"> <img class="img-s lazy" src="img/eventlogo/be83ab3ecd0db773eb2dc1b0a17836a1.jpg?imageView2/2/w/22"> <span class="text-s"> 美金杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5336"> <img class="img-s lazy" src="img/eventlogo/b3967a0e938dc2a6340e258630febd5a.jpg?imageView2/2/w/22"> <span class="text-s"> 美冠杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5607"> <img class="img-s lazy" src="img/eventlogo/3c7781a36bcd6cf08c11a970fbe0e2a6.jpg?imageView2/2/w/22"> <span class="text-s"> 中美杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3024"> <img class="img-s lazy" src="img/eventlogo/a516a87cfcaef229b342c437fe2b95f7.jpg?imageView2/2/w/22"> <span class="text-s"> 泛美女足 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5581"> <img class="img-s lazy" src="img/eventlogo/979d472a84804b9f647bc185a877a8b5.jpg?imageView2/2/w/22"> <span class="text-s"> 南美U20 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=4956"> <img class="img-s lazy" src="img/eventlogo/f93c0e8d37d6d55b5b8d56857dce81f7.png?imageView2/2/w/22"> <span class="text-s"> 美加杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3073"> <img class="img-s lazy" src="img/eventlogo/cup.jpg?imageView2/2/w/22"> <span class="text-s"> 世女美预 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3078"> <img class="img-s lazy" src="img/eventlogo/9da187a7a191431db943a9a5a6fec6f4.jpg?imageView2/2/w/22"> <span class="text-s"> 自由杯U20 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3080"> <img class="img-s lazy" src="img/eventlogo/30b10a13402d270d3cf2e1835e428c9b.png?imageView2/2/w/22"> <span class="text-s"> 女奥北美 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3083"> <img class="img-s lazy" src="img/eventlogo/83f97f4825290be4cb794ec6a234595f.jpg?imageView2/2/w/22"> <span class="text-s"> 奥北选 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5572"> <img class="img-s lazy" src="img/eventlogo/82161242827b703e6acf9c726942a1e4.jpg?imageView2/2/w/22"> <span class="text-s"> 美青杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3021"> <img class="img-s lazy" src="img/eventlogo/854d9fca60b4bd07f9bb215d59ef5561.jpg?imageView2/2/w/22"> <span class="text-s"> 泛美男足 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5608"> <img class="img-s lazy" src="img/eventlogo/75fc093c0ee742f6dddaa13fff98f104.jpg?imageView2/2/w/22"> <span class="text-s"> 南美U17 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3039"> <img class="img-s lazy" src="img/eventlogo/85fc37b18c57097425b52fc7afbb6969.jpg?imageView2/2/w/22"> <span class="text-s"> 女南冠U20 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3049"> <img class="img-s lazy" src="img/eventlogo/ca9c267dad0305d1a6308d2a0cf1c39c.jpg?imageView2/2/w/22"> <span class="text-s"> 女北美U20 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5635"> <img class="img-s lazy" src="img/eventlogo/07871915a8107172b3b5dc15a6574ad3.jpg?imageView2/2/w/22"> <span class="text-s"> 女自由杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3086"> <img class="img-s lazy" src="img/eventlogo/0829424ffa0d3a2547b6c9622c77de03.jpg?imageView2/2/w/22"> <span class="text-s"> 中美运女 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3088"> <img class="img-s lazy" src="img/eventlogo/70222949cc0db89ab32c9969754d4758.jpg?imageView2/2/w/22"> <span class="text-s"> 中美运男 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3093"> <img class="img-s lazy" src="img/eventlogo/cup.jpg?imageView2/2/w/22"> <span class="text-s"> 美女金杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3094"> <img class="img-s lazy" src="img/eventlogo/81ca0262c82e712e50c580c032d99b60.jpg?imageView2/2/w/22"> <span class="text-s"> 女美加杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3095"> <img class="img-s lazy" src="img/eventlogo/cup.jpg?imageView2/2/w/22"> <span class="text-s"> 南美女运 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=4900"> <img class="img-s lazy" src="img/eventlogo/08d98638c6fcd194a4b1e6992063e944.jpg?imageView2/2/w/22"> <span class="text-s"> 南美室內 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5189"> <img class="img-s lazy" src="img/eventlogo/e995f98d56967d946471af29d7bf99f1.jpg?imageView2/2/w/22"> <span class="text-s"> 美青U17 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5051"> <img class="img-s lazy" src="img/eventlogo/9f396fe44e7c05c16873b05ec425cbad.jpg?imageView2/2/w/22"> <span class="text-s"> 北美室內足 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=4902"> <img class="img-s lazy" src="img/eventlogo/4311359ed4969e8401880e3c1836fbe1.jpg?imageView2/2/w/22"> <span class="text-s"> 女南冠U17 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3085"> <img class="img-s lazy" src="img/eventlogo/cup.jpg?imageView2/2/w/22"> <span class="text-s"> 南运U17 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5670"> <img class="img-s lazy" src="img/eventlogo/edc954138c382a81a835db480671337c.png?imageView2/2/w/22"> <span class="text-s"> 沙南美预 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=4901"> <img class="img-s lazy" src="img/eventlogo/10a5ab2db37feedfdeaab192ead4ac0e.jpg?imageView2/2/w/22"> <span class="text-s"> 女北美U17 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=3081"> <img class="img-s lazy" src="img/eventlogo/285ab9448d2751ee57ece7f762c39095.jpg?imageView2/2/w/22"> <span class="text-s"> 南冠U15 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=6084"> <img class="img-s lazy" src="img/eventlogo/ce7a30cc3a1eb6ee8116041c16dc92d4.png?imageView2/2/w/22"> <span class="text-s"> 尼加联 </span> </a> </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="red-tab-b ui-tab">
+        <ul class="ui-red-nav ui-row-flex ui-tab-nav">
+          <li class="current ui-col">国家</li>
+          <li class="ui-col">洲际赛事</li>
+        </ul>
+        <ul class="ui-tab-content">
+          <li class="tab-li current">
+            <div id="afri1" class="data-box">
+              <ul class="list">
+                <li> <a data-lity class="nation" href="events.html?id=92"> <img class="img-s lazy" src="img/nationflag/ab49d09ff4744b52b180f8a748243e17.png?imageView2/2/w/22"> <span class="text-s"> 南非 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=93"> <img class="img-s lazy" src="img/nationflag/fbb2c330881a521b8be3022f3da5307e.png?imageView2/2/w/22"> <span class="text-s"> 尼日利亚 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=94"> <img class="img-s lazy" src="img/nationflag/4adc9885531c6167c47d16260d2e9fc4.png?imageView2/2/w/22"> <span class="text-s"> 摩洛哥 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=95"> <img class="img-s lazy" src="img/nationflag/9f34f69d9501c54fd4f411c6284361e6.png?imageView2/2/w/22"> <span class="text-s"> 突尼斯 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=96"> <img class="img-s lazy" src="img/nationflag/0afc933709fd1d61177ed5788ed2b057.png?imageView2/2/w/22"> <span class="text-s"> 阿尔及利亚 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=97"> <img class="img-s lazy" src="img/nationflag/fe9eb3b92625c3fcdafc5d92df330bb9.png?imageView2/2/w/22"> <span class="text-s"> 埃及 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=98"> <img class="img-s lazy" src="img/nationflag/595483700a793b64fc0aec86e5c633c5.png?imageView2/2/w/22"> <span class="text-s"> 利比亚 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=107"> <img class="img-s lazy" src="img/nationflag/55229627dd5827d0c7cafbc586b2f635.png?imageView2/2/w/22"> <span class="text-s"> 安哥拉 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=108"> <img class="img-s lazy" src="img/nationflag/886d61ae1f77d1bad387bb8c7e91e91d.png?imageView2/2/w/22"> <span class="text-s"> 加纳 </span> </a> </li>
+                <li> <a data-lity class="nation" href="events.html?id=125"> <img class="img-s lazy" src="img/nationflag/5daeddfa2607f8f7aa7f78a8adbc5441.png?imageView2/2/w/22"> <span class="text-s"> 塞内加尔 </span> </a> </li>
+              </ul>
+            </div>
+          </li>
+          <li class="tab-li">
+            <div id="afri2" class="data-box">
+              <ul class="list">
+                <li> <a class="league" href="season.html?id=6688"> <img class="img-s lazy" src="img/eventlogo/36ded3b4743b85fb64bfe653ab6764d4.png?imageView2/2/w/22"> <span class="text-s"> 非洲杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5585"> <img class="img-s lazy" src="img/eventlogo/555d6702c950ecb729a966504af0a635.jpg?imageView2/2/w/22"> <span class="text-s"> 非冠杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5589"> <img class="img-s lazy" src="img/eventlogo/36660e59856b4de58a219bcf4e27eba3.jpg?imageView2/2/w/22"> <span class="text-s"> 非联杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5476"> <img class="img-s lazy" src="img/eventlogo/c6e19e830859f2cb9f7c8f8cacb8d2a6.jpg?imageView2/2/w/22"> <span class="text-s"> 中东非杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5628"> <img class="img-s lazy" src="img/eventlogo/d840cc5d906c3e9c84374c8919d2074e.jpg?imageView2/2/w/22"> <span class="text-s"> 非超杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5520"> <img class="img-s lazy" src="img/eventlogo/a33aae8fbc97add83f3a9e0c98840d59.png?imageView2/2/w/22"> <span class="text-s"> 女非国杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5531"> <img class="img-s lazy" src="img/eventlogo/cup.jpg?imageView2/2/w/22"> <span class="text-s"> 奥非预 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5542"> <img class="img-s lazy" src="img/eventlogo/cup.jpg?imageView2/2/w/22"> <span class="text-s"> 南非洲杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5552"> <img class="img-s lazy" src="img/eventlogo/cup.jpg?imageView2/2/w/22"> <span class="text-s"> 非运女足 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=6183"> <img class="img-s lazy" src="img/eventlogo/38af86134b65d0f10fe33d30dd76442e.jpg?imageView2/2/w/22"> <span class="text-s"> 非青杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5480"> <img class="img-s lazy" src="img/eventlogo/cup.jpg?imageView2/2/w/22"> <span class="text-s"> 北非冠 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=6899"> <img class="img-s lazy" src="img/eventlogo/f4dd765c12f2ef67f98f3558c282a9cd.jpg?imageView2/2/w/22"> <span class="text-s"> 非国锦标 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5528"> <img class="img-s lazy" src="img/eventlogo/cup.jpg?imageView2/2/w/22"> <span class="text-s"> 非洲运 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5546"> <img class="img-s lazy" src="img/eventlogo/47bb6883f5d873a6570f1fb5e681eee2.png?imageView2/2/w/22"> <span class="text-s"> 非青杯外 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5540"> <img class="img-s lazy" src="img/eventlogo/cup.jpg?imageView2/2/w/22"> <span class="text-s"> 非女锦U20 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5503"> <img class="img-s lazy" src="img/eventlogo/5c989d9eef94c2035ed18890dbf5d22c.png?imageView2/2/w/22"> <span class="text-s"> 非青U17 </span> </a> </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="red-tab-b ui-tab">
+        <ul class="ui-red-nav ui-row-flex ui-tab-nav">
+          <li class="current ui-col">国家</li>
+          <li class="ui-col">洲际赛事</li>
+        </ul>
+        <ul class="ui-tab-content">
+          <li class="tab-li current">
+            <div id="ocea1" class="data-box">
+              <ul class="list">
+                <li> <a data-lity class="nation" href="events.html?id=91"> <img class="img-s lazy" src="img/nationflag/d36b6afa03f50411cb8b76fb51b2a029.png?imageView2/2/w/22"> <span class="text-s"> 新西兰 </span> </a> </li>
+              </ul>
+            </div>
+          </li>
+          <li class="tab-li">
+            <div id="ocea2" class="data-box">
+              <ul class="list">
+                <li> <a class="league" href="season.html?id=5616"> <img class="img-s lazy" src="img/eventlogo/81448138f5f163ccdba4acc69819f280.jpg?imageView2/2/w/22"> <span class="text-s"> 大冠杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5514"> <img class="img-s lazy" src="img/eventlogo/8f468c873a32bb0619eaeb2050ba45d1.png?imageView2/2/w/22"> <span class="text-s"> 大洋女U20 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5535"> <img class="img-s lazy" src="img/eventlogo/09c6c3783b4a70054da74f2538ed47c6.png?imageView2/2/w/22"> <span class="text-s"> 大洋冠U20 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5543"> <img class="img-s lazy" src="img/eventlogo/28e209b61a52482a0ae1cb9f5959c792.png?imageView2/2/w/22"> <span class="text-s"> 奥大洋预 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5550"> <img class="img-s lazy" src="img/eventlogo/cup.jpg?imageView2/2/w/22"> <span class="text-s"> 大洋统杯 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5517"> <img class="img-s lazy" src="img/eventlogo/82b8a3434904411a9fdc43ca87cee70c.png?imageView2/2/w/22"> <span class="text-s"> 大洋女U17 </span> </a> </li>
+                <li> <a class="league" href="season.html?id=5657"> <img class="img-s lazy" src="img/eventlogo/3fe78a8acf5fda99de95303940a2420c.png?imageView2/2/w/22"> <span class="text-s"> 大洋冠U17 </span> </a> </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../base/js/zepto.min.js"></script>
+<script src="../base/js/frozen.js"></script>
+<script src="../base/js/lityodds.js"></script>
+<script src="js/m-common.js"></script>
+<script src="js/m-data.js"></script>
+<script src="js/m-data-search.js"></script>
+<!--m-data-search.js必须放在正文后面 才能正常执行搜寻-->
+
+</body>
+</html>

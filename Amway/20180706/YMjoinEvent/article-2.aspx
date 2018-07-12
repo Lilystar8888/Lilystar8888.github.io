@@ -37,20 +37,20 @@
                     <div class="line-it-button" data-lang="zh_Hant" data-type="share-c" data-url="<%:Url.ToFull("~/article-2.aspx") %>" style="display: none;"></div>
                 </div>
             </div>
-            <div class="kv-article"><img src="images/article/article-kv-pic0000002@2x.png" alt=""></div>
+            <div class="kv-article"><img src="images/article/article-kv-pic0000002.png" alt=""></div>
             <ul class="articlebox">
                 <li class="articlebox-item">
-                    <div class="articlebox-pic"><img src="images/article/articlebox-pic0000004@2x.png" alt="" class="articlebox-img"></div>
+                    <div class="articlebox-pic"><img src="images/article/articlebox-pic0000004.png" alt="" class="articlebox-img"></div>
                     <h3 class="h3-articlebox">第1招 守住防線 病原通通Out</span></h3>
                     <p>病原無所不在，守住入侵的第一道防線是關鍵！搭公車或捷運時，別忘了戴上口罩保護自己，隨身攜帶乾洗手備用：回家第一件事，大人小孩請用泡泡把手洗得乾乾淨淨：室內最好搭配採用醫療級HEPA濾網的空氣清淨機，把細菌病毒、PM2.5等快速濾除，讓病原通通含淚Say Goodbye！</p>
                 </li>
                 <li class="articlebox-item">
-                    <div class="articlebox-pic"><img src="images/article/articlebox-pic0000005@2x.png" alt="" class="articlebox-img"></div>
+                    <div class="articlebox-pic"><img src="images/article/articlebox-pic0000005.png" alt="" class="articlebox-img"></div>
                     <h3 class="h3-articlebox">第2招 均衡營養 多C多健康</h3>
                     <p>均衡飲食是身體健康的基礎，想要增強免疫力，蛋白質要吃足，因為它是免疫系統的主要原料，此外，也要多多攝取新鮮蔬果，其中蘊含的植物營養素具有超強抗氧化力，而維生素C則可提升白血球作戰能力，攝取充足，也能讓免疫力再升級！</p>
                 </li>
                 <li class="articlebox-item">
-                    <div class="articlebox-pic"><img src="images/article/articlebox-pic0000006@2x.png" alt="" class="articlebox-img"></div>
+                    <div class="articlebox-pic"><img src="images/article/articlebox-pic0000006.png" alt="" class="articlebox-img"></div>
                     <h3 class="h3-articlebox">第3招 追劇抒壓 大笑更健康</h3>
                     <p>從早忙到晚，好不容易孩子入睡了，很多媽咪的小確幸世上臉書尋求溫暖或追劇抒壓一下！適時放鬆是一定要的，若能真心大笑幾聲，也是提升免疫力的良藥，但別忘了熬夜追劇有損免疫系統。若能善用時間做做有氧運動或瑜珈，並保持好心情，都是有益健康的聰明妙方！</p>
                 </li>

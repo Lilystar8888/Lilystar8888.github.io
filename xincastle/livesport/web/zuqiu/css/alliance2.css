@@ -1,0 +1,145 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html,body{
+	width: 100%;
+	margin: 0;
+	padding:0;
+}
+div{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 100%;
+    height: 40px;
+    color: #fff;
+}
+
+[class^="b"], [class*=" b"] {
+	display: inline-flex;
+	width: 6px;
+	height: 40px;
+}
+
+[class^="a"], [class*=" a"] {
+	display: inline-flex;
+    width: calc(100% - 6px);
+	height: 40px;
+}
+
+.a1{background: url(al/000000.png) repeat-y}	.b1{background: #000000!important}
+.a2{background: url(al/00005F.png) repeat-y}	.b2{background: #00005F!important}
+.a3{background: url(al/0000A1.png) repeat-y}	.b3{background: #0000A1!important}
+.a4{background: url(al/004D40.png) repeat-y}	.b4{background: #004D40!important}
+.a5{background: url(al/006064.png) repeat-y}	.b5{background: #006064!important}
+.a6{background: url(al/0087FF.png) repeat-y}	.b6{background: #0087FF!important}
+.a7{background: url(al/0091EA.png) repeat-y}	.b7{background: #0091EA!important}
+.a8{background: url(al/00AF00.png) repeat-y}	.b8{background: #00AF00!important}
+.a9{background: url(al/00B8D4.png) repeat-y}	.b9{background: #00B8D4!important}
+.a10{background: url(al/00BFA5.png) repeat-y}	.b10{background: #00BFA5!important}
+.a11{background: url(al/00C853.png) repeat-y}	.b11{background: #00C853!important}
+.a12{background: url(al/00D7FF.png) repeat-y}	.b12{background: #00D7FF!important}
+.a13{background: url(al/01508A.png) repeat-y}	.b13{background: #01508A!important}
+.a14{background: url(al/04384A.png) repeat-y}	.b14{background: #04384A!important}
+.a15{background: url(al/066FA5.png) repeat-y}	.b15{background: #066FA5!important}
+.a16{background: url(al/0D47A1.png) repeat-y}	.b16{background: #0D47A1!important}
+.a17{background: url(al/0E2646.png) repeat-y}	.b17{background: #0E2646!important}
+.a18{background: url(al/194945.png) repeat-y}	.b18{background: #194945!important}
+.a19{background: url(al/1A237E.png) repeat-y}	.b19{background: #1A237E!important}
+.a20{background: url(al/1B5E20.png) repeat-y}	.b20{background: #1B5E20!important}
+.a21{background: url(al/1F6ED4.png) repeat-y}	.b21{background: #1F6ED4!important}
+.a22{background: url(al/225A53.png) repeat-y}	.b22{background: #225A53!important}
+.a23{background: url(al/263149.png) repeat-y}	.b23{background: #263149!important}
+.a24{background: url(al/263238.png) repeat-y}	.b24{background: #263238!important}
+.a25{background: url(al/2962FF.png) repeat-y}	.b25{background: #2962FF!important}
+.a26{background: url(al/2E7866.png) repeat-y}	.b26{background: #2E7866!important}
+.a27{background: url(al/311B92.png) repeat-y}	.b27{background: #311B92!important}
+.a28{background: url(al/33691E.png) repeat-y}	.b28{background: #33691E!important}
+.a29{background: url(al/342771.png) repeat-y}	.b29{background: #342771!important}
+.a30{background: url(al/38925E.png) repeat-y}	.b30{background: #38925E!important}
+.a31{background: url(al/3B0520.png) repeat-y}	.b31{background: #3B0520!important}
+.a32{background: url(al/3E2723.png) repeat-y}	.b32{background: #3E2723!important}
+.a33{background: url(al/3F51B5.png) repeat-y}	.b33{background: #3F51B5!important}
+.a34{background: url(al/445252.png) repeat-y}	.b34{background: #445252!important}
+.a35{background: url(al/455A64.png) repeat-y}	.b35{background: #455A64!important}
+.a36{background: url(al/486B8A.png) repeat-y}	.b36{background: #486B8A!important}
+.a37{background: url(al/4A148C.png) repeat-y}	.b37{background: #4A148C!important}
+.a38{background: url(al/4E0E2E.png) repeat-y}	.b38{background: #4E0E2E!important}
+.a39{background: url(al/4E4E56.png) repeat-y}	.b39{background: #4E4E56!important}
+.a40{background: url(al/584B3F.png) repeat-y}	.b40{background: #584B3F!important}
+.a41{background: url(al/587AA5.png) repeat-y}	.b41{background: #587AA5!important}
+.a42{background: url(al/5B6049.png) repeat-y}	.b42{background: #5B6049!important}
+.a43{background: url(al/613123.png) repeat-y}	.b43{background: #613123!important}
+.a44{background: url(al/61727A.png) repeat-y}	.b44{background: #61727A!important}
+.a45{background: url(al/6200EA.png) repeat-y}	.b45{background: #6200EA!important}
+.a46{background: url(al/64DD17.png) repeat-y}	.b46{background: #64DD17!important}
+.a47{background: url(al/66638B.png) repeat-y}	.b47{background: #66638B!important}
+.a48{background: url(al/688356.png) repeat-y}	.b48{background: #688356!important}
+.a49{background: url(al/6C3A27.png) repeat-y}	.b49{background: #6C3A27!important}
+.a50{background: url(al/7A5930.png) repeat-y}	.b50{background: #7A5930!important}
+.a51{background: url(al/827717.png) repeat-y}	.b51{background: #827717!important}
+.a52{background: url(al/852426.png) repeat-y}	.b52{background: #852426!important}
+.a53{background: url(al/8787FF.png) repeat-y}	.b53{background: #8787FF!important}
+.a54{background: url(al/88003F.png) repeat-y}	.b54{background: #88003F!important}
+.a55{background: url(al/8FC100.png) repeat-y}	.b55{background: #8FC100!important}
+.a56{background: url(al/90352B.png) repeat-y}	.b56{background: #90352B!important}
+.a57{background: url(al/936229.png) repeat-y}	.b57{background: #936229!important}
+.a58{background: url(al/A63F53.png) repeat-y}	.b58{background: #A63F53!important}
+.a59{background: url(al/AA00FF.png) repeat-y}	.b59{background: #AA00FF!important}
+.a60{background: url(al/B71C1C.png) repeat-y}	.b60{background: #B71C1C!important}
+.a61{background: url(al/C51162.png) repeat-y}	.b61{background: #C51162!important}
+.a62{background: url(al/C54A2A.png) repeat-y}	.b62{background: #C54A2A!important}
+.a63{background: url(al/D11C16.png) repeat-y}	.b63{background: #D11C16!important}
+.a64{background: url(al/D50000.png) repeat-y}	.b64{background: #D50000!important}
+.a65{background: url(al/D787D7.png) repeat-y}	.b65{background: #D787D7!important}
+.a66{background: url(al/DD2C00.png) repeat-y}	.b66{background: #DD2C00!important}
+.a67{background: url(al/F9A825.png) repeat-y}	.b67{background: #F9A825!important}
+.a68{background: url(al/FF5F87.png) repeat-y}	.b68{background: #FF5F87!important}
+.a69{background: url(al/FF6D00.png) repeat-y}	.b69{background: #FF6D00!important}
+.a70{background: url(al/FFAF5F.png) repeat-y}	.b70{background: #FFAF5F!important}

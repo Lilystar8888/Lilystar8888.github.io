@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <title>主播預約-星城體育</title>
+    <meta name="description" content="Static &amp; Dynamic Tables" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
+    <link href="css/datePicker.css" rel="stylesheet">
+</head>
+
+<body class="no-skin">
+    <div id="navbar" class="navbar navbar-default ace-save-state">
+        <div class="navbar-container ace-save-state" id="navbar-container">
+            <button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">
+                <span class="sr-only">Toggle sidebar</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-header pull-left">
+                <a href="index.html" class="navbar-brand">
+                        <small>
+                            <i class="sslogo"></i>
+                            XINCASTLE-SPORTS
+                        </small>
+                    </a>
+            </div>
+            <div class="navbar-buttons navbar-header pull-right" role="navigation">
+                <ul class="nav ace-nav">
+                    <li class="light-blue dropdown-modal">
+                        <a data-toggle="dropdown" href="#" class="dropdown-toggle"><img class="nav-user-photo" src="assets/images/avatars/user.jpg" alt="Jason's Photo" /><span class="user-info"><small>當前登入為</small>Jason</span><i class="ace-icon fa fa-caret-down"></i></a>
+                        <ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+                            <li><a href="profile.html"><i class="ace-icon fa fa-user"></i>關於我</a></li>
+                            <li class="divider"></li>
+                            <li><a href="login.html"><i class="ace-icon fa fa-power-off"></i>登出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-container -->
+    </div>
+    <div class="main-container ace-save-state" id="main-container">
+        <div id="sidebar" class="sidebar responsive ace-save-state">
+            <div class="sidebar-shortcuts" id="sidebar-shortcuts">
+                <div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+                    <button class="btn btn-success">
+                        <i class="ace-icon icon1"></i>
+                    </button>
+                    <button class="btn btn-info">
+                        <i class="ace-icon icon2"></i>
+                    </button>
+                    <button class="btn btn-warning">
+                        <i class="ace-icon icon3"></i>
+                    </button>
+                    <button class="btn btn-danger">
+                        <i class="ace-icon icon4"></i>
+                    </button>
+                </div>
+                <div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+                    <span class="btn btn-success"></span>
+                    <span class="btn btn-info"></span>
+                    <span class="btn btn-warning"></span>
+                    <span class="btn btn-danger"></span>
+                </div>
+            </div>
+            <!-- /.sidebar-shortcuts -->
+            <ul class="nav nav-list">
+                <li class="">
+                    <a href="index.html"><i class="menu-icon fa fa-tachometer"></i><span class="menu-text">後台首頁</span></a>
+                    <b class="arrow"></b>
+                </li>
+                <li class="">
+                    <a href="live.html"><i class="menu-icon fa fa-desktop"></i><span class="menu-text">視訊直播</span></a>
+                    <b class="arrow"></b>
+                </li>
+                <li class="">
+                    <a href="report.html"><i class="menu-icon fa fa-calculator"></i><span class="menu-text">帳務報表</span></a>
+                    <b class="arrow"></b>
+                </li>
+                <li class="">
+                    <a href="reissue.html"><i class="menu-icon fa fa-dollar"></i><span class="menu-text">星幣補發</span></a>
+                    <b class="arrow"></b>
+                </li>
+                <li class="active">
+                    <a href="schedule.html"><i class="menu-icon fa fa-calendar"></i><span class="menu-text">主播預約</span></a>
+                    <b class="arrow"></b>
+                </li>
+            </ul>
+            <!-- /.nav-list -->
+            <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+                <i id="sidebar-toggle-icon" class="ace-icon fa fa-angle-double-left ace-save-state" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="main-content-inner">
+                <div class="breadcrumbs ace-save-state" id="breadcrumbs">
+                    <ul class="breadcrumb">
+                        <li>
+                            <i class="ace-icon fa fa-home home-icon"></i>
+                            <a href="index.html">後台首頁</a>
+                        </li>
+                        <li class="active">
+                            <a href="schedule.html">主播預約</a>
+                        </li>
+                    </ul>
+                    <!-- /.breadcrumb -->
+                </div>
+                <div class="page-content topbar">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-xs-12">
+                            <!-- PAGE CONTENT BEGINS -->
+                            <div class="row">
+                                <div class="choose-date-wrap">
+                                    <div class="choose-date">
+                                        <div class="calender-btn">
+                                            <div class="calender-content"><span><i class="fa fa-calendar"></i>日历 <i class="fa fa-angle-down"></i></span></div>
+                                        </div>
+                                        <div class="date-wrap">
+                                            <ul>
+                                                <li class="active"><a href="schedule.html?date=2018/04/18"><b>04/18</b><span>今天</span></a></li>
+                                                <li><a href="schedule.html?date=2018/04/19"><b>04/19</b><span>星期四</span></a></li>
+                                                <li><a href="schedule.html?date=2018/04/20"><b>04/20</b><span>星期五</span></a></li>
+                                                <li><a href="schedule.html?date=2018/04/21"><b>04/21</b><span>星期六</span></a></li>
+                                                <li><a href="schedule.html?date=2018/04/22"><b>04/22</b><span>星期日</span></a></li>
+                                                <li><a href="schedule.html?date=2018/04/23"><b>04/23</b><span>星期一</span></a></li>
+                                                <li><a href="schedule.html?date=2018/04/24"><b>04/24</b><span>星期二</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- <a href="javascript:;" class="right-btn"><i class="icon-arrow_12x21_right"></i></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <!-- div.table-responsive -->
+                                <!-- div.dataTables_borderWrap -->
+                                <table id="zhubo" class="table table-striped table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>日期</th>
+                                            <th>時間</th>
+                                            <th>聯賽名稱</th>
+                                            <th>主隊</th>
+                                            <th>客隊</th>
+                                            <th>是否預約</th>
+                                            <th>預約人</th>
+                                            <th>頻道代號</th>
+                                            <th>動作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2018-04-18</td>
+                                            <td>18:30</td>
+                                            <td>西甲</td>
+                                            <td>曼徹斯特城</td>
+                                            <td>切爾西</td>
+                                            <td class="status">
+                                                <label class="pos-rel">
+                                                    <input type="checkbox" class="ace" checked="checked" />
+                                                    <span class="lbl"></span>
+                                                    <span class="label label-success arrowed">已預約</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="Cunny" placeholder="請輸入預約人">
+                                            </td>
+                                            <td>
+                                                <input type="text" value="1481923" placeholder="請輸入頻道代號">
+                                            </td>
+                                            <td class="actions">
+                                                <div class="action-buttons">
+                                                    <a class="blue" href="#"><i class="ace-icon fa fa-refresh bigger-140"></i></a>
+                                                    <a class="red" href="#"><i class="ace-icon fa fa-trash-o bigger-140"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-04-18</td>
+                                            <td>18:30</td>
+                                            <td>西甲</td>
+                                            <td>曼徹斯特城</td>
+                                            <td>切爾西</td>
+                                            <td class="status">
+                                                <label class="pos-rel">
+                                                    <input type="checkbox" class="ace" />
+                                                    <span class="lbl"></span>
+                                                    <span class="label label-pink arrowed">未預約</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="Cunny" placeholder="請輸入預約人">
+                                            </td>
+                                            <td>
+                                                <input type="text" value="1481923" placeholder="請輸入頻道代號">
+                                            </td>
+                                            <td class="actions">
+                                                <div class="action-buttons">
+                                                    <a class="blue" href="#"><i class="ace-icon fa fa-refresh bigger-140"></i></a>
+                                                    <a class="red" href="#"><i class="ace-icon fa fa-trash-o bigger-140"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-04-18</td>
+                                            <td>18:30</td>
+                                            <td>西甲</td>
+                                            <td>曼徹斯特城</td>
+                                            <td>切爾西</td>
+                                            <td class="status">
+                                                <label class="pos-rel">
+                                                    <input type="checkbox" class="ace" checked="checked" />
+                                                    <span class="lbl"></span>
+                                                    <span class="label label-success arrowed">已預約</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="Cunny" placeholder="請輸入預約人">
+                                            </td>
+                                            <td>
+                                                <input type="text" value="1481923" placeholder="請輸入頻道代號">
+                                            </td>
+                                            <td class="actions">
+                                                <div class="action-buttons">
+                                                    <a class="blue" href="#"><i class="ace-icon fa fa-refresh bigger-140"></i></a>
+                                                    <a class="red" href="#"><i class="ace-icon fa fa-trash-o bigger-140"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-04-18</td>
+                                            <td>18:30</td>
+                                            <td>西甲</td>
+                                            <td>曼徹斯特城</td>
+                                            <td>切爾西</td>
+                                            <td class="status">
+                                                <label class="pos-rel">
+                                                    <input type="checkbox" class="ace" />
+                                                    <span class="lbl"></span>
+                                                    <span class="label label-pink arrowed">未預約</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="Cunny" placeholder="請輸入預約人">
+                                            </td>
+                                            <td>
+                                                <input type="text" value="1481923" placeholder="請輸入頻道代號">
+                                            </td>
+                                            <td class="actions">
+                                                <div class="action-buttons">
+                                                    <a class="blue" href="#"><i class="ace-icon fa fa-refresh bigger-140"></i></a>
+                                                    <a class="red" href="#"><i class="ace-icon fa fa-trash-o bigger-140"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-04-18</td>
+                                            <td>18:30</td>
+                                            <td>西甲</td>
+                                            <td>曼徹斯特城</td>
+                                            <td>切爾西</td>
+                                            <td class="status">
+                                                <label class="pos-rel">
+                                                    <input type="checkbox" class="ace" checked="checked" />
+                                                    <span class="lbl"></span>
+                                                    <span class="label label-success arrowed">已預約</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="Cunny" placeholder="請輸入預約人">
+                                            </td>
+                                            <td>
+                                                <input type="text" value="1481923" placeholder="請輸入頻道代號">
+                                            </td>
+                                            <td class="actions">
+                                                <div class="action-buttons">
+                                                    <a class="blue" href="#"><i class="ace-icon fa fa-refresh bigger-140"></i></a>
+                                                    <a class="red" href="#"><i class="ace-icon fa fa-trash-o bigger-140"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-04-18</td>
+                                            <td>18:30</td>
+                                            <td>西甲</td>
+                                            <td>曼徹斯特城</td>
+                                            <td>切爾西</td>
+                                            <td class="status">
+                                                <label class="pos-rel">
+                                                    <input type="checkbox" class="ace" />
+                                                    <span class="lbl"></span>
+                                                    <span class="label label-pink arrowed">未預約</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="Cunny" placeholder="請輸入預約人">
+                                            </td>
+                                            <td>
+                                                <input type="text" value="1481923" placeholder="請輸入頻道代號">
+                                            </td>
+                                            <td class="actions">
+                                                <div class="action-buttons">
+                                                    <a class="blue" href="#"><i class="ace-icon fa fa-refresh bigger-140"></i></a>
+                                                    <a class="red" href="#"><i class="ace-icon fa fa-trash-o bigger-140"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-04-18</td>
+                                            <td>18:30</td>
+                                            <td>西甲</td>
+                                            <td>曼徹斯特城</td>
+                                            <td>切爾西</td>
+                                            <td class="status">
+                                                <label class="pos-rel">
+                                                    <input type="checkbox" class="ace" checked="checked" />
+                                                    <span class="lbl"></span>
+                                                    <span class="label label-success arrowed">已預約</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="Cunny" placeholder="請輸入預約人">
+                                            </td>
+                                            <td>
+                                                <input type="text" value="1481923" placeholder="請輸入頻道代號">
+                                            </td>
+                                            <td class="actions">
+                                                <div class="action-buttons">
+                                                    <a class="blue" href="#"><i class="ace-icon fa fa-refresh bigger-140"></i></a>
+                                                    <a class="red" href="#"><i class="ace-icon fa fa-trash-o bigger-140"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-04-18</td>
+                                            <td>18:30</td>
+                                            <td>西甲</td>
+                                            <td>曼徹斯特城</td>
+                                            <td>切爾西</td>
+                                            <td class="status">
+                                                <label class="pos-rel">
+                                                    <input type="checkbox" class="ace" />
+                                                    <span class="lbl"></span>
+                                                    <span class="label label-pink arrowed">未預約</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="Cunny" placeholder="請輸入預約人">
+                                            </td>
+                                            <td>
+                                                <input type="text" value="1481923" placeholder="請輸入頻道代號">
+                                            </td>
+                                            <td class="actions">
+                                                <div class="action-buttons">
+                                                    <a class="blue" href="#"><i class="ace-icon fa fa-refresh bigger-140"></i></a>
+                                                    <a class="red" href="#"><i class="ace-icon fa fa-trash-o bigger-140"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-04-18</td>
+                                            <td>18:30</td>
+                                            <td>西甲</td>
+                                            <td>曼徹斯特城</td>
+                                            <td>切爾西</td>
+                                            <td class="status">
+                                                <label class="pos-rel">
+                                                    <input type="checkbox" class="ace" checked="checked" />
+                                                    <span class="lbl"></span>
+                                                    <span class="label label-success arrowed">已預約</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="Cunny" placeholder="請輸入預約人">
+                                            </td>
+                                            <td>
+                                                <input type="text" value="1481923" placeholder="請輸入頻道代號">
+                                            </td>
+                                            <td class="actions">
+                                                <div class="action-buttons">
+                                                    <a class="blue" href="#"><i class="ace-icon fa fa-refresh bigger-140"></i></a>
+                                                    <a class="red" href="#"><i class="ace-icon fa fa-trash-o bigger-140"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-04-18</td>
+                                            <td>18:30</td>
+                                            <td>西甲</td>
+                                            <td>曼徹斯特城</td>
+                                            <td>切爾西</td>
+                                            <td class="status">
+                                                <label class="pos-rel">
+                                                    <input type="checkbox" class="ace" />
+                                                    <span class="lbl"></span>
+                                                    <span class="label label-pink arrowed">未預約</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="Cunny" placeholder="請輸入預約人">
+                                            </td>
+                                            <td>
+                                                <input type="text" value="1481923" placeholder="請輸入頻道代號">
+                                            </td>
+                                            <td class="actions">
+                                                <div class="action-buttons">
+                                                    <a class="blue" href="#"><i class="ace-icon fa fa-refresh bigger-140"></i></a>
+                                                    <a class="red" href="#"><i class="ace-icon fa fa-trash-o bigger-140"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-04-18</td>
+                                            <td>18:30</td>
+                                            <td>西甲</td>
+                                            <td>曼徹斯特城</td>
+                                            <td>切爾西</td>
+                                            <td class="status">
+                                                <label class="pos-rel">
+                                                    <input type="checkbox" class="ace" checked="checked" />
+                                                    <span class="lbl"></span>
+                                                    <span class="label label-success arrowed">已預約</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="Cunny" placeholder="請輸入預約人">
+                                            </td>
+                                            <td>
+                                                <input type="text" value="1481923" placeholder="請輸入頻道代號">
+                                            </td>
+                                            <td class="actions">
+                                                <div class="action-buttons">
+                                                    <a class="blue" href="#"><i class="ace-icon fa fa-refresh bigger-140"></i></a>
+                                                    <a class="red" href="#"><i class="ace-icon fa fa-trash-o bigger-140"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-04-18</td>
+                                            <td>18:30</td>
+                                            <td>西甲</td>
+                                            <td>曼徹斯特城</td>
+                                            <td>切爾西</td>
+                                            <td class="status">
+                                                <label class="pos-rel">
+                                                    <input type="checkbox" class="ace" />
+                                                    <span class="lbl"></span>
+                                                    <span class="label label-pink arrowed">未預約</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="Cunny" placeholder="請輸入預約人">
+                                            </td>
+                                            <td>
+                                                <input type="text" value="1481923" placeholder="請輸入頻道代號">
+                                            </td>
+                                            <td class="actions">
+                                                <div class="action-buttons">
+                                                    <a class="blue" href="#"><i class="ace-icon fa fa-refresh bigger-140"></i></a>
+                                                    <a class="red" href="#"><i class="ace-icon fa fa-trash-o bigger-140"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-04-18</td>
+                                            <td>18:30</td>
+                                            <td>西甲</td>
+                                            <td>曼徹斯特城</td>
+                                            <td>切爾西</td>
+                                            <td class="status">
+                                                <label class="pos-rel">
+                                                    <input type="checkbox" class="ace" checked="checked" />
+                                                    <span class="lbl"></span>
+                                                    <span class="label label-success arrowed">已預約</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="Cunny" placeholder="請輸入預約人">
+                                            </td>
+                                            <td>
+                                                <input type="text" value="1481923" placeholder="請輸入頻道代號">
+                                            </td>
+                                            <td class="actions">
+                                                <div class="action-buttons">
+                                                    <a class="blue" href="#"><i class="ace-icon fa fa-refresh bigger-140"></i></a>
+                                                    <a class="red" href="#"><i class="ace-icon fa fa-trash-o bigger-140"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-04-18</td>
+                                            <td>18:30</td>
+                                            <td>西甲</td>
+                                            <td>曼徹斯特城</td>
+                                            <td>切爾西</td>
+                                            <td class="status">
+                                                <label class="pos-rel">
+                                                    <input type="checkbox" class="ace" />
+                                                    <span class="lbl"></span>
+                                                    <span class="label label-pink arrowed">未預約</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="Cunny" placeholder="請輸入預約人">
+                                            </td>
+                                            <td>
+                                                <input type="text" value="1481923" placeholder="請輸入頻道代號">
+                                            </td>
+                                            <td class="actions">
+                                                <div class="action-buttons">
+                                                    <a class="blue" href="#"><i class="ace-icon fa fa-refresh bigger-140"></i></a>
+                                                    <a class="red" href="#"><i class="ace-icon fa fa-trash-o bigger-140"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-04-18</td>
+                                            <td>18:30</td>
+                                            <td>西甲</td>
+                                            <td>曼徹斯特城</td>
+                                            <td>切爾西</td>
+                                            <td class="status">
+                                                <label class="pos-rel">
+                                                    <input type="checkbox" class="ace" checked="checked" />
+                                                    <span class="lbl"></span>
+                                                    <span class="label label-success arrowed">已預約</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="Cunny" placeholder="請輸入預約人">
+                                            </td>
+                                            <td>
+                                                <input type="text" value="1481923" placeholder="請輸入頻道代號">
+                                            </td>
+                                            <td class="actions">
+                                                <div class="action-buttons">
+                                                    <a class="blue" href="#"><i class="ace-icon fa fa-refresh bigger-140"></i></a>
+                                                    <a class="red" href="#"><i class="ace-icon fa fa-trash-o bigger-140"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-04-18</td>
+                                            <td>18:30</td>
+                                            <td>西甲</td>
+                                            <td>曼徹斯特城</td>
+                                            <td>切爾西</td>
+                                            <td class="status">
+                                                <label class="pos-rel">
+                                                    <input type="checkbox" class="ace" />
+                                                    <span class="lbl"></span>
+                                                    <span class="label label-pink arrowed">未預約</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="Cunny" placeholder="請輸入預約人">
+                                            </td>
+                                            <td>
+                                                <input type="text" value="1481923" placeholder="請輸入頻道代號">
+                                            </td>
+                                            <td class="actions">
+                                                <div class="action-buttons">
+                                                    <a class="blue" href="#"><i class="ace-icon fa fa-refresh bigger-140"></i></a>
+                                                    <a class="red" href="#"><i class="ace-icon fa fa-trash-o bigger-140"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-04-18</td>
+                                            <td>18:30</td>
+                                            <td>西甲</td>
+                                            <td>曼徹斯特城</td>
+                                            <td>切爾西</td>
+                                            <td class="status">
+                                                <label class="pos-rel">
+                                                    <input type="checkbox" class="ace" checked="checked" />
+                                                    <span class="lbl"></span>
+                                                    <span class="label label-success arrowed">已預約</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="Cunny" placeholder="請輸入預約人">
+                                            </td>
+                                            <td>
+                                                <input type="text" value="1481923" placeholder="請輸入頻道代號">
+                                            </td>
+                                            <td class="actions">
+                                                <div class="action-buttons">
+                                                    <a class="blue" href="#"><i class="ace-icon fa fa-refresh bigger-140"></i></a>
+                                                    <a class="red" href="#"><i class="ace-icon fa fa-trash-o bigger-140"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-04-18</td>
+                                            <td>18:30</td>
+                                            <td>西甲</td>
+                                            <td>曼徹斯特城</td>
+                                            <td>切爾西</td>
+                                            <td class="status">
+                                                <label class="pos-rel">
+                                                    <input type="checkbox" class="ace" />
+                                                    <span class="lbl"></span>
+                                                    <span class="label label-pink arrowed">未預約</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="Cunny" placeholder="請輸入預約人">
+                                            </td>
+                                            <td>
+                                                <input type="text" value="1481923" placeholder="請輸入頻道代號">
+                                            </td>
+                                            <td class="actions">
+                                                <div class="action-buttons">
+                                                    <a class="blue" href="#"><i class="ace-icon fa fa-refresh bigger-140"></i></a>
+                                                    <a class="red" href="#"><i class="ace-icon fa fa-trash-o bigger-140"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-04-18</td>
+                                            <td>18:30</td>
+                                            <td>西甲</td>
+                                            <td>曼徹斯特城</td>
+                                            <td>切爾西</td>
+                                            <td class="status">
+                                                <label class="pos-rel">
+                                                    <input type="checkbox" class="ace" checked="checked" />
+                                                    <span class="lbl"></span>
+                                                    <span class="label label-success arrowed">已預約</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="Cunny" placeholder="請輸入預約人">
+                                            </td>
+                                            <td>
+                                                <input type="text" value="1481923" placeholder="請輸入頻道代號">
+                                            </td>
+                                            <td class="actions">
+                                                <div class="action-buttons">
+                                                    <a class="blue" href="#"><i class="ace-icon fa fa-refresh bigger-140"></i></a>
+                                                    <a class="red" href="#"><i class="ace-icon fa fa-trash-o bigger-140"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-04-18</td>
+                                            <td>18:30</td>
+                                            <td>西甲</td>
+                                            <td>曼徹斯特城</td>
+                                            <td>切爾西</td>
+                                            <td class="status">
+                                                <label class="pos-rel">
+                                                    <input type="checkbox" class="ace" />
+                                                    <span class="lbl"></span>
+                                                    <span class="label label-pink arrowed">未預約</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="Cunny" placeholder="請輸入預約人">
+                                            </td>
+                                            <td>
+                                                <input type="text" value="1481923" placeholder="請輸入頻道代號">
+                                            </td>
+                                            <td class="actions">
+                                                <div class="action-buttons">
+                                                    <a class="blue" href="#"><i class="ace-icon fa fa-refresh bigger-140"></i></a>
+                                                    <a class="red" href="#"><i class="ace-icon fa fa-trash-o bigger-140"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-04-18</td>
+                                            <td>18:30</td>
+                                            <td>西甲</td>
+                                            <td>曼徹斯特城</td>
+                                            <td>切爾西</td>
+                                            <td class="status">
+                                                <label class="pos-rel">
+                                                    <input type="checkbox" class="ace" checked="checked" />
+                                                    <span class="lbl"></span>
+                                                    <span class="label label-success arrowed">已預約</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="Cunny" placeholder="請輸入預約人">
+                                            </td>
+                                            <td>
+                                                <input type="text" value="1481923" placeholder="請輸入頻道代號">
+                                            </td>
+                                            <td class="actions">
+                                                <div class="action-buttons">
+                                                    <a class="blue" href="#"><i class="ace-icon fa fa-refresh bigger-140"></i></a>
+                                                    <a class="red" href="#"><i class="ace-icon fa fa-trash-o bigger-140"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-04-18</td>
+                                            <td>18:30</td>
+                                            <td>西甲</td>
+                                            <td>曼徹斯特城</td>
+                                            <td>切爾西</td>
+                                            <td class="status">
+                                                <label class="pos-rel">
+                                                    <input type="checkbox" class="ace" />
+                                                    <span class="lbl"></span>
+                                                    <span class="label label-pink arrowed">未預約</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="Cunny" placeholder="請輸入預約人">
+                                            </td>
+                                            <td>
+                                                <input type="text" value="1481923" placeholder="請輸入頻道代號">
+                                            </td>
+                                            <td class="actions">
+                                                <div class="action-buttons">
+                                                    <a class="blue" href="#"><i class="ace-icon fa fa-refresh bigger-140"></i></a>
+                                                    <a class="red" href="#"><i class="ace-icon fa fa-trash-o bigger-140"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-04-18</td>
+                                            <td>18:30</td>
+                                            <td>西甲</td>
+                                            <td>曼徹斯特城</td>
+                                            <td>切爾西</td>
+                                            <td class="status">
+                                                <label class="pos-rel">
+                                                    <input type="checkbox" class="ace" checked="checked" />
+                                                    <span class="lbl"></span>
+                                                    <span class="label label-success arrowed">已預約</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="Cunny" placeholder="請輸入預約人">
+                                            </td>
+                                            <td>
+                                                <input type="text" value="1481923" placeholder="請輸入頻道代號">
+                                            </td>
+                                            <td class="actions">
+                                                <div class="action-buttons">
+                                                    <a class="blue" href="#"><i class="ace-icon fa fa-refresh bigger-140"></i></a>
+                                                    <a class="red" href="#"><i class="ace-icon fa fa-trash-o bigger-140"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-04-18</td>
+                                            <td>18:30</td>
+                                            <td>西甲</td>
+                                            <td>曼徹斯特城</td>
+                                            <td>切爾西</td>
+                                            <td class="status">
+                                                <label class="pos-rel">
+                                                    <input type="checkbox" class="ace" />
+                                                    <span class="lbl"></span>
+                                                    <span class="label label-pink arrowed">未預約</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="Cunny" placeholder="請輸入預約人">
+                                            </td>
+                                            <td>
+                                                <input type="text" value="1481923" placeholder="請輸入頻道代號">
+                                            </td>
+                                            <td class="actions">
+                                                <div class="action-buttons">
+                                                    <a class="blue" href="#"><i class="ace-icon fa fa-refresh bigger-140"></i></a>
+                                                    <a class="red" href="#"><i class="ace-icon fa fa-trash-o bigger-140"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-04-18</td>
+                                            <td>18:30</td>
+                                            <td>西甲</td>
+                                            <td>曼徹斯特城</td>
+                                            <td>切爾西</td>
+                                            <td class="status">
+                                                <label class="pos-rel">
+                                                    <input type="checkbox" class="ace" checked="checked" />
+                                                    <span class="lbl"></span>
+                                                    <span class="label label-success arrowed">已預約</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="Cunny" placeholder="請輸入預約人">
+                                            </td>
+                                            <td>
+                                                <input type="text" value="1481923" placeholder="請輸入頻道代號">
+                                            </td>
+                                            <td class="actions">
+                                                <div class="action-buttons">
+                                                    <a class="blue" href="#"><i class="ace-icon fa fa-refresh bigger-140"></i></a>
+                                                    <a class="red" href="#"><i class="ace-icon fa fa-trash-o bigger-140"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-04-18</td>
+                                            <td>18:30</td>
+                                            <td>西甲</td>
+                                            <td>曼徹斯特城</td>
+                                            <td>切爾西</td>
+                                            <td class="status">
+                                                <label class="pos-rel">
+                                                    <input type="checkbox" class="ace" />
+                                                    <span class="lbl"></span>
+                                                    <span class="label label-pink arrowed">未預約</span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="Cunny" placeholder="請輸入預約人">
+                                            </td>
+                                            <td>
+                                                <input type="text" value="1481923" placeholder="請輸入頻道代號">
+                                            </td>
+                                            <td class="actions">
+                                                <div class="action-buttons">
+                                                    <a class="blue" href="#"><i class="ace-icon fa fa-refresh bigger-140"></i></a>
+                                                    <a class="red" href="#"><i class="ace-icon fa fa-trash-o bigger-140"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- PAGE CONTENT ENDS -->
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.page-content -->
+            </div>
+        </div>
+        <!-- /.main-content -->
+        <div class="footer">
+            <div class="footer-inner">
+                <div class="footer-content">
+                    <span class="bigger-120">
+                            <span class="blue bolder">星城體育</span> 版權所有 &copy;
+                    </span>
+                </div>
+            </div>
+        </div>
+        <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+                <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+            </a>
+    </div>
+    <!-- /.main-container -->
+    <!-- basic scripts -->
+    <!--[if !IE]> -->
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <!-- <![endif]-->
+    <!--[if IE]>
+    <script src="assets/js/jquery-1.11.3.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+    if ('ontouchstart' in document.documentElement) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
+    </script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/ace.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/datePicker.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        //var c = new Date;
+        //var e = new Date;
+        //e.setDate(c.getDate() + 60);
+        //c = [{ from: c, to: e }];
+        $(".calender-btn").glDatePicker({
+            format: "yyyy-mm-dd",
+            //selectableDateRange: c,
+            onClick: function(a, b, d, c) {
+                a = d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();
+                location.href = "schedule.html?date=" + a
+            },
+            onShow: function(a) {
+                $(".calender-btn").addClass("active");
+                a.show()
+            },
+            onHide: function(a) {
+                a.hide();
+                $(".calender-btn").removeClass("active")
+            }
+        });
+    });
+    </script>
+</body>
+
+</html>

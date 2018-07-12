@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" data-livestyle-extension="available">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>篮球赛程|NBA赛程-星城体育篮球赛程中心</title>
+    <meta name="keywords" content="篮球比分,篮球比分直播,篮球即时比分">
+    <meta name="description" content="看篮球比分直播上星城篮球比分，为您提供全网最全最快篮球比分直播，同时为您提供最详细的篮球比分赛程、篮球完场比分、篮球即时比分等数据服务，篮球比分直播涵盖世界范围联赛，例如NBA、CBA、欧洲篮球比分的精准权威比分直播服务">
+    <link rel="stylesheet" href="../base/css/common.css">
+    <link rel="stylesheet" type="text/css" href="../base/css/mobiscroll.min.css">
+    <link rel="stylesheet" href="css/lanqiubifen.css">
+    <script type="text/javascript" src="../base/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../base/js/mobiscroll.min.js"></script>
+    <script type="text/javascript" src="../base/js/common.js"></script>
+    <script type="text/javascript" src="js/schedule.js"></script>
+</head>
+
+<body class="page">
+    
+    <!--HEADER-->
+    <div class="header-nav-wrap">
+        <div class="header-hd">
+            <i class="icon-back" onclick="history.back()"></i>
+            <h1>完场</h1>
+        </div>
+        <!--.header-hd-->
+        <div class="hd-right">
+            <a class="shaixuan">筛选</a>
+        </div>
+    </div>
+    <!--.header-nav-wrap-->
+    
+    <!--筛选面板-->
+    <div class="nav-filxe">
+        <div class="list">
+            <a class="btn col-5 active" href="saicheng.html?date=20180329"> 今天 </a>
+            <a class="btn col-5 " href="saicheng.html?date=20180330"> <span>3-30<br>星期五</span> </a>
+            <a class="btn col-5 " href="saicheng.html?date=20180331"> <span>3-31<br>星期六</span> </a>
+            <a class="btn col-5 " href="saicheng.html?date=20180401"> <span>4-1<br>星期日</span> </a>
+            <a class="btn col-5 " href="saicheng.html?date=20180402"> <span>4-2<br>星期一</span> </a>
+            <a class="btn col-5 " href="saicheng.html?date=20180403"> <span>4-3<br>星期二</span> </a>
+            <a class="btn col-5 " href="saicheng.html?date=20180404"> <span>4-4<br>星期三</span> </a>
+        </div>
+        <div class="float-right focus-date">
+            <label class="icon-nav_date">
+                <input class="date" type="text" value="2018-03-29">
+            </label>
+        </div>
+    </div>
+    <!--.nav-filxe-->
+    
+    <!--筛选-->
+    <div id="filterDiv" class="nav-menu">
+        <div class="mask"></div>
+        <div id="filterBar" class="bottom">
+            <div class="nav-header">
+                <span class="title">赛事选择</span><i class="icon-close"></i>
+            </div>
+            <div id="filterBox" class="nav-content">
+                <div class="nav-panel active">
+                    <span class="filterBtn2 on"> WNBA</span>
+                    <span class="filterBtn2 on"> NBL</span>
+                    <span class="filterBtn2 on"> 非锦赛</span>
+                    <span class="filterBtn2 on"> 菲州长杯</span>
+                    <span class="filterBtn2 on"> 爱超</span>
+                    <span class="filterBtn2 on"> 欧国杯</span>
+                    <span class="filterBtn2 on"> 友谊赛</span>
+                    <span class="filterBtn2 on"> 俄罗斯杯 女子</span>
+                    <span class="filterBtn2 on"> 尼加拉瓜LNB</span>
+                    <span class="filterBtn2 on"> 萨尔瓦多Liga Mayor</span>
+                    <span class="filterBtn2 on"> 巴西FPB</span>
+                    <span class="filterBtn2 on"> 俱乐部友谊赛 女子</span>
+                    <span class="filterBtn2 on"> 俱乐部友谊赛</span>
+                    <span class="filterBtn2 on"> 巴西FPB 19岁以下 女子</span>
+                    <span class="filterBtn2 on"> 巴林超级联赛</span>
+                    <span class="filterBtn2 on"> 珍轩冠军杯</span>
+                    <span class="filterBtn2 on"> 越南VBA</span>
+                    <span class="filterBtn2 on"> 希腊杯</span>
+                    <span class="filterBtn2 on"> 巴西Paulista 女子</span>
+                    <span class="filterBtn2 on"> 比利时Div 1 女子</span>
+                    <span class="filterBtn2 on"> 菲律宾UCBL</span>
+                </div>
+                <div class="row m-t-10">
+                    <div class="clearfix bd-bottom m-l-10 m-r-10"></div>
+                </div>
+                <div class="row m-t-10"><span class="m-l-10 m-r-10 f-s-14 color-white"><a id="checkAll">全选</a> <span>|</span> <a id="checkReverse">反选</a></span> <span class="m-1-5 f-s-12 color-gray">隐藏了<span id="hide-statistics" class="color-red2">0</span>场</span>
+                </div>
+                <div class="row m-t-10 text-a-c"><b id="checkit" class="btn bgcolor-red color-white w-60 line-h-25">确定</b></div>
+            </div>
+            <!--navcontent-->
+        </div>
+        <!--bottom-->
+    </div>
+    <!--#filterDiv .nav-menu-->
+    
+    <!--正文-->
+    <div id="list" class="list-type-one">
+        <div class="list-item finished">
+            <div class="find-table">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td rowspan="4" class="lives bg1"></td>
+                        </tr>
+                        <tr class="t-head">
+                            <td><span class="lyttl"><span class="o-hidden">友谊赛</span></span> <span class="time">20:00</span></td>
+                            <td colspan="6"><span class="gamestate">已完赛</span> <span class="gametime"><span>53</span></span>
+                            </td>
+                            <td class="right"><i class="icon-popular"></i><span>88</span></td>
+                        </tr>
+                        <tr class="tr-one">
+                            <td class="w-160"><i class="icon_follow"></i><span class="name">珀里斯特拉</span></td>
+                            <td class="w-40"><span class="let-points">  6.5  </span></td>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr class="race-node">
+                                            <td> 25 </td>
+                                            <td> 16 </td>
+                                            <td> 19 </td>
+                                            <td> 17 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="w-30"><span class="full-court"> 77 </span></td>
+                            <td class="w-35" rowspan="4" align="center"> <a href="detail.html"><i class="icon-live-animation"></i></a> </td>
+                        </tr>
+                        <tr class="tr-two">
+                            <td class="w-145"><span class="name">比雷埃夫斯</span></td>
+                            <td class="w-40"><span class="let-points">  &nbsp;  </span></td>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr class="race-node">
+                                            <td> 14 </td>
+                                            <td> 20 </td>
+                                            <td> 19 </td>
+                                            <td> 12 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="w-30"><span class="full-court"> 65 </span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="list-item finished">
+            <div class="find-table">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td rowspan="4" class="lives bg1"></td>
+                        </tr>
+                        <tr class="t-head">
+                            <td><span class="lyttl"><span class="o-hidden">友谊赛</span></span> <span class="time">20:00</span></td>
+                            <td colspan="6"><span class="gamestate">已完赛</span> <span class="gametime"><span>53</span></span>
+                            </td>
+                            <td class="right"><i class="icon-popular"></i><span>88</span></td>
+                        </tr>
+                        <tr class="tr-one">
+                            <td class="w-160"><i class="icon_follow"></i><span class="name">珀里斯特拉</span></td>
+                            <td class="w-40"><span class="let-points">  6.5  </span></td>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr class="race-node">
+                                            <td> 25 </td>
+                                            <td> 16 </td>
+                                            <td> 19 </td>
+                                            <td> 17 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="w-30"><span class="full-court"> 77 </span></td>
+                            <td class="w-35" rowspan="4" align="center"> <a href="detail.html"><i class="icon-live-animation"></i></a> </td>
+                        </tr>
+                        <tr class="tr-two">
+                            <td class="w-145"><span class="name">比雷埃夫斯</span></td>
+                            <td class="w-40"><span class="let-points">  &nbsp;  </span></td>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr class="race-node">
+                                            <td> 14 </td>
+                                            <td> 20 </td>
+                                            <td> 19 </td>
+                                            <td> 12 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="w-30"><span class="full-court"> 65 </span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="list-item finished">
+            <div class="find-table">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td rowspan="4" class="lives bg1"></td>
+                        </tr>
+                        <tr class="t-head">
+                            <td><span class="lyttl"><span class="o-hidden">友谊赛</span></span> <span class="time">20:00</span></td>
+                            <td colspan="6"><span class="gamestate">已完赛</span> <span class="gametime"><span>53</span></span>
+                            </td>
+                            <td class="right"><i class="icon-popular"></i><span>88</span></td>
+                        </tr>
+                        <tr class="tr-one">
+                            <td class="w-160"><i class="icon_follow"></i><span class="name">珀里斯特拉</span></td>
+                            <td class="w-40"><span class="let-points">  6.5  </span></td>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr class="race-node">
+                                            <td> 25 </td>
+                                            <td> 16 </td>
+                                            <td> 19 </td>
+                                            <td> 17 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="w-30"><span class="full-court"> 77 </span></td>
+                            <td class="w-35" rowspan="4" align="center"> <a href="detail.html"><i class="icon-live-animation"></i></a> </td>
+                        </tr>
+                        <tr class="tr-two">
+                            <td class="w-145"><span class="name">比雷埃夫斯</span></td>
+                            <td class="w-40"><span class="let-points">  &nbsp;  </span></td>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr class="race-node">
+                                            <td> 14 </td>
+                                            <td> 20 </td>
+                                            <td> 19 </td>
+                                            <td> 12 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="w-30"><span class="full-court"> 65 </span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="list-item finished">
+            <div class="find-table">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td rowspan="4" class="lives bg1"></td>
+                        </tr>
+                        <tr class="t-head">
+                            <td><span class="lyttl"><span class="o-hidden">友谊赛</span></span> <span class="time">20:00</span></td>
+                            <td colspan="6"><span class="gamestate">已完赛</span> <span class="gametime"><span>53</span></span>
+                            </td>
+                            <td class="right"><i class="icon-popular"></i><span>88</span></td>
+                        </tr>
+                        <tr class="tr-one">
+                            <td class="w-160"><i class="icon_follow"></i><span class="name">珀里斯特拉</span></td>
+                            <td class="w-40"><span class="let-points">  6.5  </span></td>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr class="race-node">
+                                            <td> 25 </td>
+                                            <td> 16 </td>
+                                            <td> 19 </td>
+                                            <td> 17 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="w-30"><span class="full-court"> 77 </span></td>
+                            <td class="w-35" rowspan="4" align="center"> <a href="detail.html"><i class="icon-live-animation"></i></a> </td>
+                        </tr>
+                        <tr class="tr-two">
+                            <td class="w-145"><span class="name">比雷埃夫斯</span></td>
+                            <td class="w-40"><span class="let-points">  &nbsp;  </span></td>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr class="race-node">
+                                            <td> 14 </td>
+                                            <td> 20 </td>
+                                            <td> 19 </td>
+                                            <td> 12 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="w-30"><span class="full-court"> 65 </span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="list-item finished">
+            <div class="find-table">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td rowspan="4" class="lives bg1"></td>
+                        </tr>
+                        <tr class="t-head">
+                            <td><span class="lyttl"><span class="o-hidden">友谊赛</span></span> <span class="time">20:00</span></td>
+                            <td colspan="6"><span class="gamestate">已完赛</span> <span class="gametime"><span>53</span></span>
+                            </td>
+                            <td class="right"><i class="icon-popular"></i><span>88</span></td>
+                        </tr>
+                        <tr class="tr-one">
+                            <td class="w-160"><i class="icon_follow"></i><span class="name">珀里斯特拉</span></td>
+                            <td class="w-40"><span class="let-points">  6.5  </span></td>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr class="race-node">
+                                            <td> 25 </td>
+                                            <td> 16 </td>
+                                            <td> 19 </td>
+                                            <td> 17 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="w-30"><span class="full-court"> 77 </span></td>
+                            <td class="w-35" rowspan="4" align="center"> <a href="detail.html"><i class="icon-live-animation"></i></a> </td>
+                        </tr>
+                        <tr class="tr-two">
+                            <td class="w-145"><span class="name">比雷埃夫斯</span></td>
+                            <td class="w-40"><span class="let-points">  &nbsp;  </span></td>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr class="race-node">
+                                            <td> 14 </td>
+                                            <td> 20 </td>
+                                            <td> 19 </td>
+                                            <td> 12 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="w-30"><span class="full-court"> 65 </span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="list-item finished">
+            <div class="find-table">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td rowspan="4" class="lives bg1"></td>
+                        </tr>
+                        <tr class="t-head">
+                            <td><span class="lyttl"><span class="o-hidden">友谊赛</span></span> <span class="time">20:00</span></td>
+                            <td colspan="6"><span class="gamestate">已完赛</span> <span class="gametime"><span>53</span></span>
+                            </td>
+                            <td class="right"><i class="icon-popular"></i><span>88</span></td>
+                        </tr>
+                        <tr class="tr-one">
+                            <td class="w-160"><i class="icon_follow"></i><span class="name">珀里斯特拉</span></td>
+                            <td class="w-40"><span class="let-points">  6.5  </span></td>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr class="race-node">
+                                            <td> 25 </td>
+                                            <td> 16 </td>
+                                            <td> 19 </td>
+                                            <td> 17 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="w-30"><span class="full-court"> 77 </span></td>
+                            <td class="w-35" rowspan="4" align="center"> <a href="detail.html"><i class="icon-live-animation"></i></a> </td>
+                        </tr>
+                        <tr class="tr-two">
+                            <td class="w-145"><span class="name">比雷埃夫斯</span></td>
+                            <td class="w-40"><span class="let-points">  &nbsp;  </span></td>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr class="race-node">
+                                            <td> 14 </td>
+                                            <td> 20 </td>
+                                            <td> 19 </td>
+                                            <td> 12 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="w-30"><span class="full-court"> 65 </span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="list-item finished">
+            <div class="find-table">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td rowspan="4" class="lives bg1"></td>
+                        </tr>
+                        <tr class="t-head">
+                            <td><span class="lyttl"><span class="o-hidden">友谊赛</span></span> <span class="time">20:00</span></td>
+                            <td colspan="6"><span class="gamestate">已完赛</span> <span class="gametime"><span>53</span></span>
+                            </td>
+                            <td class="right"><i class="icon-popular"></i><span>88</span></td>
+                        </tr>
+                        <tr class="tr-one">
+                            <td class="w-160"><i class="icon_follow"></i><span class="name">珀里斯特拉</span></td>
+                            <td class="w-40"><span class="let-points">  6.5  </span></td>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr class="race-node">
+                                            <td> 25 </td>
+                                            <td> 16 </td>
+                                            <td> 19 </td>
+                                            <td> 17 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="w-30"><span class="full-court"> 77 </span></td>
+                            <td class="w-35" rowspan="4" align="center"> <a href="detail.html"><i class="icon-live-animation"></i></a> </td>
+                        </tr>
+                        <tr class="tr-two">
+                            <td class="w-145"><span class="name">比雷埃夫斯</span></td>
+                            <td class="w-40"><span class="let-points">  &nbsp;  </span></td>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr class="race-node">
+                                            <td> 14 </td>
+                                            <td> 20 </td>
+                                            <td> 19 </td>
+                                            <td> 12 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="w-30"><span class="full-court"> 65 </span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="list-item finished">
+            <div class="find-table">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td rowspan="4" class="lives bg1"></td>
+                        </tr>
+                        <tr class="t-head">
+                            <td><span class="lyttl"><span class="o-hidden">友谊赛</span></span> <span class="time">20:00</span></td>
+                            <td colspan="6"><span class="gamestate">已完赛</span> <span class="gametime"><span>53</span></span>
+                            </td>
+                            <td class="right"><i class="icon-popular"></i><span>88</span></td>
+                        </tr>
+                        <tr class="tr-one">
+                            <td class="w-160"><i class="icon_follow"></i><span class="name">珀里斯特拉</span></td>
+                            <td class="w-40"><span class="let-points">  6.5  </span></td>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr class="race-node">
+                                            <td> 25 </td>
+                                            <td> 16 </td>
+                                            <td> 19 </td>
+                                            <td> 17 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="w-30"><span class="full-court"> 77 </span></td>
+                            <td class="w-35" rowspan="4" align="center"> <a href="detail.html"><i class="icon-live-animation"></i></a> </td>
+                        </tr>
+                        <tr class="tr-two">
+                            <td class="w-145"><span class="name">比雷埃夫斯</span></td>
+                            <td class="w-40"><span class="let-points">  &nbsp;  </span></td>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr class="race-node">
+                                            <td> 14 </td>
+                                            <td> 20 </td>
+                                            <td> 19 </td>
+                                            <td> 12 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="w-30"><span class="full-court"> 65 </span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="list-item finished">
+            <div class="find-table">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td rowspan="4" class="lives bg1"></td>
+                        </tr>
+                        <tr class="t-head">
+                            <td><span class="lyttl"><span class="o-hidden">友谊赛</span></span> <span class="time">20:00</span></td>
+                            <td colspan="6"><span class="gamestate">已完赛</span> <span class="gametime"><span>53</span></span>
+                            </td>
+                            <td class="right"><i class="icon-popular"></i><span>88</span></td>
+                        </tr>
+                        <tr class="tr-one">
+                            <td class="w-160"><i class="icon_follow"></i><span class="name">珀里斯特拉</span></td>
+                            <td class="w-40"><span class="let-points">  6.5  </span></td>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr class="race-node">
+                                            <td> 25 </td>
+                                            <td> 16 </td>
+                                            <td> 19 </td>
+                                            <td> 17 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="w-30"><span class="full-court"> 77 </span></td>
+                            <td class="w-35" rowspan="4" align="center"> <a href="detail.html"><i class="icon-live-animation"></i></a> </td>
+                        </tr>
+                        <tr class="tr-two">
+                            <td class="w-145"><span class="name">比雷埃夫斯</span></td>
+                            <td class="w-40"><span class="let-points">  &nbsp;  </span></td>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr class="race-node">
+                                            <td> 14 </td>
+                                            <td> 20 </td>
+                                            <td> 19 </td>
+                                            <td> 12 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="w-30"><span class="full-court"> 65 </span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="list-item finished">
+            <div class="find-table">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td rowspan="4" class="lives bg1"></td>
+                        </tr>
+                        <tr class="t-head">
+                            <td><span class="lyttl"><span class="o-hidden">友谊赛</span></span> <span class="time">20:00</span></td>
+                            <td colspan="6"><span class="gamestate">已完赛</span> <span class="gametime"><span>53</span></span>
+                            </td>
+                            <td class="right"><i class="icon-popular"></i><span>88</span></td>
+                        </tr>
+                        <tr class="tr-one">
+                            <td class="w-160"><i class="icon_follow"></i><span class="name">珀里斯特拉</span></td>
+                            <td class="w-40"><span class="let-points">  6.5  </span></td>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr class="race-node">
+                                            <td> 25 </td>
+                                            <td> 16 </td>
+                                            <td> 19 </td>
+                                            <td> 17 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="w-30"><span class="full-court"> 77 </span></td>
+                            <td class="w-35" rowspan="4" align="center"> <a href="detail.html"><i class="icon-live-animation"></i></a> </td>
+                        </tr>
+                        <tr class="tr-two">
+                            <td class="w-145"><span class="name">比雷埃夫斯</span></td>
+                            <td class="w-40"><span class="let-points">  &nbsp;  </span></td>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr class="race-node">
+                                            <td> 14 </td>
+                                            <td> 20 </td>
+                                            <td> 19 </td>
+                                            <td> 12 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="w-30"><span class="full-court"> 65 </span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--#list .list-type-one-->
+
+    <!--无资料-->
+    <div class="empty-panel hide">
+        <div class="empty"><i class="d-one"></i> <i class="d-tow"></i>
+            <div class="ani-e"><i class="h-one"></i> <i class="h-tow"></i> <i class="phone"><i class="font">Empty</i></i>
+            </div>
+            <i class="radius"></i></div>
+        <div class="tips"></div>
+    </div>
+    <!--.empty-panel-->
+    
+    <!--广告-->
+    <div class="download-banner hide"><span class="find banner1 position-f"><i class="iconfont icon-close"></i></span></div>
+    <div class="download-banner"><span class="find banner4 position-f"><i class="iconfont icon-close"></i></span></div>
+    <div class="download-banner hide"><span class="find banner2 position-f">
+    <div class="shengryu">今日赛事胜率<span>60%</span>你还在等什么?</div><i class="iconfont icon-close"></i></span>
+    <div class="download-banner hide"><span class="find banner2 position-f"><div class="shengryu">今日尚无赛事预测 敬请密切关注</div><i class="iconfont icon-close"></i></span></div>
+    <div class="download-banner hide"><span class="find banner3 position-f"><div class="weixin">可关注微信<span>83815257</span>或QQ<span>384474162</span></div><i class="iconfont icon-close"></i></span>
+    </div>
+</body>
+
+</html>

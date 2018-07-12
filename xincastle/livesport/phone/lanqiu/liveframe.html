@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画直播</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <style>
+        .iframe {
+            border: 0;
+            -ms-transform-origin: 0 0;
+            -moz-transform-origin: 0 0;
+            -o-transform-origin: 0 0;
+            -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+            overflow: hidden;
+        }
+        .iframe-wrap{
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .animation{
+            overflow: hidden;
+            background-color: #343434;
+        }
+        body,html{
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+<div class="animation">
+    <div class="iframe-wrap">
+        <iframe class="iframe" src="lanqiumlive.html?id=2257961" frameborder="0"></iframe>
+    </div>
+</div>
+
+<script src="../base/js/jquery.min.js"></script>
+<script>
+    var height=460;
+    var width=790;
+    function resize() {
+        var _width=$( window ).width();
+        var scale=_width/width;
+        var _height=height*scale;
+        $('.iframe-wrap').width(_width).height(_height);
+        $('.iframe').width(1/scale*100+'%').height(1/scale*100+'%').css({
+                '-ms-transform': 'scale('+scale+')',
+                '-moz-transform': 'scale('+scale+')',
+                '-o-transform': 'scale('+scale+')',
+                '-webkit-transform': 'scale('+scale+')',
+                'transform': 'scale('+scale+')'
+        });
+    }
+    $(window).resize(function(){
+        resize();
+    });
+    resize();
+
+
+</script>
+</body>
+</html>

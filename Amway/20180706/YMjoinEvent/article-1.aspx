@@ -37,20 +37,20 @@
                     <div class="line-it-button" data-lang="zh_Hant" data-type="share-c" data-url="<%:Url.ToFull("~/article-1.aspx") %>" style="display: none;"></div>
                 </div>
             </div>
-            <div class="kv-article"><img src="images/article/article-kv-pic0000001@2x.png" alt=""></div>
+            <div class="kv-article"><img src="images/article/article-kv-pic0000001.png" alt=""></div>
             <ul class="articlebox">
                 <li class="articlebox-item">
-                    <div class="articlebox-pic"><img src="images/article/articlebox-pic0000001@2x.png" alt="" class="articlebox-img"></div>
+                    <div class="articlebox-pic"><img src="images/article/articlebox-pic0000001.png" alt="" class="articlebox-img"></div>
                     <h3 class="h3-articlebox">第1招 清潔保濕不馬虎</span></h3>
                     <p>想擁有嬰兒般粉嫩好氣色，三分靠彩妝，七分還是重保養！尤其現在空氣汙染日漸惡化，卸妝和洗臉務必徹底，還要定期做好角質代謝，肌膚才能暢快呼吸。此外，好膚質還得「水」養，保濕是一切肌膚問題的解藥，產後黯黃、膚色粗糙、斑點痘疤等，都需要讓肌膚「喝」飽水，才能綻放活力光采！</p>
                 </li>
                 <li class="articlebox-item">
-                    <div class="articlebox-pic"><img src="images/article/articlebox-pic0000002@2x.png" alt="" class="articlebox-img"></div>
+                    <div class="articlebox-pic"><img src="images/article/articlebox-pic0000002.png" alt="" class="articlebox-img"></div>
                     <h3 class="h3-articlebox">第2招 一抹立現好氣色</h3>
                     <p>近兩年彩妝界特別流行偽素顏和裸唇妝，看似沒有上妝，但整體肌膚質感卻更精緻，而且氣色特別好！秘訣就在底妝使用質地輕透，且可校正膚色的CC霜，為肌膚提供裸感光澤，打造自然偽素顏。唇部也一樣，擦上添加植萃水感成分的唇蜜，完美撫潤唇紋，增添水嫩光澤，讓人根本忘了妳是媽！</p>
                 </li>
                 <li class="articlebox-item">
-                    <div class="articlebox-pic"><img src="images/article/articlebox-pic0000003@2x.png" alt="" class="articlebox-img"></div>
+                    <div class="articlebox-pic"><img src="images/article/articlebox-pic0000003.png" alt="" class="articlebox-img"></div>
                     <h3 class="h3-articlebox">第3招 維生素吃出嬰兒肌</h3>
                     <p>除了外在保養，由內吃出好氣色，更是女人一輩子要持之以恆的功課。生完小孩後，很多人常會伴隨氣血循環不佳、面色蠟黃，此時應多補充水分，並可攝取維生素B群，有助於生理機能與正常代謝，還可保持好體力：三餐不忘富含維生素C的蔬果，呵護並滋養肌膚，吃出和 Baby一樣細緻有光的紅潤臉蛋！</p>
                 </li>

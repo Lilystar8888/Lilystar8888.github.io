@@ -37,10 +37,10 @@
                     <div class="line-it-button" data-lang="zh_Hant" data-type="share-c" data-url="<%:Url.ToFull("~/article-4.aspx") %>" style="display: none;"></div>
                 </div>
             </div>
-            <div class="kv-article"><img src="images/article/article-kv-pic0000004@2x.png" alt=""></div>
+            <div class="kv-article"><img src="images/article/article-kv-pic0000004.png" alt=""></div>
             <ul class="articlebox">
                 <li class="articlebox-item">
-                    <div class="articlebox-pic"><img src="images/article/articlebox-pic00000010@2x.png" alt="" class="articlebox-img"></div>
+                    <div class="articlebox-pic"><img src="images/article/articlebox-pic00000010.png" alt="" class="articlebox-img"></div>
                     <h3 class="h3-articlebox">第1招 B群助攻 喚回好氣色</span></h3>
                     <p>暑假要帶孩子上夏令營，開學後
 又要準備三餐、張羅上下課，職
@@ -59,7 +59,7 @@
 好氣色！</p>
                 </li>
                 <li class="articlebox-item">
-                    <div class="articlebox-pic"><img src="images/article/articlebox-pic00000011@2x.png" alt="" class="articlebox-img"></div>
+                    <div class="articlebox-pic"><img src="images/article/articlebox-pic00000011.png" alt="" class="articlebox-img"></div>
                     <h3 class="h3-articlebox">第2招 美妝心機 完勝Baby顏值</h3>
                     <p>氣色改善了，你還需要施加一點
 美妝心機！秘訣在妝前先做好保
@@ -75,7 +75,7 @@
 </p>
                 </li>
                 <li class="articlebox-item">
-                    <div class="articlebox-pic"><img src="images/article/articlebox-pic00000012@2x.png" alt="" class="articlebox-img"></div>
+                    <div class="articlebox-pic"><img src="images/article/articlebox-pic00000012.png" alt="" class="articlebox-img"></div>
                     <h3 class="h3-articlebox">第3招 少吃多動  養成易瘦體質</h3>
                     <p>為什麼明星生完小孩，身材顏值
 聞風不動，而我們這些素人一不

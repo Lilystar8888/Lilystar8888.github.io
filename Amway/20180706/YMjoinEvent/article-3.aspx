@@ -37,20 +37,20 @@
                     <div class="line-it-button" data-lang="zh_Hant" data-type="share-c" data-url="<%:Url.ToFull("~/article-3.aspx") %>" style="display: none;"></div>
                 </div>
             </div>
-            <div class="kv-article"><img src="images/article/article-kv-pic0000003@2x.png" alt=""></div>
+            <div class="kv-article"><img src="images/article/article-kv-pic0000003.png" alt=""></div>
             <ul class="articlebox">
                 <li class="articlebox-item">
-                    <div class="articlebox-pic"><img src="images/article/articlebox-pic0000007@2x.png" alt="" class="articlebox-img"></div>
+                    <div class="articlebox-pic"><img src="images/article/articlebox-pic0000007.png" alt="" class="articlebox-img"></div>
                     <h3 class="h3-articlebox">第1招 吃的對 腸道垃圾Out</span></h3>
                     <p>寶貝有時乖的像Dora，有時又「番」的像小新，辛苦的媽咪不只生活忙碌，心情也常被搞得想淚奔海邊喊出心中的逼哀……無暇好好照顧自己，嘗到環境常被壞菌佔領，此時不只腸塞車，人老得快，容易生病，皮膚也常出狀況！吃進甚麼是關鍵：記得多喝好水，拉抬隨年齡降低的代謝循環；多吃富含纖維的蔬果與全穀類食物，幫助排便排毒；搭配複合活性乳酸菌，幫助好菌擴大勢力範圍，讓腸道更健康！</p>
                 </li>
                 <li class="articlebox-item">
-                    <div class="articlebox-pic"><img src="images/article/articlebox-pic0000008@2x.png" alt="" class="articlebox-img"></div>
+                    <div class="articlebox-pic"><img src="images/article/articlebox-pic0000008.png" alt="" class="articlebox-img"></div>
                     <h3 class="h3-articlebox">第2招 動一動 腰瘦快快來</h3>
                     <p>別忘了每天給自己固定時段醞釀便意，腸道消化代謝順暢，自然不會大腹便便！若遇如廁卡卡，可用掌心繞著肚臍外3公分，從右下方以順時針方向按摩，幫助排解難纏宿便：搭配核心肌群訓練，增加身體的協調性，讓腹部更緊實有力。此外，吃完飯後，別急著坐下來滑手機，可以出門散散步，才能鞭策腸胃加緊工作，讓身體代謝維持好的循環！</p>
                 </li>
                 <li class="articlebox-item">
-                    <div class="articlebox-pic"><img src="images/article/articlebox-pic0000009@2x.png" alt="" class="articlebox-img"></div>
+                    <div class="articlebox-pic"><img src="images/article/articlebox-pic0000009.png" alt="" class="articlebox-img"></div>
                     <h3 class="h3-articlebox">第3招 心情好 腸道跟著好</h3>
                     <p>腸道如同人的第二「大腦」，有上億個神經細胞控制著讓我們心情愉悅的激素，最近調查發現，超過5成便秘的上班族特別易怒，可見精神壓力影響排便，便秘也左右了情緒好壞。面對生活中的柴米油鹽醬醋茶，媽咪們可以學習轉念，讓自己更快活，例如想像掃地時正在消耗卡路里，把洗碗當玩水，摺衣服可以配音樂……為生活加點正向能量，心不累，腸道才能鬆口氣，一起告別小腹婆人生！</p>
                 </li>

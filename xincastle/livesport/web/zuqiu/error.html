@@ -1,0 +1,1585 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>足球比分-比分直播|足球比分直播|足球即时比分|足彩比分-星城足球比分</title>
+    <meta name="keywords" content="足球比分,比分直播,足球比分直播,足彩比分" />
+    <meta name="description" content="看比分直播上星城足球比分，为您提供全网最全最快足球比分直播，同时为您提供最详细的足球比分赛程、足球完场比分、足彩比分等数据服务，比分直播涵盖世界范围足球联赛的精准权威足球比分服务" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="../base/css/common.css" rel="stylesheet">
+    <link href="css/bifen.css" rel="stylesheet">
+    <link href="css/error.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="errorman"></div>
+    <div class="mask"></div>
+    <nav class="navbar navbar-default">
+        
+            <div class="ss-header hide" id="ss-header">
+                <div class="header-wrap">
+                    <ul>
+                        <li><a href="javascript:;">设为首页</a></li>
+                        <li><a href="javascript:;">加入收藏</a></li>
+                        <li class="last-li"><a href="javascript:;" target="_blank">网站导航</a></li>
+                        <li class="icons-li last-li"> <a href="javascript:;" target="_blank"><i class="icons-i icon-ico_mobile_10x15"></i>手机客户端</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--ss-header-->
+            <a class="sslogo" href="#"><img src="../base/img/logo.png"></a>
+            <!--navbar-header-->
+            <div class="wrap">
+                <ul class="nav navbar-nav">
+                        <li><a href="index.html">首页</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">即时比分
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu red">
+                                <!--移除red可显示黑色面板-->
+                                <i class="icon-w-arrow"></i>
+                                <div class="line"></div>
+                                <li class="link active"><a href="index.html">足球比分</a></li>
+                                <li class="link"><a href="../lanqiu/index.html">篮球比分</a></li>
+                                <li class="link none"><a href="#">网球</a></li>
+                                <li class="link none"><a ref="#">棒球</a></li>
+                                <li class="link none"><a href="#">橄榄球</a></li>
+                                <li class="link none"><a href="#">斯诺克</a></li>
+                                <li class="link none"><a href="#">赛车</a></li>
+                                <li class="link none"><a href="#">赛马</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="database.html">资料库</a></li>
+                                        <li><a href="../wiki/index.html">彩票百科</a></li>
+                <li><a href="javascript:;">情报中心</a></li>
+                </ul>
+            </div>
+
+            <ul class="nav navbar-nav navright">
+                <li class="navbar-btn">
+                    <a class="btn-storev" href="javascript:;"><span class="shine chrome">储值星币</span></a>
+                </li>
+                <li class="showvalue"><i class="icon-coins"></i>18925</li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;" aria-expanded="false">
+                        <img class="nav-user-photo" src="img/userIcon.png" alt="使用者头像">
+                        <span class="user-info">nlstudio7197</span>
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <i class="icon-w-arrow"></i>
+                        <li><a href="javascript:;">星币充值</a></li>
+                        <li><a href="javascript:;">我的资料</a></li>
+                        <li><a href="javascript:;">联络客服</a></li>
+                        <li class="divider"></li>
+                        <li><a class="btn-logout" href="javascript:;">退出</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-btn">
+                    <a href="javascript:;" class="btn btn-login" role="button">登入</a>
+                </li>
+            </ul>
+            <!--navright-->
+    </nav>
+    
+    <div class="bf-tool-wrap">
+        <div class="container-fluid">
+            <div class="maxnav">
+                <div class="admin-tool"> <a href="javascript:;" class="current">比分</a> <a href="wanchang.html">完场</a> <a href="saicheng.html">赛程</a> </div>
+                <!--admin-tool-->
+                <div class="choose-function"> <a class="first" href="javascript:;">竞彩</a> <a class="current" id="showMode">完整 <i class="icon-icon_angle-double-down" aria-hidden="true"></i> </a> <a class="js-rateSlide" id="showCompany">选择公司<i class="icon-icon_angle-double-down" aria-hidden="true"></i></a> <a class="js-competSlide" id="showcompet">选择赛事<i class="icon-icon_angle-double-down" aria-hidden="true"></i></a> <a class="js-countrySlide" id="showpankou">选择盘路<i class="icon-icon_angle-double-down" aria-hidden="true"></i></a> </div>
+                <!--choose-function-->
+                <div class="page-tool">
+                    <ul>
+                        <li class="js-voiceSlide"><a class="btn btn-gray"><i class="fa fa-volume-up" aria-hidden="true"></i><span class="hidden-md">提示音</span><i class="fa fa-angle-down hidden-md" aria-hidden="true"></i></a></li>
+                        <li class="js-set-btn"><a class="btn btn-gray"><i class="fa fa-cog" aria-hidden="true"></i><span class="hidden-md">设置</span></a></li>
+                    </ul>
+                </div>
+                <!--page-tool-->
+                <div class="choose-mode hide" id="choose-mode"> <i class="icon-w-arrow"></i>
+                    <ul>
+                        <li><a class="first" href="javascript:;">精简</a></li>
+                        <li><a href="javascript:;">滚球</a></li>
+                        <li><a class="last" href="javascript:;">完整</a></li>
+                    </ul>
+                </div>
+                <!--choose-mode-->
+                <!--提示音-->
+                <div class="box-slide hide" id="sound-slide"> <i class="icon-w-arrow"></i>
+                    <ul>
+                        <li class="first" data-type="-1">静音</li>
+                        <li class="sound-chosen" data-type="0">默认</li>
+                        <li data-type="1">哨子</li>
+                        <li data-type="2">鼓声</li>
+                        <li data-type="3">广播</li>
+                        <li data-type="4">号角</li>
+                        <li data-type="5">胜利</li>
+                    </ul>
+                </div>
+                <!--设置-->
+                <div class="set-wrap hide">
+                    <div class="set-bg"></div>
+                    <!--灯箱背景-->
+                    <div class="set-content"> <i class="fa fa-times icon-set-close" aria-hidden="true"></i>
+                        <div data-name="lang" class="choose-lan set-bd"> <span class="set-title">语言切换</span>
+                            <div class="choose-btn"><span data-value="2" class="jian current">简体</span> <span data-value="3" class="fan">繁体</span> <span data-value="1" class="en">EN</span> </div>
+                        </div>
+                        <div data-name="rank" class="choose-hide set-bd"> <span class="set-title">球队排名</span>
+                            <div class="choose-btn"> <span data-value="on" class="on current">显示</span> <span data-value="off" class="off">隐藏</span> </div>
+                        </div>
+                        <!--choose-hide-->
+                        <div data-name="card" class="choose-card set-bd"> <span class="set-title">红黄牌信息</span>
+                            <div class="choose-btn"> <span data-value="on" class="on current">显示</span> <span data-value="off" class="off">隐藏</span> </div>
+                        </div>
+                        <!--choose-card-->
+                        <div class="choose-light set-bd"> <span class="set-title">关灯模式</span>
+                            <div class="choose-btn"> <span data-value="off" class="off">关灯</span> <span data-value="on" class="on current">开灯</span> </div>
+                        </div>
+                        <!--choose-light-->
+                        <div class="choose-color set-bd"> <span class="set-title">颜色切换</span>
+                            <div class="choose-btn"> <span data-theme="default" class="theme-link current">绿(预设)</span> <span data-theme="yellow" class="theme-link">黄</span> </div>
+                        </div>
+                        <!--choose-color-->
+                    </div>
+                    <!--set-content-->
+                </div>
+                <!--set-wrap-->
+                <!--选择公司-->
+                <div class="choose-company hide" id="choose-company"> <i class="icon-w-arrow"></i>
+                    <ul>
+                        <li><i class="icon-icon_choice_c"></i>Bet365</li>
+                    </ul>
+                </div>
+                <!--choose-company-->
+                <!--选择赛事-->
+                <div class="choose-slide hide" id="choose-compet"> <i class="icon-w-arrow"></i>
+                    <div class="compet-wrap">
+                        <div class="list"> <span class="letter">A</span>
+                            <ul>
+                                <li data-id="603" data-level="5" data-name="Aus VPL U21,澳维U21,澳維U21" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">澳维U21</span><span class="compet-num">[4]</span> </li>
+                                <li data-id="1865" data-level="0" data-name="FFSA WPL,澳南女超,澳南女超" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">澳南女超</span><span class="compet-num">[4]</span> </li>
+                                <li data-id="1849" data-level="0" data-name="AUS BPLR,澳布后备,澳布後備" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">澳布后备</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="590" data-level="1" data-name="AUS D1,澳超,澳超"> <i class="icon-icon_choice_c"></i><span class="compet-name">澳超</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="598" data-level="3" data-name="AUS QSL,澳昆超,澳昆超"> <i class="icon-icon_choice_c"></i><span class="compet-name">澳昆超</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="592" data-level="2" data-name="AUS VPL,澳维超,澳維超"> <i class="icon-icon_choice_c"></i><span class="compet-name">澳维超</span><span class="compet-num">[2]</span> </li>
+                                <li data-id="1689" data-level="7" data-name="ALG U21,阿尔U21,阿爾U21" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">阿尔U21</span><span class="compet-num">[7]</span> </li>
+                                <li data-id="370" data-level="3" data-name="ARM D1,阿美超,阿美超"> <i class="icon-icon_choice_c"></i><span class="compet-name">阿美超</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="730" data-level="2" data-name="EGY D1,埃及超,埃及超"> <i class="icon-icon_choice_c"></i><span class="compet-name">埃及超</span><span class="compet-num">[4]</span> </li>
+                                <li data-id="1699" data-level="7" data-name="ARG RL,阿后备,阿後備" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">阿后备</span><span class="compet-num">[2]</span> </li>
+                                <li data-id="628" data-level="3" data-name="UAE D1,阿联酋甲,阿聯酋甲"> <i class="icon-icon_choice_c"></i><span class="compet-name">阿联酋甲</span><span class="compet-num">[3]</span> </li>
+                                <li data-id="992" data-level="7" data-name="AGB LE,安哥甲,安哥甲" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">安哥甲</span><span class="compet-num">[7]</span> </li>
+                                <li data-id="727" data-level="2" data-name="ALG D1,阿尔甲,阿爾甲"> <i class="icon-icon_choice_c"></i><span class="compet-name">阿尔甲</span><span class="compet-num">[2]</span> </li>
+                                <li data-id="728" data-level="3" data-name="ALG D2,阿尔乙,阿爾乙"> <i class="icon-icon_choice_c"></i><span class="compet-name">阿尔乙</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="729" data-level="3" data-name="ALG CUP,阿尔杯,阿爾杯"> <i class="icon-icon_choice_c"></i><span class="compet-name">阿尔杯</span><span class="compet-num">[2]</span> </li>
+                                <li data-id="221" data-level="3" data-name="AUS D3,奥丙,奧丙"> <i class="icon-icon_choice_c"></i><span class="compet-name">奥丙</span><span class="compet-num">[10]</span> </li>
+                                <li data-id="220" data-level="2" data-name="AUT D2,奥乙,奧乙"> <i class="icon-icon_choice_c"></i><span class="compet-name">奥乙</span><span class="compet-num">[5]</span> </li>
+                                <li data-id="361" data-level="3" data-name="EST D1,爱沙甲,愛沙甲"> <i class="icon-icon_choice_c"></i><span class="compet-name">爱沙甲</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="1726" data-level="7" data-name="AUS L,奥丁,奧丁" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">奥丁</span><span class="compet-num">[4]</span> </li>
+                                <li data-id="354" data-level="3" data-name="ALB D1,阿尔巴超,阿爾巴超"> <i class="icon-icon_choice_c"></i><span class="compet-name">阿尔巴超</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="430" data-level="2" data-name="ARG D2,阿乙,阿乙"> <i class="icon-icon_choice_c"></i><span class="compet-name">阿乙</span><span class="compet-num">[2]</span> </li>
+                                <li data-id="228" data-level="2" data-name="IRE PR,爱超,愛超"> <i class="icon-icon_choice_c"></i><span class="compet-name">爱超</span><span class="compet-num">[6]</span> </li>
+                                <li data-id="229" data-level="3" data-name="IRE D1,爱甲,愛甲"> <i class="icon-icon_choice_c"></i><span class="compet-name">爱甲</span><span class="compet-num">[2]</span> </li>
+                                <li data-id="1759" data-level="7" data-name="Ire LSL,爱尔高联,愛爾高聯" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">爱尔高联</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="978" data-level="7" data-name="ACT  M,阿丙曼特,阿丙曼特" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">阿丙曼特</span><span class="compet-num">[3]</span> </li>
+                                <li data-id="434" data-level="2" data-name="ARG C,阿根廷杯,阿根廷盃"> <i class="icon-icon_choice_c"></i><span class="compet-name">阿根廷杯</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="429" data-level="1" data-name="ARG D1,阿甲,阿甲"> <i class="icon-icon_choice_c"></i><span class="compet-name">阿甲</span><span class="compet-num">[2]</span> </li>
+                                <li data-id="1886" data-level="0" data-name="AB U20 L,澳威U20,澳威U20" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">澳威U20</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="1833" data-level="0" data-name="AUS V U20 L,澳U20,澳U20" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">澳U20</span><span class="compet-num">[2]</span> </li>
+                                <li data-id="1922" data-level="0" data-name="ACT U20 L,澳首U20,澳首U20" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">澳首U20</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="1850" data-level="0" data-name="FFSA SLR,澳南后备,澳南後備"> <i class="icon-icon_choice_c"></i><span class="compet-name">澳南后备</span><span class="compet-num">[0]</span> </li>
+                                <li data-id="866" data-level="4" data-name="TSA TPL,澳塔超,澳塔超"> <i class="icon-icon_choice_c"></i><span class="compet-name">澳塔超</span><span class="compet-num">[0]</span> </li>
+                                <li data-id="1878" data-level="0" data-name="NSW-N  TPL,澳威北超,澳威北超"> <i class="icon-icon_choice_c"></i><span class="compet-name">澳威北超</span><span class="compet-num">[0]</span> </li>
+                                <li data-id="1923" data-level="0" data-name="AUS VS L,澳维亚,澳維亞"> <i class="icon-icon_choice_c"></i><span class="compet-name">澳维亚</span><span class="compet-num">[0]</span> </li>
+                                <li data-id="593" data-level="3" data-name="Aus VD1,澳维甲,澳維甲"> <i class="icon-icon_choice_c"></i><span class="compet-name">澳维甲</span><span class="compet-num">[0]</span> </li>
+                                <li data-id="597" data-level="3" data-name="AUS CGP,澳首超,澳首超"> <i class="icon-icon_choice_c"></i><span class="compet-name">澳首超</span><span class="compet-num">[0]</span> </li>
+                            </ul>
+                        </div>
+                        <div class="list"> <span class="letter">B</span>
+                            <ul>
+                                <li data-id="453" data-level="3" data-name="BRA CNF,巴东北超,巴東北超"> <i class="icon-icon_choice_c"></i><span class="compet-name">巴东北超</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="1917" data-level="0" data-name="Brazil,巴克甲,巴克甲" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">巴克甲</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="249" data-level="5" data-name="POL ME,波青联,波青聯" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">波青联</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="1662" data-level="7" data-name="PAR RT,巴拉后备,巴拉後備" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">巴拉后备</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="332" data-level="2" data-name="BUL D1,保超,保超"> <i class="icon-icon_choice_c"></i><span class="compet-name">保超</span><span class="compet-num">[2]</span> </li>
+                                <li data-id="644" data-level="3" data-name="BHR FAC,巴林杯,巴林盃"> <i class="icon-icon_choice_c"></i><span class="compet-name">巴林杯</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="245" data-level="2" data-name="POL D1,波兰超,波蘭超"> <i class="icon-icon_choice_c"></i><span class="compet-name">波兰超</span><span class="compet-num">[2]</span> </li>
+                                <li data-id="246" data-level="3" data-name="POL D2,波兰甲,波蘭甲"> <i class="icon-icon_choice_c"></i><span class="compet-name">波兰甲</span><span class="compet-num">[4]</span> </li>
+                                <li data-id="247" data-level="4" data-name="POL D4,波兰丙,波蘭丙" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">波兰丙</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="179" data-level="3" data-name="BPL (W),比女超,比女超"> <i class="icon-icon_choice_c"></i><span class="compet-name">比女超</span><span class="compet-num">[2]</span> </li>
+                                <li data-id="286" data-level="4" data-name="ICE WLC,冰女联杯,冰女聯盃" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">冰女联杯</span><span class="compet-num">[3]</span> </li>
+                                <li data-id="175" data-level="1" data-name="BEL D1,比甲,比甲"> <i class="icon-icon_choice_c"></i><span class="compet-name">比甲</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="176" data-level="2" data-name="BEL D2,比乙,比乙"> <i class="icon-icon_choice_c"></i><span class="compet-name">比乙</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="1163" data-level="7" data-name="BEL FAD,比业余,比業餘" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">比业余</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="481" data-level="2" data-name="BOL D1,玻利甲,玻利甲"> <i class="icon-icon_choice_c"></i><span class="compet-name">玻利甲</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="285" data-level="2" data-name="ICE LC,冰联杯,冰聯盃"> <i class="icon-icon_choice_c"></i><span class="compet-name">冰联杯</span><span class="compet-num">[2]</span> </li>
+                                <li data-id="1916" data-level="0" data-name="Brazil,巴皮甲,巴皮甲" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">巴皮甲</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="859" data-level="3" data-name="BRA CV,巴维杯,巴維杯"> <i class="icon-icon_choice_c"></i><span class="compet-name">巴维杯</span><span class="compet-num">[1]</span> </li>
+                            </ul>
+                        </div>
+                        <div class="list"> <span class="letter">D</span>
+                            <ul>
+                                <li data-id="1907" data-level="0" data-name="DEN D4,丹麦丁,丹麥丁" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">丹麦丁</span><span class="compet-num">[3]</span> </li>
+                                <li data-id="209" data-level="2" data-name="DEN SASL,丹麦超,丹麥超"> <i class="icon-icon_choice_c"></i><span class="compet-name">丹麦超</span><span class="compet-num">[2]</span> </li>
+                                <li data-id="132" data-level="4" data-name="GER Reg,德地区,德地區" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">德地区</span><span class="compet-num">[7]</span> </li>
+                                <li data-id="130" data-level="2" data-name="GER D2,德乙,德乙"> <i class="icon-icon_choice_c"></i><span class="compet-name">德乙</span><span class="compet-num">[3]</span> </li>
+                                <li data-id="131" data-level="3" data-name="GER D3,德丙,德丙"> <i class="icon-icon_choice_c"></i><span class="compet-name">德丙</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="1675" data-level="7" data-name="GER OBW,德堡州联,德堡州聯" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">德堡州联</span><span class="compet-num">[10]</span> </li>
+                                <li data-id="1678" data-level="7" data-name="GON,德萨州联,德薩州聯" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">德萨州联</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="1676" data-level="7" data-name="GER Bbe,德州联,德州聯" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">德州联</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="129" data-level="1" data-name="GER D1,德甲,德甲"> <i class="icon-icon_choice_c"></i><span class="compet-name">德甲</span><span class="compet-num">[1]</span> </li>
+                            </ul>
+                        </div>
+                        <div class="list"> <span class="letter">E</span>
+                            <ul>
+                                <li data-id="478" data-level="2" data-name="ECU D1,厄瓜甲,厄瓜甲"> <i class="icon-icon_choice_c"></i><span class="compet-name">厄瓜甲</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="241" data-level="4" data-name="RUS YthC,俄青联,俄青聯" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">俄青联</span><span class="compet-num">[3]</span> </li>
+                                <li data-id="238" data-level="1" data-name="RUS PR,俄超,俄超"> <i class="icon-icon_choice_c"></i><span class="compet-name">俄超</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="1683" data-level="7" data-name="ECU D2,厄瓜乙,厄瓜乙" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">厄瓜乙</span><span class="compet-num">[6]</span> </li>
+                                <li data-id="239" data-level="2" data-name="RUS D1,俄甲,俄甲"> <i class="icon-icon_choice_c"></i><span class="compet-name">俄甲</span><span class="compet-num">[0]</span> </li>
+                            </ul>
+                        </div>
+                        <div class="list"> <span class="letter">F</span>
+                            <ul>
+                                <li data-id="142" data-level="1" data-name="FRA D1,法甲,法甲"> <i class="icon-icon_choice_c"></i><span class="compet-name">法甲</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="143" data-level="2" data-name="FRA D2,法乙,法乙"> <i class="icon-icon_choice_c"></i><span class="compet-name">法乙</span><span class="compet-num">[8]</span> </li>
+                                <li data-id="144" data-level="3" data-name="FRA D3,法丙,法丙"> <i class="icon-icon_choice_c"></i><span class="compet-name">法丙</span><span class="compet-num">[8]</span> </li>
+                            </ul>
+                        </div>
+                        <div class="list"> <span class="letter">G</span>
+                            <ul>
+                                <li data-id="386" data-level="4" data-name="GEO D2,格鲁乙,格魯乙" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">格鲁乙</span><span class="compet-num">[4]</span> </li>
+                                <li data-id="34" data-level="1" data-name="INT FRL,国际友谊,國際友誼"> <i class="icon-icon_choice_c"></i><span class="compet-name">国际友谊</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="476" data-level="3" data-name="COL D2,哥伦乙,哥倫乙"> <i class="icon-icon_choice_c"></i><span class="compet-name">哥伦乙</span><span class="compet-num">[2]</span> </li>
+                                <li data-id="475" data-level="2" data-name="COL D1,哥伦甲,哥倫甲"> <i class="icon-icon_choice_c"></i><span class="compet-name">哥伦甲</span><span class="compet-num">[1]</span> </li>
+                            </ul>
+                        </div>
+                        <div class="list"> <span class="letter">H</span>
+                            <ul>
+                                <li data-id="356" data-level="3" data-name="KAZ PR,哈萨超,哈薩超"> <i class="icon-icon_choice_c"></i><span class="compet-name">哈萨超</span><span class="compet-num">[3]</span> </li>
+                                <li data-id="1730" data-level="7" data-name="HOL WD1,荷女甲,荷女甲" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">荷女甲</span><span class="compet-num">[3]</span> </li>
+                                <li data-id="169" data-level="2" data-name="HOL D2,荷乙,荷乙"> <i class="icon-icon_choice_c"></i><span class="compet-name">荷乙</span><span class="compet-num">[8]</span> </li>
+                                <li data-id="483" data-level="2" data-name="HON D1,洪都甲,洪都甲"> <i class="icon-icon_choice_c"></i><span class="compet-name">洪都甲</span><span class="compet-num">[1]</span> </li>
+                            </ul>
+                        </div>
+                        <div class="list"> <span class="letter">J</span>
+                            <ul>
+                                <li data-id="258" data-level="2" data-name="CZE D1,捷甲,捷甲"> <i class="icon-icon_choice_c"></i><span class="compet-name">捷甲</span><span class="compet-num">[2]</span> </li>
+                                <li data-id="262" data-level="4" data-name="CZE W1,捷女甲,捷女甲" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">捷女甲</span><span class="compet-num">[3]</span> </li>
+                                <li data-id="259" data-level="3" data-name="CZE D2,捷乙,捷乙"> <i class="icon-icon_choice_c"></i><span class="compet-name">捷乙</span><span class="compet-num">[3]</span> </li>
+                                <li data-id="1890" data-level="0" data-name="CZE DFL,捷丁,捷丁" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">捷丁</span><span class="compet-num">[1]</span> </li>
+                            </ul>
+                        </div>
+                        <div class="list"> <span class="letter">K</span>
+                            <ul>
+                                <li data-id="1885" data-level="0" data-name="Kosovo L,科索沃超,科索沃超" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">科索沃超</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="1725" data-level="7" data-name="CRSK U19,克U19,克U19" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">克U19</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="664" data-level="3" data-name="KUW D1,科威特联,科威特聯"> <i class="icon-icon_choice_c"></i><span class="compet-name">科威特联</span><span class="compet-num">[3]</span> </li>
+                                <li data-id="330" data-level="1" data-name="CRO D1,克亚甲,克亞甲"> <i class="icon-icon_choice_c"></i><span class="compet-name">克亚甲</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="1674" data-level="7" data-name="ICPD D1,科特超,科特超" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">科特超</span><span class="compet-num">[1]</span> </li>
+                            </ul>
+                        </div>
+                        <div class="list"> <span class="letter">L</span>
+                            <ul>
+                                <li data-id="437" data-level="3" data-name="BRA RJ,里约锦标,里約錦標"> <i class="icon-icon_choice_c"></i><span class="compet-name">里约锦标</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="1663" data-level="7" data-name="ROM D3,罗丙,羅丙" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">罗丙</span><span class="compet-num">[12]</span> </li>
+                                <li data-id="1668" data-level="7" data-name="RWA D1,卢旺达联,盧旺達聯" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">卢旺达联</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="270" data-level="2" data-name="ROM D1,罗甲,羅甲"> <i class="icon-icon_choice_c"></i><span class="compet-name">罗甲</span><span class="compet-num">[2]</span> </li>
+                                <li data-id="301" data-level="4" data-name="LIT D2,立陶乙,立陶乙" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">立陶乙</span><span class="compet-num">[1]</span> </li>
+                            </ul>
+                        </div>
+                        <div class="list"> <span class="letter">M</span>
+                            <ul>
+                                <li data-id="471" data-level="2" data-name="PER D1,秘鲁甲,秘魯甲"> <i class="icon-icon_choice_c"></i><span class="compet-name">秘鲁甲</span><span class="compet-num">[5]</span> </li>
+                                <li data-id="367" data-level="3" data-name="MOL D1,摩尔甲,摩爾甲"> <i class="icon-icon_choice_c"></i><span class="compet-name">摩尔甲</span><span class="compet-num">[3]</span> </li>
+                                <li data-id="1712" data-level="7" data-name="MEX U20,墨西U20,墨西U20" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">墨西U20</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="1720" data-level="7" data-name="MEX D3,墨西丙,墨西丙" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">墨西丙</span><span class="compet-num">[4]</span> </li>
+                                <li data-id="377" data-level="5" data-name="MAL D2,马尔乙,馬爾乙" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">马尔乙</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="457" data-level="1" data-name="MLS,美职业,美職業"> <i class="icon-icon_choice_c"></i><span class="compet-name">美职业</span><span class="compet-num">[2]</span> </li>
+                                <li data-id="466" data-level="2" data-name="MEX D2,墨西乙,墨西乙"> <i class="icon-icon_choice_c"></i><span class="compet-name">墨西乙</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="465" data-level="1" data-name="MEX D1,墨西联,墨西聯"> <i class="icon-icon_choice_c"></i><span class="compet-name">墨西联</span><span class="compet-num">[0]</span> </li>
+                            </ul>
+                        </div>
+                        <div class="list"> <span class="letter">N</span>
+                            <ul>
+                                <li data-id="717" data-level="3" data-name="SAFL,南非甲,南非甲"> <i class="icon-icon_choice_c"></i><span class="compet-name">南非甲</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="720" data-level="3" data-name="NGA PR,尼日超,尼日超"> <i class="icon-icon_choice_c"></i><span class="compet-name">尼日超</span><span class="compet-num">[2]</span> </li>
+                            </ul>
+                        </div>
+                        <div class="list"> <span class="letter">P</span>
+                            <ul>
+                                <li data-id="151" data-level="1" data-name="POR D1,葡超,葡超"> <i class="icon-icon_choice_c"></i><span class="compet-name">葡超</span><span class="compet-num">[2]</span> </li>
+                                <li data-id="154" data-level="4" data-name="POR JB,葡青U17,葡青U17" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">葡青U17</span><span class="compet-num">[1]</span> </li>
+                            </ul>
+                        </div>
+                        <div class="list"> <span class="letter">Q</span>
+                            <ul>
+                                <li data-id="24" data-level="2" data-name="INT CF,球会友谊,球會友誼"> <i class="icon-icon_choice_c"></i><span class="compet-name">球会友谊</span><span class="compet-num">[16]</span> </li>
+                                <li data-id="619" data-level="4" data-name="PFBFC,亲王杯U21,親王盃U21" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">亲王杯U21</span><span class="compet-num">[7]</span> </li>
+                            </ul>
+                        </div>
+                        <div class="list"> <span class="letter">R</span>
+                            <ul>
+                                <li data-id="1751" data-level="7" data-name="SWE U19,瑞U19,瑞U19" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">瑞U19</span><span class="compet-num">[2]</span> </li>
+                                <li data-id="568" data-level="2" data-name="JPN D2,日职乙,日職乙"> <i class="icon-icon_choice_c"></i><span class="compet-name">日职乙</span><span class="compet-num">[0]</span> </li>
+                                <li data-id="572" data-level="4" data-name="JPN D3,日丙,日丙"> <i class="icon-icon_choice_c"></i><span class="compet-name">日丙</span><span class="compet-num">[0]</span> </li>
+                            </ul>
+                        </div>
+                        <div class="list"> <span class="letter">S</span>
+                            <ul>
+                                <li data-id="344" data-level="2" data-name="SER D1,塞尔超,塞爾超"> <i class="icon-icon_choice_c"></i><span class="compet-name">塞尔超</span><span class="compet-num">[2]</span> </li>
+                                <li data-id="615" data-level="2" data-name="KSA D1,沙地甲,沙地甲"> <i class="icon-icon_choice_c"></i><span class="compet-name">沙地甲</span><span class="compet-num">[3]</span> </li>
+                                <li data-id="159" data-level="2" data-name="SCO CH,苏冠,蘇冠"> <i class="icon-icon_choice_c"></i><span class="compet-name">苏冠</span><span class="compet-num">[2]</span> </li>
+                                <li data-id="345" data-level="3" data-name="SER D2,塞尔甲,塞爾甲"> <i class="icon-icon_choice_c"></i><span class="compet-name">塞尔甲</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="1823" data-level="0" data-name="SUD PR,苏丹超,蘇丹超" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">苏丹超</span><span class="compet-num">[2]</span> </li>
+                                <li data-id="158" data-level="1" data-name="SCO PR,苏超,蘇超"> <i class="icon-icon_choice_c"></i><span class="compet-name">苏超</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="1680" data-level="7" data-name="SLV Rl,萨尔后备,薩爾後備" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">萨尔后备</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="489" data-level="3" data-name="SLV D1,萨尔超,薩爾超"> <i class="icon-icon_choice_c"></i><span class="compet-name">萨尔超</span><span class="compet-num">[1]</span> </li>
+                            </ul>
+                        </div>
+                        <div class="list"> <span class="letter">T</span>
+                            <ul>
+                                <li data-id="1687" data-level="7" data-name="TUR U19,土U19联,土U19聯" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">土U19联</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="323" data-level="4" data-name="TUR WD1,土女甲,土女甲" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">土女甲</span><span class="compet-num">[2]</span> </li>
+                            </ul>
+                        </div>
+                        <div class="list"> <span class="letter">W</span>
+                            <ul>
+                                <li data-id="255" data-level="4" data-name="UKR U21,乌克U21,烏克U21" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">乌克U21</span><span class="compet-num">[4]</span> </li>
+                                <li data-id="674" data-level="1" data-name="UZB D1,乌兹超,烏茲超"> <i class="icon-icon_choice_c"></i><span class="compet-name">乌兹超</span><span class="compet-num">[6]</span> </li>
+                                <li data-id="1670" data-level="7" data-name="UKR U19,乌克U19,烏克U19" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">乌克U19</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="1719" data-level="7" data-name="UPL,乌干超,烏干超" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">乌干超</span><span class="compet-num">[3]</span> </li>
+                                <li data-id="254" data-level="2" data-name="UKR D2,乌克甲,烏克甲"> <i class="icon-icon_choice_c"></i><span class="compet-name">乌克甲</span><span class="compet-num">[1]</span> </li>
+                            </ul>
+                        </div>
+                        <div class="list"> <span class="letter">X</span>
+                            <ul>
+                                <li data-id="632" data-level="3" data-name="SIN D1,新加坡联,新加坡聯"> <i class="icon-icon_choice_c"></i><span class="compet-name">新加坡联</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="545" data-level="2" data-name="HK PR,香港超,香港超"> <i class="icon-icon_choice_c"></i><span class="compet-name">香港超</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="1679" data-level="7" data-name="SPA D4,西丁,西丁" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">西丁</span><span class="compet-num">[3]</span> </li>
+                                <li data-id="121" data-level="2" data-name="SPA D2,西乙,西乙"> <i class="icon-icon_choice_c"></i><span class="compet-name">西乙</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="123" data-level="5" data-name="SPA FDH,西室内足,西室內足" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">西室内足</span><span class="compet-num">[4]</span> </li>
+                                <li data-id="120" data-level="1" data-name="SPA D1,西甲,西甲"> <i class="icon-icon_choice_c"></i><span class="compet-name">西甲</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="1926" data-level="0" data-name="CPL,新西中联,新西中聯" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">新西中联</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="1889" data-level="0" data-name="NZM SL,新西超联,新西超聯" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">新西超联</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="1924" data-level="0" data-name="FFSA NZL,新西南联,新西南聯" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">新西南联</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="1925" data-level="0" data-name="NOR NZL,新西北联,新西北聯" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">新西北联</span><span class="compet-num">[2]</span> </li>
+                            </ul>
+                        </div>
+                        <div class="list"> <span class="letter">Y</span>
+                            <ul>
+                                <li data-id="1722" data-level="7" data-name="JAM D1,牙买超,牙買超" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">牙买超</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="492" data-level="2" data-name="AFC Cup,亚协杯,亞協盃" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">亚协杯</span><span class="compet-num">[11]</span> </li>
+                                <li data-id="1868" data-level="0" data-name="India SL,印金联,印金聯" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">印金联</span><span class="compet-num">[2]</span> </li>
+                                <li data-id="1763" data-level="7" data-name="ENG RES,英后备,英後備" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">英后备</span><span class="compet-num">[4]</span> </li>
+                                <li data-id="110" data-level="3" data-name="ITA C1,意丙1,意丙1" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">意丙1</span><span class="compet-num">[10]</span> </li>
+                                <li data-id="656" data-level="3" data-name="JOR D2,约旦甲,約旦甲" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">约旦甲</span><span class="compet-num">[4]</span> </li>
+                                <li data-id="86" data-level="4" data-name="ENG Conf,英议联,英議聯" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">英议联</span><span class="compet-num">[9]</span> </li>
+                                <li data-id="351" data-level="3" data-name="ISR CUP,以杯,以盃" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">以杯</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="109" data-level="2" data-name="ITA D2,意乙,意乙" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">意乙</span><span class="compet-num">[10]</span> </li>
+                                <li data-id="1824" data-level="0" data-name="ENG UD1,英北甲,英北甲" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">英北甲</span><span class="compet-num">[3]</span> </li>
+                                <li data-id="82" data-level="1" data-name="ENG PR,英超,英超" class=""> <i class="icon-icon_choice_c"></i><span class="compet-name">英超</span><span class="compet-num">[4]</span> </li>
+                                <li data-id="114" data-level="1" data-name="ITA Cup,意大利杯,意盃" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">意大利杯</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="83" data-level="2" data-name="ENG LCH,英冠,英冠" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">英冠</span><span class="compet-num">[10]</span> </li>
+                                <li data-id="84" data-level="2" data-name="ENG L1,英甲,英甲" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">英甲</span><span class="compet-num">[4]</span> </li>
+                                <li data-id="87" data-level="4" data-name="ENG CS,英议南,英議南" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">英议南</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="88" data-level="4" data-name="ENG CN,英议北,英議北" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">英议北</span><span class="compet-num">[3]</span> </li>
+                                <li data-id="89" data-level="4" data-name="ENG-S PR,英南超,英南超" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">英南超</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="90" data-level="4" data-name="ENG-N PR,英北超,英北超" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">英北超</span><span class="compet-num">[5]</span> </li>
+                                <li data-id="91" data-level="4" data-name="ENG RYM,英依超,英依超" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">英依超</span><span class="compet-num">[2]</span> </li>
+                            </ul>
+                        </div>
+                        <div class="list"> <span class="letter">Z</span>
+                            <ul>
+                                <li data-id="463" data-level="2" data-name="CHI D2,智利乙,智利乙"> <i class="icon-icon_choice_c"></i><span class="compet-name">智利乙</span><span class="compet-num">[0]</span> </li>
+                                <li data-id="1677" data-level="7" data-name="GIB PD,直布超,直布超" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">直布超</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="462" data-level="1" data-name="CHI D1,智利甲,智利甲"> <i class="icon-icon_choice_c"></i><span class="compet-name">智利甲</span><span class="compet-num">[1]</span> </li>
+                                <li data-id="1738" data-level="7" data-name="CHI D3,智利丙,智利丙" class="off"> <i class="icon-icon_choice_c"></i><span class="compet-name">智利丙</span><span class="compet-num">[1]</span> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="spec-compet">
+                        <p class="five-compet">五大联赛</p>
+                        <p class="prem-compet">一级赛事</p>
+                    </div>
+                    <div class="slidebtn left">
+                        <div class="yes left"><a href="javascript:;" class="choose-all">全选</a><a href="javascript:;" class="back-choose">反选</a> </div>
+                        <div class="no left"><a href="javascript:;" class="choose">确定</a><a href="javascript:;" class="cancel">取消</a></div>
+                    </div>
+                </div>
+                <!--choose-compet-->
+                <!--选择盘路-->
+                <div class="choose-slide hide" id="choose-pankou"> <i class="icon-w-arrow"></i>
+                    <div class="tab-title">
+                        <p id="showpankou1" class="active">让球</p>
+                        <p id="showpankou2" class="">大小</p>
+                    </div>
+                    <div class="content-wrap">
+                        <div id="pankou1" class="ul-wrap active">
+                            <ul>
+                                <li data-type="平手"><i class="icon-icon_choice_c"></i><span class="compet-name">平手</span><span class="compet-num">[28]</span></li>
+                                <li data-type="未开盘"><i class="icon-icon_choice_c"></i><span class="compet-name">未开盘</span><span class="compet-num">[231]</span></li>
+                                <li data-type="受两球"><i class="icon-icon_choice_c"></i><span class="compet-name">受两球</span><span class="compet-num">[1]</span></li>
+                                <li data-type="平/半"><i class="icon-icon_choice_c"></i><span class="compet-name">平/半</span><span class="compet-num">[28]</span></li>
+                                <li data-type="受一球"><i class="icon-icon_choice_c"></i><span class="compet-name">受一球</span><span class="compet-num">[5]</span></li>
+                                <li data-type="半球"><i class="icon-icon_choice_c"></i><span class="compet-name">半球</span><span class="compet-num">[24]</span></li>
+                                <li data-type="两球半"><i class="icon-icon_choice_c"></i><span class="compet-name">两球半</span><span class="compet-num">[1]</span></li>
+                                <li data-type="受半球"><i class="icon-icon_choice_c"></i><span class="compet-name">受半球</span><span class="compet-num">[6]</span></li>
+                                <li data-type="受平/半"><i class="icon-icon_choice_c"></i><span class="compet-name">受平/半</span><span class="compet-num">[10]</span></li>
+                                <li data-type="半/一"><i class="icon-icon_choice_c"></i><span class="compet-name">半/一</span><span class="compet-num">[17]</span></li>
+                                <li data-type="受半/一"><i class="icon-icon_choice_c"></i><span class="compet-name">受半/一</span><span class="compet-num">[3]</span></li>
+                                <li data-type="一/球半"><i class="icon-icon_choice_c"></i><span class="compet-name">一/球半</span><span class="compet-num">[6]</span></li>
+                                <li data-type="受一/球半"><i class="icon-icon_choice_c"></i><span class="compet-name">受一/球半</span><span class="compet-num">[2]</span></li>
+                                <li data-type="球半/两"><i class="icon-icon_choice_c"></i><span class="compet-name">球半/两</span><span class="compet-num">[2]</span></li>
+                                <li data-type="受两/两球半"><i class="icon-icon_choice_c"></i><span class="compet-name">受两/两球半</span><span class="compet-num">[1]</span></li>
+                                <li data-type="球半"><i class="icon-icon_choice_c"></i><span class="compet-name">球半</span><span class="compet-num">[3]</span></li>
+                                <li data-type="两/两球半"><i class="icon-icon_choice_c"></i><span class="compet-name">两/两球半</span><span class="compet-num">[1]</span></li>
+                                <li data-type="一球"><i class="icon-icon_choice_c"></i><span class="compet-name">一球</span><span class="compet-num">[6]</span></li>
+                                <li data-type="两球"><i class="icon-icon_choice_c"></i><span class="compet-name">两球</span><span class="compet-num">[1]</span></li>
+                            </ul>
+                        </div>
+                        <div class="ul-wrap hide" id="pankou2">
+                            <ul>
+                                <li data-type="0"><i class="icon-icon_choice_c"></i><span class="compet-name">0</span><span class="compet-num">[8]</span></li>
+                                <li data-type="2"><i class="icon-icon_choice_c"></i><span class="compet-name">2</span><span class="compet-num">[13]</span></li>
+                                <li data-type="3"><i class="icon-icon_choice_c"></i><span class="compet-name">3</span><span class="compet-num">[9]</span></li>
+                                <li data-type="3.5"><i class="icon-icon_choice_c"></i><span class="compet-name">3.5</span><span class="compet-num">[6]</span></li>
+                                <li data-type="未开盘"><i class="icon-icon_choice_c"></i><span class="compet-name">未开盘</span><span class="compet-num">[231]</span></li>
+                                <li data-type="3.5/4"><i class="icon-icon_choice_c"></i><span class="compet-name">3.5/4</span><span class="compet-num">[2]</span></li>
+                                <li data-type="2.5/3"><i class="icon-icon_choice_c"></i><span class="compet-name">2.5/3</span><span class="compet-num">[32]</span></li>
+                                <li data-type="4.5/5"><i class="icon-icon_choice_c"></i><span class="compet-name">4.5/5</span><span class="compet-num">[1]</span></li>
+                                <li data-type="2/2.5"><i class="icon-icon_choice_c"></i><span class="compet-name">2/2.5</span><span class="compet-num">[37]</span></li>
+                                <li data-type="2.5"><i class="icon-icon_choice_c"></i><span class="compet-name">2.5</span><span class="compet-num">[30]</span></li>
+                                <li data-type="3/3.5"><i class="icon-icon_choice_c"></i><span class="compet-name">3/3.5</span><span class="compet-num">[5]</span></li>
+                                <li data-type="1.5/2"><i class="icon-icon_choice_c"></i><span class="compet-name">1.5/2</span><span class="compet-num">[2]</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="slidebtn left">
+                        <div class="yes left"><a href="javascript:;" class="choose-all">全选</a><a href="javascript:;" class="back-choose">反选</a> </div>
+                        <div class="no left"><a href="javascript:;" class="choose">确定</a><a href="javascript:;" class="cancel">取消</a></div>
+                    </div>
+                </div>
+                <!--choose-pankou-->
+            </div>
+            <!--maxnav-->
+        </div>
+        <!--container fluid-->
+    </div>
+    <!--bf-tool-wrap-->
+
+    <div id="ssCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active"><img src="../base/img/banner2x.png" alt="获取更多资讯，解读值博率信息，可关注夏天微信或QQ群">
+                <div class="weixin">Summer788888
+                    <br/> 384474162
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 标题列 -->
+    <div class="bf-nav-info lighton" id="bf-nav-info">
+        <div class="wrap">
+            <table align="left" cellspacing="1"><!--表格靠左對齊-->
+                <tbody>
+                    <tr style="width:100%; max-width: 100%;">
+                        <td class="choose-all">
+                            <div id="chooseAll"><a href="javascript:;">全选</a></div>
+                        </td>
+                        <td class="des-icon">&nbsp;</td>
+                        <td colspan="2" class="des-name">赛事</td>
+                        <td class="des-time">时间</td>
+                        <td class="des-state">状态</td>
+                        <td class="des-vsl">主队</td>
+                        <td class="des-score">比分</td>
+                        <td class="des-vsr">客队</td>
+                        <td class="des-predict1">主客<BR>胜率</td>
+                        <td class="des-predict2">全半大<BR>小预测</td>
+                        <td class="des-half">半</td>
+                        <td class="des-corner">角</td>
+                        <td class="des-live">直播</td>
+                        <td class="des-ratel">指数</td>
+                        <td class="des-sb">Bet365</td>
+                        <td class="des-rater">指数</td>
+                        <td class="des-data">&nbsp;</td>
+                        <td class="des-func">数据中心&nbsp;功能</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--wrap-->
+        <!--即时进球通知-->
+        <div class="football-tip-goal hide">
+            <!--预设黄蓝底色 加class set1调整为红蓝底色-->
+            <div class="fide-item home">
+                <span class="time home f-s-14">20'</span><i class="iconfont icon-tip-goal home"></i>
+                <div class="team home f-s-16">庆州FC女足</div>
+                <div class="score-num"><span class="logo-tip">星城体育</span><span class="home">1</span><span>-</span><span class="away">0</span></div>
+                <div class="team away">报恩尚武女足</div><i class="iconfont icon-tip-goal away"></i><span class="time away f-s-14">20'</span>
+                <div class="urll">xincastle-sports.com</div>
+                <div class="urlr">666cn.com</div>
+            </div>
+            <div class="fide-item away"><span class="time home f-s-14">20'</span><i class="iconfont icon-tip-goal home"></i>
+                <div class="team home f-s-16">庆州FC女足</div>
+                <div class="score-num"><span class="logo-tip">星城体育</span><span class="home">1</span><span>-</span><span class="away">0</span></div>
+                <div class="team away">报恩尚武女足</div><i class="iconfont icon-tip-goal away"></i><span class="time away f-s-14">20'</span>
+                <div class="urll">xincastle-sports.com</div>
+                <div class="urlr">666cn.com</div>
+            </div>
+            <div class="fide-item home"><span class="time home f-s-14">20'</span><i class="iconfont icon-tip-goal home"></i>
+                <div class="team home f-s-16">庆州FC女足</div>
+                <div class="score-num"><span class="logo-tip">星城体育</span><span class="home">1</span><span>-</span><span class="away">0</span></div>
+                <div class="team away">报恩尚武女足</div><i class="iconfont icon-tip-goal away"></i><span class="time away f-s-14">20'</span>
+                <div class="urll">xincastle-sports.com</div>
+                <div class="urlr">666cn.com</div>
+            </div>
+            <div class="fide-item away"><span class="time home f-s-14">20'</span><i class="iconfont icon-tip-goal home"></i>
+                <div class="team home f-s-16">庆州FC女足</div>
+                <div class="score-num"><span class="logo-tip">星城体育</span><span class="home">1</span><span>-</span><span class="away">0</span></div>
+                <div class="team away">报恩尚武女足</div><i class="iconfont icon-tip-goal away"></i><span class="time away f-s-14">20'</span>
+                <div class="urll">xincastle-sports.com</div>
+                <div class="urlr">666cn.com</div>
+            </div>
+            <div class="iconfont icon-close" style="opacity: 1;">关闭</div>
+        </div>
+    </div>
+    <!--.bf-nav-info-->
+    <!-- 正文内容-->
+    <div class="container bf-content">
+        <div class="top hide">
+            <div class="wrap">
+                <table class="content-top main-content" cellspacing="1">
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="compet-live">
+            <div class="wrap">
+                <div class="live-content">
+                    <div id="live01" class="main-content">
+                        <table class="a1">
+                            <tbody>
+                                <tr class="noborder">
+                                    <td class="tr-option">
+                                        <a href="javascript:;" class="js-choose-show"><i class="icon-icon_choice_n"></i></a>
+                                        <div class="choose-box hide"> <i class="icon-arrow_msg_screen"></i> <a href="javascript:;" class="border-right tr-collect-in"><span>收藏</span></a><a href="javascript:;" class="tr-hide count-hide"><span>隐藏</span></a> </div>
+                                        <span class="introd"><span class="introd-content" colspan="24"> 常规时间90分钟[0-0],120分钟[1-2],哥罗纳胜出</span></span>
+                                    </td>
+                                    <td class="tr-icon b1"><i class="icon-icon_eventlogo" style="background-image:url(img/eventlogo.png);"></i></td>
+                                    <td class="tr-compet-title">球会友谊 </td>
+                                    <td class="tr-compet-time">2-28
+                                        <BR>18:30</td>
+                                    <td class="tr-compet-pro"><i class="icon-icon_clock_05"></i>70<i class="minute"></i></td>
+                                    <td class="tr-vsl"><span class="home"><span class="rank">[13]</span>
+                                        <div class="yellow-warn">1</div>
+                                        <div class="red-warn">1</div>
+                                        <span class="trans-home"><a href="team.html?28283" target="_blank"><span class="team-name">塞萨足球学院</span></a>
+                                        </span>
+                                        </span>
+                                    </td>
+                                    <td class="tr-vs-score"><a href="javascript:void(0)" target="_blank"><span class="score-l">2</span>-<span class="score-r">1</span></a>
+                                        <div class="bifen-tooltip hide" style="top: 0px; left: 54px;">
+                                            <div class="table-wrap">
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <td class="left-icon">塞萨足球学院塞萨足球学院</td>
+                                                            <td class="score">2-1</td>
+                                                            <td class="right-icon">果阿警方SC</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="left-icon"><i class="icon-icon_goal"></i></td>
+                                                            <td class="time">20</td>
+                                                            <td class="right-icon"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="left-icon"><i class="icon-icon_goal"></i></td>
+                                                            <td class="time">39</td>
+                                                            <td class="right-icon"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="left-icon"></td>
+                                                            <td class="time">63</td>
+                                                            <td class="right-icon"><i class="icon_goal"></i></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <td colspan="3">技术统计</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="left-icon">1</td>
+                                                            <td class="time">角球</td>
+                                                            <td class="right-icon">8</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="left-icon">1<i class="icon_RC"></i></td>
+                                                            <td class="time">黄牌</td>
+                                                            <td class="right-icon">1<i class="icon_YC"></i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="left-icon">12</td>
+                                                            <td class="time">射门</td>
+                                                            <td class="right-icon">10</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="left-icon">6</td>
+                                                            <td class="time">射正</td>
+                                                            <td class="right-icon">3</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="tr-vsr"><span class="away"><span class="trans-away"><a href="team.html?40259/" target="_blank" style="color: rgb(102, 102, 102);"><span class="team-name">果阿警方SC</span></a>
+                                        </span>
+                                        <div class="red-warn">1</div>
+                                        <div class="yellow-warn">1</div>
+                                        <span class="rank">[9]</span><i class="getScore icon-icon_goal hide"></i></span>
+                                    </td>
+                                    <td class="predict1">
+                                        <div><span class="float above">44.06%</span> <span class="float below">31.46%</span></div>
+                                    </td>
+                                    <td class="predict2">
+                                        <div><span class="float above">55%</span> <span class="float below">69%</span></div>
+                                    </td>
+                                    <td class="tr-half-score"><span class="half-l">2</span>-<span class="half-r">0</span></td>
+                                    <td class="tr-corner"><i class="icon-corner"></i><span>1-6</span></td>
+                                    <td class="tr-live"><a target="_blank" href="detail.html?id=2182316"><i class="icon-icon_court"></i></a></td>
+                                    <td class="tr-ratel">
+                                        <div><span class="float above">1.075<i class="icon-arrow_index_up_gif"></i></span> <span class="float below">1.050</span></div>
+                                    </td>
+                                    <td class="tr-sb">
+                                        <div class="tr-sb-content"><span class="float above">平手</span> <span class="float below">4</span> </div>
+                                        <div class="sbTooltip hide" style="top: -165px; left: -224px;"> <i class="icon-arrow_subform"></i>
+                                            <div class="tooltipHead"> <span>塞萨足球学院</span> <span>vs</span> <span>果阿警方SC</span> </div>
+                                            <div class="tooltipContent">
+                                                <div class="bg1"></div>
+                                                <div class="bg2"><i class="icon-shadow_03"></i></div>
+                                                <div class="bg3"></div>
+                                                <table class="table-sb-tool">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>&nbsp;</th>
+                                                            <th colspan="3"><span class="bold">亚</span></th>
+                                                            <th colspan="3"><span class="bold">欧</span></th>
+                                                            <th colspan="3"><span class="bold">大</span></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="first">
+                                                            <td class="title-color">初盘指数</td>
+                                                            <td class="oddsasia"><span>1.000<i></i></span></td>
+                                                            <td class="wide-panlu oddsasia">平手</td>
+                                                            <td class="oddsasia"><span>0.800<i></i></span></td>
+                                                            <td class="oddseurope"><span>2.625<i></i></span></td>
+                                                            <td sd="" class="euro-panlu oddseurope">3.4</td>
+                                                            <td class="oddseurope"><span>2.250<i></i></span></td>
+                                                            <td class="oddsbigsmall"><span>0.900<i></i></span></td>
+                                                            <td class="wide-panlu oddsbigsmall">3</td>
+                                                            <td class="oddsbigsmall"><span>0.900<i></i></span></td>
+                                                        </tr>
+                                                        <tr class="realtime">
+                                                            <td class="title-color">即时指数</td>
+                                                            <td class="oddsasia"><span>1.000<i></i></span></td>
+                                                            <td class="wide-panlu oddsasia">平手</td>
+                                                            <td class="oddsasia"><span>0.800<i></i></span></td>
+                                                            <td class="oddseurope"><span>2.625<i></i></span></td>
+                                                            <td sd="" class="euro-panlu oddseurope">3.4</td>
+                                                            <td class="oddseurope"><span>2.250<i></i></span></td>
+                                                            <td class="oddsbigsmall"><span>0.900<i></i></span></td>
+                                                            <td class="wide-panlu oddsbigsmall">3</td>
+                                                            <td class="oddsbigsmall"><span>0.900<i></i></span></td>
+                                                        </tr>
+                                                        <tr class="ball">
+                                                            <td class="title-color">滚球指数</td>
+                                                            <td class="oddsasia"><span class="data-up">1.075<i class="icon-arrow_index_up_gif"></i></span></td>
+                                                            <td class="wide-panlu oddsasia">平手</td>
+                                                            <td class="oddsasia"><span class="data-down">0.725<i class="icon-arrow_index_down_gif"></i></span></td>
+                                                            <td class="oddseurope"><span class="data-down">1.363<i class="icon-arrow_index_down_gif"></i></span></td>
+                                                            <td sd="" class="euro-panlu oddseurope">4</td>
+                                                            <td class="oddseurope"><span class="data-up">9.000<i class="icon-arrow_index_up_gif"></i></span></td>
+                                                            <td class="oddsbigsmall"><span class="data-up">1.075<i class="icon-arrow_index_up_gif"></i></span></td>
+                                                            <td class="wide-panlu oddsbigsmall">4</td>
+                                                            <td class="oddsbigsmall"><span class="data-down">0.725<i class="icon-arrow_index_down_gif"></i></span></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="tr-rater">
+                                        <div><span class="float above">0.725<i class="icon-arrow_index_down_gif"></i></span> <span class="float below">0.750</span></div>
+                                    </td>
+                                    <td class="tr-qingbao"><a target="_blank" href="//guide.leisu.com/swot-2196932/">情报</a></td>
+                                    <td class="tr-ping"><a href="comment.html"><i class="icon-icon_ping"></i></a></td>
+                                    <td class="tr-xi"><a target="_blank" href="shujufenxi.html?2182316">析</a></td>
+                                    <td class="tr-ouya"><a target="_blank" href="3in1.html?2182316">赔率</a></td>
+                                    <td class="tr-up"><i class="icon-btn_top_n"></i></td>
+                                    <td class="tr-collect"><i class="icon-btn_collect_n"></i>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="a2">
+                            <tbody>
+                                <tr>
+                                    <td class="tr-option"><a href="javascript:;" class="js-choose-show"><i class="icon-icon_choice_n"></i></a>
+                                        <div class="choose-box hide"> <i class="icon-arrow_msg_screen"></i> <a href="javascript:;" class="border-right tr-collect-in"><span>收藏</span></a><a href="javascript:;" class="tr-hide count-hide"><span>隐藏</span></a> </div>
+                                    </td>
+                                    <td class="tr-icon b2"><i class="icon-icon_eventlogo" style="background-image:url(img/eventlogo.png);"></i></td>
+                                    <td class="tr-compet-title">世女欧预</td>
+                                    <td class="tr-compet-time">2-28
+                                        <BR>19:00</td>
+                                    <td class="tr-compet-pro"><i class="icon-icon_clock_04"></i>51<i class="minute"></i></td>
+                                    <td class="tr-vsl"><span class="home"><span class="rank"></span>
+                                        <div class="yellow-warn hide">1</div>
+                                        <div class="red-warn hide">0</div>
+                                        <span class="trans-home"><a href="team.html?13456/" target="_blank" style="color: rgb(102, 102, 102);"><span class="team-name">摩尔多瓦女足</span></a>(中)</span>
+                                        </span>
+                                    </td>
+                                    <td class="tr-vs-score"><a href="javascript:void(0)" target="_blank"><span class="score-l">3</span>-<span class="score-r">0</span></a>
+                                        <div class="bifen-tooltip hide" style="top: 0px; left: 54px;">
+                                            <div class="table-wrap">
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <td class="left-icon">摩尔多瓦女足</td>
+                                                            <td class="score">3-0</td>
+                                                            <td class="right-icon">安道尔女足</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="left-icon">Chiper<i class="icon-icon_goal"></i></td>
+                                                            <td class="time">9</td>
+                                                            <td class="right-icon"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="left-icon">Cerescu<i class="icon-icon_goal"></i></td>
+                                                            <td class="time">41</td>
+                                                            <td class="right-icon"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="left-icon">Munteanu<i class="icon-icon_owngoal"></i></td>
+                                                            <td class="time">45</td>
+                                                            <td class="right-icon"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <td colspan="3">技术统计</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="left-icon">7</td>
+                                                            <td class="time">角球</td>
+                                                            <td class="right-icon">0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="left-icon">1</td>
+                                                            <td class="time">黄牌</td>
+                                                            <td class="right-icon">2</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="left-icon">1</td>
+                                                            <td class="time">红牌</td>
+                                                            <td class="right-icon">0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="left-icon">19</td>
+                                                            <td class="time">射门</td>
+                                                            <td class="right-icon">0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="left-icon">10</td>
+                                                            <td class="time">射正</td>
+                                                            <td class="right-icon">0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="left-icon">75%</td>
+                                                            <td class="time">控球率</td>
+                                                            <td class="right-icon">25%</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="tr-vsr"><span class="away"><span class="trans-away"><a href="team.html?28059" target="_blank"><span class="team-name">安道尔女足</span></a>
+                                        </span>
+                                        <div class="red-warn hide">0</div>
+                                        <div class="yellow-warn hide">1</div>
+                                        <span class="rank"></span><i class="getScore icon-icon_goal hide"></i></span>
+                                    </td>
+                                    <td class="predict1">
+                                        <div><span class="float above">44.06%</span> <span class="float below">31.46%</span></div>
+                                    </td>
+                                    <td class="predict2">
+                                        <div><span class="float above">55%</span> <span class="float below">69%</span></div>
+                                    </td>
+                                    <td class="tr-half-score"><span class="half-l">3</span>-<span class="half-r">0</span></td>
+                                    <td class="tr-corner"><i class="icon-corner"></i><span>4-0</span></td>
+                                    <td class="tr-live"><a target="_blank" href="stream.html?2182044"><i class="icon-icon_onlive"></i></a></td>
+                                    <td class="tr-ratel">
+                                        <div><span class="float above">0.925<i class="icon-arrow_index_up_gif"></i></span> <span class="float below">1.050</span></div>
+                                    </td>
+                                    <td class="tr-sb">
+                                        <div class="tr-sb-content"><span class="float above">两球</span> <span class="float below">5/5.5</span> </div>
+                                        <div class="sbTooltip hide" style="top: -165px; left: -224px;"> <i class="icon-arrow_subform"></i>
+                                            <div class="tooltipHead"> <span>摩尔多瓦女足(中)</span> <span>vs</span> <span>安道尔女足</span> </div>
+                                            <div class="tooltipContent">
+                                                <div class="bg1"></div>
+                                                <div class="bg2"><i class="icon-shadow_03"></i></div>
+                                                <div class="bg3"></div>
+                                                <table class="table-sb-tool">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>&nbsp;</th>
+                                                            <th colspan="3"><span class="bold">亚</span></th>
+                                                            <th colspan="3"><span class="bold">欧</span></th>
+                                                            <th colspan="3"><span class="bold">大</span></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="first">
+                                                            <td class="title-color">初盘指数</td>
+                                                            <td class="oddsasia"><span>0.675<i></i></span></td>
+                                                            <td class="wide-panlu oddsasia">四/四球半</td>
+                                                            <td class="oddsasia"><span>1.150<i></i></span></td>
+                                                            <td class="oddseurope"><span>1.025<i></i></span></td>
+                                                            <td sd="" class="euro-panlu oddseurope">17</td>
+                                                            <td class="oddseurope"><span>26.000<i></i></span></td>
+                                                            <td class="oddsbigsmall"><span>1.075<i></i></span></td>
+                                                            <td class="wide-panlu oddsbigsmall">5/5.5</td>
+                                                            <td class="oddsbigsmall"><span>0.725<i></i></span></td>
+                                                        </tr>
+                                                        <tr class="realtime">
+                                                            <td class="title-color">即时指数</td>
+                                                            <td class="oddsasia"><span>0.675<i></i></span></td>
+                                                            <td class="wide-panlu oddsasia">四/四球半</td>
+                                                            <td class="oddsasia"><span>1.150<i></i></span></td>
+                                                            <td class="oddseurope"><span>1.025<i></i></span></td>
+                                                            <td sd="" class="euro-panlu oddseurope">17</td>
+                                                            <td class="oddseurope"><span>26.000<i></i></span></td>
+                                                            <td class="oddsbigsmall"><span>1.075<i></i></span></td>
+                                                            <td class="wide-panlu oddsbigsmall">5/5.5</td>
+                                                            <td class="oddsbigsmall"><span>0.725<i></i></span></td>
+                                                        </tr>
+                                                        <tr class="ball">
+                                                            <td class="title-color">滚球指数</td>
+                                                            <td class="oddsasia"><span class="data-up">0.925<i class="icon-arrow_index_up_gif"></i></span></td>
+                                                            <td class="wide-panlu oddsasia">半/一</td>
+                                                            <td class="oddsasia"><span class="data-down">0.875<i class="icon-arrow_index_down_gif"></i></span></td>
+                                                            <td class="oddseurope"><span><i></i></span></td>
+                                                            <td><span></span></td>
+                                                            <td class="oddseurope"><span><i></i></span></td>
+                                                            <td class="oddsbigsmall"><span class="data-down">0.850<i class="icon-arrow_index_down_gif"></i></span></td>
+                                                            <td class="wide-panlu oddsbigsmall">4</td>
+                                                            <td class="oddsbigsmall"><span class="data-up">0.950<i class="icon-arrow_index_up_gif"></i></span></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="tr-rater">
+                                        <div><span class="float above">0.875<i class="icon-arrow_index_down_gif"></i></span> <span class="float below">0.750<i class="icon-arrow_index_up_gif"></i></span></div>
+                                    </td>
+                                    
+                                    <td class="tr-ping"><a href="comment.html"><i class="icon-icon_ping"></i></a></td>
+                                    <td class="tr-xi"><a target="_blank" href="shujufenxi.html?2182044">析</a></td>
+                                    <td class="tr-ouya"><a target="_blank" href="3in1.html?2182044">赔率</a></td>
+                                    <td class="tr-up"><i class="icon-btn_top_n"></i></td>
+                                    <td class="tr-collect"><i class="icon-btn_collect_n"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="a3">
+                            <tbody>
+                                <tr>
+                                    <td class="tr-option"><a href="javascript:;" class="js-choose-show"><i class="icon-icon_choice_n"></i></a>
+                                        <div class="choose-box hide"> <i class="icon-arrow_msg_screen"></i> <a href="javascript:;" class="border-right tr-collect-in"><span>收藏</span></a><a href="javascript:;" class="tr-hide count-hide"><span>隐藏</span></a> </div>
+                                    </td>
+                                    <td class="tr-icon b3"><i class="icon-icon_eventlogo" style="background-image:url(img/eventlogo.png);"></i></td>
+                                    <td class="tr-compet-title">印金联</td>
+                                    <td class="tr-compet-time">2-28
+                                        <BR>19:30</td>
+                                    <td class="tr-compet-pro"><i class="icon-icon_clock_03"></i>37<i class="minute"></i></td>
+                                    <td class="tr-vsl"><span class="home"><span class="rank"></span>
+                                        <div class="yellow-warn hide">0</div>
+                                        <div class="red-warn hide">0</div>
+                                        <span class="trans-home"><a href="team.html?39909" target="_blank"><span class="team-name">印度银行</span></a>
+                                        </span>
+                                        </span>
+                                    </td>
+                                    <td class="tr-vs-score"><a href="javascript:void(0)" target="_blank"><span class="score-l">0</span>-<span class="score-r">1</span></a></td>
+                                    <td class="tr-vsr"><span class="away"><span class="trans-away"><a href="team.html?39936/" target="_blank" style="color: rgb(102, 102, 102);"><span class="team-name">印度鹰</span></a>
+                                        </span>
+                                        <div class="red-warn hide">0</div>
+                                        <div class="yellow-warn hide">0</div>
+                                        <span class="rank"></span> <i class="getScore icon-icon_goal hide"></i></span>
+                                    </td>
+                                    <td class="predict1">
+                                        <div><span class="float above">44.06%</span> <span class="float below">31.46%</span></div>
+                                    </td>
+                                    <td class="predict2">
+                                        <div><span class="float above">55%</span> <span class="float below">69%</span></div>
+                                    </td>
+                                    <td class="tr-half-score"><span class="half-l"></span>-<span class="half-r"></span></td>
+                                    <td class="tr-corner"><i class="icon-corner"></i><span>1-0</span></td>
+                                    <td class="tr-live"><i class="icon-zhubo-1"></i></td>
+                                    <td class="tr-ratel">
+                                        <div><span class="float above">0.950</span> <span class="float below">0.800</span></div>
+                                    </td>
+                                    <td class="tr-sb">
+                                        <div class="tr-sb-content"><span class="float above">受平/半</span> <span class="float below">3.5<i class="icon-arrow_index_down_gif"></i></span> </div>
+                                    </td>
+                                    <td class="tr-rater">
+                                        <div><span class="float above">0.850</span> <span class="float below">1.000<i class="icon-arrow_index_up_gif"></i></span></div>
+                                    </td>
+                                    
+                                    <td class="tr-ping"><a href="comment.html"><i class="icon-icon_ping"></i></a></td>
+                                    <td class="tr-xi"><a target="_blank" href="shujufenxi.html?2182293">析</a></td>
+                                    <td class="tr-ouya"><a target="_blank" href="3in1.html?2182293">赔率</a></td>
+                                    <td class="tr-up"><i class="icon-btn_top_n"></i></td>
+                                    <td class="tr-collect"><i class="icon-btn_collect_n"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="a4">
+                            <tbody>
+                                <tr>
+                                    <td class="tr-option"><a href="javascript:;" class="js-choose-show"><i class="icon-icon_choice_n"></i></a>
+                                        <div class="choose-box hide"> <i class="icon-arrow_msg_screen"></i> <a href="javascript:;" class="border-right tr-collect-in"><span>收藏</span></a><a href="javascript:;" class="tr-hide count-hide"><span>隐藏</span></a> </div>
+                                    </td>
+                                    <td class="tr-icon b4"><i class="icon-icon_eventlogo" style="background-image:url(img/eventlogo.png);"></i></td>
+                                    <td class="tr-compet-title">乌兹超</td>
+                                    <td class="tr-compet-time">2-28
+                                        <BR>20:00</td>
+                                    <td class="tr-compet-pro"><i class="icon-icon_clock_01"></i>7<i class="minute"></i></td>
+                                    <td class="tr-vsl"><span class="home"><span class="rank">[13]</span>
+                                        <div class="yellow-warn hide">0</div>
+                                        <div class="red-warn hide">0</div>
+                                        <span class="trans-home"><a href="team.html?23731" target="_blank"><span class="team-name">休尔坦古佐</span></a>
+                                        </span>
+                                        </span>
+                                    </td>
+                                    <td class="tr-vs-score"><a href="javascript:void(0)" target="_blank"><span class="score-l">0</span>-<span class="score-r">0</span></a></td>
+                                    <td class="tr-vsr"><span class="away"><span class="trans-away"><a href="team.html?26365" target="_blank"><span class="team-name">塔什干火车头</span></a>
+                                        </span>
+                                        <div class="red-warn hide">0</div>
+                                        <div class="yellow-warn hide">0</div>
+                                        <span class="rank">[1]</span> <i class="getScore icon-icon_goal hide"></i></span>
+                                    </td>
+                                    <td class="predict1">
+                                        <div><span class="float above">44.06%</span> <span class="float below">31.46%</span></div>
+                                    </td>
+                                    <td class="predict2">
+                                        <div><span class="float above">55%</span> <span class="float below">69%</span></div>
+                                    </td>
+                                    <td class="tr-half-score"><span class="half-l"></span>-<span class="half-r"></span></td>
+                                    <td class="tr-corner no-corner"><i class="icon-corner"></i><span></span></td>
+                                    <td class="tr-live"><i class="icon-zhubo-2"></i></td>
+                                    <td class="tr-ratel">
+                                        <div><span class="float above"></span> <span class="float below"></span></div>
+                                    </td>
+                                    <td class="tr-sb">
+                                        <div class="tr-sb-content"><span class="float above"></span> <span class="float below"></span> </div>
+                                    </td>
+                                    <td class="tr-rater">
+                                        <div><span class="float above"></span> <span class="float below"></span></div>
+                                    </td>
+                                    
+                                    <td class="tr-ping"><a href="comment.html"><i class="icon-icon_ping"></i></a></td>
+                                    <td class="tr-xi"><a target="_blank" href="shujufenxi.html?2151563">析</a></td>
+                                    <td class="tr-ouya"><a target="_blank" href="3in1.html?2151563">赔率</a></td>
+                                    <td class="tr-up"><i class="icon-btn_top_n"></i></td>
+                                    <td class="tr-collect"><i class="icon-btn_collect_n"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="a5">
+                            <tbody>
+                                <tr>
+                                    <td class="tr-option"><a href="javascript:;" class="js-choose-show"><i class="icon-icon_choice_n"></i></a>
+                                        <div class="choose-box hide"> <i class="icon-arrow_msg_screen"></i> <a href="javascript:;" class="border-right tr-collect-in"><span>收藏</span></a><a href="javascript:;" class="tr-hide count-hide"><span>隐藏</span></a> </div>
+                                    </td>
+                                    <td class="tr-icon b5"><i class="icon-icon_eventlogo" style="background-image:url(img/eventlogo.png);"></i></td>
+                                    <td class="tr-compet-title">世女欧预</td>
+                                    <td class="tr-compet-time">2-28
+                                        <BR>20:00</td>
+                                    <td class="tr-compet-pro"><i class="icon-icon_clock_01"></i>7<i class="minute"></i></td>
+                                    <td class="tr-vsl"><span class="home"><span class="rank"></span>
+                                        <div class="yellow-warn hide">0</div>
+                                        <div class="red-warn hide">0</div>
+                                        <span class="trans-home"><a href="team.html?24151" target="_blank"><span class="team-name">哈萨克斯坦女足</span></a>(中)</span>
+                                        </span>
+                                    </td>
+                                    <td class="tr-vs-score"><a href="javascript:void(0)" target="_blank"><span class="score-l">0</span>-<span class="score-r">0</span></a></td>
+                                    <td class="tr-vsr"><span class="away"><span class="trans-away"><a href="team.html?29646" target="_blank"><span class="team-name">格鲁吉亚女足</span></a>
+                                        </span>
+                                        <div class="red-warn hide">0</div>
+                                        <div class="yellow-warn hide">0</div>
+                                        <span class="rank"></span> <i class="getScore icon-icon_goal hide"></i></span>
+                                    </td>
+                                    <td class="predict1">
+                                        <div><span class="float above">44.06%</span> <span class="float below">31.46%</span></div>
+                                    </td>
+                                    <td class="predict2">
+                                        <div><span class="float above">55%</span> <span class="float below">69%</span></div>
+                                    </td>
+                                    <td class="tr-half-score"><span class="half-l"></span>-<span class="half-r"></span></td>
+                                    <td class="tr-corner"><i class="icon-corner"></i><span>1-0</span></td>
+                                    <td class="tr-live"><i class="icon-zhubo-3"></i></td>
+                                    <td class="tr-ratel">
+                                        <div><span class="float above">0.950</span> <span class="float below">0.775</span></div>
+                                    </td>
+                                    <td class="tr-sb">
+                                        <div class="tr-sb-content"><span class="float above">半球</span> <span class="float below">2/2.5</span> </div>
+                                    </td>
+                                    <td class="tr-rater">
+                                        <div><span class="float above">0.850</span> <span class="float below">1.025</span></div>
+                                    </td>
+                                    
+                                    <td class="tr-ping"><a href="comment.html"><i class="icon-icon_ping"></i></a></td>
+                                    <td class="tr-xi"><a target="_blank" href="shujufenxi.html?2182041">析</a></td>
+                                    <td class="tr-ouya"><a target="_blank" href="3in1.html?2182041">赔率</a></td>
+                                    <td class="tr-up"><i class="icon-btn_top_n"></i></td>
+                                    <td class="tr-collect"><i class="icon-btn_collect_n"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="a6">
+                            <tbody>
+                                <tr>
+                                    <td class="tr-option"><a href="javascript:;" class="js-choose-show"><i class="icon-icon_choice_n"></i></a>
+                                        <div class="choose-box hide"> <i class="icon-arrow_msg_screen"></i> <a href="javascript:;" class="border-right tr-collect-in"><span>收藏</span></a><a href="javascript:;" class="tr-hide count-hide"><span>隐藏</span></a> </div>
+                                    </td>
+                                    <td class="tr-icon b6"><i class="icon-icon_eventlogo" style="background-image:url(img/eventlogo.png);"></i></td>
+                                    <td class="tr-compet-title">世女欧预</td>
+                                    <td class="tr-compet-time">2-28
+                                        <BR>20:00</td>
+                                    <td class="tr-compet-pro"><i class="icon-icon_clock_01"></i>7<i class="minute"></i></td>
+                                    <td class="tr-vsl"><span class="home"><span class="rank"></span>
+                                        <div class="yellow-warn hide">0</div>
+                                        <div class="red-warn hide">0</div>
+                                        <span class="trans-home"><a href="team.html?21719" target="_blank"><span class="team-name">希腊女足</span></a>(中)</span>
+                                        </span>
+                                    </td>
+                                    <td class="tr-vs-score"><a href="javascript:void(0)" target="_blank"><span class="score-l">0</span>-<span class="score-r">0</span></a></td>
+                                    <td class="tr-vsr"><span class="away"><span class="trans-away"><a href="team.html?12303" target="_blank"><span class="team-name">马耳他女足</span></a>
+                                        </span>
+                                        <div class="red-warn hide">0</div>
+                                        <div class="yellow-warn hide">0</div>
+                                        <span class="rank"></span> <i class="getScore icon-icon_goal hide"></i></span>
+                                    </td>
+                                    <td class="predict1">
+                                        <div><span class="float above">44.06%</span> <span class="float below">31.46%</span></div>
+                                    </td>
+                                    <td class="predict2">
+                                        <div><span class="float above">55%</span> <span class="float below">69%</span></div>
+                                    </td>
+                                    <td class="tr-half-score"><span class="half-l"></span>-<span class="half-r"></span></td>
+                                    <td class="tr-corner"><i class="icon-corner"></i><span>2-0</span></td>
+                                    <td class="tr-live"><i class="icon-zhubo-4"></i></td>
+                                    <td class="tr-ratel">
+                                        <div><span class="float above">0.825</span> <span class="float below">0.825<i class="icon-arrow_index_up_gif"></i></span></div>
+                                    </td>
+                                    <td class="tr-sb">
+                                        <div class="tr-sb-content"><span class="float above">两球半/三</span> <span class="float below">3.5</span> </div>
+                                    </td>
+                                    <td class="tr-rater">
+                                        <div><span class="float above">0.975</span> <span class="float below">0.975<i class="icon-arrow_index_down_gif"></i></span></div>
+                                    </td>
+                                    
+                                    <td class="tr-ping"><a href="comment.html"><i class="icon-icon_ping"></i></a></td>
+                                    <td class="tr-xi"><a target="_blank" href="shujufenxi.html?2182043">析</a></td>
+                                    <td class="tr-ouya"><a target="_blank" href="3in1.html?2182043">赔率</a></td>
+                                    <td class="tr-up"><i class="icon-btn_top_n"></i></td>
+                                    <td class="tr-collect"><i class="icon-btn_collect_n"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="a7">
+                            <tbody>
+                                <tr>
+                                    <td class="tr-option"><a href="javascript:;" class="js-choose-show"><i class="icon-icon_choice_n"></i></a>
+                                        <div class="choose-box hide"> <i class="icon-arrow_msg_screen"></i> <a href="javascript:;" class="border-right tr-collect-in"><span>收藏</span></a><a href="javascript:;" class="tr-hide count-hide"><span>隐藏</span></a> </div>
+                                    </td>
+                                    <td class="tr-icon b7"><i class="icon-icon_eventlogo" style="background-image:url(img/eventlogo.png);"></i></td>
+                                    <td class="tr-compet-title">摩尔乙</td>
+                                    <td class="tr-compet-time">2-28
+                                        <BR>20:00</td>
+                                    <td class="tr-compet-pro"><i class="icon-icon_clock_01"></i>7<i class="minute"></i></td>
+                                    <td class="tr-vsl"><span class="home"><span class="rank">[11]</span>
+                                        <div class="yellow-warn hide">0</div>
+                                        <div class="red-warn hide">0</div>
+                                        <span class="trans-home"><a href="team.html?24679" target="_blank"><span class="team-name">洛佐瓦</span></a>
+                                        </span>
+                                        </span>
+                                    </td>
+                                    <td class="tr-vs-score"><a href="javascript:void(0)" target="_blank"><span class="score-l">0</span>-<span class="score-r">0</span></a></td>
+                                    <td class="tr-vsr"><span class="away"><span class="trans-away"><a href="team.html?24678" target="_blank"><span class="team-name">森布鲁B队</span></a>
+                                        </span>
+                                        <div class="red-warn hide">0</div>
+                                        <div class="yellow-warn hide">0</div>
+                                        <span class="rank">[5]</span> <i class="getScore icon-icon_goal hide"></i></span>
+                                    </td>
+                                    <td class="predict1">
+                                        <div><span class="float above">44.06%</span> <span class="float below">31.46%</span></div>
+                                    </td>
+                                    <td class="predict2">
+                                        <div><span class="float above">55%</span> <span class="float below">69%</span></div>
+                                    </td>
+                                    <td class="tr-half-score"><span class="half-l"></span>-<span class="half-r"></span></td>
+                                    <td class="tr-corner no-corner"><i class="icon-corner"></i><span></span></td>
+                                    <td class="tr-live"><i class="icon-zhubo-5"></i></td>
+                                    <td class="tr-ratel">
+                                        <div><span class="float above"></span> <span class="float below"></span></div>
+                                    </td>
+                                    <td class="tr-sb">
+                                        <div class="tr-sb-content"><span class="float above"></span> <span class="float below"></span> </div>
+                                    </td>
+                                    <td class="tr-rater">
+                                        <div><span class="float above"></span> <span class="float below"></span></div>
+                                    </td>
+                                    
+                                    <td class="tr-ping"><a href="comment.html"><i class="icon-icon_ping"></i></a></td>
+                                    <td class="tr-xi"><a target="_blank" href="shujufenxi.html?2175526">析</a></td>
+                                    <td class="tr-ouya"><a target="_blank" href="3in1.html?2175526">赔率</a></td>
+                                    <td class="tr-up"><i class="icon-btn_top_n"></i></td>
+                                    <td class="tr-collect"><i class="icon-btn_collect_n"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="a8">
+                            <tbody>
+                                <tr>
+                                    <td class="tr-option"><a href="javascript:;" class="js-choose-show"><i class="icon-icon_choice_n"></i></a>
+                                        <div class="choose-box hide"> <i class="icon-arrow_msg_screen"></i> <a href="javascript:;" class="border-right tr-collect-in"><span>收藏</span></a><a href="javascript:;" class="tr-hide count-hide"><span>隐藏</span></a> </div>
+                                    </td>
+                                    <td class="tr-icon b8"><i class="icon-icon_eventlogo" style="background-image:url(img/eventlogo.png);"></i></td>
+                                    <td class="tr-compet-title">摩尔乙</td>
+                                    <td class="tr-compet-time">2-28
+                                        <BR>20:00</td>
+                                    <td class="tr-compet-pro"><i class="icon-icon_clock_01"></i>7<i class="minute"></i></td>
+                                    <td class="tr-vsl"><span class="home"><span class="rank">[3]</span>
+                                        <div class="yellow-warn hide">0</div>
+                                        <div class="red-warn hide">0</div>
+                                        <span class="trans-home"><a href="team.html?30135" target="_blank"><span class="team-name">巴尔达尔</span></a>
+                                        </span>
+                                        </span>
+                                    </td>
+                                    <td class="tr-vs-score"><a href="javascript:void(0)" target="_blank"><span class="score-l">0</span>-<span class="score-r">0</span></a></td>
+                                    <td class="tr-vsr"><span class="away"><span class="trans-away"><a href="team.html?24677" target="_blank"><span class="team-name">加高茲亚</span></a>
+                                        </span>
+                                        <div class="red-warn hide">0</div>
+                                        <div class="yellow-warn hide">0</div>
+                                        <span class="rank">[7]</span> <i class="getScore icon-icon_goal hide"></i></span>
+                                    </td>
+                                    <td class="predict1">
+                                        <div><span class="float above">44.06%</span> <span class="float below">31.46%</span></div>
+                                    </td>
+                                    <td class="predict2">
+                                        <div><span class="float above">55%</span> <span class="float below">69%</span></div>
+                                    </td>
+                                    <td class="tr-half-score"><span class="half-l"></span>-<span class="half-r"></span></td>
+                                    <td class="tr-corner no-corner"><i class="icon-corner"></i><span></span></td>
+                                    <td class="tr-live"><i class="icon-zhubo-6"></i></td>
+                                    <td class="tr-ratel">
+                                        <div><span class="float above"></span> <span class="float below"></span></div>
+                                    </td>
+                                    <td class="tr-sb">
+                                        <div class="tr-sb-content"><span class="float above"></span> <span class="float below"></span> </div>
+                                    </td>
+                                    <td class="tr-rater">
+                                        <div><span class="float above"></span> <span class="float below"></span></div>
+                                    </td>
+                                    
+                                    <td class="tr-ping"><a href="comment.html"><i class="icon-icon_ping"></i></a></td>
+                                    <td class="tr-xi"><a target="_blank" href="shujufenxi.html?2175527">析</a></td>
+                                    <td class="tr-ouya"><a target="_blank" href="3in1.html?2175527">赔率</a></td>
+                                    <td class="tr-up"><i class="icon-btn_top_n"></i></td>
+                                    <td class="tr-collect"><i class="icon-btn_collect_n"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="a9">
+                            <tbody>
+                                <tr>
+                                    <td class="tr-option"><a href="javascript:;" class="js-choose-show"><i class="icon-icon_choice_n"></i></a>
+                                        <div class="choose-box hide"> <i class="icon-arrow_msg_screen"></i> <a href="javascript:;" class="border-right tr-collect-in"><span>收藏</span></a><a href="javascript:;" class="tr-hide count-hide"><span>隐藏</span></a> </div>
+                                    </td>
+                                    <td class="tr-icon b9"><i class="icon-icon_eventlogo" style="background-image:url(img/eventlogo.png);"></i></td>
+                                    <td class="tr-compet-title">国际友谊 </td>
+                                    <td class="tr-compet-time">2-28
+                                        <BR>20:00</td>
+                                    <td class="tr-compet-pro"><i class="icon-icon_clock_01"></i>7<i class="minute"></i></td>
+                                    <td class="tr-vsl"><span class="home"><span class="rank"></span>
+                                        <div class="yellow-warn hide">0</div>
+                                        <div class="red-warn hide">0</div>
+                                        <span class="trans-home"><a href="team.html?22308" target="_blank"><span class="team-name">马其顿女足U19</span></a>
+                                        </span>
+                                        </span>
+                                    </td>
+                                    <td class="tr-vs-score"><a href="javascript:void(0)" target="_blank"><span class="score-l">0</span>-<span class="score-r">0</span></a></td>
+                                    <td class="tr-vsr"><span class="away"><span class="trans-away"><a href="team.html?20210" target="_blank"><span class="team-name">波兰女足U19</span></a>
+                                        </span>
+                                        <div class="red-warn hide">0</div>
+                                        <div class="yellow-warn hide">0</div>
+                                        <span class="rank"></span> <i class="getScore icon-icon_goal hide"></i></span>
+                                    </td>
+                                    <td class="predict1">
+                                        <div><span class="float above">44.06%</span> <span class="float below">31.46%</span></div>
+                                    </td>
+                                    <td class="predict2">
+                                        <div><span class="float above">55%</span> <span class="float below">69%</span></div>
+                                    </td>
+                                    <td class="tr-half-score"><span class="half-l"></span>-<span class="half-r"></span></td>
+                                    <td class="tr-corner"><i class="icon-corner"></i><span>0-1</span></td>
+                                    <td class="tr-live"><i class="icon-zhubo-7"></i></td>
+                                    <td class="tr-ratel">
+                                        <div><span class="float above">0.975</span> <span class="float below">0.875</span></div>
+                                    </td>
+                                    <td class="tr-sb">
+                                        <div class="tr-sb-content"><span class="float above">受四球半</span> <span class="float below">5.5</span> </div>
+                                    </td>
+                                    <td class="tr-rater">
+                                        <div><span class="float above">0.825</span> <span class="float below">0.925</span></div>
+                                    </td>
+                                    
+                                    <td class="tr-ping"><a href="comment.html"><i class="icon-icon_ping"></i></a></td>
+                                    <td class="tr-xi"><a target="_blank" href="shujufenxi.html?2182326">析</a></td>
+                                    <td class="tr-ouya"><a target="_blank" href="3in1.html?2182326">赔率</a></td>
+                                    <td class="tr-up"><i class="icon-btn_top_n"></i></td>
+                                    <td class="tr-collect"><i class="icon-btn_collect_n"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="a10">
+                            <tbody>
+                                <tr>
+                                    <td class="tr-option"><a href="javascript:;" class="js-choose-show"><i class="icon-icon_choice_n"></i></a>
+                                        <div class="choose-box hide"> <i class="icon-arrow_msg_screen"></i> <a href="javascript:;" class="border-right tr-collect-in"><span>收藏</span></a><a href="javascript:;" class="tr-hide count-hide"><span>隐藏</span></a> </div>
+                                    </td>
+                                    <td class="tr-icon b10"><i class="icon-icon_eventlogo" style="background-image:url(img/eventlogo.png);"></i></td>
+                                    <td class="tr-compet-title">国际友谊 </td>
+                                    <td class="tr-compet-time">2-28
+                                        <BR>20:00</td>
+                                    <td class="tr-compet-pro"><i class="icon-icon_clock_01"></i>7<i class="minute"></i></td>
+                                    <td class="tr-vsl"><span class="home"><span class="rank"></span>
+                                        <div class="yellow-warn hide">0</div>
+                                        <div class="red-warn hide">0</div>
+                                        <span class="trans-home"><a href="team.html?22308" target="_blank"><span class="team-name">马其顿女足U19</span></a>
+                                        </span>
+                                        </span>
+                                    </td>
+                                    <td class="tr-vs-score"><a href="javascript:void(0)" target="_blank"><span class="score-l">0</span>-<span class="score-r">0</span></a></td>
+                                    <td class="tr-vsr"><span class="away"><span class="trans-away"><a href="team.html?20210" target="_blank"><span class="team-name">波兰女足U19</span></a>
+                                        </span>
+                                        <div class="red-warn hide">0</div>
+                                        <div class="yellow-warn hide">0</div>
+                                        <span class="rank"></span> <i class="getScore icon-icon_goal hide"></i></span>
+                                    </td>
+                                    <td class="predict1">
+                                        <div><span class="float above">44.06%</span> <span class="float below">31.46%</span></div>
+                                    </td>
+                                    <td class="predict2">
+                                        <div><span class="float above">55%</span> <span class="float below">69%</span></div>
+                                    </td>
+                                    <td class="tr-half-score"><span class="half-l"></span>-<span class="half-r"></span></td>
+                                    <td class="tr-corner"><i class="icon-corner"></i><span>0-1</span></td>
+                                    <td class="tr-live"><i class="icon-zhubo-8"></i></td>
+                                    <td class="tr-ratel">
+                                        <div><span class="float above">0.975</span> <span class="float below">0.875</span></div>
+                                    </td>
+                                    <td class="tr-sb">
+                                        <div class="tr-sb-content"><span class="float above">受四球半</span> <span class="float below">5.5</span> </div>
+                                    </td>
+                                    <td class="tr-rater">
+                                        <div><span class="float above">0.825</span> <span class="float below">0.925</span></div>
+                                    </td>
+                                    
+                                    <td class="tr-ping"><a href="comment.html"><i class="icon-icon_ping"></i></a></td>
+                                    <td class="tr-xi"><a target="_blank" href="shujufenxi.html?2182326">析</a></td>
+                                    <td class="tr-ouya"><a target="_blank" href="3in1.html?2182326">赔率</a></td>
+                                    <td class="tr-up"><i class="icon-btn_top_n"></i></td>
+                                    <td class="tr-collect"><i class="icon-btn_collect_n"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="a11">
+                            <tbody>
+                                <tr class="noborder">
+                                    <td class="tr-option">
+                                        <a href="javascript:;" class="js-choose-show"><i class="icon-icon_choice_n"></i></a>
+                                        <div class="choose-box hide"> <i class="icon-arrow_msg_screen"></i> <a href="javascript:;" class="border-right tr-collect-in"><span>收藏</span></a><a href="javascript:;" class="tr-hide count-hide"><span>隐藏</span></a> </div>
+                                        
+                                        <span class="introd"><span class="introd-content" colspan="24"> 常规时间90分钟[0-0],120分钟[1-2],哥罗纳胜出</span></span>
+                                    </td>
+                                    <td class="tr-icon b11"><i class="icon-icon_eventlogo" style="background-image:url(img/eventlogo.png);"></i></td>
+                                    <td class="tr-compet-title">球会友谊 </td>
+                                    <td class="tr-compet-time">2-28
+                                        <BR>18:30</td>
+                                    <td class="tr-compet-pro"><i class="icon-icon_clock_05"></i>70<i class="minute"></i></td>
+                                    <td class="tr-vsl"><span class="home"><span class="rank">[13]</span>
+                                        <div class="yellow-warn">1</div>
+                                        <div class="red-warn">1</div>
+                                        <span class="trans-home"><a href="team.html?28283" target="_blank"><span class="team-name">塞萨足球学院</span></a>
+                                        </span>
+                                        </span>
+                                    </td>
+                                    <td class="tr-vs-score"><a href="javascript:void(0)" target="_blank"><span class="score-l">2</span>-<span class="score-r">1</span></a>
+                                        <div class="bifen-tooltip hide" style="top: 0px; left: 54px;">
+                                            <div class="table-wrap">
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <td class="left-icon">塞萨足球学院塞萨足球学院</td>
+                                                            <td class="score">2-1</td>
+                                                            <td class="right-icon">果阿警方SC</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="left-icon"><i class="icon-icon_goal"></i></td>
+                                                            <td class="time">20</td>
+                                                            <td class="right-icon"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="left-icon"><i class="icon-icon_goal"></i></td>
+                                                            <td class="time">39</td>
+                                                            <td class="right-icon"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="left-icon"></td>
+                                                            <td class="time">63</td>
+                                                            <td class="right-icon"><i class="icon_goal"></i></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <td colspan="3">技术统计</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="left-icon">1</td>
+                                                            <td class="time">角球</td>
+                                                            <td class="right-icon">8</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="left-icon">1<i class="icon_RC"></i></td>
+                                                            <td class="time">黄牌</td>
+                                                            <td class="right-icon">1<i class="icon_YC"></i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="left-icon">12</td>
+                                                            <td class="time">射门</td>
+                                                            <td class="right-icon">10</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="left-icon">6</td>
+                                                            <td class="time">射正</td>
+                                                            <td class="right-icon">3</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="tr-vsr"><span class="away"><span class="trans-away"><a href="team.html?40259/" target="_blank" style="color: rgb(102, 102, 102);"><span class="team-name">果阿警方SC</span></a>
+                                        </span>
+                                        <div class="red-warn">1</div>
+                                        <div class="yellow-warn">1</div>
+                                        <span class="rank">[9]</span><i class="getScore icon-icon_goal hide"></i></span>
+                                    </td>
+                                    <td class="predict1">
+                                        <div><span class="float above">44.06%</span> <span class="float below">31.46%</span></div>
+                                    </td>
+                                    <td class="predict2">
+                                        <div><span class="float above">55%</span> <span class="float below">69%</span></div>
+                                    </td>
+                                    <td class="tr-half-score"><span class="half-l">2</span>-<span class="half-r">0</span></td>
+                                    <td class="tr-corner"><i class="icon-corner"></i><span>1-6</span></td>
+                                    <td class="tr-live"><i class="icon-zhubo-9"></i></td>
+                                    <td class="tr-ratel">
+                                        <div><span class="float above">1.075<i class="icon-arrow_index_up_gif"></i></span> <span class="float below">1.050</span></div>
+                                    </td>
+                                    <td class="tr-sb">
+                                        <div class="tr-sb-content"><span class="float above">平手</span> <span class="float below">4</span> </div>
+                                        <div class="sbTooltip hide" style="top: -165px; left: -224px;"> <i class="icon-arrow_subform"></i>
+                                            <div class="tooltipHead"> <span>塞萨足球学院</span> <span>vs</span> <span>果阿警方SC</span> </div>
+                                            <div class="tooltipContent">
+                                                <div class="bg1"></div>
+                                                <div class="bg2"><i class="icon-shadow_03"></i></div>
+                                                <div class="bg3"></div>
+                                                <table class="table-sb-tool">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>&nbsp;</th>
+                                                            <th colspan="3"><span class="bold">亚</span></th>
+                                                            <th colspan="3"><span class="bold">欧</span></th>
+                                                            <th colspan="3"><span class="bold">大</span></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="first">
+                                                            <td class="title-color">初盘指数</td>
+                                                            <td class="oddsasia"><span>1.000<i></i></span></td>
+                                                            <td class="wide-panlu oddsasia">平手</td>
+                                                            <td class="oddsasia"><span>0.800<i></i></span></td>
+                                                            <td class="oddseurope"><span>2.625<i></i></span></td>
+                                                            <td sd="" class="euro-panlu oddseurope">3.4</td>
+                                                            <td class="oddseurope"><span>2.250<i></i></span></td>
+                                                            <td class="oddsbigsmall"><span>0.900<i></i></span></td>
+                                                            <td class="wide-panlu oddsbigsmall">3</td>
+                                                            <td class="oddsbigsmall"><span>0.900<i></i></span></td>
+                                                        </tr>
+                                                        <tr class="realtime">
+                                                            <td class="title-color">即时指数</td>
+                                                            <td class="oddsasia"><span>1.000<i></i></span></td>
+                                                            <td class="wide-panlu oddsasia">平手</td>
+                                                            <td class="oddsasia"><span>0.800<i></i></span></td>
+                                                            <td class="oddseurope"><span>2.625<i></i></span></td>
+                                                            <td sd="" class="euro-panlu oddseurope">3.4</td>
+                                                            <td class="oddseurope"><span>2.250<i></i></span></td>
+                                                            <td class="oddsbigsmall"><span>0.900<i></i></span></td>
+                                                            <td class="wide-panlu oddsbigsmall">3</td>
+                                                            <td class="oddsbigsmall"><span>0.900<i></i></span></td>
+                                                        </tr>
+                                                        <tr class="ball">
+                                                            <td class="title-color">滚球指数</td>
+                                                            <td class="oddsasia"><span class="data-up">1.075<i class="icon-arrow_index_up_gif"></i></span></td>
+                                                            <td class="wide-panlu oddsasia">平手</td>
+                                                            <td class="oddsasia"><span class="data-down">0.725<i class="icon-arrow_index_down_gif"></i></span></td>
+                                                            <td class="oddseurope"><span class="data-down">1.363<i class="icon-arrow_index_down_gif"></i></span></td>
+                                                            <td sd="" class="euro-panlu oddseurope">4</td>
+                                                            <td class="oddseurope"><span class="data-up">9.000<i class="icon-arrow_index_up_gif"></i></span></td>
+                                                            <td class="oddsbigsmall"><span class="data-up">1.075<i class="icon-arrow_index_up_gif"></i></span></td>
+                                                            <td class="wide-panlu oddsbigsmall">4</td>
+                                                            <td class="oddsbigsmall"><span class="data-down">0.725<i class="icon-arrow_index_down_gif"></i></span></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="tr-rater">
+                                        <div><span class="float above">0.725<i class="icon-arrow_index_down_gif"></i></span> <span class="float below">0.750</span></div>
+                                    </td>
+                                    <td class="tr-qingbao"><a target="_blank" href="//guide.leisu.com/swot-2196932/">情报</a></td>
+                                    <td class="tr-ping"><a href="comment.html"><i class="icon-icon_ping"></i></a></td>
+                                    <td class="tr-xi"><a target="_blank" href="shujufenxi.html?2182316">析</a></td>
+                                    <td class="tr-ouya"><a target="_blank" href="3in1.html?2182316">赔率</a></td>
+                                    <td class="tr-up"><i class="icon-btn_top_n"></i></td>
+                                    <td class="tr-collect"><i class="icon-btn_collect_n"></i>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--live08-->
+                </div>
+                <!--live-content-->
+            </div>
+        </div>
+    </div>
+    <!--正文结束-->
+    <footer class="footer">
+        <ol>
+            <li>Copyright © 2017 星城体育 <span class="'">Sport.StarKing.</span> ALL Rights Reserved</li>
+            <li class="'"><em></em><a href="javascript:;" target="_blank">关于星城</a></li>
+            <li class="'"><em></em><a href="javascript:;" target="_blank">免责声明</a></li>
+            <li class="'"><em></em><a href="javascript:;" target="_blank">网站地图</a></li>
+            <li class="'"><em></em><a href="javascript:;" target="_blank">联系方式</a></li>
+        </ol>
+    </footer>
+    <!--登录弹屏-->
+    <div class="login-sign-box hide"> 
+      
+        <!-- 登录退出 BEGIN-->
+        <div class="exit-login hide">
+            <div class="hd-tip"><span>提示</span> <i class="icon-btn_close user-exit-btn"></i></div>
+            <p><i class="icon-hint"></i> 确定退出？</p>
+            <div class="btn-box">
+              <button class="sure-btn" id="exitLogin">确定</button>
+              <button class="cancel-btn">取消</button>
+            </div>
+        </div>
+        <!-- 登录退出 END-->
+
+        <div class="grey-bg" id="layoutBg"></div>
+
+        <div class="login-box" id="loginBox">
+            
+            <div class="box-bd">
+
+                <img src="../base/img/login-img.png">
+              
+                <div class="login-area"> <i class="icon-btn_close close-login"></i>
+                    <div class="other-login">
+                        <div class="tit">第三方登录</div>
+                        <div class="links">
+                            <a href="javascript:;"><i class="icon-btn_tencent40x40_n"></i></a>
+                            <a href="javascript:;"><i class="icon-btn_sina40x40_n disabled"></i></a>
+                            <a href="javascript:;"><i class="icon-btn_wechat40x40_n disabled"></i></a>
+                        </div>
+                        <p>登陆后方可添加收藏、发表留言</p>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary) -->
+    <script src="../base/js/jquery-1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../base/js/bootstrap.js"></script>
+    <!-- Site's js file -->
+    <script type="text/javascript" charset="utf-8" src="../base/js/common.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/bifen.js"></script>
+    <script>
+    var wh = $(window).height();
+    $('.mask').css('min-height', wh);
+
+    $(document).ready(function() {
+        var num = 15; //设置倒计时秒数
+        var timer = setInterval(function() {
+            num--;
+            if (num == -1) {
+                clearInterval(timer);
+                //window.location.href="http://xincastle-sports.com/";
+            } else {
+                $('#countdown').html(num);
+            }
+        }, 1000);
+    });
+    </script>
+</body>
+
+</html>

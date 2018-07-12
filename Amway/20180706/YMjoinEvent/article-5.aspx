@@ -37,10 +37,10 @@
                     <div class="line-it-button" data-lang="zh_Hant" data-type="share-c" data-url="<%:Url.ToFull("~/article-3.aspx") %>" style="display: none;"></div>
                 </div>
             </div>
-            <div class="kv-article"><img src="images/article/article-kv-pic0000005@2x.png" alt=""></div>
+            <div class="kv-article"><img src="images/article/article-kv-pic0000005.png" alt=""></div>
             <ul class="articlebox">
                 <li class="articlebox-item">
-                    <div class="articlebox-pic"><img src="images/article/articlebox-pic00000013@2x.png" alt="" class="articlebox-img"></div>
+                    <div class="articlebox-pic"><img src="images/article/articlebox-pic00000013.png" alt="" class="articlebox-img"></div>
                     <h3 class="h3-articlebox">第1招 甩掉大腿肉
 </span></h3>
                     <p>夏天還沒結束，小姐時期的熱褲請掛在
@@ -54,7 +54,7 @@
 準樂得呵呵笑！</p>
                 </li>
                 <li class="articlebox-item">
-                    <div class="articlebox-pic"><img src="images/article/articlebox-pic00000014@2x.png" alt="" class="articlebox-img"></div>
+                    <div class="articlebox-pic"><img src="images/article/articlebox-pic00000014.png" alt="" class="articlebox-img"></div>
                     <h3 class="h3-articlebox">第2招 小腹掰掰囉</h3>
                     <p>生過小孩的媽咪都知道，小腹會變魔術，稍微吃多了
 點，立馬凸出4個月的孕肚！快來試試可鍛鍊腹部核
@@ -67,7 +67,7 @@
 </p>
                 </li>
                 <li class="articlebox-item">
-                    <div class="articlebox-pic"><img src="images/article/articlebox-pic00000015@2x.png" alt="" class="articlebox-img"></div>
+                    <div class="articlebox-pic"><img src="images/article/articlebox-pic00000015.png" alt="" class="articlebox-img"></div>
                     <h3 class="h3-articlebox">第3招 霹靂腰包Out</h3>
                     <p>揮之不去的腰間肉、環狀游泳圈，是媽咪心中的
 痛，只好拚命穿著深色寬鬆衣物遮掩…… 其實

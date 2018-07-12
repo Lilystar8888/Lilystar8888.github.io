@@ -1,0 +1,503 @@
+.search-input .btn,
+.search-input .ipt,
+.search-input i {
+    display: block;
+    position: absolute
+}
+
+.latest-entry .img-list li h6,
+.latest-entry .m-list .explain h6,
+.latest-entry .m-list h6,
+.related-term ul li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.crumb ol,
+.entry-area,
+.entry-details,
+.entry-header,
+.latest-entry,
+.related-term {
+    overflow: hidden
+}
+
+.search-input {
+    display: block;
+    width: 277px;
+    height: 32px;
+    float: left;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 15px
+}
+
+.search-input i {
+    background-image: url(../img/sprite-caipiao-index.png);
+    background-position: -30px 0;
+    width: 20px;
+    height: 20px;
+    left: 5px;
+    top: 6px;
+    z-index: 55
+}
+
+.search-input .ipt {
+    float: left;
+    width: 230px;
+    height: 32px;
+    line-height: 30px;
+    color: #333;
+    text-indent: 26px;
+    outline: 0;
+    margin-bottom: 15px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    -moz-box-shadow: rgba(0, 0, 0, .1) 0 2px 6px;
+    -webkit-box-shadow: rgba(0, 0, 0, .1) 0 2px 6px;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 6px;
+    left: 0;
+    top: 0
+}
+
+.search-input .btn {
+    width: 50px;
+    height: 31px;
+    float: left;
+    border: 0;
+    background: #14805e;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+    outline: 0;
+    -moz-box-shadow: rgba(0, 0, 0, .1) 0 2px 6px;
+    -webkit-box-shadow: rgba(0, 0, 0, .1) 0 2px 6px;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 6px;
+    right: 0;
+    top: 0
+}
+
+.crumb,
+.entry-header {
+    width: 1080px;
+    position: relative
+}
+
+.crumb {
+    height: 30px;
+    margin: 5px auto
+}
+
+.crumb ol {
+    float: left;
+    color: #333
+}
+
+.crumb a {
+    color: #14805e;
+    margin-left: 5px
+}
+
+.crumb li {
+    float: left;
+    line-height: 30px;
+    margin-left: 5px
+}
+
+.entry-header {
+    height: 200px;
+    border-bottom: 1px solid #eee;
+    margin: 0 auto;
+    top: 0;
+    left: 0
+}
+
+.entry-header .entry-info {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 755px;
+    height: 150px;
+    padding-right: 10px;
+    box-sizing: border-box
+}
+
+.entry-header .entry-info .synonym {
+    display: inline-block;
+    width: auto;
+    height: 20px;
+    background: #fff;
+    padding: 0 10px;
+    line-height: 20px;
+    color: #666;
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+    border-radius: 16px;
+    position: relative;
+    float: left;
+    top: 20px;
+    left: 10px
+}
+
+.entry-header .entry-info .synonym .synonym-box {
+    display: inline-block;
+    border-right: 1px solid #eee;
+    height: 20px;
+    padding-right: 5px
+}
+
+.entry-header img {
+    display: inline-block;
+    width: 252px;
+    height: 162px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-right: 20px
+}
+
+.entry-header h2 {
+    display: inline-block;
+    font-size: 30px;
+    color: #14805e;
+    float: left;
+    border-bottom: 1px dotted #343434;
+    line-height: 46px
+}
+
+.entry-details .charac h3,
+.entry-header p {
+    display: block;
+    text-align: left
+}
+
+.entry-header p {
+    width: 755px;
+    position: absolute;
+    top: 60px;
+    font-size: 14px;
+    color: #666
+}
+
+.entry-header .myshare {
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    position: absolute;
+    bottom: 5px;
+    right: 30px;
+    color: #999!important;
+    font-size: 12px!important;
+    font-weight: 400!important;
+    line-height: 1.5!important
+}
+
+.entry-header .myshare .icon_share {
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    background-image: url(../img/sprite-caipiao-citiaozhanshi.png);
+    background-position: 0 0;
+    position: absolute;
+    left: -5px;
+    top: -1px
+}
+
+.entry-area {
+    width: 1080px;
+    height: auto;
+    margin: 20px auto 0;
+    position: relative;
+    padding-bottom: 50px
+}
+
+.area-left,
+.entry-details {
+    width: 790px;
+    height: auto;
+    position: relative;
+    left: 0
+}
+
+.area-left {
+    display: inline-block;
+    float: left
+}
+
+.entry-details .myline {
+    display: inline-block;
+    width: 3px;
+    height: 100%;
+    background: #eee;
+    position: absolute;
+    left: 2px
+}
+
+.entry-details .charac {
+    width: 760px;
+    height: auto;
+    background: #fff;
+    position: relative;
+    left: 15px;
+    margin-top: 25px;
+    border: 1px solid #eee
+}
+
+.latest-entry,
+.related-term {
+    margin-top: 20px;
+    border: 1px solid #eee
+}
+
+.entry-details .charac .arrow_subform_9x14 {
+    display: inline-block;
+    width: 9px;
+    height: 14px;
+    background-image: url(../img/sprite-caipiao-citiaozhanshi.png);
+    background-position: 0 -20px;
+    position: absolute;
+    left: -8px;
+    top: 9px
+}
+
+.entry-details .charac .point_4x4_r {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background-image: url(../img/sprite-caipiao-citiaozhanshi.png);
+    background-position: -9px -20px;
+    position: absolute;
+    left: -14px;
+    top: 16px
+}
+
+.entry-details .charac h3 {
+    width: 100%;
+    height: 40px;
+    text-indent: 1em;
+    color: #14805e;
+    font-weight: 700;
+    font-size: 16px;
+    border-bottom: 1px #eee solid;
+    line-height: 40px;
+    margin-bottom: 20px
+}
+
+.entry-details .charac p,
+.related-term h4 {
+    display: block;
+    font-size: 14px
+}
+
+.entry-details .charac p {
+    text-align: left;
+    background: #fff;
+    color: #666;
+    text-indent: 2em;
+    line-height: 22px;
+    padding: 5px 10px
+}
+
+.mylabel {
+    display: block;
+    position: absolute;
+    float: left;
+    width: 760px;
+    height: 30px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    border-left: 8px #ddd solid;
+    text-align: left;
+    line-height: 30px;
+    color: #999;
+    text-indent: 1em
+}
+
+.area-right {
+    width: 280px;
+    height: auto;
+    position: relative;
+    top: 0;
+    right: 0;
+    float: right
+}
+
+.latest-entry,
+.latest-entry .img-list li,
+.latest-entry .m-list li,
+.related-term ul li {
+    float: left;
+    box-sizing: border-box
+}
+
+.related-term {
+    width: 280px;
+    height: auto;
+    box-sizing: border-box;
+    background: #fff
+}
+
+.latest-entry h4,
+.related-term h4 {
+    background: #14805e;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: left;
+    text-indent: 1em;
+    line-height: 40px
+}
+
+.related-term h4 {
+    width: 100%;
+    height: 40px
+}
+
+.related-term ul {
+    width: 100%;
+    height: 100%;
+    padding: 15px 12px;
+    overflow: hidden
+}
+
+.related-term ul li {
+    display: block;
+    border-left: 1px solid #ccc;
+    font-style: normal;
+    font-size: 14px;
+    border-radius: 80px;
+    background-color: #f1f1f1;
+    padding: 0 10px;
+    min-width: 50px;
+    margin-right: .5rem;
+    margin-bottom: .5rem
+}
+
+.related-term ul li:hover {
+    background-color: #555;
+    color: #fff
+}
+
+.latest-entry h4,
+.related-term ul li a {
+    display: block;
+    width: 100%;
+    font-size: 14px
+}
+
+.related-term ul li a {
+    color: #666;
+    height: 100%
+}
+
+.related-term ul li:hover a {
+    background-color: #555;
+    color: #fff
+}
+
+.related-term ul .haveline {
+    border-right: 1px solid #eee;
+    box-sizing: border-box
+}
+
+.latest-entry {
+    width: 280px;
+    height: auto;
+    background: #fff
+}
+
+.latest-entry h4 {
+    height: 40px
+}
+
+.latest-entry .img-list li h6,
+.latest-entry .m-list h6 {
+    color: #333;
+    line-height: 30px;
+    display: block
+}
+
+.latest-entry .img-list {
+    overflow: hidden
+}
+
+.latest-entry .img-list li {
+    width: 33.33%;
+    height: 100%;
+    padding: 10px
+}
+
+.latest-entry .img-list li img {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #eee
+}
+
+.latest-entry .img-list li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 14px
+}
+
+.latest-entry .img-list li h6 {
+    width: 70px;
+    height: 30px;
+    font-size: 14px;
+    text-align: center
+}
+
+.latest-entry .m-list {
+    width: 100%;
+    height: auto;
+    overflow: hidden
+}
+
+.latest-entry .m-list li.first {
+    border-right: 1px #ccc solid
+}
+
+.latest-entry .m-list li.huise {
+    background: #ddd
+}
+
+.latest-entry .m-list li {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    overflow: hidden;
+    text-align: left
+}
+
+.latest-entry .m-list li a {
+    display: block;
+    width: 100%;
+    height: 100%
+}
+
+.latest-entry .m-list li a p {
+    font-size: 12px;
+    height: 36px;
+    width: 118px;
+    overflow: hidden
+}
+
+.latest-entry .m-list h6 {
+    font-size: 14px
+}
+
+.latest-entry .m-list .explain {
+    width: 138px;
+    height: 100px
+}
+
+.latest-entry .m-list .explain h6 {
+    width: 118px;
+    height: auto;
+    display: block
+}

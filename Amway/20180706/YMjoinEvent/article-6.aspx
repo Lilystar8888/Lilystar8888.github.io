@@ -37,10 +37,10 @@
                     <div class="line-it-button" data-lang="zh_Hant" data-type="share-c" data-url="<%:Url.ToFull("~/article-6.aspx") %>" style="display: none;"></div>
                 </div>
             </div>
-            <div class="kv-article"><img src="images/article/article-kv-pic0000006@2x.png" alt=""></div>
+            <div class="kv-article"><img src="images/article/article-kv-pic0000006.png" alt=""></div>
             <ul class="articlebox">
                 <li class="articlebox-item">
-                    <div class="articlebox-pic"><img src="images/article/articlebox-pic00000016@2x.png" alt="" class="articlebox-img"></div>
+                    <div class="articlebox-pic"><img src="images/article/articlebox-pic00000016.png" alt="" class="articlebox-img"></div>
                     <h3 class="h3-articlebox">場合1・帶孩子上學，心機裸妝不能輸
 </span></h3>
                     <p>帶有健康色澤的光感裸肌是底妝
@@ -56,7 +56,7 @@ CC霜把黯黃氣色藏起來，再選擇與
 配上親切笑容，你就是最有觀眾緣的媽咪！</p>
                 </li>
                 <li class="articlebox-item">
-                    <div class="articlebox-pic"><img src="images/article/articlebox-pic00000017@2x.png" alt="" class="articlebox-img"></div>
+                    <div class="articlebox-pic"><img src="images/article/articlebox-pic00000017.png" alt="" class="articlebox-img"></div>
                     <h3 class="h3-articlebox">場合2・上班前修修臉，怎麼拍都像妹</h3>
                     <p>很多上班族媽咪為了省時間，常常一盒氣墊粉
 餅拍全臉，或是選用不適合自己膚色的底妝，
@@ -71,7 +71,7 @@ CC霜把黯黃氣色藏起來，再選擇與
 </p>
                 </li>
                 <li class="articlebox-item">
-                    <div class="articlebox-pic"><img src="images/article/articlebox-pic00000018@2x.png" alt="" class="articlebox-img"></div>
+                    <div class="articlebox-pic"><img src="images/article/articlebox-pic00000018.png" alt="" class="articlebox-img"></div>
                     <h3 class="h3-articlebox">場合3・眼唇加點顏色，自信完勝交際圈</h3>
                     <p>當了媽，偶爾還是要和好姊妹跑跑趴！出席交際
 場合，想要營造年輕妝感，可以試試銀灰色的眼
