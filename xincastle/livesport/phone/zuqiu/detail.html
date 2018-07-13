@@ -44,6 +44,14 @@
 
 <body class="page">
     <div class="fixed-top-panel">
+        <!--会员专属内容 20180712-->
+        <div class="ssmbonly hide">
+            <div class="swrap">
+                <div class="float-left"><a class="head-btn iconfont icon-prev" onclick="closeiframe();"></a></div>
+                <img src="../base/img/ssmbonly.png" onclick="lity('loginbox.html');">
+            </div>
+        </div>
+        <!--ssmbonly-->
         <div class="fixed-top">
             <div class="detail-header">
                 <div class="float-left"><a class="head-btn iconfont icon-prev" onclick="window.history.back();"></a></div>
@@ -1382,6 +1390,13 @@
             <div class="float-left"><a class="head-btn iconfont icon-prev" onclick="closezhibo();"></a></div>
             <div class="title"><span class="tip-one display-b m-t-10"><span id="eventname" class="m-r-5">巴巴多超</span> 第1轮</span> <span class="tip-tow">比赛时间：2017年06月08日09:45</span></div>
         </div>
+        <!--美女直播会员专属内容 20180712-->
+        <div class="ssmbonly hide">
+            <div class="swrap">
+                <img src="../base/img/ssmbonly.png" onclick="lity('loginbox.html');">
+            </div>
+        </div>
+        <!--ssmbonly-->
         <iframe id="zhuboPlayer" src="" frameborder="0" width="100%" height="100%"></iframe>
     </div>
     <!--.zhubo-content-->
@@ -1399,15 +1414,16 @@
     //打开观看
     function toplay() {
         $(".detail-header").addClass("hide"),
-            $(".fixed-top").addClass("hidden"),
-            $(".bkt-live-frame-panel").addClass("show"),
-            $('.fixed-top .detail-header').addClass('inside');
+        $(".fixed-top").addClass("hidden"),
+        $(".ssmbonly").removeClass("hide") //会员专属内容
+        $(".bkt-live-frame-panel").addClass("show"),
+        $('.fixed-top .detail-header').addClass('inside');
     }
 
     //显示比赛资讯
     function toshow() {
         $(".fixed-top .detail-header").removeClass("hide"),
-            $(".fixed-top .detail-header .head-btn").attr("onclick", "closeiframe();");
+        $(".fixed-top .detail-header .head-btn").attr("onclick", "closeiframe();");
     }
 
     //隱藏比賽資訊
@@ -1418,19 +1434,19 @@
     //观看动画直播20180608
     function playanimation() {
         $('.watch-live .link:nth-child(1)').addClass('active'),
-            $('.watch-live .link:nth-child(2)').removeClass('active'),
-            $(".fixed-top .mask").removeClass("hide"),
-            toplay(),
-            $('iframe#bkt-live-frame').attr('src', 'liveframe.html');
+        $('.watch-live .link:nth-child(2)').removeClass('active'),
+        $(".fixed-top .mask").removeClass("hide"),
+        toplay(),
+        $('iframe#bkt-live-frame').attr('src', 'liveframe.html');
     }
 
     //观看视频直播20180608
     function playtvlive() {
         $('.watch-live .link:nth-child(2)').addClass('active'),
-            $('.watch-live .link:nth-child(1)').removeClass('active'),
-            $(".fixed-top .mask").addClass("hide"),
-            toplay(),
-            toshow();
+        $('.watch-live .link:nth-child(1)').removeClass('active'),
+        $(".fixed-top .mask").addClass("hide"),
+        toplay(),
+        toshow();
         var iOS = /iPad|iPhone/.test(navigator.userAgent) && !window.MSStream;
         var x = '';
         iOS ? x = 'tvsource2.html' : x = 'tvsource.html',
@@ -1441,28 +1457,31 @@
     //观看美女直播20180608
     function playzhubolive() {
         $('.download-banner').addClass('hide'),
-            $('.watch-live .link:nth-child(3)').addClass('active'),
-            $('.zhubo .zhubo-header').addClass('inside'),
-            $('#zhuboPlayer').attr('src', 'xlive.html');
+        $('.watch-live .link:nth-child(3)').addClass('active'),
+        $('.zhubo .zhubo-header').addClass('inside'),
+        $('#zhuboPlayer').attr('src', 'xlive.html');
         $('.fixed-top-panel, .detail-nav-content').css('display', 'none');
         $('.zhubo').css('width', dwidth).css('height', dheight).removeClass("hide");
+        $(".zhubo .ssmbonly").removeClass("hide") //会员专属内容
     }
 
     //隐藏IFRAME
     function closeiframe() {
+        $(".ssmbonly").addClass("hide"), //会员专属内容
         $('.detail-header').removeClass('inside').removeClass('hide'),
-            $('.fixed-top').removeClass('hidden'),
-            $('.bkt-live-frame-panel').removeClass('show'),
-            $('iframe#bkt-live-frame').attr('src', ''),
-            $('.fixed-top .detail-header .head-btn').attr("onclick", "window.history.back();");
+        $('.fixed-top').removeClass('hidden'),
+        $('.bkt-live-frame-panel').removeClass('show'),
+        $('iframe#bkt-live-frame').attr('src', ''),
+        $('.fixed-top .detail-header .head-btn').attr("onclick", "window.history.back();");
     }
 
     //关闭美女直播
     function closezhibo() {
+        $(".zhubo .ssmbonly").addClass("hide"), //会员专属内容
         $('.watch-live .link:nth-child(3)').removeClass('active'),
-            $('.zhubo-header').removeClass('inside'),
-            $('.zhubo').addClass("hide").css('width', '').css('height', ''),
-            $('#zhuboPlayer').attr('src', '');
+        $('.zhubo-header').removeClass('inside'),
+        $('.zhubo').addClass("hide").css('width', '').css('height', ''),
+        $('#zhuboPlayer').attr('src', '');
         $('.fixed-top-panel, .detail-nav-content').css('display', '');
     }
 
@@ -1471,13 +1490,13 @@
     $(document).ready(function() {
 
         var b = function(a, b) { b || (b = window.location.href);
-                a = a.replace(/[\[\]]/g, "\\$&"); var c = (new RegExp("[?&]" + a + "(=([^&#]*)|&|#|$)")).exec(b); return c ? c[2] ? decodeURIComponent(c[2].replace(/\+/g, " ")) : "" : null }("tab"),
+            a = a.replace(/[\[\]]/g, "\\$&"); var c = (new RegExp("[?&]" + a + "(=([^&#]*)|&|#|$)")).exec(b); return c ? c[2] ? decodeURIComponent(c[2].replace(/\+/g, " ")) : "" : null }("tab"),
             a = "";
 
         "animation" === b ? (playanimation()) :
-            "stream" === b ? (playtvlive()) :
-            "zhubo" === b ? (playzhubolive()) :
-            (a = "", $("watch-live .link").removeClass("active"), $('.zhubo .zhubo-header').removeClass('inside'));
+        "stream" === b ? (playtvlive()) :
+        "zhubo" === b ? (playzhubolive()) :
+        (a = "", $("watch-live .link").removeClass("active"), $('.zhubo .zhubo-header').removeClass('inside'));
 
         //更新图表
         setTimeout(function() {

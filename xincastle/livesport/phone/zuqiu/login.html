@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <title>星城体育</title>
     <link rel="stylesheet" href="../base/css/common.css">
+    <style type="text/css">
+        body{
+            background-color: #fc0;
+        }
+    </style>
     <script type="text/javascript" src="../base/js/jquery.min.js"></script>
     <script type="text/javascript" src="../base/js/common.js"></script>
     <script type="text/javascript">
@@ -46,22 +51,25 @@
         </div>
         <!--header-hd-->
     </div>
+    <!--广告-->
+    <div class="top-banner"></div>
     <!--header-nav-wrap-->
-
     <div class="login-box" id="loginBox">
-
         <div class="other-login">
             <div class="tit">第三方登录</div>
             <div class="links">
                 <a href="javascript:;"><i class="icon-tencent"></i></a>
-                <a href="javascript:;"><i class="icon-sina disabled"></i></a>
-                <a href="javascript:;"><i class="icon-wechat disabled"></i></a>
             </div>
-            <p>登陆后方可添加收藏、发表留言</p>
+            <form class="inputbox">
+                <div><input type="text" id="fname" name="fname" placeholder="填写您的QQ号">
+                <input type="button" class="btn" id="vcode" name="vcode" value="取得验证码"></div>
+                <input type="text" id="entervcode" name="entervcode" placeholder="验证码">
+            </form>
+            <div class="btn-2">
+                <button class="button-s">送出</button>
+            </div>
         </div>
-
     </div>
-
     <!--广告-->
     <div class="download-banner"><a target="_blank" href="#"><span class="find banner1 position-f"><i class="icon-close"></i></span></a></div>
     <div class="download-banner hide"><a target="_blank" href="#"><span class="find banner2 position-f"><i class="icon-close"></i></span></a></div>
@@ -69,7 +77,6 @@
     <div class="download-banner hide"><a target="_blank" href="#"><span class="find banner4 position-f"><i class="icon-close"></i></span></a></div>
     <div class="download-banner hide"><a target="_blank" href="#"><span class="find banner5 position-f"><i class="icon-close"></i></span></a></div>
     <div class="download-banner hide"><span class="find banner6 position-f"><i class="icon-close"></i></span></div>
-
 </body>
 
 </html>
