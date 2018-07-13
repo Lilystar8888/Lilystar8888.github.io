@@ -1,0 +1,63 @@
+<div class="atlc-list">
+    <ul>
+        <div class="one">
+            <li>材質92%聚酯纖維 8%彈性纖維，款式加強腰線設計及 小圓領，正面印有A Logo 背面印有ARTISTRY字樣。</li>
+        </div>
+    </ul>
+</div>
+<div class="atlc-attention block">
+    <label>注意事項</label>
+    <div class="value">
+        <p>尺寸表格如下：</p>
+        <table border="1" cellpadding="10" cellspacing="0" style="font-size: 0.18rem;text-align: center;margin-top: .2rem;">
+            <thead>
+                <tr>
+                    <th style="padding: 6px;">
+                        <center>部位/尺寸</center>
+                    </th>
+                    <th style="padding: 6px;">
+                        <center>S</center>
+                    </th>
+                    <th style="padding: 6px;">
+                        <center>M</center>
+                    </th>
+                    <th style="padding: 6px;">
+                        <center>L</center>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 6px;">肩寬</td>
+                    <td style="padding: 6px;">14 1/4</td>
+                    <td style="padding: 6px;">14 3/4</td>
+                    <td style="padding: 6px;">15 1/4</td>
+                </tr>
+                <tr>
+                    <td style="padding: 6px;">胸圍</td>
+                    <td style="padding: 6px;">35</td>
+                    <td style="padding: 6px;">37</td>
+                    <td style="padding: 6px;">39</td>
+                </tr>
+                <tr>
+                    <td style="padding: 6px;">腰圍</td>
+                    <td style="padding: 6px;">28</td>
+                    <td style="padding: 6px;">30</td>
+                    <td style="padding: 6px;">32</td>
+                </tr>
+                <tr>
+                    <td style="padding: 6px;">衣長</td>
+                    <td style="padding: 6px;">23.5</td>
+                    <td style="padding: 6px;">24</td>
+                    <td style="padding: 6px;">24.5</td>
+                </tr>
+                <tr>
+                    <td style="padding: 6px;">袖長</td>
+                    <td style="padding: 6px;">16</td>
+                    <td style="padding: 6px;">16 1/4</td>
+                    <td style="padding: 6px;">16 1/2</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
