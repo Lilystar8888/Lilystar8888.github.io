@@ -1,0 +1,186 @@
+<div class="product product-detail nutrilite-product">
+    <div class="product-des atlc-wrapper nutrilite">
+        <div class="des-nav md cf">
+            <div class="nav-content">
+                <p class="intro fl cur">產品介紹 <em class="arrowfull-d"></em></p>
+                <p class="info fl">詳細資訊 <em class="arrowfull-d"></em></p>
+            </div>
+        </div>
+        <!--des-nav md cf-->
+        <div class="group atlc-product-intro">
+            <p class="title"><span>產品介紹</span> <em class="arrowfull-d"></em></p>
+            <div class="atlc-body">
+                <div class="atlc-list">
+                    <div class="atlc-head">
+                        <h2>均衡膳食 與熱量保持安全距離</h2>
+                    </div>
+                    <ul>
+                        <div>
+                            <li>忙碌上班族的健康小幫手，含適當比例的維生素、礦物質及膳食纖維，熱量低無負擔，好喝又飽足。</li>
+                            <li>熱量僅約120大卡，與熱量保持距離。以大豆優質蛋白質為基底，每包含膳食纖維、多種維生素及礦物質，立即補充能量。</li>
+                            <li>高纖，幫助排便順暢。</li>
+                            <li>即溶好沖泡，不含化學色素、人工香料，完美體態輕鬆擁有。</li>
+                        </div>
+                    </ul>
+                </div>
+                <!--atlc-list-->
+            </div>
+        </div>
+        <!--group atlc-product-intro-->
+        <div class="group atlc-detail-info">
+            <p class="title"><span>詳細資訊</span> <em class="arrowfull-d"></em></p>
+            <div class="atlc-body">
+                <div class="detail">
+                    <div class="atlc-storage block">
+                        <label>容 <span class="space">&nbsp;</span>量</label>
+                        <div class="value">
+                            <p>每盒(18包)</p>
+                        </div>
+                    </div>
+                    <div class="atlc-method block">
+                        <label>使用方法</label>
+                        <div class="value">
+                            <p>每包產品以150毫升的熱開水沖調，均勻攪拌後即可食用，並依照個人口味喜好，搭配其他食材或蔬果食用。</p>
+                        </div>
+                    </div>
+                    <div class="atlc-duration block">
+                        <label>有效期限</label>
+                        <div class="value">
+                            <p>18個月</p>
+                        </div>
+                    </div>
+                    <div class="atlc-attention block">
+                        <label>注意事項</label>
+                        <div class="value">
+                            <ul>
+                                <li>過敏原資訊：本產品含有牛奶或其製品。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="atlc-ingredient block">
+                        <label>成 <span class="space">&nbsp;</span>分</label>
+                        <div class="value">
+                            <p>大豆分離蛋白、燕麥、麥芽糊精、植物性奶精(椰子油、葡萄糖漿、乾酪素鈉、磷酸氫二鉀、脂肪酸甘油酯、多磷酸鈉、磷酸鈣)、蔗糖、燕麥纖維、菊苣纖維、大豆蛋白、玉米香料(麥芽糊精、辛烯基丁二酸鈉澱粉、中鏈三酸甘油脂、香料)、食鹽、碳酸鈣、大豆卵磷脂、針葉櫻桃濃縮素、維生素C、維生素E、硫酸鋅、丁烯二酸亞鐵、維生素A乙酸酯、本多酸鈣、葉酸、維生素B1、維生素B2。</p>
+                        </div>
+                    </div>
+                </div>
+                <!--detail-->
+                <div class="ingredient-table-two">
+                    <p class="atlc-table-note">每一份量30公克 ，本包裝含18份。</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>項目</th>
+                                <th>每份</th>
+                                <th>每100公克</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>熱量</td>
+                                <td>113大卡</td>
+                                <td>377大卡</td>
+                            </tr>
+                            <tr>
+                                <td>蛋白質</td>
+                                <td>8公克</td>
+                                <td>26.7公克</td>
+                            </tr>
+                            <tr>
+                                <td>脂肪</td>
+                                <td>3公克</td>
+                                <td>10公克</td>
+                            </tr>
+                            <tr>
+                                <td>飽和脂肪</td>
+                                <td>1.8公克</td>
+                                <td>6公克</td>
+                            </tr>
+                            <tr>
+                                <td>反式脂肪</td>
+                                <td>0公克</td>
+                                <td>0公克</td>
+                            </tr>
+                            <tr>
+                                <td>碳水化合物</td>
+                                <td>15公克</td>
+                                <td>50公克</td>
+                            </tr>
+                            <tr>
+                                <td>糖</td>
+                                <td>3公克</td>
+                                <td>10公克</td>
+                            </tr>
+                            <tr>
+                                <td>膳食纖維</td>
+                                <td>3公克</td>
+                                <td>10公克</td>
+                            </tr>
+                            <tr>
+                                <td>鈉</td>
+                                <td>240毫克</td>
+                                <td>800毫克</td>
+                            </tr>
+                            <tr>
+                                <td>維生素A</td>
+                                <td>128微克RE</td>
+                                <td>426.7微克RE</td>
+                            </tr>
+                            <tr>
+                                <td>維生素B1</td>
+                                <td>0.21毫克</td>
+                                <td>0.7毫克</td>
+                            </tr>
+                            <tr>
+                                <td>維生素B2</td>
+                                <td>0.21毫克</td>
+                                <td>0.7毫克</td>
+                            </tr>
+                            <tr>
+                                <td>維生素C</td>
+                                <td>16毫克</td>
+                                <td>53.3毫克</td>
+                            </tr>
+                            <tr>
+                                <td>維生素E</td>
+                                <td>2.24毫克α-TE</td>
+                                <td>7.47毫克α-TE</td>
+                            </tr>
+                            <tr>
+                                <td>葉酸</td>
+                                <td>64微克</td>
+                                <td>213微克</td>
+                            </tr>
+                            <tr>
+                                <td>泛酸</td>
+                                <td>0.8毫克</td>
+                                <td>2.7毫克</td>
+                            </tr>
+                            <tr>
+                                <td>鈣</td>
+                                <td>128毫克</td>
+                                <td>426.7毫克</td>
+                            </tr>
+                            <tr>
+                                <td>鐵</td>
+                                <td>3.0毫克</td>
+                                <td>10毫克</td>
+                            </tr>
+                            <tr>
+                                <td>鋅</td>
+                                <td>2.25毫克</td>
+                                <td>7.5毫克</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--ingredient-table-two-->
+            </div>
+            <!--atlc-body-->
+        </div>
+        <!--group atlc-detail-info-->
+    </div>
+    <!--product-des atlc-wrapper nutrilite-->
+    <script src="./assets/javascripts/view/product-detail.js?v=237.0"></script>
+</div>
+<!--product product-detail nutrilite-produc-->
