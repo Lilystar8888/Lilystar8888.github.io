@@ -1,0 +1,83 @@
+body {
+    font-size: 100%;
+    font-family: 'Microsoft YaHei', 'Arial';
+}
+
+#content {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #FFF;
+}
+
+#clear {
+    clear: both;
+}
+
+table {
+    font-size: 100%;
+}
+
+thead>tr>td{
+    background-color: #eee;
+    color: #000;
+}
+
+tbody>tr:nth-child(even){
+    background-color: #eee;
+}
+
+tbody>tr:nth-child(odd){
+    background-color: #008FC5;
+}
+
+tbody>tr:nth-child(odd)>td{
+    color: #fff;
+}
+
+p {
+    padding: 10px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-family: "Microsoft YaHei", Arial;
+}
+
+img{
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+    #content {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
+    body {
+        background-color: #FFF;
+        font-size: 100%;
+    }
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.floatlayer {
+    text-align: right;
+}
