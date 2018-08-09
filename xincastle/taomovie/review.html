@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-CN">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>淘影影城-电影天堂 立即在线上观看</title>
+    <link rel="author" href="www.tao-movie.com">
+    <link rel="publisher" href="www.tao-movie.com">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta name="description" content="淘影影城 电影天堂 tao-movie.com 提供最全的 2017 最新电影,最新电视剧,每天第一时间更新各种好看的样央视热播电视剧、动漫、综艺节目,这里有最新的热门电影电视剧排行榜,精挑细选网路上最火红的趣味影音,绝对让你百逛不厌,淘影电影手机版下载,手机软件淘影电影下载,播放不用任何外挂插件,立即在线上观看" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta property="og:title" content="淘影影城 - 精挑细选网路上最火红的趣味影音、偶像剧、电影、动漫、动画，绝对让你百逛不厌" />
+    <meta property="og:description" content="精挑细选网路上最火红的趣味影音、偶像剧、电影、动漫、动画，绝对让你百逛不厌" />
+    <meta name="description" content="精挑细选网路上最火红的趣味影音、偶像剧、电影、动漫、动画，绝对让你百逛不厌" />
+    <meta name="keywords" content="電影, youku,qq, 遊戲, 影音, 影視廳, 偶像劇, 線上看" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:description" content="精挑细选网路上最火红的趣味影音、偶像剧、电影、动漫、动画，绝对让你百逛不厌">
+    <meta name="twitter:title" content="精挑细选网路上最火红的趣味影音、偶像剧、电影、动漫、动画，绝对让你百逛不厌">
+    <link rel="stylesheet" href="css/iconfont.css" type="text/css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/bootstrap-grid.min.css">
+    <!--- Page CSS-->
+    <link rel="stylesheet" href="css/lity.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <!--20180204 responsive.css已合併入common.css-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="dist/js/jquery-1.9.1.min.js"></script>
+    <script src="dist/js/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- Optional JavaScript -->
+    <script src="js/common.js"></script>
+    <script src="js/lity.js" type="text/javascript"></script>
+</head>
+
+<body id="home" class="playmode2">
+    <!--body class 加 loading 可开启转场效果-->
+    <div class="loading-bar"></div>
+    <div id="goTop">
+        <span class="icon-keyboard_capslock"></span>
+    </div>
+    <!--PC导航-->
+    <div id="tpnav" class="container-fluid d-none d-md-block">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <div class="collapse navbar-collapse">
+                    <a class="navbar-brand" href="index.html">
+                        <div class="pclogo"></div>
+                        <!--20180206-->
+                    </a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">首页</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="channel.html">电影</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="channel.html">日剧</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="channel.html">韩剧</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="channel.html">动漫</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="channel.html">美剧</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="channel_av.html">成人</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="copartner.html" data-lity>合作<span class="d-none d-xl-inline-block">提案</span></a>
+                        </li>
+                    </ul>
+                    <form class="form-inline m-auto">
+                        <div class="searchborder">
+                            <span class="in">
+                                <input class="form-control navTopTxt" type="text" placeholder="找视频" aria-label="Search">
+                            </span>
+                            <span class="out">
+                                <button class="btn" type="submit"><i class="icon icon-search"></i></button>
+                            </span>
+                        </div>
+                    </form>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:;">登录</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:;">注册</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--collapse-->
+            </div>
+            <!--container-->
+        </nav>
+    </div>
+    <!--PC导航 END-->
+    <!--MB置顶logo&搜索-->
+    <div id="mtop" class="d-lg-none">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">
+                <div class="mlogo"></div>
+            </a>
+            <form class="form-inline ml-auto">
+                <div class="msearchborder">
+                    <input class="form-control navTopTxt" type="text" placeholder="找视频" aria-label="Search">
+                    <button class="btn" type="submit">
+                        <i class="icon icon-search"></i>
+                    </button>
+                </div>
+                <button id="msearch" class="btn" type="button"><span class="icon-apps"></span></button>
+            </form>
+        </nav>
+    </div>
+    <!--MB置顶logo&搜索 END-->
+    <!--MB导航-->
+    <nav id="mnav" class="navbar d-lg-none">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">首页</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="channel.html">电影</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="channel.html">日剧</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="channel.html">韩剧</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="channel.html">动漫</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="channel.html">美剧</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="channel_av.html">成人</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="copartner.html" data-lity>合作<span class="d-none d-xl-inline-block">提案</span></a>
+            </li>
+        </ul>
+    </nav>
+    <!--MB导航 END-->
+    <!--正文-->
+    <div id="reviewmain" class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-xl-8">
+                <div class="row">
+                    <!--左侧剧评-->
+                    <div class="col reviewbox">
+                        <nav aria-label="breadcrumb">
+                          <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="reviewer.html">剧评</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">《相对宇宙》S1E4：假如有一个生活更美好的自己</li>
+                          </ol>
+                        </nav>
+                        <div class="reviewttl">
+                            <h2><span>剧评</span>《相对宇宙》S1E4：假如有一个生活更美好的自己</h2>
+                            <h3>原文发布时间：opllx 发表于 2017-09-28 20:22 </h3>
+                        </div>
+                        <div class="btnpanel">
+                            <a class="btn likebtn" data-toggle="tooltip" title="喜欢" aria-label="6,909 人表示喜欢"><i class="xihuan icon-favorite_border"></i><span>6,909</span></a>
+                            <a class="share" data-toggle="tooltip" title="分享" aria-label="分享"><i class="icon icon-reply"></i><span>分享</span></a>
+                        </div>
+                        <!--btnpanel-->
+                        <div class="reviewcontent">
+                            <!--附件01 BEGIN-->
+                            <p style="margin-right:0;margin-left:0;text-indent:28px;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph"><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">这两部电影有着不少可比较之处。相同的是，两部电影的故事都不复杂，都讲述了一名青少年（海莉，14岁；艾里奥，<span style="font-size: 16px;">17</span>岁）与另一名相差十余岁的成年人之间的故事；不同的是，《水果硬糖》的海莉为杰夫营造的不过是一场假象，其表现出来的少女的懵懂、对性的渴望、对成年男性的爱慕都只是为了给自己被杀害的好朋友进行复仇而已，通过自己的方式对一个隐藏极深的恋童癖进行惩戒；而《请以你的名字呼唤我》描绘的则是艾里奥与奥利弗之间简单而美好的同性爱恋，不同于一贯的努力避人耳目，片中艾里奥的家人对艾里奥的情况了如指掌，却又不说破，还默默为其创造条件，对这种爱情表现出了极大的宽容与理解。</span>
+                            </p>
+                            <p style="margin-right:0;margin-left:0;text-indent:28px;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph"><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">&nbsp;<img src="http://110.173.51.107/article_image/30660/1518423417641_n.jpeg" title="1518423417641_n" alt="u=776285698,1221347114&amp;fm=11&amp;gp=0.jpg" width="764" height="439"></span></p>
+                            <p style="margin-right:0;margin-left:0;text-indent:28px;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph"><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">《水果硬糖》在叙事上不似寻常电影会充分利用视频媒体的优势对时间、空间的大幅度转换，安排多条线索或从多个角度讲述等等，倒像是一部舞台剧，整部片子完完全全只讲述了海莉到杰夫家里约会这么一个场景，将事件的前因后果与两人之间的矛盾冲突压缩到一个时空之中，使影片充满了张力。</span></p>
+                            <p style="margin-right:0;margin-left:0;text-indent:28px;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph"><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;"><img src="http://110.173.51.107/article_image/30660/1518423418297_n.jpeg" title="1518423418297_n" alt="u=3481195897,4180739279&amp;fm=27&amp;gp=0.jpg" width="774" height="455"></span></p>
+                            <p style="margin-right:0;margin-left:0;text-indent:28px;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph"><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">片名“水果硬糖”是美国的网络俚语，指未成年少女。三十多岁的摄影师杰夫在网上勾搭到14岁的海莉，两人约定见面。海莉还没有戒心地主动提出到他家去玩。本以为懵懂的叛逆少女作为弱势方会自食苦果，不料画风突变，这次见面是海莉的精心设局，因她查到杰夫有恋童癖，还曾虐杀她的好朋友，她是来复仇的。先是用药放倒杰夫，又假装将其阉割最后逼迫他自杀。再此过程中，海莉表现出完全超乎其年龄的冷静、睿智与机警，一步步诱导年长于自己近20岁的“大叔”上钩，通过观察其房间发现其初恋女友的软肋，找到其犯罪的证据——受迫害的女童的照片，通过各种胁迫逼其一点点承认自己的罪行，将之玩弄于股掌之间。</span></p>
+                            <p style="margin-right:0;margin-left:0;text-indent:28px;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph"><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;"><img src="http://110.173.51.107/article_image/30660/1518423418636_n.gif" title="1518423418636_n" alt="Hard.Candy.2005.水果硬糖.双语字幕.HR-HDTV.AC3.1024X576.x264_20180212130017.gif" width="587" height="258"></span></p>
+                            <p style="margin-right:0;margin-left:0;text-indent:28px;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph"><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">在简单的环境中，情节却是波折起伏。虽然从杰夫被摇迷倒的那一刻起，他便失去了主动权，但是被绑住的他却无时无刻不在努力摆脱困境，循循善诱的哄骗也罢，“为了你好”的关怀也罢，可怜兮兮的企求也罢，正面硬上的攻击也罢，几乎用尽各种方式，但都被海莉戏谑式的化解，并在最后能够持刀单杀海莉的情况下被迫选择了自杀，像一头困兽，再怎么挣扎，也逃不出海莉编织的严密牢笼。海莉与朋友最甜蜜的情感，变成了施向杰夫的最凶猛的毒药。</span></p>
+                            <p style="margin-right:0;margin-left:0;text-indent:28px;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph"><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">&nbsp;</span></p>
+                            <p style="margin-right:0;margin-left:0;text-indent:28px;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph"><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">相比之下，《请以你的名字呼唤我》则显得单纯的多，在这里没有阴谋，没有欺骗，没有攻击和伤害，甚至没什么剧情......有的只是两人从相识到确认彼此的过程中表现的各种细节与真挚的情感。故事发生在八十年代意大利的里维埃拉的一个夏天，少年艾力奥跟家人一起度假。父亲是名教授，每年都会带一名学生一起边度假边做研究。今年来的是美国人奥利弗，高大英俊热情开朗的奥利弗很快就获得了艾力奥一家人的喜爱。随着时间的推移，艾力奥和奥利弗之间渐渐产生了致命的吸引力，但性别和年龄的桎梏让他们迟迟无法跨出那关键的一步，与此同时，单纯善良的少女马奇娅也向艾力奥奉献着自己的感情和身体。最终，激情冲破了艾力奥和奥利弗之间的防线，两人展开了注定不会有结果的恋情。</span></p>
+                            <p style="margin-right:0;margin-left:0;text-indent:28px;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph"><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">&nbsp;<img src="http://110.173.51.107/article_image/30660/1518423419391_n.png" title="1518423419391_n" alt="111.png" width="770" height="461"></span></p>
+                            <p style="margin-right:0;margin-left:0;text-indent:28px;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph"><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">当看到奥利弗与其他女子亲热时，艾里奥抽闷烟，当他有意疏远时，艾里奥故意接近其他女子令他生气，当他外出时，艾进他卧室寻找他的气味，当他几日不归时，艾站在路口静静守望。想接近对方，却又不敢让他知道自己的情意。这种矛盾的少年心事，不正是我们每个人都经历过的吗？</span></p>
+                            <p style="margin-right:0;margin-left:0;text-indent:28px;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph"><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">80年代意大利的夏天，没有现代电子设备的困扰，家人亲朋的距离比现在要近得多。而拥有部分犹太血统的艾里奥一家也是充斥着文化气息。家里英文、德文、意大利文混用，艾里奥几乎是每天都要看书听音乐、写谱、弹琴、写日记，出行方式总是没有烟火气的自行车，活脱脱一幅令人艳羡的书香门第的世外生活。</span></p>
+                            <p style="margin-right:0;margin-left:0;text-indent:28px;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph"><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">&nbsp;<img src="http://110.173.51.107/article_image/30660/1518423420017_n.png" title="1518423420017_n" alt="222.png" width="772" height="439"></span></p>
+                            <p style="margin-right:0;margin-left:0;text-indent:28px;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph"><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">&nbsp;</span></p>
+                            <p style="margin-right:0;margin-left:0;text-indent:28px;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph"><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">人是社会性的动物，终吾辈之一生，都在与其他人打交道。在这过程中免不了要提高认识能力，认识别人，认识自己。而在与人相处的过程中，我们又必定会产生这样那样的感情，那样不受控制的感情。</span></p>
+                            <p style="margin-right:0;margin-left:0;text-indent:28px;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph"><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">&nbsp;</span></p>
+                            <p style="margin-right:0;margin-left:0;text-indent:28px;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph"><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">接触的人在变，旧人多年不见发现似乎变了样子，在不同阶段又总会认识新的人。自己也在变，别人眼中的你越来越不像真的你。很多时候，是不得不将真实的自我隐藏。艾里奥与奥利弗虽然相爱但最终亦不得不回归在常人看来正常、正确的轨道上，正如奥利弗说的，我了解自己，我一直都很规矩，我想做个好人。生在世上，不可能不在意周围人的看法，要想正常的生活，就要变得规矩，这种规矩即使是恶人也会遵守。杰夫之所以在最后时刻选择自杀，还是想在最在乎的初恋女友面前隐藏最真实的自我，给对方保留下自己规矩的印象。</span></p>
+                            <p style="margin-right:0;margin-left:0;text-indent:28px;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph"><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">&nbsp;<img src="http://110.173.51.107/article_image/30660/1518423420648_n.gif" title="1518423420648_n" alt="Hard.Candy.2005.水果硬糖.双语字幕.HR-HDTV.AC3.1024X576.x264_20180212130355.gif" width="517" height="285"></span></p>
+                            <p style="margin-right:0;margin-left:0;text-indent:28px;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph"><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">不过，这种规矩也并非不可突破。情感是一种最不可控的因素，当强烈到一定程度，便会压到理性、突破界限。海莉对死去的朋友有一种近乎执念的情感，放之不下，必须要亲自让施害人还债，奥利弗与艾里奥是幸运的，他们的情感可能不被大多数人所接受，但在相互吸引中，在激情澎湃中他们承认了真实的自己，在相互以自己的名字呼唤对方时肯定了真实的对方。</span></p>
+                            <p style="margin-right:0;margin-left:0;text-indent:28px;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph"><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">&nbsp;<img src="http://110.173.51.107/article_image/30660/1518423421259_n.png" title="1518423421259_n" alt="www.png" width="766" height="423"></span></p>
+                            <p style="margin-right:0;margin-left:0;text-indent:28px;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph"><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">丰子恺曾经说过，不乱于心，不困于情，不畏将来，不念过往，如此，安好。这是大家之境界，是超脱纷繁之外的淡然。但多数人是做不到的，可能更应该像艾里奥父亲说的那样，不能让自己没有感觉就不去感觉，那样岂不是太浪费了？我们的心和身体都只被给予一次，在你知道之前，心会疲惫，身体总有一天会变得没人想多看一眼，更别说贴近。此刻困于感情，你可能感动难过、痛苦，但别让他消失，更别说，那些曾经的快乐。</span></p>
+                            <p>
+                                <br>
+                            </p>
+                            <!--附件01 END-->
+                        </div>
+                    </div>
+                    <!--右侧剧评广告-->
+                    <div class="col-3 d-none d-md-block sidelist">
+                        <div class="row mt15 top-news">
+                            <div class="tit">
+                                <h3><a href="review.html">剧评</a></h3>
+                                <h4><a href="reviewer.html">更多剧评</a></h4>
+                            </div>
+                            <ul class="nano-content">
+                                <li class="clearfix">
+                                    <div class="fl-img">
+                                        <a href="review.html"><img src="pic/s_87456bb4438d78f326cca4ff36aa9a6c.jpg"></a>
+                                    </div>
+                                    <div class="fl-info">
+                                        <h3><a href="review.html"  title="新剧评测！《少年谢尔顿》S1E1：孤单却不孤独的成长">新剧评测！《少年谢尔顿》S1E1：孤单却不孤独的成</a><span>-- 评美剧 <a href="page.html"  class="f3">《少年谢尔顿》</a></span></h3>
+                                        <p class="f4"><a href="page.html">opllx</a> 发表于 2017-09-28 20:22
+                                            <font class="dateline" time="1506601370"></font>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="fl-img">
+                                        <a href="review.html"><img src="pic/s_44d4413782374400156b2753b36e2221.jpg"></a>
+                                    </div>
+                                    <div class="fl-info">
+                                        <h3><a href="review.html"  title="《美恐七》：小丑帮成员大揭秘，面具下面究竟是谁？">《美恐七》：小丑帮成员大揭秘，面具下面究竟是谁？</a><span>-- 评美剧 <a href="page.html"  class="f3">《美国恐怖故事》</a></span></h3>
+                                        <p class="f4"><a href="page.html">弄摩</a> 发表于 2017-09-28 15:08
+                                            <font class="dateline" time="1506582481"></font>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="fl-img">
+                                        <a href="review.html"><img src="pic/s_4caf48b7a5656b36f2affb6e434e7941.jpg"></a>
+                                    </div>
+                                    <div class="fl-info">
+                                        <h3><a href="review.html"  title="国庆节前摸鱼指南">国庆节前摸鱼指南</a><span>-- 评神剧 <a href="page.html"  class="f3">《黑镜》</a></span></h3>
+                                        <p class="f4"><a href="page.html">小卷面包</a> 发表于 2017-09-28 14:54
+                                            <font class="dateline" time="1506581651"></font>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="fl-img">
+                                        <a href="review.html"><img src="pic/s_f7bbf91a58027d5f136207da3c06c360.jpg"></a>
+                                    </div>
+                                    <div class="fl-info">
+                                        <h3><a href="review.html"  title="《少年谢尔顿》：“谢耳朵”的低情商终于找到了源头。">《少年谢尔顿》：“谢耳朵”的低情商终于找到了源头。</a><span>-- 评美剧 <a href="page.html"  class="f3">《少年谢尔顿》</a></span></h3>
+                                        <p class="f4"><a href="page.html">弄摩</a> 发表于 2017-09-27 10:45
+                                            <font class="dateline" time="1506480319"></font>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="fl-img">
+                                        <a href="review.html"><img src="pic/s_236bf13e97d5278074b98fe57304e43f.jpg"></a>
+                                    </div>
+                                    <div class="fl-info">
+                                        <h3><a href="review.html"  title="《堕落街传奇》S1E3：华灯初上夜未央，黎明破晓人两茫">《堕落街传奇》S1E3：华灯初上夜未央，黎明破晓人</a><span>-- 评美剧 <a href="page.html"  class="f3">《堕落街传奇》</a></span></h3>
+                                        <p class="f4"><a href="page.html">opllx</a> 发表于 2017-09-27 00:45
+                                            <font class="dateline" time="1506444357"></font>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="fl-img">
+                                        <a href="review.html"><img src="pic/s_c45ae229d5e52390d11f1e8b2bdbd1a5.jpg"></a>
+                                    </div>
+                                    <div class="fl-info">
+                                        <h3><a href="review.html"  title="漫谈《敦刻尔克》，揭露民族主义者的被迫害妄想">漫谈《敦刻尔克》，揭露民族主义者的被迫害妄想</a><span>-- 评电影 <a href="page.html"  class="f3">《敦刻尔克》</a></span></h3>
+                                        <p class="f4"><a href="page.html">野孩子1eo</a> 发表于 2017-09-25 12:11
+                                            <font class="dateline" time="1506312674"></font>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="fl-img">
+                                        <a href="review.html"><img src="pic/s_e8eed170c84e88431a99e834e302f0ba.jpg"></a>
+                                    </div>
+                                    <div class="fl-info">
+                                        <h3><a href="review.html"  title="《奥维尔》S1E3：莫克兰人才是最火的外星人！">《奥维尔》S1E3：莫克兰人才是最火的外星人！</a><span>-- 评美剧 <a href="page.html"  class="f3">《奥维尔号》</a></span></h3>
+                                        <p class="f4"><a href="page.html">弄摩</a> 发表于 2017-09-25 10:48
+                                            <font class="dateline" time="1506307732"></font>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="fl-img">
+                                        <a href="review.html"><img src="pic/s_16a1c6f172f8e5a67eda9f60ce21beda.jpg"></a>
+                                    </div>
+                                    <div class="fl-info">
+                                        <h3><a href="review.html"  title="《104号房间》S1E9：网球手和宝洁大姐的“一夜之情”">《104号房间》S1E9：网球手和宝洁大姐的“一夜</a><span>-- 评美剧 <a href="page.html"  class="f3">《104号房间》</a></span></h3>
+                                        <p class="f4"><a href="page.html">弄摩</a> 发表于 2017-09-24 21:10
+                                            <font class="dateline" time="1506258615"></font>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="fl-img">
+                                        <a href="review.html"><img src="pic/s_87456bb4438d78f326cca4ff36aa9a6c.jpg"></a>
+                                    </div>
+                                    <div class="fl-info">
+                                        <h3><a href="review.html"  title="新剧评测！《少年谢尔顿》S1E1：孤单却不孤独的成长">新剧评测！《少年谢尔顿》S1E1：孤单却不孤独的成</a><span>-- 评美剧 <a href="page.html"  class="f3">《少年谢尔顿》</a></span></h3>
+                                        <p class="f4"><a href="page.html">opllx</a> 发表于 2017-09-28 20:22
+                                            <font class="dateline" time="1506601370"></font>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="fl-img">
+                                        <a href="review.html"><img src="pic/s_44d4413782374400156b2753b36e2221.jpg"></a>
+                                    </div>
+                                    <div class="fl-info">
+                                        <h3><a href="review.html"  title="《美恐七》：小丑帮成员大揭秘，面具下面究竟是谁？">《美恐七》：小丑帮成员大揭秘，面具下面究竟是谁？</a><span>-- 评美剧 <a href="page.html"  class="f3">《美国恐怖故事》</a></span></h3>
+                                        <p class="f4"><a href="page.html">弄摩</a> 发表于 2017-09-28 15:08
+                                            <font class="dateline" time="1506582481"></font>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="fl-img">
+                                        <a href="review.html"><img src="pic/s_4caf48b7a5656b36f2affb6e434e7941.jpg"></a>
+                                    </div>
+                                    <div class="fl-info">
+                                        <h3><a href="review.html"  title="国庆节前摸鱼指南">国庆节前摸鱼指南</a><span>-- 评神剧 <a href="page.html"  class="f3">《黑镜》</a></span></h3>
+                                        <p class="f4"><a href="page.html">小卷面包</a> 发表于 2017-09-28 14:54
+                                            <font class="dateline" time="1506581651"></font>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="fl-img">
+                                        <a href="review.html"><img src="pic/s_f7bbf91a58027d5f136207da3c06c360.jpg"></a>
+                                    </div>
+                                    <div class="fl-info">
+                                        <h3><a href="review.html"  title="《少年谢尔顿》：“谢耳朵”的低情商终于找到了源头。">《少年谢尔顿》：“谢耳朵”的低情商终于找到了源头。</a><span>-- 评美剧 <a href="page.html"  class="f3">《少年谢尔顿》</a></span></h3>
+                                        <p class="f4"><a href="page.html">弄摩</a> 发表于 2017-09-27 10:45
+                                            <font class="dateline" time="1506480319"></font>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="fl-img">
+                                        <a href="review.html"><img src="pic/s_236bf13e97d5278074b98fe57304e43f.jpg"></a>
+                                    </div>
+                                    <div class="fl-info">
+                                        <h3><a href="review.html"  title="《堕落街传奇》S1E3：华灯初上夜未央，黎明破晓人两茫">《堕落街传奇》S1E3：华灯初上夜未央，黎明破晓人</a><span>-- 评美剧 <a href="page.html"  class="f3">《堕落街传奇》</a></span></h3>
+                                        <p class="f4"><a href="page.html">opllx</a> 发表于 2017-09-27 00:45
+                                            <font class="dateline" time="1506444357"></font>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="fl-img">
+                                        <a href="review.html"><img src="pic/s_c45ae229d5e52390d11f1e8b2bdbd1a5.jpg"></a>
+                                    </div>
+                                    <div class="fl-info">
+                                        <h3><a href="review.html"  title="漫谈《敦刻尔克》，揭露民族主义者的被迫害妄想">漫谈《敦刻尔克》，揭露民族主义者的被迫害妄想</a><span>-- 评电影 <a href="page.html"  class="f3">《敦刻尔克》</a></span></h3>
+                                        <p class="f4"><a href="page.html">野孩子1eo</a> 发表于 2017-09-25 12:11
+                                            <font class="dateline" time="1506312674"></font>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="fl-img">
+                                        <a href="review.html"><img src="pic/s_e8eed170c84e88431a99e834e302f0ba.jpg"></a>
+                                    </div>
+                                    <div class="fl-info">
+                                        <h3><a href="review.html"  title="《奥维尔》S1E3：莫克兰人才是最火的外星人！">《奥维尔》S1E3：莫克兰人才是最火的外星人！</a><span>-- 评美剧 <a href="page.html"  class="f3">《奥维尔号》</a></span></h3>
+                                        <p class="f4"><a href="page.html">弄摩</a> 发表于 2017-09-25 10:48
+                                            <font class="dateline" time="1506307732"></font>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="fl-img">
+                                        <a href="review.html"><img src="pic/s_16a1c6f172f8e5a67eda9f60ce21beda.jpg"></a>
+                                    </div>
+                                    <div class="fl-info">
+                                        <h3><a href="review.html"  title="《104号房间》S1E9：网球手和宝洁大姐的“一夜之情”">《104号房间》S1E9：网球手和宝洁大姐的“一夜</a><span>-- 评美剧 <a href="page.html"  class="f3">《104号房间》</a></span></h3>
+                                        <p class="f4"><a href="page.html">弄摩</a> 发表于 2017-09-24 21:10
+                                            <font class="dateline" time="1506258615"></font>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--row-->
+                <div class="row justify-content-center mt20 mb20">
+                    <!--横幅广告-->
+                    <div id="companion2">
+                        <div class="carousel slide carousel-fade" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a target="_blank" href="http://www.tao-movie.com"><img class="d-block mw-100" src="pic/A1-1.jpg" alt=""></a>
+                                </div>
+                                <div class="carousel-item">
+                                    <a target="_blank" href="http://www.tao-movie.com"><img class="d-block mw-100" src="pic/A1-1.jpg" alt=""></a>
+                                </div>
+                                <div class="carousel-item">
+                                    <a target="_blank" href="http://www.tao-movie.com"><img class="d-block mw-100" src="pic/A1-1.jpg" alt=""></a>
+                                </div>
+                            </div>
+                            <!--carousel-inner-->
+                        </div>
+                        <!--carousel-->
+                    </div>
+                    <!--#companion-->
+                </div>
+                <!--row-->
+            </div>
+        </div>
+    </div>
+    <!--container-fluid-->
+    <div id="all_warning" class="container-fluid">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="d-none d-lg-block"><img src="img/all_warning.png"></div>
+                <div class="title">重要声明</div>
+                <div>
+                    <p>本网站只是一个影视交流站点。所有资料均由发布者搜集于各大互联网。所有人皆有在本站发布信息的自由，但请各位发布者遵守您当地的法律规范。本网站不参与上传，录制，字幕，翻译，发布，软体开发等...活动，也不提供任何视频下载，更没有保存任何影视档案在本站服务器上。如觉得站上内容有版权疑虑，请留言告知。一旦经查属实，我方有权并且肯定会全力配合删除内容，以保护版权方的权益。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="col logo-social">
+            <div class="logo-wrapper">
+                <a class="logo" href=""></a>
+            </div>
+            <p class="copyright d-none d-lg-block">Copyright © 2017 淘影 Co., Ltd. All Rights Reserved.</p>
+        </div>
+        <div class="col list-wrapper about">
+            <div class="list">
+                <p class="label">关于</p>
+                <ul class="links">
+                    <li><a class="aboutus" target="_blank" href="javascript:;">关于淘影</a></li>
+                    <li><a class="service" target="_blank" ref="javascript:;">服务条款</a></li>
+                    <li><a class="privacy" target="_blank" ref="javascript:;">隐私权政策</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col list-wrapper collections">
+            <div class="list">
+                <p class="label">看片</p>
+                <ul class="links">
+                    <li><a class="exclusive" target="_blank" href="javascript:;">推荐</a></li>
+                    <li><a class="recommendation" target="_blank" href="javascript:;">电影</a></li>
+                    <li><a class="recommendation" target="_blank" href="javascript:;">日剧</a></li>
+                    <li><a class="recommendation" target="_blank" href="javascript:;">韩剧</a></li>
+                    <li><a class="recommendation" target="_blank" href="javascript:;">动漫</a></li>
+                    <li><a class="recommendation" target="_blank" href="javascript:;">美剧</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col list-wrapper collections">
+            <div class="list">
+                <p class="label">备案号为</p>
+                <ul class="links">
+                    <li><a class="icp" href="http://www.miitbeian.gov.cn" target="_blank">沪ICP备88888888号</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!--手机版置底广告-->
+    <div id="mcover" class="container-fluid d-sm-none">
+        <span class="icon-close"></span>
+        <div class="bk blur" style="background-color: rgba(255, 255, 255,.7);"></div>
+        <div class="row no-gutters">
+            <div class="col-4">
+                <img class="img-fluid" src="pic/girl1.png">
+            </div>
+            <div class="col">
+                <div class="triangle-border left">
+                    还在用xfplay, Qvod, 西瓜外挂播放?
+                    <BR>
+                    <font color="#de1030">在这里通通不用！</font>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--手机版置底广告END-->
+</body>
+
+</html>

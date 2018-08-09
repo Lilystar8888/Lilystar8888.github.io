@@ -1,0 +1,646 @@
+
+    <!-- Video Player CSS-->
+    <link rel="stylesheet" href="css/elite-font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="css/elite.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css">
+
+    <style type="text/css">
+        html, body{
+            padding:0; 
+            margin:0;
+        }
+    </style>
+
+    <!-- jQuery first-->
+    <script src="../dist/js/jquery-1.9.1.min.js"></script>
+
+    <!--then hls.js 直播協議 照著播放列表裡面給你的檔案順序播放-->
+    <script src="js/hls.js@latest"></script>
+
+    <!-- then Video Player JS-->
+    <script src="js/froogaloop.js" type="text/javascript"></script>
+    <script src="js/jquery.mCustomScrollbar.js" type="text/javascript"></script>
+    <script src="js/THREEx.FullScreen.js"></script>
+    <script src="js/videoPlayer.js" type="text/javascript"></script>
+    <script src="js/Playlist.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/ZeroClipboard.js"></script>
+    <script type="text/javascript" src="js/iphone-inline-video.js"></script>
+
+    <script type="text/javascript">
+        var resizeMV = function (){
+            videoPlayer.resizeAll();
+        }
+    </script>
+
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function($)
+        {
+            videoPlayer = $("#taoplayer").Video({
+                instanceName:"player1",                      //name of the player instance
+                instanceTheme:"dark",                        //choose video player theme: "dark", "light"
+                autohideControls:5,                          //autohide HTML5 player controls
+                hideControlsOnMouseOut:"YES",                //hide HTML5 player controls on mouse out of the player: "Yes","No"
+                playerLayout: "fitToContainer",              //Select player layout: "fitToContainer" (responsive mode), "fixedSize" (fixed mode), "fitToBrowser" (fill the browser mode)
+                videoPlayerWidth:1366,                       //fixed total player width (only for playerLayout: "fixedSize")
+                videoPlayerHeight:768,                       //fixed total player height (only for playerLayout: "fixedSize")
+                videoRatio: 16/9,                            //set your video ratio (calculate video width/video height)
+                playlist:"Right playlist",                   //choose playlist type: "Right playlist", "Bottom playlist", "Off"
+                showGlobalPrerollAds: false, //enable/disable 'global' ads and overwrite each individual ad in 'videos' :true/false
+                globalPrerollAds: "url1;url2;url3;url4;url5",//set 'pool' of url's that are separated by ; (global prerolls will play randomly)
+                globalPrerollAdsSkipTimer: 5,                //skip global advertisement seconds
+                globalPrerollAdsGotoLink: "http://www.tao-movie.com",//global advertisement goto link
+                //manual playlist
+                videos:[
+                    {
+                        videoType:"HTML5",
+                        title:"当你沉睡时",
+                        youtubeID:"",
+                        vimeoID:"",
+                        mp4:"videos/demo.mp4",
+                        enable_mp4_download:"no",
+                        prerollAD:"no",                              //show pre-roll "yes","no"
+                        prerollGotoLink:"http://www.tao-movie.com",  //pre-roll goto link
+                        preroll_mp4:"http://creativeinteractivemedia.com/player/videos/Short_Elegant_Logo_Reveal.mp4",   //pre-roll video mp4 format
+                        prerollSkipTimer:5,
+                        midrollAD:"no",                                                                   //show mid-roll "yes","no"
+                        midrollAD_displayTime:"00:10",                                                    //show mid-roll at any custom time in format "minutes:seconds" ("00:00")
+                        midrollGotoLink:"http://www.tao-movie.com",                                         //mid-roll goto link
+                        midroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Explode.mp4", //mid-roll video mp4 format
+                        midrollSkipTimer:5, 
+                        postrollAD:"no",                                                                  //show post-roll "yes","no"
+                        postrollGotoLink:"http://www.tao-movie.com",                                        //post-roll goto link
+                        postroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Light.mp4",  //post-roll video mp4 format
+                        postrollSkipTimer:5,
+                        popupImg:"pic/popup2.jpg", //popup image URL
+                        popupAdShow:"yes", //enable/disable popup image: "yes","no"
+                        popupAdStartTime:"00:00",//time to show popup ad during playback
+                        popupAdEndTime:"00:03",//time to hide popup ad during playback
+                        popupAdGoToLink:"http://www.tao-movie.com", //re-direct to URL when popup ad clicked
+                        description:"第16集 再見我的朋友",
+                        thumbImg:"pic/a_100100993_m_601_m3_180_236.jpg", 
+                        info:"崔谭东告诉郑在灿，李有凡的车里放了一个行李箱，说明他很有可能在结束庭审后出国潜逃，必须马上申请禁止出境才可以。庭审开始，韩宇卓不得不出庭作证，证明自己在案发现场的楼顶见到过两把雨伞，可是当指证雨伞颜色时，韩宇卓明确回答，自己不能辨别颜色！此言一出，现场一片哗然，难道有不能辨别颜色的员警吗？"//video info
+                    },                    {
+                        videoType:"HTML5",
+                        title:"经典童话真人感动诠释",
+                        youtubeID:"",
+                        vimeoID:"",
+                        mp4:"videos/demo.mp4",
+                        enable_mp4_download:"no",
+                        imageUrl:"images/preview_images/poster2.jpg", //display image instead of playing video
+                        imageTimer:4,                                                                     //set time how long image will display
+                        prerollAD:"no",                                                                   //show pre-roll "yes","no"
+                        prerollGotoLink:"http://www.tao-movie.com",                                         //pre-roll goto link
+                        preroll_mp4:"http://creativeinteractivemedia.com/player/videos/Short_Elegant_Logo_Reveal.mp4",   //pre-roll video mp4 format
+                        prerollSkipTimer:5,
+                        midrollAD:"no",                                                                   //show mid-roll "yes","no"
+                        midrollAD_displayTime:"00:10",                                                    //show mid-roll at any custom time in format "minutes:seconds" ("00:00")
+                        midrollGotoLink:"http://www.tao-movie.com",                                         //mid-roll goto link
+                        midroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Explode.mp4", //mid-roll video mp4 format
+                        midrollSkipTimer:5, 
+                        postrollAD:"no",                                                                  //show post-roll "yes","no"
+                        postrollGotoLink:"http://www.tao-movie.com",                                        //post-roll goto link
+                        postroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Light.mp4",  //post-roll video mp4 format
+                        postrollSkipTimer:5,
+                        popupImg:"",                                       //popup image URL
+                        popupAdShow:"no",                                                                 //enable/disable popup image: "yes","no"
+                        popupAdStartTime:"00:03",                                                         //time to show popup ad during playback
+                        popupAdEndTime:"00:07",                                                           //time to hide popup ad during playback
+                        popupAdGoToLink:"http:/www.tao-movie.com",                                         //re-direct to URL when popup ad clicked
+                        description:"美女与野兽",
+                        thumbImg:"pic/v_113884439_m_601_m1_180_236.jpg", 
+                        info:"改编自迪士尼1991年经典动画《美女与野兽》，原汁原味用真人演给你看！全球票房狂吸12亿美金称霸2017，卡司集结了新生代女神艾玛华森、两名英伦帅哥丹史蒂文斯与路克伊凡斯加上众多硬底子演员：金奖影后艾玛汤普逊的茶壶太太、伊恩麦克连和伊旺麦奎格饰演闹钟和蜡烛双宝，星光熠熠的阵容加上动人歌曲演绎全新风格！故事描述一位王子因不懂得爱而被施与魔咒变成野兽，要解开魔咒只能遇见真爱，多年来这样的女孩不曾出现，直到某天，一名古灵精怪却知书达礼的女孩找上了古堡..."//video info
+                    },
+                    {
+                        videoType:"HTML5",
+                        title:"唯有爱能拯救一切",
+                        youtubeID:"",
+                        vimeoID:"",
+                        mp4:"videos/demo.mp4",
+                        enable_mp4_download:"no",
+                        imageUrl:"images/preview_images/poster2.jpg",                                     //display image instead of playing video
+                        imageTimer:4,                                                                     //set time how long image will display
+                        prerollAD:"no",                                                                   //show pre-roll "yes","no"
+                        prerollGotoLink:"http://www.tao-movie.com",                                         //pre-roll goto link
+                        preroll_mp4:"http://creativeinteractivemedia.com/player/videos/Short_Elegant_Logo_Reveal.mp4",   //pre-roll video mp4 format
+                        prerollSkipTimer:5,
+                        midrollAD:"no",                                                                   //show mid-roll "yes","no"
+                        midrollAD_displayTime:"00:10",                                                    //show mid-roll at any custom time in format "minutes:seconds" ("00:00")
+                        midrollGotoLink:"http://www.tao-movie.com",                                         //mid-roll goto link
+                        midroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Explode.mp4", //mid-roll video mp4 format
+                        midrollSkipTimer:5, 
+                        postrollAD:"no",                                                                  //show post-roll "yes","no"
+                        postrollGotoLink:"http://www.tao-movie.com",                                        //post-roll goto link
+                        postroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Light.mp4",  //post-roll video mp4 format
+                        postrollSkipTimer:5,
+                        popupImg:"",                                       //popup image URL
+                        popupAdShow:"no",                                                                 //enable/disable popup image: "yes","no"
+                        popupAdStartTime:"00:03",                                                         //time to show popup ad during playback
+                        popupAdEndTime:"00:07",                                                           //time to hide popup ad during playback
+                        popupAdGoToLink:"http:/www.tao-movie.com",                                         //re-direct to URL when popup ad clicked
+                        description:"冰雪奇缘",
+                        thumbImg:"pic/v_111303022_m_601_m1_180_236.jpg", 
+                        info:"艾伦戴尔王国有着两位个性截然不同的公主-艾莎与安娜，姊姊艾莎冷若冰霜，举止优雅合宜，安娜生性活泼冲动，热爱冒险。但看似冷冰冰的艾莎事实上拥有魔法能点人成冰，所以一直不敢接近人群，尤其是不敢靠近安娜怕伤害到亲爱的妹妹。有一天，艾莎必须接下统领王国的重任，但是两姊妹的一场争吵让艾莎压抑的情绪爆发，愤而离家，但一时使出的魔法却让整个王国变成冰封的雪国。安娜为了解除魔法，只得冒着风雪寻找姊姊，在路上碰上喜爱冒险的登山人阿克与他如忠犬般个性的驯鹿以及天真搞笑的雪人雪宝，四人一同携手踏上伟大的旅程，它们必须挑战冷峻的雪山以及一路上种种险境才能拯救面临灭亡的王国… 《冰雪奇缘》是迪士尼影业继《魔发奇缘》与《无敌破坏王》再度制作的冒险喜剧3D动画，由曾制作过《无敌破坏王》、《泰山》的珍妮佛李与克里斯巴克共同执导，将会看到经典与创新的完美结合。 《冰雪奇缘》将再度颠覆传统，带来一部结合冒险、幽默的动画喜剧。"//video info
+                    },
+                    {
+                        videoType:"HTML5",
+                        title:"美国史上最大秘密行动",
+                        youtubeID:"",
+                        vimeoID:"",
+                        mp4:"videos/demo.mp4",
+                        enable_mp4_download:"no",
+                        imageUrl:"images/preview_images/poster2.jpg",                                     //display image instead of playing video
+                        imageTimer:4,                                                                     //set time how long image will display
+                        prerollAD:"no",                                                                   //show pre-roll "yes","no"
+                        prerollGotoLink:"http://www.tao-movie.com",                                         //pre-roll goto link
+                        preroll_mp4:"http://creativeinteractivemedia.com/player/videos/Short_Elegant_Logo_Reveal.mp4",   //pre-roll video mp4 format
+                        prerollSkipTimer:5,
+                        midrollAD:"no",                                                                   //show mid-roll "yes","no"
+                        midrollAD_displayTime:"00:10",                                                    //show mid-roll at any custom time in format "minutes:seconds" ("00:00")
+                        midrollGotoLink:"http://www.tao-movie.com",                                         //mid-roll goto link
+                        midroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Explode.mp4", //mid-roll video mp4 format
+                        midrollSkipTimer:5, 
+                        postrollAD:"no",                                                                  //show post-roll "yes","no"
+                        postrollGotoLink:"http://www.tao-movie.com",                                        //post-roll goto link
+                        postroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Light.mp4",  //post-roll video mp4 format
+                        postrollSkipTimer:5,
+                        popupImg:"",                                       //popup image URL
+                        popupAdShow:"no",                                                                 //enable/disable popup image: "yes","no"
+                        popupAdStartTime:"00:03",                                                         //time to show popup ad during playback
+                        popupAdEndTime:"00:07",                                                           //time to hide popup ad during playback
+                        popupAdGoToLink:"http:/www.tao-movie.com",                                         //re-direct to URL when popup ad clicked
+                        description:"美国制造",
+                        thumbImg:"pic/v_113899465_m_601_180_236.jpg", 
+                        info:"改编自惊天动地的真实事迹，一名机师兼骗徒意外被中情局网罗，策动美国史上最大规模的秘密行动之一。走私犯、线人、爱国者。美国1980年代最有钱的富翁之一是你听都没听过的人物。环球航空机师巴瑞塞尔（汤姆克鲁斯　饰）凭着狂妄的恶行以及对精彩人生的追求，在乏善可陈的南方小镇成为英雄。这名迷人的创业家从备受尊敬的环球航空机师变为现代史上最大丑闻之一的关键人物，让妻子露西（莎拉莱特　饰，）惊讶不已。他们没料到一开始运送违禁品的生意会演变成巴瑞协助建立一支军队和资助一场战争。这位爱炫技的飞行员被一个处于灰色地带的政府部门延揽，开始运送AK47步枪和古柯碱，他也因扮演伊朗门事件 的关键角色而发了大财。巴瑞不但替人质交易武器，也训练中南美洲主要势力的军队，意外成为抵抗体制的英雄。他晚上怎么睡得着觉？只要是帮正义的一方做事就算合法。"//video info
+                    },
+
+                    {
+                        videoType:"HTML5",
+                        title:"当你沉睡时",
+                        youtubeID:"",
+                        vimeoID:"",
+                        mp4:"videos/demo.mp4",
+                        enable_mp4_download:"no",
+                        imageUrl:"images/preview_images/poster2.jpg",                                     //display image instead of playing video
+                        imageTimer:4,                                                                     //set time how long image will display
+                        prerollAD:"no",                                                                   //show pre-roll "yes","no"
+                        prerollGotoLink:"http://www.tao-movie.com",                                         //pre-roll goto link
+                        preroll_mp4:"http://creativeinteractivemedia.com/player/videos/Short_Elegant_Logo_Reveal.mp4",   //pre-roll video mp4 format
+                        prerollSkipTimer:5,
+                        midrollAD:"no",                                                                   //show mid-roll "yes","no"
+                        midrollAD_displayTime:"00:10",                                                    //show mid-roll at any custom time in format "minutes:seconds" ("00:00")
+                        midrollGotoLink:"http://www.tao-movie.com",                                         //mid-roll goto link
+                        midroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Explode.mp4", //mid-roll video mp4 format
+                        midrollSkipTimer:5, 
+                        postrollAD:"no",                                                                  //show post-roll "yes","no"
+                        postrollGotoLink:"http://www.tao-movie.com",                                        //post-roll goto link
+                        postroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Light.mp4",  //post-roll video mp4 format
+                        postrollSkipTimer:5,
+                        popupImg:"",                                       //popup image URL
+                        popupAdShow:"no",                                                                 //enable/disable popup image: "yes","no"
+                        popupAdStartTime:"00:03",                                                         //time to show popup ad during playback
+                        popupAdEndTime:"00:07",                                                           //time to hide popup ad during playback
+                        popupAdGoToLink:"http:/www.tao-movie.com",                                         //re-direct to URL when popup ad clicked
+                        description:"第15集 伴我同行",
+                        thumbImg:"pic/a_100100993_m_601_m3_180_236.jpg", 
+                        info:""//video info
+                    },
+                    {
+                        videoType:"HTML5",
+                        title:"当你沉睡时",
+                        youtubeID:"",
+                        vimeoID:"",
+                        mp4:"videos/demo.mp4",
+                        enable_mp4_download:"no",
+                        imageUrl:"images/preview_images/poster2.jpg",                                     //display image instead of playing video
+                        imageTimer:4,                                                                     //set time how long image will display
+                        prerollAD:"no",                                                                   //show pre-roll "yes","no"
+                        prerollGotoLink:"http://www.tao-movie.com",                                         //pre-roll goto link
+                        preroll_mp4:"http://creativeinteractivemedia.com/player/videos/Short_Elegant_Logo_Reveal.mp4",   //pre-roll video mp4 format
+                        prerollSkipTimer:5,
+                        midrollAD:"no",                                                                   //show mid-roll "yes","no"
+                        midrollAD_displayTime:"00:10",                                                    //show mid-roll at any custom time in format "minutes:seconds" ("00:00")
+                        midrollGotoLink:"http://www.tao-movie.com",                                         //mid-roll goto link
+                        midroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Explode.mp4", //mid-roll video mp4 format
+                        midrollSkipTimer:5, 
+                        postrollAD:"no",                                                                  //show post-roll "yes","no"
+                        postrollGotoLink:"http://www.tao-movie.com",                                        //post-roll goto link
+                        postroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Light.mp4",  //post-roll video mp4 format
+                        postrollSkipTimer:5,
+                        popupImg:"",                                       //popup image URL
+                        popupAdShow:"no",                                                                 //enable/disable popup image: "yes","no"
+                        popupAdStartTime:"00:03",                                                         //time to show popup ad during playback
+                        popupAdEndTime:"00:07",                                                           //time to hide popup ad during playback
+                        popupAdGoToLink:"http:/www.tao-movie.com",                                         //re-direct to URL when popup ad clicked
+                        description:"第14集 貓鼠遊戲",
+                        thumbImg:"pic/a_100100993_m_601_m3_180_236.jpg", 
+                        info:""//video info
+                    },
+                    {
+                        videoType:"HTML5",
+                        title:"当你沉睡时",
+                        youtubeID:"",
+                        vimeoID:"",
+                        mp4:"videos/demo.mp4",
+                        enable_mp4_download:"no",
+                        imageUrl:"images/preview_images/poster2.jpg",                                     //display image instead of playing video
+                        imageTimer:4,                                                                     //set time how long image will display
+                        prerollAD:"no",                                                                   //show pre-roll "yes","no"
+                        prerollGotoLink:"http://www.tao-movie.com",                                         //pre-roll goto link
+                        preroll_mp4:"http://creativeinteractivemedia.com/player/videos/Short_Elegant_Logo_Reveal.mp4",   //pre-roll video mp4 format
+                        prerollSkipTimer:5,
+                        midrollAD:"no",                                                                   //show mid-roll "yes","no"
+                        midrollAD_displayTime:"00:10",                                                    //show mid-roll at any custom time in format "minutes:seconds" ("00:00")
+                        midrollGotoLink:"http://www.tao-movie.com",                                         //mid-roll goto link
+                        midroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Explode.mp4", //mid-roll video mp4 format
+                        midrollSkipTimer:5, 
+                        postrollAD:"no",                                                                  //show post-roll "yes","no"
+                        postrollGotoLink:"http://www.tao-movie.com",                                        //post-roll goto link
+                        postroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Light.mp4",  //post-roll video mp4 format
+                        postrollSkipTimer:5,
+                        popupImg:"",                                       //popup image URL
+                        popupAdShow:"no",                                                                 //enable/disable popup image: "yes","no"
+                        popupAdStartTime:"00:03",                                                         //time to show popup ad during playback
+                        popupAdEndTime:"00:07",                                                           //time to hide popup ad during playback
+                        popupAdGoToLink:"http:/www.tao-movie.com",                                         //re-direct to URL when popup ad clicked
+                        description:"第13集 現在，就去見面",
+                        thumbImg:"pic/a_100100993_m_601_m3_180_236.jpg", 
+                        info:""//video info
+                    },
+                    {
+                        videoType:"HTML5",
+                        title:"当你沉睡时",
+                        youtubeID:"",
+                        vimeoID:"",
+                        mp4:"videos/demo.mp4",
+                        enable_mp4_download:"no",
+                        imageUrl:"images/preview_images/poster2.jpg",                                     //display image instead of playing video
+                        imageTimer:4,                                                                     //set time how long image will display
+                        prerollAD:"no",                                                                   //show pre-roll "yes","no"
+                        prerollGotoLink:"http://www.tao-movie.com",                                         //pre-roll goto link
+                        preroll_mp4:"http://creativeinteractivemedia.com/player/videos/Short_Elegant_Logo_Reveal.mp4",   //pre-roll video mp4 format
+                        prerollSkipTimer:5,
+                        midrollAD:"no",                                                                   //show mid-roll "yes","no"
+                        midrollAD_displayTime:"00:10",                                                    //show mid-roll at any custom time in format "minutes:seconds" ("00:00")
+                        midrollGotoLink:"http://www.tao-movie.com",                                         //mid-roll goto link
+                        midroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Explode.mp4", //mid-roll video mp4 format
+                        midrollSkipTimer:5, 
+                        postrollAD:"no",                                                                  //show post-roll "yes","no"
+                        postrollGotoLink:"http://www.tao-movie.com",                                        //post-roll goto link
+                        postroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Light.mp4",  //post-roll video mp4 format
+                        postrollSkipTimer:5,
+                        popupImg:"",                                       //popup image URL
+                        popupAdShow:"no",                                                                 //enable/disable popup image: "yes","no"
+                        popupAdStartTime:"00:03",                                                         //time to show popup ad during playback
+                        popupAdEndTime:"00:07",                                                           //time to hide popup ad during playback
+                        popupAdGoToLink:"http:/www.tao-movie.com",                                         //re-direct to URL when popup ad clicked
+                        description:"第12集 敲響天堂之門",
+                        thumbImg:"pic/a_100100993_m_601_m3_180_236.jpg", 
+                        info:""//video info
+                    },
+                    {
+                        videoType:"HTML5",
+                        title:"当你沉睡时",
+                        youtubeID:"",
+                        vimeoID:"",
+                        mp4:"videos/demo.mp4",
+                        enable_mp4_download:"no",
+                        imageUrl:"images/preview_images/poster2.jpg",                                     //display image instead of playing video
+                        imageTimer:4,                                                                     //set time how long image will display
+                        prerollAD:"no",                                                                   //show pre-roll "yes","no"
+                        prerollGotoLink:"http://www.tao-movie.com",                                         //pre-roll goto link
+                        preroll_mp4:"http://creativeinteractivemedia.com/player/videos/Short_Elegant_Logo_Reveal.mp4",   //pre-roll video mp4 format
+                        prerollSkipTimer:5,
+                        midrollAD:"no",                                                                   //show mid-roll "yes","no"
+                        midrollAD_displayTime:"00:10",                                                    //show mid-roll at any custom time in format "minutes:seconds" ("00:00")
+                        midrollGotoLink:"http://www.tao-movie.com",                                         //mid-roll goto link
+                        midroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Explode.mp4", //mid-roll video mp4 format
+                        midrollSkipTimer:5, 
+                        postrollAD:"no",                                                                  //show post-roll "yes","no"
+                        postrollGotoLink:"http://www.tao-movie.com",                                        //post-roll goto link
+                        postroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Light.mp4",  //post-roll video mp4 format
+                        postrollSkipTimer:5,
+                        popupImg:"",                                       //popup image URL
+                        popupAdShow:"no",                                                                 //enable/disable popup image: "yes","no"
+                        popupAdStartTime:"00:03",                                                         //time to show popup ad during playback
+                        popupAdEndTime:"00:07",                                                           //time to hide popup ad during playback
+                        popupAdGoToLink:"http:/www.tao-movie.com",                                         //re-direct to URL when popup ad clicked
+                        description:"第11集 沒好死",
+                        thumbImg:"pic/a_100100993_m_601_m3_180_236.jpg", 
+                        info:""//video info
+                    },
+                    {
+                        videoType:"HTML5",
+                        title:"当你沉睡时",
+                        youtubeID:"",
+                        vimeoID:"",
+                        mp4:"videos/demo.mp4",
+                        enable_mp4_download:"no",
+                        imageUrl:"images/preview_images/poster2.jpg",                                     //display image instead of playing video
+                        imageTimer:4,                                                                     //set time how long image will display
+                        prerollAD:"no",                                                                   //show pre-roll "yes","no"
+                        prerollGotoLink:"http://www.tao-movie.com",                                         //pre-roll goto link
+                        preroll_mp4:"http://creativeinteractivemedia.com/player/videos/Short_Elegant_Logo_Reveal.mp4",   //pre-roll video mp4 format
+                        prerollSkipTimer:5,
+                        midrollAD:"no",                                                                   //show mid-roll "yes","no"
+                        midrollAD_displayTime:"00:10",                                                    //show mid-roll at any custom time in format "minutes:seconds" ("00:00")
+                        midrollGotoLink:"http://www.tao-movie.com",                                         //mid-roll goto link
+                        midroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Explode.mp4", //mid-roll video mp4 format
+                        midrollSkipTimer:5, 
+                        postrollAD:"no",                                                                  //show post-roll "yes","no"
+                        postrollGotoLink:"http://www.tao-movie.com",                                        //post-roll goto link
+                        postroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Light.mp4",  //post-roll video mp4 format
+                        postrollSkipTimer:5,
+                        popupImg:"",                                       //popup image URL
+                        popupAdShow:"no",                                                                 //enable/disable popup image: "yes","no"
+                        popupAdStartTime:"00:03",                                                         //time to show popup ad during playback
+                        popupAdEndTime:"00:07",                                                           //time to hide popup ad during playback
+                        popupAdGoToLink:"http:/www.tao-movie.com",                                         //re-direct to URL when popup ad clicked
+                        description:"第10集 少年，遇見少女",
+                        thumbImg:"pic/a_100100993_m_601_m3_180_236.jpg", 
+                        info:""//video info
+                    },
+                    {
+                        videoType:"HTML5",
+                        title:"当你沉睡时",
+                        youtubeID:"",
+                        vimeoID:"",
+                        mp4:"videos/demo.mp4",
+                        enable_mp4_download:"no",
+                        imageUrl:"images/preview_images/poster2.jpg",                                     //display image instead of playing video
+                        imageTimer:4,                                                                     //set time how long image will display
+                        prerollAD:"no",                                                                   //show pre-roll "yes","no"
+                        prerollGotoLink:"http://www.tao-movie.com",                                         //pre-roll goto link
+                        preroll_mp4:"http://creativeinteractivemedia.com/player/videos/Short_Elegant_Logo_Reveal.mp4",   //pre-roll video mp4 format
+                        prerollSkipTimer:5,
+                        midrollAD:"no",                                                                   //show mid-roll "yes","no"
+                        midrollAD_displayTime:"00:10",                                                    //show mid-roll at any custom time in format "minutes:seconds" ("00:00")
+                        midrollGotoLink:"http://www.tao-movie.com",                                         //mid-roll goto link
+                        midroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Explode.mp4", //mid-roll video mp4 format
+                        midrollSkipTimer:5, 
+                        postrollAD:"no",                                                                  //show post-roll "yes","no"
+                        postrollGotoLink:"http://www.tao-movie.com",                                        //post-roll goto link
+                        postroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Light.mp4",  //post-roll video mp4 format
+                        postrollSkipTimer:5,
+                        popupImg:"",                                       //popup image URL
+                        popupAdShow:"no",                                                                 //enable/disable popup image: "yes","no"
+                        popupAdStartTime:"00:03",                                                         //time to show popup ad during playback
+                        popupAdEndTime:"00:07",                                                           //time to hide popup ad during playback
+                        popupAdGoToLink:"http:/www.tao-movie.com",                                         //re-direct to URL when popup ad clicked
+                        description:"第9集 非常嫌疑犯",
+                        thumbImg:"pic/a_100100993_m_601_m3_180_236.jpg", 
+                        info:""//video info
+                    },
+                    {
+                        videoType:"HTML5",
+                        title:"当你沉睡时",
+                        youtubeID:"",
+                        vimeoID:"",
+                        mp4:"videos/demo.mp4",
+                        enable_mp4_download:"no",
+                        imageUrl:"images/preview_images/poster2.jpg",                                     //display image instead of playing video
+                        imageTimer:4,                                                                     //set time how long image will display
+                        prerollAD:"no",                                                                   //show pre-roll "yes","no"
+                        prerollGotoLink:"http://www.tao-movie.com",                                         //pre-roll goto link
+                        preroll_mp4:"http://creativeinteractivemedia.com/player/videos/Short_Elegant_Logo_Reveal.mp4",   //pre-roll video mp4 format
+                        prerollSkipTimer:5,
+                        midrollAD:"no",                                                                   //show mid-roll "yes","no"
+                        midrollAD_displayTime:"00:10",                                                    //show mid-roll at any custom time in format "minutes:seconds" ("00:00")
+                        midrollGotoLink:"http://www.tao-movie.com",                                         //mid-roll goto link
+                        midroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Explode.mp4", //mid-roll video mp4 format
+                        midrollSkipTimer:5, 
+                        postrollAD:"no",                                                                  //show post-roll "yes","no"
+                        postrollGotoLink:"http://www.tao-movie.com",                                        //post-roll goto link
+                        postroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Light.mp4",  //post-roll video mp4 format
+                        postrollSkipTimer:5,
+                        popupImg:"",                                       //popup image URL
+                        popupAdShow:"no",                                                                 //enable/disable popup image: "yes","no"
+                        popupAdStartTime:"00:03",                                                         //time to show popup ad during playback
+                        popupAdEndTime:"00:07",                                                           //time to hide popup ad during playback
+                        popupAdGoToLink:"http:/www.tao-movie.com",                                         //re-direct to URL when popup ad clicked
+                        description:"第8集 傲慢與偏見",
+                        thumbImg:"pic/a_100100993_m_601_m3_180_236.jpg", 
+                        info:""//video info
+                    },
+                    {
+                        videoType:"HTML5",
+                        title:"当你沉睡时",
+                        youtubeID:"",
+                        vimeoID:"",
+                        mp4:"videos/demo.mp4",
+                        enable_mp4_download:"no",
+                        imageUrl:"images/preview_images/poster2.jpg",                                     //display image instead of playing video
+                        imageTimer:4,                                                                     //set time how long image will display
+                        prerollAD:"no",                                                                   //show pre-roll "yes","no"
+                        prerollGotoLink:"http://www.tao-movie.com",                                         //pre-roll goto link
+                        preroll_mp4:"http://creativeinteractivemedia.com/player/videos/Short_Elegant_Logo_Reveal.mp4",   //pre-roll video mp4 format
+                        prerollSkipTimer:5,
+                        midrollAD:"no",                                                                   //show mid-roll "yes","no"
+                        midrollAD_displayTime:"00:10",                                                    //show mid-roll at any custom time in format "minutes:seconds" ("00:00")
+                        midrollGotoLink:"http://www.tao-movie.com",                                         //mid-roll goto link
+                        midroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Explode.mp4", //mid-roll video mp4 format
+                        midrollSkipTimer:5, 
+                        postrollAD:"no",                                                                  //show post-roll "yes","no"
+                        postrollGotoLink:"http://www.tao-movie.com",                                        //post-roll goto link
+                        postroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Light.mp4",  //post-roll video mp4 format
+                        postrollSkipTimer:5,
+                        popupImg:"",                                       //popup image URL
+                        popupAdShow:"no",                                                                 //enable/disable popup image: "yes","no"
+                        popupAdStartTime:"00:03",                                                         //time to show popup ad during playback
+                        popupAdEndTime:"00:07",                                                           //time to hide popup ad during playback
+                        popupAdGoToLink:"http:/www.tao-movie.com",                                         //re-direct to URL when popup ad clicked
+                        description:"第7集 不能說的秘密",
+                        thumbImg:"pic/a_100100993_m_601_m3_180_236.jpg", 
+                        info:""//video info
+                    },
+                    {
+                        videoType:"HTML5",
+                        title:"当你沉睡时",
+                        youtubeID:"",
+                        vimeoID:"",
+                        mp4:"videos/demo.mp4",
+                        enable_mp4_download:"no",
+                        imageUrl:"images/preview_images/poster2.jpg",                                     //display image instead of playing video
+                        imageTimer:4,                                                                     //set time how long image will display
+                        prerollAD:"no",                                                                   //show pre-roll "yes","no"
+                        prerollGotoLink:"http://www.tao-movie.com",                                         //pre-roll goto link
+                        preroll_mp4:"http://creativeinteractivemedia.com/player/videos/Short_Elegant_Logo_Reveal.mp4",   //pre-roll video mp4 format
+                        prerollSkipTimer:5,
+                        midrollAD:"no",                                                                   //show mid-roll "yes","no"
+                        midrollAD_displayTime:"00:10",                                                    //show mid-roll at any custom time in format "minutes:seconds" ("00:00")
+                        midrollGotoLink:"http://www.tao-movie.com",                                         //mid-roll goto link
+                        midroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Explode.mp4", //mid-roll video mp4 format
+                        midrollSkipTimer:5, 
+                        postrollAD:"no",                                                                  //show post-roll "yes","no"
+                        postrollGotoLink:"http://www.tao-movie.com",                                        //post-roll goto link
+                        postroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Light.mp4",  //post-roll video mp4 format
+                        postrollSkipTimer:5,
+                        popupImg:"",                                       //popup image URL
+                        popupAdShow:"no",                                                                 //enable/disable popup image: "yes","no"
+                        popupAdStartTime:"00:03",                                                         //time to show popup ad during playback
+                        popupAdEndTime:"00:07",                                                           //time to hide popup ad during playback
+                        popupAdGoToLink:"http:/www.tao-movie.com",                                         //re-direct to URL when popup ad clicked
+                        description:"第6集 盲流感",
+                        thumbImg:"pic/a_100100993_m_601_m3_180_236.jpg", 
+                        info:""//video info
+                    },
+                    {
+                        videoType:"HTML5",
+                        title:"当你沉睡时",
+                        youtubeID:"",
+                        vimeoID:"",
+                        mp4:"videos/demo.mp4",
+                        enable_mp4_download:"no",
+                        imageUrl:"images/preview_images/poster2.jpg",                                     //display image instead of playing video
+                        imageTimer:4,                                                                     //set time how long image will display
+                        prerollAD:"no",                                                                   //show pre-roll "yes","no"
+                        prerollGotoLink:"http://www.tao-movie.com",                                         //pre-roll goto link
+                        preroll_mp4:"http://creativeinteractivemedia.com/player/videos/Short_Elegant_Logo_Reveal.mp4",   //pre-roll video mp4 format
+                        prerollSkipTimer:5,
+                        midrollAD:"no",                                                                   //show mid-roll "yes","no"
+                        midrollAD_displayTime:"00:10",                                                    //show mid-roll at any custom time in format "minutes:seconds" ("00:00")
+                        midrollGotoLink:"http://www.tao-movie.com",                                         //mid-roll goto link
+                        midroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Explode.mp4", //mid-roll video mp4 format
+                        midrollSkipTimer:5, 
+                        postrollAD:"no",                                                                  //show post-roll "yes","no"
+                        postrollGotoLink:"http://www.tao-movie.com",                                        //post-roll goto link
+                        postroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Light.mp4",  //post-roll video mp4 format
+                        postrollSkipTimer:5,
+                        popupImg:"",                                       //popup image URL
+                        popupAdShow:"no",                                                                 //enable/disable popup image: "yes","no"
+                        popupAdStartTime:"00:03",                                                         //time to show popup ad during playback
+                        popupAdEndTime:"00:07",                                                           //time to hide popup ad during playback
+                        popupAdGoToLink:"http:/www.tao-movie.com",                                         //re-direct to URL when popup ad clicked
+                        description:"第5集 不要相信她",
+                        thumbImg:"pic/a_100100993_m_601_m3_180_236.jpg", 
+                        info:"。"//video info
+                    },
+                    {
+                        videoType:"HTML5",
+                        title:"当你沉睡时",
+                        youtubeID:"",
+                        vimeoID:"",
+                        mp4:"videos/demo.mp4",
+                        enable_mp4_download:"no",
+                        imageUrl:"images/preview_images/poster2.jpg",                                     //display image instead of playing video
+                        imageTimer:4,                                                                     //set time how long image will display
+                        prerollAD:"no",                                                                   //show pre-roll "yes","no"
+                        prerollGotoLink:"http://www.tao-movie.com",                                         //pre-roll goto link
+                        preroll_mp4:"http://creativeinteractivemedia.com/player/videos/Short_Elegant_Logo_Reveal.mp4",   //pre-roll video mp4 format
+                        prerollSkipTimer:5,
+                        midrollAD:"no",                                                                   //show mid-roll "yes","no"
+                        midrollAD_displayTime:"00:10",                                                    //show mid-roll at any custom time in format "minutes:seconds" ("00:00")
+                        midrollGotoLink:"http://www.tao-movie.com",                                         //mid-roll goto link
+                        midroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Explode.mp4", //mid-roll video mp4 format
+                        midrollSkipTimer:5, 
+                        postrollAD:"no",                                                                  //show post-roll "yes","no"
+                        postrollGotoLink:"http://www.tao-movie.com",                                        //post-roll goto link
+                        postroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Light.mp4",  //post-roll video mp4 format
+                        postrollSkipTimer:5,
+                        popupImg:"",                                       //popup image URL
+                        popupAdShow:"no",                                                                 //enable/disable popup image: "yes","no"
+                        popupAdStartTime:"00:03",                                                         //time to show popup ad during playback
+                        popupAdEndTime:"00:07",                                                           //time to hide popup ad during playback
+                        popupAdGoToLink:"http:/www.tao-movie.com",                                         //re-direct to URL when popup ad clicked
+                        description:"第4集 好人寥寥",
+                        thumbImg:"pic/a_100100993_m_601_m3_180_236.jpg", 
+                        info:""//video info
+                    },
+                    {
+                        videoType:"HTML5",
+                        title:"当你沉睡时",
+                        youtubeID:"",
+                        vimeoID:"",
+                        mp4:"videos/demo.mp4",
+                        enable_mp4_download:"no",
+                        imageUrl:"images/preview_images/poster2.jpg",                                     //display image instead of playing video
+                        imageTimer:4,                                                                     //set time how long image will display
+                        prerollAD:"no",                                                                   //show pre-roll "yes","no"
+                        prerollGotoLink:"http://www.tao-movie.com",                                         //pre-roll goto link
+                        preroll_mp4:"http://creativeinteractivemedia.com/player/videos/Short_Elegant_Logo_Reveal.mp4",   //pre-roll video mp4 format
+                        prerollSkipTimer:5,
+                        midrollAD:"no",                                                                   //show mid-roll "yes","no"
+                        midrollAD_displayTime:"00:10",                                                    //show mid-roll at any custom time in format "minutes:seconds" ("00:00")
+                        midrollGotoLink:"http://www.tao-movie.com",                                         //mid-roll goto link
+                        midroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Explode.mp4", //mid-roll video mp4 format
+                        midrollSkipTimer:5, 
+                        postrollAD:"no",                                                                  //show post-roll "yes","no"
+                        postrollGotoLink:"http://www.tao-movie.com",                                        //post-roll goto link
+                        postroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Light.mp4",  //post-roll video mp4 format
+                        postrollSkipTimer:5,
+                        popupImg:"",                                       //popup image URL
+                        popupAdShow:"no",                                                                 //enable/disable popup image: "yes","no"
+                        popupAdStartTime:"00:03",                                                         //time to show popup ad during playback
+                        popupAdEndTime:"00:07",                                                           //time to hide popup ad during playback
+                        popupAdGoToLink:"http:/www.tao-movie.com",                                         //re-direct to URL when popup ad clicked
+                        description:"第3集 隱秘而偉大",
+                        thumbImg:"pic/a_100100993_m_601_m3_180_236.jpg", 
+                        info:""//video info
+                    },
+                    {
+                        videoType:"HTML5",
+                        title:"当你沉睡时",
+                        youtubeID:"",
+                        vimeoID:"",
+                        mp4:"videos/demo.mp4",
+                        enable_mp4_download:"no",
+                        imageUrl:"images/preview_images/poster2.jpg",                                     //display image instead of playing video
+                        imageTimer:4,                                                                     //set time how long image will display
+                        prerollAD:"no",                                                                   //show pre-roll "yes","no"
+                        prerollGotoLink:"http://www.tao-movie.com",                                         //pre-roll goto link
+                        preroll_mp4:"http://creativeinteractivemedia.com/player/videos/Short_Elegant_Logo_Reveal.mp4",   //pre-roll video mp4 format
+                        prerollSkipTimer:5,
+                        midrollAD:"no",                                                                   //show mid-roll "yes","no"
+                        midrollAD_displayTime:"00:10",                                                    //show mid-roll at any custom time in format "minutes:seconds" ("00:00")
+                        midrollGotoLink:"http://www.tao-movie.com",                                         //mid-roll goto link
+                        midroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Explode.mp4", //mid-roll video mp4 format
+                        midrollSkipTimer:5, 
+                        postrollAD:"no",                                                                  //show post-roll "yes","no"
+                        postrollGotoLink:"http://www.tao-movie.com",                                        //post-roll goto link
+                        postroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Light.mp4",  //post-roll video mp4 format
+                        postrollSkipTimer:5,
+                        popupImg:"",                                       //popup image URL
+                        popupAdShow:"no",                                                                 //enable/disable popup image: "yes","no"
+                        popupAdStartTime:"00:03",                                                         //time to show popup ad during playback
+                        popupAdEndTime:"00:07",                                                           //time to hide popup ad during playback
+                        popupAdGoToLink:"http:/www.tao-movie.com",                                         //re-direct to URL when popup ad clicked
+                        description:"第2集 好傢伙壞傢伙怪傢伙",
+                        thumbImg:"pic/a_100100993_m_601_m3_180_236.jpg", 
+                        info:""//video info
+                    },
+                    {
+                        videoType:"HTML5",
+                        title:"当你沉睡时",
+                        youtubeID:"",
+                        vimeoID:"",
+                        mp4:"videos/demo.mp4",
+                        enable_mp4_download:"no",
+                        imageUrl:"images/preview_images/poster2.jpg",                                     //display image instead of playing video
+                        imageTimer:4,                                                                     //set time how long image will display
+                        prerollAD:"no",                                                                   //show pre-roll "yes","no"
+                        prerollGotoLink:"http://www.tao-movie.com",                                         //pre-roll goto link
+                        preroll_mp4:"http://creativeinteractivemedia.com/player/videos/Short_Elegant_Logo_Reveal.mp4",   //pre-roll video mp4 format
+                        prerollSkipTimer:5,
+                        midrollAD:"no",                                                                   //show mid-roll "yes","no"
+                        midrollAD_displayTime:"00:10",                                                    //show mid-roll at any custom time in format "minutes:seconds" ("00:00")
+                        midrollGotoLink:"http://www.tao-movie.com",                                         //mid-roll goto link
+                        midroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Explode.mp4", //mid-roll video mp4 format
+                        midrollSkipTimer:5, 
+                        postrollAD:"no",                                                                  //show post-roll "yes","no"
+                        postrollGotoLink:"http://www.tao-movie.com",                                        //post-roll goto link
+                        postroll_mp4:"http://creativeinteractivemedia.com/player/videos/Logo_Light.mp4",  //post-roll video mp4 format
+                        postrollSkipTimer:5,
+                        popupImg:"",                                       //popup image URL
+                        popupAdShow:"no",                                                                 //enable/disable popup image: "yes","no"
+                        popupAdStartTime:"00:03",                                                         //time to show popup ad during playback
+                        popupAdEndTime:"00:07",                                                           //time to hide popup ad during playback
+                        popupAdGoToLink:"http:/www.tao-movie.com",                                         //re-direct to URL when popup ad clicked
+                        description:"第1集 當你沉睡時",
+                        thumbImg:"pic/a_100100993_m_601_m3_180_236.jpg", 
+                        info:""//video info
+                    },
+                ]
+            });
+        });
+    </script>
+
+    <div id="taoplayer"></div>

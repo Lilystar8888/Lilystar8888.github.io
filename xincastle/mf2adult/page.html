@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-CN">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>淘影影城-电影天堂 立即在线上观看</title>
+    <link rel="author" href="www.tao-movie.com">
+    <link rel="publisher" href="www.tao-movie.com">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta name="description" content="淘影影城 电影天堂 tao-movie.com 提供最全的 2017 最新电影,最新电视剧,每天第一时间更新各种好看的样央视热播电视剧、动漫、综艺节目,这里有最新的热门电影电视剧排行榜,精挑细选网路上最火红的趣味影音,绝对让你百逛不厌,淘影电影手机版下载,手机软件淘影电影下载,播放不用任何外挂插件,立即在线上观看" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta property="og:title" content="淘影影城 - 精挑细选网路上最火红的趣味影音、偶像剧、电影、动漫、动画，绝对让你百逛不厌" />
+    <meta property="og:description" content="精挑细选网路上最火红的趣味影音、偶像剧、电影、动漫、动画，绝对让你百逛不厌" />
+    <meta name="description" content="精挑细选网路上最火红的趣味影音、偶像剧、电影、动漫、动画，绝对让你百逛不厌" />
+    <meta name="keywords" content="電影, youku,qq, 遊戲, 影音, 影視廳, 偶像劇, 線上看" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:description" content="精挑细选网路上最火红的趣味影音、偶像剧、电影、动漫、动画，绝对让你百逛不厌">
+    <meta name="twitter:title" content="精挑细选网路上最火红的趣味影音、偶像剧、电影、动漫、动画，绝对让你百逛不厌">
+
+    <link rel="stylesheet" href="css/iconfont.css" type="text/css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--- Page CSS-->
+    <link rel="stylesheet" type="text/css" href="css/mobiscroll.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <!--20180204 responsive.css已合併入common.css-->
+
+    <!-- jQuery first-->
+    <script src="js/jquery-1.9.1.min.js"></script>
+
+    <!-- then Popper.js, then Bootstrap JS -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Final, Page JavaScript -->
+    <script src="js/common.js"></script>
+    <script src="js/page.js"></script>
+</head>
+
+<body id="avhome" class="avpage">
+    <!--body class="loading" 可开启转场效果-->
+
+    <div class="loading-bar"></div>
+
+    <div id="goTop">
+        <span class="icon-keyboard_capslock"></span>
+    </div>
+    <!--PC导航-->
+
+    <div id="tpnav" class="container-fluid d-none d-lg-block">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <div class="collapse navbar-collapse">
+                    <a class="navbar-brand" href="index.html"><div class="pclogo"></div><!--20180206--></a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link">&nbsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">&nbsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">&nbsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">&nbsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">&nbsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">&nbsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">&nbsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">&nbsp;</a>
+                        </li>
+                   </ul>
+                    <form class="form-inline m-auto">
+                        <div class="searchborder">
+                            <span class="in">
+                                <input class="form-control navTopTxt" type="text" placeholder="找视频" aria-label="Search">
+                            </span>
+                            <span class="out">
+                                <button class="btn" type="submit"><i class="icon icon-search"></i></button>
+                            </span>
+                        </div>
+                    </form>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:;">登录</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:;">注册</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--collapse-->
+            </div>
+            <!--container-->
+        </nav>
+    </div>
+    <!--PC导航 END-->
+
+    <!--MB置顶logo&搜索-->
+    <div id="mtop" class="d-lg-none">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html"><div class="mlogo"></div></a>
+
+            <form class="form-inline ml-auto">
+                    <div class="msearchborder">
+                        <input class="form-control navTopTxt" type="text" placeholder="找视频" aria-label="Search">
+                        <button class="btn" type="submit">
+                            <i class="icon icon-search"></i>
+                        </button>
+                    </div>
+                    <button id="msearch" class="btn" type="button"><span class="icon-apps"></span></button>
+            </form>
+
+        </nav>
+    </div>
+    <!--MB置顶logo&搜索 END-->
+
+    <!--MB导航-->
+    <nav id="mnav" class="navbar d-lg-none">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link">&nbsp;</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">&nbsp;</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">&nbsp;</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">&nbsp;</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">&nbsp;</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">&nbsp;</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">&nbsp;</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">&nbsp;</a>
+            </li>
+        </ul>
+    </nav>
+    <!--MB导航 END-->
+
+    <!--置顶大型广告区块底部阴影-->
+    <div id="kvbtm" class="container-fluid">
+    </div>
+    <!--container-fluid 置顶大型广告区块底部阴影 END-->
+
+    <!--正文-->
+    <div class="container-fluid theater">
+
+        <!--手机分类筛选 -->
+        <div class="row mod_sear_menu">
+            <div class="mask"></div><!--20180208-->
+            <span class="icon-close d-sm-none"></span>
+            <div class="mod_sear_list">
+                <h3>频道：</h3>
+                <ul class="mod_category_item">
+                    <li class="selected"><a href="javascript:;">全部</a></li>
+                    <li><a href="javascript:;">电影</a></li>
+                    <li><a href="javascript:;">日剧</a></li>
+                    <li><a href="javascript:;">韩剧</a></li>
+                    <li><a href="javascript:;">韩综</a></li>
+                    <li><a href="javascript:;">动漫</a></li>
+                    <li><a href="javascript:;">美剧</a></li>
+                </ul>
+            </div>
+            <div class="mod_sear_list">
+                <h3>类型：</h3>
+                <ul class="mod_category_item">
+                    <li class="selected"><a href="javascript:;">全部</a></li>
+                    <li><a href="javascript:;">动作片</a></li>
+                    <li><a href="javascript:;">喜剧片</a></li>
+                    <li><a href="javascript:;">爱情片</a></li>
+                    <li><a href="javascript:;">科幻片</a></li>
+                    <li><a href="javascript:;">恐怖片</a></li>
+                    <li><a href="javascript:;">剧情片</a></li>
+                    <li><a href="javascript:;">战争片</a></li>
+                    <li><a href="javascript:;">动画片</a></li>
+                </ul>
+            </div>
+            <div class="mod_sear_list mod_sear_list_open">
+                <h3>地区：</h3>
+                <ul class="mod_category_item">
+                    <li class="selected"><a href="javascript:;">全部</a></li>
+                    <li><a href="javascript:;">大陆地区</a></li>
+                    <li><a href="javascript:;">香港</a></li>
+                    <li><a href="javascript:;">韩国</a></li>
+                    <li><a href="javascript:;">美剧</a></li>
+                    <li><a href="javascript:;">日本</a></li>
+                    <li><a href="javascript:;">泰国</a></li>
+                    <li><a href="javascript:;">台湾</a></li>
+                    <li><a href="javascript:;">英国</a></li>
+                    <li><a href="javascript:;">其他</a></li>
+                </ul>
+            </div>
+            <div class="mod_sear_list borNone">
+                <h3>年代：</h3>
+                <ul class="mod_category_item">
+                    <li class="selected"><a href="javascript:;">全部</a></li>
+                    <li><a href="javascript:;">2017</a></li>
+                    <li><a href="javascript:;">2016</a></li>
+                    <li><a href="javascript:;">2015</a></li>
+                    <li><a href="javascript:;">2014-2011</a></li>
+                    <li><a href="javascript:;">2010-2000</a></li>
+                    <li><a href="javascript:;">90年代</a></li>
+                    <li><a href="javascript:;">80年代</a></li>
+                    <li><a href="javascript:;">更早</a></li>
+                </ul>
+            </div>
+            <button class="btn modbtn form-control">確定</button>
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div id="screencontrol" class="col-sm-12 col-lg-11 col-xl-8">
+
+                <div id="screencontainer" class="row">
+
+                    <div class="col">
+
+                        <div id="set1" class="row justify-content-center">
+                            <div id="sp">
+
+                                <!--免空页从此开始与其他页不同 BEGIN-->
+                                <div id="sp1">
+
+                                    <!--20180328 插入PCHOME廣告代碼-->
+                                    <div id="superadv">
+                                        <div class="wrapper">
+                                            <span class="icon-close"></span>
+                                        <script language="javascript">
+                                            pad_width=400;
+                                            pad_height=100;
+                                            pad_customerId="PFBC20180306001";
+                                            pad_positionId="PFBP201803260002C";
+                                            pad_ssl ="false";
+                                            </script>
+                                        <script id="pcadscript" language="javascript" src="http://kdpic.pchome.com.tw/img/js/xpcadshow.js"></script>
+                                        <meta http-equiv="Access-Control-Allow-Origin" content="*">
+                                        <header name="Access-Control-Allow-Origin" value="*">
+                                            <iframe class="akb_iframe" scrolling="no" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" id="pchome8044_ad_frame1" width="400" height="100" allowtransparency="true" allowfullscreen="true" src="javascript:'<script type=text/javascript src=http://kdcl.pchome.com.tw/adshow2.html?pfbxCustomerInfoId=PFBC20180306001&amp;positionId=PFBP201803260002&amp;padWidth=400&amp;padHeight=100&amp;keyword=&amp;page=&amp;precise=&amp;t=92&amp;docurl=http%3A%2F%2Ftao-movie.com%2Fvideo%2Fmv-7590-99198.html></script>'"></iframe>
+                                        </header>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="player-ui d-none d-md-block fade">
+
+                                        <div class="info-icon"></div>
+
+                                        <div class="text-mask">注册享3天免费VIP高画质好剧随时看 ｜ <a class="upgrade" href="#" target="_blank">立即注册</a></div>
+
+                                    </div>
+                                    <!--player-ui-->
+
+                                    <!--AV嵌入影片 BEGIN-->
+                                    <div class="embed-responsive embed-responsive-16by9">
+
+                                        <video width="700" height="430" controls>
+                                            <source src="video/demo.mp4" type="video/mp4">
+                                            您的浏览器不支援此 HTML5 影片标签
+                                        </video>
+
+                                        <!--AV嵌入影片 END-->
+
+                                        <!--AV切换模式 BEGIN-->
+                                        <div id="supercontrol" class="d-none">
+                                            <ul>
+                                                <li onclick="switchmode2();" data-toggle="tooltip" data-placement="top" title="预设模式"><span aria-hidden="true" class="icon pcmode active"></span></li>
+
+                                                <li onclick="switchmode3();" data-toggle="tooltip" data-placement="top" title="剧院模式"><span aria-hidden="true" class="icon mvmode"></span></li>
+
+                                                <li onclick="switchmode1();" data-toggle="tooltip" data-placement="top" title="电视模式"><span aria-hidden="true" class="icon tvmode"></span></li>
+                                            </ul>
+                                        </div>
+                                    <!--AV切换模式 END-->
+                                    </div>
+                                    <!--embed-responsive embed-responsive-16by9-->
+
+                                    <div class="gradient-bottom"></div>
+
+                                </div>
+                                <!--#sp1-->
+                                <!--免空页从此开始与其他页不同 END-->
+
+                                <div id="sp2" class="col-sm-12">
+
+                                        <div class=" mvtitle">
+
+                                            <h1 class="mtitle">
+                                                HCM-007 『神・展・開！！』 2 偶然見かけた「目が奪われる瞬間」に、その後があるとしたら…。<BR>
+                                                <span class="view-count">观看次数：25,940</span>
+                                            </h1>
+
+                                            <div class="btnpanel">
+                                                <a class="btn likebtn" data-toggle="tooltip" title="喜欢" aria-label="6,909 人表示喜欢">
+                                                    <i class="xihuan icon-favorite_border"></i><span>6,909</span><span class="tooltip d-none"></span>
+                                                </a>
+                                                <a class="share" data-toggle="tooltip" title="分享"aria-label="分享">
+                                                    <i class="icon icon-reply"></i>
+                                                    <span>分享</span><span class="tooltip d-none"></span>
+                                                </a>
+                                            </div>
+                                            <!--btnpanel-->
+
+                                        </div>
+                                        <!---mvtitle-->
+
+                                </div>
+                                <!--#sp2-->
+
+                            </div>
+                            <!--#sp-->
+                        </div>
+                        <!--#set1 row-->
+
+                        <div id="set2" class="row d-lg-none">
+
+                                    <!--PC你可能会想看-->
+                                    <div class="listri loading">
+                                        <ul>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--row PC 你可能想看 END-->
+                        </div>
+                        <!--#set2 row-->
+
+                    </div>
+                    <!--col-sm-12 col-md-9-->
+
+                    <div id="companionset" class="col-md-12 col-lg-3">
+
+                            <i class="icon-close d-lg-none"></i>
+
+                            <div id="companion3" class="row">
+                                    <div class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <a target="_blank" href="http://www.tao-movie.com"><img class="d-block mw-100" src="pic/adv2.gif" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <!--carousel-inner-->
+                                    </div>
+                                    <!--carousel-->
+                            </div>
+                            <!--#companion-->
+
+                            <div id="companion4" class="row mt15 d-none d-lg-block">
+                                    <div class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <a target="_blank" href="http://www.tao-movie.com"><img class="d-block mw-100" src="pic/adv1.gif" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <!--carousel-inner-->
+                                    </div>
+                                    <!--carousel-->
+                            </div>
+                            <!--#companion-->
+
+                            <div id="companion5" class="row mt15 d-none d-lg-block">
+                                    <div class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <a target="_blank" href="http://www.tao-movie.com"><img class="d-block mw-100" src="pic/adv3.gif" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <!--carousel-inner-->
+                                    </div>
+                                    <!--carousel-->
+                            </div>
+                            <!--#companion-->
+
+                            <div id="companion6" class="row mt15 d-none d-lg-block">
+                                <div class="carousel slide carousel-fade" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <a target="_blank" href="http://www.tao-movie.com"><img class="d-block mw-100" src="pic/adv4.gif" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <!--carousel-inner-->
+                                </div>
+                                <!--carousel-->
+                            </div>
+                            <!--#companion-->
+
+                            <div id="companion7" class="row mt15 d-none d-lg-block">
+                                <div class="carousel slide carousel-fade" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <a target="_blank" href="http://www.tao-movie.com"><img class="d-block mw-100" src="pic/adv5.gif" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <!--carousel-inner-->
+                                </div>
+                                <!--carousel-->
+                            </div>
+                            <!--#companion-->
+                    </div>
+                    <!--#mvlist-->
+                </div>
+
+                <div id="set2" class="row d-none d-lg-block">
+
+                                    <!--PC你可能会想看-->
+                                    <div class="listri">
+                                        <ul class="nano-content">
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a alt="野村萌香" title="野村萌香" href="page.html">
+                                                            <img width="360" height="180" alt="野村萌香" title="野村萌香" src="pic/20180206101019_5465.jpg.thumb.jpg">
+                                                        </a>
+                                                <div class="site-piclist_info">
+                                                    <div class="mod-listTitle_left">
+                                                        <p class="site-piclist_info_title"> <a href="page.html">野村萌香</a> </p>
+                                                    </div>
+                                                    <div class="role_info">
+                                                        <em>16888 次觀看・1 天前</em>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--row PC 你可能想看 END-->
+                </div>
+                <!--#set2 row-->
+
+
+                <div id="guanggao" class="row no-gutters">
+
+                            <div class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <a target="_blank" href="http://www.tao-movie.com"><img class="d-block mw-100" src="pic/2018020516015770-10681.gif" alt=""></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a target="_blank" href="http://www.tao-movie.com"><img class="d-block mw-100" src="pic/2018012916331274-10609.gif" alt=""></a>
+                                    </div>
+                                </div>
+                                <!--carousel-inner-->
+                            </div>
+                            <!--carousel-->
+                </div>
+
+            </div>
+            <!--#screencontrol col-lg-12 col-xl-10-->
+
+
+
+        </div>
+        <!--row justify-content-center-->
+    </div>
+    <!--container-fluid-->
+
+    <div id="all_warning" class="container-fluid">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="d-none d-lg-block"><img src="img/all_warning.png"></div>
+                <div class="title">重要声明</div>
+                <div>
+                    <p>本网站只是一个影视交流站点。所有资料均由发布者搜集于各大互联网。所有人皆有在本站发布信息的自由，但请各位发布者遵守您当地的法律规范。本网站不参与上传，录制，字幕，翻译，发布，软体开发等...活动，也不提供任何视频下载，更没有保存任何影视档案在本站服务器上。如觉得站上内容有版权疑虑，请留言告知。一旦经查属实，我方有权并且肯定会全力配合删除内容，以保护版权方的权益。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer class="footer">
+
+    <div class="col logo-social">
+    <div class="logo-wrapper">
+    <a class="logo" href=""></a>
+    </div>
+    <p class="copyright d-none d-lg-block">Copyright © 2017 淘影 Co., Ltd. All Rights Reserved.</p>
+    </div>
+
+    <div class="col list-wrapper about">
+    <div class="list">
+    <p class="label">关于</p>
+
+    <ul class="links">
+
+    <li><a class="aboutus" target="_blank" href="javascript:;">关于淘影</a></li>
+
+    <li><a class="service" target="_blank" ref="javascript:;">服务条款</a></li>
+
+    <li><a class="privacy" target="_blank" ref="javascript:;">隐私权政策</a></li>
+
+    </ul>
+    </div>
+    </div>
+
+    <div class="col list-wrapper collections">
+    <div class="list">
+    <p class="label">看片</p>
+
+    <ul class="links">
+
+    <li><a class="exclusive" target="_blank" href="javascript:;">推荐</a></li>
+
+    <li><a class="recommendation" target="_blank" href="javascript:;">电影</a></li>
+
+    <li><a class="recommendation" target="_blank" href="javascript:;">日剧</a></li>
+
+    <li><a class="recommendation" target="_blank" href="javascript:;">韩剧</a></li>
+
+    <li><a class="recommendation" target="_blank" href="javascript:;">韩综</a></li>
+
+    <li><a class="recommendation" target="_blank" href="javascript:;">动漫</a></li>
+
+    <li><a class="recommendation" target="_blank" href="javascript:;">美剧</a></li>
+
+    </ul>
+    </div>
+    </div>
+
+    <div class="col list-wrapper collections">
+    <div class="list">
+    <p class="label">备案号为</p>
+
+    <ul class="links">
+
+    <li><a class="icp" href="http://www.miitbeian.gov.cn" target="_blank">沪ICP备88888888号</a></li>
+
+    </ul>
+    </div>
+    </div>
+
+    </div>
+</footer>
+
+</body>
+
+
+
+</html>
