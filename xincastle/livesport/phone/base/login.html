@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" data-livestyle-extension="available">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>星城体育</title>
+    <link rel="stylesheet" href="css/common.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var a = Math.round($(parent.window).height()) - 110;
+        $(".login-box").outerHeight(a);
+    });
+    </script>
+    <!--轮播广告 不需要时可拿掉-->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var $dlb = $('.download-banner').toArray();
+            var size = $dlb.length;
+            var i = 0;
+            delayedUpdatelist(i);
+            
+
+            function delayedUpdatelist(x) {
+                if(x <= size){
+                    $('.download-banner:eq('+x+')').removeClass('hide').siblings('.download-banner').addClass('hide');
+                    setTimeout(function(){ delayedUpdatelist(x+1) }, 4000);
+                } else {
+                    $('.download-banner:eq(0)').addClass('hide');
+                    $('.download-banner:eq(6)').removeClass('hide');
+                    setTimeout(function(){ delayedUpdatelist(0) }, 4000);
+                }
+            }
+        });
+    </script>
+</head>
+
+<body class="page">
+    <div class="header-nav-wrap">
+        <div class="header-hd">
+            <i class="icon-back" onclick="history.back()"></i>
+            <h1>登录</h1>
+            <span class="hd-right">&nbsp;</span>
+        </div>
+        <!--header-hd-->
+    </div>
+    <!--广告-->
+    <div class="top-banner"></div>
+    <!--header-nav-wrap-->
+    <div class="login-box" id="loginBox">
+        <div class="other-login">
+            <div class="tit">第三方登录</div>
+            <div class="links">
+                <a href="javascript:;"><i class="icon-tencent"></i></a>
+            </div>
+            <form class="inputbox">
+                <div><input type="text" id="fname" name="fname" placeholder="填写您的QQ号">
+                <input type="button" class="btn" id="vcode" name="vcode" value="取得验证码"></div>
+                <input type="text" id="entervcode" name="entervcode" placeholder="验证码">
+            </form>
+            <div class="btn-2">
+                <button class="button-s" onclick="window.location='register-complete.html'">送出</button>
+            </div>
+        </div>
+    </div>
+    <!--广告-->
+    <div class="download-banner"><a target="_blank" href="#"><span class="find banner1 position-f"><i class="icon-close"></i></span></a></div>
+    <div class="download-banner hide"><a target="_blank" href="#"><span class="find banner2 position-f"><i class="icon-close"></i></span></a></div>
+    <div class="download-banner hide"><a target="_blank" href="#"><span class="find banner3 position-f"><i class="icon-close"></i></span></a></div>
+    <div class="download-banner hide"><a target="_blank" href="#"><span class="find banner4 position-f"><i class="icon-close"></i></span></a></div>
+    <div class="download-banner hide"><a target="_blank" href="#"><span class="find banner5 position-f"><i class="icon-close"></i></span></a></div>
+    <div class="download-banner hide"><span class="find banner6 position-f"><i class="icon-close"></i></span></div>
+</body>
+
+</html>

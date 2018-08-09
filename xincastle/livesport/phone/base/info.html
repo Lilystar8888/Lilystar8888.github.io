@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" data-livestyle-extension="available">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>星城体育</title>
+    <link rel="stylesheet" href="css/common.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var a = Math.round($(parent.window).width() / 790 * 460) - 40;
+        $(".info-top").outerHeight(a);
+        $(".info-top-panel").outerHeight(a)
+    });
+    </script>
+</head>
+
+<body>
+    <div class="info-top-panel">
+        <div class="info-top">
+            <div class="user-login">
+                <a class="user-icon" href="login.html">
+                    <span>登录/注册</span>
+                </a>
+            </div>
+        </div>
+        <!--fixed-top-->
+    </div>
+    <!--info-top-panel-->
+    <div class="info-detail">
+        <div class="row xincoins">
+            <i class="ico"></i>
+            <div class="owncoins">
+                <span class="above">星币</span>
+                <span class="below">9999999999</span>
+            </div>
+            <div class="recharge">
+                <span><i class="icon-xincoinw"></i>充值星币</span>
+            </div>
+        </div>
+        <div class="row account">
+            <i class="ico"></i>
+            <span>星币管理</span>
+            <a class="togo" href="javascript:;"> <i class="icon-next-p"></i> </a>
+        </div>
+        <div class="row profile">
+            <i class="ico"></i>
+            <span>我的资料</span>
+            <a class="togo" href="javascript:;"> <i class="icon-next-p"></i> </a>
+        </div>
+        <div class="row contact">
+            <i class="ico"></i>
+            <span>联络客服</span>
+            <a class="togo" href="javascript:;"> <i class="icon-next-p"></i> </a>
+        </div>
+    </div>
+    <!--TABBAR-->
+    <div class="tabbar">
+        <a href="../zuqiu/index.html" class="tab1"><i></i> 直播</a>
+        <a href="../zuqiu/database.html" class="tab2"><i></i> 数据</a>
+        <a href="info.html" class="tab3 active"><i></i> 我</a>
+    </div>
+    <!--.tabbar-->
+</body>
+
+</html>
