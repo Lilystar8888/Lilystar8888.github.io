@@ -45,7 +45,7 @@ h2 {
 }
 
 blockquote {
-    font-size: .9em;
+    font-size: 1em;
     border-left: 0;
 }
 
@@ -57,24 +57,9 @@ blockquote .small, blockquote footer, blockquote small {
 
 ol {
     list-style-type: decimal;
-    font-size: .9em;
+    font-size: 1em;
 }
 
-.navbar-default {
-    background-color: transparent;
-    border-color: transparent;
-    color: #2b5f33;
-    font-size: .9em;
-}
-
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:focus,
-.navbar-default .navbar-nav>.active>a:hover {
-    color: #2b5f33;
-    font-size: .9em;
-    background-color: transparent;
-    border-bottom: 1px solid #2b5f33;
-}
 
 .frame {
     border: 1px solid #eee;
@@ -152,9 +137,6 @@ ol {
 	top:5px;
 }
 
-.notice{
-	font-size: .8em;
-}
 
 .item {
     color: #2b5f33;
@@ -170,10 +152,6 @@ ol {
 .award>strong{
 	font-size: 1.1em;
 	margin-right: 1rem;
-}
-
-.award>.desc{
-	font-size: .9em;
 }
 
 .big {
@@ -235,6 +213,27 @@ ol {
 
 @media (min-width: 768px) {
 
+
+    .navbar-default {
+        background-color: transparent;
+        border-color: transparent;
+        color: #2b5f33;
+        font-size: .9em;
+    }
+
+    .navbar-default .navbar-nav>.active>a,
+    .navbar-default .navbar-nav>.active>a:focus,
+    .navbar-default .navbar-nav>.active>a:hover {
+        color: #2b5f33;
+        font-size: .9em;
+        background-color: transparent;
+        border-bottom: 1px solid #2b5f33;
+    }    
+
+    blockquote, ol {
+        font-size: .9em;
+    }
+
 	.frame {
 	    border: 1px solid #eee;
 	    padding: 2rem;
@@ -262,6 +261,14 @@ ol {
 
 	.example div{
 	}
+
+    .award>.desc{
+        font-size: .9em;
+    }
+
+    .notice{
+        font-size: .8em;
+    }
 
     #footer {
         position: absolute;
