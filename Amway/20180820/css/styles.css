@@ -9,20 +9,6 @@
     url('../fonts/PingFangTC-Regular.otf') format('truetype');
 }
 
-@font-face {
-    font-family: "DKSucoDeLaranja";
-    src: url('../fonts/DK_Suco_De_Laranja.eot');
-    src: url('../fonts/DK_Suco_De_Laranja.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/DK_Suco_De_Laranja.woff') format('woff'), /* Pretty Modern Browsers */
-    url('../fonts/DK_Suco_De_Laranja.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('font/DK_Suco_De_Laranja.svg#DKSucoDeLaranja') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-    /* IE9 Compat Modes */
-    /* Legacy iOS */
-}
-
 html,
 body {
     position: relative;
@@ -102,24 +88,12 @@ ol {
     right: 0;
     bottom: 50px;
     margin: auto;
-    width: 60px;
+    width: 50px;
     height: 50px;
     border-radius: 30px;
-    background: rgba(43, 95, 51, 0.65) url(../img/top_icon.png) no-repeat 50% 10px;
+    background: rgba(43, 95, 51, 0.65) url(../img/top_icon.png) no-repeat center center;
     background-size: 25%;
     z-index: 50;
-    font-family: "DKSucoDeLaranja";
-    color: #fff;
-    font-size: 22px;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    line-height: 50px;
-    padding-top: 10px;
-    letter-spacing: 0.1em;
-    border: 0;
-    display: flex;
-    justify-content: center;
 }
 
 .ttl {
