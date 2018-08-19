@@ -43,10 +43,6 @@ body {
 	background-position: center center;
 }
 
-.frame {
-	background: #fff;
-}
-
 
 h1 {
     color: #000;
@@ -74,8 +70,15 @@ ol {
     font-size: 1em;
 }
 
+.btn-group-lg>.btn, .btn-lg {
+    padding: 6px 12px;
+    font-size: 1em;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
 
 .frame {
+    background: #fff;
     border: 1px solid #eee;
     padding: 1.5rem;
     border-radius: 1rem;
