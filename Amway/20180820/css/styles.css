@@ -92,7 +92,7 @@ ol {
     height: 50px;
     border-radius: 30px;
     background: rgba(43, 95, 51, 0.65) url(../img/top_icon.png) no-repeat center center;
-    background-size: 25%;
+    background-size: 50%;
     z-index: 50;
 }
 
