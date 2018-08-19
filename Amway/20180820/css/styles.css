@@ -19,6 +19,20 @@ body {
     background-color: #f8f8f8;
 }
 
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    color: #2b5f33;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #2b5f33;
+    background-color: transparent;
+    border-bottom: 1px solid #2b5f33;
+}    
+
 .colorline{
 	display: block;
 	position: absolute;
@@ -81,6 +95,7 @@ ol {
     z-index: 50;
     border:0;
 }
+
 
 .ttl {
     display: flex;
@@ -214,21 +229,18 @@ ol {
 @media (min-width: 768px) {
 
 
-    .navbar-default {
-        background-color: transparent;
-        border-color: transparent;
-        color: #2b5f33;
-        font-size: .9em;
-    }
-
+    .navbar-default ,
     .navbar-default .navbar-nav>.active>a,
     .navbar-default .navbar-nav>.active>a:focus,
     .navbar-default .navbar-nav>.active>a:hover {
-        color: #2b5f33;
         font-size: .9em;
-        background-color: transparent;
-        border-bottom: 1px solid #2b5f33;
     }    
+
+    .navbar-nav>li>a {
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+
 
     blockquote, ol {
         font-size: .9em;
@@ -240,11 +252,10 @@ ol {
 	    border-radius: 2rem;
 	}
 
-	.navbar-nav>li>a {
-	    padding-top: 15px;
-	    padding-bottom: 5px;
-	}
-
+    #section1, #section2, #section3{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
 	.allexamples{
 		width: 100%;
 		display: inline-flex;
