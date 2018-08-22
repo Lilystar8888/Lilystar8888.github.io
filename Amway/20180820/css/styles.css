@@ -270,10 +270,6 @@ img {
         font-size: 3rem;
     }
 
-    blockquote, ol {
-        font-size: .9em;
-    }
-
 	.frame {
 	    border: 1px solid #eee;
 	    padding: 2rem;
