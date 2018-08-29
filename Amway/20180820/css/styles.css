@@ -231,6 +231,23 @@ img {
 	word-break: break-all;
 }
 
+.awards{
+}
+
+.awardbox{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.awardbox>p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 90%;
+}
+
 
 @media (min-width: 375px) {
     .h1, h1 {
@@ -301,8 +318,9 @@ img {
         font-size: .9em;
     }
 
+    .steps,
     .notice{
-        font-size: .8em;
+        font-size: .9em;
     }
 
     #footer {
@@ -316,6 +334,22 @@ img {
 
     .noshow {
         display: none;
+    }
+
+    .awards{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .awardbox{
+        width: 18%;
+    }
+
+    .awardbox2{
+        width: 25%;
+    }
+    .awardbox>p{
+        min-height: 88px;
     }
 
 }
