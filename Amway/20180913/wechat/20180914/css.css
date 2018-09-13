@@ -70,6 +70,8 @@ p {
     padding: 10px;
     line-height: 1.5;
     font-family: "Microsoft YaHei", Arial;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
 }
 
 @media (min-width: 414px){
