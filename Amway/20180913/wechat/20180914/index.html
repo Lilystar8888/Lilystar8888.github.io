@@ -61,7 +61,7 @@
     }
 
     ul {
-        list-style-type: square;
+        list-style-type: disc;
         font-family: "Microsoft YaHei", Arial;
     }
 
@@ -76,6 +76,7 @@
         -webkit-margin-before: .5em;
         -webkit-margin-after: .5em;
         line-height: 1.5;
+        font-size: 90%;
     }
 
     .htl {
@@ -99,21 +100,28 @@
         position: absolute;
         top: 13px;
         left: 17px;
-        width: 385px;
+        width: 282px;
         height: 1px;
         background-color: #0089bf;
         z-index: -1;
     }
 
+    @media (min-width: 414px){
+        .htl::after {
+            width: 385px;
+        }
+    }
+
     .red {
         display: inline-block;
         color: #de1030;
-        font-size: 80%;
+        font-size: 100%;
     }
 
     strong,
     .blue {
         color: #0089bf;
+        font-size: 100%;
         font-weight: bold;
         line-height: 1.5;
     }
@@ -123,7 +131,7 @@
         text-decoration: underline;
     }
 
-    p>span {
+    .ctl {
         display: inline-block;
         border-radius: 8px;
         font-size: 80%;
@@ -204,6 +212,7 @@
             <br>
             <div class="htl"><span>第二階段認購</span></div>
             <br>
+            <br>
             <p><span class="ctl">認購期間</span>2018年9月25日（星期二）至2018年10月03日（星期三）</p>
             <p><span class="ctl">認購資格</span>2018年7月底新符合或再度符合之<span class="red">銀獎章以上領導人</span></p>
             <p><span class="ctl">限購數量</span>每權可認購新品1台。 <span>(第一階段已認購者，不再享有認購額)</span></p>
@@ -255,6 +264,7 @@
             <br>
             <div class="htl"><span>第三階段認購、舊換新活動同步開始</span></div>
             <br>
+            <br>
             <p><span class="ctl">認購期間</span>2018年10月17日（星期三）至2018年10月24日（星期三）</p>
             <p><span class="ctl">認購資格</span>2018年7月底新符合或再度符合之<span class="red">直系直銷商以上領導人</span></p>
             <p><span class="ctl">限購數量</span>每權可認購新品3台。</p>
@@ -302,6 +312,7 @@
             </ul>
             <br>
             <div class="htl"><span>訂購方式</span></div>
+            <br><br>
             <p>與平日訂貨方式相同，可經由網路、郵寄、櫃檯等各管道訂購，說明如下:</p>
             <p><span class="ctl">電腦版</span>請進入其他產品>『限量產品/票券』，或使用『快速訂貨』直接輸入訂貨代碼。</p>
             <p><span class="ctl">手機板</span>AmCard>線上購物>右上角漢堡選單>『限量產品/票券』或使用『快速訂貨』直接輸入訂貨代碼。</p>

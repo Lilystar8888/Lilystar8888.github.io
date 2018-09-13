@@ -67,9 +67,17 @@ table {
 }
 
 p {
-    padding: 10px 16px;
+    padding: 10px;
     line-height: 1.5;
     font-family: "Microsoft YaHei", Arial;
+}
+
+@media (min-width: 414px){
+    p {
+        padding: 10px 30px;
+        line-height: 1.5;
+        font-family: "Microsoft YaHei", Arial;
+    }
 }
 
 img,
