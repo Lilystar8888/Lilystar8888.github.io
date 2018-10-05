@@ -75,7 +75,7 @@ blockquote small {
 ol {
     list-style-type: decimal;
     font-size: 1em;
-    padding-inline-start: 20px;
+    padding-inline-start: 10px;
 }
 
 img {
@@ -329,6 +329,10 @@ hr{
 
 @media (min-width: 768px) {
 
+
+    ol{
+        padding-inline-start: 20px;
+    }
 
     .navbar-default,
     .navbar-default .navbar-nav>.active>a,
