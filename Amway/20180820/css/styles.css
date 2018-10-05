@@ -5,7 +5,7 @@
 @font-face {
     font-family: 'PingFangTC-Regular';
     src: local('PingFangTC-Regular'),
-    url('../fonts/PingFangTC-Regular.otf') format('truetype');
+        url('../fonts/PingFangTC-Regular.otf') format('truetype');
 }
 
 html,
@@ -30,19 +30,20 @@ body {
     color: #2b5f33;
     background-color: transparent;
     border-bottom: 1px solid #2b5f33;
-}    
-
-.colorline{
-	display: block;
-	position: absolute;
-	top:0;
-	width: 100%;
-	height:.5rem;
-	background-image: url(../img/colorline.jpg);
-	background-position: center center;
 }
 
-.h1, h1 {
+.colorline {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: .5rem;
+    background-image: url(../img/colorline.jpg);
+    background-position: center center;
+}
+
+.h1,
+h1 {
     font-size: 1.8rem;
     color: #000;
     font-weight: bold;
@@ -59,7 +60,9 @@ blockquote {
     border-left: 0;
 }
 
-blockquote .small, blockquote footer, blockquote small {
+blockquote .small,
+blockquote footer,
+blockquote small {
     display: inline-block;
     font-size: 1em;
     color: #000;
@@ -74,7 +77,9 @@ img {
     max-width: 100%;
 }
 
-.btn-group-lg>.btn, .btn-lg {
+
+.btn-group-lg>.btn,
+.btn-lg {
     padding: 6px 12px;
     font-size: 1em;
     line-height: 1.3333333;
@@ -84,9 +89,9 @@ img {
 .frame {
     background: #fff;
     border: 1px solid #eee;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 1rem;
-	margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 #goTop {
@@ -100,7 +105,7 @@ img {
     background: rgba(43, 95, 51, 0.65) url(../img/top_icon.png) no-repeat center center;
     background-size: 50%;
     z-index: 50;
-    border:0;
+    border: 0;
 }
 
 
@@ -132,34 +137,34 @@ img {
     vertical-align: middle;
 }
 
-.red{
-	border-bottom: 1px solid red;
+.red {
+    border-bottom: 1px solid red;
 }
 
-.example{
-	position: relative;
-	border-radius: 1rem;
-	padding: 1rem;
-	border:1px solid #ddd;
-	display: flex;
+.example {
+    position: relative;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    display: flex;
     justify-content: center;
 }
 
-.example div{
-	background: #fff;
-	padding: 5px;
-	margin:0 auto;
+.example div {
+    background: #fff;
+    padding: 5px;
+    margin: 0 auto;
     font-size: .9em;
 }
 
-.example .lab{
-	max-width: 15%;
-	position: absolute;
-	left:5px;
-	top:5px;
+.example .lab {
+    max-width: 15%;
+    position: absolute;
+    left: 5px;
+    top: 5px;
 }
 
-.item{
+.item {
     color: #2b5f33;
     font-size: 1.1em;
     font-weight: bold;
@@ -170,9 +175,9 @@ img {
     color: #2b5f33;
 }
 
-.award>strong{
-	font-size: 1.1em;
-	margin-right: 1rem;
+.award>strong {
+    font-size: 1.1em;
+    margin-right: 1rem;
 }
 
 .big {
@@ -181,8 +186,7 @@ img {
 }
 
 #footer {
-    position: relative
-    bottom: 0;
+    position: relative bottom: 0;
     width: 100%;
     height: 40px;
     text-align: center;
@@ -196,7 +200,7 @@ img {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color:#000;
+    color: #000;
 }
 
 #footer a img {
@@ -227,20 +231,19 @@ img {
     width: 48px;
 }
 
-.break{
-	word-break: break-all;
+.break {
+    word-break: break-all;
 }
 
-.awards{
-}
+.awards {}
 
-.awardbox{
+.awardbox {
     display: inline-flex;
     flex-direction: column;
     margin-bottom: 1rem;
 }
 
-.awardbox>p{
+.awardbox>p {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -248,9 +251,58 @@ img {
     text-align: center;
 }
 
+.final blockquote{
+    margin: unset;
+    padding: unset;
+}
+
+.final{
+    font-size: 90%;
+    padding-bottom: 20px;
+}
+
+hr{
+    width: 100%;
+}
+
+.css-table {
+    display: table;
+    width: 100%;
+}
+
+.css-table .tr {
+    display: inline
+    width: 100%;
+}
+
+.css-table .td{
+    display: inline-block;
+    width: 50%;
+    border-collapse: collapse;
+    border: 1px solid #eee;
+    float: left;
+    padding: 3px;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+.css-table .td.gray{
+    background-color: #fafafa;
+}
+
+.css-table .td.roll{
+    width: 100%;
+}
+
+.awarditem {
+    color: #8dbd29;
+}
+
 
 @media (min-width: 375px) {
-    .h1, h1 {
+
+    .h1,
+    h1 {
         font-size: 2rem;
     }
 
@@ -258,7 +310,9 @@ img {
 
 
 @media (min-width: 414px) {
-    .h1, h1 {
+
+    .h1,
+    h1 {
         font-size: 2.4rem;
     }
 
@@ -271,55 +325,57 @@ img {
 @media (min-width: 768px) {
 
 
-    .navbar-default ,
+    .navbar-default,
     .navbar-default .navbar-nav>.active>a,
     .navbar-default .navbar-nav>.active>a:focus,
     .navbar-default .navbar-nav>.active>a:hover {
         font-size: .9em;
-    }    
+    }
 
     .navbar-nav>li>a {
         padding-top: 15px;
         padding-bottom: 5px;
     }
 
-    .h1, h1 {
+    .h1,
+    h1 {
         font-size: 3rem;
     }
 
-	.frame {
-	    border: 1px solid #eee;
-	    padding: 2rem;
-	    border-radius: 2rem;
-	}
+    .frame {
+        border: 1px solid #eee;
+        padding: 2rem;
+        border-radius: 2rem;
+    }
 
-    #section1, #section2, #section3{
+    #section1,
+    #section2,
+    #section3 {
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
-	.allexamples{
-		width: 100%;
-		display: inline-flex;
-		justify-content: space-between;
-	}
 
-	.example{
-		display: inline-flex;
-		align-items: center;
-	}
+    .allexamples {
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+    }
 
-	.example .lab{
-	}
+    .example {
+        display: inline-flex;
+        align-items: center;
+    }
 
-	.example div{
-	}
+    .example .lab {}
 
-    .award>.desc{
+    .example div {}
+
+    .award>.desc {
         font-size: .9em;
     }
 
     .steps,
-    .notice{
+    .notice {
         font-size: .9em;
     }
 
@@ -328,7 +384,7 @@ img {
     }
 
     .fbshare {
-    	right: 30%;
+        right: 30%;
         top: 150px;
     }
 
@@ -336,25 +392,73 @@ img {
         display: none;
     }
 
-    .awards{
+    .awards {
         display: flex;
         justify-content: space-between;
     }
 
-    .awardbox{
+    .awardbox {
         flex-direction: column-reverse;
         width: 18%;
         margin-bottom: unset;
     }
 
-    .awardbox2{
+    .awardbox2 {
         flex-direction: column-reverse;
         width: 25%;
     }
 
-    .awardbox>p{
+    .awardbox>p {
         font-size: 90%;
         min-height: 88px;
     }
 
+    .final {
+        border:1px solid #eee;
+        border-radius: 20px;
+        padding: 10px 40px 60px 40px;
+        font-size: 100%;
+    }
+
+    .final blockquote{
+        margin: unset;
+        padding: unset;
+    }
+
+    .css-table {
+        display: table;
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #eee;
+    }
+
+    .css-table .thead {
+        display: table-header-group;
+    }
+
+
+    .css-table .tbody {
+        display: table-row-group;
+    }
+
+
+    .css-table .tr {
+        display: table-row;
+    }
+
+    .css-table .tr:nth-child(even){
+        background-color: #fafafa;
+    }
+
+    .css-table .th,
+    .css-table .td {
+        display: table-cell;
+        float: none;
+        width: 20%;
+        text-align: center;
+    }
+
+    .css-table .td.gray{
+        background-color: inherit;
+    }
 }
