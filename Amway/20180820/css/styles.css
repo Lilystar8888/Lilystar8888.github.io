@@ -55,6 +55,10 @@ h2 {
     font-weight: bold;
 }
 
+a {
+    word-break: break-all;
+}
+
 blockquote {
     font-size: 1em;
     border-left: 0;
@@ -71,6 +75,7 @@ blockquote small {
 ol {
     list-style-type: decimal;
     font-size: 1em;
+    padding-inline-start: 20px;
 }
 
 img {
