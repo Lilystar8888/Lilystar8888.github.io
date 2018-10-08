@@ -1,0 +1,2 @@
+$(function(){var d=function(a,b){b||(b=window.location.href);a=a.replace(/[\[\]]/g,"\\$&");var c=(new RegExp("[?&]"+a+"(=([^&#]*)|&|#|$)")).exec(b);return c?c[2]?decodeURIComponent(c[2].replace(/\+/g," ")):"":null}("tab")-1;$(".tab-nav ul li").removeClass("selected");$(".tab-nav ul li").eq(d).addClass("selected");$(".show-box").hide();$(".show-box").eq(d).show();$(".tab-nav ul li").click(function(){var a=$(this).index();$(".tab-nav ul li").removeClass("selected");$(this).addClass("selected");$(".show-box").hide();
+$(".show-box").eq(a).show()})});

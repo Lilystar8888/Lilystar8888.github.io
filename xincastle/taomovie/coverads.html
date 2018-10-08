@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>随机盖版广告</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/iconfont.css" type="text/css">
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/bootstrap-grid.min.css">
+    <!--- Page CSS-->
+    <link rel="stylesheet" href="css/lity.min.css">
+    <link rel="stylesheet" href="css/copartner.css">
+
+    <script src="dist/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+    function closewindow() {
+        $('.lity-close', window.parent.document).trigger("click");
+    }
+    </script>
+</head>
+
+<body>
+    <div id="coverads" onclick="closewindow();">
+
+            <i class="close">&times;</i>
+
+            <!--电脑版广告-->
+            <div class="d-none d-md-block ads">
+                <a target="_blank" href="http://xinc666.com/"><img src="pic/adv/970x250.png" alt="两家共同尺寸"></a>
+            </div>
+
+            <!--手机版广告-->
+            <div class="d-md-none ads">
+                <a target="_blank" href="http://xinc666.com/mobile"><img src="pic/adv/300x600.png" alt="两家共同尺寸"></a>
+            </div>
+
+    </div>
+</body>
+
+</html>

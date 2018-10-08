@@ -65,6 +65,12 @@
             }
         });
     </script>    
+    <script>
+    <!--20180810 新增蓋版廣告-->
+    $(document).ready(function(){
+        lity('coverads.html');
+    });
+    </script>
     <script src="js/THREEx.FullScreen.js"></script>
     <script src="js/videoPlayer.js" type="text/javascript"></script>
     <script src="js/Playlist.js" type="text/javascript"></script>
@@ -689,6 +695,7 @@
     <script src="js/slick.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/page.js"></script>
+
 </head>
 
 <body id="page" class="playmode2" onload="detectmode();">
@@ -904,25 +911,7 @@
 
                                 <div id="sp1">
 
-                                    <!--20180328 插入PCHOME廣告代碼-->
-                                    <div id="superadv">
-                                        <div class="wrapper">
-                                            <span class="icon-close"></span>
-                                        <script language="javascript">
-                                            pad_width=400;
-                                            pad_height=100;
-                                            pad_customerId="PFBC20180306001";
-                                            pad_positionId="PFBP201803260002C";
-                                            pad_ssl ="false";
-                                            </script>
-                                        <script id="pcadscript" language="javascript" src="http://kdpic.pchome.com.tw/img/js/xpcadshow.js"></script>
-                                        <meta http-equiv="Access-Control-Allow-Origin" content="*">
-                                        <header name="Access-Control-Allow-Origin" value="*">
-                                            <iframe class="akb_iframe" scrolling="no" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" id="pchome8044_ad_frame1" width="400" height="100" allowtransparency="true" allowfullscreen="true" src="javascript:'<script type=text/javascript src=http://kdcl.pchome.com.tw/adshow2.html?pfbxCustomerInfoId=PFBC20180306001&amp;positionId=PFBP201803260002&amp;padWidth=400&amp;padHeight=100&amp;keyword=&amp;page=&amp;precise=&amp;t=92&amp;docurl=http%3A%2F%2Ftao-movie.com%2Fvideo%2Fmv-7590-99198.html></script>'"></iframe>
-                                        </header>
-
-                                        </div>
-                                    </div>
+                                    <!--20180810 移除superadv PCHOME廣告代碼-->
 
                                     <!--ELITE影片播放器 BEGIN-->
                                     <div id="taoplayer"></div>
@@ -1447,9 +1436,6 @@
 
             </div>
             <!--#screencontrol col-lg-12 col-xl-10-->
-
-
-
         </div>
         <!--row justify-content-center-->
     </div>

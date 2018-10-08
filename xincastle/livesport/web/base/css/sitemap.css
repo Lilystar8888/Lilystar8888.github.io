@@ -1,0 +1,564 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+nav,
+section,
+summary {
+    display: block
+}
+
+audio,
+canvas,
+video {
+    display: inline-block
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden],
+template {
+    display: none
+}
+
+html {
+    font-size: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+
+button,
+html,
+input,
+select,
+textarea {
+    font-family: Arial, sans-serif
+}
+
+a {
+    background: 0 0;
+    text-decoration: none;
+    color: #08c
+}
+
+a:active,
+a:hover {
+    outline: 0
+}
+
+abbr[title] {
+    border-bottom: 1px dotted
+}
+
+b,
+optgroup,
+strong {
+    font-weight: 700
+}
+
+blockquote {
+    margin: 1em 40px
+}
+
+dfn {
+    font-style: italic
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em
+}
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word
+}
+
+q {
+    quotes: none
+}
+
+q:after,
+q:before {
+    content: '';
+    content: none
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup {
+    top: -.5em
+}
+
+sub {
+    bottom: -.25em
+}
+
+nav ol,
+nav ul {
+    list-style-image: none
+}
+
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+fieldset {
+    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+legend {
+    border: 0;
+    padding: 0;
+    white-space: normal
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline
+}
+
+button,
+input {
+    line-height: normal
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+button[disabled],
+input[disabled] {
+    cursor: default
+}
+
+input[type=radio],
+input[type=checkbox] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+input[type=search] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+body {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #ccc;
+    background: #f7f7f8
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: "Helvetica Neue", Helvetica, Tahoma, sans-serif
+}
+
+figure,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0
+}
+
+dd,
+dl,
+li,
+ol,
+ul {
+    margin: 0;
+    padding: 0
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+h1,
+h2,
+h3 {
+    line-height: 2;
+    font-weight: 400
+}
+
+h1 {
+    font-size: 18px
+}
+
+h2 {
+    font-size: 15.6px
+}
+
+h3 {
+    font-size: 14.04px
+}
+
+h4 {
+    font-size: 12px
+}
+
+h5,
+h6 {
+    font-size: 10.2px;
+    text-transform: uppercase
+}
+
+a input:-moz-placeholder,
+a textarea:-moz-placeholder {
+    color: #f2f2f3
+}
+
+a input::-moz-placeholder,
+a textarea::-moz-placeholder {
+    color: #f2f2f3
+}
+
+a input:-ms-input-placeholder,
+a textarea:-ms-input-placeholder {
+    color: #f2f2f3
+}
+
+a input::-webkit-input-placeholder,
+a textarea::-webkit-input-placeholder {
+    color: #f2f2f3
+}
+
+.header-logo {
+    display: block;
+    width: 100%;
+    height: 70px;
+    background: #222;
+    border-bottom: 1px #ddd solid;
+    -moz-box-shadow: 0 0 4px #ddd;
+    -webkit-box-shadow: 0 0 4px #ddd;
+    box-shadow: 0 0 4px #ddd;
+    overflow: hidden
+}
+
+.header-logo h1 {
+    display: block;
+    width: 144px;
+    height: 52px;
+    margin: 10px auto;
+    text-indent: -9999px;
+    background: url(../img/logo.png) no-repeat
+}
+
+.main .tab-nav,
+.main .tab-nav ul {
+    width: 1080px;
+    height: 40px;
+    display: block
+}
+
+.main {
+    display: block;
+    width: 1080px;
+    min-height: 740px;
+    background: #fff;
+    margin: 30px auto 0;
+    border: 1px solid #ddd;
+    -moz-box-shadow: 0 0 4px #ddd;
+    -webkit-box-shadow: 0 0 4px #ddd;
+    box-shadow: 0 0 4px #ddd
+}
+
+.main .tab-nav {
+    background: #f0f0f3
+}
+
+.main .tab-nav ul li.selected {
+    border-top: solid 2px #14805e;
+    background: #fff
+}
+
+.main .tab-nav ul li.selected a {
+    color: #14805e
+}
+
+.main .tab-nav ul li {
+    display: block;
+    width: 25%;
+    height: 38px;
+    border-top: solid 2px #f0f0f3;
+    float: left
+}
+
+.main .tab-nav ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-family: 'Microsoft YaHei';
+    font-size: 16px;
+    text-align: center;
+    line-height: 38px;
+    color: #999
+}
+
+.about-leisu,
+.disclaimer {
+    width: 900px;
+    padding: 60px 90px;
+    overflow: hidden
+}
+
+.about-leisu .content,
+.disclaimer .content {
+    font-size: 14px;
+    color: #777;
+    line-height: 25px;
+    font-family: 'Microsoft YaHei';
+    text-align: left
+}
+
+.about-leisu {
+    display: block;
+    height: 580px
+}
+
+.about-leisu .content {
+    display: block
+}
+
+.disclaimer {
+    height: auto;
+    display: none;
+    background: #fff
+}
+
+.disclaimer .content {
+    display: block
+}
+
+.sitemap {
+    width: 1080px;
+    height: 700px;
+    display: none
+}
+
+.sitemap .list-con {
+    display: block;
+    width: 990px;
+    height: 220px;
+    border-bottom: 1px solid #ddd;
+    margin-left: 20px;
+    overflow: hidden;
+    padding-left: 50px
+}
+
+.sitemap .list-con h3 {
+    display: block;
+    width: 500px;
+    height: 50px;
+    font-family: 'Microsoft YaHei';
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 50px;
+    text-align: left;
+    color: #14805e
+}
+
+.sitemap .list-con div {
+    display: block;
+    width: 165px;
+    height: 150px;
+    border-left: 1px solid #ddd;
+    padding-left: 20px;
+    float: left
+}
+
+.sitemap .list-con div h4 {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    font-family: 'Microsoft YaHei';
+    font-size: 14px;
+    font-weight: 400;
+    color: #bbb;
+    text-align: left;
+    margin-bottom: 5px
+}
+
+.sitemap .list-con div span {
+    display: block;
+    width: 150px;
+    height: 20px
+}
+
+.sitemap .list-con div span .zoushi {
+    color: #bbb
+}
+
+.sitemap .list-con div span a {
+    line-height: 20px;
+    font-family: simsun;
+    font-size: 12px;
+    color: #555;
+    text-align: left;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left
+}
+
+.sitemap .list-con div.info-list {
+    display: block;
+    width: 430px
+}
+
+.sitemap .list-con div.info-list span {
+    display: block;
+    width: 80px;
+    float: left
+}
+
+.sitemap .list-con div.info-list span a {
+    width: 80px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.sitemap .list-con div.other-list {
+    display: block;
+    width: 130px
+}
+
+.sitemap .last-body {
+    border-bottom: 0
+}
+
+.contact-way {
+    width: 920px;
+    height: 700px;
+    padding: 50px 80px;
+    display: none
+}
+
+.contact-way div {
+    width: 600px;
+    height: 250px
+}
+
+.contact-way div ol {
+    width: 600px;
+    height: 190px
+}
+
+.contact-way div ol li {
+    width: 600px;
+    height: 40px;
+    line-height: 40px;
+    font-family: Arial, 'Microsoft YaHei';
+    font-size: 14px;
+    color: #777;
+    text-align: left
+}
+
+.contact-way div ol li span {
+    display: inline-block;
+    height: 40px;
+    color: #333
+}
+
+.footer-info {
+    display: block;
+    font-family: Arial, simsun;
+    width: 1080px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin: 30px auto 0;
+    color: #999
+}

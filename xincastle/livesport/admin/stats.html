@@ -11,10 +11,16 @@
     <!-- bootstrap & fontawesome -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <!-- page specific plugin styles -->
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css" />
     <link rel="stylesheet" href="css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
 </head>
 
 <body class="no-skin">
+    <div id="load">
+        <div class="loading"></div>
+        <span class="count">100</span>
+    </div>
     <div id="navbar" class="navbar navbar-default ace-save-state">
         <div class="navbar-container ace-save-state" id="navbar-container">
             <button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">
@@ -130,7 +136,13 @@
                                             <!--badge-danger紅色 badge-success綠色-->
                                             <div class="badge badge-danger">7.2%<i class="ace-icon fa fa-arrow-up"></i></div>
                                         </div>
-                                        <div id="flot-placeholder" style="width:100%;height:400px"></div>
+                                        <div id="flot-placeholder" style="width:100%;height:370px"></div>
+                                        <div class="date-panel">
+                                            <span id="lastmonth" class="prem" title="上個月"><i class="fa fa-arrow-left"></i></span>
+                                            <input type="text" id="monthly" name="monthly" value="2018-09" size="8">
+                                            <span>流量統計</span>
+                                            <span id="nextmonth" class="nxtm" title="下個月"><i class="fa fa-arrow-right"></i></span>
+                                        </div>
                                     </div>
                                 </div>
                                 <!--col-md-6 col-sm-12-->
@@ -148,6 +160,14 @@
                             <!-- /.row -->
                             <div class="row">
                                 <div class="hr hr32 hr-dotted"></div>
+                                <div class="date-panel btm">
+                                    請選擇日期：
+                                    <div class="input-group inputgroups2">
+                                        <span id="lastday" class="input-group-addon" title="往前一天"><i class="fa fa-chevron-left glyphicon glyphicon-chevron-left"></i></span>
+                                        <input type="text" name="datepicker" id="datepicker" size="12" value="2018-09-04">
+                                        <span id="nextday" class="input-group-addon" title="往後一天"><i class="fa fa-chevron-right glyphicon glyphicon-chevron-right"></i></span>
+                                    </div>
+                                </div>
                                 <div class="col-md-3 col-sm-12">
                                     <div class="widget-box transparent">
                                         <div class="widget-header widget-header-flat">
@@ -226,8 +246,6 @@
                                 <!-- /.col -->
                             </div>
                             <!-- /.row -->
-                            <div class="hr hr32 hr-dotted"></div>
-                            <!-- PAGE CONTENT ENDS -->
                         </div>
                         <!-- /.col -->
                     </div>
@@ -251,6 +269,35 @@
     <!-- basic scripts -->
     <!--[if !IE]> -->
     <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <!--Loading-->
+    <script>
+    $(function() {
+        var loading = {
+            loadingShow: function() {
+                $("#load").show();
+                $('.count').each(function() {
+                    $(this).prop('Counter', 0).animate({
+                        Counter: $(this).text()
+                    }, {
+                        duration: 2000, //loading的時間
+                        easing: 'swing',
+                        step: function(now) {
+                            $(this).text(Math.ceil(now));
+                        }
+                    });
+                });
+                var loadingTimer = setTimeout(function() {
+                    $("#load").hide();
+                }, 2000); //loading的時間
+            },
+            loadingHide: function() {
+                $("#load").hide();
+            }
+        }
+        loading.loadingShow();
+
+    });
+    </script>
     <!-- <![endif]-->
     <!--[if IE]>
     <script src="assets/js/jquery-1.11.3.min.js"></script>
@@ -263,7 +310,7 @@
     <!--[if lte IE 8]>
           <script src="assets/js/excanvas.min.js"></script>
     <![endif]-->
-    <script src="assets/js/jquery-ui.custom.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
     <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
     <script src="assets/js/jquery.flot.min.js"></script>
     <script src="assets/js/jquery.flot.axislabels.js"></script>
@@ -347,7 +394,7 @@
                     [29, "30"],
                     [30, "31"]
                 ],
-                axisLabel: "2018年8月星城體育",
+                axisLabel: "",
                 axisLabelUseCanvas: true,
                 axisLabelFontSizePixels: 12,
                 axisLabelPadding: 0
@@ -394,245 +441,283 @@
     </script>
     <!--DataMaps 自動縮放-->
     <script type="text/javascript">
-        function Zoom(args) {
-          $.extend(this, {
-            $buttons:   $(".zoom-button"),
-            $info:      $("#zoom-info"),
-            scale:      { max: 50, currentShift: 0 },
+    function Zoom(args) {
+        $.extend(this, {
+            $buttons: $(".zoom-button"),
+            $info: $("#zoom-info"),
+            scale: { max: 50, currentShift: 0 },
             $container: args.$container,
-            datamap:    args.datamap
-          });
+            datamap: args.datamap
+        });
 
-          this.init();
-        }
+        this.init();
+    }
 
-        Zoom.prototype.init = function() {
-          var paths = this.datamap.svg.selectAll("path"),
-              subunits = this.datamap.svg.selectAll(".datamaps-subunit");
+    Zoom.prototype.init = function() {
+        var paths = this.datamap.svg.selectAll("path"),
+            subunits = this.datamap.svg.selectAll(".datamaps-subunit");
 
-          // preserve stroke thickness
-          paths.style("vector-effect", "non-scaling-stroke");
+        // preserve stroke thickness
+        paths.style("vector-effect", "non-scaling-stroke");
 
-          // disable click on drag end
-          subunits.call(
+        // disable click on drag end
+        subunits.call(
             d3.behavior.drag().on("dragend", function() {
-              d3.event.sourceEvent.stopPropagation();
+                d3.event.sourceEvent.stopPropagation();
             })
-          );
+        );
 
-          this.scale.set = this._getScalesArray();
-          this.d3Zoom = d3.behavior.zoom().scaleExtent([ 1, this.scale.max ]);
+        this.scale.set = this._getScalesArray();
+        this.d3Zoom = d3.behavior.zoom().scaleExtent([1, this.scale.max]);
 
-          this._displayPercentage(1);
-          this.listen();
-        };
+        this._displayPercentage(1);
+        this.listen();
+    };
 
-        Zoom.prototype.listen = function() {
-          this.$buttons.off("click").on("click", this._handleClick.bind(this));
+    Zoom.prototype.listen = function() {
+        this.$buttons.off("click").on("click", this._handleClick.bind(this));
 
-          this.datamap.svg
+        this.datamap.svg
             .call(this.d3Zoom.on("zoom", this._handleScroll.bind(this)))
             .on("dblclick.zoom", null); // disable zoom on double-click
-        };
+    };
 
-        Zoom.prototype.reset = function() {
-          this._shift("reset");
-        };
+    Zoom.prototype.reset = function() {
+        this._shift("reset");
+    };
 
-        Zoom.prototype._handleScroll = function() {
-          var translate = d3.event.translate,
-              scale = d3.event.scale,
-              limited = this._bound(translate, scale);
+    Zoom.prototype._handleScroll = function() {
+        var translate = d3.event.translate,
+            scale = d3.event.scale,
+            limited = this._bound(translate, scale);
 
-          this.scrolled = true;
+        this.scrolled = true;
 
-          this._update(limited.translate, limited.scale);
-        };
+        this._update(limited.translate, limited.scale);
+    };
 
-        Zoom.prototype._handleClick = function(event) {
-          var direction = $(event.target).data("zoom");
+    Zoom.prototype._handleClick = function(event) {
+        var direction = $(event.target).data("zoom");
 
-          this._shift(direction);
-        };
+        this._shift(direction);
+    };
 
-        Zoom.prototype._shift = function(direction) {
-          var center = [ this.$container.width() / 2, this.$container.height() / 2 ],
-              translate = this.d3Zoom.translate(), translate0 = [], l = [],
-              view = {
+    Zoom.prototype._shift = function(direction) {
+        var center = [this.$container.width() / 2, this.$container.height() / 2],
+            translate = this.d3Zoom.translate(),
+            translate0 = [],
+            l = [],
+            view = {
                 x: translate[0],
                 y: translate[1],
                 k: this.d3Zoom.scale()
-              }, bounded;
+            },
+            bounded;
 
-          translate0 = [
+        translate0 = [
             (center[0] - view.x) / view.k,
             (center[1] - view.y) / view.k
-          ];
+        ];
 
-            if (direction == "reset") {
+        if (direction == "reset") {
             view.k = 1;
             this.scrolled = true;
-          } else {
+        } else {
             view.k = this._getNextScale(direction);
-          }
+        }
 
-        l = [ translate0[0] * view.k + view.x, translate0[1] * view.k + view.y ];
+        l = [translate0[0] * view.k + view.x, translate0[1] * view.k + view.y];
 
-          view.x += center[0] - l[0];
-          view.y += center[1] - l[1];
+        view.x += center[0] - l[0];
+        view.y += center[1] - l[1];
 
-          bounded = this._bound([ view.x, view.y ], view.k);
+        bounded = this._bound([view.x, view.y], view.k);
 
-          this._animate(bounded.translate, bounded.scale);
-        };
+        this._animate(bounded.translate, bounded.scale);
+    };
 
-        Zoom.prototype._bound = function(translate, scale) {
-          var width = this.$container.width(),
-              height = this.$container.height();
+    Zoom.prototype._bound = function(translate, scale) {
+        var width = this.$container.width(),
+            height = this.$container.height();
 
-          translate[0] = Math.min(
-            (width / height)  * (scale - 1),
-            Math.max( width * (1 - scale), translate[0] )
-          );
+        translate[0] = Math.min(
+            (width / height) * (scale - 1),
+            Math.max(width * (1 - scale), translate[0])
+        );
 
-          translate[1] = Math.min(0, Math.max(height * (1 - scale), translate[1]));
+        translate[1] = Math.min(0, Math.max(height * (1 - scale), translate[1]));
 
-          return { translate: translate, scale: scale };
-        };
+        return { translate: translate, scale: scale };
+    };
 
-        Zoom.prototype._update = function(translate, scale) {
-          this.d3Zoom
+    Zoom.prototype._update = function(translate, scale) {
+        this.d3Zoom
             .translate(translate)
             .scale(scale);
 
-          this.datamap.svg.selectAll("g")
+        this.datamap.svg.selectAll("g")
             .attr("transform", "translate(" + translate + ")scale(" + scale + ")");
 
-          this._displayPercentage(scale);
-        };
+        this._displayPercentage(scale);
+    };
 
-        Zoom.prototype._animate = function(translate, scale) {
-          var _this = this,
-              d3Zoom = this.d3Zoom;
+    Zoom.prototype._animate = function(translate, scale) {
+        var _this = this,
+            d3Zoom = this.d3Zoom;
 
-          d3.transition().duration(350).tween("zoom", function() {
+        d3.transition().duration(350).tween("zoom", function() {
             var iTranslate = d3.interpolate(d3Zoom.translate(), translate),
                 iScale = d3.interpolate(d3Zoom.scale(), scale);
 
-                return function(t) {
-              _this._update(iTranslate(t), iScale(t));
+            return function(t) {
+                _this._update(iTranslate(t), iScale(t));
             };
-          });
-        };
+        });
+    };
 
-        Zoom.prototype._displayPercentage = function(scale) {
-          var value;
+    Zoom.prototype._displayPercentage = function(scale) {
+        var value;
 
-          value = Math.round(Math.log(scale) / Math.log(this.scale.max) * 100);
-          this.$info.text(value + "%");
-        };
+        value = Math.round(Math.log(scale) / Math.log(this.scale.max) * 100);
+        this.$info.text(value + "%");
+    };
 
-        Zoom.prototype._getScalesArray = function() {
-          var array = [],
-              scaleMaxLog = Math.log(this.scale.max);
+    Zoom.prototype._getScalesArray = function() {
+        var array = [],
+            scaleMaxLog = Math.log(this.scale.max);
 
-          for (var i = 0; i <= 10; i++) {
+        for (var i = 0; i <= 10; i++) {
             array.push(Math.pow(Math.E, 0.1 * i * scaleMaxLog));
-          }
+        }
 
-          return array;
-        };
+        return array;
+    };
 
-        Zoom.prototype._getNextScale = function(direction) {
-          var scaleSet = this.scale.set,
-              currentScale = this.d3Zoom.scale(),
-              lastShift = scaleSet.length - 1,
-              shift, temp = [];
+    Zoom.prototype._getNextScale = function(direction) {
+        var scaleSet = this.scale.set,
+            currentScale = this.d3Zoom.scale(),
+            lastShift = scaleSet.length - 1,
+            shift, temp = [];
 
-          if (this.scrolled) {
+        if (this.scrolled) {
 
             for (shift = 0; shift <= lastShift; shift++) {
-              temp.push(Math.abs(scaleSet[shift] - currentScale));
+                temp.push(Math.abs(scaleSet[shift] - currentScale));
             }
 
             shift = temp.indexOf(Math.min.apply(null, temp));
 
             if (currentScale >= scaleSet[shift] && shift < lastShift) {
-              shift++;
+                shift++;
             }
 
             if (direction == "out" && shift > 0) {
-              shift--;
+                shift--;
             }
 
             this.scrolled = false;
 
-          } else {
+        } else {
 
             shift = this.scale.currentShift;
 
             if (direction == "out") {
-              shift > 0 && shift--;
+                shift > 0 && shift--;
             } else {
-              shift < lastShift && shift++;
+                shift < lastShift && shift++;
             }
-          }
-
-          this.scale.currentShift = shift;
-
-          return scaleSet[shift];
-        };
-
-        function Datamap() {
-            this.$container = $("#map");
-            this.instance = new Datamaps({
-                scope: 'world',
-                geographyConfig: {
-                    popupOnHover: true,
-                    highlightOnHover: true,
-                    highlightFillColor: "#bbb",
-                    highlightBorderColor: "transparent",
-                },
-                fills: {
-                    defaultFill: '#ddd',
-                    spots: '#002f5f',
-                    hotspots: '#de1030',
-                },
-                bubblesConfig: {
-                    borderWidth: 0,
-                    popupOnHover: true,
-                    radius: 1,
-                },
-                element: this.$container.get(0),
-                projection: 'mercator',
-                done: this._handleMapReady.bind(this),
-            });
-
         }
 
-        Datamap.prototype._handleMapReady = function(datamap) {
-            this.zoom = new Zoom({
-            $container: this.$container,
-            datamap: datamap
-          });
-        }
+        this.scale.currentShift = shift;
 
-        //繪製地圖
-        var map =new Datamap();
+        return scaleSet[shift];
+    };
 
-        //取得資料
-        $.getJSON("bubbles.json", function(data) {
-            map.instance.bubbles(data, {
-                popupTemplate: function(geo, data) {
-                    return '<div class="hoverinfo">地點:' + data.city + '<BR/>時間:' + data.timestamp + '<BR/>觀看數:' + data.views
-                }
-            })
+    function Datamap() {
+        this.$container = $("#map");
+        this.instance = new Datamaps({
+            scope: 'world',
+            geographyConfig: {
+                popupOnHover: true,
+                highlightOnHover: true,
+                highlightFillColor: "#bbb",
+                highlightBorderColor: "transparent",
+            },
+            fills: {
+                defaultFill: '#ddd',
+                spots: '#002f5f',
+                hotspots: '#de1030',
+            },
+            bubblesConfig: {
+                borderWidth: 0,
+                popupOnHover: true,
+                radius: 1,
+            },
+            element: this.$container.get(0),
+            projection: 'mercator',
+            done: this._handleMapReady.bind(this),
         });
 
-        //顯示經緯線
-        map.instance.graticule();            
+    }
+
+    Datamap.prototype._handleMapReady = function(datamap) {
+        this.zoom = new Zoom({
+            $container: this.$container,
+            datamap: datamap
+        });
+    }
+
+    //繪製地圖
+    var map = new Datamap();
+
+    //取得資料
+    $.getJSON("bubbles.json", function(data) {
+        map.instance.bubbles(data, {
+            popupTemplate: function(geo, data) {
+                return '<div class="hoverinfo">地點:' + data.city + '<BR/>時間:' + data.timestamp + '<BR/>觀看數:' + data.views
+            }
+        })
+    });
+
+    //顯示經緯線
+    map.instance.graticule();
     </script>
 
+    <script type="text/javascript">
+        //日曆套件 不需要可以直接拿掉這段
+        jQuery(function($) {
+            $.datepicker.setDefaults({
+                closeText: "關閉",
+                prevText: "&#x3C;上月",
+                nextText: "下月&#x3E;",
+                currentText: "今天",
+                monthNames: [ "一月","二月","三月","四月","五月","六月",
+                "七月","八月","九月","十月","十一月","十二月" ],
+                monthNamesShort: [ "一月","二月","三月","四月","五月","六月",
+                "七月","八月","九月","十月","十一月","十二月" ],
+                dayNames: [ "星期日","星期一","星期二","星期三","星期四","星期五","星期六" ],
+                dayNamesShort: [ "周日","周一","周二","周三","周四","周五","周六" ],
+                dayNamesMin: [ "日","一","二","三","四","五","六" ],
+                weekHeader: "周",
+                dateFormat: "yy-mm-dd",
+                firstDay: 1,
+                isRTL: false,
+                showMonthAfterYear: true,
+                yearSuffix: "年"
+              });
+
+            $("#datepicker").datepicker();
+
+            $('#monthly').datepicker({
+                changeMonth: true,
+                changeYear: true,
+                dateFormat: 'yy-mm',
+                onClose: function(dateText, inst) {
+                    $(this).datepicker('setDate', new Date(inst.selectedYear, inst.selectedMonth, 1));
+                }
+            });
+        });
+    </script>
 
 </body>
 
