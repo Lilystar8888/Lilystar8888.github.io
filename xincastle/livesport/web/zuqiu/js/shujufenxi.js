@@ -59,16 +59,6 @@ $(document).ready(function () {
 	    return value.replace(/(\d+)/g, '<span>$1</span>');
 	});
 
-	//20171218
-	var vhk = $('.shuju-main-content .history-compet .history-info div .title').width();
-	$('.shuju-main-content .history-compet .history-info div .title.empty').css('width',vhk);
-
-	var vhl = $('.vsl-content .chartwrap .chartinfo div .title').width();
-	$('.vsl-content .chartwrap .chartinfo div .title.empty').css('width',vhl);
-
-	var vhr = $('.vsr-content .chartwrap .chartinfo div .title').width();
-	$('.vsr-content .chartwrap .chartinfo div .title.empty').css('width',vhr);
-
 	
     //全部赛事 & 5场 & 赛事筛选 滑动开启选单 20170731
 	$('.all-compet, .changci, .choose-compet, .fullhalf')
