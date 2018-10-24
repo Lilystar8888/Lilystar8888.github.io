@@ -365,7 +365,20 @@ a {
 .rich_media_title {
     font-size: 22px;
     line-height: 1.4;
-    margin-bottom: 14px
+}
+
+.bigttl {
+    font-size: 2.5em;
+    line-height: 1.4;
+    margin-bottom: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (min-width: 414px){
+    .bigttl {
+        font-size: 3em;
+    }
 }
 
 @supports(-webkit-overflow-scrolling:touch) {
@@ -1431,7 +1444,7 @@ img {
 
 .floatlayer {
     position: absolute;
-    top: 4rem;
+    top: 10rem;
     right: 0;
     z-index: 9999;
     line-height: .5;
@@ -1443,12 +1456,21 @@ img {
 }
 
 
+@media (min-width: 414px){
+    .floatlayer {
+        top:12rem;
+    }
+}
+
 @media (min-width: 641px){
     .hidden-pc{
         display: none;
     }
     .floatlayer {
-        top:0;
+        top:7rem;
+    }
+    .bigttl{
+        margin-bottom: 0
     }
 }
 
