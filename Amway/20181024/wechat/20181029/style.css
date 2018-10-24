@@ -1450,12 +1450,6 @@ img {
 }
 
 
-@media (min-width: 414px){
-    .floatlayer {
-        top:12rem;
-    }
-}
-
 @media (min-width: 641px){
     .hidden-pc{
         display: none;
