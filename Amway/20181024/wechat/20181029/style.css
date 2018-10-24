@@ -82,17 +82,21 @@ p {
 
 .date {
     box-sizing: border-box;
-    font-weight: bold;
-    color: #ED174C;
 }
 
-.date span, .bluecol{
+.bluecol{
     display: inline;
     padding: 0px 10px;
     border-radius: 0;
     background-color: #3e3e3e;
     color: #fff;
     font-weight: normal;
+}
+
+.dred{
+    display: inline;
+    font-weight: bold;
+    color: #ED174C;
 }
 
 .red {
