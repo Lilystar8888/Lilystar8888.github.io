@@ -84,7 +84,7 @@ p {
     box-sizing: border-box;
 }
 
-.bluecol{
+.bluecol {
     display: inline;
     padding: 0px 10px;
     border-radius: 0;
@@ -93,7 +93,7 @@ p {
     font-weight: normal;
 }
 
-.dred{
+.dred {
     display: inline;
     font-weight: bold;
     color: #ED174C;
@@ -213,6 +213,7 @@ p {
 }
 
 .imgbox {
+    position: relative;
     max-width: 100%;
     vertical-align: middle;
     display: inline-block;
@@ -1436,7 +1437,7 @@ img {
     font-weight: 700
 }
 
-.hidden-pc{
+.hidden-pc {
     display: block;
 }
 
@@ -1453,17 +1454,89 @@ img {
     margin-right: .25rem;
 }
 
+.m1 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    padding: 0px 15px;
+    line-height: 0.5;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px;
+    box-sizing: border-box;
+}
 
-@media (min-width: 641px){
-    .hidden-pc{
-        display: none;
-    }
-    .floatlayer {
-        top:7rem;
-    }
-    .bigttl{
-        margin-bottom: 0
-    }
+.m2 {
+    transform: rotateZ(4.6deg);
+    -webkit-transform: rotateZ(4.6deg);
+    -moz-transform: rotateZ(4.6deg);
+    -o-transform: rotateZ(4.6deg);
+    box-sizing: border-box;
+}
+
+.m3 {
+    margin: 0.5em 0px;
+    font-size: 5px;
+    box-sizing: border-box;
+}
+
+.m4 {
+    box-sizing: border-box;
+    width: 100%;
+    border-width: 9px;
+    border-style: solid;
+    border-color: white;
+    display: inline-block;
+    box-shadow: rgb(102, 102, 102) 2.12132px 2.12132px 6px;
+    height: auto !important;
+}
+
+.m5 {
+    transform: rotateZ(352.25deg);
+    -webkit-transform: rotateZ(352.25deg);
+    -moz-transform: rotateZ(352.25deg);
+    -o-transform: rotateZ(352.25deg);
+    box-sizing: border-box;
+}
+
+.m6 {
+    margin: 0.5em 0px;
+    font-size: 5px;
+    box-sizing: border-box;
+}
+
+.m7 {
+    box-sizing: border-box;
+    width: 100%;
+    border-width: 9px;
+    border-style: solid;
+    border-color: white;
+    display: inline-block;
+    box-shadow: rgb(102, 102, 102) 2.12132px 2.12132px 6px;
+    height: auto !important;
+}
+
+.m8 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.m9 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
 }
 
 
+@media (min-width: 641px) {
+    .hidden-pc {
+        display: none;
+    }
+
+    .floatlayer {
+        top: 7rem;
+    }
+
+    .bigttl {
+        margin-bottom: 0
+    }
+}
