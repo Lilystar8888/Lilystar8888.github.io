@@ -375,12 +375,6 @@ a {
     font-weight: bold;
 }
 
-@media (min-width: 414px){
-    .bigttl {
-        font-size: 3em;
-    }
-}
-
 @supports(-webkit-overflow-scrolling:touch) {
     .rich_media_title {
         font-weight: 700
