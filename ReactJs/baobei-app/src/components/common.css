@@ -1,0 +1,62 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex:1;
+    height: 48px;
+    max-height: 48px;
+    background-color: #f6798e;
+    border-bottom: 1px solid #d56261;
+    color: #fff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.header h1 {
+    display: inline-flex;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.header ul {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+
+.header ul li {
+    display: inline-block;
+    min-width: 30px;
+    margin: 0 1.5rem;
+}
+
+.header ul li a {
+    color: #fff;
+}
+
+.Facebook{
+
+}
+
+.Android{
+
+}
+
+.IOS{
+
+}
+
+.slogan,
+.tips{
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
