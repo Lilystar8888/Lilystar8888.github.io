@@ -21,7 +21,7 @@
                 	<img alt="韓國通集貨網 mamilove logo" src="img/mobile-logo.svg" class="icon-logo-mobile">
                 </a>
                 <i id="search-button" class="pull-right">
-                	<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><g fill="none" fill-rule="evenodd" stroke="#F6798D" stroke-linecap="round" stroke-width="2"><path d="M15.512 16.195L20 20.816M17.72 10.768c0 3.737-3.066 6.767-6.848 6.767-3.781 0-6.847-3.03-6.847-6.767C4.025 7.03 7.091 4 10.872 4c3.782 0 6.848 3.03 6.848 6.768z"></path></g></svg>
+                	<img width="25" height="25" src="img/search.svg">
                 </i>
             </div>
         </header>
@@ -61,26 +61,26 @@
                         <div class="search-wrapper">
                             <div class="search-input flex-section">
                                 <div class="addon flex-section">
-                                            <div class="title flex-section">
-                                                <span>集運</span>
-                                                <div class="drop-icon"></div>
-                                            </div>
-                                            <div class="dropdown-list hide">
-                                                <div class="dropdown-list__item dropdown-list__item--active">
-                                                    <i aria-hidden="true" class="fa fa-check"></i>集運
-                                                </div>
-                                                <div class="dropdown-list__item">
-                                                    <i aria-hidden="true" class="fa fa-check"></i>代購
-                                                </div>
-                                                <div class="dropdown-list__item">
-                                                    <i aria-hidden="true" class="fa fa-check"></i>飯店
-                                                </div>
-                                            </div>
+                                    <div class="title flex-section">
+                                        <span>集運</span>
+                                        <div class="drop-icon"></div>
+                                    </div>
+                                    <div class="dropdown-list hide">
+                                        <div class="dropdown-list__item dropdown-list__item--active">
+                                            <i aria-hidden="true" class="fa fa-check"></i>集運
+                                        </div>
+                                        <div class="dropdown-list__item">
+                                            <i aria-hidden="true" class="fa fa-check"></i>代購
+                                        </div>
+                                        <div class="dropdown-list__item">
+                                            <i aria-hidden="true" class="fa fa-check"></i>飯店
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="input-wrap">
                                     <form action=""><input type="search" name="search" placeholder="關鍵字"></form>
                                     <div class="clear-all-icon flex-section">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><g fill="none" fill-rule="evenodd"><path fill="#AEAEAE" d="M27.267 4.679A15.86 15.86 0 0 0 15.973 0 15.86 15.86 0 0 0 4.68 4.679 15.86 15.86 0 0 0 0 15.973a15.86 15.86 0 0 0 4.679 11.294 15.86 15.86 0 0 0 11.294 4.68 15.86 15.86 0 0 0 11.294-4.68 15.86 15.86 0 0 0 4.68-11.294 15.86 15.86 0 0 0-4.68-11.294z"></path> <path fill="#FFF" d="M23.012 8.934a.905.905 0 0 0-1.284 0l-5.755 5.755-5.755-5.755a.905.905 0 0 0-1.284 0 .905.905 0 0 0 0 1.284l5.755 5.755-5.755 5.755a.905.905 0 0 0 0 1.284c.175.175.41.269.64.269a.886.886 0 0 0 .638-.27l5.754-5.754 5.755 5.755c.175.175.41.269.639.269a.875.875 0 0 0 .638-.27.905.905 0 0 0 0-1.283l-5.74-5.755 5.754-5.755a.905.905 0 0 0 0-1.284z"></path></g></svg>
+                                        <img width="20" height="20" src="img/clearall.svg">
  									</div>
                                 </div>
                             </div>
@@ -96,18 +96,67 @@
                     </div>
                 </div>
                 <div class="desktop-right-section">
+                    <div class="clearfix">
+                            <div class="desktop-app-download">
+                                <a href="#" class="app-download-link">
+                                    <i class="icon-gift"></i>
+                                    $100 折價券首次 加入會員 馬上拿
+                                    <img src="img/img-qrcode-180703@2x.png" class="img-qrcode">
+                                </a>
+                            </div>
+                    </div>
                     <div class="desktop-member">
                         <div>
                             <div class="desktop-member-login">
-                                <a href="/member/facebooklogin?redirect_to=https://hcsd.co.kr/" class="item facebook"><div class="fb-icon"><img src="img/ic-fb.png" alt="fb_icon"></div>Facebook 登入</a>
+                                <a href="/member/facebooklogin?redirect_to=https://hcsd.co.kr/" class="item facebook">
+                                    <div class="fb-icon">
+                                        <img src="img/ic-fb.svg" alt="fb_icon">
+                                    </div>
+                                    Facebook 登入
+                                </a>
                                 <a href="#" data-toggle="modal" data-target="#memberlogin" id="login_link" class="item login">登入</a>
                                 <a href="#" data-toggle="modal" data-target="#memberlogin" id="signup_link" class="item sign-up">註冊</a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="desktop-member-wrapper hide">
+                                <div class="desktop-member-avatar">
+                                    <img src="https://graph.facebook.com/720615454968063/picture?type=large">
+                                    <ul class="dropdown-list hide">
+                                        <li class="dropdown-list__item"><a href="#">會員資料</a></li>
+                                        <li class="dropdown-list__item"><a href="#">查詢訂單</a></li>
+                                        <li class="dropdown-list__item"><a href="#">儲值紀錄</a></li>
+                                        <li class="dropdown-list__item"><a href="#">我的折價券<span>(1)</span></a></li>
+                                        <li class="dropdown-list__item"><a href="#">登出</a></li>
+                                    </ul>
+                                </div>
+                                <div class="desktop-member-nickname">
+                                    <div class="desktop-member-nickname__name">Lily Huang</div>
+                                </div>
+                                <div class="desktop-member-cart">
+                                    <img src="img/cart.svg">
+                                    <a href="/groupbuy/shoppingcart" class="desktop-member-cart__nav"><span>購物車</span> <span>(0)</span></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
+    </div>
+    <div class="container-fluid" style="background-color: #eee;">
+        <div class="container">
+            <p align="center">最新公告: </p>
+        </div>
+    </div>
+    <div class="container">
+        <h2>關於韓國通</h2>
+        <p>「韓國通」是韓國當地貨運公司，提供集貨批發等海外優質服務。為想購買韓國明星商品 韓國彩妝等商品的買家提供購買以及運輸管道將客人購買的商品安全運送至海外，是我們對自己的期許。</p>
+        <h3>今日匯率</h3>
+        <span>韓元：0.0290</span>
+        <h3>包裹追蹤</h3>
+        <input placeholder="追蹤馬">
+        <button>查詢包裹</button>
     </div>
 </body>
 

@@ -113,7 +113,7 @@
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    border-left: 1px solid #faacb8;
+    border-left: 1px solid #23bd0b;
     padding-left: 12px;
     height: 25px
 }
@@ -250,12 +250,10 @@
 
 .search-input .clear-all-icon {
     cursor: pointer;
-    position: absolute;
-    right: 10px;
-    top: 4px
+    margin-right: 10px;
 }
 
-.search-input .clear-all-icon svg {
+.search-input .clear-all-icon img {
     width: 20px
 }
 
@@ -301,7 +299,7 @@
     font-weight: 500;
     border: 2px solid #fff;
     border-radius: 6px;
-    background-color: #f6798d;
+    background-color: #03cf5d;
     cursor: pointer
 }
 
@@ -332,3 +330,4 @@
     color: #fff;
     margin-left: 6px
 }
+

@@ -1392,13 +1392,13 @@ textarea {
 }
 
 a {
-    color: #337ab7;
+    color: #fff;
     text-decoration: none
 }
 
 a:focus,
 a:hover {
-    color: #23527c;
+    color: #fff;
     text-decoration: underline
 }
 
@@ -8286,11 +8286,11 @@ button.close {
     float: left;
     width: 83px;
     height: 100%;
-    border-left: 1px solid #f05e75
+    border-left: 1px solid #23bd0b
 }
 
 .desktop-nav__entrance:last-child {
-    border-right: 1px solid #f05e75
+    border-right: 1px solid #23bd0b
 }
 
 .desktop-nav__entrance img {
@@ -8310,7 +8310,7 @@ button.close {
 .desktop-nav a.active,
 .desktop-nav a .active,
 .desktop-nav a:hover {
-    background-color: #f5686f;
+    background-color: #1fbf07;
     -webkit-transition: .4s;
     -o-transition: .4s;
     transition: .4s
@@ -8322,8 +8322,8 @@ button.close {
 
 #desktop_header {
     height: 100px;
-    background-color: #f6798e;
-    border-bottom: 1px solid #d56261
+    background-color: #3ec729;
+    border-bottom: 1px solid #14b650
 }
 
 .desktop-header-logo {
@@ -8407,7 +8407,7 @@ button.close {
 }
 
 .desktop-app-download:hover {
-    background-color: #e94565
+    background-color: #4385f5
 }
 
 .desktop-app-download:hover .img-qrcode {
@@ -13414,7 +13414,6 @@ html {
     margin: 0;
     padding: 0;
     font-family: helvetica, Arial, \\5FAE\8EDF\6B63\9ED1\9AD4, Microsoft JhengHei, sans-serif;
-    overflow-x: hidden;
     -webkit-font-smoothing: antialiased
 }
 
