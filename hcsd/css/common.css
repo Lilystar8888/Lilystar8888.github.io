@@ -151,7 +151,8 @@
 
 .desktop-member-login .fb-icon img {
     width: 18px;
-    height: 18px
+    height: 18px;
+    margin-top: -5px;
 }
 
 .flex-section {
