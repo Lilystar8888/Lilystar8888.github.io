@@ -13868,16 +13868,21 @@ a:hover {
 .css-table .th {
     position: relative;
     height: 22px;
-    background-color: #576286;
+    background-color: #3ec729;
     color: #fff;
     line-height: 12px;
     border-radius: 11px;
-    margin-bottom: 10px;
     padding-left: 10px;
-    padding-right: 10px; 
+    padding-right: 10px;
 }
 
 .css-table .danger{
     color: inherit;
 }
 
+.panel.exchange span{
+    color: white;
+    background-color: #eee;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
