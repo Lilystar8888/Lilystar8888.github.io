@@ -8,7 +8,10 @@
     <meta name="keywords" content="韓國代購代買,韓國集貨,韓國集運,韓國代購,韓國代買,韓國貨運,韓國直發,韓國集運到台灣,一路發 韓國" />
     <title>韓國通集貨網,韓國集貨,韓國代購,飯店代訂 一站式購物運輸服務,儲值、充值|Hanguk Cargo, Shipping & Delivery</title>
     <link rel="stylesheet" type="text/css" href="css/base.css" />
-    <script src="js/common.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/tab.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/base.js"></script>
 </head>
 
 <body>
@@ -143,18 +146,17 @@
             </div>
         </header>
     </div>
-    <div class="container-fluid" style="background-color: #eee; margin-bottom: 3rem;">
+    <div class="container-fluid board">
         <div class="container">
             <p align="center">最新公告: </p>
         </div>
     </div>
     <div class="container">
         <div class="left">
-
             <h2 class="visuallyhidden">關於韓國通</h2>
 
-            <h3>集貨流程</h3>
-            <div class="css-table">
+            <h3>簡單清楚的集貨流程</h3>
+            <div class="jihuo-table">
                 <div class="tr hcsd">
                     <div class="td"><img src="img/step1.svg"></div>
                     <div class="th">免費加入會員</div>
@@ -164,25 +166,25 @@
                 <div class="tr buyer">
                     <div class="td"><img src="img/step2.svg"></div>
                     <div class="th">購物結帳時</div>
-                    <div class="td danger">指定包裹送到<br>韓國集貨站</div>
+                    <div class="td">指定包裹送到<br>韓國集貨站</div>
                 </div>
 
                 <div class="tr buyer">
                     <div class="td"><img src="img/step3.svg"></div>
                     <div class="th">賣家寄出後</div>
-                    <div class="td danger">登入會員專區<br>【我的集貨】<br>填寫運單號碼</div>
+                    <div class="td">登入會員專區<br>【我的集貨】<br>填寫運單號碼</div>
                 </div>
 
                 <div class="tr hcsd">
                     <div class="td"><img src="img/step4.svg"></div>
                     <div class="th">貨物到達集貨站</div>
-                    <div class="td">系統發Email/<br>簡訊通知</div>
+                    <div class="td">系統發Email/<br>APP推播通知</div>
                 </div>
 
                 <div class="tr buyer">
                     <div class="td"><img src="img/step5.svg"></div>
                     <div class="th">貨物全到齊</div>
-                    <div class="td danger">登入會員專區<br>【我的進倉】<br>勾選發貨</div>
+                    <div class="td">登入會員專區<br>【我的進倉】<br>勾選發貨</div>
                 </div>
 
                 <div class="tr hcsd">
@@ -192,16 +194,353 @@
                 </div>
             </div>
 
-            <h3>運費說明</h3>
-            <div class="tanbox" style="display: block; top: 30px; opacity: 1;">
-                <div class="titles">一般集貨合併包裹重量</div>
-                <div class="body">
-                    <table width="100%" border="0" cellspacing="1" cellpadding="0" class="table1">
-                        <tbody></tbody>
-                    </table>
+            <h3>公開透明的集運費用</h3>
+            <br>
+            <div class="pay-method">
+                <ul class="tab-list">
+                    <li class="tab-itom">
+                        <input type="radio" id="testTabRadio1" class="test-radio" name="tab" checked="checked">
+                        <label class="test-label" for="testTabRadio1">一般集貨合併包裹重量</label>
+                        <div class="tab-box">
+                            <div class="freight-table">
+                                <div class="thead">
+                                    <div class="tr">
+                                        <div class="td half">項目</div>
+                                        <div class="td col2">實重收費</div>
+                                        <div class="td col2">才積收費</div>
+                                    </div>
+                                </div>
+                                <div class="tbody">
+                                    <div class="tr">
+                                        <div class="td half">重量</div>
+                                        <div class="tr col2">
+                                            <div class="td">第1Kg(首重)</div>
+                                            <div class="td">第2Kg(續重)</div>
+                                        </div>
+                                        <div class="tr col2">
+                                            <div class="td col2">才積費=(才積重-實重)</div>
+                                        </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td half">集貨幣付</div>
+                                        <div class="tr col2">
+                                            <div class="td">176元/Kg</div>
+                                            <div class="td">146元/Kg</div>
+                                        </div>
+                                        <div class="tr col2">
+                                            <div class="td col2">106元/Kg</div>
+                                        </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td half">信用卡付</div>
+                                        <div class="tr col2">
+                                            <div class="td">180元/Kg</div>
+                                            <div class="td">150元/Kg</div>
+                                        </div>
+                                        <div class="tr col2">
+                                            <div class="td col2">109元/Kg</div>
+                                        </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td half">範例</div>
+                                        <div class="tr col4">
+                                            <div class="td">實重3.2KG,才積重10.3KG，實重按4KG計費，才積按11KG計費，才積費=(11-4)=7KG<br>集貨幣付款運費=實重(176+146+146+146)+才積費(11-4)*106=1356<br>信用卡付款運費=實重(180+150+150+150)+才積費(11-4)*109=1393
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td half">貼心提醒</div>
+                                        <div class="tr col4">
+                                            <div class="td">
+                                                1.重量不足1公斤以1公斤計費，運費已包含關稅。 <br>
+                                                2.才積重=(長cm＊寬cm＊高cm)/6000。<br>3.實重大於才積重只會收取實重的運費，才積重大於實重，運費=實重運費＋才積重運費。<br>4.實務上因為要合併包裹，所以會更改外箱包裝或尺寸，所造成的重量或才積增減，運費均多不退少不補。<br>5.本運費限配送台灣本島，如另外轉寄外島另收國內郵局郵資。
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tab-itom">
+                        <input type="radio" id="testTabRadio2" class="test-radio" name="tab">
+                        <label class="test-label" for="testTabRadio2">四大超商取貨 (合併包裹限小於等於3公斤</label>
+                        <div class="tab-box">
+                            <div class="freight-table">
+                                <div class="thead">
+                                    <div class="tr">
+                                        <div class="td half">項目</div>
+                                        <div class="td col2">實重收費</div>
+                                        <div class="td col2">才積收費</div>
+                                    </div>
+                                </div>
+                                <div class="tbody">
+                                    <div class="tr">
+                                        <div class="td half">重量</div>
+                                        <div class="tr col2">
+                                            <div class="td">第1Kg(首重)</div>
+                                            <div class="td">第2Kg(續重)</div>
+                                        </div>
+                                        <div class="tr col2">
+                                            <div class="td col2">才積費=(才積重-實重)</div>
+                                        </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td half">集貨幣付</div>
+                                        <div class="tr col2">
+                                            <div class="td">176元/Kg</div>
+                                            <div class="td">146元/Kg</div>
+                                        </div>
+                                        <div class="tr col2">
+                                            <div class="td col2">106元/Kg</div>
+                                        </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td half">範例</div>
+                                        <div class="tr col4">
+                                            <div class="td">實重3.2KG,才積重10.3KG，實重按4KG計費，才積按11KG計費，才積費=(11-4)=7KG<br>集貨幣付款運費=實重(176+146+146+146)+才積費(11-4)*106=1356
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td half">貼心提醒</div>
+                                        <div class="tr col4">
+                                            <div class="td">
+                                                1.重量不足1公斤以1公斤計費，運費已包含關稅，發貨重量在1公斤以內另收30元超商處理費。<br>
+                                                2.合併重量小於或等於3公斤，且於符合超商規定內尺寸。<br>
+                                                3.包裹到站，會員自行操作系統發貨並選擇取件超商地點。<br>
+                                                4.抵達台北後如果發現尺寸不符合超商規定將轉宅配派送。
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tab-itom">
+                        <input type="radio" id="testTabRadio3" class="test-radio" name="tab">
+                        <label class="test-label" for="testTabRadio3">重貨Cargo (50公斤起)</label>
+                        <div class="tab-box">
+                            <div class="freight-table">
+                                <div class="thead">
+                                    <div class="tr">
+                                        <div class="td half">說明</div>
+                                        <div class="td col4">每一包裹實重與才積重選擇最大值計算重量</div>
+                                    </div>
+                                </div>
+                                <div class="tbody">
+                                    <div class="tr">
+                                        <div class="td half">重量</div>
+                                        <div class="tr col2">
+                                            <div class="td">50-100kg</div>
+                                            <div class="td">101-150kg</div>
+                                        </div>
+                                        <div class="tr col2">
+                                            <div class="td col2">151kg以上</div>
+                                        </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td half">集貨幣付</div>
+                                        <div class="tr col2">
+                                            <div class="td">106元/Kg</div>
+                                            <div class="td">101元/Kg</div>
+                                        </div>
+                                        <div class="tr col2">
+                                            <div class="td col2">96元/Kg</div>
+                                        </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td half">信用卡付</div>
+                                        <div class="tr col2">
+                                            <div class="td">109元/Kg</div>
+                                            <div class="td">104元/Kg</div>
+                                        </div>
+                                        <div class="tr col2">
+                                            <div class="td col2">99元/Kg</div>
+                                        </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td half">範例</div>
+                                        <div class="tr col4">
+                                            <div class="td">
+                                                59.2KG算60KG<br>
+                                                集貨幣付款運費=60*106=6,360<br>
+                                                信用卡付款運費=60*109=6,540
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td half">貼心提醒</div>
+                                        <div class="tr col4">
+                                            <div class="td">
+                                                1.重量不足1公斤以1公斤計費，運費已包含關稅。 <br>
+                                                2.才積重=(長cm＊寬cm＊高cm)/6000。<br>
+                                                3.每一集貨序號需大於5公斤(實重或才積)，並自入倉日算起7日內發貨。<br>
+                                                4.每件貨的重量取實重與才積重選較重的計算重量。<br>
+                                                5.實務上因為要合併包裹，所以會更改外箱包裝或尺寸，所造成的重量或才積增減，運費均多不退少不補。<br>
+                                                6.本運費限配送台灣本島，如另外轉寄外島另收國內郵局郵資。
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <h5>方便輕鬆的付款方式</h5>
+
+                <a class="btn btn-success" data-toggle="modal" data-target="#modal1">集貨幣付款</a>
+                <a class="btn btn-danger">信用卡付款</a>
+
+                <br><br>
+                <h5>多樣免費服務</h5>
+
+                <a class="btn btn-info">免費代收包裹</a>
+                <a class="btn btn-success">免費合併包裹</a>
+                <a class="btn btn-primary">台灣本地宅配</a>
+
+                <br><br>
+                <h5>更多附加服務</h5>
+
+                <a class="btn btn-success">重新包裝</a>
+                <a class="btn btn-info">代墊運費</a>
+                <a class="btn btn-warning">加強包裝</a>
+                <a class="btn btn-danger">商業報關</a>
+                <a class="btn btn-default">大型物品報關</a>
+                <a class="btn btn-success">存倉時間</a>
+
+                <h5>多元化配送方式</h5>     
+
+                <a class="btn btn-info">自有車隊</a>
+                <a class="btn btn-success">宅急便</a>
+                <a class="btn btn-darkblue">宅配通</a>
+                <a class="btn btn-default">超峰</a>
+                <a class="btn btn-warning">嘉里大榮</a>
+                <a class="btn btn-danger">超商取貨</a>
+
+            </div>
+            <!--公開透明的集運費用 END-->
+
+            <br><br>
+            <h3>進口項目</h3>
+            <ul>
+                <li>韓國站不得寄送純電池(但是本體含電池可以，例如相機)、仿冒或具有磁性等物品。</li>
+                <li>不得寄送種子、活體動物、活體植物。</li>
+                <li>航空公司規定不得寄送易燃、易爆等商品。</li>
+                <li>符合韓國海關法與中華民國關稅法 、 海關緝私條例等，允許通關項目。</li>
+                <li>財政部關稅總局稅率稅則查詢系統。</li>
+            </ul>
+
+            <br>
+            <h3>送達時間說明</h3>
+
+            <h5>台灣14：00前發貨，抵達台灣時間</h5>
+            <div class="css-table delivery-table">
+                <div class="thead">
+                    <div class="tr">
+                        <div class="th">發貨/抵達</div>
+                        <div class="th">週一</div>
+                        <div class="th">週二</div>
+                        <div class="th">週三</div>
+                        <div class="th">週四</div>
+                        <div class="th">週五</div>
+                        <div class="th">週六</div>
+                        <div class="th">週日</div>
+                        <div class="th">週一</div>
+                    </div>
+                </div>
+                <div class="tbody">
+                    <div class="tr">
+                        <div class="td">週一</div>
+                        <div class="td kr">確認發貨</div>
+                        <div class="td"></div>
+                        <div class="td tp">抵達台北</div>
+                        <div class="td"></div>
+                        <div class="td"></div>
+                        <div class="td"></div>
+                        <div class="td"></div>
+                        <div class="td"></div>
+                    </div>
+                    <div class="tr">
+                        <div class="td">週二</div>
+                        <div class="td"></div>
+                        <div class="td kr">確認發貨</div>
+                        <div class="td"></div>
+                        <div class="td tp">抵達台北</div>
+                        <div class="td"></div>
+                        <div class="td"></div>
+                        <div class="td"></div>
+                        <div class="td"></div>
+                    </div>
+                    <div class="tr">
+                        <div class="td">週三</div>
+                        <div class="td"></div>
+                        <div class="td"></div>
+                        <div class="td kr">確認發貨</div>
+                        <div class="td"></div>
+                        <div class="td tp">抵達台北</div>
+                        <div class="td"></div>
+                        <div class="td"></div>
+                        <div class="td"></div>
+                    </div>
+                    <div class="tr">
+                        <div class="td">週四</div>
+                        <div class="td"></div>
+                        <div class="td"></div>
+                        <div class="td"></div>
+                        <div class="td kr">確認發貨</div>
+                        <div class="td"></div>
+                        <div class="td tp">抵達台北</div>
+                        <div class="td"></div>
+                        <div class="td"></div>
+                    </div>
+                    <div class="tr">
+                        <div class="td">週五</div>
+                        <div class="td"></div>
+                        <div class="td"></div>
+                        <div class="td"></div>
+                        <div class="td"></div>
+                        <div class="td kr">確認發貨</div>
+                        <div class="td"></div>
+                        <div class="td"></div>
+                        <div class="td tp">抵達台北</div>
+                    </div>
+                    <div class="tr">
+                        <div class="td">週六</div>
+                        <div class="td"></div>
+                        <div class="td"></div>
+                        <div class="td"></div>
+                        <div class="td"></div>
+                        <div class="td"></div>
+                        <div class="td kr">沒有出貨</div>
+                        <div class="td"></div>
+                        <div class="td"></div>
+                    </div>
+                    <div class="tr">
+                        <div class="td">週日</div>
+                        <div class="td"></div>
+                        <div class="td"></div>
+                        <div class="td"></div>
+                        <div class="td"></div>
+                        <div class="td"></div>
+                        <div class="td"></div>
+                        <div class="td kr">沒有出貨</div>
+                        <div class="td"></div>
+                    </div>
                 </div>
             </div>
+            
+            <ul>
+                <li>抵達台北總部後，台北市﹑新北市﹑基隆市當日配送。( 週日除外 )</li>
+                <li>且重量﹑尺寸在黑貓許可下，可享受黑貓北區當日配服務。 ( 六、日除外 )</li>
+                <li>非上述地區抵達台北後，隔天配送。</li>
+            </ul>
+
+            <h5>黑貓當日配區域</h5>
+
         </div>
+        <!--left-->
+
         <div class="right">
 
             <div>
@@ -234,8 +573,50 @@
                 <h3>常見問答</h3>
             </div>
         </div>
+        <!--right-->
 
     </div>
+
+    <div id="modal1" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">集貨幣付款</h4>
+              </div>
+              <div class="modal-body">
+                <p>1.發貨時自動從集貨幣帳戶餘額中扣除運費。</p>
+                <p>2.登入會員後左手邊有集貨幣充值選項，輸入金額後會提供銀行帳號，入帳後會以簡訊通知會員。</p>
+                <p>3.提供完整的集貨幣交易記錄，不使用時亦可申請退款。</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">關閉視窗</button>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">信用卡付款</h4>
+              </div>
+              <div class="modal-body">
+                <p>1.發貨時選擇信用卡付款。</p>
+                <p>2.信用卡付款每公斤運費比集貨幣付款貴3~4元。</p>
+                <p>3.分期付款限使用合庫、彰化、土銀等三家銀行信用卡。</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">關閉視窗</button>
+              </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
