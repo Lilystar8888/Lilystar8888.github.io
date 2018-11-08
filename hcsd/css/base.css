@@ -6753,7 +6753,7 @@ button.list-group-item-danger.active:hover {
     background-color: #fafafa;
     border: 1px solid transparent;
     border-radius: 10px;
-    padding: 0 10px;
+    padding: 10px;
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
     box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
@@ -14344,4 +14344,6 @@ a:hover {
     margin-right: .5rem;
 }
 
-
+.freight-trial input{
+    text-align: center;
+}
