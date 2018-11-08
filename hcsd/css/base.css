@@ -6749,13 +6749,17 @@ button.list-group-item-danger.active:hover {
 }
 
 .panel {
-        margin-bottom: 20px;
+    margin-bottom: 20px;
     background-color: #fafafa;
     border: 1px solid transparent;
     border-radius: 10px;
     padding: 0 10px;
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
     box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.panel ul{
+    padding-inline-start: 20px;
 }
 
 .panel-body {
@@ -7160,7 +7164,7 @@ button.list-group-item-danger.active:hover {
 
 .panel.exchange span{
     color: white;
-    background-color: #eee;
+    background-color: #555;
     padding: 2px 10px;
     border-radius: 10px;
 }
@@ -13807,6 +13811,216 @@ a:hover {
     margin-left: 6px
 }
 
+/*my style*/
+
+.m-t-20 {
+    margin-top: 20px;
+}
+
+.m-t-50 {
+    margin-top: 50px;
+}
+
+.m-l-16{
+    margin-left: 16px;
+}
+
+.m-r-16{
+    margin-right: 16px;
+}
+
+
+.clearfix-row {
+    clear: both;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%
+}
+
+.clearfix-row::after,
+.clearfix-row::before {
+    content: '';
+    display: table
+}
+
+.footer-bottom {
+    height: 50px;
+    width: 100%;
+    background: #bababb;
+    text-align: center
+}
+
+.footer-bottom ol {
+    list-style: none;
+    display: inline-block;
+    height: 50px;
+    margin: 0 auto;
+    line-height: 50px;
+    overflow: hidden;
+    text-align: left
+}
+
+.footer-bottom ol li {
+    float: left;
+    padding: 0 5px;
+    color: #fff;
+    font-family: Arial, simsun;
+    font-size: 12px;
+    line-height: 50px
+}
+
+.footer-bottom ol li a {
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    color: #fff;
+    display: inline-block
+}
+
+.footer-bottom ol li a.brand {
+    vertical-align: middle;
+    line-height: initial;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 38px;
+    width: 107px
+}
+
+.footer-bottom ol li a.brand img {
+    vertical-align: top;
+    position: relative;
+    left: -1px;
+    top: -1px
+}
+
+.footer-bottom ol li a.link:hover {
+    color: #333
+}
+
+.footer-bottom ol li em {
+    display: inline-block;
+    height: 10px;
+    border-right: solid 1px #fff;
+    margin-right: 10px
+}
+
+.footer-bottom.type-tow {
+    background-color: #1f1f1f
+}
+
+.footer-bottom.type-tow .link:hover {
+    color: #de1e30 !important
+}
+
+.home-footer {
+    padding: 20px 0
+}
+
+.home-footer ul,
+.home-footer ol,
+.home-footer li,
+.home-footer p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.home-footer .children {
+    float: left;
+    width: 47%
+}
+
+.home-footer .children .bd-right {
+    border-right: 1px solid #e5e5e5
+}
+
+.home-footer .children .title {
+    clear: both;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666
+}
+
+.home-footer .children .title:after,
+.home-footer .children .title:before {
+    content: '';
+    display: table
+}
+
+.home-footer .children .title .fa {
+        border-radius: 10px;
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border: 1px solid #434343;
+    font-weight: 100;
+    color: #434343;
+    margin-right: 13px;
+    font-size: 12px;
+    line-height: 12px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-footer .children .list {
+    display: block;
+    margin-left: 40px;
+    font-size: 0
+}
+
+.home-footer .children .list li {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    color: #666;
+    min-width: 100px;
+    padding: 6px 0 10px
+}
+
+.home-footer .children .list li .link {
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    color: #666
+}
+
+.home-footer .children .list li .link:hover {
+    color: #000
+}
+
+.home-footer .children.right .title .iconfont {
+    margin-left: 60px
+}
+
+.home-footer .children.right .list {
+    margin-left: 99px
+}
+
+.home-footer .children.right .list li {
+    min-width: 80px
+}
+
+.home-footer .children.right .list li.first-body {
+    min-width: 35px
+}
+
+
 .left {
     display: inline-block;
     width: 788px;
@@ -13956,7 +14170,8 @@ a:hover {
     flex:4;
 }
 
-.pay-method .btn{
+.pay-method .btn,
+.delivery-way .btn{
     font-size: 18px;
 }
 
@@ -14123,3 +14338,10 @@ a:hover {
 .delivery-table .tp{
     background-color: #dff0d8;
 }
+
+.fa-money,
+.fa-credit-card{
+    margin-right: .5rem;
+}
+
+
