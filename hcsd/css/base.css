@@ -1379,7 +1379,7 @@ body {
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
-    background-color: #fff
+    background-color: #fafafa
 }
 
 button,
@@ -7267,7 +7267,9 @@ button.close {
     left: 0;
     z-index: 1050;
     -webkit-overflow-scrolling: touch;
-    outline: 0
+    outline: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal.fade .modal-dialog {
@@ -7399,7 +7401,7 @@ button.close {
 
 @media (min-width:768px) {
     .modal-dialog {
-        width: 600px;
+        width: 800px;
         margin: 30px auto
     }
 
@@ -13844,7 +13846,6 @@ a:hover {
 }
 
 .footer-bottom {
-    height: 50px;
     width: 100%;
     background: #bababb;
     text-align: center
@@ -14175,6 +14176,20 @@ a:hover {
     font-size: 18px;
 }
 
+.bts {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.42857143;
+    border-radius: 4px;
+}
+
 .board{
     background-color: #eee;
     margin-bottom: 3rem;
@@ -14187,14 +14202,36 @@ a:hover {
     margin-bottom: 20px;
 }
 
+.css-table.small{
+    width: 75%;
+}
+
 .css-table .td, .css-table .th{
     padding: 5px;
 }
 
 .css-table .td{
     color: #666666;
-    border: #ddd 1px solid;
+    border: 1px #ddd solid;
     text-align: center;
+}
+
+
+.css-table .td .flex{
+    display: flex;
+    flex:1;
+}
+
+.css-table .td .flex .col{
+    display: inline-flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px #ddd solid;
+}
+
+.css-table .td .flex .col:last-child{
+    border-right: 0 solid;
 }
 
 .css-table .th{
@@ -14348,10 +14385,49 @@ a:hover {
     text-align: center;
 }
 
+.bk-default {
+    color: #fff;
+    background-color: #333;
+}
+
+.bk-warning {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+
+.bk-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
 .bk-mint{
     background-color: #f1fff1;
 }
 
 .bk-pink{
     background-color: #fff1f1;
+}
+
+.bk-white{
+    background-color: white;
+}
+
+.bk-info{
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+.bk-success{
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+.bk-primary{
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
 }

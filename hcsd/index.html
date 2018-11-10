@@ -400,9 +400,9 @@
                 <br><br>
                 <h5>多樣免費服務</h5>
 
-                <a class="btn btn-info">免費代收包裹</a>
-                <a class="btn btn-success">免費合併包裹</a>
-                <a class="btn btn-primary">台灣本地宅配</a>
+                <div class="bts bk-info">免費代收包裹</div>
+                <div class="bts bk-success">免費合併包裹</div>
+                <div class="bts bk-primary">台灣本地宅配</div>
 
                 <br><br>
                 <h5>更多附加服務</h5>
@@ -530,12 +530,11 @@
 
                 <h5>多元化配送方式</h5>     
 
-                <a class="btn btn-success">黑貓宅急便</a>
-                <a class="btn btn-default">宅配通</a>
-                <a class="btn btn-info">超峰</a>
-                <a class="btn btn-warning">嘉里大榮</a>
-                <a class="btn btn-danger">超商取貨</a>
-
+                <div class="bts bk-success">黑貓宅急便</div>
+                <div class="bts bk-default">宅配通</div>
+                <div class="bts bk-info">超峰</div>
+                <div class="bts bk-warning">嘉里大榮</div>
+                <div class="bts bk-danger">超商取貨</div>
             </div>
             <!--delivery-way-->
 
@@ -553,7 +552,7 @@
             <br><br>
 
             <h3>韓國營業時間</h3>
-            <div class="css-table">
+            <div class="css-table small">
                   <div class="tbody">
                     <div class="tr">
                         <div class="td">時間 / 日期</div>
@@ -567,33 +566,33 @@
                     </div>
                     <div class="tr">
                         <div class="td">08:00~12:00</div>
-                        <div class="td"><i class="fa fa-times"></i></div>
-                        <div class="td"><i class="fa fa-check"></i></div>
-                        <div class="td"><i class="fa fa-check"></i></div>
-                        <div class="td"><i class="fa fa-check"></i></div>
-                        <div class="td"><i class="fa fa-check"></i></div>
-                        <div class="td"><i class="fa fa-check"></i></div>
-                        <div class="td"><i class="fa fa-check"></i></div>
+                        <div class="td bk-pink"><i class="fa fa-times"></i></div>
+                        <div class="td bk-mint"><i class="fa fa-check"></i></div>
+                        <div class="td bk-mint"><i class="fa fa-check"></i></div>
+                        <div class="td bk-mint"><i class="fa fa-check"></i></div>
+                        <div class="td bk-mint"><i class="fa fa-check"></i></div>
+                        <div class="td bk-mint"><i class="fa fa-check"></i></div>
+                        <div class="td bk-mint"><i class="fa fa-check"></i></div>
                       </div>
                     <div class="tr">
                         <div class="td">13:00~18:00</div>
-                        <div class="td"><i class="fa fa-times"></i></div>
-                        <div class="td"><i class="fa fa-check"></i></div>
-                        <div class="td"><i class="fa fa-check"></i></div>
-                        <div class="td"><i class="fa fa-check"></i></div>
-                        <div class="td"><i class="fa fa-check"></i></div>
-                        <div class="td"><i class="fa fa-check"></i></div>
-                        <div class="td"><i class="fa fa-times"></i></div>
+                        <div class="td bk-pink"><i class="fa fa-times"></i></div>
+                        <div class="td bk-mint"><i class="fa fa-check"></i></div>
+                        <div class="td bk-mint"><i class="fa fa-check"></i></div>
+                        <div class="td bk-mint"><i class="fa fa-check"></i></div>
+                        <div class="td bk-mint"><i class="fa fa-check"></i></div>
+                        <div class="td bk-mint"><i class="fa fa-check"></i></div>
+                        <div class="td bk-pink"><i class="fa fa-times"></i></div>
                       </div>
                     <div class="tr">
                         <div class="td">18:00~20:00</div>
-                        <div class="td"><i class="fa fa-times"></i></div>
-                        <div class="td"><i class="fa fa-times"></i></div>
-                        <div class="td"><i class="fa fa-times"></i></div>
-                        <div class="td"><i class="fa fa-times"></i></div>
-                        <div class="td"><i class="fa fa-times"></i></div>
-                        <div class="td"><i class="fa fa-times"></i></div>
-                        <div class="td"><i class="fa fa-times"></i></div>
+                        <div class="td bk-pink"><i class="fa fa-times"></i></div>
+                        <div class="td bk-pink"><i class="fa fa-times"></i></div>
+                        <div class="td bk-pink"><i class="fa fa-times"></i></div>
+                        <div class="td bk-pink"><i class="fa fa-times"></i></div>
+                        <div class="td bk-pink"><i class="fa fa-times"></i></div>
+                        <div class="td bk-pink"><i class="fa fa-times"></i></div>
+                        <div class="td bk-pink"><i class="fa fa-times"></i></div>
                     </div>
                 </div>
             </div>
@@ -684,7 +683,7 @@
     <!--container-->
     
     <!--頁尾-->
-    <div class="container-fluid m-t-20">
+    <div class="container-fluid m-t-50 bk-white">
         <div class="container">
             <div class="clearfix-row home-footer">
                 <div class="children">
@@ -735,63 +734,387 @@
         </ol>
     </div>
 
-    <!--Modal 集貨幣付款-->
+    <!--Modal1 集貨幣付款-->
     <div id="modal1" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">集貨幣付款</h4>
-              </div>
-              <div class="modal-body">
-                <p>1.發貨時自動從集貨幣帳戶餘額中扣除運費。</p>
-                <p>2.登入會員後左手邊有集貨幣充值選項，輸入金額後會提供銀行帳號，入帳後會以簡訊通知會員。</p>
-                <p>3.提供完整的集貨幣交易記錄，不使用時亦可申請退款。</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">關閉視窗</button>
-              </div>
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">集貨幣付款</h4>
+                </div>
+                <div class="modal-body">
+                    <p>1.發貨時自動從集貨幣帳戶餘額中扣除運費。</p>
+                    <p>2.登入會員後左手邊有集貨幣充值選項，輸入金額後會提供銀行帳號，入帳後會以簡訊通知會員。</p>
+                    <p>3.提供完整的集貨幣交易記錄，不使用時亦可申請退款。</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">關閉視窗</button>
+                </div>
             </div>
         </div>
     </div>
 
-    <!--Modal 信用卡付款-->
+    <!--Modal2 信用卡付款-->
     <div id="modal2" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">信用卡付款</h4>
-              </div>
-              <div class="modal-body">
-                <p>1.發貨時選擇信用卡付款。</p>
-                <p>2.信用卡付款每公斤運費比集貨幣付款貴3~4元。</p>
-                <p>3.分期付款限使用合庫、彰化、土銀等三家銀行信用卡。</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">關閉視窗</button>
-              </div>
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">信用卡付款</h4>
+                </div>
+                <div class="modal-body">
+                    <p>1.發貨時選擇信用卡付款。</p>
+                    <p>2.信用卡付款每公斤運費比集貨幣付款貴3~4元。</p>
+                    <p>3.分期付款限使用合庫、彰化、土銀等三家銀行信用卡。</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">關閉視窗</button>
+                </div>
             </div>
         </div>
     </div>
 
-    <!--Modal 黑貓當日配區域-->
+    <!--Modal3 重新包裝-->
+    <div id="modal3" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">重新包裝</h4>
+                </div>
+                <div class="modal-body">
+                    <p>取出箱子中保護商品的緩衝物料(如氣泡、空氣袋、報紙、廢紙等)，進而縮小體積</p>
+                    <div class="css-table">
+                        <div class="tbody">
+                            <div class="tr">
+                                <div class="td">幣別</div>
+                                <div class="td">集貨幣付款</div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">限制</div>
+                                <div class="td">(才積重-實重)>=1.5公斤</div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">包裝費</div>
+                                <div class="td">每一個集貨序號50NTD，一筆訂單最高收費300NTD</div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">範例</div>
+                                <div class="td">3個包裹重新包裝，打包費等於3x50=150NTD(集貨幣付款)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>1.(才積重-實重)小於等於1.5公斤時不能使用重新包裝。</p> 
+                    <p>2.重新包裝後的包裹無法再轉寄EMS空運或是海運。</p> 
+                    <p>3.選用重新包裝時，必須先想像下，所買的東西是否能夠重新拆箱重包。</p> 
+                    <p>4.針對易碎品，會員應謹慎評估是否重包。</p> 
+                    <p>5.重新包裝原則上不拆商品本身彩盒，例如鞋盒等，如另外需要拆彩盒者，請另外與客服聯繫，費用另外收取。</p> 
+                    <p>6.重新包裝拆箱時，我們並不會清點數量或核對內容物之正確性。</p> 
+                    <p>7.重新打包需要1-2工作日，完成後以簡訊、Email通知付款發貨。</p> 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">關閉視窗</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal4 代墊運費-->
+    <div id="modal4" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">代墊運費</h4>
+                </div>
+                <div class="modal-body">
+                    <p>集貨站代墊韓國運費，快遞送貨收款時統一由集貨幣扣款，如集貨幣餘額不足，將先退回包裹，等候儲值後付款。 </p>
+                    <div class="css-table">
+                        <div class="tbody">
+                            <div class="tr">
+                                <div class="td">幣別</div>
+                                <div class="td">韓元計費</div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">付款方式</div>
+                                <div class="td">集貨幣付款</div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">項目</div>
+                                <div class="td">
+                                    <div class="flex">
+                                        <span class="col">到付運費</span>
+                                        <span class="col">服務費</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">單價</div>
+                                <div class="td">
+                                    <div class="flex">
+                                        <span class="col">實報實銷</span>
+                                        <span class="col">3000KRW</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">範例</div>
+                                <div class="td">快遞送貨代墊20000元，等於20000元+3000元服務費=23000KRW*網站匯率</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>貼心提醒</p>
+                    <p>依照財政部77/10/12台財稅第770663393號函，集貨站收取轉寄之運費屬境外提供的服務，非屬中華民國課稅範圍，因此免開統一發票。</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">關閉視窗</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal5 加強包裝-->
+    <div id="modal5" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">加強包裝</h4>
+                </div>
+                <div class="modal-body">
+                    <p>針對轉寄的包裹另外使用氣泡布包裝外箱</p>
+                    <div class="css-table">
+                        <div class="tbody">
+                            <div class="tr">
+                                <div class="td">幣別</div>
+                                <div class="td">韓元計費</div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">付款方式</div>
+                                <div class="td">集貨幣付款</div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">單位</div>
+                                <div class="td">每公斤</div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">單價</div>
+                                <div class="td">950韓元</div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">範例</div>
+                                <div class="td">3.52公斤加強包裝費等於3.52x950=3344KRWx網站匯率</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>貼心提醒</p>
+                    <p>1.快遞送貨收款時統一由集貨幣扣款，如集貨幣餘額不足，將先退回包裹，等候儲值後付款。 </p>
+                    <p>2.依照財政部77/10/12台財稅第770663393號函，集貨站收取轉寄之運費屬境外提供的服務，非屬中華民國課稅範圍，因此免開統一發票。</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">關閉視窗</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal6 商業報關-->
+    <div id="modal6" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">商業報關</h4>
+                </div>
+                <div class="modal-body">
+                    <p>公司行號如果需要『會計進項』憑證，則需要做商業報關。通關後，統一由集貨幣中扣除關稅與服務費。 </p>
+                    <div class="css-table">
+                        <div class="tbody">
+                            <div class="tr">
+                                <div class="td">幣別</div>
+                                <div class="td">台幣計費</div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">付款方式</div>
+                                <div class="td">集貨幣付款</div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">重量</div>
+                                <div class="td">
+                                    不限
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">類別</div>
+                                <div class="td">
+                                    <div class="flex">
+                                        <span class="col">簡易報關</span>
+                                        <span class="col">正式報關</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">說明</div>
+                                <div class="td">
+                                    <div class="flex">
+                                        <span class="col">進口商品5萬台幣以下</span>
+                                        <span class="col">進口商品5萬台幣以上</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">服務費</div>
+                                <div class="td">
+                                    <div class="flex">
+                                        <span class="col">60NTD</span>
+                                        <span class="col">300NTD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>貼心提醒</p>
+                    <p>1.申請報關所需要的文件，個人戶報關文件、公司戶報關文件。</p>
+                    <p>2.電子發票﹑關稅單﹑海關報關單於通關後，另外掛號郵寄至收貨地址。</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">關閉視窗</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal7 大型物品進口報關-->
+    <div id="modal7" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">商業報關</h4>
+                </div>
+                <div class="modal-body">
+                    <p>依照快遞通關辦法規定，單件重量大於70公斤，或單件的長、寬、高，任何兩邊大於85cm。需辦理一般倉報關，不得使用快遞報關。</p>
+                    <div class="css-table">
+                        <div class="tbody">
+                            <div class="tr">
+                                <div class="td">付款方式</div>
+                                <div class="td">台幣計費 (集貨幣付款)</div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">項目</div>
+                                <div class="td">
+                                    <div class="flex">
+                                        <span class="col">報關費</span>
+                                        <span class="col">移倉費</span>
+                                        <span class="col">倉儲費</span>
+                                        <span class="col">關稅</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">服務費</div>
+                                <div class="td">
+                                    <div class="flex">
+                                        <span class="col">300</span>
+                                        <span class="col">1500</span>
+                                        <span class="col">每日9元</span>
+                                        <span class="col">依照稅單收取</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">說明</div>
+                                <div class="td">
+                                <p>例如，長150cm、寬60cm、高45cm，只有一邊大於85cm，可以快遞通關</p>
+                                <p>長120cm、寬90cm、高30cm，任兩邊大於85cm，需轉一般倉報關。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>貼心提醒</p>
+                    <p>1.申請報關所需要的文件，個人戶報關文件、公司戶報關文件。</p>
+                    <p>2.電子發票﹑關稅單﹑海關報關單於通關後，另外掛號郵寄至收貨地址。</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">關閉視窗</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal8 存倉時間-->
+    <div id="modal8" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">韓國倉儲費</h4>
+                </div>
+                <div class="modal-body">
+                    <p>免費存倉期限為20天，超過需加收倉儲費。 每一包裹存倉超過15天，系統會先以簡訊、Email提醒發貨，存倉超過45天，視同會員放棄包裹，以廢棄物處理，不另行通知會員。</p>
+                    <div class="css-table">
+                        <div class="tbody">
+                            <div class="tr">
+                                <div class="td">幣別</div>
+                                <div class="td">韓元計費</div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">付款方式</div>
+                                <div class="td">集貨幣付款</div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">時間</div>
+                                <div class="td">
+                                    <div class="flex">
+                                        <span class="col">免費20天存倉時間</span>
+                                        <span class="col">超過存倉時間每多1天</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">服務費</div>
+                                <div class="td">
+                                    <div class="flex">
+                                        <span class="col">免費</span>
+                                        <span class="col">500KRW</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">範例</div>
+                                <div class="td">存放30天才確認出貨，需加收倉儲費(30天-20天)x500元=5000KRW</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">關閉視窗</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal9 黑貓當日配區域-->
     <div id="modal9" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">黑貓當日配區域(限週一至週五)</h4>
+                <h4 class="modal-title">黑貓當日配區域</h4>
               </div>
               <div class="modal-body">
+                <h5>北區(限週一至週五)</h5>
                 <div class="css-table">
                     <div class="tbody">
-                        <div class="tr">
-                            北區
-                        </div>
                         <div class="tr">
                             <div class="td">中壢市</div>
                             <div class="td">八德市</div>
