@@ -3969,18 +3969,18 @@ fieldset[disabled] a.btn {
 
 .btn-default.focus,
 .btn-default:focus {
-    color: #333;
-    background-color: #e6e5e5;
-    border-color: #8c8c8c
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
 }
 
 .btn-default.active,
 .btn-default:active,
 .btn-default:hover,
 .open>.btn-default.dropdown-toggle {
-    color: #333;
-    background-color: #e6e5e5;
-    border-color: #adadad
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
 }
 
 .btn-default.active.focus,
@@ -3992,9 +3992,9 @@ fieldset[disabled] a.btn {
 .open>.btn-default.dropdown-toggle.focus,
 .open>.btn-default.dropdown-toggle:focus,
 .open>.btn-default.dropdown-toggle:hover {
-    color: #333;
-    background-color: #d4d4d4;
-    border-color: #8c8c8c
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
 }
 
 .btn-default.active,
@@ -14108,12 +14108,12 @@ a:hover {
 .jihuo-table .th {
     position: relative;
     height: 22px;
-    background-color: #3ec729;
+    background-color: #14b650;
     color: #fff;
     line-height: 12px;
-    border-radius: 11px;
-    padding-left: 10px;
-    padding-right: 10px;
+    /*border-radius: 11px;*/
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 .freight-table {
@@ -14173,7 +14173,7 @@ a:hover {
 
 .pay-method .btn,
 .delivery-way .btn{
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .bts {
@@ -14183,7 +14183,7 @@ a:hover {
     border: 1px solid transparent;
     white-space: nowrap;
     padding: 6px 12px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     text-align: center;
     line-height: 1.42857143;
@@ -14377,7 +14377,8 @@ a:hover {
 }
 
 .fa-money,
-.fa-credit-card{
+.fa-credit-card,
+.fa-tags{
     margin-right: .5rem;
 }
 
