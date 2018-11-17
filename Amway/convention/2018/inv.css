@@ -108,7 +108,7 @@ div {
 	display: block;
 	height: 57px;
 	width: 360px;
-	top:1097px;
+	top:1106px;
 	position:absolute;
 	margin: 0;
 	left: 140px;
@@ -150,13 +150,13 @@ div {
 	position: absolute;
 	margin: 0;
 	left: 228px;
-	
 	font-family: 'MicrosoftJhengHeiRegular', Helvetica, Arial, serif;
 	font-size: 22.0px;
 	color: rgba(85,85,85,1.0);
 	text-align: center;
 	letter-spacing: 2.0px;
-	line-height: 30.0px
+	line-height: 30.0px;
+	margin-top: 13px;
 }
 .newdiamond .note {
 	display: block;
