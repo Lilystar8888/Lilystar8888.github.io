@@ -130,6 +130,13 @@ screen and (min--moz-device-pixel-ratio: 1) {
     z-index: 999;
 }
 
+
+@media screen and (max-width: 769px){
+	.content{
+    	max-width: 414px;
+	}
+}
+
 .linkbutton a,
 .linkbutton a:link,
 .linkbutton a:hover,
