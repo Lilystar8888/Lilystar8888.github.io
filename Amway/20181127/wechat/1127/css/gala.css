@@ -36,7 +36,7 @@ video {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    height: 110vh;
+    height: 130vh;
     position: relative;
     max-width: 414px;
     margin: 0px auto;
@@ -45,13 +45,13 @@ video {
 
 @media screen and (max-width: 375px){
   .gridContainer{
-    height: 120vh;
+    height: 140vh;
   }
 }
 
 @media screen and (max-width: 320px){
   .gridContainer{
-    height: 130vh;
+    height: 150vh;
   }
 }
 

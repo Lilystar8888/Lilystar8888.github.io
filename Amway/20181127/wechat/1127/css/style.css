@@ -1,5 +1,11 @@
 body{
 	color: white;
+	background-image: url(../img/bkempty@3x.png);
+    height: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	font-size: 100%;
 }
 
 #one{
@@ -7,7 +13,7 @@ body{
 	position: relative;
 	top:0;
 	left: 0;
-	background-image: url(../img/bk.png);
+	background-image: url(../img/bk@3x.png);
     height: 100%;
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -28,6 +34,7 @@ body{
 	display: block;
 	margin-left:1rem;
 	margin-right: 1rem;
+    text-align: justify;
 }
 
 @media screen and (max-width: 414px){
