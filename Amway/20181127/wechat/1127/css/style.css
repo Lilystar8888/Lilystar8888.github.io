@@ -1,0 +1,89 @@
+body{
+	color: white;
+}
+
+#one{
+	display: block;
+	position: relative;
+	top:0;
+	left: 0;
+	background-image: url(../img/bk.png);
+    height: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+@media screen and (max-width: 769px){
+	#one {
+	    width: 100% !important;
+	}
+}
+
+.content{
+	position: absolute;
+	top:13rem;
+	left: 0;
+	z-index: 2;
+	display: block;
+	margin-left:1rem;
+	margin-right: 1rem;
+}
+
+@media screen and (max-width: 375px){
+	.content{
+		top:12rem;
+	}
+}
+
+@media screen and (max-width: 320px){
+	.content{
+		top:10rem;
+	}
+}
+
+#sign {
+	display: block;
+    float: right;
+    text-align: justify;
+    line-height: 0.5;
+    letter-spacing: 30px;
+    box-sizing: border-box;
+    margin-right: 0;
+}
+
+#sign p {
+    text-align: justify;
+    text-justify: inter-ideograph;
+    letter-spacing: 3px;
+    line-height: 3px;
+}
+
+.note{
+	display: block;
+	width: 100%;
+    text-align: center;
+}
+
+
+.linkbutton {
+    background-color: #7b61fc;
+    width: 100%;
+    padding: 10px 0px 10px 0px !important;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 3px;
+    position: fixed;
+    bottom: 0px;
+    z-index: 999;
+}
+
+.linkbutton a,
+.linkbutton a:link,
+.linkbutton a:hover,
+.linkbutton a:active,
+.linkbutton a:visited{
+	text-decoration: none;
+	color:white;
+}
