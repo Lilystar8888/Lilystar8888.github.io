@@ -22,12 +22,18 @@ body{
 
 .content{
 	position: absolute;
-	top:13rem;
+	top:21rem;
 	left: 0;
 	z-index: 2;
 	display: block;
 	margin-left:1rem;
 	margin-right: 1rem;
+}
+
+@media screen and (max-width: 414px){
+	.content{
+		top:13rem;
+	}
 }
 
 @media screen and (max-width: 375px){
@@ -69,6 +75,7 @@ body{
 .linkbutton {
     background-color: #7b61fc;
     width: 100%;
+    max-width: 414px;
     padding: 10px 0px 10px 0px !important;
     color: #FFF;
     text-align: center;
