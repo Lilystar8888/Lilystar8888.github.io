@@ -16,12 +16,6 @@ screen and (min--moz-device-pixel-ratio: 2) {
 	}
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 1),
-screen and (min--moz-device-pixel-ratio: 1) {
-	body{
-		background-image: url(../img/bkempty.png);
-	}
-}
 
 #one{
 	display: block;
@@ -42,12 +36,6 @@ screen and (min--moz-device-pixel-ratio: 2) {
 	}
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 1),
-screen and (min--moz-device-pixel-ratio: 1) {
-	#one{
-		background-image: url(../img/bk.png);
-	}
-}
 
 
 @media screen and (max-width: 769px){
