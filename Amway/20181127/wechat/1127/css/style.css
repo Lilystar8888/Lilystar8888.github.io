@@ -1,11 +1,26 @@
 body{
 	color: white;
+	background-color: #00000e;
 	background-image: url(../img/bkempty@3x.png);
     height: 100%;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	font-size: 100%;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+screen and (min--moz-device-pixel-ratio: 2) {
+	body{
+		background-image: url(../img/bkempty@2x.png);
+	}
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 1),
+screen and (min--moz-device-pixel-ratio: 1) {
+	body{
+		background-image: url(../img/bkempty.png);
+	}
 }
 
 #one{
@@ -19,6 +34,21 @@ body{
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+screen and (min--moz-device-pixel-ratio: 2) {
+	#one{
+		background-image: url(../img/bk@2x.png);
+	}
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 1),
+screen and (min--moz-device-pixel-ratio: 1) {
+	#one{
+		background-image: url(../img/bk.png);
+	}
+}
+
 
 @media screen and (max-width: 769px){
 	#one {
@@ -79,11 +109,17 @@ body{
     margin-top: 3rem;
 }
 
+.note span{
+	color:yellow;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
 
 .linkbutton {
     background-color: #7b61fc;
     width: 100%;
-    max-width: 414px;
+    max-width: 640px;
     padding: 10px 0px 10px 0px !important;
     color: #FFF;
     text-align: center;
