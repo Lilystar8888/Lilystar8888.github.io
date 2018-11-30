@@ -6416,12 +6416,10 @@ body:not(.device-xs):not(.device-xxs) .countdown.countdown-large.coming-soon .co
 	position: relative;
 	cursor: pointer;
 	outline: none;
-	white-space: nowrap;
 	margin: 2px;
 	padding: 0 22px;
 	font-size: 14px;
-	height: 40px;
-	line-height: 40px;
+	line-height: 20px;
 	background-color: #1ABC9C;
 	color: #FFF;
 	font-weight: 600;
@@ -6429,6 +6427,12 @@ body:not(.device-xs):not(.device-xxs) .countdown.countdown-large.coming-soon .co
 	letter-spacing: 1px;
 	border: none;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+@media (min-width: 375px){
+	.button {
+		white-space: nowrap;
+	}
 }
 
 body:not(.device-touch) .button {
@@ -6456,9 +6460,15 @@ body:not(.device-touch) .button {
 .button.button-mini {
 	padding: 0 14px;
 	font-size: 11px;
-	height: 28px;
-	line-height: 28px;
 }
+
+@media (min-width: 375px){
+	.button.button-mini {
+		height: 28px;
+		line-height: 28px;
+	}
+}
+
 
 .button.button-small {
 	padding: 0 17px;
