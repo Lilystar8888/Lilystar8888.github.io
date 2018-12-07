@@ -287,7 +287,13 @@ header {
     background-image: url(../images/2018bkx.png);
     background-repeat: no-repeat;
     background-color: #f9fbfb;
-    background-position-y: 45px;
+    background-position-y: 30px;
+}
+
+@media(max-width: 414px){
+    .main-yellow{
+        background-position-y: 45px;
+    }
 }
 
 .main-yellow2 {
