@@ -1,0 +1,592 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"c",
+				"class\tAttr"
+			],
+			[
+				"min",
+				"min-width\tproperty"
+			],
+			[
+				"align",
+				"align-items\tproperty"
+			],
+			[
+				"font-s",
+				"font-size\tproperty"
+			],
+			[
+				"backg",
+				"background-color\tproperty"
+			],
+			[
+				"flex",
+				"flex-direction\tproperty"
+			],
+			[
+				"in",
+				"inline\tdisplay"
+			],
+			[
+				"margin",
+				"margin-right\tproperty"
+			],
+			[
+				"marg",
+				"margin-left\tproperty"
+			],
+			[
+				"font",
+				"font-size\tproperty"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"w",
+				"width\tproperty"
+			],
+			[
+				"z",
+				"z-index\tproperty"
+			],
+			[
+				"padd",
+				"padding-top\tproperty"
+			],
+			[
+				"bac",
+				"background-position\tproperty"
+			],
+			[
+				"back",
+				"background-image\tproperty"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"at",
+				"active"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"se",
+				"select\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "Searching 754 files for \"recipe.html\"\n\n/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/list.txt:\n   11: D:\\AmwayWWW\\cookware\\recipe.html\n  382: D:\\AmwayWWW\\cookware\\mobile\\recipe.html\n\n/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/list2.txt:\n   12: D:\\AmwayWWW\\cookware\\recipe.html\n  383: D:\\AmwayWWW\\cookware\\mobile\\recipe.html\n\n/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/list3.txt:\n   18: 2016/02/05  ¤U¤È 02:33            22,196 recipe.html\n  433: 2016/02/05  ¤U¤È 03:01            20,903 recipe.html\n\n/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe.html:\n   26: \t    })(navigator.userAgent || navigator.vendor || window.opera, 'mobile/recipe.html' + location.search, '../recipe.html' + location.search);\n\n/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe.html:\n   30: \t\t})(navigator.userAgent || navigator.vendor || window.opera, 'mobile/recipe.html' + location.search, '../recipe.html' + location.search);\n\n10 matches across 5 files\n",
+			"settings":
+			{
+				"buffer_size": 1079,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 464.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile"
+	],
+	"file_history":
+	[
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/index.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/21set-characteristics.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/21set-mode.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/21set-nsf.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/21set-package.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/21set-tips.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/21set-usage.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/21set.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/index.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/non-stick.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/notes.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/notes_old.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-appetizer01.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-appetizer02.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-appetizer03.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-appetizer04.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-appetizer05.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-appetizer06.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-appetizer07.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-appetizer08.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-appetizer09.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-dessert01.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-dessert02.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-dessert03.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-dessert04.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-dessert05.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-dessert06.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-dessert07.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-dessert08.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-main01.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-main02.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-main03.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-main04.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-main05.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-main06.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-main07.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-main08.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-main09.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-main10.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-main11.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-main12.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-video01.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-video02.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-video03.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-video04.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-video05.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-video06.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-video07.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-video08.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-video09.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-video10.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-video11.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe-video12.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/recipe.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/mobile/wok.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/non-stick.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/notes.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/notes1.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/notes2.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/nsf.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/product-function.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/product-package.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/product-tips.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/product-usage.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-appetizer01.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-appetizer02.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-appetizer03.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-appetizer04.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-appetizer05.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-appetizer06.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-appetizer07.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-appetizer08.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-appetizer09.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-dessert01.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-dessert02.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-dessert03.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-dessert04.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-dessert05.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-dessert06.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-dessert07.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-dessert08.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-main01.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-main02.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-main03.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-main04.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-main05.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-main06.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-main07.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-main08.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-main09.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-main10.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-main11.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-main12.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-video01.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-video02.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-video03.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-video04.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-video05.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-video06.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-video07.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-video08.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-video09.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-video10.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-video11.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe-video12.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/recipe.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/21set-characteristics.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware/21set-mode.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/20181207/紐崔萊20181206/science.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/hybrids/2682.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/hybrids/2682.txt",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/beautyapp/index.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/mmapp/index.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/20181207/weblight/about/amway_tw08.aspx",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/20181207/plan201511/images/201801-415.png",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/20181207/plan201511/rules.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/20181207/plan201511/rules2017.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/20181207/2018starparty_tc/7.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/20181207/2018starparty_tc/6.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/20181207/2018starparty_tc/5.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/20181207/2018starparty_tc/4.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/20181207/2018starparty_tc/3.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/20181207/2018starparty_tc/2.html",
+		"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/20181207/2018starparty_tc/1.html",
+		"/Users/mac/Documents/GitHub/Lily/livesport-design/rn_view_login/package.json",
+		"/Users/mac/Documents/GitHub/Lily/livesport-design/rn_view_login/android/app/src/main/java/com/rn_view_login/MainApplication.java",
+		"/Users/mac/Documents/GitHub/Lily/livesport-design/rn_view_login/android/app/build.gradle",
+		"/Users/mac/Documents/GitHub/Lily/livesport-design/rn_view_login/android/app/src/main/java/com/rn_view_login/MainActivity.java"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+			"/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"recipe.html",
+			"<a href=\"recipe.html\""
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"<a target=\"_blank\" href=\"https://www.amcook.com.tw/\""
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1079,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										148,
+										159
+									],
+									[
+										195,
+										206
+									],
+									[
+										318,
+										329
+									],
+									[
+										365,
+										376
+									],
+									[
+										508,
+										519
+									],
+									[
+										568,
+										579
+									],
+									[
+										752,
+										763
+									],
+									[
+										788,
+										799
+									],
+									[
+										983,
+										994
+									],
+									[
+										1019,
+										1030
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+									"1":
+									[
+										684,
+										685
+									]
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"default_dir": "/Users/mac/Documents/GitHub/Lily/Lilystar8888.github.io/Amway/cookware",
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 79.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Amway-cookware.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 302.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
