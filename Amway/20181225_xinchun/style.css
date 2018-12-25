@@ -216,13 +216,14 @@ body {
 }
 
 
-#slide2 {
+#slide2, #slide4 {
     height: 736px;
     background-image: url(img/1-1.png);
     background-size: 100%;
 }
 
-#slide2 .content{
+#slide2 .content,
+#slide4 .content{
 	width: 90%;
 	margin: 0 auto;
     font-size: 90%;
@@ -374,6 +375,9 @@ body {
 	#slide3 #gift2{
 	    padding-top: 90px;
 	}
+    #slide4{
+    	height: 765px;
+    }
 }
 
 @media (min-width:375px) {
@@ -393,6 +397,9 @@ body {
     #slide2 {
     	height: 768px;
     }
+    #slide4 {
+    	height: 768px;
+    }
 }
 
 @media (min-width:411px) {
@@ -409,8 +416,10 @@ body {
 	#slide3 #gift2{
 	    padding-top: 100px;
 	}
+    #slide4{
+    	height: 800px;
+    }
 }
-
 
 @media (min-width:414px) {
 	.slide{
