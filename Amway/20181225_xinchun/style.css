@@ -134,57 +134,61 @@ table {
     border-spacing: 0;
 }
 
+@font-face {
+    font-family: 'PingFangTC-Regular';
+    src: local('PingFangTC-Regular'),
+        url('../fonts/PingFangTC-Regular.otf') format('truetype');
+}
+
+html,
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: 'PingFangTC-Regular', 'Microsoft JhengHei', Airal !important;
+}
+
 body {
     color: white;
-    font-size: 100%;
+    font-size:  90%;
     line-height: 1.2em;
 }
 
-#slide1 {
+.slide{
     position: relative;
     z-index: -2;
     display: block;
     width: 100%;
     height: 568px;
+    background-repeat: no-repeat;
+}
+
+.content{
+	width:100%;
+}
+
+#slide1 {
     background-image: url(img/0-1.png);
     background-position: center center;
 }
 
-.content{
-	margin:0 1.2em;
+#slide1 .content p {
+	text-align: center;
+	line-height: 1.2em;
+}
+
+#slide1 .content .yellow{
+	color: yellpw;
 }
 
 #bigttl {
     display: block;
     width: 100%;
-    height: 180px;
+    height: 190px;
     background-image: url(img/0-2.png);
     background-size: 100%;
     background-repeat: no-repeat;
-}
-
-div.justify {
-    display: block;
-    font-size: 90%;
-    text-align: justify;
-    text-justify: inter-ideograph;
-    -ms-text-justify: inter-ideograph;
-    /*IE9*/
-    -moz-text-align-last: justify;
-    /*Firefox*/
-    -webkit-text-align-last: justify;
-    /*Chrome*/
-}
-
-div.justify:after {
-    content: '';
-    display: inline-block;
-    width: 100%;
-}
-
-
-div.justify.yellow {
-    color: yellow;
 }
 
 #bear {
@@ -211,15 +215,141 @@ div.justify.yellow {
     background-repeat: no-repeat;
 }
 
-@media (min-width:375px) {
+
+#slide2 {
+    height: 845px;
+    background-image: url(img/1-1.png);
+    background-size: 100%;
+}
+
+#slide2 .content{
+	width: 90%;
+	margin: 0 auto;
+    font-size: 90%;
+}
+
+#ttl2 {
+    display: block;
+    width: 100%;
+    height: 120px;
+    background-image: url(img/1-2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#period{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    background-color: white;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    border:1px solid #d0121b;
+    color: #d0121b;
+    border-radius: 10px;
+}
+
+#slide2 .award1, #slide2 .award2, #slide2 .award3{
+	display: flex;
+    align-items: center;
+}
+
+#slide2 .award1::before{
+	content: url(img/1-4.png);
+}
+
+#slide2 .award2::before{
+	content: url(img/1-5.png);
+}
+
+#slide2 .award3::before{
+	content: url(img/1-6.png);
+}
+
+@media (min-width:360px) {
+	.slide{
+    	height: 640px;
+	}
     #bigttl {
-        height: 250px;
-        0
+        height: 210px;
     }
 }
 
-@media (min-width:414px) {
+@media (min-width:375px) {
+	.slide{
+    	height: 667px;
+	}
+	.content{
+		width:90%;
+		margin:0 auto;
+	}
     #bigttl {
         height: 250px;
     }
+    #bear {
+        height: 300px;
+    }
+}
+
+@media (min-width:411px) {
+	.slide{
+    	height: 731px;
+	}
+}
+
+
+@media (min-width:414px) {
+	.slide{
+    	height: 736px;
+	}
+	#slide1 .content p {
+		line-height: 1.5em;
+	}
+	#bigttl {
+        height: 250px;
+    }
+    #bear {
+        height: 300px;
+    }
+    #ttl2{
+    	height: 133px;
+    }
+}
+
+@media (min-width: 768px){
+	body{
+		font-size: 20px;
+		width: 768px;
+	    overflow-x: hidden;
+	    margin: 0 auto;
+	}
+	.slide{
+    	height: 1074px;
+    	background-size: 100%;
+	}
+	.content{
+		display: block;
+		width: 60%;
+		height: 100%;
+		margin:0 auto;
+	}
+	#slide1{
+    	background-position: left top;
+	}
+	#bigttl {
+	    height: 430px;
+	    margin-top: -50px;
+	}
+	#cbk{
+    	height: 429px;
+	}
+    #bear {
+        height: 535px;
+    }
+    #ttl2{
+    	height: 240px;
+    }
+
 }
