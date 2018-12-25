@@ -284,6 +284,18 @@ body {
     background-position-y: bottom;
 }
 
+#car::after{
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	content: '＊本圖僅供參考，實際配備與顏色請依照實車為主，中華賓士保留對車款變更或解釋之權利。';
+    position: absolute;
+    left:10%;
+    bottom: 0;
+    font-size: 50%;
+    padding-top: 50px;
+}
+
 #atmosphere{
     position: absolute;
     right: 3%;
@@ -298,6 +310,50 @@ body {
     background-position: right bottom;
 }
 
+#slide3 {
+    height: 736px;
+    background-image: url(img/1-10.png);
+    background-size: 100%;
+	color:#231815;
+}
+
+#slide3 .content{
+	width: 90%;
+	margin: 0 auto;
+    font-size: 90%;
+}
+
+#slide3 #gift1{
+	display: block;
+    padding-top: 75px;
+    width: 100%;
+    background-image: url(img/1-11.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+
+#slide3 #gift2{
+	display: block;
+    padding-top: 75px;
+    width: 100%;
+    background-image: url(img/1-12.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+
+#slide3 ul li{
+	margin-bottom: 1em;
+}
+
+#slide3 ul li::before{
+	content: url(img/dot.png);
+	padding-top: 50px;
+	margin-right: .5em;
+}
+
+
 @media (min-width:360px) {
 	.slide{
     	height: 640px;
@@ -305,6 +361,13 @@ body {
     #bigttl {
         height: 210px;
     }
+	#slide3 #gift1{
+	    padding-top: 90px;
+	}
+
+	#slide3 #gift2{
+	    padding-top: 90px;
+	}
 }
 
 @media (min-width:375px) {
@@ -333,6 +396,13 @@ body {
     #slide2{
     	height: 800px;
     }
+	#slide3 #gift1{
+	    padding-top: 100px;
+	}
+
+	#slide3 #gift2{
+	    padding-top: 100px;
+	}
 }
 
 
