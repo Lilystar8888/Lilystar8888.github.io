@@ -361,6 +361,12 @@ body {
     #bigttl {
         height: 210px;
     }
+    #slide2{
+    	height: 765px;
+    }
+    #slide3{
+    	height: 765px;
+    }
 	#slide3 #gift1{
 	    padding-top: 90px;
 	}
