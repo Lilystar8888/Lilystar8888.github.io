@@ -1,0 +1,225 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    color: white;
+    font-size: 100%;
+    line-height: 1.2em;
+}
+
+#slide1 {
+    position: relative;
+    z-index: -2;
+    display: block;
+    width: 100%;
+    height: 568px;
+    background-image: url(img/0-1.png);
+    background-position: center center;
+}
+
+.content{
+	margin:0 1.2em;
+}
+
+#bigttl {
+    display: block;
+    width: 100%;
+    height: 180px;
+    background-image: url(img/0-2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+div.justify {
+    display: block;
+    font-size: 90%;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    -ms-text-justify: inter-ideograph;
+    /*IE9*/
+    -moz-text-align-last: justify;
+    /*Firefox*/
+    -webkit-text-align-last: justify;
+    /*Chrome*/
+}
+
+div.justify:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+
+div.justify.yellow {
+    color: yellow;
+}
+
+#bear {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 252px;
+    background-image: url(img/0-3.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#cbk {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 252px;
+    background-image: url(img/0-4.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+@media (min-width:375px) {
+    #bigttl {
+        height: 250px;
+        0
+    }
+}
+
+@media (min-width:414px) {
+    #bigttl {
+        height: 250px;
+    }
+}
