@@ -169,7 +169,7 @@ ul.demical li{
     margin-bottom: 1em;
 }
 
-ul.dot {
+ul.demical li ul.dot {
     padding-inline-start: 1rem;
 }
 
