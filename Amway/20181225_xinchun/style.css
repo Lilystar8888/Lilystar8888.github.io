@@ -580,6 +580,9 @@ ul.dot li::before{
     .slide2 {
         min-height: 1200px;
     }
+    .slide3 {
+        min-height: 1100px;
+    }
     .car {
         min-height: 554px;
     }
