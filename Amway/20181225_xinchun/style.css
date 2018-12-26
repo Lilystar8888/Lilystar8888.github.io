@@ -268,7 +268,7 @@ ul.dot li::before{
 
 
 .slide2 {
-    min-height: 770px;
+    min-height: 820px;
     background-image: url(img/1-1@3x.png);
     background-size: 100%;
 }
@@ -484,7 +484,7 @@ ul.dot li::before{
         min-height: 210px;
     }
     .slide2{
-    	min-height: 800px;
+    	min-height: 850px;
     }
     .slide3{
     	min-height: 900px;
@@ -519,7 +519,7 @@ ul.dot li::before{
         min-height: 300px;
     }
     .slide2 {
-    	min-height: 800px;
+    	min-height: 850px;
     }
     .slide4 {
     	min-height: 800px;
@@ -531,7 +531,7 @@ ul.dot li::before{
     	min-height: 773px;
 	}
     .slide2{
-    	min-height: 800px;
+    	min-height: 850px;
     }
 	.slide3 .gift1{
 	    padding-top: 100px;
@@ -576,12 +576,22 @@ ul.dot li::before{
 	.slide1{
     	min-height: 1100px;
     	background-size: 100%;
-	}
+        background-position: left top;
+    }
     .slide2 {
         min-height: 1200px;
     }
     .slide3 {
-        min-height: 1100px;
+        min-height: 1200px;
+    }
+    .slide3 .gift1 {
+        padding-top: 160px;
+    }
+    .slide3 .gift2 {
+        padding-top: 160px;
+    }
+    .ttl {
+        min-height: 245px;
     }
     .car {
         min-height: 554px;
@@ -597,9 +607,6 @@ ul.dot li::before{
 		width: 60%;
 		min-height: 100%;
 		margin:0 auto;
-	}
-	.slide1{
-    	background-position: left top;
 	}
 	.bigttl {
 	    min-height: 430px;
