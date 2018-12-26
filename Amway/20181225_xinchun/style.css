@@ -268,7 +268,6 @@ ul.dot li::before{
 
 
 .slide2 {
-    position: relative;
     min-height: 820px;
     background-image: url(img/1-1@3x.png);
     background-size: 100%;
@@ -350,6 +349,19 @@ ul.dot li::before{
     background-size: 100%;
     background-repeat: no-repeat;
     margin-right: 1rem;
+}
+
+.car {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    min-height: 302px;
+    background-image: url(img/1-9@3x.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
 }
 
 .atmosphere{
