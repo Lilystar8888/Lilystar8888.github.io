@@ -399,10 +399,16 @@ ul.dot li::before{
 }
 
 .blackcontent{
+    display: flex;
+    flex-direction: column;
 	width: 90%;
 	margin: 0 auto;
     font-size: 90%;
     color:black;
+}
+
+.blackcontent img{
+    align-self: center;
 }
 
 .slide3 .gift1{
@@ -495,7 +501,7 @@ ul.dot li::before{
 
 @media (min-width:375px) {
 	.slide1{
-    	min-height: 650px;
+    	min-height: 617px;
 	}
 	.content{
 		width:90%;
@@ -517,7 +523,7 @@ ul.dot li::before{
 
 @media (min-width:411px) {
 	.slide1{
-    	min-height: 700px;
+    	min-height: 773px;
 	}
     .slide2{
     	min-height: 800px;
@@ -536,7 +542,7 @@ ul.dot li::before{
 
 @media (min-width:414px) {
 	.slide1{
-    	min-height: 750px;
+    	min-height: 686px;
 	}
 	.slide1 .content p {
 		line-height: 1.5em;
@@ -550,6 +556,9 @@ ul.dot li::before{
     .ttl{
     	min-height: 133px;
     }
+    .lefttop{
+        min-height: 135px;
+    }
 }
 
 @media (min-width: 768px){
@@ -560,7 +569,7 @@ ul.dot li::before{
 	    margin: 0 auto;
 	}
 	.slide1{
-    	min-height: 1024px;
+    	min-height: 974px;
     	background-size: 100%;
 	}
 	.content{
