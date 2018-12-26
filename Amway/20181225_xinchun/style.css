@@ -212,7 +212,6 @@ ul.dot li::before{
     z-index: -2;
     display: block;
     width: 100%;
-    min-height: 568px;
     background-repeat: no-repeat;
 }
 
@@ -223,6 +222,7 @@ ul.dot li::before{
 .slide1 {
     background-image: url(img/0-1@3x.png);
     background-position: center center;
+    min-height: 568px;
 }
 
 .slide1 .content p {
@@ -466,7 +466,7 @@ ul.dot li::before{
 
 
 @media (min-width:360px) {
-	.slide{
+	.slide1{
     	min-height: 640px;
 	}
     .bigttl {
@@ -494,7 +494,7 @@ ul.dot li::before{
 }
 
 @media (min-width:375px) {
-	.slide{
+	.slide1{
     	min-height: 700px;
 	}
 	.content{
@@ -516,7 +516,7 @@ ul.dot li::before{
 }
 
 @media (min-width:411px) {
-	.slide{
+	.slide1{
     	min-height: 750px;
 	}
     .slide2{
@@ -535,7 +535,7 @@ ul.dot li::before{
 }
 
 @media (min-width:414px) {
-	.slide{
+	.slide1{
     	min-height: 800px;
 	}
 	.slide1 .content p {
@@ -559,7 +559,7 @@ ul.dot li::before{
 	    overflow-x: hidden;
 	    margin: 0 auto;
 	}
-	.slide{
+	.slide1{
     	min-height: 1074px;
     	background-size: 100%;
 	}
