@@ -162,7 +162,7 @@ img {
 
 ul.demical{
     list-style: decimal;
-    padding-inline-start: 1rem;
+    margin-left: 5%;
 }
 
 ul.demical li{
@@ -574,9 +574,21 @@ ul.dot li::before{
 	    margin: 0 auto;
 	}
 	.slide1{
-    	min-height: 974px;
+    	min-height: 1100px;
     	background-size: 100%;
 	}
+    .slide2 {
+        min-height: 1200px;
+    }
+    .car {
+        min-height: 554px;
+    }
+    .atmosphere{
+        min-height: 338px;
+    }
+    .lefttop {
+        min-height: 245px;
+    }
 	.content{
 		display: block;
 		width: 60%;
