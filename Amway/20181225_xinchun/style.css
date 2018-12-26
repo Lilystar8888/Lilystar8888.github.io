@@ -222,7 +222,7 @@ ul.dot li::before{
 .slide1 {
     background-image: url(img/0-1@3x.png);
     background-position: center center;
-    min-height: 568px;
+    min-height: 518px;
 }
 
 .slide1 .content p {
@@ -467,7 +467,7 @@ ul.dot li::before{
 
 @media (min-width:360px) {
 	.slide1{
-    	min-height: 640px;
+    	min-height: 590px;
 	}
     .bigttl {
         min-height: 210px;
@@ -495,7 +495,7 @@ ul.dot li::before{
 
 @media (min-width:375px) {
 	.slide1{
-    	min-height: 700px;
+    	min-height: 650px;
 	}
 	.content{
 		width:90%;
@@ -517,7 +517,7 @@ ul.dot li::before{
 
 @media (min-width:411px) {
 	.slide1{
-    	min-height: 750px;
+    	min-height: 700px;
 	}
     .slide2{
     	min-height: 800px;
@@ -536,7 +536,7 @@ ul.dot li::before{
 
 @media (min-width:414px) {
 	.slide1{
-    	min-height: 800px;
+    	min-height: 750px;
 	}
 	.slide1 .content p {
 		line-height: 1.5em;
@@ -560,7 +560,7 @@ ul.dot li::before{
 	    margin: 0 auto;
 	}
 	.slide1{
-    	min-height: 1074px;
+    	min-height: 1024px;
     	background-size: 100%;
 	}
 	.content{
