@@ -160,6 +160,33 @@ img {
     max-width: 100%;
 }
 
+ul.demical{
+    list-style: decimal;
+    padding-inline-start: 1rem;
+}
+
+ul.demical li{
+    margin-bottom: 1em;
+}
+
+ul.dot li{
+    display: inline-block;
+    margin-bottom: 1em;
+    vertical-align: middle;
+}
+
+ul.dot li::before{
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height:7px;
+    background-image: url(img/dot@3x.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: .5em;
+    vertical-align: middle;
+}
+
 .flex{
     display: flex;
     flex-direction: row;
@@ -252,9 +279,20 @@ img {
     display: block;
     width: 100%;
     min-height: 130px;
-    background-image: url(img/1-2@3x.png);
     background-size: 100%;
     background-repeat: no-repeat;
+}
+
+.slide2 .ttl {
+    background-image: url(img/1-2@3x.png);
+}
+
+.slide4 .ttl {
+    background-image: url(img/2-1@3x.png);
+}
+
+.slide6 .ttl {
+    background-image: url(img/3-1@3x.png);
 }
 
 .period{
@@ -382,23 +420,6 @@ img {
     background-position-y: bottom;
 }
 
-ul li{
-    display: inline-block;
-	margin-bottom: 1em;
-    vertical-align: middle;
-}
-
-ul li::before{
-	content: "";
-    display: inline-block;
-    width: 7px;
-    height:7px;
-    background-image: url(img/dot@3x.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-	margin-right: .5em;
-    vertical-align: middle;
-}
 
 .slide4 {
     min-height: 736px;
@@ -425,6 +446,19 @@ ul li::before{
 	margin: 0 auto;
     font-size: 90%;
 }
+
+.slide6 {
+    min-height: 736px;
+    background-image: url(img/1-1@3x.png);
+    background-size: 100%;
+}
+
+.slide6 .content{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 90%;
+}
+
 
 
 @media (min-width:360px) {
