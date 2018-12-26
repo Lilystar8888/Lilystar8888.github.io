@@ -351,31 +351,6 @@ ul.dot li::before{
     margin-right: 1rem;
 }
 
-.car {
-    position: absolute;
-    bottom: 0;
-    z-index: -1;
-    display: block;
-    width: 100%;
-    min-height: 302px;
-    background-image: url(img/1-9@3x.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-}
-
-.car::after{
-	display: flex;
-	justify-content: center;
-	width: 80%;
-	content: '＊本圖僅供參考，實際配備與顏色請依照實車為主，中華賓士保留對車款變更或解釋之權利。';
-    position: absolute;
-    left:10%;
-    bottom: 0;
-    font-size: 50%;
-    padding-top: 50px;
-}
-
 .atmosphere{
     position: absolute;
     right: 3%;
