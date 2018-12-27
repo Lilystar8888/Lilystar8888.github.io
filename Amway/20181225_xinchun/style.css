@@ -160,6 +160,11 @@ img {
     max-width: 100%;
 }
 
+ul.square{
+    list-style: square;
+    margin-left: 5%;
+}
+
 ul.demical{
     list-style: decimal;
     margin-left: 5%;
@@ -379,7 +384,7 @@ ul.dot li::before{
 }
 
 .slide3 {
-    min-height: 836px;
+    min-height: 900px;
     background-image: url(img/1-10@3x.png);
     background-size: 100%;
 	color:#231815;
@@ -457,7 +462,8 @@ ul.dot li::before{
 }
 
 .red{
-    color: #a50319
+    color: #a50319;
+    text-shadow: 0px 0px 1px white;
 }
 
 .small {
@@ -475,7 +481,7 @@ ul.dot li::before{
     	min-height: 850px;
     }
     .slide3{
-    	min-height: 900px;
+    	min-height: 935px;
     }
 	.slide3 .gift1{
 	    padding-top: 90px;
@@ -519,7 +525,7 @@ ul.dot li::before{
     	min-height: 773px;
 	}
     .slide2{
-    	min-height: 850px;
+    	min-height: 900px;
     }
 	.slide3 .gift1{
 	    padding-top: 100px;
