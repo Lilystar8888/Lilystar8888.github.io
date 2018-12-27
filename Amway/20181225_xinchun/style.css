@@ -320,8 +320,10 @@ ul.dot li::before{
 }
 
 .slide2 .award1, .slide2 .award2, .slide2 .award3{
-	display: flex;
+    display: flex;
     align-items: center;
+    font-size: 110%;
+    line-height: 1.5;
 }
 
 .slide2 .award1::before{
