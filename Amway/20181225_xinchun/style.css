@@ -581,10 +581,10 @@ ul.dot li::before{
         background-position: left top;
     }
     .slide2 {
-        min-height: 1200px;
+        min-height: 1350px;
     }
     .slide3 {
-        min-height: 1200px;
+        min-height: 1350px;
     }
     .slide3 .gift1 {
         padding-top: 160px;
