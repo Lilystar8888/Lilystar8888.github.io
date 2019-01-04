@@ -1,0 +1,1104 @@
+@charset "utf-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a, a:link, a:hover, a:visited{
+    color: #e0c07f;
+}
+
+.animated {
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes zoomOut {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+        -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    to {
+        -webkit-transform: scale3d(0.2, 0.2, 0.2);
+        transform: scale3d(0.2, 0.2, 0.2);
+        -webkit-transform-origin: left bottom;
+        transform-origin: left bottom;
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    }
+}
+
+.zoomOut {
+    -webkit-animation-name: zoomOut;
+    animation-name: zoomOut;
+}
+
+@-webkit-keyframes zoomInDown {
+    from {
+        -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2500px, 0);
+        transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2500px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    60% {
+        -webkit-transform: scale3d(0.4, 0.4, 0.4) translate3d(0, 60px, 0);
+        transform: scale3d(0.4, 0.4, 0.4) translate3d(0, 60px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    }
+}
+
+@keyframes zoomInDown {
+    from {
+        -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2500px, 0);
+        transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2500px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    60% {
+        -webkit-transform: scale3d(0.4, 0.4, 0.4) translate3d(0, 60px, 0);
+        transform: scale3d(0.4, 0.4, 0.4) translate3d(0, 60px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    }
+}
+
+.zoomInDown {
+    -webkit-animation-name: zoomInDown;
+    animation-name: zoomInDown;
+}
+
+@-webkit-keyframes zoomOutDown {
+  40% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(0.5, 0.5, 0.5) translate3d(0, 500px, 0);
+    transform: scale3d(0.5, 0.5, 0.5) translate3d(0, 500px, 0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+@keyframes zoomOutDown {
+  40% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(0.5, 0.5, 0.5) translate3d(0, 500px, 0);
+    transform: scale3d(0.5, 0.5, 0.5) translate3d(0, 500px, 0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+.zoomOutDown {
+  -webkit-animation-name: zoomOutDown;
+  animation-name: zoomOutDown;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+
+/* 簡單流變媒體
+   注意: 流變媒體要求您必須移除 HTML 中媒體的高度和寬度屬性
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+
+@font-face {
+    font-family: 'PingFangTC-Regular';
+    /* 定義你的字型名稱 */
+    src: local('PingFangTC-Regular'), /* 如果user電腦已經有這個字型就用local的 */
+    url('fonts/PingFangTC-Regular.otf') format('truetype');
+}
+
+
+body {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y:auto;
+    font-family: 'PingFangTC-Regular', 'Microsoft JhengHei', Airal !important;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    display: block;
+    width: 100%;
+}
+
+.footer-copy {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #a81411;
+    text-align: center;
+}
+
+.copy {
+    margin-top: 15px;
+    color: #eee;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+#mask{
+    display: none;
+}
+
+img,
+object,
+embed,
+video {
+    max-width: 100%;
+}
+
+.clearfix {
+    clear: both;
+    margin: 2rem 0;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+}
+
+
+
+/* IE 6 不支援最大寬度，因此寬度預設為 100% */
+
+.ie6 img {
+    width: 100%;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-xs-none {
+    display: block;
+}
+
+.tbc h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  text-align: center;
+  letter-spacing: .15em; /* Adjust as needed */
+  -webkit-animation: typing 3.5s steps(40, end), blink-caret .75s step-end;
+  animation: typing 3.5s steps(40, end), blink-caret .75s step-end; 
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@-webkit-keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  0%, 100% { border-right: .15em solid transparent }
+  50% { border-right: .15em solid orange; }
+}
+
+
+@-webkit-keyframes blink-caret {
+  0%, 100% { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+/* 行動版面: 480px 以下。 */
+
+body{
+    background-image: url(img/bk_mobile.png);
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        background-image: url(img/bk_mobile@2x.png);
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3) {
+    body {
+        background-image: url(img/bk_mobile@3x.png);
+    }
+}
+
+
+.gridContainer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    position: relative;
+    max-width: 414px;
+    margin: 0px auto;
+}
+
+.share-holder {
+    top: 60%;
+    right: 0px;
+    position: fixed;
+    z-index: 1000;
+    width: 55px;
+    min-height: 170px;
+}
+
+.share-holder div {
+    margin-bottom: 1rem;
+}
+
+.share-holder img {
+    width: 126px;
+}
+
+#mainttl {
+    display: block;
+    position: relative;
+    margin-top: 3%;
+    margin: 0 auto;
+    width: 406px;
+    height: 37px;
+    max-width: 100%;
+    background-image: url(img/mobilettl2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+    #mainttl {
+        background-image: url(img/mobilettl2@2x.png);
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3) {
+    #mainttl {
+        background-image: url(img/mobilettl2@3x.png);
+    }
+}
+
+#mainlogo {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left: -50%;
+    width: 360px;
+    height: 183px;
+    max-width: 100%;
+    background-image: url(img/mobilelogo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 666;
+    filter: drop-shadow(1px 1px 15px #ac1411);
+    -webkit-filter: drop-shadow(1px 1px 15px #ac1411);
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+    #mainlogo {
+        background-image: url(img/mobilelogo@2x.png);
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3) {
+    #mainlogo {
+        background-image: url(img/mobilelogo@3x.png);
+    }
+}
+
+#d2 #mainlogo {
+	position: absolute;
+   	width: 45%;
+	height: 45%;
+	margin-left: -22.5%;
+    bottom: -105%;
+}
+
+.mainlogo2 {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    margin-right: -50%;
+    width: 360px;
+    height: 183px;
+    max-width: 100%;
+    background-image: url(img/mobilelogo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 666;
+    filter: drop-shadow(1px 1px 15px #ac1411);
+    -webkit-filter: drop-shadow(1px 1px 15px #ac1411);
+}
+
+.mainlogo2.zoomInDown{
+    width: 50%;
+    height: 50%;
+    bottom: -45%;
+}
+
+.mainlogo2.zoomOutDown{
+    bottom: 30%;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+    .mainlogo2 {
+        background-image: url(img/mobilelogo@2x.png);
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3) {
+    .mainlogo2 {
+        background-image: url(img/mobilelogo@3x.png);
+    }
+}
+
+#player1, #player2, #player3 {
+    display: block;
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 12rem;
+    width: 414px;
+    height: auto;
+    max-width: 100%;
+    z-index: 333;
+}
+
+.replay1{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    z-index: 333;
+    top: 175%;
+}
+
+.replay2{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    z-index: 333;
+    top: 350%;
+}
+
+.start {
+    z-index: 999;
+}
+
+.nowplay {
+    position: absolute;
+    top: -16%;
+    width: 100%;
+    color: #fff;
+    font-size: 1em;
+    color: #e0c07f;
+    z-index: 99999;
+    text-align: center;
+    line-height: 1.25;
+}
+
+#d2 .nowplay {
+	top: -20%;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.video-container.border {
+    border: 1px solid #aa1411;
+}
+
+.video-container.shadow {
+    filter: drop-shadow(1px 1px 5px #c8a06a);
+    -webkit-filter: drop-shadow(1px 1px 5px #c8a06a);
+}
+
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.tbc {
+    display: inline-block;
+    position: absolute;
+    top:35%;
+    width: 100%;
+    font-size: 1em;
+    color: #fff;
+    z-index: 999999;
+    text-align: center;
+}
+
+#d2 .tbc{
+	top:70%;
+}
+
+.nextplay {
+    display: block;
+    position: absolute;
+    bottom: 1.5em;
+    width: 100%;
+    font-size: .8em;
+    color: #e0c07f;
+    z-index: 999999;
+    text-align: right;
+    padding-top: 1rem;
+    line-height: 1.25;
+}
+
+.nextplay2 {
+    display: block;
+    position: absolute;
+    bottom: -1em;
+    width: 100%;
+    font-size: .8em;
+    color: #e0c07f;
+    z-index: 999999;
+    text-align: right;
+    padding-top: 1rem;
+    line-height: 1.25;
+}
+
+.floatlayer {
+    display: block;
+    position: absolute;
+    bottom: -3.5rem;
+    width: 100%;
+    text-align: center;
+    z-index: 999999999;
+}
+
+.noshow {
+    display: block;
+}
+
+.shareb {
+    float: left;
+    width: 48px;
+    margin-left: 1rem;
+    margin-right: .5rem;
+}
+
+
+/* iPhone 4/4S */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) and (orientation: portrait){
+    #mainlogo {
+    	width: 45%;
+	    height: 45%;
+	    margin-left: -48.5%;
+	    bottom: -10%;
+    }
+
+}
+
+/*iPhone5*/
+@media
+  only screen and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait),
+  only screen and (min--moz-device-pixel-ratio: 1.5) and (orientation: portrait),
+  only screen and (min-device-pixel-ratio: 1.5) and (orientation: portrait){
+    .nextplay {
+        bottom: 1em;
+    }
+    .nextplay2 {
+        bottom: -2em;
+    }
+    #d2 .nextplay2 {
+    	bottom: -3em;
+	}
+}
+
+/*iPhone678*/
+@media only screen and (min-width: 375px) and (orientation: portrait) {
+    .d-xs-none {
+        display: none;
+    }
+
+    #mainlogo {
+        bottom: 6%;
+    }
+    .nowplay {
+    	top: -13%;
+        font-size: 1em;
+    }
+	#d2 .nowplay {
+		top: -15%;
+	}
+}
+
+/*iPhoneX*/
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    .floatlayer{
+    	bottom: 0;
+    }
+    #mainlogo {
+        bottom: 10%;
+    }
+}
+
+/*iPhone 678 Plus*/
+@media only screen and (min-width: 414px) and (orientation: portrait){
+    .nowplay{
+    	top: -12%;
+    }
+    #mainlogo {
+        bottom: 8%;
+    }
+}
+
+@media screen and (max-width: 767px) and (orientation: landscape) {
+	#mainttl, #mainlogo, .nowplay, .nextplay, .nextplay2{
+		display: none !important;
+	}
+    #mask{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,.88);
+        z-index: 9999;
+        text-align: center;
+    }
+    #mask span{
+        display: inline-block;
+        margin:0 auto;
+        color: #fff;
+        font-size: 2em;
+        line-height: 1.5;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    .d-md-block {
+    	display: inline-block;
+    }
+    .d-xs-none {
+	    display: none;
+	}
+    .noshow {
+        display: none;
+    }
+}
+
+
+
+/* 桌面版面: 768px 到最大 1920px。樣式繼承自: 行動版面和表格版面。 */
+
+@media only screen and (min-width: 768px) {
+
+    body{
+        background-image: url(img/bk_tab.png);
+        background-size: 100%;
+        background-repeat: repeat-y;
+    }
+
+    .mainlogo2.zoomInDown {
+        bottom: -50%;
+    }
+
+    #player1, #player2, #player3 {
+        display: block;
+        position: relative;
+        margin-top: 11rem;
+        margin-bottom: 26rem;
+        width: 768px;
+        height: auto;
+        max-width: 100%;
+        z-index: 333;
+    }
+
+    #mask{
+        display: none;
+    }
+
+    .gridContainer {
+        width: 100%;
+        max-width: 100%;
+    }
+    #mainlogo {
+        display: block;
+        position: absolute;
+        bottom: unset;
+        top: -22%;
+        left: 50%;
+        margin-left: -50%;
+        width: 100%;
+        height: 100%;
+        background-image: url(img/pclogo.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        z-index: 666;
+    }
+    .nowplay {
+        font-size: 1.8em;
+    }
+}
+
+@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        background-image: url(img/bk_tab@2x.png);
+    }
+}
+
+@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 3) {
+    body {
+        background-image: url(img/bk_tab@3x.png);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    .shareb {
+        float: right;
+    }
+    .content{
+        padding: 1rem;
+    }
+    #mainlogo {
+        top: 15%;
+        left: 50%;
+    }
+	#mainttl {
+        display: block;
+        position: absolute;
+        margin-top: unset;
+        left: 50%;
+        margin-left: -448.5px;
+        width: 897px;
+        height: 64px;
+        max-width: 100%;
+        background-image: url(img/mainttl.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        z-index: 99;
+	    filter: drop-shadow(1px 1px 5px #000);
+	    -webkit-filter: drop-shadow(1px 1px 5px #000);
+	}
+
+    #player1, #player2, #player3{
+        width: 80%;
+        left: 50%;
+        margin-left: -25%;
+        margin-top: 10rem;
+    }
+
+    #mainlogo {
+        width: 90%;
+        height: 90%;
+        margin-left: -45%;
+    }
+
+    .floatlayer {
+        display: block;
+        position: absolute;
+        bottom: -3.8em;
+        text-align: center;
+        z-index: 999999999;
+    }
+    #d2 #mainlogo {
+        top: -35%;
+    	margin-left: -40%;
+    }
+    #d2 .nowplay{
+    	top: -8%;
+    }
+}
+
+
+/*1024 iPad*/
+
+@media only screen and (min-width: 1024px) {
+    #player1, #player2, #player3{
+        width: 80%;
+        left: 50%;
+        margin-left: -40%;
+        margin-top: 10rem;
+    }
+    .floatlayer {
+        bottom: -3.2em;
+    }
+    #mainlogo {
+        top: -10%;
+    }
+    #mainlogo {
+        width: 80%;
+        height: 80%;
+        margin-left: -40%;
+    }
+    #mainlogo {
+        top: -3%;
+    }
+    .nowplay{
+        top: -11%;
+    }
+    #d2 #mainlogo {
+        top: -6%;
+    }
+}
+
+
+/*1025~1280 Labtop*/
+
+@media only screen and (min-width: 1025px) {
+
+    body{
+        background-image: url(img/bk_pc.png);
+        background-size: 100%;
+        background-repeat: repeat-y;
+    }
+    #player1, #player2, #player3{
+        width: 50%;
+        left: 50%;
+        margin-left: -25%;
+        margin-top: 10rem;
+    }
+    .floatlayer {
+        bottom: -3.3em;
+    }
+    #keyvisual {
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 1920px;
+        height: 1080px;
+        max-width: 100%;
+        z-index: 0;
+    }
+    #d2 #keyvisual{
+    	height: 3240px;
+        background-repeat: repeat-y;
+    }
+    #mainlogo {
+        width: 64%;
+        height: 64%;
+        margin-left: -28%;
+    }
+    #mainlogo {
+        top: -1%;
+    }
+    .nowplay {
+        top: -10%;
+        font-size: 1.5em;
+    }
+    #d2 #mainlogo {
+	   	width: 64%;
+		height: 64%;
+        top: -26%;
+    	margin-left: -26%;
+    }
+    .mainlogo2.zoomOutDown {
+        bottom: 44%;
+    }
+}
+
+@media only screen and (min-width: 1279px) {
+    #mainlogo {
+        top: -9%;
+        margin-left: -26%;
+    }
+}
+
+
+/*1281~1440 Mac*/
+
+@media only screen and (min-width: 1281px) {
+    .floatlayer {
+        bottom: -3.7em;
+    }
+    #mainlogo {
+        top: -1%;
+        margin-left: -26%;
+    }
+    .nowplay {
+        top: -6%;
+        font-size: 1.5em;
+    }
+    #d2 #mainlogo {
+        top: -25%;
+    }
+    .mainlogo2.zoomOutDown {
+        bottom: 42%;
+    }
+}
+
+
+@media only screen and (min-width: 1441px) {
+    #mainlogo {
+        width: 64%;
+        height: 64%;
+        margin-left: -26%;
+    	top: 9%;
+    }
+    .nowplay {
+        top: -6%;
+        font-size: 1.45em;
+    }
+    .tbc{
+    	font-size: 2em;
+    }
+    #d2 #mainlogo {
+        top: -21%;
+    }
+    .mainlogo2.zoomOutDown {
+        bottom: 30%;
+    }
+}
+
+@media only screen and (min-width: 1681px) {
+    #mainlogo {
+        top: 18%;
+    }
+    .nowplay {
+        font-size: 2em;
+    }
+    #d2 #mainlogo {
+        top: -27.5%;
+    }
+    .mainlogo2.zoomOutDown {
+        bottom: 30%;
+    }
+}
+
