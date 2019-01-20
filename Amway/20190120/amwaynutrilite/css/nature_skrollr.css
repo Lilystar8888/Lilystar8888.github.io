@@ -1,0 +1,15 @@
+#nature_head_image {
+    -skrollr-animation-name:animation1;
+    -skrollr-anchor-target: '#section_nature_2';
+}
+
+@-skrollr-keyframes animation1 {
+    -1-top{
+        visibility: hidden;
+    }
+    
+    top {
+        visibility: visible;
+    }
+
+}
