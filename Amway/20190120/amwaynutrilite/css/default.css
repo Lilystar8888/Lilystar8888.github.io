@@ -2431,6 +2431,77 @@ a:focus {
   color: #0e980e;
   border-bottom: 1px solid #0e980e;
 }
+.product_detail .product_detail_content .infomation .buynow {
+  cursor: pointer;
+  display: inline-block;
+  border-bottom: 1px solid #2b5f33;
+  color: #2b5f33;
+  font-size: 17px;
+  margin: 0 0 30px 0;
+  line-height: 1.2em;
+  text-decoration: none;
+}
+.product_detail .product_detail_content .infomation .buynow:hover {
+  color: #0e980e;
+  border-bottom: 1px solid #0e980e;
+}
+.product_detail .product_detail_content .infomation .dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 105px;
+    text-align: center;
+    padding: 0 !important;
+}
+
+.product_detail .product_detail_content .infomation .dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.product_detail .product_detail_content .infomation .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.product_detail .product_detail_content .infomation .dropdown:hover .dropdown-menu li{
+    white-space: nowrap;
+}
+
+.product_detail .product_detail_content .infomation .dropdown button {
+    border: none;
+    outline: none;
+    color: #2b5f33 !important;
+    background: transparent;
+}
+
+.product_detail .product_detail_content .infomation .dropdown:hover button {
+    color: #fff !important;
+}
+
+.product_detail .product_detail_content .infomation .dropdown a {
+    display: block;
+    text-decoration: none;
+    background: transparent;
+    border: 1px solid #2b5f33;
+    border-top: 0;
+    color: #2b5f33;
+    text-align: center;
+}
+
+.product_detail .product_detail_content .infomation .dropdown a:hover {
+    background: #2b5f33;
+    color: #ffffff;
+}
+
 .product_detail .product_detail_content .infomation .video {
   height: 350px;
   margin: 15px 0;

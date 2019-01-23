@@ -10,8 +10,13 @@
     cursor: pointer;
 }
 
+@media (max-width: 640px){
+    .product_detail .product_detail_content .infomation .btnWrap >* {
+        margin-right: 5px;
+    }
+}
+
 .product_detail .product_detail_content .infomation .btnWrap >*:hover  {
-    
     color: white;
     background-color: #9eb6a1;
 }
