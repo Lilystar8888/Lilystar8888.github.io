@@ -145,9 +145,11 @@ header.gray{
     font-size: 14px;
     line-height: 20px;
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0;
     position: relative;
+    bottom: 0;
     z-index: 2;
+    border-top: 1px solid #1dbdfb;
 }
 
 .footer-copy {
@@ -159,6 +161,7 @@ header.gray{
     padding: .5rem 0;
     border-top: 1px solid #bbb;
     background-color: #fff;
+    max-width: 414px;
 }
 
 .copy {
@@ -190,7 +193,7 @@ header.gray{
 
 .floatlayer {
     position: absolute;
-    top: -44px;
+    top: .5rem;
     right: .5rem;
     text-align: right;
     z-index: 9999;
@@ -198,7 +201,6 @@ header.gray{
 
 .shareb {
     width: 2.25rem;
-    height: 2.25rem;
     margin-right: .25rem;
 }
 
