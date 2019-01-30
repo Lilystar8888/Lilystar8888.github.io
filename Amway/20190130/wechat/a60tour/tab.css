@@ -35,32 +35,12 @@ input, textarea {
 Responsive Tabbed Navigation - by CodyHouse.co
 
 -------------------------------- */
-header {
-  position: relative;
-  height: 160px;
-  line-height: 180px;
-  text-align: center;
-}
 
-header h1 {
-  font-size: 2rem;
-}
-
-@media only screen and (min-width: 768px) {
-  header {
-    height: 200px;
-    line-height: 225px;
-  }
-  header h1 {
-    font-size: 2.6rem;
-  }
-}
 
 .cd-tabs {
   position: relative;
   width: 100%;
-  max-width: 960px;
-  margin: 2em auto;
+  max-width: 414px;
 }
 
 .cd-tabs nav {

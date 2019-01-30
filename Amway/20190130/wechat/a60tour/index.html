@@ -12,6 +12,8 @@
     <title>2019全球安麗60周年拉斯維加斯鑽石精英海外旅遊研討會</title>
     <link href="css.css" rel="stylesheet" type="text/css" />
     <link href="tab.css" rel="stylesheet" type="text/css" />
+    <link href="swiper.min.css" rel="stylesheet">
+
 </head>
 <body>
     <div class="gridContainer">
@@ -109,185 +111,190 @@
 
 			<p class="xttl" align="center">璀璨行程</p>
 
+			<p align="center">*點選頁籤切換獎銜，左右滑動切換行程</p>
+
 			<div class="cd-tabs js-cd-tabs">
 				<nav>
 					<ul class="cd-tabs__navigation js-cd-navigation">
-						<li><a data-content="FC" class="cd-selected" href="#0" onclick="FC();">FC</a></li>
-						<li><a data-content="ED"  href="#0" onclick="ED();" class>ED</a></li>
-						<li><a data-content="All" href="#0" onclick="ALL();" class>全部</a></li>
+						<li><a class="cd-selected" href="#0" onclick="FC();">FC</a></li>
+						<li><a href="#0" onclick="ED();" class>ED</a></li>
+						<li><a href="#0" onclick="ALL();" class>全部</a></li>
 					</ul> <!-- cd-tabs__navigation -->
 				</nav>
 
-				<ul class="cd-tabs__content js-cd-content">
+				<ul class="cd-tabs__content swiper-container">
 
-					<li data-id="1" data-content="FC" class="cd-selected">
-						<img src="img/1.png">
-						<p class="ttl">紐崔萊羚羊峽谷<br>包機追尋足跡之旅 *</p>
-						<p class="des">回到過去，去追尋神秘且令人難忘的羚羊峽谷的生態足跡。當您乘坐私人飛機飛往亞利桑那州的佩奇小鎮時，令人歎為觀止的景色正等著您的到來。</p>
-						<p>級別：僅限 FC</p>
-						<p>歷時：6 小時（每條線路包括約 50 分鐘飛行時間）</p>
-						<p>抵達後，您將乘坐露天四輪驅動卡車前往羚羊峽谷上部，那裡有雄偉的岩層，美麗的光束從中穿過。行走 45 分鐘之後，您將進入一個由砂岩組成的夢幻世界，近距離觀看大自然多年侵蝕形成的神來之筆。</p>
-						<p>附註：所有來賓都需要具有有效護照或駕照。重量限制為每人 300 磅，即 136 公斤。禁止攜帶背包或自拍桿。來賓必須簽署免責聲明。</p>
-						<p>這場美麗的大自然之旅由紐崔萊為您提供。</p>
-						<p>* 本次巡遊含午飯。</p>
-					</li>
+        				<div class="swiper-wrapper">
 
-					<li data-id="2" data-content="FC" class="cd-selected">
-						<img src="img/2.png">
-						<p class="ttl">大峽谷美麗的大自然<br>直升機之旅</p>
-						<p class="des">體驗一次激動人心的飛行，俯瞰大自然的鬼斧神工和科技的獨具匠心。乘坐直升機，您將欣賞拉斯維加斯湖、米德湖、胡佛大壩以及碉堡山（Fortification Hill，一座死火山）的美景。沿途的野生動物會讓您大開眼界。</p>
-						<p>級別：僅限 FC 和 ED</p>
-						<p>歷時：4 小時</p>
-						<p>從 3500 英呎高空深入到大峽谷的瓦拉派 (Hualapai) 印第安人保留區，您將在俯瞰科羅拉多河的同時享用香檳、飲料和點心。</p>
-						<p>在返程途中，您將穿過大峽谷，經過 Bowl of Fire，在那裡可以欣賞神奇的紅岩層，再飛過拉斯維加斯市中心。</p>
-						<p>附註：所有來賓都需要具有有效護照或駕照。來賓必須簽署免責聲明。</p>
-						<p>這場美麗的大自然之旅由紐崔萊為您提供。</p>
-					</li>
+							<li class="swiper-slide cd-selected">
+								<img src="img/1.png">
+								<p class="ttl">紐崔萊羚羊峽谷<br>包機追尋足跡之旅 *</p>
+								<p class="des">回到過去，去追尋神秘且令人難忘的羚羊峽谷的生態足跡。當您乘坐私人飛機飛往亞利桑那州的佩奇小鎮時，令人歎為觀止的景色正等著您的到來。</p>
+								<p>級別：僅限 FC</p>
+								<p>歷時：6 小時（每條線路包括約 50 分鐘飛行時間）</p>
+								<p>抵達後，您將乘坐露天四輪驅動卡車前往羚羊峽谷上部，那裡有雄偉的岩層，美麗的光束從中穿過。行走 45 分鐘之後，您將進入一個由砂岩組成的夢幻世界，近距離觀看大自然多年侵蝕形成的神來之筆。</p>
+								<p>附註：所有來賓都需要具有有效護照或駕照。重量限制為每人 300 磅，即 136 公斤。禁止攜帶背包或自拍桿。來賓必須簽署免責聲明。</p>
+								<p>這場美麗的大自然之旅由紐崔萊為您提供。</p>
+								<p>* 本次巡遊含午飯。</p>
+							</li>
 
-					<li data-id="3" data-content="FC" class="cd-selected">
-						<img src="img/3.png">
-						<p class="ttl">紐崔萊 Power of 5 <br>米德湖明輪船動力巡航</p>
-						<p class="des">歡迎乘坐著名的沙漠公主號 (Desert Princess) 遊艇，徜徉於米德湖面享受輕鬆愉快的巡航遊覽——距離拉斯維加斯大道僅幾分鐘路程。</p>
-						<p>級別：僅限 FC 和 ED</p>
-						<p>歷時：4 小時</p>
-						<p>當您乘坐沙漠公主號享受輕鬆宜人的巡航遊覽時，令人難忘的米德湖美景和標誌性的胡佛大壩正等待著您的到來。</p>
-						<p>附註：本次巡遊以步行為主。鼓勵參加者針對天氣穿著舒適的鞋子與衣服。如果天氣惡劣，巡遊將在明輪船塢邊進行。</p>
-						<p>紐崔萊為慶祝紐崔萊 Power of 5 活動的影響而提供本次巡遊。</p>
-					</li>
+							<li class="swiper-slide cd-selected">
+								<img src="img/2.png">
+								<p class="ttl">大峽谷美麗的大自然<br>直升機之旅</p>
+								<p class="des">體驗一次激動人心的飛行，俯瞰大自然的鬼斧神工和科技的獨具匠心。乘坐直升機，您將欣賞拉斯維加斯湖、米德湖、胡佛大壩以及碉堡山（Fortification Hill，一座死火山）的美景。沿途的野生動物會讓您大開眼界。</p>
+								<p>級別：僅限 FC 和 ED</p>
+								<p>歷時：4 小時</p>
+								<p>從 3500 英呎高空深入到大峽谷的瓦拉派 (Hualapai) 印第安人保留區，您將在俯瞰科羅拉多河的同時享用香檳、飲料和點心。</p>
+								<p>在返程途中，您將穿過大峽谷，經過 Bowl of Fire，在那裡可以欣賞神奇的紅岩層，再飛過拉斯維加斯市中心。</p>
+								<p>附註：所有來賓都需要具有有效護照或駕照。來賓必須簽署免責聲明。</p>
+								<p>這場美麗的大自然之旅由紐崔萊為您提供。</p>
+							</li>
 
-					<li data-id="4" data-content="FC" class="cd-selected">
-						<img src="img/4.png">
-						<p class="ttl">Artistry Studio霓虹燈<br>和霓虹博物館城市巡遊</p>
-						<p class="des">拉斯維加斯是娛樂之城和燈光之城。在世界最知名的地方之一體驗定向巡遊。</p>
-						<p>級別：全部</p>
-						<p>歷時：4 小時</p>
-						<p>本次巡遊從獨特的歷史霓虹博物館開始，提供獨一無二的拍照機會。然後，您將踏上前往拉斯維加斯大道和弗裡蒙特市中心的導遊駕駛之旅，那裡的燈光和色彩令人聯想到我們自己的 Artistry Studio 形象。最後，您可以在 Linq 的店鋪和步行街中自由漫步。</p>
-						<p>附註：本次巡遊在某些地方以步行為主。鼓勵參加者針對天氣穿著舒適的鞋子與衣服。</p>
-						<p>這場霓虹燈城市之旅由 Artistry Studio 為您提供。</p>
-					</li>
+							<li class="swiper-slide cd-selected">
+								<img src="img/3.png">
+								<p class="ttl">紐崔萊 Power of 5 <br>米德湖明輪船動力巡航</p>
+								<p class="des">歡迎乘坐著名的沙漠公主號 (Desert Princess) 遊艇，徜徉於米德湖面享受輕鬆愉快的巡航遊覽——距離拉斯維加斯大道僅幾分鐘路程。</p>
+								<p>級別：僅限 FC 和 ED</p>
+								<p>歷時：4 小時</p>
+								<p>當您乘坐沙漠公主號享受輕鬆宜人的巡航遊覽時，令人難忘的米德湖美景和標誌性的胡佛大壩正等待著您的到來。</p>
+								<p>附註：本次巡遊以步行為主。鼓勵參加者針對天氣穿著舒適的鞋子與衣服。如果天氣惡劣，巡遊將在明輪船塢邊進行。</p>
+								<p>紐崔萊為慶祝紐崔萊 Power of 5 活動的影響而提供本次巡遊。</p>
+							</li>
 
-					<li data-id="5" data-content="FC" class="cd-selected">
-						<img src="img/5.png">
-						<p class="ttl">Atmosphere 胡佛大壩<br>清新空氣之旅</p>
-						<p class="des">當您遊覽胡佛大壩時，可以在科羅拉多河與米德湖上空呼吸新鮮空氣。</p>
-						<p>級別：全部</p>
-						<p>歷時：4 小時</p>
-						<p>準備欣賞現代世界的奇觀。遊覽胡佛大壩時，將由導遊指引，向您介紹大壩和整個拉斯維加斯地區的情況。</p>
-						<p>到達大壩後，您將向下行走 500 英呎進入布萊克峽谷，再穿過一條鑽入堅硬岩石的 250 英呎的隧道。之後，您將看到內華達發電廠的機翼及其八個巨大的發電機，最後在大壩的廊道和觀景台結束巡遊。</p>
-						<p>附註：本次巡遊涉及到步行。鼓勵參加者針對天氣穿著舒適的鞋子與衣服。</p>
-						<p>這場清新空氣之旅由 Atmosphere 為您提供。</p>
-					</li>
+							<li class="swiper-slide cd-selected">
+								<img src="img/4.png">
+								<p class="ttl">Artistry Studio霓虹燈<br>和霓虹博物館城市巡遊</p>
+								<p class="des">拉斯維加斯是娛樂之城和燈光之城。在世界最知名的地方之一體驗定向巡遊。</p>
+								<p>級別：全部</p>
+								<p>歷時：4 小時</p>
+								<p>本次巡遊從獨特的歷史霓虹博物館開始，提供獨一無二的拍照機會。然後，您將踏上前往拉斯維加斯大道和弗裡蒙特市中心的導遊駕駛之旅，那裡的燈光和色彩令人聯想到我們自己的 Artistry Studio 形象。最後，您可以在 Linq 的店鋪和步行街中自由漫步。</p>
+								<p>附註：本次巡遊在某些地方以步行為主。鼓勵參加者針對天氣穿著舒適的鞋子與衣服。</p>
+								<p>這場霓虹燈城市之旅由 Artistry Studio 為您提供。</p>
+							</li>
 
-					<li data-id="6" data-content="FC" class="cd-selected">
-						<img src="img/6.png">
-						<p class="ttl">XS 皮艇探險</p>
-						<p class="des">在本次 XS 探險中，我們會將正能量帶到拉斯維加斯水域。</p>
-						<p>級別：全部</p>
-						<p>歷時：5 小時</p>
-						<p>先從海明威港 (Hemenway Harbor) 高聳的峽谷滑過，然後您的皮艇之旅將前往博爾德群島 (Boulder Islands)，再划向米德湖。旅行結束之前，進入科羅拉多河清新的水域時，一定要一展探險家本色。</p>
-						<p>附註：參加者應攜帶帽子、太陽鏡、防曬霜、水鞋、泳衣和各層保暖用品。不應穿拖鞋。每個參加者都需要簽署免責聲明。</p>
-						<p>這場運動探險由 XS 為您提供。</p>
-					</li>
+							<li class="swiper-slide cd-selected">
+								<img src="img/5.png">
+								<p class="ttl">Atmosphere 胡佛大壩<br>清新空氣之旅</p>
+								<p class="des">當您遊覽胡佛大壩時，可以在科羅拉多河與米德湖上空呼吸新鮮空氣。</p>
+								<p>級別：全部</p>
+								<p>歷時：4 小時</p>
+								<p>準備欣賞現代世界的奇觀。遊覽胡佛大壩時，將由導遊指引，向您介紹大壩和整個拉斯維加斯地區的情況。</p>
+								<p>到達大壩後，您將向下行走 500 英呎進入布萊克峽谷，再穿過一條鑽入堅硬岩石的 250 英呎的隧道。之後，您將看到內華達發電廠的機翼及其八個巨大的發電機，最後在大壩的廊道和觀景台結束巡遊。</p>
+								<p>附註：本次巡遊涉及到步行。鼓勵參加者針對天氣穿著舒適的鞋子與衣服。</p>
+								<p>這場清新空氣之旅由 Atmosphere 為您提供。</p>
+							</li>
 
-					<li data-id="7" data-content="FC" class="cd-selected">
-						<img src="img/7.png">
-						<p class="ttl">XS 極限高空滑索</p>
-						<p class="des">加入 XS 探險將讓您體驗超越自我的感受。</p>
-						<p>級別：全部</p>
-						<p>歷時：5 小時</p>
-						<p>博爾德大峽谷 (Bootleg Canyon) 有四條跨 1.5 英里（2,400 公尺）的滑索。您的探險從走到第一個滑索平台開始，在索道上從一個平台滑向山下的另一個平台。總共有四條高空滑索，以每小時 60 英里（每小時97 公里）的速度在莫哈韋沙漠上空滑行。</p>
-						<p>附註：參加者必須至少重 75 磅（34 公斤），且最多重 250 磅（113 公斤）。所有參加者均需穿運動鞋。推薦休閒裝。考慮帶一件毛衣或夾克以防惡劣天氣。每個參加者都需要簽署免責聲明。</p>
-						<p>這場戶外探險由 XS 為您提供。</p>
-					</li>
+							<li class="swiper-slide cd-selected">
+								<img src="img/6.png">
+								<p class="ttl">XS 皮艇探險</p>
+								<p class="des">在本次 XS 探險中，我們會將正能量帶到拉斯維加斯水域。</p>
+								<p>級別：全部</p>
+								<p>歷時：5 小時</p>
+								<p>先從海明威港 (Hemenway Harbor) 高聳的峽谷滑過，然後您的皮艇之旅將前往博爾德群島 (Boulder Islands)，再划向米德湖。旅行結束之前，進入科羅拉多河清新的水域時，一定要一展探險家本色。</p>
+								<p>附註：參加者應攜帶帽子、太陽鏡、防曬霜、水鞋、泳衣和各層保暖用品。不應穿拖鞋。每個參加者都需要簽署免責聲明。</p>
+								<p>這場運動探險由 XS 為您提供。</p>
+							</li>
 
-					<li data-id="8" data-content="FC" class="cd-selected">
-						<img src="img/8.png">
-						<p class="ttl">eSpring 科羅拉多純水漂流</p>
-						<p class="des">這次巡遊將為您帶來一個空前的機會，觀看胡佛大壩的壯麗水域，胡佛大壩是世界七大人造奇觀之一。</p>
-						<p>級別：全部</p>
-						<p>歷時：6 小時</p>
-						<p>探險從大壩底部開始。因為當河流在峽谷壁間蜿蜒流過時，有些地方高出河邊 2,000 英呎，所以沿古樸的科羅拉多河探索隱藏的奧秘要花費三個小時行走 12 英里。25 人在平穩的水面上登上橡皮艇，探險隨即開始。這次旅行由經驗豐富且知識淵博的導遊全面解說，他們對大壩和該地區的歷史有著獨到見解。您將有機會在科羅拉多河清澈的河水中游泳或嬉戲。</p>
-						<p>附註：這是一次放鬆的漂流之旅。除非參加者願意，否則他們不會被淋濕。建議所有參加者都穿上能濕透的鞋子和衣服、遮蓋身體的東西、帶太陽鏡和帽子。不允許攜帶大型攝影機和設備。每個參加者都需要簽署免責聲明。</p>
-						<p>這場純水之旅由 eSpring 為您提供。</p>
-					</li>
+							<li class="swiper-slide cd-selected">
+								<img src="img/7.png">
+								<p class="ttl">XS 極限高空滑索</p>
+								<p class="des">加入 XS 探險將讓您體驗超越自我的感受。</p>
+								<p>級別：全部</p>
+								<p>歷時：5 小時</p>
+								<p>博爾德大峽谷 (Bootleg Canyon) 有四條跨 1.5 英里（2,400 公尺）的滑索。您的探險從走到第一個滑索平台開始，在索道上從一個平台滑向山下的另一個平台。總共有四條高空滑索，以每小時 60 英里（每小時97 公里）的速度在莫哈韋沙漠上空滑行。</p>
+								<p>附註：參加者必須至少重 75 磅（34 公斤），且最多重 250 磅（113 公斤）。所有參加者均需穿運動鞋。推薦休閒裝。考慮帶一件毛衣或夾克以防惡劣天氣。每個參加者都需要簽署免責聲明。</p>
+								<p>這場戶外探險由 XS 為您提供。</p>
+							</li>
 
-					<li data-id="9" data-content="FC" class="cd-selected">
-						<img src="img/9.png">
-						<p class="ttl">Artistry Studio 激情購物</p>
-						<p class="des">享受獨一無二的購物體驗，這是真正的拉斯維加斯魅力體驗。</p>
-						<p>級別：全部</p>
-						<p>歷時：8 小時</p>
-						<p>在曼德勒海灣酒店 (Mandalay Bay) 開始，您將選擇乘坐去往<a target="_blank" href="https://www.premiumoutlets.com/outlet/las-vegas-south/stores">拉斯維加斯南奧特萊斯店</a>或<a target="_blank" href="https://www.thefashionshow.com/en/directory/">時尚秀購物中心的班車。</a></p>
-						<div class="row">
-						  <div class="column">
-						  	<p>時尚秀購物中心：<br>
-							• 內曼 · 馬庫斯<br>
-							• 諾德斯特龍高檔百貨店<br>
-							• 薩克斯第五大道精品百貨店<br>
-							• Sur La Table 廚具店<br>
-							• 蒂凡尼專賣店<br>
-							• 亞馬遜快顯<br>
-							• 蘋果<br>
-							• 蔻馳<br>
-							• 路易威登<br>
-							200 多種！</p>
-						  </div>
-						  <div class="column">
-						  	<p>拉斯維加斯南奧特萊斯店：<br>
-							• 卡爾文 · 克萊恩<br>
-							• Chico’s 女裝<br>
-							• Cole Haan<br>
-							• 蔻馳<br>
-							• DKNY<br>
-							• Karl Lagerfeld<br>
-							• Kate Spade<br>
-							• 耐克<br>
-							• 新秀麗<br>
-							100 多種！</p>
-						  </div>
+							<li class="swiper-slide cd-selected">
+								<img src="img/8.png">
+								<p class="ttl">eSpring 科羅拉多純水漂流</p>
+								<p class="des">這次巡遊將為您帶來一個空前的機會，觀看胡佛大壩的壯麗水域，胡佛大壩是世界七大人造奇觀之一。</p>
+								<p>級別：全部</p>
+								<p>歷時：6 小時</p>
+								<p>探險從大壩底部開始。因為當河流在峽谷壁間蜿蜒流過時，有些地方高出河邊 2,000 英呎，所以沿古樸的科羅拉多河探索隱藏的奧秘要花費三個小時行走 12 英里。25 人在平穩的水面上登上橡皮艇，探險隨即開始。這次旅行由經驗豐富且知識淵博的導遊全面解說，他們對大壩和該地區的歷史有著獨到見解。您將有機會在科羅拉多河清澈的河水中游泳或嬉戲。</p>
+								<p>附註：這是一次放鬆的漂流之旅。除非參加者願意，否則他們不會被淋濕。建議所有參加者都穿上能濕透的鞋子和衣服、遮蓋身體的東西、帶太陽鏡和帽子。不允許攜帶大型攝影機和設備。每個參加者都需要簽署免責聲明。</p>
+								<p>這場純水之旅由 eSpring 為您提供。</p>
+							</li>
+
+							<li class="swiper-slide cd-selected">
+								<img src="img/9.png">
+								<p class="ttl">Artistry Studio 激情購物</p>
+								<p class="des">享受獨一無二的購物體驗，這是真正的拉斯維加斯魅力體驗。</p>
+								<p>級別：全部</p>
+								<p>歷時：8 小時</p>
+								<p>在曼德勒海灣酒店 (Mandalay Bay) 開始，您將選擇乘坐去往<a target="_blank" href="https://www.premiumoutlets.com/outlet/las-vegas-south/stores">拉斯維加斯南奧特萊斯店</a>或<a target="_blank" href="https://www.thefashionshow.com/en/directory/">時尚秀購物中心的班車。</a></p>
+								<div class="row">
+								  <div class="column">
+								  	<p>時尚秀購物中心：<br>
+									• 內曼 · 馬庫斯<br>
+									• 諾德斯特龍高檔百貨店<br>
+									• 薩克斯第五大道精品百貨店<br>
+									• Sur La Table 廚具店<br>
+									• 蒂凡尼專賣店<br>
+									• 亞馬遜快顯<br>
+									• 蘋果<br>
+									• 蔻馳<br>
+									• 路易威登<br>
+									200 多種！</p>
+								  </div>
+								  <div class="column">
+								  	<p>拉斯維加斯南奧特萊斯店：<br>
+									• 卡爾文 · 克萊恩<br>
+									• Chico’s 女裝<br>
+									• Cole Haan<br>
+									• 蔻馳<br>
+									• DKNY<br>
+									• Karl Lagerfeld<br>
+									• Kate Spade<br>
+									• 耐克<br>
+									• 新秀麗<br>
+									100 多種！</p>
+								  </div>
+								</div>
+								<p>附註：不需要報名；不計入活動總計。</p>
+								<p>本次班車由 Artistry Studio 為您提供，釋放您的內在激情。</p>
+							</li>
+
+							<li class="swiper-slide cd-selected">
+								<img src="img/10.png">
+								<p class="ttl">Artistry 健康美容個人化水療體驗</p>
+								<p class="des">在曼德勒水療吧 (Spa Mandalay) 選擇一款水療體驗，放鬆身心。</p>
+								<p>級別：僅限 FC 和 ED</p>
+								<p>歷時：各有不同，具體如下所示</p>
+								<p>芳香按摩（50 分鐘）：體驗只有觸摸和氣味之旅才能達到的放鬆程度。享受透過瑞典按摩技術應用的精油所帶來的舒緩和振奮人心的感覺。</p>
+								<p>定制按摩（50 分鐘）：與您的理療師協商，創建一個定制的按摩活動，以利用為您定制的多種按摩手法滿足您的特定需求！</p>
+								<p>雅姿個人化特徵面部按摩（50 分鐘）：適用於各種肌膚類型的雅姿個人化面部按摩。此面部按摩包括皮膚分析、清潔、去角質、吸出、面膜和保濕，以促進從內部癒合以及僅針對您的個人化產品養生之道。</p>
+								<p>足部按摩（25 分鐘）：直接與身體器官對應的足部區域。享受基於反射的下肢和足部按摩。疲倦的腳部會得到放鬆；但是，整個身體都會受益。</p>
+								<p>透過本次體驗，享受最好的雅姿和紐崔萊產品，獲得健康美麗的身體。</p>
+								<p>水療設施包括使用：<br>
+								• 雷德伍德桑拿<br>
+								• 桉樹蒸汽室<br>
+								• 熱漩渦（暖和熱）<br>
+								• 冷驟降休息室淋浴設施<br>
+								• 護理設施<br>
+								• 運動室（需要適當的服裝）</p>
+								<p>本次體驗由雅姿為您提供，包括為您提供最好的紐崔萊產品。</p>
+							</li>
+
+							<li class="swiper-slide cd-selected">
+								<img src="img/11.png">
+								<p class="ttl">在巴厘海高爾夫球場<br>打高爾夫球</p>
+								<p class="des">就在拉斯維加斯大道附近的熱帶高爾夫綠洲打 18 洞高爾夫。</p>
+								<p>級別：全部</p>
+								<p>歷時：取決於玩樂的速度</p>
+								<p>巴厘海高爾夫俱樂部具有獨特的氛圍，是著名的拉斯維加斯大道上唯一的錦標賽高爾夫球場。巴厘海是拉斯維加斯大道度假地盛名之下的一塊熱帶高爾夫綠洲，數十年來使拉斯維加斯大道的高爾夫傳統保持著勃勃生機。</p>
+							</li>
 						</div>
-						<p>附註：不需要報名；不計入活動總計。</p>
-						<p>本次班車由 Artistry Studio 為您提供，釋放您的內在激情。</p>
-					</li>
-
-					<li data-id="10" data-content="FC" class="cd-selected">
-						<img src="img/10.png">
-						<p class="ttl">Artistry 健康美容個人化水療體驗</p>
-						<p class="des">在曼德勒水療吧 (Spa Mandalay) 選擇一款水療體驗，放鬆身心。</p>
-						<p>級別：僅限 FC 和 ED</p>
-						<p>歷時：各有不同，具體如下所示</p>
-						<p>芳香按摩（50 分鐘）：體驗只有觸摸和氣味之旅才能達到的放鬆程度。享受透過瑞典按摩技術應用的精油所帶來的舒緩和振奮人心的感覺。</p>
-						<p>定制按摩（50 分鐘）：與您的理療師協商，創建一個定制的按摩活動，以利用為您定制的多種按摩手法滿足您的特定需求！</p>
-						<p>雅姿個人化特徵面部按摩（50 分鐘）：適用於各種肌膚類型的雅姿個人化面部按摩。此面部按摩包括皮膚分析、清潔、去角質、吸出、面膜和保濕，以促進從內部癒合以及僅針對您的個人化產品養生之道。</p>
-						<p>足部按摩（25 分鐘）：直接與身體器官對應的足部區域。享受基於反射的下肢和足部按摩。疲倦的腳部會得到放鬆；但是，整個身體都會受益。</p>
-						<p>透過本次體驗，享受最好的雅姿和紐崔萊產品，獲得健康美麗的身體。</p>
-						<p>水療設施包括使用：<br>
-						• 雷德伍德桑拿<br>
-						• 桉樹蒸汽室<br>
-						• 熱漩渦（暖和熱）<br>
-						• 冷驟降休息室淋浴設施<br>
-						• 護理設施<br>
-						• 運動室（需要適當的服裝）</p>
-						<p>本次體驗由雅姿為您提供，包括為您提供最好的紐崔萊產品。</p>
-					</li>
-
-					<li data-id="11" data-content="FC" class="cd-selected">
-						<img src="img/11.png">
-						<p class="ttl">在巴厘海高爾夫球場<br>打高爾夫球</p>
-						<p class="des">就在拉斯維加斯大道附近的熱帶高爾夫綠洲打 18 洞高爾夫。</p>
-						<p>級別：全部</p>
-						<p>歷時：取決於玩樂的速度</p>
-						<p>巴厘海高爾夫俱樂部具有獨特的氛圍，是著名的拉斯維加斯大道上唯一的錦標賽高爾夫球場。巴厘海是拉斯維加斯大道度假地盛名之下的一塊熱帶高爾夫綠洲，數十年來使拉斯維加斯大道的高爾夫傳統保持著勃勃生機。</p>
-					</li>
-
+				        <div class="swiper-pagination"></div>
 
 				</ul> <!-- cd-tabs__content -->
 			</div>
 			<!-- cd-tabs -->
 
 			<p class="xttl" align="center">線上調查</p>
-			<p>預計2019年2月13日</p>
-			<p>**請留意手機短信與網站公告</p>
+			<p align="center">預計2019年2月13日</p>
+			<p align="center">**請留意手機短信與網站公告</p>
 			<img src="img/banner.png">
 		</div>
 		<!--content-->
@@ -299,27 +306,37 @@
     </div>
 
 	<script src="jquery-1.11.3.min.js"></script>
+    <script src="swiper.jquery.min.js"></script>
     <script type="text/javascript">
-    	$(function() {
-	    	$("ul.cd-tabs__navigation>li>a").click(function() {
-		        event.preventDefault(),
-		        $("ul.cd-tabs__navigation>li>a").removeClass("cd-selected"),
-		        $(this).addClass("cd-selected");
-		        // var a = $(this).index();
-		        // $("ul.cd-tabs__content>li").eq(a).removeClass("hide").siblings(".nano").addClass("hide")
+	    	var swiper1 = new Swiper('.swiper-container', {
+	    		autoHeight: true,
+			    pagination: '.swiper-pagination',
+			    paginationType: 'fraction',
+			    paginationClickable: false
+			});
+
+	    	$(function() {
+		    	$("ul.cd-tabs__navigation>li>a").click(function() {
+			        event.preventDefault(),
+			        $("ul.cd-tabs__navigation>li>a").removeClass("cd-selected"),
+			        $(this).addClass("cd-selected");
+			    });
 		    });
-	    });
-    	function FC(){
-    		$('.cd-tabs__content li').addClass("cd-selected");
-    	}
-    	function ED(){
-    		$('.cd-tabs__content li').eq(0).removeClass("cd-selected");
-    	}
-    	function ALL(){
-    		$('.cd-tabs__content li').eq(0).removeClass("cd-selected"),
-    		$('.cd-tabs__content li').eq(1).removeClass("cd-selected"),
-    		$('.cd-tabs__content li').eq(2).removeClass("cd-selected");
-    	}
+	    	function FC(){
+	    		$('.cd-tabs__content li').addClass("swiper-slide cd-selected"),
+	    		swiper1.init();
+	    	}
+	    	function ED(){
+	    		$('.cd-tabs__content li').eq(0).removeClass("swiper-slide cd-selected"),
+	    		swiper1.init();
+	    	}
+	    	function ALL(){
+	    		$('.cd-tabs__content li').eq(0).removeClass("swiper-slide cd-selected"),
+	    		$('.cd-tabs__content li').eq(1).removeClass("swiper-slide cd-selected"),
+	    		$('.cd-tabs__content li').eq(2).removeClass("swiper-slide cd-selected"),
+	    		$('.cd-tabs__content li').eq(9).removeClass("swiper-slide cd-selected"),
+	    		swiper1.init();
+	    	}
     </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->

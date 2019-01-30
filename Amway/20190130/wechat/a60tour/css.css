@@ -73,8 +73,32 @@ table {
 p {
     padding: 10px;
     line-height: 1.5;
-    letter-spacing: 1px;
-    font-family: "Microsoft YaHei", Arial;
+    font-size: 1.4rem;
+}
+
+.xttl {
+    display: block;
+    width: 100%;
+    clear:both;
+}
+
+.xttl:after {
+    display: inline-block;
+    margin: 16px 0 8px 20px;
+    height: 3px;
+    content: " ";
+    text-shadow: none;
+    background-color: #999;
+    width: 25%;
+}
+.xttl:before {
+    display: inline-block;
+    margin: 16px 20px 8px 0;
+    height: 3px;
+    content: " ";
+    text-shadow: none;
+    background-color: #999;
+    width: 25%;
 }
 
 img,
@@ -90,6 +114,11 @@ video{
 a, a:link, a:hover, a:active, a:visited{
     color: #783996;
     text-decoration: none;
+}
+
+h1,h2, h3 {
+    color: #783996;
+    font-weight: bold;
 }
 
 .clearfix {
@@ -318,6 +347,8 @@ h3{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  border:1px solid white;
+  height: 100%;
 }
 
 .css-table .tbody .td {
