@@ -257,3 +257,84 @@ h3{
     height: 20px;
     }
 }
+
+.css-table {
+  display: flex;
+  width:100%;
+  -webkit-text-size-adjust:none;
+  font-size:9px;
+}
+
+
+.css-table .thead {
+    display: flex;
+    flex-direction: column;
+}
+
+.css-table .tbody {
+    display: flex;
+    flex:1;
+    flex-direction: column;
+}
+
+.css-table .tr {
+    display: flex;
+}
+
+.css-table .thead .tr{
+    flex-basis: 100%;
+}
+
+.css-table .thead .td{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border:1px solid red;
+  width:24px;
+}
+
+.css-table .tbody .td,
+.css-table .tbody .td0,
+.css-table .tbody .td4 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border:1px solid red;
+}
+
+.css-table .tbody .td1,
+.css-table .tbody .td2,
+.css-table .tbody .td3 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+
+.css-table .tbody .td {
+  width: 25%;
+}
+
+.css-table .tbody .td0 {
+  width: 45px;
+}
+
+.css-table .tbody .td1 {
+  width: 25%;
+}
+
+.css-table .tbody .td2 {
+  width: 50%;
+}
+
+.css-table .tbody .td3 {
+  width: 55%;
+}
+
+.css-table .tbody .td4 {
+  width: calc(100% - 45px);
+}
