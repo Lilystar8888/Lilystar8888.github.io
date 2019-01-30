@@ -30,9 +30,9 @@
 			<div class="cd-tabs js-cd-tabs">
 				<nav>
 					<ul class="cd-tabs__navigation js-cd-navigation">
-						<li><a data-content="FC" class="cd-selected" href="#0">FC</a></li>
-						<li><a data-content="ED" href="#0">ED</a></li>
-						<li><a data-content="All" href="#0">全部</a></li>
+						<li><a data-content="FC" class="cd-selected" href="#0" onclick="FC();">FC</a></li>
+						<li><a data-content="ED"  href="#0" onclick="ED();" class>ED</a></li>
+						<li><a data-content="All" href="#0" onclick="ALL();" class>全部</a></li>
 					</ul> <!-- cd-tabs__navigation -->
 				</nav>
 
@@ -216,7 +216,29 @@
         <a href="https://www.amway.com.tw/" target="_blank"><img src="img/logo_amway.svg" class="logo_amway"></a> 安麗日用品股份有限公司 版權所有 © 2019 <span class="footer_text">Amway Taiwan Company Limited. All Rights Reserved </span>
     </div>
 
-    <script src="tab.js"></script>
+	<script src="jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+    	$(function() {
+	    	$("ul.cd-tabs__navigation>li>a").click(function() {
+		        event.preventDefault(),
+		        $("ul.cd-tabs__navigation>li>a").removeClass("cd-selected"),
+		        $(this).addClass("cd-selected");
+		        // var a = $(this).index();
+		        // $("ul.cd-tabs__content>li").eq(a).removeClass("hide").siblings(".nano").addClass("hide")
+		    });
+	    });
+    	function FC(){
+    		$('.cd-tabs__content li').addClass("cd-selected");
+    	}
+    	function ED(){
+    		$('.cd-tabs__content li').eq(0).removeClass("cd-selected");
+    	}
+    	function ALL(){
+    		$('.cd-tabs__content li').eq(0).removeClass("cd-selected"),
+    		$('.cd-tabs__content li').eq(1).removeClass("cd-selected"),
+    		$('.cd-tabs__content li').eq(2).removeClass("cd-selected");
+    	}
+    </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-21742036-2"></script>
