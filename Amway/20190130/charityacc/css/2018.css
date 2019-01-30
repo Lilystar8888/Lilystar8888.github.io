@@ -51,7 +51,7 @@ p {
 }
 
 #slider .vertical-middle {
-	padding-top: 30px !important;
+	/*padding-top: 30px !important;*/
 }
 
 .portfolio-full .portfolio-desc {
@@ -222,11 +222,11 @@ p {
 	}
 	
 	#name {
-		font-size: 45px !important;
+		font-size: 50px !important;
 	}
 	
 	#title {
-		font-size: 25px;
+		font-size: 35px;
 	}
 	
 	.button.button-small {
