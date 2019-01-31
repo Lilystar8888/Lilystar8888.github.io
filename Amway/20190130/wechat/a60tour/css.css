@@ -58,6 +58,10 @@ table {
     url('fonts/PingFangTC-Regular.otf') format('truetype');
 }
 
+html,body{
+    height: 100%;
+}
+
 body {
     width: 100%;
     max-width: 100%;
@@ -117,7 +121,7 @@ a, a:link, a:hover, a:active, a:visited{
 }
 
 h1,h2, h3 {
-    color: #783996;
+    color: #000;
     font-weight: bold;
 }
 
@@ -226,8 +230,8 @@ header.gray{
 }
 
 .shareb {
-    width: 2.25rem;
-    margin-right: .25rem;
+    width: 3rem;
+    margin-right: .5rem;
 }
 
 h1{
@@ -287,23 +291,30 @@ h3{
     }
 }
 
+small {
+    text-size-adjust:none;
+    -webkit-text-size-adjust:none;
+    font-size: 6pt;
+}
+
 .css-table {
   display: flex;
   width:100%;
   text-size-adjust:none;
   -webkit-text-size-adjust:none;
-  font-size:10pt;
+  font-size:9pt;
   text-align: center;
 }
 
 .css-table .bkgray {
-    background: #eee;
+    background: #f54fa8;
+    color: white;
 }
 
 .css-table .thead {
     display: flex;
     flex-direction: column;
-    background: #000;
+    background: #0079c3;
     color:#fff;
 }
 
@@ -326,37 +337,59 @@ h3{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  border:1px solid white;
+  border:1px solid #f54fa8;
   width:24px;
+  padding:2px;
 }
 
 .css-table .tbody .td,
-.css-table .tbody .td0,
+.css-table .tbody .td0 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border:1px solid #f54fa8;
+  padding:2px;
+}
+
 .css-table .tbody .td4 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  border:1px solid white;
+  border-top:1px solid #f54fa8;
+  border-bottom: 1px solid #f54fa8;
+  padding:2px;
 }
 
+
 .css-table .tbody .td1,
-.css-table .tbody .td2,
 .css-table .tbody .td3 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  border:1px solid white;
-  height: 100%;
+  border-right: 1px solid #f54fa8;
+  padding:2px;
 }
+
+.css-table .tbody .td2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 
 .css-table .tbody .td {
   flex-basis: 25%;
 }
 
 .css-table .tbody .td0 {
-  flex-basis: 45px;
+    flex-basis: 45px;
+    min-width: 45px;
+    max-width: 45px;
+    border-left: 0;
 }
 
 .css-table .tbody .td1 {
@@ -366,6 +399,8 @@ h3{
 
 .css-table .tbody .td2 {
   flex-basis: 50%;
+  flex-direction: column;
+  height: 100%;
 }
 
 .css-table .tbody .td3 {
@@ -374,4 +409,66 @@ h3{
 
 .css-table .tbody .td4 {
   flex-basis: calc(100% - 45px);
+  padding:0;
 }
+
+
+.column{
+  flex-direction: column;
+}
+
+.column0{
+    flex-basis: 45px;
+}
+
+.column1{
+    flex-basis: 25%;
+}
+
+.column .td0,
+.column .td1 {
+  flex-direction: column;
+  height: 50%;
+}
+
+.column.full .td0,
+.column.full .td1 {
+  flex-direction: column;
+  height: 100%;
+}
+
+
+.column .row{
+  flex-direction: row;
+  height: 50%;
+}
+
+.column .row .td1 {
+  display: inline-flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+.bdl {
+  border-left: 1px solid #f54fa8;
+}
+
+.bdr {
+  border-right: 1px solid #f54fa8;
+}
+
+.nobdr {
+  border-right: 0 !important;
+}
+
+.nobdt {
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+}
+
+.nobd{
+  border: 0 !important;
+}
+
+

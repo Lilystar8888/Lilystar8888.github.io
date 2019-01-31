@@ -138,6 +138,16 @@ Responsive Tabbed Navigation - by CodyHouse.co
   font-size: 80%;
 }
 
+.cd-tabs__content li p.comment {
+  font-style: italic;
+}
+
+.purple {
+  display: inline;
+  color: #783996;
+  font-weight: bold;
+}
+
 .cd-tabs__content li .row {
   display: flex;
 }
@@ -152,8 +162,26 @@ Responsive Tabbed Navigation - by CodyHouse.co
 
 .cd-tabs__content li .column p {
     line-height: 1.2;
-    font-size: 50%;
-    /*white-space: nowrap;*/
+    font-size: 9pt;
     padding: 0 10px;
 }
 
+.swiper-button-next, .swiper-button-prev{
+    top:100px !important;
+    -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.9));
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.9));
+}
+.swiper-button-prev{
+  left: 5px!important;
+}
+.swiper-button-next {
+  right: 5px!important;
+}
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: 1!important;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 0!important;
+}
