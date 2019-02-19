@@ -1,7 +1,111 @@
-$(document).ready(function(){var attack=$('.attacking');var dattack=$('.dangerousattacking');var goalshot=$('.goalshot');var shotontarget=$('.shotontarget');var shotoff=$('.shotoff');var cornerkick=$('.cornerkick');var freekick=$('.freekick');var outkick=$('.outkick');var goalkick=$('.goalkick');var teamtrap=$('.teamtrap');var huanren=$('.huanren');var rdcard=$('.card-tip.red');var ycard=$('.card-tip.yellow');var yrcard=$('.card-tip.yellowtored');var injury=$('.injury');var homesc=$('.home-score')
-var awaysc=$('.away-score')
-function stopmv(h){setTimeout(function(){h.addClass('hide').removeClass('home').removeClass('away');h.find('.team-name').text('')},5600)}
-function home(e){e.addClass('home').removeClass('hide');var teamhome=$('.animate-team-bottom .left .name').text();$('.home .team-name').text(teamhome);stopmv(e)}
-function away(e){e.addClass('away').removeClass('hide');var teamaway=$('.animate-team-bottom .right .name').text();$('.away .team-name').text(teamaway);stopmv(e)}
-function scorechange(e){e.addClass('change');setTimeout(function(){e.removeClass('change')},5600)}
-setTimeout(function(){$('#animation-loading').removeClass('hide');setTimeout(function(){$('#animation-loading').addClass('hide')},1500)},0);setTimeout(function(){$('#grassLand, #courtLayer').removeClass('hide')},2000);setTimeout(function(){$('#board').removeClass('hide');$('#board .status').html('即将开始');setTimeout(function(){$('#board').addClass('hide')},1500)},2500);setTimeout(function(){home(attack)},5600);setTimeout(function(){home(dattack)},11200);setTimeout(function(){home(shotontarget)},16800);setTimeout(function(){home(goalshot);scorechange(homesc)},22400);setTimeout(function(){home(shotoff)},28000);setTimeout(function(){home(cornerkick)},33600);setTimeout(function(){home(freekick)},39200);setTimeout(function(){home(outkick)},44800);setTimeout(function(){home(goalkick)},50400);setTimeout(function(){home(teamtrap)},56000);setTimeout(function(){home(huanren)},61600);setTimeout(function(){home(rdcard)},67200);setTimeout(function(){home(ycard)},72800);setTimeout(function(){home(yrcard)},78400);setTimeout(function(){home(injury)},84000);setTimeout(function(){away(attack)},89600);setTimeout(function(){away(dattack)},95200);setTimeout(function(){away(shotontarget)},100800);setTimeout(function(){away(goalshot);scorechange(awaysc)},106400);setTimeout(function(){away(shotoff)},112000);setTimeout(function(){away(cornerkick)},117600);setTimeout(function(){away(freekick)},123200);setTimeout(function(){away(outkick)},128800);setTimeout(function(){away(goalkick)},134400);setTimeout(function(){away(teamtrap)},140000);setTimeout(function(){away(huanren)},144500);setTimeout(function(){away(rdcard)},151200);setTimeout(function(){away(ycard)},156800);setTimeout(function(){away(yrcard)},162400);setTimeout(function(){away(injury)},168000);setTimeout(function(){$('#tips').removeClass('hide');$('#tips .status .text').html('伤停加时');$('#tips .status .minute-label').html('1分钟');$('.panel .score-area .upper .ot').html('（+1分钟）');setTimeout(function(){$('#tips .status .minute-label').html('');$('#tips .status .text').html('');$('#tips').addClass('hide')},4500)},173600);setTimeout(function(){$('.home-data .corner-kick').html('1');$('.home-data .yellow-card').html('2');$('.home-data .red-card').html('0');$('.home-data .shoots').html('12');$('.home-data .control').html('47%');$('.away-data .corner-kick').html('2');$('.away-data .yellow-card').html('3');$('.away-data .red-card').html('0');$('.away-data .shoots').html('4');$('.away-data .control').html('53%');$('#board').removeClass('hide');$('#board .status').html('完赛')},179200)})
+$(document).ready(function() {
+    var attack = $('.attacking');
+    var dattack = $('.dangerousattacking');
+    var goalshot = $('.goalshot');
+    var shotontarget = $('.shotontarget');
+    var shotoff = $('.shotoff');
+    var cornerkick = $('.cornerkick');
+    var freekick = $('.freekick');
+    var outkick = $('.outkick');
+    var goalkick = $('.goalkick');
+    var teamtrap = $('.teamtrap');
+    var huanren = $('.huanren');
+    var rdcard = $('.card-tip.red');
+    var ycard = $('.card-tip.yellow');
+    var yrcard = $('.card-tip.yellowtored');
+    var injury = $('.injury');
+    var homesc = $('.home-score')
+    var awaysc = $('.away-score')
+
+    function stopmv(h) {
+    	setTimeout(function() {
+    		h.addClass('hide').removeClass('home').removeClass('away');
+        h.find('.team-name').text('')
+    }, 5600)
+    }
+
+    function home(e) {
+    	e.addClass('home').removeClass('hide');
+    	var teamhome = $('.animate-team-bottom .left .name').text();
+    $('.home .team-name').text(teamhome);
+    stopmv(e)
+    }
+
+    function away(e) {
+    	e.addClass('away').removeClass('hide');
+    	var teamaway = $('.animate-team-bottom .right .name').text();
+    $('.away .team-name').text(teamaway);
+    stopmv(e)
+    }
+
+    function scorechange(e) {
+    	e.addClass('change');
+    setTimeout(function() { e.removeClass('change') }, 5600)
+    }
+
+
+    setTimeout(function() { $('#animation-loading').removeClass('hide');
+    setTimeout(function() { $('#animation-loading').addClass('hide') }, 1500) }, 0);
+    setTimeout(function() { $('#grassLand, #courtLayer').removeClass('hide') }, 2000);
+    setTimeout(function() {
+    	$('#board').removeClass('hide');
+    	$('#board .status').html('即将开始');
+    	setTimeout(function() { $('#board').addClass('hide') }, 1500)
+    }, 2500);
+    setTimeout(function() { home(attack) }, 5600);
+    setTimeout(function() { home(dattack) }, 11200);
+    setTimeout(function() { home(shotontarget) }, 16800);
+    setTimeout(function() { home(goalshot);scorechange(homesc) }, 22400);
+    setTimeout(function() { home(shotoff) }, 28000);
+    setTimeout(function() { home(cornerkick) }, 33600);
+    setTimeout(function() { home(freekick) }, 39200);
+    setTimeout(function() { home(outkick) }, 44800);
+    setTimeout(function() { home(goalkick) }, 50400);
+    setTimeout(function() { home(teamtrap) }, 56000);
+    setTimeout(function() { home(huanren) }, 61600);
+    setTimeout(function() { home(rdcard) }, 67200);
+    setTimeout(function() { home(ycard) }, 72800);
+    setTimeout(function() { home(yrcard) }, 78400);
+    setTimeout(function() { home(injury) }, 84000);
+    setTimeout(function() { away(attack) }, 89600);
+    setTimeout(function() { away(dattack) }, 95200);
+    setTimeout(function() { away(shotontarget) }, 100800);
+    setTimeout(function() { away(goalshot);scorechange(awaysc) }, 106400);
+    setTimeout(function() { away(shotoff) }, 112000);
+    setTimeout(function() { away(cornerkick) }, 117600);
+    setTimeout(function() { away(freekick) }, 123200);
+    setTimeout(function() { away(outkick) }, 128800);
+    setTimeout(function() { away(goalkick) }, 134400);
+    setTimeout(function() { away(teamtrap) }, 140000);
+    setTimeout(function() { away(huanren) }, 144500);
+    setTimeout(function() { away(rdcard) }, 151200);
+    setTimeout(function() { away(ycard) }, 156800);
+    setTimeout(function() { away(yrcard) }, 162400);
+    setTimeout(function() { away(injury) }, 168000);
+    setTimeout(function() {
+    	$('#tips').removeClass('hide');
+	    $('#tips .status .text').html('伤停加时');
+	    $('#tips .status .minute-label').html('1分钟');
+	    $('.panel .score-area .upper .ot').html('（+1分钟）');
+    	setTimeout(function() {
+	    	$('#tips .status .minute-label').html('');
+	        $('#tips .status .text').html('');
+	        $('#tips').addClass('hide')
+	    }, 4500)
+    }, 173600);
+
+    setTimeout(function() {
+    	$('.home-data .corner-kick').html('1');
+	    $('.home-data .yellow-card').html('2');
+	    $('.home-data .red-card').html('0');
+	    $('.home-data .shoots').html('12');
+	    $('.home-data .control').html('47%');
+	    $('.away-data .corner-kick').html('2');
+	    $('.away-data .yellow-card').html('3');
+	    $('.away-data .red-card').html('0');
+	    $('.away-data .shoots').html('4');
+	    $('.away-data .control').html('53%');
+	    $('#board').removeClass('hide');
+	    $('#board .status').html('完赛')
+	}, 179200)
+})

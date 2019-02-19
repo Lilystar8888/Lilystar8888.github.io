@@ -55,9 +55,10 @@
                                 <li class="link none"><a href="#">赛马</a></li>
                             </ul>
                         </li>
-                        <li><a href="database.html">资料库</a></li>
+                        <li><a href="../../database/index.html">资料库</a></li>
                                         <li><a href="../wiki/index.html">彩票百科</a></li>
                 <li><a href="http://news.xincastle-sports.com/">情报中心</a></li>
+                <li><a href="http://xinc.tw/livesport/app/">App下载</a></li>
                 </ul>
             </div>
 
@@ -78,11 +79,11 @@
                         <li><a href="javascript:;">我的资料</a></li>
                         <li><a href="javascript:;">联络客服</a></li>
                         <li class="divider"></li>
-                        <li><a class="btn-logout" href="javascript:;">退出</a></li>
+                        <li><a class="btn-logout" href="javascript:;" onclick="LogoutDialogue();">退出</a></li>
                     </ul>
                 </li>
                 <li class="navbar-btn">
-                    <a href="javascript:;" class="btn btn-login" role="button">登入</a>
+                    <a href="../base/login.html" class="btn btn-login" role="button">登入</a>
                 </li>
             </ul>
             <!--navright-->
@@ -256,24 +257,12 @@
                                             <li data-value="2">SB</li>
                                             <li data-value="3">10BET</li>
                                             <li data-value="4">立博</li>
-                                            <li data-value="5">明陞</li>
-                                            <li data-value="6">澳彩</li>
-                                            <li data-value="7">SNAI</li>
-                                            <li data-value="8">威廉</li>
-                                            <li data-value="9">易胜博</li>
-                                            <li data-value="10">韦德</li>
-                                            <li data-value="11">EuroBet</li>
-                                            <li data-value="12">Inter wetten</li>
-                                            <li data-value="13">12bet/大发</li>
-                                            <li data-value="14">利记</li>
-                                            <li data-value="15">盈禾</li>
-                                            <li data-value="16">18Bet</li>
                                         </ul>
                                     </div>
                                 </div>
                             </td>
-                            <td class="result">赛果</td>
-                            <!--20170830 胜负 -> 赛果 -->
+                            <td class="result">胜负</td>
+                            <!--20181019 赛果 -> 胜负 -->
                             <td class="macao-result" colspan="3">
                                 <div class="zhongpan slide-text"> <span>SB</span> <i class="icon-arrow_g_downx"></i>
                                     <div class="ouzhi-slide hide"> <i class="icon-arrow_dropMenu"></i>
@@ -283,31 +272,18 @@
                                             <li data-value="2">SB</li>
                                             <li data-value="3">10BET</li>
                                             <li data-value="4">立博</li>
-                                            <li data-value="5">明陞</li>
-                                            <li data-value="6">澳彩</li>
-                                            <li data-value="7">SNAI</li>
-                                            <li data-value="8">威廉</li>
-                                            <li data-value="9">易胜博</li>
-                                            <li data-value="10">韦德</li>
-                                            <li data-value="11">EuroBet</li>
-                                            <li data-value="12">Inter wetten</li>
-                                            <li data-value="13">12bet/大发</li>
-                                            <li data-value="14">利记</li>
-                                            <li data-value="15">盈禾</li>
-                                            <li data-value="16">18Bet</li>
                                         </ul>
                                     </div>
                                 </div>
                             </td>
-                            <td class="rangqiu">让球</td>
-                            <td class="daxiao" colspan="3">大小(大/总分/小)</td>
+                            <td class="rangqiu border">让球</td>
                             <td class="rate">大小</td>
                             <td class="pural">单双</td>
                         </tr>
                     </thead>
                     <tbody>
                         <tr class="no-record">
-                            <td colspan="18">双方无历史交锋纪录</td>
+                            <td colspan="15">双方无历史交锋纪录</td>
                         </tr>
                         <tr data-eu-odds="[[5.5,4.2,1.58],[5,3.75,1.66],[5.5,4.2,1.58],[4.85,3.95,1.66],[4.75,4,1.65],[4.85,3.8,1.64],[4.9,3.75,1.55],[3.35,3.5,2],[4.5,4,1.65],[5.1,4.2,1.5],[4.6,4.1,1.7],[null,null,null],[4.3,3.4,1.75],[4.85,3.8,1.64],[4.9,3.8,1.63],[5.5,4.2,1.58],[4.49,3.69,1.7]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,3,null],[null,3,null],[null,3,null],[null,3,null],[null,null,null],[null,3,null],[null,2.75,null],[null,null,null],[null,null,null],[null,2.75,null],[null,2.5,null],[null,null,null],[null,null,null],[null,3,null],[null,3,null],[null,3,null],[null,3,null]]" data-homescore="0" data-awayscore="2">
                             <td class="name">
@@ -329,10 +305,7 @@
                             <td class="data"></td>
                             <td class="data"></td>
                             <td class="data border"></td>
-                            <td class="rangqiu"><span class="lose">输</span></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
+                            <td class="rangqiu border"><span class="lose">输</span></td>
                             <td class="rate"><Span class="lose">小</span></td>
                             <td class="pural"><span class="lose">单</span></td>
                         </tr>
@@ -356,10 +329,7 @@
                             <td class="data"></td>
                             <td class="data"></td>
                             <td class="data border"></td>
-                            <td class="rangqiu"><span class="win">赢</span></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
+                            <td class="rangqiu border"><span class="win">赢</span></td>
                             <td class="rate"><span class="win">大</span></td>
                             <td class="pural"><span class="win">双</span></td>
                         </tr>
@@ -383,10 +353,7 @@
                             <td class="data"></td>
                             <td class="data"></td>
                             <td class="data border"></td>
-                            <td class="rangqiu"><span class="win">赢</span></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
+                            <td class="rangqiu border"><span class="win">赢</span></td>
                             <td class="rate"><Span class="lose">小</span></td>
                             <td class="pural"><span class="lose">单</span></td>
                         </tr>
@@ -410,10 +377,7 @@
                             <td class="data"></td>
                             <td class="data"></td>
                             <td class="data border"></td>
-                            <td class="rangqiu"><span class="win">赢</span></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
+                            <td class="rangqiu border"><span class="win">赢</span></td>
                             <td class="rate"><Span class="lose">小</span></td>
                             <td class="pural"><span class="win">双</span></td>
                         </tr>
@@ -437,308 +401,35 @@
                             <td class="data"></td>
                             <td class="data"></td>
                             <td class="data border"></td>
-                            <td class="rangqiu"><span class="lose">输</span></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
+                            <td class="rangqiu border"><span class="lose">输</span></td>
                             <td class="rate"><span class="win">大</span></td>
                             <td class="pural"><span class="lose">单</span></td>
-                        </tr>
-                        <tr data-eu-odds="[[2.95,3.25,2.2],[2.87,3.6,2.05],[2.95,3.25,2.2],[3.15,3.3,2],[null,null,null],[2.98,3.27,2.18],[null,null,null],[null,null,null],[2.8,3.6,2.15],[2.95,3.25,2.2],[2.9,3.5,2.1],[null,null,null],[null,null,null],[2.98,3.27,2.18],[3.05,3.25,2.16],[2.9,3.28,2.2],[3.01,3.38,2.21]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,3,null],[null,3,null],[null,3,null],[null,3,null],[null,null,null],[null,3,null],[null,null,null],[null,null,null],[null,null,null],[null,3.25,null],[null,2.5,null],[null,null,null],[null,null,null],[null,3,null],[null,3,null],[null,3,null],[null,3,null]]" data-homescore="4" data-awayscore="2">
-                            <td class="name">
-                                <div class="border-name  high">球会友谊</div>
-                            </td>
-                            <td class="time">2017-08-30</td>
-                            <td class="vsl win"><a href="team.html">西班牙语体育会后备队</a></td>
-                            <td class="score">
-                                <a href="team.html">
-                                    <div class="result-sore"><span class="win">3</span>:<span>0</span></div>
-                                    <div>（1-0）</div>
-                                </a>
-                            </td>
-                            <td class="vsr"><a href="team.html">罗森博格</a></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
-                            <td class="result"><span class="win">胜</span></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
-                            <td class="rangqiu"><span class="win">赢</span></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
-                            <td class="rate"><span class="win">大</span></td>
-                            <td class="pural"><span class="win">双</span></td>
-                        </tr>
-                        <tr data-eu-odds="[[2.35,3.5,2.95],[2.37,3.4,2.87],[2.35,3.5,2.95],[2.3,3.57,2.85],[2.37,3.3,2.75],[2.31,3.35,2.87],[2.25,3.38,2.65],[2.3,3.4,2.8],[2.25,3.75,2.62],[2.4,3.15,2.7],[2.375,3.75,2.875],[null,null,null],[2.3,3.2,2.8],[2.31,3.35,2.87],[2.37,3.3,2.82],[2.35,3.5,2.95],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,3,null],[null,3,null],[null,3,null],[null,3,null],[null,null,null],[null,3,null],[null,3,null],[null,null,null],[null,null,null],[null,3,null],[null,2.5,null],[null,null,null],[null,null,null],[null,3,null],[null,3,null],[null,3,null],[null,null,null]]" data-homescore="1" data-awayscore="2">
-                            <td class="name">
-                                <div class="border-name  high">挪超</div>
-                            </td>
-                            <td class="time">2017-08-30</td>
-                            <td class="vsl "><a href="team.html">西班牙语体育会后备队</a></td>
-                            <td class="score">
-                                <a href="team.html">
-                                    <div class="result-sore"><span class="win">3</span>:<span>0</span></div>
-                                    <div>（1-0）</div>
-                                </a>
-                            </td>
-                            <td class="vsr win border"><a href="team.html">罗森博格</a></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
-                            <td class="result"><span class="lose">负</span></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
-                            <td class="rangqiu"><span class="lose">输</span></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
-                            <td class="rate"><span class="even">走</span></td>
-                            <td class="pural"><span class="lose">单</span></td>
-                        </tr>
-                        <tr data-eu-odds="[[1.65,3.85,5.35],[1.61,3.8,5.5],[1.65,3.85,5.35],[1.6,3.82,5.25],[1.57,3.75,5.5],[1.64,3.7,5],[1.55,3.6,5.15],[1.6,3.75,5],[1.61,3.75,5],[1.6,3.5,5.25],[1.65,3.9,5.4],[null,null,null],[1.55,3.7,5.4],[1.64,3.7,5],[1.61,3.65,5.4],[1.65,3.85,5.35],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,2.5,null],[null,2.5,null],[null,2.5,null],[null,2.75,null],[null,null,null],[null,2.5,null],[null,2.75,null],[null,null,null],[null,null,null],[null,2.75,null],[null,2.5,null],[null,null,null],[null,null,null],[null,2.5,null],[null,2.5,null],[null,2.5,null],[null,null,null]]" data-homescore="2" data-awayscore="2">
-                            <td class="name">
-                                <div class="border-name  high">挪超</div>
-                            </td>
-                            <td class="time">2017-08-30</td>
-                            <td class="vsl "><a href="team.html">罗森博格</a></td>
-                            <td class="score">
-                                <a href="team.html">
-                                    <div class="result-sore"><span class="win">3</span>:<span>0</span></div>
-                                    <div>（1-0）</div>
-                                </a>
-                            </td>
-                            <td class="vsr"><a href="team.html">西班牙语体育会后备队</a></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
-                            <td class="result"><span class="even">平</span></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
-                            <td class="rangqiu"><span class="lose">输</span></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
-                            <td class="rate"><span class="win">大</span></td>
-                            <td class="pural"><span class="lose">单</span></td>
-                        </tr>
-                        <tr data-eu-odds="[[1.42,4.5,7.8],[1.44,4.33,7],[1.42,4.5,7.8],[1.42,4.31,7.14],[1.44,4.33,6.5],[1.42,4.08,7.65],[1.38,4.2,6.43],[1.43,4.25,6.5],[1.44,4.4,7],[1.55,3.7,5.4],[1.533,4.3,6.5],[null,null,null],[1.5,3.8,5.7],[1.42,4.08,7.65],[1.41,4.2,7.4],[1.42,4.5,7.8],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,2.5,null],[null,2.5,null],[null,2.5,null],[null,2.5,null],[null,null,null],[null,2.5,null],[null,2.5,null],[null,null,null],[null,null,null],[null,2.5,null],[null,2.5,null],[null,null,null],[null,null,null],[null,2.5,null],[null,2.5,null],[null,2.5,null],[null,null,null]]" data-homescore="2" data-awayscore="1">
-                            <td class="name">
-                                <div class="border-name  high">挪超</div>
-                            </td>
-                            <td class="time">2017-08-30</td>
-                            <td class="vsl win"><a href="team.html">罗森博格</a></td>
-                            <td class="score">
-                                <a href="team.html">
-                                    <div class="result-sore"><span class="win">3</span>:<span>0</span></div>
-                                    <div>（1-0）</div>
-                                </a>
-                            </td>
-                            <td class="vsr"><a href="team.html">西班牙语体育会后备队</a></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
-                            <td class="result"><span class="win">胜</span></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
-                            <td class="rangqiu"><span class="even">走</span></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
-                            <td class="rate"><span class="win">大</span></td>
-                            <td class="pural"><span class="lose">单</span></td>
-                        </tr>
-                        <tr data-eu-odds="[[2.65,3.2,2.75],[2.65,3.3,2.6],[2.65,3.2,2.75],[2.57,3.31,2.59],[2.75,3.25,2.4],[2.56,3.23,2.63],[2.4,3.15,2.6],[2.65,3.3,2.35],[2.5,3.25,2.6],[2.5,3.2,2.55],[2.5,3.4,2.625],[null,null,null],[2.7,3.2,2.4],[2.56,3.23,2.63],[2.63,3.15,2.61],[2.65,3.2,2.75],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,2.5,null],[null,2.5,null],[null,2.5,null],[null,2.75,null],[null,null,null],[null,2.5,null],[null,2.75,null],[null,null,null],[null,null,null],[null,2.5,null],[null,2.5,null],[null,null,null],[null,null,null],[null,2.5,null],[null,2.5,null],[null,2.5,null],[null,null,null]]" data-homescore="0" data-awayscore="0">
-                            <td class="name">
-                                <div class="border-name  high">挪超</div>
-                            </td>
-                            <td class="time">2017-08-30</td>
-                            <td class="vsl "><a href="team.html">西班牙语体育会后备队</a></td>
-                            <td class="score">
-                                <a href="team.html">
-                                    <div class="result-sore"><span class="win">3</span>:<span>0</span></div>
-                                    <div>（1-0）</div>
-                                </a>
-                            </td>
-                            <td class="vsr"><a href="team.html">罗森博格</a></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
-                            <td class="result"><span class="even">平</span></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
-                            <td class="rangqiu"><span class="even">走</span></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
-                            <td class="rate"><Span class="lose">小</span></td>
-                            <td class="pural"><span class="win">双</span></td>
-                        </tr>
-                        <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="0" data-awayscore="0">
-                            <td class="name">
-                                <div class="border-name  high">球会友谊</div>
-                            </td>
-                            <td class="time">2017-08-30</td>
-                            <td class="vsl "><a href="team.html">西班牙语体育会后备队</a></td>
-                            <td class="score">
-                                <a href="team.html">
-                                    <div class="result-sore"><span class="win">3</span>:<span>0</span></div>
-                                    <div>（1-0）</div>
-                                </a>
-                            </td>
-                            <td class="vsr"><a href="team.html">罗森博格</a></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
-                            <td class="result"><span class="even">平</span></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
-                            <td class="rangqiu"><span class="even">走</span></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
-                            <td class="rate"><Span class="lose">小</span></td>
-                            <td class="pural"><span class="win">双</span></td>
-                        </tr>
-                        <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="1" data-awayscore="1">
-                            <td class="name">
-                                <div class="border-name  high">挪超</div>
-                            </td>
-                            <td class="time">2017-08-30</td>
-                            <td class="vsl "><a href="team.html">罗森博格</a></td>
-                            <td class="score">
-                                <a href="team.html">
-                                    <div class="result-sore"><span class="win">3</span>:<span>0</span></div>
-                                    <div>（1-0）</div>
-                                </a>
-                            </td>
-                            <td class="vsr"><a href="team.html">西班牙语体育会后备队</a></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
-                            <td class="result"><span class="even">平</span></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
-                            <td class="rangqiu"><span class="even">走</span></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
-                            <td class="rate"><Span class="lose">小</span></td>
-                            <td class="pural"><span class="lose">单</span></td>
-                        </tr>
-                        <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="1" data-awayscore="4">
-                            <td class="name">
-                                <div class="border-name  high">挪超</div>
-                            </td>
-                            <td class="time">2017-08-30</td>
-                            <td class="vsl "><a href="team.html">西班牙语体育会后备队</a></td>
-                            <td class="score">
-                                <a href="team.html">
-                                    <div class="result-sore"><span class="win">3</span>:<span>0</span></div>
-                                    <div>（1-0）</div>
-                                </a>
-                            </td>
-                            <td class="vsr win border"><a href="team.html">罗森博格</a></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
-                            <td class="result"><span class="lose">负</span></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
-                            <td class="rangqiu"><span class="even">走</span></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
-                            <td class="rate"><Span class="lose">小</span></td>
-                            <td class="pural"><span class="win">双</span></td>
-                        </tr>
-                        <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="4" data-awayscore="0">
-                            <td class="name">
-                                <div class="border-name  high">球会友谊</div>
-                            </td>
-                            <td class="time">2017-08-30</td>
-                            <td class="vsl win"><a href="team.html">西班牙语体育会后备队</a></td>
-                            <td class="score">
-                                <a href="team.html">
-                                    <div class="result-sore"><span class="win">3</span>:<span>0</span></div>
-                                    <div>（1-0）</div>
-                                </a>
-                            </td>
-                            <td class="vsr"><a href="team.html">罗森博格</a></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
-                            <td class="result"><span class="win">胜</span></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
-                            <td class="rangqiu"><span class="even">走</span></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
-                            <td class="rate"><Span class="lose">小</span></td>
-                            <td class="pural"><span class="win">双</span></td>
-                        </tr>
-                        <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="3" data-awayscore="2">
-                            <td class="name">
-                                <div class="border-name  high">挪超</div>
-                            </td>
-                            <td class="time">2017-08-30</td>
-                            <td class="vsl win"><a href="team.html">罗森博格</a></td>
-                            <td class="score">
-                                <a href="team.html">
-                                    <div class="result-sore"><span class="win">3</span>:<span>0</span></div>
-                                    <div>（1-0）</div>
-                                </a>
-                            </td>
-                            <td class="vsr"><a href="team.html">西班牙语体育会后备队</a></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
-                            <td class="result"><span class="win">胜</span></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
-                            <td class="rangqiu"><span class="even">走</span></td>
-                            <td class="data"></td>
-                            <td class="data"></td>
-                            <td class="data border"></td>
-                            <td class="rate"><Span class="lose">小</span></td>
-                            <td class="pural"><span class="win">双</span></td>
                         </tr>
                     </tbody>
                 </table>
                 <div class="history-info">
                     <div class="column1">
                         <span class="title t1"><span>20</span>场交锋，西班牙语体育会后备队：</span>
-                        <span class="title t2"><span>19</span>场开盘，西班牙语体育会后备队：</span>
+                        <span class="title t2"><span>0</span>场开盘，西班牙语体育会后备队：</span>
                         <span class="title empty"></span>
                     </div>
                     <div class="column2">
                         <div>
-                            <span class="win">4胜 <span class="pp">(20.00%)</span>、</span>
-                            <span class="even">5平 <span class="pp">(25.00%)</span>、</span>
-                            <span class="lose">11负 <span class="pp">(55.00%)</span>，</span>
-                            <span class="double">9场双 <span class="pp">(45.00%)</span>、</span>
-                            <span class="single">11场单 <span class="pp">(55.00%)</span></span>
+                            <span class="win"><span>4</span>胜 <span class="pp">(20.00%)</span></span>、
+                            <span class="even"><span>5</span>平 <span class="pp">(25.00%)</span></span>、
+                            <span class="lose"><span>11</span>负 <span class="pp">(55.00%)</span></span>，
+                            <span class="double"><span>9</span>场双 <span class="pp">(45.00%)</span></span>、
+                            <span class="single"><span>11</span>场单 <span class="pp">(55.00%)</span></span>
                         </div>
                         <div>
-                            <span class="win">8赢盘 <span class="pp">(42.11%)</span>、</span>
-                            <span class="even">0走水 <span class="pp">(00.00%)</span>、</span>
-                            <span class="lose">11输盘 <span class="pp">(57.89%)</span></span>
+                            <span class="win"><span>0</span>赢盘 <span class="pp">(0.00%)</span></span>、
+                            <span class="even"><span>0</span>走水 <span class="pp">(0.00%)</span></span>、
+                            <span class="lose"><span>0</span>输盘 <span class="pp">(0.00%))</span></span>
                         </div>
                         <div>
-                            <span class="win">9场大 <span class="pp">(47.37%)</span>、</span>
-                            <span class="even">2走水 <span class="pp">(10.52%)</span>、</span>
-                            <span class="lose">8场小 <span class="pp">(42.11%)</span></span>
+                            <span class="win"><span>0</span>场大 <span class="pp">(0.00%)</span></span>、
+                            <span class="even"><span>0</span>走水 <span class="pp">(0.00%)</span></span>、
+                            <span class="lose"><span>0</span>场小 <span class="pp">(0.00%)</span></span>
                         </div>
                     </div>
                 </div>
@@ -809,483 +500,173 @@
                             </div>
                             <!--choose-wrap-->
                         </div>
-                        <table class="team-recent-match">
+                        <table class="team-recent-match" width="100%">
                             <thead>
-                                <tr>
-                                    <td class="name">赛事</td>
-                                    <td class="time">比赛日期</td>
-                                    <td class="vsl">主队</td>
-                                    <td class="score">比分</td>
-                                    <td class="vsr">客队</td>
-                                    <td class="oupei" colspan="3">
-                                        <div class="ouzhi slide-text"> <span>SB</span> <i class="icon-arrow_g_downx"></i>
-                                            <div class="ouzhi-slide hide"> <i class="icon-arrow_dropMenu"></i>
-                                                <ul class="europe-odds-seletor">
-                                                    <li data-value="0">ManbetX</li>
-                                                    <li data-value="1">BET365</li>
-                                                    <li data-value="2">SB</li>
-                                                    <li data-value="3">10BET</li>
-                                                    <li data-value="4">立博</li>
-                                                    <li data-value="5">明陞</li>
-                                                    <li data-value="6">澳彩</li>
-                                                    <li data-value="7">SNAI</li>
-                                                    <li data-value="8">威廉</li>
-                                                    <li data-value="9">易胜博</li>
-                                                    <li data-value="10">韦德</li>
-                                                    <li data-value="11">EuroBet</li>
-                                                    <li data-value="12">Inter wetten</li>
-                                                    <li data-value="13">12bet/大发</li>
-                                                    <li data-value="14">利记</li>
-                                                    <li data-value="15">盈禾</li>
-                                                    <li data-value="16">18Bet</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="saiguo">赛果</td>
-                                    <td class="yapan" colspan="3">
-                                        <div class="zhongpan slide-text"> <span>SB</span> <i class="icon-arrow_g_downx"></i>
-                                            <div class="ouzhi-slide hide"> <i class="icon-arrow_dropMenu"></i>
-                                                <ul class="asia-odds-seletor">
-                                                    <li data-value="0">ManbetX</li>
-                                                    <li data-value="1">BET365</li>
-                                                    <li data-value="2">SB</li>
-                                                    <li data-value="3">10BET</li>
-                                                    <li data-value="4">立博</li>
-                                                    <li data-value="5">明陞</li>
-                                                    <li data-value="6">澳彩</li>
-                                                    <li data-value="7">SNAI</li>
-                                                    <li data-value="8">威廉</li>
-                                                    <li data-value="9">易胜博</li>
-                                                    <li data-value="10">韦德</li>
-                                                    <li data-value="11">EuroBet</li>
-                                                    <li data-value="12">Inter wetten</li>
-                                                    <li data-value="13">12bet/大发</li>
-                                                    <li data-value="14">利记</li>
-                                                    <li data-value="15">盈禾</li>
-                                                    <li data-value="16">18Bet</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="panlu">盘路</td>
-                                    <td class="daxiao" colspan="3">大小(大/总分/小)</td>
-                                    <td class="rate">大小</td>
-                                    <td class="pural">单双</td>
-                                </tr>
+                                        <tr>
+                                            <td class="name">赛事</td>
+                                            <td class="time">比赛日期</td>
+                                            <td class="vsl">主队</td>
+                                            <td class="score">比分</td>
+                                            <td class="vsr">客队</td>
+                                            <td class="oupei" colspan="3">
+                                                <div class="ouzhi slide-text"> <span>SB</span> <i class="icon-arrow_g_downx"></i>
+                                                    <div class="ouzhi-slide hide"> <i class="icon-arrow_dropMenu"></i>
+                                                        <ul class="europe-odds-seletor">
+                                                            <li data-value="0">ManbetX</li>
+                                                            <li data-value="1">BET365</li>
+                                                            <li data-value="2">SB</li>
+                                                            <li data-value="3">10BET</li>
+                                                            <li data-value="4">立博</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="saiguo">胜负</td>
+                                            <td class="yapan" colspan="3">
+                                                <div class="zhongpan slide-text"> <span>SB</span> <i class="icon-arrow_g_downx"></i>
+                                                    <div class="ouzhi-slide hide"> <i class="icon-arrow_dropMenu"></i>
+                                                        <ul class="asia-odds-seletor">
+                                                            <li data-value="0">ManbetX</li>
+                                                            <li data-value="1">BET365</li>
+                                                            <li data-value="2">SB</li>
+                                                            <li data-value="3">10BET</li>
+                                                            <li data-value="4">立博</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="panlu">让球</td>
+                                            <td class="rate">大小</td>
+                                            <td class="pural">单双</td>
+                                        </tr>
                             </thead>
                             <tbody>
                                 <tr class="no-record">
-                                    <td colspan="18">目前尚无资料</td>
+                                    <td colspan="15">双方无历史交锋纪录</td>
                                 </tr>
                                 <tr data-eu-odds="[[5.5,4.2,1.58],[5,3.75,1.66],[5.5,4.2,1.58],[4.85,3.95,1.66],[4.75,4,1.65],[4.85,3.8,1.64],[4.9,3.75,1.55],[3.35,3.5,2],[4.5,4,1.65],[5.1,4.2,1.5],[4.6,4.1,1.7],[null,null,null],[4.3,3.4,1.75],[4.85,3.8,1.64],[4.9,3.8,1.63],[5.5,4.2,1.58],[4.49,3.69,1.7]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,3,null],[null,3,null],[null,3,null],[null,3,null],[null,null,null],[null,3,null],[null,2.75,null],[null,null,null],[null,null,null],[null,2.75,null],[null,2.5,null],[null,null,null],[null,null,null],[null,3,null],[null,3,null],[null,3,null],[null,3,null]]" data-homescore="0" data-awayscore="2">
                                     <td class="name">
-                                        <div class="border-name high">挪超</div>
+                                        <div class="border-name  high">挪超</div>
                                     </td>
                                     <td class="time">2017-08-30</td>
-                                    <td class="vsl win"><a href="team.html" title="萨普斯堡">萨普斯堡</a></td>
+                                    <td class="vsl "><a href="team.html">西班牙语体育会后备队</a></td>
                                     <td class="score">
                                         <a href="team.html">
                                             <div class="result-sore"><span class="win">3</span>:<span>0</span></div>
                                             <div>（1-0）</div>
                                         </a>
                                     </td>
-                                    <td class="vsr"><a href="team.html" title="西班牙语体育会后备队">西班牙语体育会后备队</a></td>
-                                    <td class="data">1.6</td>
-                                    <td class="data">3.2</td>
-                                    <td class="data border">6.9</td>
-                                    <td class="saiguo"><span class="lose">负</span></td>
+                                    <td class="vsr win border"><a href="team.html">罗森博格</a></td>
                                     <td class="data"></td>
                                     <td class="data"></td>
                                     <td class="data border"></td>
-                                    <td class="panlu"><span class="lose">输</span></td>
+                                    <td class="result"><span class="lose">负</span></td>
                                     <td class="data"></td>
                                     <td class="data"></td>
                                     <td class="data border"></td>
-                                    <td class="rate win"><span>大</span></td>
+                                    <td class="rangqiu border"><span class="lose">输</span></td>
+                                    <td class="rate"><Span class="lose">小</span></td>
                                     <td class="pural"><span class="lose">单</span></td>
                                 </tr>
-                                <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="3" data-awayscore="2">
+                                <tr data-eu-odds="[[1.43,4.5,7.6],[1.36,4.75,8.5],[1.43,4.5,7.6],[1.39,4.8,7.25],[1.4,4.5,7.5],[1.39,4.5,7.2],[1.36,4.4,6.5],[1.4,4.6,7],[1.4,4.5,7],[1.41,4.5,5.6],[1.36,5,8],[null,null,null],[1.4,4.1,7],[1.39,4.5,7.2],[1.39,4.3,7.8],[1.43,4.5,7.6],[1.39,4.42,7.52]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,2.75,null],[null,2.75,null],[null,2.75,null],[null,3,null],[null,2.75,null],[null,2.75,null],[null,2.75,null],[null,null,null],[null,null,null],[null,2.75,null],[null,2.5,null],[null,null,null],[null,null,null],[null,2.75,null],[null,2.75,null],[null,2.75,null],[null,2.75,null]]" data-homescore="4" data-awayscore="0">
                                     <td class="name">
-                                        <div class="border-name high">挪超</div>
+                                        <div class="border-name  high">挪超</div>
                                     </td>
                                     <td class="time">2017-08-30</td>
-                                    <td class="vsl win"><a href="team.html" title="西班牙语体育会后备队">西班牙语体育会后备队</a></td>
+                                    <td class="vsl win"><a href="team.html">罗森博格</a></td>
                                     <td class="score">
                                         <a href="team.html">
-                                            <div class="result-sore"><span class="win">1</span>:<span>2</span></div>
-                                            <div>（0-1）</div>
-                                        </a>
-                                    </td>
-                                    <td class="vsr"><a href="team.html" title="特罗姆瑟">特罗姆瑟</a></td>
-                                    <td class="data">1.6</td>
-                                    <td class="data">3.2</td>
-                                    <td class="data border">6.9</td>
-                                    <td class="saiguo"><span class="lose">负</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="panlu"><span class="lose">输</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="rate win"><span>大</span></td>
-                                    <td class="pural"><span class="lose">单</span></td>
-                                </tr>
-                                <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="3" data-awayscore="2">
-                                    <td class="name">
-                                        <div class="border-name high">挪超</div>
-                                    </td>
-                                    <td class="time">2017-08-30</td>
-                                    <td class="vsl win"><a href="team.html" title="瓦勒伦加">瓦勒伦加</a></td>
-                                    <td class="score">
-                                        <a href="team.html">
-                                            <div class="result-sore"><span class="win">1</span>:<span>0</span></div>
-                                            <div>（0-0）</div>
-                                        </a>
-                                    </td>
-                                    <td class="vsr"><a href="team.html" title="西班牙语体育会后备队">西班牙语体育会后备队</a></td>
-                                    <td class="data">1.6</td>
-                                    <td class="data">3.2</td>
-                                    <td class="data border">6.9</td>
-                                    <td class="saiguo"><span class="lose">负</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="panlu"><span class="lose">输</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="rate win"><span>大</span></td>
-                                    <td class="pural"><span class="lose">单</span></td>
-                                </tr>
-                                <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="3" data-awayscore="2">
-                                    <td class="name">
-                                        <div class="border-name high">球会友谊</div>
-                                    </td>
-                                    <td class="time">2017-08-30</td>
-                                    <td class="vsl win"><a href="team.html" title="佐加顿斯">佐加顿斯</a></td>
-                                    <td class="score">
-                                        <a href="team.html">
-                                            <div class="result-sore"><span class="win">2</span>:<span>0</span></div>
-                                            <div>（0-0）</div>
-                                        </a>
-                                    </td>
-                                    <td class="vsr"><a href="team.html" title="西班牙语体育会后备队">西班牙语体育会后备队</a></td>
-                                    <td class="data">1.6</td>
-                                    <td class="data">3.2</td>
-                                    <td class="data border">6.9</td>
-                                    <td class="saiguo"><span class="lose">负</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="panlu"><span class="lose">输</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="rate win"><span>大</span></td>
-                                    <td class="pural"><span class="lose">单</span></td>
-                                </tr>
-                                <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="3" data-awayscore="2">
-                                    <td class="name">
-                                        <div class="border-name high">球会友谊</div>
-                                    </td>
-                                    <td class="time">2017-08-30</td>
-                                    <td class="vsl win"><a href="team.html" title="西班牙语体育会后备队">西班牙语体育会后备队</a></td>
-                                    <td class="score">
-                                        <a href="team.html">
-                                            <div class="result-sore"><span class="win">3</span>:<span>3</span></div>
-                                            <div>（1-2）</div>
-                                        </a>
-                                    </td>
-                                    <td class="vsr"><a href="team.html" title="桑德尼斯">桑德尼斯</a></td>
-                                    <td class="data">1.6</td>
-                                    <td class="data">3.2</td>
-                                    <td class="data border">6.9</td>
-                                    <td class="saiguo"><span class="even">平</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="panlu"></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="rate win"></td>
-                                    <td class="pural"><span class="lose">单</span></td>
-                                </tr>
-                                <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="3" data-awayscore="2">
-                                    <td class="name">
-                                        <div class="border-name high">球会友谊</div>
-                                    </td>
-                                    <td class="time">2017-08-30</td>
-                                    <td class="vsl win"><a href="team.html" title="UII奇萨">UII奇萨</a></td>
-                                    <td class="score">
-                                        <a href="team.html">
-                                            <div class="result-sore"><span class="win">0</span>:<span>1</span></div>
-                                            <div>（0-0）</div>
-                                        </a>
-                                    </td>
-                                    <td class="vsr"><a href="team.html" title="西班牙语体育会后备队">西班牙语体育会后备队</a></td>
-                                    <td class="data">1.6</td>
-                                    <td class="data">3.2</td>
-                                    <td class="data border">6.9</td>
-                                    <td class="saiguo"><span class="win">胜</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="panlu"><span class="win">赢</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="rate win"><span>大</span></td>
-                                    <td class="pural"><span class="lose">单</span></td>
-                                </tr>
-                                <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="3" data-awayscore="2">
-                                    <td class="name">
-                                        <div class="border-name high">球会友谊</div>
-                                    </td>
-                                    <td class="time">2017-08-30</td>
-                                    <td class="vsl win"><a href="team.html" title="布兰">布兰</a></td>
-                                    <td class="score">
-                                        <a href="team.html">
-                                            <div class="result-sore"><span class="win">1</span>:<span>2</span></div>
-                                            <div>（1-1）</div>
-                                        </a>
-                                    </td>
-                                    <td class="vsr"><a href="team.html" title="西班牙语体育会后备队">西班牙语体育会后备队</a></td>
-                                    <td class="data">1.6</td>
-                                    <td class="data">3.2</td>
-                                    <td class="data border">6.9</td>
-                                    <td class="saiguo"><span class="win">胜</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="panlu"><span class="win">赢</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="rate win"><span>大</span></td>
-                                    <td class="pural"><span class="lose">单</span></td>
-                                </tr>
-                                <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="3" data-awayscore="2">
-                                    <td class="name">
-                                        <div class="border-name high">球会友谊</div>
-                                    </td>
-                                    <td class="time">2017-08-30</td>
-                                    <td class="vsl win"><a href="team.html" title="海于格松">海于格松</a></td>
-                                    <td class="score">
-                                        <a href="team.html">
-                                            <div class="result-sore"><span class="win">2</span>:<span>2</span></div>
-                                            <div>（1-2）</div>
-                                        </a>
-                                    </td>
-                                    <td class="vsr"><a href="team.html" title="西班牙语体育会后备队">西班牙语体育会后备队</a></td>
-                                    <td class="data">1.6</td>
-                                    <td class="data">3.2</td>
-                                    <td class="data border">6.9</td>
-                                    <td class="saiguo"><span class="even">平</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="panlu"><span class="even">走</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="rate win"><span>大</span></td>
-                                    <td class="pural"><span class="lose">单</span></td>
-                                </tr>
-                                <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="3" data-awayscore="2">
-                                    <td class="name">
-                                        <div class="border-name high">球会友谊</div>
-                                    </td>
-                                    <td class="time">2017-08-30</td>
-                                    <td class="vsl win"><a href="team.html" title="西班牙语体育会后备队">西班牙语体育会后备队</a></td>
-                                    <td class="score">
-                                        <a href="team.html">
-                                            <div class="result-sore"><span class="win">1</span>:<span>2</span></div>
-                                            <div>（0-1）</div>
-                                        </a>
-                                    </td>
-                                    <td class="vsr"><a href="team.html" title="维达">维达</a></td>
-                                    <td class="data">1.6</td>
-                                    <td class="data">3.2</td>
-                                    <td class="data border">6.9</td>
-                                    <td class="saiguo"><span class="lose">负</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="panlu"></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="rate win"></td>
-                                    <td class="pural"><span class="lose">单</span></td>
-                                </tr>
-                                <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="3" data-awayscore="2">
-                                    <td class="name">
-                                        <div class="border-name high">球会友谊</div>
-                                    </td>
-                                    <td class="time">2017-08-30</td>
-                                    <td class="vsl win"><a href="team.html" title="西班牙语体育会后备队">西班牙语体育会后备队</a></td>
-                                    <td class="score">
-                                        <a href="team.html">
-                                            <div class="result-sore"><span class="win">2</span>:<span>0</span></div>
-                                            <div>（2-0）</div>
-                                        </a>
-                                    </td>
-                                    <td class="vsr"><a href="team.html" title="谢夫">谢夫</a></td>
-                                    <td class="data">1.6</td>
-                                    <td class="data">3.2</td>
-                                    <td class="data border">6.9</td>
-                                    <td class="saiguo"><span class="win">胜</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="panlu"><span class="win">赢</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="rate win"><span>大</span></td>
-                                    <td class="pural"><span class="lose">单</span></td>
-                                </tr>
-                                <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="3" data-awayscore="2">
-                                    <td class="name">
-                                        <div class="border-name high">球会友谊</div>
-                                    </td>
-                                    <td class="time">2017-08-30</td>
-                                    <td class="vsl win"><a href="team.html" title="西班牙语体育会后备队">西班牙语体育会后备队</a></td>
-                                    <td class="score">
-                                        <a href="team.html">
-                                            <div class="result-sore"><span class="win">1</span>:<span>1</span></div>
-                                            <div>（0-0）</div>
-                                        </a>
-                                    </td>
-                                    <td class="vsr"><a href="team.html" title="斯达">斯达</a></td>
-                                    <td class="data">1.6</td>
-                                    <td class="data">3.2</td>
-                                    <td class="data border">6.9</td>
-                                    <td class="saiguo"><span class="even">平</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="panlu"><span class="lose">输</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="rate win"><span>大</span></td>
-                                    <td class="pural"><span class="lose">单</span></td>
-                                </tr>
-                                <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="3" data-awayscore="2">
-                                    <td class="name">
-                                        <div class="border-name high">球会友谊</div>
-                                    </td>
-                                    <td class="time">2017-08-30</td>
-                                    <td class="vsl win"><a href="team.html" title="西班牙语体育会后备队">西班牙语体育会后备队</a></td>
-                                    <td class="score">
-                                        <a href="team.html">
-                                            <div class="result-sore"><span class="win">6</span>:<span>0</span></div>
-                                            <div>（4-0）</div>
-                                        </a>
-                                    </td>
-                                    <td class="vsr"><a href="team.html" title="玛达">玛达</a></td>
-                                    <td class="data">1.6</td>
-                                    <td class="data">3.2</td>
-                                    <td class="data border">6.9</td>
-                                    <td class="saiguo"><span class="win">胜</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="panlu"><span class="win">赢</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="rate win"><span>大</span></td>
-                                    <td class="pural"><span class="lose">单</span></td>
-                                </tr>
-                                <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="3" data-awayscore="2">
-                                    <td class="name">
-                                        <div class="border-name high">球会友谊</div>
-                                    </td>
-                                    <td class="time">2017-08-30</td>
-                                    <td class="vsl win"><a href="team.html" title="西班牙语体育会后备队">西班牙语体育会后备队</a></td>
-                                    <td class="score">
-                                        <a href="team.html">
-                                            <div class="result-sore"><span class="win">2</span>:<span>0</span></div>
+                                            <div class="result-sore"><span class="win">3</span>:<span>0</span></div>
                                             <div>（1-0）</div>
                                         </a>
                                     </td>
-                                    <td class="vsr"><a href="team.html" title="布羅德">布羅德</a></td>
-                                    <td class="data">1.6</td>
-                                    <td class="data">3.2</td>
-                                    <td class="data border">6.9</td>
-                                    <td class="saiguo"><span class="win">胜</span></td>
+                                    <td class="vsr"><a href="team.html">西班牙语体育会后备队</a></td>
                                     <td class="data"></td>
                                     <td class="data"></td>
                                     <td class="data border"></td>
-                                    <td class="panlu"><span class="lose">输</span></td>
+                                    <td class="result"><span class="win">胜</span></td>
                                     <td class="data"></td>
                                     <td class="data"></td>
                                     <td class="data border"></td>
-                                    <td class="rate win"><span>大</span></td>
-                                    <td class="pural"><span class="lose">单</span></td>
+                                    <td class="rangqiu border"><span class="win">赢</span></td>
+                                    <td class="rate"><span class="win">大</span></td>
+                                    <td class="pural"><span class="win">双</span></td>
                                 </tr>
-                                <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="3" data-awayscore="2">
+                                <tr data-eu-odds="[[3.1,3.65,1.98],[3.25,3.75,1.9],[3.1,3.65,1.98],[3.4,3.5,1.86],[3.5,3.75,1.95],[3.25,3.45,1.99],[null,null,null],[null,null,null],[null,null,null],[3.1,3.8,1.89],[3.4,3.5,1.85],[null,null,null],[null,null,null],[3.25,3.45,1.99],[3.45,3.3,1.97],[3.1,3.65,1.98],[3.28,3.47,1.97]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,2.75,null],[null,2.75,null],[null,2.75,null],[null,2.75,null],[null,3,null],[null,2.75,null],[null,null,null],[null,null,null],[null,null,null],[null,2.75,null],[null,2.5,null],[null,null,null],[null,null,null],[null,2.75,null],[null,2.75,null],[null,2.75,null],[null,2.75,null]]" data-homescore="1" data-awayscore="1">
                                     <td class="name">
-                                        <div class="border-name high">挪超</div>
+                                        <div class="border-name  high">球会友谊</div>
                                     </td>
                                     <td class="time">2017-08-30</td>
-                                    <td class="vsl win"><a href="team.html" title="西班牙语体育会后备队">西班牙语体育会后备队</a></td>
+                                    <td class="vsl "><a href="team.html">西班牙语体育会后备队</a></td>
                                     <td class="score">
                                         <a href="team.html">
-                                            <div class="result-sore"><span class="win">0</span>:<span>2</span></div>
-                                            <div>（0-1）</div>
+                                            <div class="result-sore"><span class="win">3</span>:<span>0</span></div>
+                                            <div>（1-0）</div>
                                         </a>
                                     </td>
-                                    <td class="vsr"><a href="team.html" title="瓦勒伦加">瓦勒伦加</a></td>
-                                    <td class="data">1.6</td>
-                                    <td class="data">3.2</td>
-                                    <td class="data border">6.9</td>
-                                    <td class="saiguo"><span class="lose">负</span></td>
+                                    <td class="vsr"><a href="team.html">罗森博格</a></td>
                                     <td class="data"></td>
                                     <td class="data"></td>
                                     <td class="data border"></td>
-                                    <td class="panlu"><span class="lose">输</span></td>
+                                    <td class="result"><span class="even">平</span></td>
                                     <td class="data"></td>
                                     <td class="data"></td>
                                     <td class="data border"></td>
-                                    <td class="rate win"><span>大</span></td>
+                                    <td class="rangqiu border"><span class="win">赢</span></td>
+                                    <td class="rate"><Span class="lose">小</span></td>
                                     <td class="pural"><span class="lose">单</span></td>
                                 </tr>
-                                <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="3" data-awayscore="2">
+                                <tr data-eu-odds="[[1.42,5.1,6.65],[1.4,4.75,7],[1.42,5.1,6.65],[1.38,4.75,7],[1.4,4.5,7],[1.41,4.5,6.7],[1.35,4.7,6.1],[1.4,4.85,6.5],[1.44,4.33,6],[1.41,5.1,4.6],[1.4,5,7.5],[null,null,null],[1.4,4.1,7],[1.41,4.5,6.7],[1.4,4.4,7.4],[1.42,5.1,6.65],[1.39,4.71,6.86]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,3.25,null],[null,3.25,null],[null,3.25,null],[null,3.25,null],[null,3.25,null],[null,3.25,null],[null,3.25,null],[null,null,null],[null,null,null],[null,3.25,null],[null,2.5,null],[null,null,null],[null,null,null],[null,3.25,null],[null,3.25,null],[null,3.25,null],[null,3.25,null]]" data-homescore="2" data-awayscore="0">
                                     <td class="name">
-                                        <div class="border-name high">挪超</div>
+                                        <div class="border-name  high">挪超</div>
                                     </td>
                                     <td class="time">2017-08-30</td>
-                                    <td class="vsl win"><a href="team.html" title="博多格林特">博多格林特</a></td>
+                                    <td class="vsl win"><a href="team.html">罗森博格</a></td>
                                     <td class="score">
                                         <a href="team.html">
-                                            <div class="result-sore"><span class="win">0</span>:<span>2</span></div>
-                                            <div>（0-1）</div>
+                                            <div class="result-sore"><span class="win">3</span>:<span>0</span></div>
+                                            <div>（1-0）</div>
                                         </a>
                                     </td>
-                                    <td class="vsr"><a href="team.html" title="西班牙语体育会后备队">西班牙语体育会后备队</a></td>
-                                    <td class="data">1.6</td>
-                                    <td class="data">3.2</td>
-                                    <td class="data border">6.9</td>
-                                    <td class="saiguo"><span class="win">胜</span></td>
+                                    <td class="vsr"><a href="team.html">西班牙语体育会后备队</a></td>
                                     <td class="data"></td>
                                     <td class="data"></td>
                                     <td class="data border"></td>
-                                    <td class="panlu"><span class="win">赢</span></td>
+                                    <td class="result"><span class="win">胜</span></td>
                                     <td class="data"></td>
                                     <td class="data"></td>
                                     <td class="data border"></td>
-                                    <td class="rate win"><span>大</span></td>
+                                    <td class="rangqiu border"><span class="win">赢</span></td>
+                                    <td class="rate"><Span class="lose">小</span></td>
+                                    <td class="pural"><span class="win">双</span></td>
+                                </tr>
+                                <tr data-eu-odds="[[3.65,3.6,2],[3.5,3.6,2],[3.65,3.6,2],[3.4,3.6,2],[3.25,3.4,2.05],[3.54,3.45,1.97],[3.1,3.4,2],[3.35,3.5,2.05],[3.25,3.4,2.05],[3.35,3.3,2],[3.5,3.6,2.1],[null,null,null],[3.3,3.3,2],[3.54,3.45,1.97],[3.55,3.4,1.99],[3.65,3.6,2],[3.38,3.44,2.05]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,3,null],[null,2.75,null],[null,3,null],[null,3,null],[null,null,null],[null,2.75,null],[null,2.75,null],[null,null,null],[null,null,null],[null,2.75,null],[null,2.5,null],[null,null,null],[null,null,null],[null,2.75,null],[null,2.75,null],[null,3,null],[null,2.75,null]]" data-homescore="1" data-awayscore="4">
+                                    <td class="name">
+                                        <div class="border-name  high">挪超</div>
+                                    </td>
+                                    <td class="time">2017-08-30</td>
+                                    <td class="vsl "><a href="team.html">西班牙语体育会后备队</a></td>
+                                    <td class="score">
+                                        <a href="team.html">
+                                            <div class="result-sore"><span class="win">3</span>:<span>0</span></div>
+                                            <div>（1-0）</div>
+                                        </a>
+                                    </td>
+                                    <td class="vsr win border"><a href="team.html">罗森博格</a></td>
+                                    <td class="data"></td>
+                                    <td class="data"></td>
+                                    <td class="data border"></td>
+                                    <td class="result"><span class="lose">负</span></td>
+                                    <td class="data"></td>
+                                    <td class="data"></td>
+                                    <td class="data border"></td>
+                                    <td class="rangqiu border"><span class="lose">输</span></td>
+                                    <td class="rate"><span class="win">大</span></td>
                                     <td class="pural"><span class="lose">单</span></td>
                                 </tr>
                             </tbody>
                         </table>
-                        <div class="chartwrap">
+                        <div class="vslct chartwrap">
                             <div class="data-chart hide">
                                 <div data-score="[[[2,0],['西班牙语体育会后备队','博多格林特']],[[0,2],['西班牙语体育会后备队','瓦勒伦加']],[[2,0],['西班牙语体育会后备队','布羅德']],[[6,0],['西班牙语体育会后备队','玛达']],[[1,1],['西班牙语体育会后备队','斯达']],[[2,0],['西班牙语体育会后备队','谢夫']],[[1,2],['西班牙语体育会后备队','维达']],[[2,2],['西班牙语体育会后备队','海于格松']],[[2,1],['西班牙语体育会后备队','布兰']],[[1,0],['西班牙语体育会后备队','UII奇萨']],[[3,3],['西班牙语体育会后备队','桑德尼斯']],[[0,2],['西班牙语体育会后备队','佐加顿斯']],[[0,1],['西班牙语体育会后备队','瓦勒伦加']],[[1,2],['西班牙语体育会后备队','特罗姆瑟']],[[0,3],['西班牙语体育会后备队','萨普斯堡']]]" data-label="西班牙语体育会后备队 近15场，6胜3平6负，进23球，失19球，胜率40%，赢盘率29%，大球率100%" class="recent-score"></div>
                             </div>
@@ -1308,26 +689,26 @@
                             <div class="chartinfo">
                                 <div class="column1">
                                     <span class="title t1"><span>20</span>场交锋，西班牙语体育会后备队：</span>
-                                    <span class="title t2"><span>19</span>场开盘，西班牙语体育会后备队：</span>
+                                    <span class="title t2"><span>0</span>场开盘，西班牙语体育会后备队：</span>
                                     <span class="title empty"></span>
                                 </div>
                                 <div class="column2">
                                     <div>
-                                        <span class="win">4胜 <span class="pp">(20.00%)</span>、</span>
-                                        <span class="even">5平 <span class="pp">(25.00%)</span>、</span>
-                                        <span class="lose">11负 <span class="pp">(55.00%)</span>，</span>
-                                        <span class="double">9场双 <span class="pp">(45.00%)</span>、</span>
-                                        <span class="single">11场单 <span class="pp">(55.00%)</span></span>
+                                        <span class="win"><span>4</span>胜 <span class="pp">(20.00%)</span></span>、
+                                        <span class="even"><span>5</span>平 <span class="pp">(25.00%)</span></span>、
+                                        <span class="lose"><span>11</span>负 <span class="pp">(55.00%)</span></span>，
+                                        <span class="double"><span>9</span>场双 <span class="pp">(45.00%)</span></span>、
+                                        <span class="single"><span>11</span>场单 <span class="pp">(55.00%)</span></span>
                                     </div>
                                     <div>
-                                        <span class="win">8赢盘 <span class="pp">(42.11%)</span>、</span>
-                                        <span class="even">0走水 <span class="pp">(00.00%)</span>、</span>
-                                        <span class="lose">11输盘 <span class="pp">(57.89%)</span></span>
+                                        <span class="win"><span>0</span>赢盘 <span class="pp">(0.00%)</span></span>、
+                                        <span class="even"><span>0</span>走水 <span class="pp">(0.00%)</span></span>、
+                                        <span class="lose"><span>0</span>输盘 <span class="pp">(0.00%))</span></span>
                                     </div>
                                     <div>
-                                        <span class="win">9场大 <span class="pp">(47.37%)</span>、</span>
-                                        <span class="even">2走水 <span class="pp">(10.52%)</span>、</span>
-                                        <span class="lose">8场小 <span class="pp">(42.11%)</span></span>
+                                        <span class="win"><span>0</span>场大 <span class="pp">(0.00%)</span></span>、
+                                        <span class="even"><span>0</span>走水 <span class="pp">(0.00%)</span></span>、
+                                        <span class="lose"><span>0</span>场小 <span class="pp">(0.00%)</span></span>
                                     </div>
                                 </div>
                             </div>
@@ -1386,483 +767,174 @@
                             </div>
                             <!--choose-wrap-->
                         </div>
-                        <table class="team-recent-match">
+                        <table class="team-recent-match" width="100%">
                             <thead>
-                                <tr>
-                                    <td class="name">赛事</td>
-                                    <td class="time">比赛日期</td>
-                                    <td class="vsl">主队</td>
-                                    <td class="score">比分</td>
-                                    <td class="vsr">客队</td>
-                                    <td class="oupei" colspan="3">
-                                        <div class="ouzhi slide-text"> <span>SB</span> <i class="icon-arrow_g_downx"></i>
-                                            <div class="ouzhi-slide hide"> <i class="icon-arrow_dropMenu"></i>
-                                                <ul class="europe-odds-seletor">
-                                                    <li data-value="0">ManbetX</li>
-                                                    <li data-value="1">BET365</li>
-                                                    <li data-value="2">SB</li>
-                                                    <li data-value="3">10BET</li>
-                                                    <li data-value="4">立博</li>
-                                                    <li data-value="5">明陞</li>
-                                                    <li data-value="6">澳彩</li>
-                                                    <li data-value="7">SNAI</li>
-                                                    <li data-value="8">威廉</li>
-                                                    <li data-value="9">易胜博</li>
-                                                    <li data-value="10">韦德</li>
-                                                    <li data-value="11">EuroBet</li>
-                                                    <li data-value="12">Inter wetten</li>
-                                                    <li data-value="13">12bet/大发</li>
-                                                    <li data-value="14">利记</li>
-                                                    <li data-value="15">盈禾</li>
-                                                    <li data-value="16">18Bet</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="saiguo">赛果</td>
-                                    <td class="yapan" colspan="3">
-                                        <div class="zhongpan slide-text"> <span>SB</span> <i class="icon-arrow_g_downx"></i>
-                                            <div class="ouzhi-slide hide"> <i class="icon-arrow_dropMenu"></i>
-                                                <ul class="asia-odds-seletor">
-                                                    <li data-value="0">ManbetX</li>
-                                                    <li data-value="1">BET365</li>
-                                                    <li data-value="2">SB</li>
-                                                    <li data-value="3">10BET</li>
-                                                    <li data-value="4">立博</li>
-                                                    <li data-value="5">明陞</li>
-                                                    <li data-value="6">澳彩</li>
-                                                    <li data-value="7">SNAI</li>
-                                                    <li data-value="8">威廉</li>
-                                                    <li data-value="9">易胜博</li>
-                                                    <li data-value="10">韦德</li>
-                                                    <li data-value="11">EuroBet</li>
-                                                    <li data-value="12">Inter wetten</li>
-                                                    <li data-value="13">12bet/大发</li>
-                                                    <li data-value="14">利记</li>
-                                                    <li data-value="15">盈禾</li>
-                                                    <li data-value="16">18Bet</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="panlu">盘路</td>
-                                    <td class="daxiao" colspan="3">大小(大/总分/小)</td>
-                                    <td class="rate">大小</td>
-                                    <td class="pural">单双</td>
-                                </tr>
+                                        <tr>
+                                            <td class="name">赛事</td>
+                                            <td class="time">比赛日期</td>
+                                            <td class="vsl">主队</td>
+                                            <td class="score">比分</td>
+                                            <td class="vsr">客队</td>
+                                            <td class="oupei" colspan="3">
+                                                <div class="ouzhi slide-text"> <span>SB</span> <i class="icon-arrow_g_downx"></i>
+                                                    <div class="ouzhi-slide hide"> <i class="icon-arrow_dropMenu"></i>
+                                                        <ul class="europe-odds-seletor">
+                                                            <li data-value="0">ManbetX</li>
+                                                            <li data-value="1">BET365</li>
+                                                            <li data-value="2">SB</li>
+                                                            <li data-value="3">10BET</li>
+                                                            <li data-value="4">立博</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="saiguo">胜负</td>
+                                            <td class="yapan" colspan="3">
+                                                <div class="zhongpan slide-text"> <span>SB</span> <i class="icon-arrow_g_downx"></i>
+                                                    <div class="ouzhi-slide hide"> <i class="icon-arrow_dropMenu"></i>
+                                                        <ul class="asia-odds-seletor">
+                                                            <li data-value="0">ManbetX</li>
+                                                            <li data-value="1">BET365</li>
+                                                            <li data-value="2">SB</li>
+                                                            <li data-value="3">10BET</li>
+                                                            <li data-value="4">立博</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="panlu">让球</td>
+                                            <td class="rate">大小</td>
+                                            <td class="pural">单双</td>
+                                        </tr>
                             </thead>
                             <tbody>
                                 <tr class="no-record">
-                                    <td colspan="18">目前尚无资料</td>
+                                    <td colspan="15">双方无历史交锋纪录</td>
                                 </tr>
                                 <tr data-eu-odds="[[5.5,4.2,1.58],[5,3.75,1.66],[5.5,4.2,1.58],[4.85,3.95,1.66],[4.75,4,1.65],[4.85,3.8,1.64],[4.9,3.75,1.55],[3.35,3.5,2],[4.5,4,1.65],[5.1,4.2,1.5],[4.6,4.1,1.7],[null,null,null],[4.3,3.4,1.75],[4.85,3.8,1.64],[4.9,3.8,1.63],[5.5,4.2,1.58],[4.49,3.69,1.7]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,3,null],[null,3,null],[null,3,null],[null,3,null],[null,null,null],[null,3,null],[null,2.75,null],[null,null,null],[null,null,null],[null,2.75,null],[null,2.5,null],[null,null,null],[null,null,null],[null,3,null],[null,3,null],[null,3,null],[null,3,null]]" data-homescore="0" data-awayscore="2">
                                     <td class="name">
-                                        <div class="border-name high">挪超</div>
+                                        <div class="border-name  high">挪超</div>
                                     </td>
                                     <td class="time">2017-08-30</td>
-                                    <td class="vsl win"><a href="team.html" title="罗森博格">罗森博格</a></td>
-                                    <td class="score">
-                                        <a href="team.html">
-                                            <div class="result-sore"><span class="win">2</span>:<span>1</span></div>
-                                            <div>（2-1）</div>
-                                        </a>
-                                    </td>
-                                    <td class="vsr"><a href="team.html" title="莫尔德">莫尔德</a></td>
-                                    <td class="data">1.6</td>
-                                    <td class="data">3.2</td>
-                                    <td class="data border">6.9</td>
-                                    <td class="saiguo"><span class="win">胜</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="panlu"><span class="lose">输</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="rate win"><span>大</span></td>
-                                    <td class="pural"><span class="lose">单</span></td>
-                                </tr>
-                                <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="3" data-awayscore="2">
-                                    <td class="name">
-                                        <div class="border-name high">挪超</div>
-                                    </td>
-                                    <td class="time">2017-08-30</td>
-                                    <td class="vsl win"><a href="team.html" title="桑德菲杰">桑德菲杰</a></td>
-                                    <td class="score">
-                                        <a href="team.html">
-                                            <div class="result-sore"><span class="win">0</span>:<span>3</span></div>
-                                            <div>（0-0）</div>
-                                        </a>
-                                    </td>
-                                    <td class="vsr"><a href="team.html" title="罗森博格">罗森博格</a></td>
-                                    <td class="data">1.6</td>
-                                    <td class="data">3.2</td>
-                                    <td class="data border">6.9</td>
-                                    <td class="saiguo"><span class="win">胜</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="panlu"><span class="win">赢</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="rate win"><span>大</span></td>
-                                    <td class="pural"><span class="lose">单</span></td>
-                                </tr>
-                                <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="3" data-awayscore="2">
-                                    <td class="name">
-                                        <div class="border-name high">挪超</div>
-                                    </td>
-                                    <td class="time">2017-08-30</td>
-                                    <td class="vsl win"><a href="team.html" title="罗森博格">罗森博格</a></td>
+                                    <td class="vsl "><a href="team.html">西班牙语体育会后备队</a></td>
                                     <td class="score">
                                         <a href="team.html">
                                             <div class="result-sore"><span class="win">3</span>:<span>0</span></div>
-                                            <div>（0-0）</div>
-                                        </a>
-                                    </td>
-                                    <td class="vsr"><a href="team.html" title="奥德格伦兰">奥德格伦兰</a></td>
-                                    <td class="data">1.6</td>
-                                    <td class="data">3.2</td>
-                                    <td class="data border">6.9</td>
-                                    <td class="saiguo"><span class="win">胜</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="panlu"><span class="win">赢</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="rate win"><span>大</span></td>
-                                    <td class="pural"><span class="lose">单</span></td>
-                                </tr>
-                                <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="3" data-awayscore="2">
-                                    <td class="name">
-                                        <div class="border-name low">挪超杯</div>
-                                    </td>
-                                    <td class="time">2017-08-30</td>
-                                    <td class="vsl win"><a href="team.html" title="布兰">布兰</a></td>
-                                    <td class="score">
-                                        <a href="team.html">
-                                            <div class="result-sore"><span class="win">0</span>:<span>2</span></div>
-                                            <div>（0-1）</div>
-                                        </a>
-                                    </td>
-                                    <td class="vsr"><a href="team.html" title="罗森博格">罗森博格</a></td>
-                                    <td class="data">1.6</td>
-                                    <td class="data">3.2</td>
-                                    <td class="data border">6.9</td>
-                                    <td class="saiguo"><span class="win">胜</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="panlu"><span class="win">赢</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="rate win"><span>大</span></td>
-                                    <td class="pural"><span class="lose">单</span></td>
-                                </tr>
-                                <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="3" data-awayscore="2">
-                                    <td class="name">
-                                        <div class="border-name high">球会友谊</div>
-                                    </td>
-                                    <td class="time">2017-08-30</td>
-                                    <td class="vsl win"><a href="team.html" title="罗森博格">罗森博格</a></td>
-                                    <td class="score">
-                                        <a href="team.html">
-                                            <div class="result-sore"><span class="win">4</span>:<span>1</span></div>
                                             <div>（1-0）</div>
                                         </a>
                                     </td>
-                                    <td class="vsr"><a href="team.html" title="兰黑姆">兰黑姆</a></td>
-                                    <td class="data">1.6</td>
-                                    <td class="data">3.2</td>
-                                    <td class="data border">6.9</td>
-                                    <td class="saiguo"><span class="win">胜</span></td>
+                                    <td class="vsr win border"><a href="team.html">罗森博格</a></td>
                                     <td class="data"></td>
                                     <td class="data"></td>
                                     <td class="data border"></td>
-                                    <td class="panlu"><span class="win">赢</span></td>
+                                    <td class="result"><span class="lose">负</span></td>
                                     <td class="data"></td>
                                     <td class="data"></td>
                                     <td class="data border"></td>
-                                    <td class="rate win"><span>大</span></td>
+                                    <td class="rangqiu border"><span class="lose">输</span></td>
+                                    <td class="rate"><Span class="lose">小</span></td>
                                     <td class="pural"><span class="lose">单</span></td>
                                 </tr>
-                                <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="3" data-awayscore="2">
+                                <tr data-eu-odds="[[1.43,4.5,7.6],[1.36,4.75,8.5],[1.43,4.5,7.6],[1.39,4.8,7.25],[1.4,4.5,7.5],[1.39,4.5,7.2],[1.36,4.4,6.5],[1.4,4.6,7],[1.4,4.5,7],[1.41,4.5,5.6],[1.36,5,8],[null,null,null],[1.4,4.1,7],[1.39,4.5,7.2],[1.39,4.3,7.8],[1.43,4.5,7.6],[1.39,4.42,7.52]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,2.75,null],[null,2.75,null],[null,2.75,null],[null,3,null],[null,2.75,null],[null,2.75,null],[null,2.75,null],[null,null,null],[null,null,null],[null,2.75,null],[null,2.5,null],[null,null,null],[null,null,null],[null,2.75,null],[null,2.75,null],[null,2.75,null],[null,2.75,null]]" data-homescore="4" data-awayscore="0">
                                     <td class="name">
-                                        <div class="border-name high">球会友谊</div>
+                                        <div class="border-name  high">挪超</div>
                                     </td>
                                     <td class="time">2017-08-30</td>
-                                    <td class="vsl win"><a href="team.html" title="罗森博格">罗森博格</a></td>
+                                    <td class="vsl win"><a href="team.html">罗森博格</a></td>
                                     <td class="score">
                                         <a href="team.html">
-                                            <div class="result-sore"><span class="win">1</span>:<span>1</span></div>
+                                            <div class="result-sore"><span class="win">3</span>:<span>0</span></div>
                                             <div>（1-0）</div>
                                         </a>
                                     </td>
-                                    <td class="vsr"><a href="team.html" title="哈夫纳夫约杜尔">哈夫纳夫约杜尔</a></td>
-                                    <td class="data">1.6</td>
-                                    <td class="data">3.2</td>
-                                    <td class="data border">6.9</td>
-                                    <td class="saiguo"><span class="even">平</span></td>
+                                    <td class="vsr"><a href="team.html">西班牙语体育会后备队</a></td>
                                     <td class="data"></td>
                                     <td class="data"></td>
                                     <td class="data border"></td>
-                                    <td class="panlu"><span class="lose">输</span></td>
+                                    <td class="result"><span class="win">胜</span></td>
                                     <td class="data"></td>
                                     <td class="data"></td>
                                     <td class="data border"></td>
-                                    <td class="rate win"><span>大</span></td>
-                                    <td class="pural"><span class="lose">单</span></td>
+                                    <td class="rangqiu border"><span class="win">赢</span></td>
+                                    <td class="rate"><span class="win">大</span></td>
+                                    <td class="pural"><span class="win">双</span></td>
                                 </tr>
-                                <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="3" data-awayscore="2">
+                                <tr data-eu-odds="[[3.1,3.65,1.98],[3.25,3.75,1.9],[3.1,3.65,1.98],[3.4,3.5,1.86],[3.5,3.75,1.95],[3.25,3.45,1.99],[null,null,null],[null,null,null],[null,null,null],[3.1,3.8,1.89],[3.4,3.5,1.85],[null,null,null],[null,null,null],[3.25,3.45,1.99],[3.45,3.3,1.97],[3.1,3.65,1.98],[3.28,3.47,1.97]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,2.75,null],[null,2.75,null],[null,2.75,null],[null,2.75,null],[null,3,null],[null,2.75,null],[null,null,null],[null,null,null],[null,null,null],[null,2.75,null],[null,2.5,null],[null,null,null],[null,null,null],[null,2.75,null],[null,2.75,null],[null,2.75,null],[null,2.75,null]]" data-homescore="1" data-awayscore="1">
                                     <td class="name">
-                                        <div class="border-name high">球会友谊</div>
+                                        <div class="border-name  high">球会友谊</div>
                                     </td>
                                     <td class="time">2017-08-30</td>
-                                    <td class="vsl win"><a href="team.html" title="赫尔辛基">赫尔辛基</a></td>
+                                    <td class="vsl "><a href="team.html">西班牙语体育会后备队</a></td>
                                     <td class="score">
                                         <a href="team.html">
-                                            <div class="result-sore"><span class="win">1</span>:<span>2</span></div>
-                                            <div>（0-0）</div>
-                                        </a>
-                                    </td>
-                                    <td class="vsr"><a href="team.html" title="罗森博格">罗森博格</a></td>
-                                    <td class="data">1.6</td>
-                                    <td class="data">3.2</td>
-                                    <td class="data border">6.9</td>
-                                    <td class="saiguo"><span class="win">胜</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="panlu"><span class="even">走</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="rate win"><span>大</span></td>
-                                    <td class="pural"><span class="lose">单</span></td>
-                                </tr>
-                                <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="3" data-awayscore="2">
-                                    <td class="name">
-                                        <div class="border-name high">球会友谊</div>
-                                    </td>
-                                    <td class="time">2017-08-30</td>
-                                    <td class="vsl win"><a href="team.html" title="马尔默">马尔默</a></td>
-                                    <td class="score">
-                                        <a href="team.html">
-                                            <div class="result-sore"><span class="win">1</span>:<span>1</span></div>
+                                            <div class="result-sore"><span class="win">3</span>:<span>0</span></div>
                                             <div>（1-0）</div>
                                         </a>
                                     </td>
-                                    <td class="vsr"><a href="team.html" title="罗森博格">罗森博格</a></td>
-                                    <td class="data">1.6</td>
-                                    <td class="data">3.2</td>
-                                    <td class="data border">6.9</td>
-                                    <td class="saiguo"><span class="even">平</span></td>
+                                    <td class="vsr"><a href="team.html">罗森博格</a></td>
                                     <td class="data"></td>
                                     <td class="data"></td>
                                     <td class="data border"></td>
-                                    <td class="panlu"><span class="even">走</span></td>
+                                    <td class="result"><span class="even">平</span></td>
                                     <td class="data"></td>
                                     <td class="data"></td>
                                     <td class="data border"></td>
-                                    <td class="rate win"><span>大</span></td>
+                                    <td class="rangqiu border"><span class="win">赢</span></td>
+                                    <td class="rate"><Span class="lose">小</span></td>
                                     <td class="pural"><span class="lose">单</span></td>
                                 </tr>
-                                <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="3" data-awayscore="2">
+                                <tr data-eu-odds="[[1.42,5.1,6.65],[1.4,4.75,7],[1.42,5.1,6.65],[1.38,4.75,7],[1.4,4.5,7],[1.41,4.5,6.7],[1.35,4.7,6.1],[1.4,4.85,6.5],[1.44,4.33,6],[1.41,5.1,4.6],[1.4,5,7.5],[null,null,null],[1.4,4.1,7],[1.41,4.5,6.7],[1.4,4.4,7.4],[1.42,5.1,6.65],[1.39,4.71,6.86]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,3.25,null],[null,3.25,null],[null,3.25,null],[null,3.25,null],[null,3.25,null],[null,3.25,null],[null,3.25,null],[null,null,null],[null,null,null],[null,3.25,null],[null,2.5,null],[null,null,null],[null,null,null],[null,3.25,null],[null,3.25,null],[null,3.25,null],[null,3.25,null]]" data-homescore="2" data-awayscore="0">
                                     <td class="name">
-                                        <div class="border-name high">球会友谊</div>
+                                        <div class="border-name  high">挪超</div>
                                     </td>
                                     <td class="time">2017-08-30</td>
-                                    <td class="vsl win"><a href="team.html" title="罗森博格">罗森博格</a></td>
+                                    <td class="vsl win"><a href="team.html">罗森博格</a></td>
                                     <td class="score">
                                         <a href="team.html">
-                                            <div class="result-sore"><span class="win">1</span>:<span>1</span></div>
+                                            <div class="result-sore"><span class="win">3</span>:<span>0</span></div>
                                             <div>（1-0）</div>
                                         </a>
                                     </td>
-                                    <td class="vsr"><a href="team.html" title="松兹瓦尔">松兹瓦尔</a></td>
-                                    <td class="data">1.6</td>
-                                    <td class="data">3.2</td>
-                                    <td class="data border">6.9</td>
-                                    <td class="saiguo"><span class="even">平</span></td>
+                                    <td class="vsr"><a href="team.html">西班牙语体育会后备队</a></td>
                                     <td class="data"></td>
                                     <td class="data"></td>
                                     <td class="data border"></td>
-                                    <td class="panlu"><span class="lose">输</span></td>
+                                    <td class="result"><span class="win">胜</span></td>
                                     <td class="data"></td>
                                     <td class="data"></td>
                                     <td class="data border"></td>
-                                    <td class="rate win"><span>大</span></td>
-                                    <td class="pural"><span class="lose">单</span></td>
+                                    <td class="rangqiu border"><span class="win">赢</span></td>
+                                    <td class="rate"><Span class="lose">小</span></td>
+                                    <td class="pural"><span class="win">双</span></td>
                                 </tr>
-                                <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="3" data-awayscore="2">
+                                <tr data-eu-odds="[[3.65,3.6,2],[3.5,3.6,2],[3.65,3.6,2],[3.4,3.6,2],[3.25,3.4,2.05],[3.54,3.45,1.97],[3.1,3.4,2],[3.35,3.5,2.05],[3.25,3.4,2.05],[3.35,3.3,2],[3.5,3.6,2.1],[null,null,null],[3.3,3.3,2],[3.54,3.45,1.97],[3.55,3.4,1.99],[3.65,3.6,2],[3.38,3.44,2.05]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,3,null],[null,2.75,null],[null,3,null],[null,3,null],[null,null,null],[null,2.75,null],[null,2.75,null],[null,null,null],[null,null,null],[null,2.75,null],[null,2.5,null],[null,null,null],[null,null,null],[null,2.75,null],[null,2.75,null],[null,3,null],[null,2.75,null]]" data-homescore="1" data-awayscore="4">
                                     <td class="name">
-                                        <div class="border-name high">球会友谊</div>
+                                        <div class="border-name  high">挪超</div>
                                     </td>
                                     <td class="time">2017-08-30</td>
-                                    <td class="vsl win"><a href="team.html" title="哥本哈根">哥本哈根</a></td>
+                                    <td class="vsl "><a href="team.html">西班牙语体育会后备队</a></td>
                                     <td class="score">
                                         <a href="team.html">
-                                            <div class="result-sore"><span class="win">0</span>:<span>2</span></div>
-                                            <div>（0-2）</div>
-                                        </a>
-                                    </td>
-                                    <td class="vsr"><a href="team.html" title="罗森博格">罗森博格</a></td>
-                                    <td class="data">1.6</td>
-                                    <td class="data">3.2</td>
-                                    <td class="data border">6.9</td>
-                                    <td class="saiguo"><span class="win">胜</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="panlu"><span class="win">赢</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="rate win"><span>大</span></td>
-                                    <td class="pural"><span class="lose">单</span></td>
-                                </tr>
-                                <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="3" data-awayscore="2">
-                                    <td class="name">
-                                        <div class="border-name high">球会友谊</div>
-                                    </td>
-                                    <td class="time">2017-08-30</td>
-                                    <td class="vsl win"><a href="team.html" title="萨尔茨堡">萨尔茨堡</a></td>
-                                    <td class="score">
-                                        <a href="team.html">
-                                            <div class="result-sore"><span class="win">2</span>:<span>0</span></div>
-                                            <div>（0-0）</div>
-                                        </a>
-                                    </td>
-                                    <td class="vsr"><a href="team.html" title="罗森博格">罗森博格</a></td>
-                                    <td class="data">1.6</td>
-                                    <td class="data">3.2</td>
-                                    <td class="data border">6.9</td>
-                                    <td class="saiguo"><span class="lose">负</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="panlu"><span class="lose">输</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="rate win"><span>大</span></td>
-                                    <td class="pural"><span class="lose">单</span></td>
-                                </tr>
-                                <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="3" data-awayscore="2">
-                                    <td class="name">
-                                        <div class="border-name high">球会友谊</div>
-                                    </td>
-                                    <td class="time">2017-08-30</td>
-                                    <td class="vsl win"><a href="team.html" title="罗森博格">罗森博格</a></td>
-                                    <td class="score">
-                                        <a href="team.html">
-                                            <div class="result-sore"><span class="win">3</span>:<span>1</span></div>
+                                            <div class="result-sore"><span class="win">3</span>:<span>0</span></div>
                                             <div>（1-0）</div>
                                         </a>
                                     </td>
-                                    <td class="vsr"><a href="team.html" title="兰黑姆">兰黑姆</a></td>
-                                    <td class="data">1.6</td>
-                                    <td class="data">3.2</td>
-                                    <td class="data border">6.9</td>
-                                    <td class="saiguo"><span class="win">胜</span></td>
+                                    <td class="vsr win border"><a href="team.html">罗森博格</a></td>
                                     <td class="data"></td>
                                     <td class="data"></td>
                                     <td class="data border"></td>
-                                    <td class="panlu"><span class="win">赢</span></td>
+                                    <td class="result"><span class="lose">负</span></td>
                                     <td class="data"></td>
                                     <td class="data"></td>
                                     <td class="data border"></td>
-                                    <td class="rate win"><span>大</span></td>
-                                    <td class="pural"><span class="lose">单</span></td>
-                                </tr>
-                                <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="3" data-awayscore="2">
-                                    <td class="name">
-                                        <div class="border-name high">挪威杯</div>
-                                    </td>
-                                    <td class="time">2017-08-30</td>
-                                    <td class="vsl win"><a href="team.html" title="罗森博格">罗森博格</a></td>
-                                    <td class="score">
-                                        <a href="team.html">
-                                            <div class="result-sore"><span class="win">4</span>:<span>0</span></div>
-                                            <div>（1-0）</div>
-                                        </a>
-                                    </td>
-                                    <td class="vsr"><a href="team.html" title="康斯文格">康斯文格</a></td>
-                                    <td class="data">1.6</td>
-                                    <td class="data">3.2</td>
-                                    <td class="data border">6.9</td>
-                                    <td class="saiguo"><span class="win">胜</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="panlu"><span class="win">赢</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="rate win"><span>大</span></td>
-                                    <td class="pural"><span class="lose">单</span></td>
-                                </tr>
-                                <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="3" data-awayscore="2">
-                                    <td class="name">
-                                        <div class="border-name high">挪超</div>
-                                    </td>
-                                    <td class="time">2017-08-30</td>
-                                    <td class="vsl win"><a href="team.html" title="罗森博格">罗森博格</a></td>
-                                    <td class="score">
-                                        <a href="team.html">
-                                            <div class="result-sore"><span class="win">2</span>:<span>1</span></div>
-                                            <div>（1-0）</div>
-                                        </a>
-                                    </td>
-                                    <td class="vsr"><a href="team.html" title="博多格林特">博多格林特</a></td>
-                                    <td class="data">1.6</td>
-                                    <td class="data">3.2</td>
-                                    <td class="data border">6.9</td>
-                                    <td class="saiguo"><span class="win">胜</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="panlu"><span class="lose">输</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="rate win"><span>大</span></td>
-                                    <td class="pural"><span class="lose">单</span></td>
-                                </tr>
-                                <tr data-eu-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-asia-odds='[{"a1":0.58,"b1":-0.75,"c1":"1.35","d1":"負","e1":"輸","f1":"","a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.24,"b1":-0.5,"c1":"2.38","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0.34,"b1":-0.5,"c1":"2.08","d1":"負","e1":"輸","f1":"大"    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""},{"a1":0,"b1":0,"c1":0,"d1":"","e1":"","f1":"","a2":0,"b2":0,"c2":0,"d2":"","e2":"","f2":""},{"a1":0.73,"b1":-0.5,"c1":"1.12","d1":"負","e1":"輸","f1":""    ,"a2":"","b2":"0","c2":"","d2":"負","e2":"","f2":""}]' data-bigsmall-odds="[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]]" data-homescore="3" data-awayscore="2">
-                                    <td class="name">
-                                        <div class="border-name high">挪超</div>
-                                    </td>
-                                    <td class="time">2017-08-30</td>
-                                    <td class="vsl win"><a href="team.html" title="斯托姆加斯特">斯托姆加斯特</a></td>
-                                    <td class="score">
-                                        <a href="team.html">
-                                            <div class="result-sore"><span class="win">2</span>:<span>0</span></div>
-                                            <div>（0-0）</div>
-                                        </a>
-                                    </td>
-                                    <td class="vsr"><a href="team.html" title="罗森博格">罗森博格</a></td>
-                                    <td class="data">1.6</td>
-                                    <td class="data">3.2</td>
-                                    <td class="data border">6.9</td>
-                                    <td class="saiguo"><span class="lose">负</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="panlu"><span class="lose">输</span></td>
-                                    <td class="data"></td>
-                                    <td class="data"></td>
-                                    <td class="data border"></td>
-                                    <td class="rate win"><span>大</span></td>
+                                    <td class="rangqiu border"><span class="lose">输</span></td>
+                                    <td class="rate"><span class="win">大</span></td>
                                     <td class="pural"><span class="lose">单</span></td>
                                 </tr>
                             </tbody>
                         </table>
-                        <div class="chartwrap">
+                        </table>
+                        <div class="vsrct chartwrap">
                             <div class="data-chart hide">
                                 <div data-score="[[[0,2],['罗森博格','斯托姆加斯特']],[[2,1],['罗森博格','博多格林特']],[[4,0],['罗森博格','康斯文格']],[[3,1],['罗森博格','兰黑姆']],[[0,2],['罗森博格','萨尔茨堡']],[[2,0],['罗森博格','哥本哈根']],[[1,1],['罗森博格','松兹瓦尔']],[[1,1],['罗森博格','马尔默']],[[2,1],['罗森博格','赫尔辛基']],[[1,1],['罗森博格','哈夫纳夫约杜尔']],[[4,1],['罗森博格','兰黑姆']],[[2,0],['罗森博格','布兰']],[[3,0],['罗森博格','奥德格伦兰']],[[3,0],['罗森博格','桑德菲杰']],[[2,1],['罗森博格','莫尔德']]]" data-label="罗森博格 近15场，10胜3平2负，进30球，失12球，胜率66%，赢盘率43%，大球率100%" class="recent-score"></div>
                             </div>
@@ -1885,26 +957,26 @@
                             <div class="chartinfo">
                                 <div class="column1">
                                     <span class="title t1"><span>20</span>场交锋，罗森博格：</span>
-                                    <span class="title t2"><span>19</span>场开盘，罗森博格：</span>
+                                    <span class="title t2"><span>0</span>场开盘，罗森博格：</span>
                                     <span class="title empty"></span>
                                 </div>
                                 <div class="column2">
                                     <div>
-                                        <span class="win">4胜 <span class="pp">(20.00%)</span>、</span>
-                                        <span class="even">5平 <span class="pp">(25.00%)</span>、</span>
-                                        <span class="lose">11负 <span class="pp">(55.00%)</span>，</span>
-                                        <span class="double">9场双 <span class="pp">(45.00%)</span>、</span>
-                                        <span class="single">11场单 <span class="pp">(55.00%)</span></span>
+                                        <span class="win"><span>4</span>胜 <span class="pp">(20.00%)</span></span>、
+                                        <span class="even"><span>5</span>平 <span class="pp">(25.00%)</span></span>、
+                                        <span class="lose"><span>11</span>负 <span class="pp">(55.00%)</span></span>，
+                                        <span class="double"><span>9</span>场双 <span class="pp">(45.00%)</span></span>、
+                                        <span class="single"><span>11</span>场单 <span class="pp">(55.00%)</span></span>
                                     </div>
                                     <div>
-                                        <span class="win">8赢盘 <span class="pp">(42.11%)</span>、</span>
-                                        <span class="even">0走水 <span class="pp">(00.00%)</span>、</span>
-                                        <span class="lose">11输盘 <span class="pp">(57.89%)</span></span>
+                                        <span class="win"><span>0</span>赢盘 <span class="pp">(0.00%)</span></span>、
+                                        <span class="even"><span>0</span>走水 <span class="pp">(0.00%)</span></span>、
+                                        <span class="lose"><span>0</span>输盘 <span class="pp">(0.00%))</span></span>
                                     </div>
                                     <div>
-                                        <span class="win">9场大 <span class="pp">(47.37%)</span>、</span>
-                                        <span class="even">2走水 <span class="pp">(10.52%)</span>、</span>
-                                        <span class="lose">8场小 <span class="pp">(42.11%)</span></span>
+                                        <span class="win"><span>0</span>场大 <span class="pp">(0.00%)</span></span>、
+                                        <span class="even"><span>0</span>走水 <span class="pp">(0.00%)</span></span>、
+                                        <span class="lose"><span>0</span>场小 <span class="pp">(0.00%)</span></span>
                                     </div>
                                 </div>
                             </div>
@@ -3775,7 +2847,7 @@
     <!--container-->
     <footer class="footer">
         <ol>
-            <li>Copyright © 2017 星城体育 <span class="hidden-xs">Sport.StarKing.</span> ALL Rights Reserved</li>
+            <li>Copyright © 2017 星城体育 | <a href="http://www.miitbeian.gov.cn" target="_blank">黔ICP备18000990号-6</a> ALL Rights Reserved</li>
             <li class="hidden-xs"><em></em><a href="team.html" target="_blank">关于星城</a></li>
             <li class="hidden-xs"><em></em><a href="team.html" target="_blank">免责声明</a></li>
             <li class="hidden-xs"><em></em><a href="team.html" target="_blank">网站地图</a></li>
@@ -3788,7 +2860,7 @@
         <div class="feedback-box">
             <div class="box-hd"> <i class="icon-btn_close close-feedback"></i>
                 <h2><i class="icon-icon_feedback"></i>反馈</h2>
-                <h3><i class="icon-icon_comment"></i>亲爱的用户，您有什么好的想法和建议？请尽情告诉我们为您解决吧！</h3>
+                <h3><i class="iconfont icon-liveanimation"></i>亲爱的用户，您有什么好的想法和建议？请尽情告诉我们为您解决吧！</h3>
             </div>
             <div class="box-bd">
                 <form action="" class="feedback-form" id="feedbackForm" novalidate>
@@ -3800,7 +2872,7 @@
                             <label for="">反馈内容控制在500字以内</label>
                         </div>
                     </div>
-                    <p> <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <p> <i class="iconfont icon-iconemail"></i>
                         <input type="text" name="email" autocomplete="off" placeholder="请输入邮箱" />
                     </p>
                     <p class="test-area " id="feedback-captcha">我是验证码</p>
@@ -3809,26 +2881,7 @@
             </div>
         </div>
     </div>
-        <!--登录弹屏-->
-    <div class="login-sign-box hide">
-        <!-- 登录退出 BEGIN-->
-        <div class="exit-login hide">
-            <div class="hd-tip"><span>提示</span> <i class="icon-btn_close user-exit-btn"></i></div>
-            <p>确定退出登录？</p>
-            <div class="btn-box">
-                <button class="sure-btn" id="exitLogin">确定</button>
-                <button class="cancel-btn">取消</button>
-            </div>
-        </div>
-        <!-- 登录退出 END-->
-        <div class="grey-bg" id="layoutBg"></div>
-        <div class="login-box" id="loginBox">
-            <div class="box-bd">
-                <img src="../base/img/login-img.png">
-                <div class="login-area"> <i class="icon-btn_close close-login"></i>
-                    <div class="other-login">
-                        <div class="tit">第三方登录</div>
-                        <div class="links">
+
     <!--登录弹屏-->
     <div class="login-sign-box hide">
         <!-- 登录退出 BEGIN-->
@@ -3860,21 +2913,13 @@
         </div>
     </div>
 
-                            <a href="../base/register-complete.html"><i class="icon-btn_tencent40x40_n"></i></a>
-                            <a href="../base/register-complete.html"><i class="icon-btn_sina40x40_n disabled"></i></a>
-                            <a href="../base/register-complete.html"><i class="icon-btn_wechat40x40_n disabled"></i></a>
-                        </div>
-                        <p>登陆后方可添加收藏、发表留言</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- jQuery (necessary) -->
     <script src="../base/js/jquery-1.11.3.min.js"></script>
-    <script src="../base/js/jquery.cookie.js"></script>
     <script src="../base/js/jquery-ui.min.js"></script>
+
+    <!--shuju-fenxi-charts2.js会用到-->
+    <script src="../base/js/jquery.cookie.js"></script>
+
     <!-- Site's js file -->
     <script type="text/javascript" charset="utf-8" src="../base/js/common.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/shuju-fenxi-charts2.js"></script>

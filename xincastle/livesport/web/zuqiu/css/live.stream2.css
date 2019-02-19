@@ -1,4 +1,5 @@
 ﻿@charset "utf-8";
+
 .away .normal-tooltip .content span,
 .card-tip .content span,
 .home .normal-tooltip .content span,
@@ -181,7 +182,8 @@
 
 #scoreBoard .board-panel .team {
     width: 160px;
-    height: 100%
+    height: 100%;
+    text-align: center;
 }
 
 #scoreBoard .board-panel .team .flag img {
@@ -247,6 +249,13 @@
 #scoreBoard .board-footer td {
     height: 20px;
     text-align: center
+}
+
+#scoreBoard .board-footer .name {
+    width: 80px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 #scoreBoard .board-footer th {
@@ -450,10 +459,11 @@
 }
 
 .team-name {
+    display: block;
     width: 155px;
     font-size: 10pt;
     color: #fff;
-    overflow: hidden
+    overflow:hidden;
 }
 
 .animation-live,
@@ -618,6 +628,13 @@
     display: block
 }
 
+.attacking.home .background::after,
+.attacking.home .team-name {
+    right: 250px;
+    text-shadow: 1px 1px 2px #0f4c15;
+    position: absolute
+}
+
 .away .player,
 .away .player.first,
 .away .player.second,
@@ -752,23 +769,17 @@
 }
 
 .attacking.home .background::after {
-    position: absolute;
     bottom: 15px;
-    right: 250px;
     content: '进攻';
     color: #fff;
     font-size: 24px;
-    z-index: 99;
-    text-shadow: 1px 1px 2px #0f4c15
+    z-index: 99
 }
 
 .attacking.home .team-name {
-    position: absolute;
     bottom: 47px;
-    right: 250px;
     text-align: right;
-    z-index: 99;
-    text-shadow: 1px 1px 2px #0f4c15
+    z-index: 99
 }
 
 .attacking.away .background::after {
@@ -1443,6 +1454,13 @@
     font-size: 25px
 }
 
+.teamtrap.away .player::after,
+.teamtrap.home .player::after {
+    font-size: 24px;
+    font-style: normal;
+    text-shadow: 1px 1px 0 #000
+}
+
 .goal-tooltip .footer .score span.home,
 .goalshot .goal-tooltip .footer .score span.away {
     width: 47%;
@@ -1485,6 +1503,7 @@
     transition: all 1.6s linear
 }
 
+.gf .shotontarget.away .player,
 .gf .shotontarget.home .player,
 .shotontarget.away .player {
     -webkit-transition: all 1.6s linear
@@ -1520,8 +1539,22 @@
     -moz-animation: sttamove 1.6s linear infinite;
     -ms-animation: sttamove 1.6s linear infinite;
     animation: sttamove 1.6s linear infinite;
-    -webkit-transition: all 1.6s linear;
     transition: all 1.6s linear
+}
+
+.shotontarget.away .ball,
+.shotontarget.home .ball,
+.shotontarget.home .ball::after {
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -webkit-animation-delay: .8s;
+    -moz-animation-delay: .8s;
+    -ms-animation-delay: .8s;
+    -webkit-animation-duration: 1.6s;
+    -webkit-transition: all 1.6s linear;
+    height: 18px;
+    width: 18px
 }
 
 .shotoff.home .ball::after,
@@ -1529,31 +1562,17 @@
     background: url(../img/soccerball_s.gif) center center no-repeat
 }
 
-.shotontarget.home .ball,
-.shotontarget.home .ball::after {
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -ms-animation-iteration-count: infinite
-}
-
 .shotontarget.home .ball {
     position: absolute;
     bottom: 93px;
     right: 290px;
-    width: 18px;
-    height: 18px;
     -webkit-animation-name: stthxAxis;
     -moz-animation-name: stthxAxis;
     -ms-animation-name: stthxAxis;
     animation-name: stthxAxis;
-    -webkit-animation-delay: .8s;
-    -moz-animation-delay: .8s;
-    -ms-animation-delay: .8s;
     animation-delay: .8s;
-    -webkit-animation-duration: 1.6s;
     animation-duration: 1.6s;
     animation-iteration-count: infinite;
-    -webkit-transition: all 1.6s linear;
     transition: all 1.6s linear;
     z-index: 99
 }
@@ -1561,15 +1580,8 @@
 .shotontarget.away .ball,
 .shotontarget.home .ball::after {
     display: block;
-    width: 18px;
-    height: 18px;
-    -webkit-animation-delay: .8s;
-    -moz-animation-delay: .8s;
-    -ms-animation-delay: .8s;
-    -webkit-animation-duration: 1.6s;
     -moz-animation-duration: 1.6s;
     -ms-animation-duration: 1.6s;
-    -webkit-transition: all 1.6s linear;
     animation-delay: .8s;
     animation-duration: 1.6s;
     transition: all 1.6s linear
@@ -1598,9 +1610,6 @@
     -moz-animation-name: sttaxAxis;
     -ms-animation-name: sttaxAxis;
     animation-name: sttaxAxis;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -ms-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
     z-index: 99
 }
@@ -1713,6 +1722,10 @@
 .shotoff.away .ball,
 .shotoff.home .ball,
 .shotoff.home .ball::after {
+    -webkit-animation-delay: 1.6s;
+    -moz-animation-delay: 1.6s;
+    -ms-animation-delay: 1.6s;
+    -webkit-transition: all 1.8s linear;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite
 }
@@ -1730,15 +1743,11 @@
     -moz-animation-name: sthxAxis;
     -ms-animation-name: sthxAxis;
     animation-name: sthxAxis;
-    -webkit-animation-delay: 1.6s;
-    -moz-animation-delay: 1.6s;
-    -ms-animation-delay: 1.6s;
     animation-delay: 1.6s;
     -webkit-animation-duration: 1.8s;
     -moz-animation-duration: 1.8s;
     animation-duration: 1.8s;
     animation-iteration-count: infinite;
-    -webkit-transition: all 1.8s linear;
     transition: all 1.8s linear
 }
 
@@ -1747,13 +1756,9 @@
     display: block;
     width: 18px;
     height: 18px;
-    -webkit-animation-delay: 1.6s;
-    -moz-animation-delay: 1.6s;
-    -ms-animation-delay: 1.6s;
     -webkit-animation-duration: 1.8s;
     -moz-animation-duration: 1.8s;
     -ms-animation-iteration-count: infinite;
-    -webkit-transition: all 1.8s linear;
     animation-delay: 1.6s;
     transition: all 1.8s linear
 }
@@ -1782,14 +1787,20 @@
     animation-iteration-count: infinite
 }
 
+.cornerkick.away .ball,
 .cornerkick.home .ball,
+.cornerkick.home .ball::after,
 .shotoff.away .ball::after {
-    display: block;
-    width: 18px;
-    height: 18px;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
-    -ms-animation-iteration-count: infinite
+    -ms-animation-iteration-count: infinite;
+    display: block
+}
+
+.cornerkick.home .ball,
+.shotoff.away .ball::after {
+    width: 18px;
+    height: 18px
 }
 
 .freekick.home .ball,
@@ -1816,18 +1827,19 @@
 }
 
 .cornerkick.away .ball,
-.cornerkick.away .ball::after,
-.cornerkick.home .ball,
-.cornerkick.home .ball::after {
-    transform-origin: 0 0;
-    transition-timing-function: linear
-}
-
 .cornerkick.home .ball,
 .cornerkick.home .ball::after {
     -webkit-animation-duration: 1.8s;
     -moz-animation-duration: 1.8s;
     -ms-animation-duration: 1.8s
+}
+
+.cornerkick.away .ball,
+.cornerkick.away .ball::after,
+.cornerkick.home .ball,
+.cornerkick.home .ball::after {
+    transform-origin: 0 0;
+    transition-timing-function: linear
 }
 
 .cornerkick {
@@ -1904,13 +1916,9 @@
 
 .cornerkick.away .ball,
 .cornerkick.home .ball::after {
-    display: block;
     width: 18px;
     -webkit-animation-delay: 1.3s;
     -moz-animation-delay: 1.3s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -ms-animation-iteration-count: infinite;
     height: 18px;
     position: absolute;
     animation-delay: 1.3s;
@@ -1934,9 +1942,6 @@
     -moz-animation-name: ckrxAxis;
     -ms-animation-name: ckrxAxis;
     animation-name: ckrxAxis;
-    -webkit-animation-duration: 1.8s;
-    -moz-animation-duration: 1.8s;
-    -ms-animation-duration: 1.8s;
     animation-duration: 1.8s
 }
 
@@ -2373,7 +2378,9 @@
     transition: all 1.8s linear
 }
 
+.goalkick.away .ball,
 .goalkick.home .ball,
+.goalkick.home .ball::after,
 .outkick.away .arc .ball,
 .outkick.away .arc .ball::after {
     -ms-animation-iteration-count: infinite;
@@ -2409,7 +2416,9 @@
     height: 18px;
     -ms-animation-duration: 1.8s;
     -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    transition: all 1.8s linear
 }
 
 .outkick.away .arc .ball::after {
@@ -2421,13 +2430,12 @@
     -moz-animation-delay: 1.3s;
     -ms-animation-delay: 1.3s;
     animation-delay: 1.3s;
-    animation-duration: 1.8s;
-    animation-iteration-count: infinite;
-    transition: all 1.8s linear
+    animation-duration: 1.8s
 }
 
 .goalkick.away .ball,
-.goalkick.home .ball {
+.goalkick.home .ball,
+.goalkick.home .ball::after {
     -webkit-animation-duration: 1.8s;
     -moz-animation-duration: 1.8s
 }
@@ -2491,6 +2499,17 @@
     left: 54px
 }
 
+.goalkick.away .ball,
+.goalkick.home .ball,
+.goalkick.home .ball::after {
+    left: 0;
+    -webkit-animation-delay: .9s;
+    -moz-animation-delay: .9s;
+    -ms-animation-delay: .9s;
+    bottom: 0;
+    position: absolute
+}
+
 .goalkick.away .arc {
     top: -80px;
     right: 54px
@@ -2505,37 +2524,20 @@
 }
 
 .goalkick.home .ball {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     z-index: 99;
     -webkit-animation-name: gkbhxAxis;
     -moz-animation-name: gkbhxAxis;
     -ms-animation-name: gkbhxAxis;
     animation-name: gkbhxAxis;
-    -webkit-animation-delay: .9s;
-    -moz-animation-delay: .9s;
-    -ms-animation-delay: .9s;
     animation-delay: .9s;
-    animation-duration: 1.8s;
-    animation-iteration-count: infinite;
-    transition: all 1.8s linear
+    animation-duration: 1.8s
 }
 
 .goalkick.away .ball,
 .goalkick.home .ball::after {
-    left: 0;
-    -webkit-animation-delay: .9s;
-    -moz-animation-delay: .9s;
-    -ms-animation-delay: .9s;
     -ms-animation-duration: 1.8s;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
-    -ms-animation-iteration-count: infinite;
-    -webkit-transition: all 1.8s linear;
-    position: absolute;
-    bottom: 0;
-    display: block;
     width: 18px;
     height: 18px;
     animation-delay: .9s;
@@ -2557,8 +2559,6 @@
     -moz-animation-name: gkbyAxis;
     -ms-animation-name: gkbyAxis;
     animation-name: gkbyAxis;
-    -webkit-animation-duration: 1.8s;
-    -moz-animation-duration: 1.8s;
     animation-duration: 1.8s
 }
 
@@ -2641,10 +2641,7 @@
     bottom: -39px;
     width: 100px;
     content: '控球';
-    color: #fff;
-    font-size: 24px;
-    font-style: normal;
-    text-shadow: 1px 1px 0 #000
+    color: #fff
 }
 
 .teamtrap.home .flyball,
@@ -2702,10 +2699,7 @@
     bottom: -39px;
     width: 100px;
     content: '控球';
-    color: #fff;
-    font-size: 24px;
-    font-style: normal;
-    text-shadow: 1px 1px 0 #000
+    color: #fff
 }
 
 .teamtrap.away .flyball,

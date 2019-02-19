@@ -9,21 +9,32 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="shortcut icon" href="favicon.ico" />
+
+    <!--20181210 美女视窗-->
+    <link href="../base/css/jquery-ui.css" rel="stylesheet">
     <link href="../base/css/common.css" rel="stylesheet">
+    <!--20181210 美女视窗-->
+    <link href="../base/css/zhubo.css" rel="stylesheet">
     <link href="css/bifen.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+
     <!-- jQuery-->
     <script src="../base/js/jquery-1.11.3.min.js"></script>
-    <!--轮播广告 不需要时可拿掉-->
-    <script src="../base/js/carousel.js"></script>
+    <!--20181210 美女视窗-->
+    <script src="../base/js/jquery-ui.js"></script>
+    <script>
+      $(function() {
+        $(".zhubo-content").draggable();
+      });
+    //点登出按钮写入登出视窗
+        function LogoutDialogue() {
+            $("body").append('<div id="logoutBox-panel"class="util-dialog"style="display: block;"><div class="mask"></div><div class="util-dialog-cda alt exit-login fixed show"style="border-radius: 10px; margin-left: -150px; margin-top: -200px;"><i class="iconfont icon-close"onclick="hideLogout();"></i><div class="dialog-title">提示</div><div class="dialog-content center">点击确认后退出登入状态</div><div class="dialog-buttons"><div class="dialog-button "style="width: 150px;"onclick="hideLogout();">取消</div><div class="dialog-button primary bd-l"style="width: 149px;"onclick="hideLogout();">确定</div></div></div></div>');
+        }
+    </script>
     <!-- Site's js file -->
     <script type="text/javascript" charset="utf-8" src="../base/js/common.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/bifen.js"></script>
+    <!--轮播广告 不需要时可拿掉-->
+    <script src="../base/js/carousel.js"></script>
     <script type="text/javascript">
     /* 此段控制手动进球通知按钮 不要放入正式站!*/
     $('#add-to-list').click(function() {
@@ -40,11 +51,13 @@
 </head>
 
 <body>
+
     <div id="page-loading" class="loading-web load-ok hide">
         <span class="fl"></span>
         <span class="text"><span>L</span> <span>o</span> <span>a</span> <span>d</span> <span>i</span> <span>n</span> <span>g</span></span>
         <span class="ok iconfont icon-iconresults"></span>
     </div>
+
     <!--导览列-->
     <nav class="navbar navbar-default">
         <div class="ss-header hide" id="ss-header">
@@ -81,9 +94,10 @@
                         <li class="link none"><a href="#">赛马</a></li>
                     </ul>
                 </li>
-                <li><a href="database.html">资料库</a></li>
+                <li><a href="../../database/index.html">资料库</a></li>
                 <li><a href="../wiki/index.html">彩票百科</a></li>
                 <li><a href="http://news.xincastle-sports.com/">情报中心</a></li>
+                <li><a href="http://xinc.tw/livesport/app/">App下载</a></li>
             </ul>
         </div>
         <ul class="nav navbar-nav navright">
@@ -103,16 +117,17 @@
                     <li><a href="javascript:;">我的资料</a></li>
                     <li><a href="javascript:;">联络客服</a></li>
                     <li class="divider"></li>
-                    <li><a class="btn-logout" href="javascript:;">退出</a></li>
+                    <li><a class="btn-logout" href="javascript:;" onclick="LogoutDialogue();">退出</a></li>
                 </ul>
             </li>
             <li class="navbar-btn">
-                <a href="javascript:;" class="btn btn-login" role="button">登入</a>
+                <a href="../base/login.html" class="btn btn-login" role="button">登入</a>
             </li>
         </ul>
         <!--navright-->
     </nav>
     <!--.navbar navbar-default-->
+
     <!--功能列-->
     <div class="bf-tool-wrap">
         <div class="maxnav">
@@ -512,8 +527,8 @@
         <!--maxnav-->
     </div>
     <!--.bf-tool-wrap-->
+
     <!--广告-->
-    <!--marquee-->
     <div id="ssCarousel" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
             <div class="item"><img src="../base/banner/20180518.jpg" alt="独家美女主播线上陪你看球赛"></div>
@@ -531,7 +546,8 @@
             &nbsp;
         </a>
     </div>
-    <!-- 标题列 -->
+
+    <!--标题列-->
     <div class="bf-nav-info lighton" id="bf-nav-info">
         <div class="wrap">
             <table align="left" cellspacing="1">
@@ -548,15 +564,13 @@
                         <td class="des-vsl">主队</td>
                         <td class="des-score">比分</td>
                         <td class="des-vsr">客队</td>
-                        <td class="des-predict1">主客
-                            <BR>胜率</td>
-                        <td class="des-predict2">全半大
-                            <BR>小预测</td>
+                        <td class="des-predict1">主客<BR>胜率</td>
+                        <td class="des-predict2">全半大<BR>小预测</td>
                         <td class="des-half">半</td>
                         <td class="des-corner">角</td>
                         <td class="des-live">直播</td>
                         <td class="des-ratel">指数</td>
-                        <td class="des-sb">Bet365</td>
+                        <td class="des-sb">明陞</td>
                         <td class="des-rater">指数</td>
                         <td class="des-data">&nbsp;</td>
                         <td class="des-func">数据中心&nbsp;功能</td>
@@ -601,7 +615,8 @@
         </div>
     </div>
     <!--.bf-nav-info-->
-    <!-- 正文内容-->
+
+    <!--正文内容-->
     <div class="container bf-content">
         <div class="top hide">
             <div class="wrap">
@@ -6246,8 +6261,43 @@
             </div>
             <!--已完场比赛-->
         </div>
+        <!--20181210 美女视窗-->
+        <div class="content zhubo-content">
+            <div class="zhubo-live">
+                <a href="javascript:;" class="zhubo-close" onclick="closeZhubo();">
+                    <i></i>
+                </a>
+                <div class="zhubo-tips">
+                    <span class="view">
+                        <i class="star"></i>
+                        <i class="popu">95,555</i>
+                    </span>
+                    <div class="floatingbtns">
+                        <span id="volume-control" class="fbtn" onclick="volumeControl();">
+                            <i class="svgbtn volumeOff"></i>
+                            <i class="svgbtn volumeOn hide"></i>
+                        </span>
+                        <span class="fbtn">
+                            <i class="videoexpand"></i>
+                        </span>
+                    </div>
+                    <div class="floatingInfo">
+                        <img class="profileImg" src="../base/img/zhubosample.jpg">
+                        <div class="liveInfo">
+                            <span>xinclee</span>
+                            <span>我是主題名稱</span>
+                        </div>
+                    </div>
+                </div>
+                <iframe id="zhuboPlayer" src="mlive.html" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                <!--hls版本用mlive.html flash版本用mlive2.html-->
+            </div>
+        </div>
+        <!--.zhubo-content-->
     </div>
     <!--.container .bf-content-->
+
+    <!--页尾-->
     <div class="description-wrap">
         <div class="wlogo"><img class="wlogoin" src="../base/img/logowhite.png"></div>
         <div class="parallelogram"></div>
@@ -6278,84 +6328,47 @@
         </div>
         <!--description-->
     </div>
-    <!--description-wrap-->
+    <!--.description-wrap-->
+
     <footer class="footer">
         <ol>
-            <li>Copyright © 2017 星城体育 <span class="'">Sport.StarKing.</span> ALL Rights Reserved</li>
+            <li>Copyright © 2017 星城体育 | <a href="http://www.miitbeian.gov.cn" target="_blank">黔ICP备18000990号-6</a> ALL Rights Reserved</li>
             <li class="'"><em></em><a href="javascript:;" target="_blank">关于星城</a></li>
             <li class="'"><em></em><a href="javascript:;" target="_blank">免责声明</a></li>
             <li class="'"><em></em><a href="javascript:;" target="_blank">网站地图</a></li>
             <li class="'"><em></em><a href="javascript:;" target="_blank">联系方式</a></li>
         </ol>
     </footer>
+
     <!-- 大量選取 -->
     <div class="filter-box" id="filter-box">
         <div id="batchCollect"><i class="icon_screen1_n"></i><span>收藏</span></div>
         <div id="batchRetain"><i class="icon_screen2_n"></i><span>保留</span></div>
         <div id="batchHide"><i class="icon_screen3_n"></i><span>隐藏</span></div>
     </div>
-    <!--filter-box-->
+    <!--.filter-box-->
+
     <!-- 浮动工具箱 -->
-    <div class="ss-tool-float" id="ss-tool-float">
-        <div class="aside-app hide"><a href="#" target="_blank">星城APP</a></div>
-        <div class="back-remark" id="back-remark"><a href="javascript:;"><i class="icon-btn_feedback_n unhide"></i><span class="hide">反馈</span></a></div>
-        <div class="back-top" id="back-top"><a href="javascript:;"><i class="icon-btn_backtop_n unhide"></i><span class="hide">回顶部</span></a></div>
+    <div class="tool-tips-fixed">
+        <a class="down-app link active" href="/livesport/app" target="_blank" onmousemove="$(this).removeClass('active')">
+            <span class="over"><i class="ico"><span class="v-a-m">星城<br>APP</span></i><span class="tips"><span class="v-a-m">星城<br>APP</span></span></span><img src="../base/img/qr-code.png" alt="" class="code-img">
+        </a>
+        <a class="link" onclick="feedbackOpen();">
+            <span class="over"><i class="ico iconfont icon-float-feedback"></i> <span class="tips"><span class="v-a-m">反馈</span></span></span>
+        </a>
+        <a class="link" onclick="goTop();">
+            <span class="over"><i class="ico iconfont icon-float-backtop"></i> <span class="tips"><span class="v-a-m">回顶部</span></span></span>
+        </a>
     </div>
-    <!--ss-tool-float-->
-    <!-- 我的收藏弹框 -->
-    <div class="my-collection hide"> <i class="icon-btn_close close-col"></i>
-        <div class="col-head"> <span class="col-title">我的收藏</span> <span>热刺</span> <span>vs</span> <span>曼联</span> </div>
-        <div class="col-content">
-            <div class="bg1"></div>
-            <div class="bg2"></div>
-            <div class="bg3"></div>
-            <table class="table-sb-tool">
-                <thead>
-                    <tr>
-                        <th>&nbsp;</th>
-                        <th colspan="3">即时指数</th>
-                        <th colspan="3">初盘指数</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>亚</td>
-                        <td><span class="data-up">0.75<i class="icon-arrow_index_up"></i></span></td>
-                        <td>受两球半</td>
-                        <td><span>1.03<i></i></span></td>
-                        <td><span class="data-down">1.03<i class="icon-arrow_index_down"></i></span></td>
-                        <td>受两球半</td>
-                        <td><span>1.03<i></i></span></td>
-                    </tr>
-                    <tr>
-                        <td>欧</td>
-                        <td><span class="data-up">0.75<i class="icon-arrow_index_up"></i></span></td>
-                        <td>受两球半</td>
-                        <td><span>1.03<i></i></span></td>
-                        <td><span class="data-down">1.03<i class="icon-arrow_index_down"></i></span></td>
-                        <td>受两球半</td>
-                        <td><span>1.03<i></i></span></td>
-                    </tr>
-                    <tr>
-                        <td>大</td>
-                        <td><span class="data-up">0.75<i class="icon-arrow_index_up"></i></span></td>
-                        <td>受两球半</td>
-                        <td><span>1.03<i></i></span></td>
-                        <td><span class="data-down">1.03<i class="icon-arrow_index_down"></i></span></td>
-                        <td>受两球半</td>
-                        <td><span>1.03<i></i></span></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
+    <!--.tool-tips-fixed-->
+
     <!--意见反馈-->
     <div class="feedback-wrap hide">
         <div class="feedback-bg"></div>
         <div class="feedback-box">
-            <div class="box-hd"> <i class="icon-btn_close close-feedback"></i>
-                <h2><i class="icon-icon_feedback"></i>反馈</h2>
-                <h3><i class="icon-icon_comment"></i>亲爱的用户，您有什么好的想法和建议？请尽情告诉我们为您解决吧！</h3>
+            <div class="box-hd"><i class="icon-btn_close close-feedback" onclick="feedbackClose()"></i>
+                <h2><i class="iconfont icon-icofeedback"></i>反馈</h2>
+                <h3><i class="iconfont icon-liveanimation"></i>亲爱的用户，您有什么好的想法和建议？请尽情告诉我们为您解决吧！</h3>
             </div>
             <div class="box-bd">
                 <form action="" class="feedback-form" id="feedbackForm" novalidate>
@@ -6367,55 +6380,40 @@
                             <label for="">反馈内容控制在500字以内</label>
                         </div>
                     </div>
-                    <p> <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <p> <i class="iconfont icon-iconemail"></i>
                         <input type="text" name="email" autocomplete="off" placeholder="请输入邮箱" />
                     </p>
-                    <p class="test-area " id="feedback-captcha">我是验证码</p>
-                    <button class="submit-feedback" type="submit">提交反馈</button>
+                    <div class="clearfix text-a-c">
+                        <div class="verification">
+                            请输入验证码
+                        </div>
+                    </div>
+                    <button class="submit-feedback" type="button" onclick="feedbackSend()">提交反馈</button>
                 </form>
             </div>
         </div>
-    </div>
-    <!--登录弹屏-->
-    <div class="login-sign-box hide">
-        <!-- 登录退出 BEGIN-->
-        <div class="exit-login hide">
-            <div class="hd-tip"><span>提示</span> <i class="icon-btn_close user-exit-btn"></i></div>
-            <p>确定退出登录？</p>
-            <div class="btn-box">
-                <button class="sure-btn" id="exitLogin">确定</button>
-                <button class="cancel-btn">取消</button>
-            </div>
-        </div>
-        <!-- 登录退出 END-->
-        <div class="grey-bg" id="layoutBg"></div>
-        <div class="login-box" id="loginBox">
-            <div class="box-bd">
-                <img src="../base/img/login-img.png">
-                <div class="login-area"> <i class="icon-btn_close close-login"></i>
-                    <div class="other-login">
-                        <div class="tit">第三方登录</div>
-                        <div class="links">
-                            <a href="../base/register-complete.html"><i class="icon-btn_tencent40x40_n"></i></a>
-                            <a href="../base/register-complete.html"><i class="icon-btn_sina40x40_n disabled"></i></a>
-                            <a href="../base/register-complete.html"><i class="icon-btn_wechat40x40_n disabled"></i></a>
-                        </div>
-                        <p>登陆后方可添加收藏、发表留言</p>
-                    </div>
-                </div>
-            </div>
+        <!--送出表单后 feedback-box新增hide forms-ok移除hide-->
+        <div class="forms-ok hide">
+            <div class="iconwrap"><i class="iconfont icon-icosucceed"></i></div>
+            <div class="title-one">已经成功反馈，我们会尽快解决问题</div>
+            <div class="title-tow">已经成功反馈，我们会尽快解决问题</div>
+            <div class="btn-white active btn-ok" onclick="feedbackClose()">关闭</div>
         </div>
     </div>
+    <!--.feedback-wrap-->
+
+    <!--今日无五大联赛 201901-->
     <div id="nofivecompets" class="util-dialog hide">
-        <!--為了看到效果用unhide 網站請預設hide-->
         <div class="mask"></div>
-        <div class="util-dialog-cda alt w-230 fixed show" style="border-radius: 5px; margin-left: -115px; margin-top: -42px;">
+        <div class="util-dialog-cda alt w-230  fixed show" style="border-radius: 10px; margin-left: -150px; margin-top: -200px;">
+            <i class="iconfont icon-close" onclick="$('#nofivecompets').hide(600, function(){$(this).remove()});"></i>
             <div class="dialog-title">提示</div>
             <div class="dialog-content center">今日无五大联赛</div>
         </div>
         <!--util-dialog-cda-->
     </div>
     <!--#nofivecompets-->
+
 </body>
 
 </html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>登录-星城体育</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="css/common.css" rel="stylesheet">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/common.js"></script>
+    <script type="text/javascript">
+
+    //启动验证码程序
+    $(function(){
+        VerityInit();
+    });
+
+    //验证
+    function goLogin() {
+        //是否已完成滑块验证
+        var errMsg = "亲，还没有完成滑块验证哦~";
+        !$(".sliderContainer").hasClass('sliderContainer_success') ? (
+            $("#msg")
+            .html('<i class="iconfont icon-error"></i>' + errMsg)
+            .removeClass("hide")
+        ) : (
+            $("#msg, .login-area").addClass("hide"),
+            $(".login-ok").removeClass("hide"),
+            $(".countdown").countdown(redirect, 5, "秒内将自动跳转")
+        )
+    }
+
+    // 登入后转页
+    function redirect () {
+        window.location = 'http://xinc.tw/livesport/web/back/profile.html';
+    }
+
+    </script>
+</head>
+
+<body>
+    <div id="loginBox-panel" class="util-dialog" style="display: block;">
+        <div class="mask"></div>
+        <div class="util-dialog-cda pop login-panel fixed show" style="border-radius: 10px; margin-left: -240px; margin-top: -270px;"><i class="iconfont icon-close" onclick="hideLogin();"></i>
+            <div id="login" class="login-area">
+                <div class="title">登录</div>
+                <div class="row row-tow">
+                    <div class="text-box">
+                        <input class="text w-290" id="username" name="username" type="text" placeholder="邮箱">
+                    </div>
+                </div>
+                <div class="row row-tow">
+                    <div class="text-box m-t-16">
+                        <input class="text w-290" id="password" name="password" type="password" placeholder="登录密码（6-30位）">
+                    </div>
+                </div>
+                <div class="row row-tow">
+                    <a class="link float-right f-s-12 color-bbb m-t-12 m-b-12" href="forgot-password.html">找回密码</a>
+                </div>
+                <div class="varea">
+                    <div id="captcha"></div>
+                </div>
+                <div id="msg" class="row row-tow error-msg m-t-10 hide">
+                    <i class="icon-error"></i>
+                    我是错误讯息
+                </div>
+                <div class="row row-tow m-t-16">
+                    <a class="button btn-border active submit line-h-40 w-290" onclick="goLogin()">登录</a>
+                </div>
+                <div class="row row-tow checkbox-area">
+                    <label class="checkbox" onclick="LoginCheck(this)">
+                        <span class="check">
+                                    <input type="checkbox" name="remember" value="1" id="checks">
+                                </span>
+                        一个月内免登录
+                    </label>
+                    <a class="link float-right f-s-12 color-de1e30" target="_blank" href="../base/signup.html">新用户注册</a>
+                </div>
+            </div>
+            <!--登录成功 自动跳转到登录前页面-->
+            <div class="login-ok hide">
+                <div class="forms-ok">
+                    <div class="iconwrap"><i class="iconfont icon-icosucceed"></i></div>
+                    <div class="title-one">登录成功</div>
+                    <div class="title-tow countdown"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

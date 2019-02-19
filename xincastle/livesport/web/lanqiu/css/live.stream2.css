@@ -1,0 +1,3216 @@
+﻿@charset "utf-8";
+#board {
+    height: 201px;
+    width: 782px
+}
+
+
+
+#scoreBoard .board-footer td,
+.team-name {
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+@keyframes play {
+    100% {
+        background-position: -946px
+    }
+}
+
+@-webkit-keyframes play {
+    100% {
+        background-position: -946px
+    }
+}
+
+@-moz-keyframes play {
+    100% {
+        background-position: -946px
+    }
+}
+
+@-ms-keyframes play {
+    100% {
+        background-position: -946px
+    }
+}
+
+@keyframes ball {
+    100% {
+        background-position: -162px
+    }
+}
+
+@-webkit-keyframes ball {
+    100% {
+        background-position: -162px
+    }
+}
+
+@-moz-keyframes ball {
+    100% {
+        background-position: -162px
+    }
+}
+
+@-ms-keyframes ball {
+    100% {
+        background-position: -162px
+    }
+}
+
+@keyframes twocuts {
+    100% {
+        background-position: -590px
+    }
+}
+
+@-webkit-keyframes twocuts {
+    100% {
+        background-position: -590px
+    }
+}
+
+@-moz-keyframes twocuts {
+    100% {
+        background-position: -590px
+    }
+}
+
+@-ms-keyframes twocuts {
+    100% {
+        background-position: -590px
+    }
+}
+
+@keyframes flyball {
+    100% {
+        background-position: -7080px
+    }
+}
+
+@-webkit-keyframes flyball {
+    100% {
+        background-position: -7080px
+    }
+}
+
+@-moz-keyframes flyball {
+    100% {
+        background-position: -7080px
+    }
+}
+
+@-ms-keyframes flyball {
+    100% {
+        background-position: -7080px
+    }
+}
+
+@keyframes fivecuts {
+    100% {
+        background-position: -482px
+    }
+}
+
+@-webkit-keyframes fivecuts {
+    100% {
+        background-position: -482px
+    }
+}
+
+@-moz-keyframes fivecuts {
+    100% {
+        background-position: -482px
+    }
+}
+
+@-ms-keyframes fivecuts {
+    100% {
+        background-position: -482px
+    }
+}
+
+@keyframes sixcuts {
+    100% {
+        background-position: -516px
+    }
+}
+
+@-webkit-keyframes sixcuts {
+    100% {
+        background-position: -516px
+    }
+}
+
+@-moz-keyframes sixcuts {
+    100% {
+        background-position: -516px
+    }
+}
+
+@-ms-keyframes sixcuts {
+    100% {
+        background-position: -516px
+    }
+}
+
+@keyframes sevcuts {
+    100% {
+        background-position: -602px
+    }
+}
+
+@-webkit-keyframes sevcuts {
+    100% {
+        background-position: -602px
+    }
+}
+
+@-moz-keyframes sevcuts {
+    100% {
+        background-position: -602px
+    }
+}
+
+@-ms-keyframes sevcuts {
+    100% {
+        background-position: -602px
+    }
+}
+
+@keyframes attcker {
+    100% {
+        background-position: -770px
+    }
+}
+
+@-webkit-keyframes attcker {
+    100% {
+        background-position: -770px
+    }
+}
+
+@-moz-keyframes attcker {
+    100% {
+        background-position: -770px
+    }
+}
+
+@-ms-keyframes attcker {
+    100% {
+        background-position: -770px
+    }
+}
+
+@keyframes attckertwo {
+    100% {
+        background-position: -691px
+    }
+}
+
+@-webkit-keyframes attckertwo {
+    100% {
+        background-position: -691px
+    }
+}
+
+@-moz-keyframes attckertwo {
+    100% {
+        background-position: -691px
+    }
+}
+
+@-ms-keyframes attckertwo {
+    100% {
+        background-position: -691px
+    }
+}
+
+@keyframes taiotou {
+    100% {
+        background-position: -862px
+    }
+}
+
+@-webkit-keyframes taiotou {
+    100% {
+        background-position: -862px
+    }
+}
+
+@-moz-keyframes taiotou {
+    100% {
+        background-position: -862px
+    }
+}
+
+@-ms-keyframes taiotou {
+    100% {
+        background-position: -862px
+    }
+}
+
+@keyframes daxigua {
+    100% {
+        background-position: -1058px
+    }
+}
+
+@-webkit-keyframes daxigua {
+    100% {
+        background-position: -1058px
+    }
+}
+
+@-moz-keyframes daxigua {
+    100% {
+        background-position: -1058px
+    }
+}
+
+@-ms-keyframes daxigua {
+    100% {
+        background-position: -1058px
+    }
+}
+
+@keyframes elevcuts {
+    100% {
+        background-position: -947px
+    }
+}
+
+@-webkit-keyframes elevcuts {
+    100% {
+        background-position: -947px
+    }
+}
+
+@-moz-keyframes elevcuts {
+    100% {
+        background-position: -947px
+    }
+}
+
+@-ms-keyframes elevcuts {
+    100% {
+        background-position: -947px
+    }
+}
+
+@keyframes layup {
+    100% {
+        background-position: -1121px
+    }
+}
+
+@-webkit-keyframes layup {
+    100% {
+        background-position: -1121px
+    }
+}
+
+@-moz-keyframes layup {
+    100% {
+        background-position: -1121px
+    }
+}
+
+@-ms-keyframes layup {
+    100% {
+        background-position: -1121px
+    }
+}
+
+@keyframes guanlan {
+    100% {
+        background-position: -776px
+    }
+}
+
+@-webkit-keyframes guanlan {
+    100% {
+        background-position: -776px
+    }
+}
+
+@-moz-keyframes guanlan {
+    100% {
+        background-position: -776px
+    }
+}
+
+@-ms-keyframes guanlan {
+    100% {
+        background-position: -776px
+    }
+}
+
+@keyframes gfguanlan {
+    100% {
+        background-position: -962px
+    }
+}
+
+@-webkit-keyframes gfguanlan {
+    100% {
+        background-position: -962px
+    }
+}
+
+@-moz-keyframes gfguanlan {
+    100% {
+        background-position: -962px
+    }
+}
+
+@-ms-keyframes gfguanlan {
+    100% {
+        background-position: -962px
+    }
+}
+
+@keyframes scorecuts {
+    100% {
+        background-position: -1200px
+    }
+}
+
+@-webkit-keyframes scorecuts {
+    100% {
+        background-position: -1200px
+    }
+}
+
+@-moz-keyframes scorecuts {
+    100% {
+        background-position: -1200px
+    }
+}
+
+@-ms-keyframes scorecuts {
+    100% {
+        background-position: -1200px
+    }
+}
+
+#board {
+    position: absolute;
+    display: block;
+    overflow: visible
+}
+
+#playground {
+    position: relative;
+    width: 789px;
+    height: 388px;
+    margin: 0 auto;
+    font-family: 'Helvetica, Arial', 'Hiragino Sans GB', '冬青黑体', 'Microsoft YaHei', '微软雅黑', serif;
+    background: #343434;
+    overflow: hidden
+}
+
+#grassLand {
+    display: block;
+    width: 790px;
+    height: 388px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    overflow: hidden;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    transform: translate(0, 0) rotate(0) scale(1, 1);
+    background-image: url(../img/basketballcourt.png);
+    background-size: cover;
+    animation: fadeIn .5s ease;
+    -webkit-animation: fadeIn .5s ease;
+    -moz-animation: fadeIn .5s ease;
+    -ms-animation: fadeIn .5s ease;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    animation-fill-mode: forwards
+}
+
+.bkt-live-bgleft {
+    animation-name: bkt-live-bg-left-or-right;
+    animation-duration: .7s;
+    animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: bkt-live-bg-left-or-right;
+    -webkit-animation-duration: .7s;
+    -webkit-animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: bkt-live-bg-left-or-right;
+    -moz-animation-duration: .7s;
+    -moz-animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
+    -moz-animation-iteration-count: 1;
+    -moz-animation-direction: alternate;
+    -moz-animation-fill-mode: forwards;
+    background: url(../img/basketballcourt-left.png) no-repeat;
+    background-size: contain;
+    width: 44px;
+    height: 89px;
+    position: absolute;
+    left: 66px;
+    top: 88px;
+    z-index: 98
+}
+
+.bkt-live-bgright {
+    animation-name: bkt-live-bg-left-or-right;
+    animation-duration: .7s;
+    animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: bkt-live-bg-left-or-right;
+    -webkit-animation-duration: .7s;
+    -webkit-animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: bkt-live-bg-left-or-right;
+    -moz-animation-duration: .7s;
+    -moz-animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
+    -moz-animation-iteration-count: 1;
+    -moz-animation-direction: alternate;
+    -moz-animation-fill-mode: forwards;
+    background: url(../img/basketballcourt-right.png) no-repeat;
+    background-size: contain;
+    width: 44px;
+    height: 89px;
+    position: absolute;
+    left: 683px;
+    top: 89px;
+    z-index: 98
+}
+
+.bkt-live-bgleft2 {
+    animation-name: bkt-live-bg-left-or-right;
+    animation-duration: .7s;
+    animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: bkt-live-bg-left-or-right;
+    -webkit-animation-duration: .7s;
+    -webkit-animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: bkt-live-bg-left-or-right;
+    -moz-animation-duration: .7s;
+    -moz-animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
+    -moz-animation-iteration-count: 1;
+    -moz-animation-direction: alternate;
+    -moz-animation-fill-mode: forwards;
+    background: url(../img/basketballcourt-left3.png) no-repeat;
+    background-size: contain;
+    width: 44px;
+    height: 89px;
+    position: absolute;
+    left: 66px;
+    top: 88px;
+    z-index: 101
+}
+
+.bkt-live-bgleftx {
+    animation-name: bkt-live-bg-left-or-right;
+    animation-duration: .7s;
+    animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: bkt-live-bg-left-or-right;
+    -webkit-animation-duration: .7s;
+    -webkit-animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: bkt-live-bg-left-or-right;
+    -moz-animation-duration: .7s;
+    -moz-animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
+    -moz-animation-iteration-count: 1;
+    -moz-animation-direction: alternate;
+    -moz-animation-fill-mode: forwards;
+    background: url(../img/basketballcourt-leftx.png) no-repeat;
+    background-size: contain;
+    width: 65px;
+    height: 153px;
+    position: absolute;
+    left: 46px;
+    top: 111px;
+    z-index: 97
+}
+
+
+.bkt-live-bgright2 {
+    animation-name: bkt-live-bg-left-or-right;
+    animation-duration: .7s;
+    animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: bkt-live-bg-left-or-right;
+    -webkit-animation-duration: .7s;
+    -webkit-animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: bkt-live-bg-left-or-right;
+    -moz-animation-duration: .7s;
+    -moz-animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
+    -moz-animation-iteration-count: 1;
+    -moz-animation-direction: alternate;
+    -moz-animation-fill-mode: forwards;
+    background: url(../img/basketballcourt-right3.png) no-repeat;
+    background-size: contain;
+    width: 44px;
+    height: 89px;
+    position: absolute;
+    left: 683px;
+    top: 89px;
+    z-index: 101
+}
+
+.bkt-live-bgrightx {
+    animation-name: bkt-live-bg-left-or-right;
+    animation-duration: .7s;
+    animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: bkt-live-bg-left-or-right;
+    -webkit-animation-duration: .7s;
+    -webkit-animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: bkt-live-bg-left-or-right;
+    -moz-animation-duration: .7s;
+    -moz-animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
+    -moz-animation-iteration-count: 1;
+    -moz-animation-direction: alternate;
+    -moz-animation-fill-mode: forwards;
+    background: url(../img/basketballcourt-rightx.png) no-repeat;
+    background-size: contain;
+    width: 65px;
+    height: 153px;
+    position: absolute;
+    left: 665px;
+    top: 111px;
+    z-index: 97
+}
+
+
+
+#animation-loading,
+#no-live-video,
+#video-loading {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    color: #fff;
+    cursor: pointer
+}
+
+#animation-loading span,
+#no-live-video span,
+#video-loading span {
+    display: inline-block;
+    font-size: 16px
+}
+
+#animation-loading .dotted::after,
+#video-loading .dotted::after {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-animation: ellipsis steps(4, end) .9s infinite;
+    -moz-animation: ellipsis steps(4, end) .9s infinite;
+    -ms-animation: ellipsis steps(4, end) .9s infinite;
+    animation: ellipsis steps(4, end) .9s infinite;
+    content: "\2026";
+    width: 0
+}
+
+#scoreBoard {
+    position: absolute;
+    margin: 0 auto;
+    right: 0;
+    top: 65px;
+    left: 0;
+    width: 510px;
+    height: 206px;
+    color: #fff;
+    z-index: 50;
+    border-radius: 0;
+    letter-spacing: 0;
+    background: url(../img/vs-234b3b0b33.png) no-repeat
+}
+
+#scoreBoard,
+#scoreBoard .board-footer .event-name {
+    font-size: 12px
+}
+
+#scoreBoard .board-header {
+    width: 100%;
+    height: 36px;
+    text-align: left;
+    margin-top: 10px;
+    padding: 4px
+}
+
+#scoreBoard .board-header span {
+    display: inline-block;
+    margin-right: 10px
+}
+
+#scoreBoard .board-header .half-score {
+    float: right
+}
+
+#scoreBoard .board-panel>div,
+.panel>div {
+    float: left
+}
+
+#scoreBoard .board-panel {
+    width: 100%;
+    height: 80px;
+    position: relative
+}
+
+#scoreBoard .board-panel .mask {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    filter: alpha(opacity=70);
+    z-index: -1
+}
+
+#scoreBoard .board-panel .team {
+    width: 160px;
+    height: 100%
+}
+
+#scoreBoard .board-panel .team .flag img {
+    width: 40px;
+    height: 40px;
+    margin: 5px auto;
+    display: block;
+    border-radius: 40px
+}
+
+#scoreBoard .board-panel .team .name {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 14px;
+    color: #fff
+}
+
+#scoreBoard .board-panel .score-area {
+    width: 190px;
+    height: 100%
+}
+
+#scoreBoard .board-panel .score-area .status {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 14px
+}
+
+#scoreBoard .board-panel .score-area .content,
+#scoreBoard .board-panel .score-area .ready {
+    font-size: 30px;
+    text-align: center
+}
+
+#scoreBoard .board-panel .score-area .content {
+    font-family: Verdana, serif;
+    display: block
+}
+
+#scoreBoard .board-panel .score-area .content span {
+    display: inline-block;
+    width: 20%
+}
+
+#scoreBoard .board-panel .score-area .content span.away-score,
+#scoreBoard .board-panel .score-area .content span.home-score {
+    width: 40%
+}
+
+#scoreBoard .board-footer {
+    width: 100%;
+    height: 70px;
+    color: #999
+}
+
+#scoreBoard .board-footer table {
+    width: 100%;
+    font-size: 12px
+}
+
+#scoreBoard .board-footer td {
+    width: 1%;
+    height: 20px;
+    text-align: center;
+    max-width: 100px;
+    overflow: hidden;
+    text-indent: 3%
+}
+
+#scoreBoard .board-footer th {
+    height: 24px;
+    text-align: center;
+    text-indent: 3%
+}
+
+#scoreBoard .control,
+#scoreBoard .cornerkick-kick,
+#scoreBoard .red-card,
+#scoreBoard .shoots,
+#scoreBoard .yellow-card {
+    font-family: Verdana, serif
+}
+
+#scoreBoard .match-tips,
+.livetitle,
+.panel,
+.panel .team .name {
+    font-family: 'Microsoft YaHei', '微软雅黑', 'Helvetica, Arial', 'Hiragino Sans GB', '冬青黑体', serif
+}
+
+#scoreBoard .control {
+    color: #ffb400
+}
+
+#scoreBoard .match-tips {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 20px;
+    color: #ffb400
+}
+
+.event-level {
+    display: inline-block;
+    width: 10px;
+    height: 10px
+}
+
+.live-tips,
+.live-tips div,
+.livetitle,
+.panel {
+    width: 100%;
+    position: absolute
+}
+
+.livetitle {
+    color: #fff;
+    height: 35px;
+    top: 0;
+    background-color: rgba(0, 0, 0, .5);
+    font-size: 14px;
+    line-height: 35px;
+    z-index: 99
+}
+
+.live-tips {
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    color: #fff;
+    cursor: pointer
+}
+
+.live-tips div {
+    top: 100px;
+    text-align: center
+}
+
+.panel {
+    color: #fff;
+    height: 80px;
+    line-height: 100px;
+    bottom: 0;
+    background-color: rgba(43, 43, 43, .8);
+    z-index: 99
+}
+
+.panel>div {
+    display: block;
+    height: 100%
+}
+
+.panel .team {
+    width: 300px
+}
+
+.panel .score-area {
+    width: 180px
+}
+
+.panel .team .flag {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px
+}
+
+.panel .team .name {
+    width: 120px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    display: block
+}
+
+.panel .home .flag {
+    margin-left: 40px;
+    margin-top: 27px;
+    float: left
+}
+
+.panel .home .name {
+    text-align: left
+}
+
+.panel .away .flag {
+    margin-right: 40px;
+    margin-top: 27px;
+    float: right
+}
+
+.panel .away .name {
+    text-align: right
+}
+
+.panel .score-area .upper {
+    width: 100%;
+    height: 30px;
+    line-height: 48px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    position: relative
+}
+
+.panel .score-area .upper .minute,
+.panel .score-area .upper .ot,
+.panel .score-area .upper .second {
+    display: inline-block
+}
+
+.panel .score-area .lower .lower-team {
+    display: inline-block;
+    position: relative;
+    height: 30px;
+    width: 20px;
+    line-height: normal;
+    top: 3px;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.panel .score-area .lower .score {
+    display: inline-block;
+    width: 35px;
+    height: 40px;
+    position: relative;
+    z-index: 1
+}
+
+.panel .score-area .lower .score:after,
+.panel .score-area .lower .score:before {
+    content: "";
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    height: 50%;
+    z-index: -1;
+    border-radius: 5px
+}
+
+.panel .score-area .lower .score:before {
+    top: 0
+}
+
+.panel .score-area .lower .score:after {
+    top: 50%;
+    margin-top: 1px
+}
+
+.panel .score-area .lower .change {
+    color: #FDC003
+}
+
+.panel .score-area .lower {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+    font-size: 30px
+}
+
+.team-name {
+    display: block;
+    width: 155px;
+    max-width: 155px;
+    font-size: 10pt;
+    color: #fff;
+    overflow: hidden;
+}
+
+.animation-live,
+.tv-live {
+    position: relative;
+    width: 790px;
+    height: 533px
+}
+
+.zhubo-live {
+    position: relative
+}
+
+.fangui,
+.goal-tooltip,
+.normal-tooltip {
+    position: absolute;
+    z-index: 2;
+    top: 60px
+}
+
+.tooltip {
+    display: none
+}
+
+.tooltip .time {
+    float: left;
+    display: block;
+    text-align: center;
+    overflow: hidden
+}
+
+.tooltip.away .time {
+    float: right;
+    background-color: #01bdff
+}
+
+.normal-tooltip {
+    position: absolute;
+    width: 140px;
+    height: 65px;
+    font-size: 10px;
+    left: 50%;
+    top: 50%;
+    margin-left: -70px;
+    margin-top: -33px;
+    z-index: 100
+}
+
+.normal-tooltip .header {
+    border-radius: 5px;
+    background-color: #fff;
+    height: 34px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden
+}
+
+.normal-tooltip .content {
+    display: inline-block
+}
+
+.away .normal-tooltip .content span,
+.home .normal-tooltip .content span {
+    display: block;
+    width: 100px;
+    height: 16px;
+    line-height: 18px;
+    font-size: 12px;
+    padding-left: 4px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.away .normal-tooltip .content span {
+    text-align: left
+}
+
+.home .normal-tooltip .content span {
+    text-align: right
+}
+
+.normal-tooltip .footer {
+    background-color: #000;
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+    color: #fff;
+    text-align: right;
+    border-radius: 5px
+}
+
+.away .normal-tooltip .time,
+.home .normal-tooltip .time {
+    width: 26px;
+    height: 26px;
+    margin: 4px;
+    font-size: 10px;
+    color: #fff;
+    line-height: 26px;
+    display: block;
+    letter-spacing: 0
+}
+
+.away .normal-tooltip .time {
+    border-radius: 3px;
+    background-color: #01bdff;
+    float: right
+}
+
+.home .normal-tooltip .time {
+    border-radius: 3px;
+    background-color: #de1030;
+    float: left
+}
+
+.normal-tooltip .content {
+    width: 120px;
+    height: 34px
+}
+
+.normal-tooltip .content .team-name {
+    color: #333
+}
+
+.normal-tooltip .content .text {
+    display: block;
+    width: 100px;
+    font-size: 12px;
+    text-align: right;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.normal-tooltip.away .content .text {
+    text-align: left;
+    margin-left: 10px
+}
+
+.normal-tooltip .footer span {
+    display: block;
+    width: 130px
+}
+
+.home .team,
+.home .team2,
+.home .team3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 147px;
+    display: block
+}
+
+.away .team,
+.away .team2,
+.away .team3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 147px;
+    display: block
+}
+
+.gf .home .player,
+.gf .home .player.fisrt,
+.home .player,
+.home .player.fisrt,
+.home .player.second {
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    background-repeat: no-repeat
+}
+
+.home .player,
+.home .player.fisrt {
+    background-image: url(../img/yunqiur.png);
+    -webkit-animation: fivecuts .7s steps(5) infinite;
+    -moz-animation: fivecuts .7s steps(5) infinite;
+    -ms-animation: fivecuts .7s steps(5) infinite;
+    animation: fivecuts .7s steps(5) infinite
+}
+
+.away .player,
+.away .player.first,
+.gf .home .player,
+.gf .home .player.fisrt {
+    -webkit-animation: fivecuts .7s steps(5) infinite;
+    -moz-animation: fivecuts .7s steps(5) infinite;
+    -ms-animation: fivecuts .7s steps(5) infinite
+}
+
+.gf .home .player,
+.gf .home .player.fisrt {
+    background-image: url(../img/gf-yunqiur.png);
+    animation: fivecuts .7s steps(5) infinite
+}
+
+.home .player.second {
+    background-image: url(../img/teamr2.png);
+    -webkit-animation: attcker 1s steps(8) infinite;
+    -moz-animation: attcker 1s steps(8) infinite;
+    -ms-animation: attcker 1s steps(8) infinite;
+    animation: attcker 1s steps(8) infinite
+}
+
+.gf .home .player.second,
+.home .player.third {
+    -webkit-animation: attcker 1s steps(8) infinite;
+    -moz-animation: attcker 1s steps(8) infinite;
+    -ms-animation: attcker 1s steps(8) infinite;
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    background-repeat: no-repeat
+}
+
+.gf .home .player.second {
+    background-image: url(../img/gf-teamr2.png);
+    animation: attcker 1s steps(8) infinite
+}
+
+.home .player.third {
+    background-image: url(../img/teamr2.png);
+    animation: attcker 1s steps(8) infinite
+}
+
+.away .player.second,
+.gf .home .player.third {
+    -webkit-animation: attcker 1s steps(8) infinite;
+    -moz-animation: attcker 1s steps(8) infinite;
+    -ms-animation: attcker 1s steps(8) infinite
+}
+
+.gf .home .player.third {
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    background-image: url(../img/gf-teamr2.png);
+    background-repeat: no-repeat;
+    animation: attcker 1s steps(8) infinite
+}
+
+.away .player,
+.away .player.first {
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    background-image: url(../img/yunqiul.png);
+    background-repeat: no-repeat;
+    animation: fivecuts .7s steps(5) infinite;
+    z-index: 98
+}
+
+.gf .away .player,
+.gf .away .player.first {
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    background-image: url(../img/gf-yunqiul.png);
+    background-repeat: no-repeat;
+    -webkit-animation: fivecuts .7s steps(5) infinite;
+    -moz-animation: fivecuts .7s steps(5) infinite;
+    -ms-animation: fivecuts .7s steps(5) infinite;
+    animation: fivecuts .7s steps(5) infinite;
+    z-index: 98
+}
+
+.away .player.second,
+.gf .away .player.second {
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    background-repeat: no-repeat;
+    z-index: 99
+}
+
+.away .player.second {
+    background-image: url(../img/teaml2.png);
+    animation: attcker 1s steps(8) infinite
+}
+
+.away .player.third,
+.gf .away .player.second {
+    -webkit-animation: attcker 1s steps(8) infinite;
+    -moz-animation: attcker 1s steps(8) infinite;
+    -ms-animation: attcker 1s steps(8) infinite
+}
+
+.gf .away .player.second {
+    background-image: url(../img/gf-teaml2.png);
+    animation: attcker 1s steps(8) infinite
+}
+
+.away .player.third,
+.gf .away .player.third {
+    width: 96px;
+    height: 96px;
+    background-repeat: no-repeat;
+    z-index: 97;
+    position: absolute
+}
+
+.away .player.third {
+    background-image: url(../img/teaml2.png);
+    animation: attcker 1s steps(8) infinite
+}
+
+.gf .away .player.third {
+    background-image: url(../img/gf-teaml2.png);
+    -webkit-animation: attcker 1s steps(8) infinite;
+    -moz-animation: attcker 1s steps(8) infinite;
+    -ms-animation: attcker 1s steps(8) infinite;
+    animation: attcker 1s steps(8) infinite
+}
+
+.attacking.away,
+.attacking.home {
+    position: absolute;
+    top: 169px;
+    left: 40px;
+    width: 790px;
+    height: 144px
+}
+
+.attacking.away .background,
+.attacking.home .background {
+    top: 0;
+    left: 0;
+    height: 150px;
+    background-image: url(../img/attackting.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    z-index: 9;
+    width: 790px;
+    position: absolute
+}
+
+.attacking.home .background {
+    background-position: 0 0;
+    -webkit-animation: attackingleft 3s linear infinite;
+    -moz-animation: attackingleft 3s linear infinite;
+    -ms-animation: attackingleft 3s linear infinite;
+    animation: attackingleft 3s linear infinite;
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear
+}
+
+.attacking.away .background {
+    background-position: 0 -170px;
+    -webkit-animation: attackingright 3s linear infinite;
+    -moz-animation: attackingright 3s linear infinite;
+    -ms-animation: attackingright 3s linear infinite;
+    animation: attackingright 3s linear infinite;
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear
+}
+
+.attacking.home .background::after {
+    position: absolute;
+    bottom: 15px;
+    right: 250px;
+    content: '进攻';
+    color: #fff;
+    font-size: 24px;
+    z-index: 99;
+    text-shadow: 1px 1px 2px #0f4c15
+}
+
+.attacking.home .team-name {
+    position: absolute;
+    bottom: 47px;
+    right: 250px;
+    text-align: right;
+    z-index: 99;
+    text-shadow: 1px 1px 2px #0f4c15
+}
+
+.attacking.away .background::after {
+    position: absolute;
+    bottom: 15px;
+    left: 50px;
+    content: '进攻';
+    color: #fff;
+    font-size: 24px;
+    z-index: 99;
+    text-shadow: 1px 1px 2px #0f4c15
+}
+
+.dangerousattacking.away .background::after,
+.dangerousattacking.home .background::after {
+    content: '危险进攻';
+    font-size: 24px;
+    text-shadow: 1px 1px 2px #0f4c15;
+    color: #fff
+}
+
+.attacking.away .team-name {
+    position: absolute;
+    bottom: 47px;
+    left: 50px;
+    text-align: left;
+    z-index: 99;
+    text-shadow: 1px 1px 2px #0f4c15
+}
+
+.attacking.home .team {
+    z-index: 98;
+    -webkit-animation: atkrunleft1 3s linear infinite;
+    -moz-animation: atkrunleft1 3s linear infinite;
+    -ms-animation: atkrunleft1 3s linear infinite;
+    animation: atkrunleft1 3s linear infinite
+}
+
+.attacking.home .team2 {
+    z-index: 97;
+    -webkit-animation: atkrunleft2 3s linear infinite;
+    -moz-animation: atkrunleft2 3s linear infinite;
+    -ms-animation: atkrunleft2 3s linear infinite;
+    animation: atkrunleft2 3s linear infinite
+}
+
+.attacking.home .team3 {
+    z-index: 96;
+    -webkit-animation: atkrunleft3 3s linear infinite;
+    -moz-animation: atkrunleft3 3s linear infinite;
+    -ms-animation: atkrunleft3 3s linear infinite;
+    animation: atkrunleft3 3s linear infinite
+}
+
+.attacking.home .team .player.first {
+    top: -5px;
+    left: 300px
+}
+
+.attacking.home .team2 .player.second {
+    top: -50px;
+    left: 250px;
+    transform: scale(.95)
+}
+
+.attacking.home .team3 .player.third {
+    top: 30px;
+    left: 200px
+}
+
+.attacking.away .team {
+    z-index: 102;
+    -webkit-animation: atkrunright1 3s linear infinite;
+    -moz-animation: atkrunright1 3s linear infinite;
+    -ms-animation: atkrunright1 3s linear infinite;
+    animation: atkrunright1 3s linear infinite
+}
+
+.attacking.away .team2 {
+    z-index: 101;
+    -webkit-animation: atkrunrightt2 3s linear infinite;
+    -moz-animation: atkrunrightt2 3s linear infinite;
+    -ms-animation: atkrunrightt2 3s linear infinite;
+    animation: atkrunrightt2 3s linear infinite
+}
+
+.attacking.away .team3 {
+    z-index: 100;
+    -webkit-animation: atkrunright3 3s linear infinite;
+    -moz-animation: atkrunright3 3s linear infinite;
+    -ms-animation: atkrunright3 3s linear infinite;
+    animation: atkrunright3 3s linear infinite
+}
+
+.attacking.away .team .player.first {
+    top: -5px;
+    right: 400px
+}
+
+.attacking.away .team2 .player.second {
+    top: -50px;
+    right: 350px;
+    transform: scale(.95)
+}
+
+.attacking.away .team3 .player.third {
+    top: 30px;
+    right: 250px
+}
+
+.dangerousattacking.home {
+    position: absolute;
+    top: 174px;
+    left: 150px;
+    width: 790px;
+    height: 144px
+}
+
+.dangerousattacking.away {
+    position: absolute;
+    top: 174px;
+    right: 50px;
+    width: 790px;
+    height: 144px
+}
+
+.dangerousattacking.away .background,
+.dangerousattacking.home .background {
+    top: 0;
+    width: 790px;
+    height: 144px;
+    background-image: url(../img/dangerousAttack.png);
+    background-size: 65%;
+    z-index: 99;
+    position: absolute;
+    background-repeat: no-repeat
+}
+
+.dangerousattacking.home .background {
+    left: 0;
+    background-position: 0 0;
+    -webkit-animation: attackingleft 3s linear infinite;
+    -moz-animation: attackingleft 3s linear infinite;
+    -ms-animation: attackingleft 3s linear infinite;
+    animation: attackingleft 3s linear infinite;
+    -webkit-transition: all 3s linear;
+    transition: all 3s linear
+}
+
+.dangerousattacking.away .background {
+    right: 0;
+    background-position: 0 -204px;
+    -webkit-animation: attackingright 3s linear infinite;
+    -moz-animation: attackingright 3s linear infinite;
+    -ms-animation: attackingright 3s linear infinite;
+    animation: attackingright 3s linear infinite;
+    -webkit-transition: all 3s linear;
+    transition: all 3s linear
+}
+
+.dangerousattacking.home .background::after {
+    position: absolute;
+    bottom: 15px;
+    right: 250px;
+    z-index: 105
+}
+
+.dangerousattacking.home .team-name {
+    position: absolute;
+    bottom: 47px;
+    right: 235px;
+    z-index: 999;
+    text-shadow: 1px 1px 2px #0f4c15
+}
+
+.dangerousattacking.away .background::after {
+    position: absolute;
+    bottom: 15px;
+    left: 50px;
+    z-index: 105
+}
+
+.dangerousattacking.away .team-name {
+    position: absolute;
+    bottom: 47px;
+    left: 14px;
+    z-index: 999;
+    text-shadow: 1px 1px 2px #0f4c15
+}
+
+.dangerousattacking.home .team {
+    z-index: 102;
+    -webkit-animation: atkrunleft1 3s linear infinite;
+    -moz-animation: atkrunleft1 3s linear infinite;
+    -ms-animation: atkrunleft1 3s linear infinite;
+    animation: atkrunleft1 3s linear infinite
+}
+
+.dangerousattacking.home .team2 {
+    z-index: 101;
+    -webkit-animation: atkrunleft2 3s linear infinite;
+    -moz-animation: atkrunleft2 3s linear infinite;
+    -ms-animation: atkrunleft2 3s linear infinite;
+    animation: atkrunleft2 3s linear infinite
+}
+
+.dangerousattacking.home .team3 {
+    z-index: 100;
+    -webkit-animation: atkrunleft3 3s linear infinite;
+    -moz-animation: atkrunleft3 3s linear infinite;
+    s -ms-animation: atkrunleft3 3s linear infinite;
+    animation: atkrunleft3 3s linear infinite
+}
+
+.dangerousattacking.home .team .player.first {
+    top: -5px;
+    left: 300px
+}
+
+.dangerousattacking.home .team2 .player.second {
+    top: -50px;
+    left: 250px;
+    transform: scale(.95)
+}
+
+.dangerousattacking.home .team3 .player.third {
+    top: 30px;
+    left: 200px
+}
+
+.dangerousattacking.away .team {
+    z-index: 102;
+    -webkit-animation: atkrunright1 3s linear infinite;
+    -moz-animation: atkrunright1 3s linear infinite;
+    -ms-animation: atkrunright1 3s linear infinite;
+    animation: atkrunright1 3s linear infinite
+}
+
+.dangerousattacking.away .team2 {
+    z-index: 101;
+    -webkit-animation: atkrunrightt2 3s linear infinite;
+    -moz-animation: atkrunrightt2 3s linear infinite;
+    -ms-animation: atkrunrightt2 3s linear infinite;
+    animation: atkrunrightt2 3s linear infinite
+}
+
+.dangerousattacking.away .team3 {
+    z-index: 100;
+    -webkit-animation: atkrunright3 3s linear infinite;
+    -moz-animation: atkrunright3 3s linear infinite;
+    -ms-animation: atkrunright3 3s linear infinite;
+    animation: atkrunright3 3s linear infinite
+}
+
+.goalshot.away,
+.goalshot.home {
+    position: relative;
+    left: 0;
+    width: 790px;
+    height: 388px;
+    z-index: 110
+}
+
+.dangerousattacking.away .team .player.first {
+    top: -5px;
+    right: 400px
+}
+
+.dangerousattacking.away .team2 .player.second {
+    top: -50px;
+    right: 350px;
+    transform: scale(.95)
+}
+
+.dangerousattacking.away .team3 .player.third {
+    top: 30px;
+    right: 250px
+}
+
+.goalshot.home {
+    background-image: url(../img/bg-goal2x.png);
+    background-repeat: no-repeat
+}
+
+.goalshot.away {
+    background-image: url(../img/bg-goal2xx.png);
+    background-repeat: no-repeat
+}
+
+.goalshot.away .goalnetmask,
+.goalshot.home .goalnetmask {
+    top: -105px;
+    width: 295px;
+    height: 460px;
+    background-repeat: no-repeat;
+    -moz-transition: all 1.6s linear;
+    position: absolute;
+    -webkit-transition: all 1.6s linear
+}
+
+.goalshot.home .goalnetmask {
+    left: 490px;
+    background-image: url(../img/bg-goal2k-mask.png);
+    -webkit-animation: flyball 1.6s steps(24) infinite;
+    -moz-animation: flyball 1.6s steps(24) infinite;
+    -ms-animation: flyball 1.6s steps(24) infinite;
+    animation: flyball 1.6s steps(24) infinite
+}
+
+.goalshot.away .goalnetmask,
+.goalshot.home .goalnet {
+    -webkit-animation: flyball 1.6s steps(24) infinite;
+    -moz-animation: flyball 1.6s steps(24) infinite;
+    -ms-animation: flyball 1.6s steps(24) infinite
+}
+
+.goalshot.away .goalnetmask {
+    left: 145px;
+    background-image: url(../img/bg-goal2k-mask2.png);
+    animation: flyball 1.6s steps(24) infinite
+}
+
+.goalshot.away .goalbumpx,
+.goalshot.home .goalbumpx {
+    -webkit-animation-name: netshakel;
+    -moz-animation-name: netshakel;
+    -ms-animation-name: netshakel;
+    animation-name: netshakel;
+    -webkit-animation-duration: 1.6s;
+    -moz-animation-duration: 1.6s;
+    -ms-animation-duration: 1.6s;
+    animation-duration: 1.6s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-transition: all 1.6s linear;
+    transition: all 1.6s linear;
+    position: absolute;
+    z-index: 15
+}
+
+.goalshot.away .goalshot.away .goalbumpx,
+.goalshot.home .goalbump,
+.goalshot.home .goalshot.away .goalbumpx {
+    -webkit-animation-duration: 1.6s;
+    -moz-animation-duration: 1.6s;
+    -ms-animation-duration: 1.6s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite
+}
+
+.goalshot.away .goalshot.away .goalbumpx,
+.goalshot.home .goalshot.away .goalbumpx {
+    -webkit-animation-name: netshaker;
+    -moz-animation-name: netshaker;
+    -ms-animation-name: netshaker;
+    animation-name: netshaker;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    -webkit-transition: all 1.6s linear;
+    transition: all 1.6s linear;
+    position: absolute;
+    z-index: 15
+}
+
+.goalshot.away .goalnet,
+.goalshot.home .goalnet {
+    width: 295px;
+    height: 460px;
+    background-repeat: no-repeat;
+    -moz-transition: all 1.6s linear;
+    -webkit-transition: all 1.6s linear;
+    position: absolute
+}
+
+.goalshot.home .goalnet {
+    top: -404px;
+    left: 490px;
+    background-image: url(../img/bg-goal2k.png);
+    animation: flyball 1.6s steps(24) infinite
+}
+
+.goalshot.away .goalnet {
+    top: -405px;
+    left: 145px;
+    background-image: url(../img/bg-goal2kaway.png);
+    -webkit-animation: flyball 1.6s steps(24) infinite;
+    -moz-animation: flyball 1.6s steps(24) infinite;
+    -ms-animation: flyball 1.6s steps(24) infinite;
+    animation: flyball 1.6s steps(24) infinite
+}
+
+.goalshot.home .goalbump {
+    -webkit-animation-name: netshakel;
+    -moz-animation-name: netshakel;
+    -ms-animation-name: netshakel;
+    animation-name: netshakel;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    -webkit-transition: all 1.6s linear;
+    transition: all 1.6s linear;
+    position: absolute;
+    z-index: 3
+}
+
+.goalshot.away .goalbump,
+.goalshot.home .goalball {
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite
+}
+
+.goalshot.away .goalbump {
+    -webkit-animation-name: netshaker;
+    -moz-animation-name: netshaker;
+    -ms-animation-name: netshaker;
+    animation-name: netshaker;
+    -webkit-animation-duration: 1.6s;
+    -moz-animation-duration: 1.6s;
+    -ms-animation-duration: 1.6s;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    -webkit-transition: all 1.6s linear;
+    transition: all 1.6s linear;
+    position: absolute;
+    z-index: 3
+}
+
+.goalshot.away .arc,
+.goalshot.home .arc {
+    position: relative;
+    bottom: -40px;
+    width: 600px;
+    height: 300px;
+    z-index: 9
+}
+
+.goalshot.home .arc {
+    margin-left: 162px
+}
+
+.goalshot.away .arc {
+    margin-left: 233px
+}
+
+.goalshot.away .goalball,
+.goalshot.home .goalball {
+    bottom: 0;
+    -webkit-animation-duration: 1.6s;
+    -moz-animation-duration: 1.6s;
+    -ms-animation-duration: 1.6s;
+    position: absolute
+}
+
+.goalshot.home .goalball {
+    left: 2px;
+    z-index: 99;
+    width: 85px;
+    height: 85px;
+    -webkit-animation-name: gshxAxis;
+    -moz-animation-name: gshxAxis;
+    -ms-animation-name: gshxAxis;
+    animation-name: gshxAxis;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    -webkit-transition: all 1.6s ease-in-out;
+    transition: all 1.6s ease-in-out
+}
+
+.goalball::after,
+.goalshot.away .goalball {
+    width: 85px;
+    height: 85px;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite
+}
+
+.goalshot.away .goalball {
+    right: 2px;
+    z-index: 99;
+    -webkit-animation-name: gshaAxis;
+    -moz-animation-name: gshaAxis;
+    -ms-animation-name: gshaAxis;
+    animation-name: gshaAxis;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    -webkit-transition: all 1.6s ease-in-out;
+    transition: all 1.6s ease-in-out
+}
+
+.goalball::after {
+    display: block;
+    background: url(../img/basketball.png) center center no-repeat;
+    content: url(../img/basketball2.png);
+    -webkit-animation-name: gsyAxis;
+    -moz-animation-name: gsyAxis;
+    -ms-animation-name: gsyAxis;
+    animation-name: gsyAxis;
+    -webkit-animation-duration: 1.6s;
+    -moz-animation-duration: 1.6s;
+    -ms-animation-duration: 1.6s;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    -webkit-transition: all 1.6s linear;
+    transition: all 1.6s linear
+}
+
+.goaltext {
+    position: absolute;
+    top: 25%;
+    left: 44%;
+    width: 96px;
+    height: 0;
+    background-image: url(../img/Goal.png);
+    -webkit-animation-name: zoomIn;
+    -moz-animation-name: zoomIn;
+    -ms-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -ms-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-duration: .6s;
+    -moz-animation-duration: .6s;
+    -ms-animation-duration: .6s;
+    animation-duration: .6s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out
+}
+
+.goalshot .goal-tooltip {
+    margin: 0 auto;
+    left: 4px;
+    top: 105px;
+    right: 0;
+    z-index: 99;
+    width: 145px;
+    height: 80px;
+    font-size: 10px;
+    -webkit-animation-name: goalfadeIn;
+    -moz-animation-name: goalfadeIn;
+    -ms-animation-name: goalfadeIn;
+    animation-name: goalfadeIn;
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -ms-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-transition: all 3s ease;
+    transition: all 3s ease;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.goalshot .goal-tooltip .ico {
+    width: 27px;
+    height: 27px;
+    float: left;
+    margin: 3px 0 0 3px;
+    border-radius: 3px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffa03b
+}
+
+.goalshot .goal-tooltip .ico.shot {
+    background-image: url(../img/ico-shot-e507a286bb.png)
+}
+
+.goalshot.home .goal-tooltip .ico {
+    float: left
+}
+
+.goalshot.home .goal-tooltip .time {
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    margin: 2px;
+    font-size: 10px;
+    border-radius: 3px;
+    background-color: #FDC003;
+    color: #fff;
+    float: left;
+    letter-spacing: 0
+}
+
+.goalshot .goal-tooltip .description {
+    line-height: 15px;
+    width: 114px;
+    font-size: 10px;
+    float: left;
+    display: block;
+    text-align: right;
+    overflow: hidden;
+    font-family: 'Microsoft YaHei', '微软雅黑', serif
+}
+
+.goalshot.away .goal-tooltip .description span,
+.goalshot.home .goal-tooltip .description span {
+    display: block;
+    width: 100px;
+    font-size: 14px;
+    text-align: left;
+    padding-left: .5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 15px;
+    margin-top: 3px
+}
+
+.goalshot .goal-tooltip .description span.team-name {
+    font-size: 12px;
+    color: #777;
+    line-height: 17px
+}
+
+.goalshot.away .goal-tooltip .ico {
+    float: right;
+    margin: 3px 3px 0 0
+}
+
+.goalshot.away .goal-tooltip .time {
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    margin: 2px;
+    font-size: 10px;
+    border-radius: 3px;
+    background-color: #01bdff;
+    color: #fff;
+    float: right;
+    letter-spacing: 0
+}
+
+.fangui .header,
+.goalshot .goal-tooltip .header {
+    background-color: #fff;
+    white-space: nowrap;
+    overflow: hidden
+}
+
+.goalshot .goal-tooltip .header {
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    height: 40px;
+    line-height: 40px;
+    width: 100%
+}
+
+.goalshot.away .goal-tooltip .footer .score .away,
+.goalshot.home .goal-tooltip .footer .score .home {
+    -webkit-animation: tada 1.8s ease-in-out infinite;
+    -moz-animation: tada 1.8s ease-in-out infinite;
+    -ms-animation: tada 1.8s ease-in-out infinite;
+    animation: tada 1.8s ease-in-out infinite;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -ms-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-transition: all 1.8s ease-in-out;
+    transition: all 1.8s ease-in-out;
+}
+
+.goalshot .goal-tooltip .footer {
+    background-color: #000;
+    height: 40px;
+    line-height: 40px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    width: 100%;
+    color: #fff;
+}
+
+.goalshot .goal-tooltip .footer .score {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 0
+}
+
+.goalshot .goal-tooltip .footer .score span {
+    display: inline-block;
+    font-size: 25px;
+}
+
+.goal-tooltip .footer .score span.home,
+.goalshot .goal-tooltip .footer .score span.away {
+    width: 47%;
+    height: 40px;
+}
+
+.goal-tooltip .footer .score span.home{
+    border-bottom-left-radius: 3px;
+}
+
+.goalshot .goal-tooltip .footer .score span.away {
+    border-bottom-right-radius: 3px;
+}
+
+.goalshot .goal-tooltip .footer .score span.colons {
+    width: 20px;
+    display: inline-block
+}
+
+.guanlan.away .move,
+.guanlan.home .move {
+    width: 600px;
+    z-index: 102;
+    height: 171px;
+    position: absolute
+}
+
+.guanlan.home .move {
+    top: 123px;
+    right: -156px;
+    -webkit-animation: guanlanleft 6s linear infinite;
+    -moz-animation: guanlanleft 6s linear infinite;
+    -ms-animation: guanlanleft 6s linear infinite;
+    animation: guanlanleft 6s linear infinite;
+    -webkit-transition: all 6s linear;
+    transition: all 6s linear
+}
+
+.gf .guanlan.home .move {
+    top: 106px
+}
+
+.guanlan.away .move {
+    top: 123px;
+    left: -296px;
+    -webkit-animation: guanlanright 6s linear infinite;
+    -moz-animation: guanlanright 6s linear infinite;
+    -ms-animation: guanlanright 6s linear infinite;
+    animation: guanlanright 6s linear infinite;
+    -webkit-transition: all 6s linear;
+    transition: all 6s linear
+}
+
+.gf .guanlan.away .move {
+    top: 106px
+}
+
+.guanlan.home .move .player {
+    position: absolute;
+    width: 86px;
+    height: 171px;
+    background-image: url(../img/guanlanr.png);
+    background-repeat: no-repeat;
+    -webkit-animation: guanlan 6s steps(9) infinite;
+    -moz-animation: guanlan 6s steps(9) infinite;
+    -ms-animation: guanlan 6s steps(9) infinite;
+    animation: guanlan 6s steps(9) infinite
+}
+
+.gf .guanlan.home .move .player {
+    position: absolute;
+    width: 96px;
+    height: 171px;
+    background-image: url(../img/gf-guanlanr.png);
+    background-repeat: no-repeat;
+    -webkit-animation: gfguanlan 6s steps(10) infinite;
+    -moz-animation: gfguanlan 6s steps(10) infinite;
+    -ms-animation: gfguanlan 6s steps(10) infinite;
+    animation: gfguanlan 6s steps(10) infinite
+}
+
+.guanlan.away .move .player {
+    position: absolute;
+    width: 86px;
+    height: 171px;
+    background-image: url(../img/guanlanl.png);
+    background-repeat: no-repeat;
+    -webkit-animation: guanlan 6s steps(9) infinite;
+    -moz-animation: guanlan 6s steps(9) infinite;
+    -ms-animation: guanlan 6s steps(9) infinite;
+    animation: guanlan 6s steps(9) infinite
+}
+
+.gf .guanlan.away .move .player {
+    position: absolute;
+    width: 96px;
+    height: 171px;
+    background-image: url(../img/gf-guanlanl.png);
+    background-repeat: no-repeat;
+    -webkit-animation: gfguanlan 6s steps(10) infinite;
+    -moz-animation: gfguanlan 6s steps(10) infinite;
+    -ms-animation: gfguanlan 6s steps(10) infinite;
+    animation: gfguanlan 6s steps(10) infinite
+}
+
+.guanlan.away .score,
+.guanlan.home .score {
+    position: absolute;
+    top: 112px;
+    width: 50px;
+    height: 40px;
+    background-image: url(../img/pk-goal-tip-143bb9b684.png);
+    background-repeat: no-repeat;
+    -webkit-animation: scorecuts .5s steps(24) infinite;
+    -moz-animation: scorecuts .5s steps(24) infinite;
+    -ms-animation: scorecuts .5s steps(24) infinite;
+    -o-animation: scorecuts .5s steps(24) infinite;
+    animation: scorecuts .5s steps(24) infinite;
+    -webkit-animation-delay: 5s;
+    -moz-animation-delay: 5s;
+    -ms-animation-delay: 5s;
+    -o-animation-delay: 5s;
+    animation-delay: 5s;
+    display: none
+}
+
+.layup.away .move,
+.layup.home .move,
+.layup.home .move .player {
+    position: absolute;
+    height: 171px
+}
+
+.guanlan.home .score {
+    right: 106px
+}
+
+.guanlan.away .score {
+    left: 106px
+}
+
+.layup.home .move {
+    top: 110px;
+    right: -172px;
+    width: 600px;
+    -webkit-animation: layupleft 6s linear infinite;
+    -moz-animation: layupleft 6s linear infinite;
+    -ms-animation: layupleft 6s linear infinite;
+    animation: layupleft 6s linear infinite;
+    -webkit-transition: all 6s linear;
+    transition: all 6s linear;
+    z-index: 80
+}
+
+.layup.away .move {
+    top: 110px;
+    left: -388px;
+    width: 600px;
+    -webkit-animation: layupright 6s linear infinite;
+    -moz-animation: layupright 6s linear infinite;
+    -ms-animation: layupright 6s linear infinite;
+    animation: layupright 6s linear infinite;
+    -webkit-transition: all 6s linear;
+    transition: all 6s linear;
+    z-index: 80
+}
+
+.layup.home .move .player {
+    width: 86px;
+    background-image: url(../img/layupl.png);
+    background-repeat: no-repeat;
+    -webkit-animation: layup 6s steps(13) infinite;
+    -moz-animation: layup 6s steps(13) infinite;
+    -ms-animation: layup 6s steps(13) infinite;
+    animation: layup 6s steps(13) infinite
+}
+
+.gf .layup.home .move .player,
+.layup.away .move .player {
+    background-repeat: no-repeat;
+    -webkit-animation: layup 6s steps(13) infinite;
+    -moz-animation: layup 6s steps(13) infinite;
+    -ms-animation: layup 6s steps(13) infinite;
+    position: absolute;
+    width: 86px;
+    height: 171px
+}
+
+.gf .layup.home .move .player {
+    background-image: url(../img/gf-layupl.png);
+    animation: layup 6s steps(13) infinite
+}
+
+.layup.away .move .player {
+    background-image: url(../img/layupr.png);
+    animation: layup 6s steps(13) infinite
+}
+
+.gf .layup.away .move .player,
+.layup.home .flyball {
+    -webkit-animation: layup 6s steps(13) infinite;
+    -moz-animation: layup 6s steps(13) infinite;
+    -ms-animation: layup 6s steps(13) infinite
+}
+
+.gf .layup.away .move .player {
+    position: absolute;
+    width: 86px;
+    height: 171px;
+    background-image: url(../img/gf-layupr.png);
+    background-repeat: no-repeat;
+    animation: layup 6s steps(13) infinite
+}
+
+.layup.away .flyball,
+.layup.home .flyball {
+    height: 171px;
+    background-image: url(../img/layupball.png);
+    top: 109px;
+    position: absolute;
+    z-index: 101;
+    width: 86px;
+    background-repeat: no-repeat
+}
+
+.layup.home .flyball {
+    animation: layup 6s steps(13) infinite;
+    right: 35px
+}
+
+.layup.away .flyball {
+    -webkit-animation: layup 6s steps(13) infinite;
+    -moz-animation: layup 6s steps(13) infinite;
+    -ms-animation: layup 6s steps(13) infinite;
+    animation: layup 6s steps(13) infinite;
+    left: 75px
+}
+
+.layup.away .score,
+.layup.home .score {
+    position: absolute;
+    top: 112px;
+    width: 50px;
+    height: 40px;
+    background-image: url(../img/pk-goal-tip-143bb9b684.png);
+    background-repeat: no-repeat;
+    -webkit-animation: scorecuts .5s steps(24) infinite;
+    -moz-animation: scorecuts .5s steps(24) infinite;
+    -ms-animation: scorecuts .5s steps(24) infinite;
+    -o-animation: scorecuts .5s steps(24) infinite;
+    animation: scorecuts .5s steps(24) infinite;
+    -webkit-animation-delay: 5s;
+    -moz-animation-delay: 5s;
+    -ms-animation-delay: 5s;
+    -o-animation-delay: 5s;
+    animation-delay: 5s;
+    display: none
+}
+
+.layup.home .score {
+    right: 106px
+}
+
+.layup.away .score {
+    left: 106px
+}
+
+.taiotou.home .move {
+    position: absolute;
+    top: 105px;
+    right: -15px;
+    width: 600px;
+    height: 201px;
+    -webkit-animation: taiotouleft 6s linear infinite;
+    -moz-animation: taiotouleft 6s linear infinite;
+    -ms-animation: taiotouleft 6s linear infinite;
+    animation: taiotouleft 6s linear infinite;
+    -webkit-transition: all 6s linear;
+    transition: all 6s linear;
+    z-index: 101
+}
+
+.taiotou.away .move,
+.taiotou.home .player {
+    position: absolute;
+    -webkit-transition: all 6s linear
+}
+
+.taiotou.away .move {
+    top: 100px;
+    left: -120px;
+    width: 600px;
+    height: 201px;
+    -webkit-animation: taiotouright 6s linear infinite;
+    -moz-animation: taiotouright 6s linear infinite;
+    -ms-animation: taiotouright 6s linear infinite;
+    animation: taiotouright 6s linear infinite;
+    transition: all 6s linear;
+    z-index: 101
+}
+
+.taiotou.home .player {
+    top: 110px;
+    right: 192px;
+    width: 86px;
+    height: 155px;
+    background-image: url(../img/tiaotoul.png);
+    background-repeat: no-repeat;
+    -webkit-animation: taiotou 6s steps(10) infinite;
+    -moz-animation: taiotou 6s steps(10) infinite;
+    -ms-animation: taiotou 6s steps(10) infinite;
+    animation: taiotou 6s steps(10) infinite;
+    transition: all 6s linear;
+    z-index: 80
+}
+
+.gf .taiotou.home .player,
+.taiotou.away .player {
+    position: absolute;
+    width: 86px;
+    background-repeat: no-repeat;
+    -webkit-animation: taiotou 6s steps(10) infinite;
+    -moz-animation: taiotou 6s steps(10) infinite;
+    -ms-animation: taiotou 6s steps(10) infinite;
+    -webkit-transition: all 6s linear;
+    top: 110px;
+    height: 155px;
+    z-index: 80
+}
+
+.gf .taiotou.home .player {
+    right: 192px;
+    background-image: url(../img/gf-tiaotoul.png);
+    animation: taiotou 6s steps(10) infinite;
+    transition: all 6s linear
+}
+
+.taiotou.away .player {
+    left: 192px;
+    background-image: url(../img/tiaotour.png);
+    animation: taiotou 6s steps(10) infinite;
+    transition: all 6s linear
+}
+
+.gf .taiotou.away .player,
+.taiotou.home .move .flyball {
+    width: 86px;
+    background-repeat: no-repeat;
+    -webkit-animation: taiotou 6s steps(10) infinite;
+    -moz-animation: taiotou 6s steps(10) infinite;
+    -ms-animation: taiotou 6s steps(10) infinite
+}
+
+.gf .taiotou.away .player,
+.sanfen.home .move {
+    position: absolute;
+    -webkit-transition: all 6s linear
+}
+
+.gf .taiotou.away .player {
+    top: 110px;
+    left: 192px;
+    height: 155px;
+    background-image: url(../img/gf-tiaotour.png);
+    animation: taiotou 6s steps(10) infinite;
+    transition: all 6s linear;
+    z-index: 80
+}
+
+.taiotou.home .move .flyball {
+    position: absolute;
+    height: 202px;
+    background-image: url(../img/tiaotouballl.png);
+    animation: taiotou 6s steps(10) infinite;
+    -webkit-transition: all 6s ease-out;
+    transition: all 6s ease-out;
+    right: 15%;
+    top: 0
+}
+
+.sanfen.home .player,
+.taiotou.away .move .flyball {
+    width: 86px;
+    background-repeat: no-repeat;
+    -webkit-animation: taiotou 6s steps(10) infinite;
+    -moz-animation: taiotou 6s steps(10) infinite;
+    -ms-animation: taiotou 6s steps(10) infinite
+}
+
+.taiotou.away .move .flyball {
+    position: absolute;
+    height: 202px;
+    background-image: url(../img/tiaotouballr.png);
+    animation: taiotou 6s steps(10) infinite;
+    -webkit-transition: all 6s ease-out;
+    transition: all 6s ease-out;
+    left: 15%;
+    top: 0
+}
+
+.taiotou.away .score,
+.taiotou.home .score {
+    position: absolute;
+    top: 112px;
+    width: 50px;
+    height: 40px;
+    background-image: url(../img/field-goal-tip-e3cba2b47b.png);
+    background-repeat: no-repeat;
+    -webkit-animation: scorecuts .5s steps(24) infinite;
+    -moz-animation: scorecuts .5s steps(24) infinite;
+    -ms-animation: scorecuts .5s steps(24) infinite;
+    -o-animation: scorecuts .5s steps(24) infinite;
+    animation: scorecuts .5s steps(24) infinite;
+    -webkit-animation-delay: 5s;
+    -moz-animation-delay: 5s;
+    -ms-animation-delay: 5s;
+    -o-animation-delay: 5s;
+    animation-delay: 5s;
+    display: none
+}
+
+.taiotou.home .score {
+    right: 106px
+}
+
+.taiotou.away .score {
+    left: 106px
+}
+
+.sanfen.home .move {
+    top: 105px;
+    right: -15px;
+    width: 600px;
+    height: 201px;
+    -webkit-animation: sanfenleft 6s linear infinite;
+    -moz-animation: sanfenleft 6s linear infinite;
+    -ms-animation: sanfenleft 6s linear infinite;
+    animation: sanfenleft 6s linear infinite;
+    transition: all 6s linear;
+    z-index: 101
+}
+
+.sanfen.away .move,
+.sanfen.home .player {
+    position: absolute;
+    -webkit-transition: all 6s linear
+}
+
+.sanfen.away .move {
+    top: 100px;
+    left: -120px;
+    width: 600px;
+    height: 201px;
+    -webkit-animation: sanfenright 6s linear infinite;
+    -moz-animation: sanfenright 6s linear infinite;
+    -ms-animation: sanfenright 6s linear infinite;
+    animation: sanfenright 6s linear infinite;
+    transition: all 6s linear;
+    z-index: 101
+}
+
+.sanfen.home .player {
+    top: 140px;
+    right: 220px;
+    height: 155px;
+    background-image: url(../img/sanfenl.png);
+    animation: taiotou 6s steps(10) infinite;
+    transition: all 6s linear;
+    z-index: 80
+}
+
+.gf .sanfen.home .player,
+.sanfen.away .player {
+    background-repeat: no-repeat;
+    -webkit-animation: taiotou 6s steps(10) infinite;
+    -moz-animation: taiotou 6s steps(10) infinite;
+    -ms-animation: taiotou 6s steps(10) infinite;
+    -webkit-transition: all 6s linear;
+    position: absolute;
+    top: 140px;
+    width: 86px;
+    height: 155px;
+    z-index: 80
+}
+
+.gf .sanfen.home .player {
+    right: 220px;
+    background-image: url(../img/gf-sanfenl.png);
+    animation: taiotou 6s steps(10) infinite;
+    transition: all 6s linear
+}
+
+.sanfen.away .player {
+    left: 220px;
+    background-image: url(../img/sanfenr.png);
+    animation: taiotou 6s steps(10) infinite;
+    transition: all 6s linear
+}
+
+.gf .sanfen.away .player,
+.sanfen.home .move .flyball {
+    -webkit-animation: taiotou 6s steps(10) infinite;
+    -moz-animation: taiotou 6s steps(10) infinite;
+    -ms-animation: taiotou 6s steps(10) infinite
+}
+
+.gf .sanfen.away .player {
+    position: absolute;
+    top: 140px;
+    left: 220px;
+    width: 86px;
+    height: 155px;
+    background-image: url(../img/gf-sanfenr.png);
+    background-repeat: no-repeat;
+    animation: taiotou 6s steps(10) infinite;
+    -webkit-transition: all 6s linear;
+    transition: all 6s linear;
+    z-index: 80
+}
+
+.sanfen.away .move .flyball,
+.sanfen.home .move .flyball {
+    width: 86px;
+    height: 202px;
+    top: 0;
+    position: absolute;
+    background-repeat: no-repeat
+}
+
+.sanfen.home .move .flyball {
+    background-image: url(../img/tiaotouballl.png);
+    animation: taiotou 6s steps(10) infinite;
+    -webkit-transition: all 6s ease-out;
+    transition: all 6s ease-out;
+    right: 15%
+}
+
+.sanfen.away .move .flyball {
+    background-image: url(../img/tiaotouballr.png);
+    -webkit-animation: taiotou 6s steps(10) infinite;
+    -moz-animation: taiotou 6s steps(10) infinite;
+    -ms-animation: taiotou 6s steps(10) infinite;
+    animation: taiotou 6s steps(10) infinite;
+    -webkit-transition: all 6s ease-out;
+    transition: all 6s ease-out;
+    left: 15%
+}
+
+.sanfen.away .score,
+.sanfen.home .score {
+    position: absolute;
+    top: 112px;
+    width: 50px;
+    height: 40px;
+    background-image: url(../img/field-goal-tip-score3.png);
+    background-repeat: no-repeat;
+    -webkit-animation: scorecuts .5s steps(24) infinite;
+    -moz-animation: scorecuts .5s steps(24) infinite;
+    -ms-animation: scorecuts .5s steps(24) infinite;
+    -o-animation: scorecuts .5s steps(24) infinite;
+    animation: scorecuts .5s steps(24) infinite;
+    -webkit-animation-delay: 5s;
+    -moz-animation-delay: 5s;
+    -ms-animation-delay: 5s;
+    -o-animation-delay: 5s;
+    animation-delay: 5s;
+    display: none
+}
+
+.sanfen.home .score {
+    right: 106px
+}
+
+.sanfen.away .score {
+    left: 106px
+}
+
+.daxigua.home .move {
+    position: absolute;
+    top: 105px;
+    right: 0;
+    width: 600px;
+    height: 154px;
+    -webkit-animation: daxigualeft 6s linear infinite;
+    -moz-animation: daxigualeft 6s linear infinite;
+    -ms-animation: daxigualeft 6s linear infinite;
+    animation: daxigualeft 6s linear infinite;
+    -webkit-transition: all 6s linear;
+    transition: all 6s linear;
+    z-index: 101
+}
+
+.daxigua.away .move,
+.daxigua.home .player {
+    position: absolute;
+    height: 154px;
+    -webkit-transition: all 6s linear
+}
+
+.daxigua.away .move {
+    top: 105px;
+    left: 0;
+    width: 600px;
+    -webkit-animation: daxiguaright 6s linear infinite;
+    -moz-animation: daxiguaright 6s linear infinite;
+    -ms-animation: daxiguaright 6s linear infinite;
+    animation: daxiguaright 6s linear infinite;
+    transition: all 6s linear;
+    z-index: 101
+}
+
+.daxigua.home .player {
+    top: 100px;
+    right: 190px;
+    width: 86px;
+    background-image: url(../img/xiguar.png);
+    background-repeat: no-repeat;
+    -webkit-animation: taiotou 6s steps(10) infinite;
+    -moz-animation: taiotou 6s steps(10) infinite;
+    -ms-animation: taiotou 6s steps(10) infinite;
+    animation: taiotou 6s steps(10) infinite;
+    transition: all 6s linear;
+    z-index: 80
+}
+
+.daxigua.away .player,
+.gf .daxigua.home .player {
+    height: 154px;
+    background-repeat: no-repeat;
+    -webkit-transition: all 6s linear;
+    position: absolute;
+    top: 100px;
+    z-index: 80
+}
+
+.gf .daxigua.home .player {
+    right: 190px;
+    width: 96px;
+    background-image: url(../img/gf-xiguar.png);
+    -webkit-animation: daxigua 6s steps(11) infinite;
+    -moz-animation: daxigua 6s steps(11) infinite;
+    -ms-animation: daxigua 6s steps(11) infinite;
+    animation: daxigua 6s steps(11) infinite;
+    transition: all 6s linear
+}
+
+.daxigua.away .player,
+.daxigua.home .move .flyball {
+    -webkit-animation: taiotou 6s steps(10) infinite;
+    -moz-animation: taiotou 6s steps(10) infinite;
+    -ms-animation: taiotou 6s steps(10) infinite
+}
+
+.daxigua.away .player {
+    left: 190px;
+    width: 86px;
+    background-image: url(../img/xigual.png);
+    animation: taiotou 6s steps(10) infinite;
+    transition: all 6s linear
+}
+
+.gf .daxigua.away .player {
+    position: absolute;
+    top: 100px;
+    left: 190px;
+    width: 96px;
+    height: 154px;
+    background-image: url(../img/gf-xigual.png);
+    background-repeat: no-repeat;
+    -webkit-animation: daxigua 6s steps(11) infinite;
+    -moz-animation: daxigua 6s steps(11) infinite;
+    -ms-animation: daxigua 6s steps(11) infinite;
+    animation: daxigua 6s steps(11) infinite;
+    -webkit-transition: all 6s linear;
+    transition: all 6s linear;
+    z-index: 80
+}
+
+.daxigua.away .move .flyball,
+.daxigua.home .move .flyball {
+    width: 86px;
+    height: 154px;
+    top: 0;
+    position: absolute;
+    background-repeat: no-repeat
+}
+
+.daxigua.home .move .flyball {
+    background-image: url(../img/xiguaballr.png);
+    animation: taiotou 6s steps(10) infinite;
+    -webkit-transition: all 6s ease-out;
+    transition: all 6s ease-out;
+    right: 15%
+}
+
+.daxigua.away .move .flyball {
+    background-image: url(../img/xiguaballl.png);
+    -webkit-animation: taiotou 6s steps(10) infinite;
+    -moz-animation: taiotou 6s steps(10) infinite;
+    -ms-animation: taiotou 6s steps(10) infinite;
+    animation: taiotou 6s steps(10) infinite;
+    -webkit-transition: all 6s ease-out;
+    transition: all 6s ease-out;
+    left: 15%
+}
+
+.daxigua.away .score,
+.daxigua.home .score {
+    position: absolute;
+    top: 112px;
+    width: 50px;
+    height: 40px;
+    background-image: url(../img/pk-goal-tip-143bb9b684.png);
+    background-repeat: no-repeat;
+    -webkit-animation: scorecuts .5s steps(24) infinite;
+    -moz-animation: tofourcuts .5s steps(24) infinite;
+    -ms-animation: scorecuts .5s steps(24) infinite;
+    -o-animation: scorecuts .5s steps(24) infinite;
+    animation: scorecuts .5s steps(24) infinite;
+    -webkit-animation-delay: 5s;
+    -moz-animation-delay: 5s;
+    -ms-animation-delay: 5s;
+    -o-animation-delay: 5s;
+    animation-delay: 5s;
+    display: none
+}
+
+.daxigua.home .score {
+    right: 106px
+}
+
+.daxigua.away .score {
+    left: 106px
+}
+
+.fangui,
+.zhanting {
+    position: absolute;
+    width: 150px;
+    height: 65px;
+    font-size: 10px;
+    top: 195px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 2
+}
+
+.fangui .header {
+    border-radius: 5px;
+    height: 30px;
+    line-height: 30px;
+    width: 100%
+}
+
+.fangui .footer {
+    background-color: #000;
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+    color: #fff;
+    display: none
+}
+
+.fangui.away .card,
+.fangui.home .card {
+    width: 21px;
+    height: 21px;
+    margin: 5px;
+    visibility: hidden;
+    background-color: #ff976e
+}
+
+.fangui .card,
+.fangui .content {
+    display: inline-block;
+    text-align: center;
+    overflow: hidden
+}
+
+.fangui.home .card {
+    float: left
+}
+
+.fangui.away .card {
+    float: right
+}
+
+.fangui.home .player {
+    position: absolute;
+    top: -80px;
+    left: -60px;
+    width: 50px;
+    height: 108px;
+    background-image: url(../img/regretl.png);
+    -webkit-animation: none;
+    -moz-animation: none;
+    -ms-animation: none;
+    animation: none
+}
+
+.fangui.away .player,
+.gf .fangui.home .player {
+    -webkit-animation: none;
+    -moz-animation: none;
+    -ms-animation: none;
+    position: absolute;
+    top: -80px;
+    width: 50px;
+    height: 108px
+}
+
+.gf .fangui.home .player {
+    left: -60px;
+    background-image: url(../img/gf-regretl.png);
+    animation: none
+}
+
+.fangui.away .player {
+    right: -60px;
+    background-image: url(../img/regretr.png);
+    animation: none
+}
+
+.gf .fangui.away .player {
+    position: absolute;
+    top: -80px;
+    right: -60px;
+    width: 50px;
+    height: 108px;
+    background-image: url(../img/gf-regretr.png);
+    -webkit-animation: none;
+    -moz-animation: none;
+    -ms-animation: none;
+    animation: none
+}
+
+.fangui .card {
+    background-image: url(../img/ico-foul-a0d07f48be.png);
+    visibility: visible
+}
+
+.fangui .dynamic-panel,
+.zhanting .dynamic-panel {
+    top: 0
+}
+
+.fangui.away .referee,
+.fangui.home .referee,
+.zhanting.away .referee,
+.zhanting.home .referee {
+    top: -43px;
+    width: 86px;
+    height: 96px;
+    position: absolute
+}
+
+.fangui .dynamic-panel .num,
+.zhanting .dynamic-panel .num {
+    border-radius: 3px
+}
+
+.fangui.home .referee {
+    left: 128px;
+    background-image: url(../img/referee_home.png)
+}
+
+.fangui.away .referee {
+    left: -78px;
+    background-image: url(../img/referee_away.png)
+}
+
+.zhanting.home .referee {
+    left: 128px;
+    background-image: url(../img/referee_home2.png)
+}
+
+.zhanting.away .referee {
+    left: -78px;
+    background-image: url(../img/referee_away2.png)
+}
+
+.fangui .content {
+    width: 100px;
+    font-size: 10px
+}
+
+.fangui .content span {
+    display: block;
+    width: 100px;
+    font-size: 12px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.fangui .content span.team-name {
+    color: #333
+}
+
+#tips .status,
+.tip {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+#tips,
+.dynamic-panel {
+    position: absolute;
+    left: 50%;
+    z-index: 110
+}
+
+.tip {
+    width: 150px;
+    font-size: 15pt;
+    color: #fff
+}
+
+#tips .status .text,
+.dynamic-panel .num .right .righttitle {
+    font-size: 14px;
+    color: #333
+}
+
+#tips {
+    top: 50%;
+    margin-top: 0;
+    margin-left: -80px
+}
+
+#tips .status {
+    right: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin: 0 auto;
+    width: 160px;
+    border-radius: 4px;
+    background-color: #fff;
+    display: block
+}
+
+#tips .status .text,
+#tips .status div,
+.text-live .live-icon {
+    display: inline-block
+}
+
+#tips .status .text {
+    margin-left: 8px;
+    overflow: hidden;
+    width: 90px;
+    white-space: nowrap
+}
+
+#tips .status .whistle {
+    display: inline-block;
+    margin-left: 33px;
+    width: 20px;
+    height: 19px;
+    background-image: url(../img/whistle.png)
+}
+
+#tips .minute-label {
+    width: 100%;
+    text-align: center
+}
+
+.dynamic-panel {
+    width: 142px;
+    top: 137px;
+    margin-left: -71px;
+    letter-spacing: 0
+}
+
+.dynamic-panel .num {
+    float: left;
+    width: 100%;
+    height: 37px;
+    background-color: #fff;
+    border-radius: 3px 3px 0 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .19);
+    display: block;
+    position: relative;
+    z-index: 2
+}
+
+.dynamic-panel .num .ico {
+    width: 27px;
+    height: 27px;
+    float: left;
+    margin: 3px 0 0 3px;
+    border-radius: 3px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffa03b
+}
+
+.dynamic-panel .num .ico.shot {
+    background-image: url(../img/ico-shot-e507a286bb.png)
+}
+
+.dynamic-panel .num .ico.miss {
+    background-image: url(../img/ico-miss-32039af791.png)
+}
+
+.dynamic-panel .num .ico.hourglass {
+    background-image: url(../img/ico-hourglass-802a633ab1.png)
+}
+
+.dynamic-panel .num .ico.foul {
+    background-image: url(../img/ico-foul-a0d07f48be.png)
+}
+
+.dynamic-panel .num .ico.ico-whistle {
+    background-image: url(../img/whistle-4d8e9f4236.png);
+    background-color: transparent!important
+}
+
+.dynamic-panel .num .right {
+    float: right;
+    width: 105px;
+    text-align: right;
+    margin: 3px 3px 0 0
+}
+
+.dynamic-panel .num .right .rightteam,
+.dynamic-panel .num .right .righttitle {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 17px
+}
+
+.dynamic-panel .num .right .rightteam {
+    font-size: 12px;
+    color: #777
+}
+
+.dynamic-panel .bottom {
+    position: relative;
+    display: block;
+    top: -10px;
+    float: left;
+    z-index: 1;
+    width: 100%;
+    height: 35px;
+    background-color: #000;
+    border-radius: 5px
+}
+
+.dynamic-panel .bottom .bottomscore {
+    line-height: 32px;
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff
+}
+
+.dynamic-panel .bottom .bottomscore span {
+    margin: 0 5px;
+    position: relative;
+    top: 1px
+}
+
+.dynamic-panel .bottom .free {
+    display: inline-block;
+    text-align: center;
+    line-height: 35px
+}
+
+.dynamic-panel .bottom .free .ico {
+    transition: background-color .5s ease;
+    -webkit-transition: background-color .5s ease;
+    -moz-transition: background-color .5s ease;
+    -o-transition: background-color .5s ease;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background-repeat: no-repeat;
+    background-position: center 30px;
+    background-color: #575757;
+    display: inline-block;
+    margin: 0 3px;
+    position: relative;
+    top: 2px
+}
+
+.dynamic-panel .bottom .free .ico.shot {
+    animation-name: free_ico;
+    animation-duration: .3s;
+    animation-timing-function: cubic-bezier(.17, .92, .29, 1.13);
+    animation-iteration-count: 1;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-fill-mode: forwards
+    -webkit-animation-name: free_ico;
+    -webkit-animation-duration: .3s;
+    -webkit-animation-timing-function: cubic-bezier(.17, .92, .29, 1.13);
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: 0;
+    -moz-animation-name: free_ico;
+    -moz-animation-duration: .3s;
+    -moz-animation-timing-function: cubic-bezier(.17, .92, .29, 1.13);
+    -moz-animation-iteration-count: 1;
+    -moz-animation-direction: alternate;
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-delay: 0;
+    background-image: url(../img/pk-goal-a04b9e61b0.png);
+    background-color: #80b16d
+}
+
+.dynamic-panel .bottom .free .ico.miss {
+    animation-name: free_ico;
+    animation-duration: .3s;
+    animation-timing-function: cubic-bezier(.17, .92, .29, 1.13);
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 0;
+    -webkit-animation-name: free_ico;
+    -webkit-animation-duration: .3s;
+    -webkit-animation-timing-function: cubic-bezier(.17, .92, .29, 1.13);
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: 0;
+    -moz-animation-name: free_ico;
+    -moz-animation-duration: .3s;
+    -moz-animation-timing-function: cubic-bezier(.17, .92, .29, 1.13);
+    -moz-animation-iteration-count: 1;
+    -moz-animation-direction: alternate;
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-delay: 0;
+    background-image: url(../img/pk-miss-7dbd0b949a.png);
+    background-color: #f57385
+}
+
+.home .dynamic-panel .num .ico {
+    background-color: #ffa03c
+}

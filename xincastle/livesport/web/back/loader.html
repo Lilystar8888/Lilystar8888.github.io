@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <title>後台首頁-星城體育</title>
+    <meta name="description" content="Static &amp; Dynamic Tables" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- bootstrap & fontawesome -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <!-- page specific plugin styles -->
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
+</head>
+
+<body class="no-skin">
+    <div id="load">
+        <div class="loading"></div>
+        <span class="count">100</span>
+    </div>
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <!--Loading-->
+    <script>
+    $(function() {
+        var loading = {
+            loadingShow: function() {
+                $("#load").show();
+                $('.count').each(function() {
+                    $(this).prop('Counter', 0).animate({
+                        Counter: $(this).text()
+                    }, {
+                        duration: 500, //loading的時間
+                        easing: 'swing',
+                        step: function(now) {
+                            $(this).text(Math.ceil(now));
+                        }
+                    });
+                });
+                var loadingTimer = setTimeout(function() {
+                    $("#load").hide();
+                }, 500); //loading的時間
+            },
+            loadingHide: function() {
+                $("#load").hide();
+            }
+        }
+        loading.loadingShow();
+
+    });
+    </script>
+</body>
+</html>

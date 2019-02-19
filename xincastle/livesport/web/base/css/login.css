@@ -1,0 +1,299 @@
+
+
+
+.btn-border {
+	display: inline-block
+    padding: 0 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #666;
+    font-size: 12px;
+    transition: .25s;
+    -webkit-transition: .25s;
+    -moz-transition: .25s;
+    -o-transition: .25s;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    background-color: #fff;
+    line-height: 28px;
+    border: 1px solid #ddd
+}
+
+.btn-border.active,
+.btn-border:hover {
+    background-color: #de1e30;
+    border-color: #de1e30;
+    color: #fff
+}
+
+.text-box input {
+    transition: border-color .3s ease;
+    -webkit-transition: border-color .3s ease;
+    -moz-transition: border-color .3s ease;
+    -o-transition: border-color .3s ease;
+    border: 1px solid #dde3e7;
+    background-color: #fff;
+    height: 38px;
+    line-height: 38px;
+    float: left;
+    padding: 0 10px;
+    pointer-events: auto;
+    font-size: 14px
+}
+
+.text-box input:-webkit-autofill {
+    background-color: transparent
+}
+
+.login-panel {
+    width: 480px;
+    height: auto;
+    margin: 5% auto 0;
+    letter-spacing: 0
+}
+
+@media (min-width:1025px) {
+    .login-panel {
+        margin-top: 8%
+    }
+}
+
+@media (min-width:1441px) {
+    .login-panel {
+        margin-top: 6%
+    }
+}
+
+.login-panel *,
+.login-panel :after,
+.login-panel :before {
+    -webkit-box-sizing: unset;
+    -moz-box-sizing: unset;
+    box-sizing: unset
+}
+
+.login-panel .login-area {
+    background-color: #fff;
+    width: 100%;
+    min-height: 300px;
+    border-radius: 10px;
+    float: left;
+    padding-bottom: 20px
+}
+
+.login-panel .login-area .row .text-box,
+.login-panel .login-area .row .text-box:before {
+    border-radius: 5px
+}
+
+.login-panel .login-area .title,
+.login-panel .login-ok .title {
+    clear: both;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    color: #666;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0
+}
+
+.login-panel .login-area .title:after,
+.login-panel .login-area .title:before {
+    content: '';
+    display: table
+}
+
+.login-panel .login-area .row {
+    clear: both;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%
+}
+
+.login-panel .login-area .row:after,
+.login-panel .login-area .row:before {
+    content: '';
+    display: table
+}
+
+.login-panel .login-area .checkbox-area .checkbox input[type=checkbox] {
+    display: none
+}
+
+.login-panel .login-area .error-msg {
+    display: block;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    color: #de1e30;
+    white-space: nowrap
+}
+
+.login-panel .login-area .error-msg .icon-error {
+    position: relative;
+    top: 4px;
+    margin-right: 5px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/error.svg);
+    animation-name: error-icon;
+    animation-duration: .3s;
+    animation-timing-function: cubic-bezier(.1, 1.07, 1, 1);
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0;
+    -webkit-animation-name: error-icon;
+    -webkit-animation-duration: .3s;
+    -webkit-animation-timing-function: cubic-bezier(.1, 1.07, 1, 1);
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: 0;
+    -moz-animation-name: error-icon;
+    -moz-animation-duration: .3s;
+    -moz-animation-timing-function: cubic-bezier(.1, 1.07, 1, 1);
+    -moz-animation-iteration-count: 1;
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-delay: 0;
+    -o-animation-name: error-icon;
+    -o-animation-duration: .3s;
+    -o-animation-timing-function: cubic-bezier(.1, 1.07, 1, 1);
+    -o-animation-iteration-count: 1;
+    -o-animation-fill-mode: forwards;
+    -o-animation-delay: 0
+}
+
+.login-panel .login-area .row.row-tow {
+    width: 310px;
+    padding: 0 85px
+}
+
+.login-panel .login-area .row .text-box .text {
+    background-color: #fafafa;
+    border-radius: 5px
+}
+
+.login-panel .login-area .row .link {
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    position: relative
+}
+
+.login-panel .login-area .row .link:hover {
+    color: #000
+}
+
+.login-panel .login-area .button {
+    -o-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 16px;
+    letter-spacing: 8px;
+    line-height: 38px;
+    text-align: center
+}
+
+.login-panel .login-area .button:focus {
+    border: 0;
+    outline: 0;
+    background: #d70c1f;
+    color: #fff
+}
+
+.login-panel .login-area .checkbox-area {
+    height: 30px;
+    font-family: simsun;
+    font-size: 12px;
+    color: #777;
+    text-align: left;
+    margin-top: 16px;
+    line-height: 19px
+}
+
+.login-panel .login-area .checkbox-area .error {
+    line-height: 28px
+}
+
+.login-panel .login-area .checkbox-area .checkbox {
+    text-indent: 10px;
+    font-family: simsun;
+    font-size: 12px;
+    color: #777;
+    float: left;
+    position: relative
+}
+
+.login-panel .login-area .checkbox-area .checkbox span.check {
+    float: left;
+    background: url(../img/sprite-signup-92877201c1.png) -150px -29px;
+    width: 19px;
+    height: 19px
+}
+
+.login-panel .login-area .checkbox-area .checkbox span.check.checked {
+    background-position: -150px 0
+}
+
+.login-panel .login-area .third-btn {
+    clear: both;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    text-align: center
+}
+
+.login-panel .login-area .third-btn:after,
+.login-panel .login-area .third-btn:before {
+    content: '';
+    display: table
+}
+
+.login-panel .login-area .third-btn a.iconfont {
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    display: inline-block;
+    height: 40px;
+    font-size: 40px;
+    line-height: 40px;
+    color: #d3d9de
+}
+
+.login-panel .login-area .third-btn a.iconfont:hover {
+    color: #de1e30
+}
+
+.login-panel .login-ok {
+    background-color: #fff;
+    width: 100%;
+    height: 310px;
+    border-radius: 10px;
+    float: left
+}
+
+.forms-ok {
+    position: relative;
+    top: unset;
+    left: unset;
+    background: 0 0;
+    width: 100%
+}
+
+.forms-ok .title-one {
+    color: #de1030
+}

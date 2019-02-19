@@ -5,6 +5,14 @@
     <link href="../base/css/video-js.css" rel="stylesheet">
     <script src="../base/js/video.js"></script>
     <script src="../base/js/videojs-contrib-hls.js"></script>
+    <!-- jQuery-->
+    <script src="../base/js/jquery-1.11.3.min.js"></script>
+    <!--20181210 美女视窗-->
+    <script type="text/javascript">
+    	function toggleVolume() {
+    		$('video').prop("muted", !$('video').prop("muted"));
+    	}
+    </script>
     <style>
         body,html{
             margin: 0;
@@ -13,32 +21,24 @@
 		    position: fixed;
 		    right: 0;
 		    bottom: 0;
-		    min-width: 100%; 
+		    min-width: 100%;
 		    min-height: 100%;
 		}
+		/*20181210 美女视窗*/
 		.content {
-		    position: relative;
+		    position: fixed;
+		    bottom: 0;
             background-color: #343434;
 		    width: 100%;
+		    height: 100%;
             overflow: hidden;
-		}
-		.icon_close{
-			position: absolute;
-			right: 0;
-			z-index: 2147483647;
-			display: block;
-			width:2rem;
-			height: 2rem;
-			background: url(../base/img/closew.svg);
 		}
     </style>
 </head>
 
 <body>
 	<div class="content">
-		<i class="icon_close"></i>
-	    <video id="ss_stream" class="video-js vjs-default-skin" controls autoplay preload="auto" width="100%" height="100%" data-setup='{}'>
-	    	<!--不要讓user控制影片可以拿掉controls-->
+	    <video id="ss_stream" class="video-js vjs-default-skin" playsinline autoplay muted loop preload="auto" width="100%" height="100%" data-setup='{}'><!--20181210 拿掉controls不要让user控制影片-->
         	<source src="https://bitdash-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8" type="application/x-mpegURL">
     	</video>
 	</div>

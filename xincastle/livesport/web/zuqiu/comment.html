@@ -9,90 +9,116 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="shortcut icon" href="favicon.ico" />
-
     <link href="../base/css/common.css" rel="stylesheet">
-    <link href="css/shujufenxi.css" rel="stylesheet">
     <link href="css/comment.css" rel="stylesheet">
     <link href="../base/css/vipadv2.css" rel="stylesheet">
-    <!--20170824-->
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
+    <!--201901 移除shujufenxi.css-->
+    <!-- jQuery (necessary) -->
+    <script src="../base/js/jquery-1.11.3.min.js"></script>
+    <!--201901 移除jquery-ui.min.js -->
+    <!--201901 轮播广告 不需要时可拿掉-->
+    <script src="../base/js/carousel.js"></script>
+    <!-- Site's js file -->
+    <script src="../base/js/common.js"></script>
+    <script src="js/comment.js"></script>
+    <script>
+    //点登入按钮写入登入视窗
+    function LoginDialogue() {
+        $("body").append('<div id="loginBox-panel"class="util-dialog"style="display: block;"><div class="mask"></div><div class="util-dialog-cda pop login-panel fixed show"style="border-radius: 10px; margin-left: -240px; margin-top: -270px;"><i class="iconfont icon-close"onclick="hideLogin();"></i><div id="login"class="login-area"><div class="title">登录</div><div class="row row-tow"><div class="text-box"><input class="text w-290"id="username"name="username"type="text"placeholder="邮箱"></div></div><div class="row row-tow"><div class="text-box m-t-16"><input class="text w-290"id="password"name="password"type="password"placeholder="登录密码（6-30位）"></div></div><div class="row row-tow"><a class="link float-right f-s-12 color-bbb m-t-12 m-b-12"href="forgot-password.html">找回密码</a></div><div class="varea"><div id="captcha"></div></div><div id="msg"class="row row-tow error-msg m-t-10 hide"><i class="icon-error"></i>我是错误讯息</div><div class="row row-tow m-t-16"><a class="button btn-border active submit line-h-40 w-290"onclick="goLogin()">登录</a></div><div class="row row-tow checkbox-area"><label class="checkbox"onclick="LoginCheck(this)"><span class="check"><input type="checkbox"name="remember"value="1"id="checks"></span>一个月内免登录</label><a class="link float-right f-s-12 color-de1e30"target="_blank"href="../base/signup.html">新用户注册</a></div></div><!--登录成功自动跳转到登录前页面--><div class="login-ok hide"><div class="forms-ok"><div class="iconwrap"><i class="iconfont icon-icosucceed"></i></div><div class="title-one">登录成功</div><div class="title-tow countdown"></div></div></div></div></div>');
+        VerityInit();
+    }
+
+    //点登出按钮写入登出视窗
+    function LogoutDialogue() {
+        $("body").append('<div id="logoutBox-panel"class="util-dialog"style="display: block;"><div class="mask"></div><div class="util-dialog-cda alt exit-login fixed show"style="border-radius: 10px; margin-left: -150px; margin-top: -200px;"><i class="iconfont icon-close"onclick="hideLogout();"></i><div class="dialog-title">提示</div><div class="dialog-content center">点击确认后退出登入状态</div><div class="dialog-buttons"><div class="dialog-button "style="width: 150px;"onclick="hideLogout();">取消</div><div class="dialog-button primary bd-l"style="width: 149px;"onclick="hideLogout();">确定</div></div></div></div>');
+    }
+        //201901 验证
+        function goLogin() {
+            //是否已完成滑块验证
+            var errMsg = "亲，还没有完成滑块验证哦~";
+            !$(".sliderContainer").hasClass('sliderContainer_success') ? (
+                $("#msg")
+                .html('<i class="iconfont icon-error"></i>' + errMsg)
+                .removeClass("hide")
+            ) : (
+                hideLogin()
+            )
+        }
+    </script>
 </head>
 
 <body>
+
+    <!--导航-->
     <nav class="navbar navbar-default">
-        
-            <div class="ss-header hide" id="ss-header">
-                <div class="header-wrap">
-                    <ul>
-                        <li><a href="javascript:;">设为首页</a></li>
-                        <li><a href="javascript:;">加入收藏</a></li>
-                        <li class="last-li"><a href="javascript:;" target="_blank">网站导航</a></li>
-                        <li class="icons-li last-li"> <a href="javascript:;" target="_blank"><i class="icons-i icon-ico_mobile_10x15"></i>手机客户端</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!--ss-header-->
-            <a class="sslogo" href="#"><img src="../base/img/logo.png"></a>
-            <!--navbar-header-->
-            <div class="wrap">
-                <ul class="nav navbar-nav">
-                        <li><a href="index.html">首页</a></li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">即时比分
-                                <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu red">
-                                <!--移除red可显示黑色面板-->
-                                <i class="icon-w-arrow"></i>
-                                <div class="line"></div>
-                                <li class="link active"><a href="index.html">足球比分</a></li>
-                                <li class="link"><a href="../lanqiu/index.html">篮球比分</a></li>
-                                <li class="link none"><a href="#">网球</a></li>
-                                <li class="link none"><a ref="#">棒球</a></li>
-                                <li class="link none"><a href="#">橄榄球</a></li>
-                                <li class="link none"><a href="#">斯诺克</a></li>
-                                <li class="link none"><a href="#">赛车</a></li>
-                                <li class="link none"><a href="#">赛马</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="database.html">资料库</a></li>
-                                        <li><a href="../wiki/index.html">彩票百科</a></li>
-                <li><a href="http://news.xincastle-sports.com/">情报中心</a></li>
+        <div class="ss-header hide" id="ss-header">
+            <div class="header-wrap">
+                <ul>
+                    <li><a href="javascript:;">设为首页</a></li>
+                    <li><a href="javascript:;">加入收藏</a></li>
+                    <li class="last-li"><a href="javascript:;" target="_blank">网站导航</a></li>
+                    <li class="icons-li last-li"> <a href="javascript:;" target="_blank"><i class="icons-i icon-ico_mobile_10x15"></i>手机客户端</a></li>
                 </ul>
             </div>
-
-            <ul class="nav navbar-nav navright">
-                <li class="navbar-btn">
-                    <a class="btn-storev" href="javascript:;"><span class="shine chrome">储值星币</span></a>
-                </li>
-                <li class="showvalue"><i class="icon-coins"></i>18925</li>
+        </div>
+        <!--ss-header-->
+        <a class="sslogo" href="#"><img src="../base/img/logo.png"></a>
+        <!--navbar-header-->
+        <div class="wrap">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">首页</a></li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;" aria-expanded="false">
-                        <img class="nav-user-photo" src="img/userIcon.png" alt="使用者头像">
-                        <span class="user-info">nlstudio7197</span>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">即时比分
                         <span class="caret"></span>
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu red">
+                        <!--移除red可显示黑色面板-->
                         <i class="icon-w-arrow"></i>
-                        <li><a href="javascript:;">星币充值</a></li>
-                        <li><a href="javascript:;">我的资料</a></li>
-                        <li><a href="javascript:;">联络客服</a></li>
-                        <li class="divider"></li>
-                        <li><a class="btn-logout" href="javascript:;">退出</a></li>
+                        <div class="line"></div>
+                        <li class="link active"><a href="index.html">足球比分</a></li>
+                        <li class="link"><a href="../lanqiu/index.html">篮球比分</a></li>
+                        <li class="link none"><a href="#">网球</a></li>
+                        <li class="link none"><a ref="#">棒球</a></li>
+                        <li class="link none"><a href="#">橄榄球</a></li>
+                        <li class="link none"><a href="#">斯诺克</a></li>
+                        <li class="link none"><a href="#">赛车</a></li>
+                        <li class="link none"><a href="#">赛马</a></li>
                     </ul>
                 </li>
-                <li class="navbar-btn">
-                    <a href="javascript:;" class="btn btn-login" role="button">登入</a>
-                </li>
+                <li><a href="../../database/index.html">资料库</a></li>
+                <li><a href="../wiki/index.html">彩票百科</a></li>
+                <li><a href="http://news.xincastle-sports.com/">情报中心</a></li>
+                <li><a href="http://xinc.tw/livesport/app/">App下载</a></li>
             </ul>
-            <!--navright-->
+        </div>
+        <ul class="nav navbar-nav navright">
+            <li class="navbar-btn">
+                <a class="btn-storev" href="javascript:;"><span class="shine chrome">储值星币</span></a>
+            </li>
+            <li class="showvalue"><i class="icon-coins"></i>18925</li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;" aria-expanded="false">
+                <img class="nav-user-photo" src="img/userIcon.png" alt="使用者头像">
+                <span class="user-info">nlstudio7197</span>
+                <span class="caret"></span>
+                    </a>
+                <ul class="dropdown-menu">
+                    <i class="icon-w-arrow"></i>
+                    <li><a href="javascript:;">星币充值</a></li>
+                    <li><a href="javascript:;">我的资料</a></li>
+                    <li><a href="javascript:;">联络客服</a></li>
+                    <li class="divider"></li>
+                    <!--201901 写入登出Box-->
+                    <li><a class="btn-logout" href="javascript:;" onclick="LogoutDialogue();">退出</a></li>
+                </ul>
+            </li>
+            <li class="navbar-btn">
+                <a href="../base/login.html" class="btn btn-login" role="button">登入</a>
+            </li>
+        </ul>
+        <!--navright-->
     </nav>
-    <!--导航-->
+
     <div id="breadnav">
         <div class="parallelogram2"></div>
         <ol class="breadcrumb">
@@ -104,8 +130,10 @@
         </ol>
     </div>
     <!--breadcrumb-->
+
     <!-- 正文内容-->
     <div class="container">
+
         <div class="float-box">
             <div class="tool-box">
                 <ul id="columnsNav">
@@ -119,19 +147,103 @@
             <div class="go-top"> <i class="icon-icon_backtop"></i> <span class="hidden-md hidden-xs">返回</span> </div>
         </div>
         <!--float-box-->
+
         <!--评论开始-->
-        <div class="shuju-main-content column ui-sortable" id="columns">
+        <div class="shuju-main-content">
+
             <div class="info">[挪超]&nbsp;[亚室锦标] 大溪地室内足 vs 吉尔吉斯斯坦室内足球队</div>
+
             <div class="time">开赛时间：2017/7/5 下午 06:00:00 </div>
+
+            <!--201901 发表新评论 floorid parentid 4处都要对上 否则JS会报错-->
             <div class="npl_redk">
-                <form method="post" action="">
+                <div name="commentArea" floorid="-1" parentid="null">
                     <textarea cols="80" rows="8" class="npl_topinput" placeholder="文明发言，请遵守星城体育评论协议"></textarea>
-                    <input type="submit" value="发表评论" class="npl_grayty">
-                </form>
+                </div>
+                <div class="npl_spwz">
+                    <a href="javascript:void(0);" name="emoj_chose_button" floorid="-1" parentid="null" title="插入表情" class="pl_icon_smile"></a>
+                    <a href="javascript:void(0);" name="uploadImgButton" title="上传图片" class="pl_icon_pic"><input style="display:none" name="imgFile" type="file"></a>
+                    <div name="emoj" class="ke-menu-default ke-shadow ke-menu" floorid="-1" parentid="null" style="display: none;">
+                        <div class="ke-plugin-emoticons">
+                            <table class="ke-table" cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="ke-cell"><span title="[微笑]" class="ke-img" style="background-position: 0px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[撇嘴]" class="ke-img" style="background-position: -24px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[色]" class="ke-img" style="background-position: -48px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[发呆]" class="ke-img" style="background-position: -72px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[得意]" class="ke-img" style="background-position: -96px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[流泪]" class="ke-img" style="background-position: -120px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[害羞]" class="ke-img" style="background-position: -144px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[闭嘴]" class="ke-img" style="background-position: -168px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[睡]" class="ke-img" style="background-position: -192px 0px;"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ke-cell"><span title="[大哭]" class="ke-img" style="background-position: -216px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[尴尬]" class="ke-img" style="background-position: -240px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[发怒]" class="ke-img" style="background-position: -264px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[调皮]" class="ke-img" style="background-position: -288px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[呲牙]" class="ke-img" style="background-position: -312px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[惊讶]" class="ke-img" style="background-position: -336px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[难过]" class="ke-img" style="background-position: -360px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[酷]" class="ke-img" style="background-position: -384px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[冷汗]" class="ke-img" style="background-position: -408px 0px;"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ke-cell"><span title="[抓狂]" class="ke-img" style="background-position: -432px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[吐]" class="ke-img" style="background-position: -456px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[偷笑]" class="ke-img" style="background-position: -480px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[可爱]" class="ke-img" style="background-position: -504px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[白眼]" class="ke-img" style="background-position: -528px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[傲慢]" class="ke-img" style="background-position: -552px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[饥饿]" class="ke-img" style="background-position: -576px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[困]" class="ke-img" style="background-position: -600px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[惊恐]" class="ke-img" style="background-position: -624px 0px;"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ke-cell"><span title="[流汗]" class="ke-img" style="background-position: -648px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[憨笑]" class="ke-img" style="background-position: -672px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[大兵]" class="ke-img" style="background-position: -696px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[奋斗]" class="ke-img" style="background-position: -720px 0px;"></span></td>
+                                        <td class="ke-cell"><span  title="[咒骂]" class="ke-img" style="background-position: -744px 0px;"></span></td>
+                                        <td class="ke-cell"><span  title="[疑问]" class="ke-img" style="background-position: -768px 0px;"></span></td>
+                                        <td class="ke-cell"><span  title="[嘘]" class="ke-img" style="background-position: -792px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[晕]" class="ke-img" style="background-position: -816px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[折磨]" class="ke-img" style="background-position: -840px 0px;"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ke-cell"><span  title="[衰]" class="ke-img" style="background-position: -864px 0px;"></span></td>
+                                        <td class="ke-cell"><span  title="[骷髅]" class="ke-img" style="background-position: -888px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[敲打]" class="ke-img" style="background-position: -912px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[再见]" class="ke-img" style="background-position: -936px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[擦汗]" class="ke-img" style="background-position: -960px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[抠鼻]" class="ke-img" style="background-position: -984px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[鼓掌]" class="ke-img" style="background-position: -1008px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[糗大了]" class="ke-img" style="background-position: -1032px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[坏笑]" class="ke-img" style="background-position: -1056px 0px;"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ke-cell"><span title="[左哼哼]" class="ke-img" style="background-position: -1080px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[右哼哼]" class="ke-img" style="background-position: -1104px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[哈欠]" class="ke-img" style="background-position: -1128px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[鄙视]" class="ke-img" style="background-position: -1152px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[委屈]" class="ke-img" style="background-position: -1176px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[快哭了]" class="ke-img" style="background-position: -1200px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[阴险]" class="ke-img" style="background-position: -1224px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[亲亲]" class="ke-img" style="background-position: -1248px 0px;"></span></td>
+                                        <td class="ke-cell"><span title="[吓]" class="ke-img" style="background-position: -1272px 0px;"></span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <input class="npl_grayty" type="button" value="发表评论" floorid="-1" parentid="null" onclick="LoginDialogue();">
             </div>
             <!--npl_redk-->
-            <div data-index="0" class="content-wrap">
-                <div class="title-box ui-sortable-handle">
+
+            <div class="content-wrap">
+                <div class="title-box">
                     <div class="user">
                         <div class="userIcon_round_48_draw"> </div>
                         <div class="userIcon_pic_48"> <img rel="nofollow" alt="火龙" src="../base/img/userIcon.png" onerror="javascript:this.src='img/userIcon.png';this.onerror=null;"> </div>
@@ -139,403 +251,399 @@
                     <div class="pl_name"><a href="javascript:void(0);">lilystar</a></div>
                     <div class="pl_time">1小时前</div>
                 </div>
-                <div class="comment-box" commentid="1000001">
+                <div class="comment-box">
                     <div class="pl_dabg">
                         <div class="npl_640_r_k">
-                            <div class="npl_640_r_k_name"> <a href="javascript:void(0);" class="pl_bluetored">长颈鹿</a>&nbsp;的原贴 &nbsp;&nbsp;3小时前</div>
-                            <p>双方可谓是日职联的老对手，可以说是知己知彼，从历史交战记录来看大阪钢巴取得6胜1平3负的成绩，占有不少优势，如今亚盘开出客让平手/半球，庄家显然对鹿岛鹿角的客场战绩抱有比较大的信心，不过主队也都不是省油的灯，最近一次主场落败要追溯到三个月前，加上他们近期状态良好，连番取得胜利，而客军上轮才刚刚结束一场恶战，损耗十分之大，因此本场比赛个人还是更看大阪钢巴能够保持不败。推荐31</p>
-                            <a href="javascript:void(0);" name="praiseButton" class="pl_goodicon"> <i></i><span>赞(0)</span></a>&nbsp;&nbsp; <a href="javascript:void(0);" name="replyButton" class="pl_replyicon"> <i></i><span>回复(1)</span></a>
-                            <div class="commentArea hide">
-                                <textarea placeholder="文明发言，请遵守星城体育评论协议"></textarea>
-                                <input type="submit" value="回复" class="npl_grayty">
-                            </div>
-                        </div>
+                                <div class="npl_640_r_k_name"> <a href="javascript:void(0);" class="pl_bluetored">长颈鹿</a>&nbsp;的原贴 &nbsp;&nbsp;3小时前</div>
+                                <p>双方可谓是日职联的老对手，可以说是知己知彼，从历史交战记录来看大阪钢巴取得6胜1平3负的成绩，占有不少优势，如今亚盘开出客让平手/半球，庄家显然对鹿岛鹿角的客场战绩抱有比较大的信心，不过主队也都不是省油的灯，最近一次主场落败要追溯到三个月前，加上他们近期状态良好，连番取得胜利，而客军上轮才刚刚结束一场恶战，损耗十分之大，因此本场比赛个人还是更看大阪钢巴能够保持不败。推荐31</p>
+                                <div class="npl_good">
+                                    <a href="javascript:void(0);" name="praiseButton" class="pl_goodicon"> <i></i><span>赞(0)</span></a>&nbsp;&nbsp;
+                                    <a href="javascript:void(0);" name="replyButton" class="pl_replyicon" floorid="1" parentid="1"> <i></i><span>回复(0)</span></a>
+                                </div>
+                                <!--npl_good-->
+                                <div name="commentArea" class="commentArea hide" floorid="1" parentid="1">
+                                    <textarea placeholder="文明发言，请遵守星城体育评论协议"></textarea>
+                                    <div class="npl_spwz">
+                                        <a href="javascript:void(0);" name="emoj_chose_button" floorid="1" parentid="1" title="插入表情" class="pl_icon_smile"></a>
+                                        <a href="javascript:void(0);" name="uploadImgButton" title="上传图片" class="pl_icon_pic"><input style="display:none" name="imgFile" type="file"></a>
+                                        <div name="emoj" class="ke-menu-default ke-shadow ke-menu" floorid="1" parentid="1" style="display: none;">
+                                            <div class="ke-plugin-emoticons">
+                                                <table class="ke-table" cellpadding="0" cellspacing="0" border="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="ke-cell"><span title="[微笑]" class="ke-img" style="background-position: 0px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[撇嘴]" class="ke-img" style="background-position: -24px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[色]" class="ke-img" style="background-position: -48px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[发呆]" class="ke-img" style="background-position: -72px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[得意]" class="ke-img" style="background-position: -96px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[流泪]" class="ke-img" style="background-position: -120px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[害羞]" class="ke-img" style="background-position: -144px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[闭嘴]" class="ke-img" style="background-position: -168px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[睡]" class="ke-img" style="background-position: -192px 0px;"></span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="ke-cell"><span title="[大哭]" class="ke-img" style="background-position: -216px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[尴尬]" class="ke-img" style="background-position: -240px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[发怒]" class="ke-img" style="background-position: -264px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[调皮]" class="ke-img" style="background-position: -288px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[呲牙]" class="ke-img" style="background-position: -312px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[惊讶]" class="ke-img" style="background-position: -336px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[难过]" class="ke-img" style="background-position: -360px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[酷]" class="ke-img" style="background-position: -384px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[冷汗]" class="ke-img" style="background-position: -408px 0px;"></span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="ke-cell"><span title="[抓狂]" class="ke-img" style="background-position: -432px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[吐]" class="ke-img" style="background-position: -456px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[偷笑]" class="ke-img" style="background-position: -480px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[可爱]" class="ke-img" style="background-position: -504px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[白眼]" class="ke-img" style="background-position: -528px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[傲慢]" class="ke-img" style="background-position: -552px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[饥饿]" class="ke-img" style="background-position: -576px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[困]" class="ke-img" style="background-position: -600px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[惊恐]" class="ke-img" style="background-position: -624px 0px;"></span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="ke-cell"><span title="[流汗]" class="ke-img" style="background-position: -648px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[憨笑]" class="ke-img" style="background-position: -672px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[大兵]" class="ke-img" style="background-position: -696px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[奋斗]" class="ke-img" style="background-position: -720px 0px;"></span></td>
+                                                            <td class="ke-cell"><span  title="[咒骂]" class="ke-img" style="background-position: -744px 0px;"></span></td>
+                                                            <td class="ke-cell"><span  title="[疑问]" class="ke-img" style="background-position: -768px 0px;"></span></td>
+                                                            <td class="ke-cell"><span  title="[嘘]" class="ke-img" style="background-position: -792px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[晕]" class="ke-img" style="background-position: -816px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[折磨]" class="ke-img" style="background-position: -840px 0px;"></span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="ke-cell"><span  title="[衰]" class="ke-img" style="background-position: -864px 0px;"></span></td>
+                                                            <td class="ke-cell"><span  title="[骷髅]" class="ke-img" style="background-position: -888px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[敲打]" class="ke-img" style="background-position: -912px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[再见]" class="ke-img" style="background-position: -936px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[擦汗]" class="ke-img" style="background-position: -960px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[抠鼻]" class="ke-img" style="background-position: -984px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[鼓掌]" class="ke-img" style="background-position: -1008px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[糗大了]" class="ke-img" style="background-position: -1032px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[坏笑]" class="ke-img" style="background-position: -1056px 0px;"></span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="ke-cell"><span title="[左哼哼]" class="ke-img" style="background-position: -1080px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[右哼哼]" class="ke-img" style="background-position: -1104px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[哈欠]" class="ke-img" style="background-position: -1128px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[鄙视]" class="ke-img" style="background-position: -1152px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[委屈]" class="ke-img" style="background-position: -1176px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[快哭了]" class="ke-img" style="background-position: -1200px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[阴险]" class="ke-img" style="background-position: -1224px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[亲亲]" class="ke-img" style="background-position: -1248px 0px;"></span></td>
+                                                            <td class="ke-cell"><span title="[吓]" class="ke-img" style="background-position: -1272px 0px;"></span></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <input type="submit" value="回复" class="npl_grayty">
+                                </div>
+                                <!--commentArea--></div>
                         <p>我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复我是回复</p>
                     </div>
-                    <div class="npl_good"> <a href="javascript:void(0);" name="praiseButton" class="pl_goodicon"> <i></i><span>赞(0)</span></a>&nbsp;&nbsp; <a href="javascript:void(0);" name="replyButton" class="pl_replyicon"> <i></i><span>回复(0)</span></a> </div>
+                    <div class="npl_good">
+                        <a href="javascript:void(0);" name="praiseButton" class="pl_goodicon"> <i></i><span>赞(0)</span></a>&nbsp;&nbsp;
+                        <a href="javascript:void(0);" name="replyButton" class="pl_replyicon" floorid="2" parentid="1"> <i></i><span>回复(0)</span></a>
+                    </div>
                     <!--npl_good-->
-                    <div class="commentArea hide">
+                    <div name="commentArea" class="commentArea hide" floorid="2" parentid="1">
                         <textarea placeholder="文明发言，请遵守星城体育评论协议"></textarea>
+                        <div class="npl_spwz">
+                            <a href="javascript:void(0);" name="emoj_chose_button" floorid="2" parentid="1" title="插入表情" class="pl_icon_smile"></a>
+                            <a href="javascript:void(0);" name="uploadImgButton" title="上传图片" class="pl_icon_pic"><input style="display:none" name="imgFile" type="file"></a>
+                            <div name="emoj" class="ke-menu-default ke-shadow ke-menu" floorid="2" parentid="1" style="display: none;">
+                                <div class="ke-plugin-emoticons">
+                                    <table class="ke-table" cellpadding="0" cellspacing="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="ke-cell"><span title="[微笑]" class="ke-img" style="background-position: 0px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[撇嘴]" class="ke-img" style="background-position: -24px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[色]" class="ke-img" style="background-position: -48px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[发呆]" class="ke-img" style="background-position: -72px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[得意]" class="ke-img" style="background-position: -96px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[流泪]" class="ke-img" style="background-position: -120px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[害羞]" class="ke-img" style="background-position: -144px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[闭嘴]" class="ke-img" style="background-position: -168px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[睡]" class="ke-img" style="background-position: -192px 0px;"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="ke-cell"><span title="[大哭]" class="ke-img" style="background-position: -216px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[尴尬]" class="ke-img" style="background-position: -240px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[发怒]" class="ke-img" style="background-position: -264px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[调皮]" class="ke-img" style="background-position: -288px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[呲牙]" class="ke-img" style="background-position: -312px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[惊讶]" class="ke-img" style="background-position: -336px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[难过]" class="ke-img" style="background-position: -360px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[酷]" class="ke-img" style="background-position: -384px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[冷汗]" class="ke-img" style="background-position: -408px 0px;"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="ke-cell"><span title="[抓狂]" class="ke-img" style="background-position: -432px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[吐]" class="ke-img" style="background-position: -456px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[偷笑]" class="ke-img" style="background-position: -480px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[可爱]" class="ke-img" style="background-position: -504px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[白眼]" class="ke-img" style="background-position: -528px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[傲慢]" class="ke-img" style="background-position: -552px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[饥饿]" class="ke-img" style="background-position: -576px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[困]" class="ke-img" style="background-position: -600px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[惊恐]" class="ke-img" style="background-position: -624px 0px;"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="ke-cell"><span title="[流汗]" class="ke-img" style="background-position: -648px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[憨笑]" class="ke-img" style="background-position: -672px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[大兵]" class="ke-img" style="background-position: -696px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[奋斗]" class="ke-img" style="background-position: -720px 0px;"></span></td>
+                                                    <td class="ke-cell"><span  title="[咒骂]" class="ke-img" style="background-position: -744px 0px;"></span></td>
+                                                    <td class="ke-cell"><span  title="[疑问]" class="ke-img" style="background-position: -768px 0px;"></span></td>
+                                                    <td class="ke-cell"><span  title="[嘘]" class="ke-img" style="background-position: -792px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[晕]" class="ke-img" style="background-position: -816px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[折磨]" class="ke-img" style="background-position: -840px 0px;"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="ke-cell"><span  title="[衰]" class="ke-img" style="background-position: -864px 0px;"></span></td>
+                                                    <td class="ke-cell"><span  title="[骷髅]" class="ke-img" style="background-position: -888px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[敲打]" class="ke-img" style="background-position: -912px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[再见]" class="ke-img" style="background-position: -936px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[擦汗]" class="ke-img" style="background-position: -960px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[抠鼻]" class="ke-img" style="background-position: -984px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[鼓掌]" class="ke-img" style="background-position: -1008px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[糗大了]" class="ke-img" style="background-position: -1032px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[坏笑]" class="ke-img" style="background-position: -1056px 0px;"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="ke-cell"><span title="[左哼哼]" class="ke-img" style="background-position: -1080px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[右哼哼]" class="ke-img" style="background-position: -1104px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[哈欠]" class="ke-img" style="background-position: -1128px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[鄙视]" class="ke-img" style="background-position: -1152px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[委屈]" class="ke-img" style="background-position: -1176px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[快哭了]" class="ke-img" style="background-position: -1200px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[阴险]" class="ke-img" style="background-position: -1224px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[亲亲]" class="ke-img" style="background-position: -1248px 0px;"></span></td>
+                                                    <td class="ke-cell"><span title="[吓]" class="ke-img" style="background-position: -1272px 0px;"></span></td>
+                                                </tr>
+                                            </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
                         <input type="submit" value="回复" class="npl_grayty">
                     </div>
+                    <!--commentArea-->
                 </div>
                 <!--comment-box-->
             </div>
             <!--content-wrap-->
-            <div data-index="1" class="content-wrap">
-                <div class="title-box ui-sortable-handle">
-                    <div class="user">
-                        <div class="userIcon_round_48_draw"> </div>
-                        <div class="userIcon_pic_48"> <img rel="nofollow" alt="火龙" src="../base/img/userIcon.png" onerror="javascript:this.src='img/userIcon.png';this.onerror=null;"> </div>
-                    </div>
-                    <div class="pl_name"><a href="javascript:void(0);">火龙</a></div>
-                    <div class="pl_time">2小时前</div>
-                </div>
-                <div class="comment-box" commentid="1000001">
-                    <div class="pl_dabg">
-                        <p>在半程这个节点来临之前评价两队的表现，有正常有意外。大阪的配置进不了前三，以目前的积分排名，是正常；客场全胜，主场失分比得分多，鹿岛则造就了两个意外。 两队都有一些不确定的因素，大阪这边是阵型问题，长谷教练有时在442和451之间调来调去（打442时丢球不少，如对阵磐田和仙台）。鹿岛这边，大岩刚教练的上任，成绩不错，但战术核心却在变化，从石井时代的金崎梦生变成了土居圣真，重视了对球权的控制，但仍然需要金崎梦生的个人能力来解决问题，比如上一场对阵太阳神毫不讲理的进球。 两队都有优势，大阪的长谷教练拥有超强的战术能力，除去16年初因伤病极度严重而连输强队外，之后在主场遭遇豪强则不落下风。鹿岛的人员配置则先天适合客场防反。 受新帅上任后战绩刺激以及客场全胜的基本面支持，鹿岛取得了受让平半的优势。但基于鹿岛艰苦的连续三个客场，以及大阪对阵豪强时的稳健战术，个人看好大阪不败，小球的概率更大。</p>
-                    </div>
-                    <div class="npl_good"> <a href="javascript:void(0);" name="praiseButton" class="pl_goodicon"> <i></i><span>赞(0)</span></a>&nbsp;&nbsp; <a href="javascript:void(0);" name="replyButton" class="pl_replyicon"> <i></i><span>回复(0)</span></a> </div>
-                    <!--npl_good-->
-                    <div class="commentArea hide">
-                        <textarea placeholder="文明发言，请遵守星城体育评论协议"></textarea>
-                        <input type="submit" value="回复" class="npl_grayty">
-                    </div>
-                </div>
-                <!--comment-box-->
-            </div>
-            <!--content-wrap-->
-            <div data-index="2" class="content-wrap">
-                <div class="title-box ui-sortable-handle">
-                    <div class="user">
-                        <div class="userIcon_round_48_draw"> </div>
-                        <div class="userIcon_pic_48"> <img rel="nofollow" alt="榜神" src="../base/img/userIcon.png" onerror="javascript:this.src='img/userIcon.png';this.onerror=null;"> </div>
-                    </div>
-                    <div class="pl_name"><a href="javascript:void(0);">榜神</a></div>
-                    <div class="pl_time">1小时前</div>
-                </div>
-                <div class="comment-box" commentid="1000002">
-                    <div class="pl_dabg">
-                        <p>鲁能的基本面可以看到， 近9次面对韩国球队难破赢球魔咒， 联赛近2场近6球丢5球，球队的进攻能力与防守能力成正比， 好在2场都赢球。 中国球队面对日本球队可能不可怕， 面对韩国球员的那种体能，拼力就不太好打。 加上鲁能打韩国球队一直赢不了， 小组保留第2才是关键。 本场比赛如果拿到平局涨分就是好样的。 好在3 4名现在都是0积分， 对鲁能的压力不大。主场打出一场漂亮的对攻战才是好的。拼进前8才是关键。</p>
-                    </div>
-                    <div class="npl_good"> <a href="javascript:void(0);" name="praiseButton" class="pl_goodicon"> <i></i><span>赞(0)</span></a>&nbsp;&nbsp; <a href="javascript:void(0);" name="replyButton" class="pl_replyicon"> <i></i><span>回复(0)</span></a> </div>
-                    <!--npl_good-->
-                    <div class="commentArea hide">
-                        <textarea placeholder="文明发言，请遵守星城体育评论协议"></textarea>
-                        <input type="submit" value="回复" class="npl_grayty">
-                    </div>
-                </div>
-                <!--comment-box-->
-            </div>
-            <!--content-wrap-->
-            <div data-index="3" class="content-wrap">
-                <div class="title-box ui-sortable-handle">
-                    <div class="user">
-                        <div class="userIcon_round_48_draw"> </div>
-                        <div class="userIcon_pic_48"> <img rel="nofollow" alt="pfz123" src="../base/img/userIcon.png" onerror="javascript:this.src='img/userIcon.png';this.onerror=null;"> </div>
-                    </div>
-                    <div class="pl_name"><a href="javascript:void(0);">pfz123</a></div>
-                    <div class="pl_time">48分钟前</div>
-                </div>
-                <div class="comment-box" commentid="1000003">
-                    <div class="pl_dabg">
-                        <p>从市场的角度看，这场比赛竞彩目前成交量最多的是平局，高达3.4的水位吸引了大批的投资者。不过肯定是以双选为主，搭配平局，导致的平局的成交量激增。但这没有带来竞彩水位的任何变化。而平均的水位，主胜是下滑的。既然主队在市场上受到了重视，那么引起这些连锁反应是正常的。客队的战绩特点又决定了这场比赛，他们可能会客场输球。</p>
-                    </div>
-                    <div class="npl_good"> <a href="javascript:void(0);" name="praiseButton" class="pl_goodicon"> <i></i><span>赞(0)</span></a>&nbsp;&nbsp; <a href="javascript:void(0);" name="replyButton" class="pl_replyicon"> <i></i><span>回复(0)</span></a> </div>
-                    <!--npl_good-->
-                    <div class="commentArea hide">
-                        <textarea placeholder="文明发言，请遵守星城体育评论协议"></textarea>
-                        <input type="submit" value="回复" class="npl_grayty">
-                    </div>
-                </div>
-                <!--comment-box-->
-            </div>
-            <!--content-wrap-->
+
             <!--更多评论-->
             <a href="javascript:void(0);" id="loadNewCommentButton" class="pl_pagemore">更多评论</a>
+
         </div>
         <!--shuju-main-content-->
+
         <!--广告开始-->
         <div class="rightadv">
-            <div class="carousel slide carousel-fade" data-ride="carousel"> 
-              <div class="carousel-inner" role="listbox">
-                <div class="item active"><img src="img/comment_rank1.png" alt="获取更多资讯，解读值博率信息"></div>
-                <div class="item"> <img src="img/comment_rank2.png" alt="可关注微信或QQ群"><div class="weixin">微信：<span>Sandy178168</span><br>Ｑ群：<span>648103066</span></div></div>
-              </div>
-            </div>
-            <hr class="pl_hr">
-            <div class="pl_swz"><span class="pl_sredshu"></span>星评家排行</div>
-            <hr class="pl_hr">
-            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                <tbody>
-                    <tr align="center" class="pl_tr1px">
-                        <td width="50">排行</td>
-                        <td width="100">牛评家</td>
-                        <td width="60">获赞</td>
-                        <td width="60">被回复</td>
-                        <td width="60">绩点</td>
-                    </tr>
-                    <tr align="center" height="40">
-                        <td><b class="plred">1</b></td>
-                        <td align="left"><a href="javascript:void(0);" class="pl_bluec">zx383302263</a></td>
-                        <td>0</td>
-                        <td>63</td>
-                        <td class="plred">126</td>
-                    </tr>
-                    <tr align="center" height="40">
-                        <td><b class="plred">2</b></td>
-                        <td align="left"><a href="javascript:void(0);" class="pl_bluec">pfz123</a></td>
-                        <td>0</td>
-                        <td>50</td>
-                        <td class="plred">100</td>
-                    </tr>
-                    <tr align="center" height="40">
-                        <td><b class="plred">3</b></td>
-                        <td align="left"><a href="javascript:void(0);" class="pl_bluec">火龙</a></td>
-                        <td>0</td>
-                        <td>49</td>
-                        <td class="plred">98</td>
-                    </tr>
-                    <tr align="center" height="40">
-                        <td><b class="plred">4</b></td>
-                        <td align="left"><a href="javascript:void(0);" class="pl_bluec">暴龙</a></td>
-                        <td>0</td>
-                        <td>40</td>
-                        <td class="plred">80</td>
-                    </tr>
-                    <tr align="center" height="40">
-                        <td><b class="plred">5</b></td>
-                        <td align="left"><a href="javascript:void(0);" class="pl_bluec">妙小子</a></td>
-                        <td>1</td>
-                        <td>20</td>
-                        <td class="plred">41</td>
-                    </tr>
-                    <tr align="center" height="40">
-                        <td><b class="plred">6</b></td>
-                        <td align="left"><a href="javascript:void(0);" class="pl_bluec">反黑组</a></td>
-                        <td>0</td>
-                        <td>20</td>
-                        <td class="plred">40</td>
-                    </tr>
-                    <tr align="center" height="40">
-                        <td><b class="plred">7</b></td>
-                        <td align="left"><a href="javascript:void(0);" class="pl_bluec">强者</a></td>
-                        <td>1</td>
-                        <td>18</td>
-                        <td class="plred">37</td>
-                    </tr>
-                    <tr align="center" height="40">
-                        <td><b class="plred">8</b></td>
-                        <td align="left"><a href="javascript:void(0);" class="pl_bluec">长颈鹿</a></td>
-                        <td>0</td>
-                        <td>17</td>
-                        <td class="plred">34</td>
-                    </tr>
-                    <tr align="center" height="40">
-                        <td><b class="plred">9</b></td>
-                        <td align="left"><a href="javascript:void(0);" class="pl_bluec">大队长</a></td>
-                        <td>0</td>
-                        <td>16</td>
-                        <td class="plred">32</td>
-                    </tr>
-                    <tr align="center" height="40">
-                        <td><b class="plred">10</b></td>
-                        <td align="left"><a href="javascript:void(0);" class="pl_bluec">LX147147</a></td>
-                        <td>2</td>
-                        <td>10</td>
-                        <td class="plred">21</td>
-                    </tr>
-                </tbody>
-            </table>
-            <hr class="pl_hr">
-            <div class="pl_290">
-                <div class="pl_swz"><span class="pl_sredshu"></span>精评排行</div>
+                <div class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active"><img src="img/comment_rank1.png" alt="获取更多资讯，解读值博率信息"></div>
+                        <div class="item"> <img src="img/comment_rank2.png" alt="可关注微信或QQ群">
+                            <div class="weixin">微信：<span>Sandy178168</span><br>Ｑ群：<span>648103066</span></div>
+                        </div>
+                    </div>
+                </div>
                 <hr class="pl_hr">
-                <!--[if !IE]>list001 begin<![endif]-->
-                <div class="pl_gaizhang">
-                    <div class="pl_name">榜神</div>
-                    <div class="pl_time">477天前</div>
-                    <div class="k5"></div>
-                    <div class="cb"></div>
-                    <div class="pl_dabg">
-                        <div class="pl_gxljt"></div>
-                        <p><b>1</b>鲁能的基本面可以看到， 近9次面对韩国球队难破赢球魔咒， 联赛近2场近6球丢5球，球队的进攻能力与防守能力成正比， 好在2场都赢球。 中国球队面对日本球队可能不可怕， 面对韩国球员的那种体能，拼力就不...</p>
-                    </div>
-                    <div class="cb"></div>
-                    <div class="pl_time">评论于</div>
-                    <div class="pl_name"><a target="_blank" href="#" class="pl_name">山东鲁能  VS 首尔FC</a></div>
-                    <div class="cb"></div>
-                    <hr class="pl_hr">
-                </div>
-                <!--[if !IE]>list001 begin<![endif]-->
-                <div class="pl_gaizhang">
-                    <div class="pl_name">LX123</div>
-                    <div class="pl_time">480天前</div>
-                    <div class="k5"></div>
-                    <div class="cb"></div>
-                    <div class="pl_dabg">
-                        <div class="pl_gxljt"></div>
-                        <p><b>2</b>亚盘开出了曼联主让半球0.90中水的盘口，开盘后上盘水位提升明显，欧洲平均指数1.85 3.35 3.68主胜水位均早早提升到2.00的高位，上盘此役显然严重无力，西汉姆本赛季联赛与曼联2次交锋均保持...</p>
-                    </div>
-                    <div class="cb"></div>
-                    <div class="pl_time">评论于</div>
-                    <div class="pl_name"><a target="_blank" href="#" class="pl_name">曼彻斯特联  VS 西汉姆联</a></div>
-                    <div class="cb"></div>
-                    <hr class="pl_hr">
-                </div>
-                <!--[if !IE]>list001 begin<![endif]-->
-                <div class="pl_gaizhang">
-                    <div class="pl_name">f789416</div>
-                    <div class="pl_time">544天前</div>
-                    <div class="k5"></div>
-                    <div class="cb"></div>
-                    <div class="pl_dabg">
-                        <div class="pl_gxljt"></div>
-                        <p><b>3</b>齐达内是我最喜欢的球员之一，现在接棒皇马也不知道是否能HOLD另外几个大牌，BBC组合很强大很强大，但是球员就太任性了，喜欢欺凌弱下，这点和齐祖之间貌似会有点不同，不过齐祖的脾气也不是小视的，BBC估...</p>
-                    </div>
-                    <div class="cb"></div>
-                    <div class="pl_time">评论于</div>
-                    <div class="pl_name"><a target="_blank" href="#" class="pl_name">皇家马德里  VS 拉科鲁尼亚</a></div>
-                    <div class="cb"></div>
-                    <hr class="pl_hr">
-                </div>
-                <!--[if !IE]>list001 begin<![endif]-->
-                <div class="pl_gaizhang">
-                    <div class="pl_name">兽神荣耀</div>
-                    <div class="pl_time">529天前</div>
-                    <div class="k5"></div>
-                    <div class="cb"></div>
-                    <div class="pl_dabg">
-                        <div class="pl_gxljt"></div>
-                        <p><b><span class=" graychar">4</span></b>阿甲首场比赛，无论是作为主队还是客队，都必然希望能打出气势开个好头。在阵容方面，主队阿尔多西维在前场加大引援力度，前锋宾科、迪兰那等实力球员都是得分好手，而防守端只引进了一个阿里亚斯，本赛季以攻代守...</p>
-                    </div>
-                    <div class="cb"></div>
-                    <div class="pl_time">评论于</div>
-                    <div class="pl_name"><a target="_blank" href="#" class="pl_name">阿尔多西维  VS 拉普拉塔体操</a></div>
-                    <div class="cb"></div>
-                    <hr class="pl_hr">
-                </div>
-                <!--[if !IE]>list001 begin<![endif]-->
-                <div class="pl_gaizhang">
-                    <div class="pl_name">兽神荣耀</div>
-                    <div class="pl_time">531天前</div>
-                    <div class="k5"></div>
-                    <div class="cb"></div>
-                    <div class="pl_dabg">
-                        <div class="pl_gxljt"></div>
-                        <p><b><span class=" graychar">5</span></b>格罗宁根败相显露，近期仅在友谊赛中1-0小胜，联赛中更是一胜难求。再看阵容中，伊斯拉莫维奇、马希等多名实力战将伤缺，不完整的阵容就默契程度而言简直就像断开齿轮的汽车，从四驱变成两驱。历史成绩中，格罗...</p>
-                    </div>
-                    <div class="cb"></div>
-                    <div class="pl_time">评论于</div>
-                    <div class="pl_name"><a target="_blank" href="#" class="pl_name">格罗宁根  VS 奈梅亨</a></div>
-                    <div class="cb"></div>
-                    <hr class="pl_hr">
-                </div>
-                <!--[if !IE]>list001 begin<![endif]-->
-            </div>
+                <div class="pl_swz"><span class="pl_sredshu"></span>星评家排行</div>
+                <hr class="pl_hr">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                        <tr align="center" class="pl_tr1px">
+                                            <!--201901-->
+                                            <td width="30">排行</td>
+                                            <td width="80">牛评家</td>
+                                            <td width="50">获赞</td>
+                                            <td width="50">被回复</td>
+                                            <td width="50">绩点</td>
+                                            <!--201901-->
+                                        </tr>
+                                        <tr align="center" height="40">
+                                            <td><b class="plred">1</b></td>
+                                            <td align="left"><a href="javascript:void(0);" class="pl_bluec">zx383302263</a></td>
+                                            <td>0</td>
+                                            <td>63</td>
+                                            <td class="plred">126</td>
+                                        </tr>
+                                        <tr align="center" height="40">
+                                            <td><b class="plred">2</b></td>
+                                            <td align="left"><a href="javascript:void(0);" class="pl_bluec">pfz123</a></td>
+                                            <td>0</td>
+                                            <td>50</td>
+                                            <td class="plred">100</td>
+                                        </tr>
+                                        <tr align="center" height="40">
+                                            <td><b class="plred">3</b></td>
+                                            <td align="left"><a href="javascript:void(0);" class="pl_bluec">火龙</a></td>
+                                            <td>0</td>
+                                            <td>49</td>
+                                            <td class="plred">98</td>
+                                        </tr>
+                                        <tr align="center" height="40">
+                                            <td><b class="plred">4</b></td>
+                                            <td align="left"><a href="javascript:void(0);" class="pl_bluec">暴龙</a></td>
+                                            <td>0</td>
+                                            <td>40</td>
+                                            <td class="plred">80</td>
+                                        </tr>
+                                        <tr align="center" height="40">
+                                            <td><b class="plred">5</b></td>
+                                            <td align="left"><a href="javascript:void(0);" class="pl_bluec">妙小子</a></td>
+                                            <td>1</td>
+                                            <td>20</td>
+                                            <td class="plred">41</td>
+                                        </tr>
+                                        <tr align="center" height="40">
+                                            <td><b class="plred">6</b></td>
+                                            <td align="left"><a href="javascript:void(0);" class="pl_bluec">反黑组</a></td>
+                                            <td>0</td>
+                                            <td>20</td>
+                                            <td class="plred">40</td>
+                                        </tr>
+                                        <tr align="center" height="40">
+                                            <td><b class="plred">7</b></td>
+                                            <td align="left"><a href="javascript:void(0);" class="pl_bluec">强者</a></td>
+                                            <td>1</td>
+                                            <td>18</td>
+                                            <td class="plred">37</td>
+                                        </tr>
+                                        <tr align="center" height="40">
+                                            <td><b class="plred">8</b></td>
+                                            <td align="left"><a href="javascript:void(0);" class="pl_bluec">长颈鹿</a></td>
+                                            <td>0</td>
+                                            <td>17</td>
+                                            <td class="plred">34</td>
+                                        </tr>
+                                        <tr align="center" height="40">
+                                            <td><b class="plred">9</b></td>
+                                            <td align="left"><a href="javascript:void(0);" class="pl_bluec">大队长</a></td>
+                                            <td>0</td>
+                                            <td>16</td>
+                                            <td class="plred">32</td>
+                                        </tr>
+                                        <tr align="center" height="40">
+                                            <td><b class="plred">10</b></td>
+                                            <td align="left"><a href="javascript:void(0);" class="pl_bluec">LX147147</a></td>
+                                            <td>2</td>
+                                            <td>10</td>
+                                            <td class="plred">21</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <hr class="pl_hr">
+                                <div class="pl_290">
+                                    <div class="pl_swz"><span class="pl_sredshu"></span>精评排行</div>
+                                    <hr class="pl_hr">
+                                    <!--[if !IE]>list001 begin<![endif]-->
+                                    <div class="pl_gaizhang">
+                                        <div class="pl_name">榜神</div>
+                                        <div class="pl_time">477天前</div>
+                                        <div class="k5"></div>
+                                        <div class="cb"></div>
+                                        <div class="pl_dabg">
+                                            <div class="pl_gxljt"></div>
+                                            <p><b>1</b>鲁能的基本面可以看到， 近9次面对韩国球队难破赢球魔咒， 联赛近2场近6球丢5球，球队的进攻能力与防守能力成正比， 好在2场都赢球。 中国球队面对日本球队可能不可怕， 面对韩国球员的那种体能，拼力就不...</p>
+                                        </div>
+                                        <div class="cb"></div>
+                                        <div class="pl_time">评论于</div>
+                                        <div class="pl_name"><a target="_blank" href="#" class="pl_name">山东鲁能  VS 首尔FC</a></div>
+                                        <div class="cb"></div>
+                                        <hr class="pl_hr">
+                                    </div>
+                                    <!--[if !IE]>list001 begin<![endif]-->
+                                    <div class="pl_gaizhang">
+                                        <div class="pl_name">LX123</div>
+                                        <div class="pl_time">480天前</div>
+                                        <div class="k5"></div>
+                                        <div class="cb"></div>
+                                        <div class="pl_dabg">
+                                            <div class="pl_gxljt"></div>
+                                            <p><b>2</b>亚盘开出了曼联主让半球0.90中水的盘口，开盘后上盘水位提升明显，欧洲平均指数1.85 3.35 3.68主胜水位均早早提升到2.00的高位，上盘此役显然严重无力，西汉姆本赛季联赛与曼联2次交锋均保持...</p>
+                                        </div>
+                                        <div class="cb"></div>
+                                        <div class="pl_time">评论于</div>
+                                        <div class="pl_name"><a target="_blank" href="#" class="pl_name">曼彻斯特联  VS 西汉姆联</a></div>
+                                        <div class="cb"></div>
+                                        <hr class="pl_hr">
+                                    </div>
+                                    <!--[if !IE]>list001 begin<![endif]-->
+                                    <div class="pl_gaizhang">
+                                        <div class="pl_name">f789416</div>
+                                        <div class="pl_time">544天前</div>
+                                        <div class="k5"></div>
+                                        <div class="cb"></div>
+                                        <div class="pl_dabg">
+                                            <div class="pl_gxljt"></div>
+                                            <p><b>3</b>齐达内是我最喜欢的球员之一，现在接棒皇马也不知道是否能HOLD另外几个大牌，BBC组合很强大很强大，但是球员就太任性了，喜欢欺凌弱下，这点和齐祖之间貌似会有点不同，不过齐祖的脾气也不是小视的，BBC估...</p>
+                                        </div>
+                                        <div class="cb"></div>
+                                        <div class="pl_time">评论于</div>
+                                        <div class="pl_name"><a target="_blank" href="#" class="pl_name">皇家马德里  VS 拉科鲁尼亚</a></div>
+                                        <div class="cb"></div>
+                                        <hr class="pl_hr">
+                                    </div>
+                                    <!--[if !IE]>list001 begin<![endif]-->
+                                    <div class="pl_gaizhang">
+                                        <div class="pl_name">兽神荣耀</div>
+                                        <div class="pl_time">529天前</div>
+                                        <div class="k5"></div>
+                                        <div class="cb"></div>
+                                        <div class="pl_dabg">
+                                            <div class="pl_gxljt"></div>
+                                            <p><b><span class=" graychar">4</span></b>阿甲首场比赛，无论是作为主队还是客队，都必然希望能打出气势开个好头。在阵容方面，主队阿尔多西维在前场加大引援力度，前锋宾科、迪兰那等实力球员都是得分好手，而防守端只引进了一个阿里亚斯，本赛季以攻代守...</p>
+                                        </div>
+                                        <div class="cb"></div>
+                                        <div class="pl_time">评论于</div>
+                                        <div class="pl_name"><a target="_blank" href="#" class="pl_name">阿尔多西维  VS 拉普拉塔体操</a></div>
+                                        <div class="cb"></div>
+                                        <hr class="pl_hr">
+                                    </div>
+                                    <!--[if !IE]>list001 begin<![endif]-->
+                                    <div class="pl_gaizhang">
+                                        <div class="pl_name">兽神荣耀</div>
+                                        <div class="pl_time">531天前</div>
+                                        <div class="k5"></div>
+                                        <div class="cb"></div>
+                                        <div class="pl_dabg">
+                                            <div class="pl_gxljt"></div>
+                                            <p><b><span class=" graychar">5</span></b>格罗宁根败相显露，近期仅在友谊赛中1-0小胜，联赛中更是一胜难求。再看阵容中，伊斯拉莫维奇、马希等多名实力战将伤缺，不完整的阵容就默契程度而言简直就像断开齿轮的汽车，从四驱变成两驱。历史成绩中，格罗...</p>
+                                        </div>
+                                        <div class="cb"></div>
+                                        <div class="pl_time">评论于</div>
+                                        <div class="pl_name"><a target="_blank" href="#" class="pl_name">格罗宁根  VS 奈梅亨</a></div>
+                                        <div class="cb"></div>
+                                        <hr class="pl_hr">
+                                    </div>
+                                    <!--[if !IE]>list001 begin<![endif]-->
+                                </div>
+                            </div>
         </div>
+
+        <!--rightadv-->
+        <footer class="footer">
+            <ol>
+                <li>Copyright © 2017 星城体育 | <a href="http://www.miitbeian.gov.cn" target="_blank">黔ICP备18000990号-6</a> ALL Rights Reserved</li>
+                <li class="hidden-xs"><em></em><a href="team.html" target="_blank">关于星城</a></li>
+                <li class="hidden-xs"><em></em><a href="team.html" target="_blank">免责声明</a></li>
+                <li class="hidden-xs"><em></em><a href="team.html" target="_blank">网站地图</a></li>
+                <li class="hidden-xs"><em></em><a href="team.html" target="_blank">联系方式</a></li>
+            </ol>
+        </footer>
+
+
     </div>
     <!--container-->
-    <footer class="footer">
-        <ol>
-            <li>Copyright © 2017 星城体育 <span class="hidden-xs">Sport.StarKing.</span> ALL Rights Reserved</li>
-            <li class="hidden-xs"><em></em><a href="team.html" target="_blank">关于星城</a></li>
-            <li class="hidden-xs"><em></em><a href="team.html" target="_blank">免责声明</a></li>
-            <li class="hidden-xs"><em></em><a href="team.html" target="_blank">网站地图</a></li>
-            <li class="hidden-xs"><em></em><a href="team.html" target="_blank">联系方式</a></li>
-        </ol>
-    </footer>
-    <!--意见反馈-->
-    <div class="feedback-wrap hide">
-        <div class="feedback-bg"></div>
-        <div class="feedback-box">
-            <div class="box-hd"> <i class="icon-btn_close close-feedback"></i>
-                <h2><i class="icon-icon_feedback"></i>反馈</h2>
-                <h3><i class="icon-icon_comment"></i>亲爱的用户，您有什么好的想法和建议？请尽情告诉我们为您解决吧！</h3>
-            </div>
-            <div class="box-bd">
-                <form action="" class="feedback-form" id="feedbackForm" novalidate>
-                    <div class="text-box">
-                        <div class="tab-con" id="feedbackType"> <span class="current">意见反馈</span> <span>比分错误</span> <span>帐号安全</span> <span>其他</span> </div>
-                        <input type="text" name="type" class="feedback-type">
-                        <div class="text-area">
-                            <textarea name="content" cols="30" rows="10"></textarea>
-                            <label for="">反馈内容控制在500字以内</label>
-                        </div>
-                    </div>
-                    <p> <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <input type="text" name="email" autocomplete="off" placeholder="请输入邮箱" />
-                    </p>
-                    <p class="test-area " id="feedback-captcha">我是验证码</p>
-                    <button class="submit-feedback" type="submit">提交反馈</button>
-                </form>
-            </div>
-        </div>
-    </div>
-    <!--登录弹屏-->
-    <div class="login-sign-box hide">
-        <!-- 登录退出 BEGIN-->
-        <div class="exit-login hide">
-            <div class="hd-tip"><span>提示</span> <i class="icon-btn_close user-exit-btn"></i></div>
-            <p>确定退出登录？</p>
-            <div class="btn-box">
-                <button class="sure-btn" id="exitLogin">确定</button>
-                <button class="cancel-btn">取消</button>
-            </div>
-        </div>
-        <!-- 登录退出 END-->
-        <div class="grey-bg" id="layoutBg"></div>
-        <div class="login-box" id="loginBox">
-            <div class="box-bd">
-                <img src="../base/img/login-img.png">
-                <div class="login-area"> <i class="icon-btn_close close-login"></i>
-                    <div class="other-login">
-                        <div class="tit">第三方登录</div>
-                        <div class="links">
-    <!--登录弹屏-->
-    <div class="login-sign-box hide">
-        <!-- 登录退出 BEGIN-->
-        <div class="exit-login hide">
-            <div class="hd-tip"><span>提示</span> <i class="icon-btn_close user-exit-btn"></i></div>
-            <p>确定退出登录？</p>
-            <div class="btn-box">
-                <button class="sure-btn" id="exitLogin">确定</button>
-                <button class="cancel-btn">取消</button>
-            </div>
-        </div>
-        <!-- 登录退出 END-->
-        <div class="grey-bg" id="layoutBg"></div>
-        <div class="login-box" id="loginBox">
-            <div class="box-bd">
-                <img src="../base/img/login-img.png">
-                <div class="login-area"> <i class="icon-btn_close close-login"></i>
-                    <div class="other-login">
-                        <div class="tit">第三方登录</div>
-                        <div class="links">
-                            <a href="../base/register-complete.html"><i class="icon-btn_tencent40x40_n"></i></a>
-                            <a href="../base/register-complete.html"><i class="icon-btn_sina40x40_n disabled"></i></a>
-                            <a href="../base/register-complete.html"><i class="icon-btn_wechat40x40_n disabled"></i></a>
-                        </div>
-                        <p>登陆后方可添加收藏、发表留言</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-                            <a href="../base/register-complete.html"><i class="icon-btn_tencent40x40_n"></i></a>
-                            <a href="../base/register-complete.html"><i class="icon-btn_sina40x40_n disabled"></i></a>
-                            <a href="../base/register-complete.html"><i class="icon-btn_wechat40x40_n disabled"></i></a>
-                        </div>
-                        <p>登陆后方可添加收藏、发表留言</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- jQuery (necessary) -->
-    <script src="../base/js/jquery-1.11.3.min.js"></script>
-    <script src="../base/js/jquery-ui.min.js"></script>
-    <!-- Site's js file -->
-    <script type="text/javascript" charset="utf-8" src="../base/js/common.js"></script>
-    <script type="text/javascript" charset="utf-8" src="js/comment.js"></script>
-    <script src="../base/js/tinymce/tinymce.min.js"></script>
-    <script>
-    tinymce.init({
-        language: 'zh_CN',
-        selector: 'textarea',
-        height: '100',
-        plugins: [
-            "placeholder advlist autolink lists link image charmap print preview hr anchor pagebreak",
-            "searchreplace visualblocks visualchars fullscreen",
-            "insertdatetime media nonbreaking save table contextmenu directionality",
-            "emoticons template paste textcolor colorpicker textpattern imagetools"
-        ],
-        toolbar: "fontsizeselect forecolor backcolor bold italic underline strikethrough charmap emoticons",
-        menubar: false,
-        image_advtab: false,
-    });
-    </script>
 </body>
 
 </html>

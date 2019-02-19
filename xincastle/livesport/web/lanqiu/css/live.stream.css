@@ -1,19 +1,10 @@
 ﻿@charset "utf-8";
-#board,
-#grassLand {
+#board {
     height: 201px;
     width: 782px
 }
 
-#courtLayer,
-#grassLand {
-    margin-left: -391px;
-    display: block;
-    -webkit-animation: fadeIn .5s ease;
-    -moz-animation: fadeIn .5s ease;
-    -ms-animation: fadeIn .5s ease;
-    -webkit-transition: all .5s ease
-}
+
 
 #scoreBoard .board-footer td,
 .team-name {
@@ -414,7 +405,7 @@
 #playground {
     position: relative;
     width: 789px;
-    height: 450px;
+    height: 388px;
     margin: 0 auto;
     font-family: 'Helvetica, Arial', 'Hiragino Sans GB', '冬青黑体', 'Microsoft YaHei', '微软雅黑', serif;
     background: #343434;
@@ -422,18 +413,24 @@
 }
 
 #grassLand {
+    display: block;
+    width: 790px;
+    height: 388px;
     position: absolute;
-    left: 50%;
-    top: 268px;
-    margin-top: -101.5px;
+    top: 0;
+    z-index: 1;
     overflow: hidden;
     background-position: 0 0;
     background-repeat: no-repeat;
     transform: translate(0, 0) rotate(0) scale(1, 1);
-    background-image: url(../img/court.png);
-    z-index: 1;
+    background-image: url(../img/basketballcourt.png);
+    background-size: cover;
     animation: fadeIn .5s ease;
+    -webkit-animation: fadeIn .5s ease;
+    -moz-animation: fadeIn .5s ease;
+    -ms-animation: fadeIn .5s ease;
     transition: all .5s ease;
+    -webkit-transition: all .5s ease;
     -webkit-animation-iteration-count: 1;
     -moz-animation-iteration-count: 1;
     -ms-animation-iteration-count: 1;
@@ -451,32 +448,28 @@
     animation-iteration-count: 1;
     animation-direction: alternate;
     animation-fill-mode: forwards;
-    animation-delay: .5s;
     -webkit-animation-name: bkt-live-bg-left-or-right;
     -webkit-animation-duration: .7s;
     -webkit-animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
     -webkit-animation-iteration-count: 1;
     -webkit-animation-direction: alternate;
     -webkit-animation-fill-mode: forwards;
-    -webkit-animation-delay: .5s;
     -moz-animation-name: bkt-live-bg-left-or-right;
     -moz-animation-duration: .7s;
     -moz-animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
     -moz-animation-iteration-count: 1;
     -moz-animation-direction: alternate;
     -moz-animation-fill-mode: forwards;
-    -moz-animation-delay: .5s;
-    width: 44px;
-    height: 89px;
     background: url(../img/basketballcourt-left.png) no-repeat;
     background-size: contain;
+    width: 44px;
+    height: 89px;
+    position: absolute;
     left: 66px;
     top: 88px;
-    position: absolute;
     z-index: 98
 }
 
-.bkt-live-bgleft2,
 .bkt-live-bgright {
     animation-name: bkt-live-bg-left-or-right;
     animation-duration: .7s;
@@ -484,115 +477,146 @@
     animation-iteration-count: 1;
     animation-direction: alternate;
     animation-fill-mode: forwards;
-    animation-delay: .5s;
-    width: 44px;
-    height: 89px;
-    position: absolute
-}
-
-.bkt-live-bgright {
     -webkit-animation-name: bkt-live-bg-left-or-right;
     -webkit-animation-duration: .7s;
     -webkit-animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
     -webkit-animation-iteration-count: 1;
     -webkit-animation-direction: alternate;
     -webkit-animation-fill-mode: forwards;
-    -webkit-animation-delay: .5s;
     -moz-animation-name: bkt-live-bg-left-or-right;
     -moz-animation-duration: .7s;
     -moz-animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
     -moz-animation-iteration-count: 1;
     -moz-animation-direction: alternate;
     -moz-animation-fill-mode: forwards;
-    -moz-animation-delay: .5s;
     background: url(../img/basketballcourt-right.png) no-repeat;
     background-size: contain;
+    width: 44px;
+    height: 89px;
+    position: absolute;
     left: 683px;
     top: 89px;
     z-index: 98
 }
 
 .bkt-live-bgleft2 {
+    animation-name: bkt-live-bg-left-or-right;
+    animation-duration: .7s;
+    animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
     -webkit-animation-name: bkt-live-bg-left-or-right;
     -webkit-animation-duration: .7s;
     -webkit-animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
     -webkit-animation-iteration-count: 1;
     -webkit-animation-direction: alternate;
     -webkit-animation-fill-mode: forwards;
-    -webkit-animation-delay: .5s;
     -moz-animation-name: bkt-live-bg-left-or-right;
     -moz-animation-duration: .7s;
     -moz-animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
     -moz-animation-iteration-count: 1;
     -moz-animation-direction: alternate;
     -moz-animation-fill-mode: forwards;
-    -moz-animation-delay: .5s;
     background: url(../img/basketballcourt-left3.png) no-repeat;
     background-size: contain;
+    width: 44px;
+    height: 89px;
+    position: absolute;
     left: 66px;
     top: 88px;
     z-index: 101
 }
 
-.bkt-live-bgright2,
-.dynamic-panel .bottom .free .ico.shot {
+.bkt-live-bgleftx {
+    animation-name: bkt-live-bg-left-or-right;
+    animation-duration: .7s;
+    animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
+    animation-iteration-count: 1;
     animation-direction: alternate;
-    animation-fill-mode: forwards
+    animation-fill-mode: forwards;
+    -webkit-animation-name: bkt-live-bg-left-or-right;
+    -webkit-animation-duration: .7s;
+    -webkit-animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: bkt-live-bg-left-or-right;
+    -moz-animation-duration: .7s;
+    -moz-animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
+    -moz-animation-iteration-count: 1;
+    -moz-animation-direction: alternate;
+    -moz-animation-fill-mode: forwards;
+    background: url(../img/basketballcourt-leftx.png) no-repeat;
+    background-size: contain;
+    width: 65px;
+    height: 153px;
+    position: absolute;
+    left: 46px;
+    top: 111px;
+    z-index: 97
 }
+
 
 .bkt-live-bgright2 {
     animation-name: bkt-live-bg-left-or-right;
     animation-duration: .7s;
     animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
     animation-iteration-count: 1;
-    animation-delay: .5s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
     -webkit-animation-name: bkt-live-bg-left-or-right;
     -webkit-animation-duration: .7s;
     -webkit-animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
     -webkit-animation-iteration-count: 1;
     -webkit-animation-direction: alternate;
     -webkit-animation-fill-mode: forwards;
-    -webkit-animation-delay: .5s;
     -moz-animation-name: bkt-live-bg-left-or-right;
     -moz-animation-duration: .7s;
     -moz-animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
     -moz-animation-iteration-count: 1;
     -moz-animation-direction: alternate;
     -moz-animation-fill-mode: forwards;
-    -moz-animation-delay: .5s;
-    width: 44px;
-    height: 89px;
     background: url(../img/basketballcourt-right3.png) no-repeat;
     background-size: contain;
+    width: 44px;
+    height: 89px;
+    position: absolute;
     left: 683px;
     top: 89px;
-    position: absolute;
     z-index: 101
 }
 
-#courtLayer {
-    position: absolute;
-    left: 50%;
-    top: 135px;
-    overflow: hidden;
-    height: 27px;
-    width: 782px;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    transform: translate(0, 170px) rotate(0) scale(1, 1);
-    background-image: url(../img/court-layer.png);
-    z-index: 1;
-    animation: fadeIn .5s ease;
-    transition: all .5s ease;
-    -webkit-animation-iteration-count: 1;
-    -moz-animation-iteration-count: 1;
-    -ms-animation-iteration-count: 1;
+.bkt-live-bgrightx {
+    animation-name: bkt-live-bg-left-or-right;
+    animation-duration: .7s;
+    animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
     animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: bkt-live-bg-left-or-right;
+    -webkit-animation-duration: .7s;
+    -webkit-animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: alternate;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: bkt-live-bg-left-or-right;
+    -moz-animation-duration: .7s;
+    -moz-animation-timing-function: cubic-bezier(.53, .39, .35, 1.09);
+    -moz-animation-iteration-count: 1;
+    -moz-animation-direction: alternate;
     -moz-animation-fill-mode: forwards;
-    -ms-animation-fill-mode: forwards;
-    animation-fill-mode: forwards
+    background: url(../img/basketballcourt-rightx.png) no-repeat;
+    background-size: contain;
+    width: 65px;
+    height: 153px;
+    position: absolute;
+    left: 665px;
+    top: 111px;
+    z-index: 97
 }
+
+
 
 #animation-loading,
 #no-live-video,
@@ -630,7 +654,7 @@
     position: absolute;
     margin: 0 auto;
     right: 0;
-    top: 10px;
+    top: 65px;
     left: 0;
     width: 510px;
     height: 206px;
@@ -669,9 +693,10 @@
 }
 
 #scoreBoard .board-panel {
-    width: 100%;
+    width: calc(100% - 10px);
     height: 80px;
-    position: relative
+    position: relative;
+    left:10px;
 }
 
 #scoreBoard .board-panel .mask {
@@ -706,7 +731,7 @@
 }
 
 #scoreBoard .board-panel .score-area {
-    width: 190px;
+    width: 180px;
     height: 100%
 }
 
@@ -965,14 +990,13 @@
     font-size: 10pt;
     color: #fff;
     overflow: hidden;
-    text-indent: 5%
 }
 
 .animation-live,
 .tv-live {
     position: relative;
     width: 790px;
-    height: 560px
+    height: 520px
 }
 
 .zhubo-live {
@@ -1606,7 +1630,7 @@
     position: relative;
     left: 0;
     width: 790px;
-    height: 332px;
+    height: 388px;
     z-index: 110
 }
 
@@ -1804,7 +1828,7 @@
 }
 
 .goalshot.home .goalball {
-    left: 0;
+    left: 2px;
     z-index: 99;
     width: 85px;
     height: 85px;
@@ -1828,7 +1852,7 @@
 }
 
 .goalshot.away .goalball {
-    right: 0;
+    right: 2px;
     z-index: 99;
     -webkit-animation-name: gshaAxis;
     -moz-animation-name: gshaAxis;
@@ -1886,10 +1910,12 @@
 
 .goalshot .goal-tooltip {
     margin: 0 auto;
+    left: 4px;
+    top: 105px;
     right: 0;
     z-index: 99;
-    width: 150px;
-    height: 0;
+    width: 145px;
+    height: 80px;
     font-size: 10px;
     -webkit-animation-name: goalfadeIn;
     -moz-animation-name: goalfadeIn;
@@ -1906,8 +1932,6 @@
     -moz-animation-fill-mode: forwards;
     -ms-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-    left: 4px;
-    top: 105px
 }
 
 .goalshot .goal-tooltip .ico {
@@ -1944,7 +1968,7 @@
 
 .goalshot .goal-tooltip .description {
     line-height: 15px;
-    width: 120px;
+    width: 114px;
     font-size: 10px;
     float: left;
     display: block;
@@ -1963,7 +1987,7 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    line-height: 17px;
+    line-height: 15px;
     margin-top: 3px
 }
 
@@ -1999,9 +2023,10 @@
 }
 
 .goalshot .goal-tooltip .header {
-    border-radius: 3px;
-    height: 37px;
-    line-height: 37px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    height: 40px;
+    line-height: 40px;
     width: 100%
 }
 
@@ -2016,20 +2041,22 @@
     -ms-animation-delay: 1s;
     animation-delay: 1s;
     -webkit-transition: all 1.8s ease-in-out;
-    transition: all 1.8s ease-in-out
+    transition: all 1.8s ease-in-out;
 }
 
 .goalshot .goal-tooltip .footer {
     background-color: #000;
-    height: 35px;
-    line-height: 30px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
     width: 100%;
-    color: #fff
+    color: #fff;
 }
 
 .goalshot .goal-tooltip .footer .score {
     width: 100%;
-    height: 35px;
+    height: 40px;
     font-size: 20px;
     text-align: center;
     position: absolute;
@@ -2038,14 +2065,21 @@
 
 .goalshot .goal-tooltip .footer .score span {
     display: inline-block;
-    font-size: 25px
+    font-size: 25px;
 }
 
 .goal-tooltip .footer .score span.home,
 .goalshot .goal-tooltip .footer .score span.away {
     width: 47%;
-    height: 35px;
-    padding-top: 3px
+    height: 40px;
+}
+
+.goal-tooltip .footer .score span.home{
+    border-bottom-left-radius: 3px;
+}
+
+.goalshot .goal-tooltip .footer .score span.away {
+    border-bottom-right-radius: 3px;
 }
 
 .goalshot .goal-tooltip .footer .score span.colons {
@@ -3132,6 +3166,8 @@
     animation-timing-function: cubic-bezier(.17, .92, .29, 1.13);
     animation-iteration-count: 1;
     animation-delay: 0;
+    animation-direction: alternate;
+    animation-fill-mode: forwards
     -webkit-animation-name: free_ico;
     -webkit-animation-duration: .3s;
     -webkit-animation-timing-function: cubic-bezier(.17, .92, .29, 1.13);
