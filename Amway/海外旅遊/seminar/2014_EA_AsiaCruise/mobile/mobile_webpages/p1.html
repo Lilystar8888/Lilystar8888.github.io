@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta http-equiv="cleartype" content="on" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <title>安麗手機版活動網站</title>
+    <link rel="stylesheet" href="../css/template_mobile.css" type="text/css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type='text/javascript'>
+    setTimeout('countdown()', 1000);
+
+    function countdown() {
+        var s = document.getElementById('timer');
+        s.innerHTML = s.innerHTML - 1;
+        if (s.innerHTML == 0)
+            window.location = 'https://www.amway.com.tw/seminar/2014_EA_AsiaCruise/mobile/index.html';
+        else
+            setTimeout('countdown()', 1000);
+    }
+  </script>
+</head>
+
+<body>
+    <div id="scroll">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td align="left"><a href="javascript:history.go(-1);"><img src="../mobile_images/heard_01.jpg" alt="回上頁"></a></td>
+                <td align="center" width="70px"></td>
+                <td align="right"><a href="../index.html"><img src="../mobile_images/heard_03.jpg" alt="回選單"></a></td>
+            </tr>
+        </table>
+        <div align="center" class="sidebar">
+        </div>
+    </div>
+    <div class="menu2">
+        <div class="bannerS"><img src="../images/bannerS.jpg" width="320" height="93" alt="" /></div>
+        <div class="sttl"><img src="../images/ttl/ttl4-1.jpg" width="320" height="48" alt="" /></div>
+        <div class="cnt_box">
+            <div class="contentbox">
+                <div align="left" style="width:277px">
+                    <div class="word" style="text-align:center;">
+                        <p>&nbsp;</p><p align="center">因活動結束名單移除。 <span id='timer'>3</span> 秒後，為您跳轉本站首頁。</p>
+                    <!--back to Top-->
+                    <div style="text-align:center;">
+                        <p id="back-top">
+                            <a href="#top" style="text-decoration:none;"><span> - 回上方 - </span></a>
+                        </p>
+                    </div>
+                    <!--/back to Top-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="shadowDw">
+            <tr>
+                <td align="center" valign="middle" bgcolor="#ffffff" class="txt_bk">安麗日用品股份有限公司 版權所有 <br />
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+<!-- back to Top -->
+<script>
+$(document).ready(function() {
+
+    // hide #back-top first
+    $("#back-top").hide();
+
+    // fade in #back-top
+    $(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 100) {
+                $('#back-top').fadeIn();
+            } else {
+                $('#back-top').fadeOut();
+            }
+        });
+
+        // scroll body to 0px on click
+        $('#back-top a').click(function() {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+    });
+
+});
+</script>
+<!--GA tracking code-->
+<script>
+(function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+ga('create', 'UA-51165417-1', 'amway.com.tw');
+ga('send', 'pageview');
+</script>
+<!--/GA tracking code-->
+
+</html>

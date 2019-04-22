@@ -1,0 +1,727 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,html { padding:0;margin:0; } 
+
+body {
+	background:#00dbfe;
+	height:100%;
+	font-family:微軟正黑體;
+	color:#666666;
+	font-size:15px;
+	}
+
+#wraper {
+	min-width:1200px;
+	min-height:700px;
+	margin:0 auto;
+	background:url(https://www.amway.com.tw/seminar/2012_Bali/images/body.jpg) top center no-repeat;
+	}
+	
+
+#top {
+	min-width:1200px; margin:0 auto;
+	background:url(https://www.amway.com.tw/seminar/2012_Bali/images/top.jpg) top center no-repeat;
+	height:287px;
+	}
+	
+#menu {
+	/*width:1024px; 
+	margin:0 auto;*/
+	position:relative;
+	top:15px;
+	text-align:center;
+	}
+	
+#menu2 {
+	/*width:1024px; 
+	margin:0 auto;*/
+	position:relative;
+	top:20px;
+	text-align:center;
+	}
+	
+#main {
+	width:1200px;
+	margin:0 auto;	
+	background:url(https://www.amway.com.tw/seminar/2012_Bali/images/main.jpg) top center no-repeat #ffe492;
+	padding-bottom:1.5em;
+	min-height:150px;
+	vertical-align: top;
+	}
+
+#content {
+	background: url(https://www.amway.com.tw/seminar/2012_Bali/images/main_center.png) top repeat-y;
+	min-height:400px;
+	color:#666;
+	padding:40px;
+	*padding:0 40px;
+	width:869px;
+	margin:0 auto;
+	}
+
+.content2 {
+	background: url(https://www.amway.com.tw/seminar/2012_Bali/images/main_center.png) top repeat-y;
+	margin:0 auto;
+	padding-bottom:40px;
+	margin:0 auto;
+	width:949px;
+	}
+
+#contenttop {
+	background: url(https://www.amway.com.tw/seminar/2012_Bali/images/main_top.png) top no-repeat;
+	height:19px;
+	margin:0 auto;
+	width:1024px;
+	}
+	
+#contentbottom {
+	background: url(https://www.amway.com.tw/seminar/2012_Bali/images/main_bottom.png) bottom no-repeat;
+	height:19px;
+	margin:0 auto;
+	}
+	
+#footer {
+	background: url(https://www.amway.com.tw/seminar/2012_Bali/images/footer.jpg) bottom no-repeat;
+	height:46px;
+	width:1200px;
+	margin:0 auto;
+	}
+
+#footer2 {
+	background: url(https://www.amway.com.tw/seminar/2012_Bali/images/footer.jpg) bottom no-repeat;
+	height:46px;
+	width:1200px;
+	margin:0 auto;
+	}
+	
+.ps {
+	font-weight:bold;}
+	
+.ps2 {
+	font-weight:bold;
+	text-decoration:underline;}
+
+.page01 {
+	vertical-align:text-top;}
+
+.page02 {
+	padding-left:12px;}
+	
+.notice {
+	background:#81D3FD;
+	width:700px;
+	margin:0 auto;
+	text-align:left;
+	}
+
+.demo {
+	text-align:left;
+	}
+
+.dir{ width:100%; border-left:#C8B9AE solid 1px;border-top:#C8B9AE solid 1px;border-collapse:collapse; background:#e6f5ff;} 
+
+.dir td{border-right:#C8B9AE solid 1px;border-bottom:#C8B9AE solid 1px; padding:10px 10px 6px;vertical-align: top;}
+
+.w15 {
+	text-align:left;}
+	
+
+
+.infoimg {padding:30px 0; margin:0 30px;}
+
+			
+			
+.logo {
+	      width:1200px;
+		  margin:0 auto;
+		  padding:10px 0;
+	}			
+
+.copyright {
+	      margin:0 auto;
+	      text-align:center;
+		  font-size:12px;
+		  color:#fff;
+		  width:1200px;
+		  height:46px;
+		  position:absolute;
+		  padding-top:6px;
+		  font-family:Verdana, Geneva, sans-serif;
+	}
+	
+.copyright2 {
+	      margin:0 auto;
+	      text-align:center;
+		  font-size:12px;
+		  color:#fff;
+		  width:1200px;
+		  height:46px;
+		  position:absolute;
+		  padding-top:6px;
+		  font-family:Verdana, Geneva, sans-serif;
+	}
+
+.mobile {
+	float:right;
+	margin-top:-40px;
+	padding:0 5px;
+	position:relative;
+	}	
+
+.code {
+	float:right;
+	margin-top:-40px;
+	padding:0 5px;
+	position:relative;
+	}	
+
+.photo1 {
+	float:left;
+	padding-left:190px;
+	}	
+
+.photo2 {
+	float:right;
+	padding-right:220px;
+	padding-top:10px;
+	}	
+
+.photo1 img,.photo2 img {
+    border:0;
+}	
+
+#photobox {
+	width:1024px;
+	margin:0 auto;
+	position:relative;
+	top:40px;
+	}
+			
+.title {
+	width:1024px;
+	margin:0 auto;
+	background: url(https://www.amway.com.tw/seminar/2012_Bali/images/main_center.png) top repeat-y;
+	padding-bottom:60px;
+	}
+
+.path {
+	float:right;
+	color:#0194fe;
+       font-size:12px;
+	   padding-right:100px;
+	   padding-top:30px;
+	}
+
+.title2 {
+	float:left;
+	min-width:287px;
+	min-height:106px;
+	background: url(https://www.amway.com.tw/seminar/2012_Bali/images/title.png) center center no-repeat;
+	margin-top:-40px; margin-left:45px;
+	color:#fff;
+	}
+
+	
+.activelogo	{
+    width:1200px; 
+	margin:0 auto;
+	text-align:center;
+	margin-top:-40px;
+}
+
+/*********文字css***********/
+
+.word {letter-spacing:2px;
+	  line-height:20px;
+	  white-spacing: pre-wrap;
+	  margin:0 30px;
+	  font-size:15px;}
+
+.word2 {color:#4f4f4f;
+        font-size:12px;
+			}
+			
+.word3 {letter-spacing:2px;
+	  line-height:20px;
+	  white-spacing: pre-wrap;
+	  margin:0 30px;
+	  font-size:15px;}
+
+.info {color:#0194fe;
+       font-size:18px;
+	   font-weight:bold;
+	   letter-spacing:4px;
+	   /*margin-left:28px;*/}
+
+.info2 {color:#0194fe;
+       font-size:18px;
+	   font-weight:bold;
+	   letter-spacing:4px;
+			margin:0 30px;}
+
+.infotitle2 {color:#0194fe;
+            font-size:18px;
+			letter-spacing:3px;
+			padding:3px 0;
+			/*margin:0 30px;*/}
+			
+/*********相簿css**********/
+
+.album_txt a{
+	/*float: left;
+	background-image: url(https://www.amway.com.tw/seminar/2012_Bali/images/pic_6.jpg);
+	background-repeat: no-repeat;
+	background-position: left 5px;*/
+	margin-right: 28px;
+	margin-left: 28px;
+	width: 240px;
+	display: inline;
+	/*padding-left: 20px;*/
+	line-height: normal;
+	margin-top: 10px;
+	overflow: hidden;
+	color:#4f4f4f;
+	text-decoration: none;
+}
+
+.album_txt a:hover{
+    text-decoration: underline;
+}
+
+.album_day a{
+	width: 74px;
+	display: inline;
+	line-height: normal;
+	color:#4f4f4f;
+	text-decoration: none;
+	margin-left: 28px;
+}
+
+.album_day a:hover{
+    text-decoration: underline;
+}
+
+div.album_txt,div.album_day { margin-top:15px;float: left;*margin-bottom:15px;
+ }
+
+.page_all {
+	/*float: left;*/
+	width: 100%;
+}
+
+.page_line {
+	/*float: left;*/
+	width: 100%;
+	background-image: url(https://www.amway.com.tw/seminar/2012_Bali/images/hr.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 21px;
+	margin-bottom: 5px;
+	/*margin-top: 5px;*/
+}
+
+.album_photo{
+	float: left;
+	width: 190px;
+	background-image: url(https://www.amway.com.tw/seminar/2012_Bali/images/photobg.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 170px;
+	margin-bottom: 5px;
+	overflow: hidden;
+	left: 0px;
+	top: 0px;
+	display: inline;
+	/*padding-top: 30px;*/
+	padding:12px 4px 0 0;
+}
+.album_photo img {
+    border:0;
+}
+
+.album_photo_box{
+	float: left;
+	width: 190px;
+	margin-right: 14px;
+	margin-bottom: 10px;
+}
+.album_photo_txt{
+	float: left;
+	width: 190px;
+	text-align: center;
+	line-height: normal;
+}
+
+.album_photo_txt a{
+    color:#4f4f4f;
+	text-decoration: none;
+}
+
+.album_photo_txt a:hover{
+    text-decoration: underline;
+}
+
+.page_all {
+    width: 870px;
+}
+
+.page_all_3 {
+	/*float: left;*/
+	width: 870px;
+	margin-left: 24px;
+	_margin-left: 10px;
+}
+
+.top img{
+	margin-right: 35px;
+	border:0;
+}
+
+.page_box{
+	float: left;
+	width: 870px;
+	display: inline;
+	margin-bottom: 20px;
+	/*margin-right: 170px;
+	margin-left: 170px;*/
+}
+
+.fb_r{
+	float: right;
+	width: 428px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.page_detail_box{
+	float: left;
+	width: 165px;
+	padding-top: 5px;
+}
+
+.page_detail_leftTXT{
+	float: left;
+	width: 150px;
+	line-height: normal;
+	/*background-image: url(https://www.amway.com.tw/seminar/2012_Bali/images/pic_6.jpg);
+	background-repeat: no-repeat;
+	background-position: left 5px;*/
+	margin-bottom: 20px;
+	padding-left: 25px;
+}
+
+.page_detail_leftTXT a{
+   color:#4f4f4f;
+	text-decoration: none;
+}
+
+.page_detail_leftTXT a:hover{
+    text-decoration: underline;
+}
+
+.page_detail_box2{
+    float: right;
+	width: 600px;}
+
+.page_detail_tit {
+	float: left;
+	width: 596px;
+	color: #fff;
+	font-size: 15px;
+	line-height: normal;
+	display: inline;
+	height: 54px;
+	line-height: 66px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	background:url(https://www.amway.com.tw/seminar/2012_Bali/images/bar.png) left top no-repeat;
+	padding-left:20px;
+	margin-top:-40px;
+	*margin-top:-20px;
+}
+.page_detail_cnt {
+	float: left;
+	width: 428px;
+	display: inline;
+	margin-bottom: 20px;
+	line-height: 200%;
+	overflow: hidden;
+}
+
+.fb_bg{
+	float: left;
+	width: 100%;
+	background-color: #75c4cf;
+	margin-top: 20px;
+}
+
+.back {
+	float: left;
+	width: 428px;
+	margin-bottom: 30px;
+}
+
+.back img{
+	border:0;
+}
+
+/********行程表 css********/
+
+.ininerary {
+     background: url(https://www.amway.com.tw/seminar/2012_Bali/images/form2.png) no-repeat;
+	 width:507px;
+	 min-height:426px;
+	 border-collapse:collapse;
+}
+
+.ininerary  td {
+/*margin:5px 0 5px 70px;*/
+height:36px;
+padding-left:100px;
+color:#cc3cb9;   
+font-size:19px;
+text-align:center;
+}
+
+/*********設備介紹***********/
+
+.orange { background: url(https://www.amway.com.tw/seminar/2012_Bali/images/orange.png) left center no-repeat;
+ width:260px;
+ height:30px;
+ padding-left:25px;
+ color:#fff;
+ font-size:15px;
+ vertical-align:middle;
+}
+
+
+.purple { background: url(https://www.amway.com.tw/seminar/2012_Bali/images/purple.png) left center no-repeat;
+width:260px;
+height:30px;
+ padding-left:25px;
+color:#fff;
+font-size:15px;
+}
+
+.pink { background: url(https://www.amway.com.tw/seminar/2012_Bali/images/pink.png) left center no-repeat;
+width:260px;
+height:30px;
+ padding-left:25px;
+color:#fff;
+font-size:15px;
+}
+
+.blue { background: url(https://www.amway.com.tw/seminar/2012_Bali/images/blue.png) left center no-repeat;
+width:260px;
+height:30px;
+ padding-left:25px;
+color:#fff;
+font-size:15px;
+}
+
+.green { background: url(https://www.amway.com.tw/seminar/2012_Bali/images/green.png) left center no-repeat;
+width:260px;
+height:30px;
+ padding-left:25px;
+color:#fff;
+font-size:15px;
+}
+
+.yellow {
+background: url(https://www.amway.com.tw/seminar/2012_Bali/images/yellow.png) left top no-repeat;
+width:517px;
+height:150px;
+padding:15px 0 0 30px;
+vertical-align:top;
+}
+
+.form {
+vertical-align:top;
+padding:0 15px 40px 10px;
+}
+
+/**********裝備檢查表*********/
+
+.check01 {
+ float:left;
+ background: url(https://www.amway.com.tw/seminar/2012_Bali/images/ditoooo.png) center top no-repeat;
+ min-width:351px;
+ height:402px;
+ padding-top:60px;
+}
+
+.check02 {
+ float:right;
+ background: url(https://www.amway.com.tw/seminar/2012_Bali/images/ditoooo.png) center top no-repeat;
+ width:351px;
+ height:402px;
+ padding-top:60px;
+}
+
+.check td {
+  height:24px;
+  padding-left:110px;
+  color:#fff;
+}
+
+/**********英語小幫手*********/
+
+/*.englishtop {
+  background: url(https://www.amway.com.tw/seminar/2012_Bali/images/englishtop.png) center top no-repeat;
+  width:820px;
+  height:17px;
+}*/
+
+.englishmain {
+   background: url(https://www.amway.com.tw/seminar/2012_Bali/images/englishmain.png) center top no-repeat;
+   width:858px;
+   min-height:500px;
+   overflow:hidden;
+}
+
+/*.englishbottom {
+  background: url(https://www.amway.com.tw/seminar/2012_Bali/images/englishbottom.png) center top no-repeat;
+  width:820px;
+  height:17px;
+}*/
+
+
+.english td {
+ background: url(https://www.amway.com.tw/seminar/2012_Bali/images/english01.png) center top no-repeat;
+ width:376px;
+ vertical-align:top;
+ color:#fff;
+ padding:0 10px;
+ font-size:15px;
+ height:26px;
+ line-height:26px;
+}
+
+.english td div {
+  width:40%;
+}
+
+.chword {
+  float:left;margin-left:20px;
+}
+
+/*.chword2 {
+  float:left;margin-left:20px;
+  background: url(https://www.amway.com.tw/seminar/2012_Bali/images/english02.png) center top no-repeat;
+  height:43px;
+}*/
+
+.enword {
+  float:right;margin-right:20px;
+}
+
+
+/**********參加夥伴*********/
+
+.first{
+ float:left;
+ text-align:center;
+ width:270px;
+ margin:0 10px;
+}
+
+.second{
+ float:left;
+ text-align:center;
+ width:270px;
+ margin:0 10px;
+}
+
+.third{
+ float:right;
+ text-align:center;
+ width:270px;
+ margin:0 10px;
+}
+
+.parti1 td{
+width:240PX; text-align:center;
+}
+
+.partilist {
+width:240PX;
+border-collapse:collapse;
+}
+
+.partilist td {
+height:25px;
+line-height:25px;
+}
+
+.linklist {
+width:240PX;
+border-collapse:collapse;
+}
+
+.linklist td {
+height:50px;
+line-height:50px;
+}
+
+/**********選單css*********/
+
+	#navigation {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		position: relative;
+		width: 660px;
+		background: url(https://www.amway.com.tw/seminar/2012_Bali/images/menubg.png) no-repeat;
+		text-align:center;
+		display:inline-Block;
+		padding-bottom:10px;
+		padding-left:20px;
+	}
+	#navigation li {
+		margin: 0;
+		padding: 0;
+		float: left;
+		/*border-right: 1px solid #999;*/
+		font-size:18px; 
+	    font-family:微軟正黑體;
+		line-height:30px;
+	}
+	#navigation li a {
+		height:40px;
+		padding: 0px 5px;
+		display: block;
+		color: #fff;
+		text-decoration: none;
+		width:90px;
+	}
+	
+	/*#navigation li a:first-child {
+	    width:95px;
+		margin:0 0 0 3px;
+	}*/
+	
+	#navigation li a:hover {
+		/*line-height:30px;*/
+		display: block;
+		color: #e3d404;
+		text-decoration: none;
+	}
+	
+	#navigation li ul {
+		margin-top: 0px;
+		padding:  0;
+		list-style: none;
+		float: left;
+		position: absolute;
+		left: 0;
+		/*min-width: 340px;*/
+		/*max-width: 650px;*/
+		color: #fff;
+		/*background: #313131 no-repeat bottom;*/
+		display: none;
+	}
+
+	#navigation li ul li { font-size:14px; height:21px;line-height:21px;}
+	#navigation li >ul li a { /*display: inline;*/ min-width:100px; }
+	#navigation li ul li a:hover { /*text-decoration: underline;*/ }

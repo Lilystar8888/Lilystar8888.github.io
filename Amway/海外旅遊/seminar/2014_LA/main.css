@@ -1,0 +1,252 @@
+@charset "utf-8";
+body{
+	margin: 0;
+	font-family: Verdana, Geneva, sans-serif,"微軟正黑體"; /*background-color:#F6F4F4;*/ background-image:url("images/bg.png"); background-repeat: repeat-x; line-height: 24px;
+	background-color: #f8f0de;
+}
+.amway{width:1200px;margin:0 auto; min-height: 1500px; background-image:url(images/bg.jpg); background-repeat: no-repeat; }
+
+.amway1{width:1200px;margin:0 auto; min-height: 1500px; background-image:url(images/bg_inner.jpg); background-repeat: no-repeat; }
+
+
+.amway2{width:1200px;margin:0 auto; min-height: 1500px; background-image:url(images/bg_inner.jpg); background-repeat: no-repeat; }
+
+.amway3{width:1200px;margin:0 auto 20px; min-height: 1680px; background-image:url(images/bg_inner.jpg); background-repeat: no-repeat; margin-bottom: 20px; }
+
+.amway4{width:1200px;margin:0 auto 20px; min-height: 1500px; background-image:url(images/bg_inner.jpg); background-repeat: no-repeat; margin-bottom: 20px; }
+
+.amway5{width:1200px;margin:0 auto 20px; min-height: 1520px; background-image:url(images/bg_inner.jpg); background-repeat: no-repeat; margin-bottom: 20px; }
+
+.amway6{width:1200px;margin:0 auto 20px; min-height: 2050px; background-image:url(images/bg_inner.jpg); background-repeat: no-repeat; margin-bottom: 20px; }
+
+.amway7{width:1200px;margin:0 auto 20px; min-height: 2380px; background-image:url(images/bg_inner.jpg); background-repeat: no-repeat; margin-bottom: 20px; }
+
+.amway8{width:1200px;margin:0 auto 20px; min-height: 6700px; background-image:url(images/bg_inner.jpg); background-repeat: no-repeat; margin-bottom: 20px; }
+
+
+a img{
+	border: 0px;
+}
+
+a:link{text-decoration:none; color:#696969}
+a:hover{text-decoration:underline; color:#006a2c;}
+
+.Top{
+	float: left;
+	width: 1200px;
+	background-repeat: no-repeat;
+	height: 80px;
+	z-index: 999;
+	position: relative;
+	
+}
+.Main{
+	float: left;
+	width: 1700px;
+	height: auto;
+	z-index: 1;
+	position: relative;
+}
+.Bottom{
+	width: 1200px;
+	min-height: 520px;
+	float: left;
+	
+}
+
+.BottomL{
+	width: 1200px;
+	min-height: 385px;
+	float: left;
+	
+}
+
+.Footer {
+	
+	height: 25px;
+	width: 1200px;
+	
+color: #696969;
+text-align:center;
+font-size:13px;
+margin:0 auto 20px;
+padding-top:20px;
+
+
+
+}
+
+.Footer2 {
+	float: left;
+	height: 25px;
+	width: 1200px;
+	
+color: #696969;
+text-align:center;
+font-size:13px;
+margin-bottom:20px;
+padding-top:50px;
+
+
+}
+
+/*首頁*/
+.logo{
+	width: 398px;
+	height: 80px;
+	float: left;
+	margin: 20px 0 0 150px;
+}
+
+
+.logoAmway{
+	width: 115px;
+	height: 45px;
+	float: right;
+	margin: 20px 11px 0px 0px;
+}
+
+.calendar{
+	width: 102px;
+	height: 104px;
+	float: right;
+	margin: 20px 130px 0 0;
+}
+
+.bannerSmall{
+	background-image: url("images/banner-small.jpg");
+	background-repeat: no-repeat;
+	height: 145px;
+	width: 980px;
+}
+
+
+
+
+
+.Menu{width:1200px;height:97px;float:left; margin-top:0px; margin-bottom:0px;}
+.Mbtns{width: 1042px; height: 97px; background-image:url(images/bg_btn.png); background-repeat:no-repeat; margin-left: 81px;}
+
+.Mbtns li{
+	list-style-type: none;
+	height:37px;
+	float:left;
+}
+
+/*內頁*/
+
+.leftC{
+	width: 243px;
+	height: 84px;
+	float: left;
+	background-image:url(images/menu/side_menu1.png);
+	background-repeat: no-repeat;
+	margin-left: 60px;
+}
+
+.leftC3{
+	width: 243px;
+	height: 168px;
+	float: left;
+	background-image:url(images/menu/side_menu3.png);
+	background-repeat: no-repeat;
+	margin-left: 60px;
+}
+
+.leftC7{
+	width: 243px;
+	height: 214px;
+	float: left;
+	background-image:url(images/menu/side_menu7.png);
+	background-repeat: no-repeat;
+	margin-left: 60px;
+}
+
+.leftC8{
+	width: 243px;
+	height: 421px;
+	float: left;
+	background-image:url(images/menu/side_menu8.png);
+	background-repeat: no-repeat;
+	margin-left: 60px;
+}
+
+.leftC11{
+	width: 243px;
+	height: 597px;
+	float: left;
+	background-image:url(images/menu/side_menu15.png);
+	background-repeat: no-repeat;
+	margin-left: 60px;
+}
+
+
+.rightC{
+	float: right;
+	width: 782px;
+	min-height: 430px;
+	margin-right: 90px;
+}
+	
+.bread-wrapper{width: 782px; height: 50px; margin-top: 25px;}	
+.bread{min-width: 50px; font-size:13px; color:#696969; float:right;}
+.ttl-cnt{width: 500px; float: left; font-size: 20px; color: #006a2c;}
+
+
+.ttl_side{margin-left: 50px; margin-top: 32px;}
+
+.cnt-wrapper{width: 782px; min-height: 400px; float: left;}
+
+td, tr, table {
+  border:1px solid #d3fd68;
+} 
+
+.limg{float: left; margin-right: 20px; margin-top: 10px; margin-bottom: 20px; border-radius: 6px;}
+.rimg{float: right; margin-left: 20px; margin-top: 10px; margin-bottom: 20px;border-radius: 6px; }
+
+.mt6{margin-top: 6px;}
+.mt6x{margin-top: 6px;}
+.mt8{margin-top: 8px;}
+.mt10{margin-top: 10px;}
+.mt10x{margin-top: 10px;}
+.pt5{padding-top:4px;}
+
+
+.daysMenu{width:750px;height:30px;float:left; margin-top:0px; margin-bottom:20px;}
+.daysMenu li{
+	list-style-type: none;
+	width:100px;height:30px;
+	float:left; margin-right:15px;
+}
+
+.bt {background-color: #006a2c; color:#ffffff; text-align:center; border-radius: 6px;}
+.bt:hover {background-color: #b2c154; }
+.bt-active  {background-color: #b2c154;  }
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    /* Safari and Chrome, if Chrome rule needed */
+    .mt8{margin-top: 8px;}
+.mt10{margin-top: 8px;}
+.mt10x{margin-top: 6px;}
+.mt6{margin-top: 6px;}
+.mt6x{margin-top: 4px;}}
+
+
+
+.border{ background-image:url(images/border.png); background-repeat:repeat-y;}
+
+.ltimg{ float:left; margin-right: 15px; margin-bottom: 15px; border-radius: 6px;}
+.rtimg{ float:left; margin-left: 15px; margin-bottom: 15px; border-radius: 6px;}
+.ltmovie{float: left; width: 780px; text-align: center;}
+.ltmovieTTL{
+	float: left;
+	color: #fe1c61;
+	width: 780px;
+	text-align: center;
+	margin-bottom: 2px;
+}
+
+.new2{position: absolute; z-index:11000; top: 564px; margin-left: 65px; background-image:url(images/new2.gif); width:40px; height:30px;}
+
+.new1{position: absolute; z-index:11000; top: 43px; margin-left: 65px; background-image:url(images/new2.gif); width:40px; height:30px;}

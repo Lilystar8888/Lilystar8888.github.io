@@ -1,0 +1,119 @@
+@charset "utf-8";
+.index_link{
+	height: 200px;
+	width: 205px;
+	position: absolute;
+	z-index: 1000;
+	top: 210px;
+	right: 365px;
+	display: block;
+}
+
+.index_con {
+
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 500;
+	top: 0px;
+}
+
+.index_ctn_2{
+	height: 195px;
+	width: 492px;
+	position: absolute;
+	z-index: 300;
+	top: 210px;
+	right: 90px;
+}
+
+.index_ctn_3{
+	float: right;
+	height: 196px;
+	width: 266px;
+}
+.index_ctn_3txt{
+	float: left;
+	width: 236px;
+	background-image: url(../images/pic_1.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	display: inline;
+	height: 25px;
+	_height: 15px;
+	padding-left: 30px;
+	margin-top: 2px;
+	_margin-top: 0px;
+	overflow: hidden;
+	_margin-bottom: 2px;
+	_line-height: normal;
+}
+.index_photo {
+	text-align: center;
+	vertical-align: middle;
+	margin: auto;
+	float: left;
+	height: 200px;
+	width: 216px;
+	overflow: hidden;
+}
+.index_flash {
+	height: 560px;
+	width: 980px;
+	top: 0px;
+	right: 0px;
+	z-index: 250;
+	position: absolute;
+}
+.index_flash_appOK {
+	height: 145px;
+	width: 960px;
+	top: 0px;
+	right: 0px;
+	z-index: 250;
+	position: absolute;
+	background-image: url(../images/index_ok.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	padding-top: 415px;
+	padding-right: 20px;
+}
+.index_flash_appNO {
+	height: 192px;
+	width: 950px;
+	top: 0px;
+	right: 0px;
+	z-index: 250;
+	position: absolute;
+	background-image: url(../images/index_NO.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	padding-top: 368px;
+	padding-right: 30px;
+}
+.index_photo_s {
+	background-image: url(../images/index_photo_s.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	text-align: center;
+	vertical-align: middle;
+	margin: auto;
+	float: left;
+	height: 60px;
+	width: 263px;
+	display: inline;
+	padding-top: 3px;
+	padding-left: 3px;
+}
+.index_photo_s2 {
+	float: left;
+	height: 50px;
+	width: 78px;
+	overflow: hidden;
+	margin-top: 5px;
+	margin-right: 3px;
+
+	margin-bottom: 5px;
+	margin-left: 6px;
+	_margin-left: 5px;
+}

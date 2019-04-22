@@ -1,0 +1,252 @@
+@charset "utf-8";
+.header_flash_bg {
+	float: left;
+	height: 300px;
+	width: 100%;
+	top: 0px;
+	position: absolute;
+	z-index: 200;
+	left: 0px;
+}
+.album_photo_box{
+	float: left;
+	width: 191px;
+	margin-right: 14px;
+	margin-bottom: 10px;
+}
+.album_photo_txt{
+	float: left;
+	width: 191px;
+	text-align: center;
+	line-height: normal;
+}
+.album_photo{
+	float: left;
+	width: 191px;
+	background-image: url(../images/photo_bg.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 170px;
+	margin-bottom: 5px;
+	overflow: hidden;
+	left: 0px;
+	top: 0px;
+	display: inline;
+	padding-top: 30px;
+}
+
+.album_day{
+	float: left;
+	margin-left: 28px;
+	width: 74px;
+	display: inline;
+	line-height: normal;
+
+}
+.album_txt{
+	float: left;
+	background-image: url(../images/pic_6.jpg);
+	background-repeat: no-repeat;
+	background-position: left 5px;
+	margin-right: 28px;
+	margin-left: 28px;
+	width: 240px;
+	display: inline;
+	padding-left: 20px;
+	line-height: normal;
+	height: 30px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+.page_con {
+	width: 100%;
+	position: absolute;
+	z-index: 300;
+	top: 0px;
+	background-image: url(../images/footer.gif);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+
+}
+
+.page_box_album {
+	float: left;
+	width: 810px;
+	margin-top: 290px;
+	margin-left: 85px;
+	_margin-left: 84px;
+	display: inline;
+}
+.page_tit {
+	float: left;
+	width: 100%;
+	display: inline;
+	background-image: url(../images/pic_4.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 25px;
+	line-height: normal;
+	color: #fdc060;
+	font-size: 16px;
+	letter-spacing: 2pt;
+	font-weight: bold;
+	vertical-align: middle;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+.page_tit_2 {
+	float: left;
+	width: 465px;
+	display: inline;
+	background-image: url(../images/pic_4.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 30px;
+	line-height: normal;
+	color: #5d3a1d;
+	font-size: 16px;
+	letter-spacing: 2pt;
+	font-weight: bold;
+	vertical-align: middle;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.page_all {
+	float: left;
+	width: 100%;
+
+}
+.page_all_2 {
+	float: left;
+	width: 600px;
+	margin-right: 22px;
+	margin-left: 22px;
+	margin-bottom: 15px;
+}
+.page_all_3 {
+	float: left;
+	width: 616px;
+	margin-left: 24px;
+	_margin-left: 10px;
+}
+.page_all_4 {
+	float: left;
+	width: 616px;
+	margin-left: 24px;
+	_margin-left: 10px;
+	margin-bottom: 15px;
+}
+.page_line {
+	float: left;
+	width: 100%;
+	background-image: url(../images/line_2.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 13px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+.page_detail_line {
+	float: left;
+	width: 100%;
+	background-image: url(../images/line_2.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 19px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+.page_detail_tit {
+	float: left;
+	width: 428px;
+	color: #fdc060;
+	font-size: 15px;
+	line-height: normal;
+	display: inline;
+	margin-top: 5px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.page_detail_cnt {
+	float: left;
+	width: 428px;
+	display: inline;
+	margin-bottom: 20px;
+	line-height: 200%;
+	overflow: hidden;
+}
+
+
+.page_box{
+	float: left;
+	width: 640px;
+	display: inline;
+	margin-bottom: 20px;
+	margin-right: 170px;
+	margin-left: 170px;
+}
+.page_detail{
+
+	float: left;
+	width: 677px;
+	padding-right: 66px;
+	padding-left: 67px;
+	display: inline;
+	padding-bottom: 80px;}
+
+.page_detail_box{
+	float: left;
+	width: 165px;
+	padding-top: 5px;
+}
+.page_detail_leftTXT{
+	float: left;
+	width: 150px;
+	line-height: normal;
+	background-image: url(../images/pic_6.jpg);
+	background-repeat: no-repeat;
+	background-position: left 5px;
+	margin-bottom: 20px;
+	padding-left: 15px;
+}		
+.page_detail_box2{
+    float: right;
+	width: 428px;}	
+.page_detail_line{
+	width: 45px;
+	background-image: url(../images/page_line.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 230px;
+}
+
+.page_Video_r{
+    float: right;
+	width: 292px;}	
+
+.page_Video_l{
+    float: left;
+	width: 292px;}	
+.fb_bg{
+	float: left;
+	width: 100%;
+	background-color: #75c4cf;
+	margin-top: 20px;
+}	
+.fb_r{
+	float: right;
+	width: 428px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.app_header{
+	float: left;
+	width: 975px;
+	background-image: url(../images/header.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 133px;
+	padding-top: 184px;
+	padding-right: 5px;
+}	

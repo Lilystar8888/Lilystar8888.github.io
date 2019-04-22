@@ -1,0 +1,234 @@
+@charset "utf-8";
+
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #FFFFFF;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	line-height: 60px;
+	background-image: url(../mobileSite_images/bg.jpg);
+	background-repeat: repeat;
+	background-position: center top;
+	background-color: #01b0c9;
+}
+a{
+	color: #ffffff;
+	text-decoration: underline;
+	display: inline;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 40px;
+}
+a:hover {
+	color: #ffffff;
+	text-decoration: none;
+	display: inline;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 40px;
+}
+
+fieldset,img { 
+border:0;
+}
+
+h1{
+	font-weight: bold;
+	color: #5d3a1d;
+	font-size: 18px;
+	line-height: 20px;
+	vertical-align: middle;
+}
+
+.main {
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-top: 0px;
+	padding-top: 61px;
+	width: 100%;
+}
+
+#scroll{
+	LEFT: 0px;
+	VISIBILITY: visible;
+	WIDTH: 100%;
+	POSITION: absolute;
+	TOP: 0px;
+	HEIGHT: 58;
+	font-weight: bold;
+}
+.sidebar {
+	height:58px;
+	font-size: 15px;
+	line-height: 40px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #007383;
+	background-image: url(../mobileSite_images/heard_02.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	float: left;
+	width: 100%;
+}
+.txt_wt{
+	color: #ffffff;
+	font-size: 12px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: normal;
+}
+.txt_wt_2{
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 30px;
+	font-style: normal;
+}
+.txt_wt_2 a{
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 30px;
+	font-style: normal;
+	text-decoration: underline;
+}
+.txt_wt_2 a:hover {
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 30px;
+	font-style: normal;
+}
+.txt_wt_3{
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 30px;
+	padding-top: 10px;
+}
+.txt_wt_b{
+	color: #ffffff;
+	font-size: 22px;
+	line-height: 40px;
+	font-weight: bold;
+	background-color: #00b3cb;
+	background-image: url(../mobileSite_images/icon_bg2.jpg);
+	background-repeat: repeat-x;
+	background-position: center bottom;
+	display: block;
+}
+.txt_wt_b a{
+	color: #ffffff;
+	font-size: 22px;
+	line-height: 40px;
+	font-weight: bold;
+	display: block;
+	text-decoration: underline;
+		padding-top: 10px;
+	padding-bottom: 10px;
+}
+.txt_wt_b a:hover {
+	color: #FFCC00;
+	line-height: 40px;
+	text-decoration: none;
+		padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.txt_bk_b2{
+	color: #000000;
+	font-size: 22px;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #ffff91;
+	background-image: url(../mobileSite_images/icon_bg1.jpg);
+	background-repeat: repeat-x;
+	background-position: center bottom;
+	display: block;
+			padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+.txt_bk_b{
+	color: #000000;
+	font-size: 22px;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #ffff91;
+	background-image: url(../mobileSite_images/icon_bg1.jpg);
+	background-repeat: repeat-x;
+	background-position: center bottom;
+	display: block;
+
+}
+.txt_bk_b a{
+	color: #000000;
+	font-size: 22px;
+	font-weight: bold;
+	text-decoration: underline;
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.txt_bk_b a:hover {
+	color: #5d3a1d;
+	text-decoration: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.txt_tit_b{
+	color: #fdc060;
+	font-size: 22px;
+	line-height: 40px;
+	font-weight: bold;
+
+}
+.txt_2 {
+	color: #fdc060;
+	font-size: 18px;
+	font-weight: bold;
+}
+.line_1{
+	background-image: url(../images/line_2.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+
+}
+.td_RED {
+	color: #FFFF99;
+	font-weight: bold;
+		font-size: 18px;
+}
+.txt_tit_2{
+	color: #083336;
+	font-size: 18px;
+	line-height: 40px;
+
+}
+.TXT_H2{
+    font-size: 18px;
+	color: #083336;
+	line-height: normal;
+}
+.TXT_H2 a{
+
+	color: #083336;
+	line-height: normal;
+	text-decoration: underline;
+}
+.TXT_H2 a:hover{
+
+	color: #083336;
+	line-height: normal;
+	text-decoration: none;
+}
+.TXT_H3{
+	font-weight: bold;
+	color: #083336;
+	font-size: 22px;
+}
+.all_box{
+	float: left;
+	width: 100%;
+}

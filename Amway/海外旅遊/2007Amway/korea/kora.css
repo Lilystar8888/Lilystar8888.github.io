@@ -1,0 +1,20 @@
+.text {  font-size: 12px; line-height: 24px; color: #333333; text-align: justify}
+.titlietext {  font-size: 13px; line-height: 20px; color: #000000}
+.textBLUE { font-size: 12px; line-height: 20px; color: #336699}
+.BORDER {  border-color: black #CCCCCC #333333 black; border-style: dotted; border-top-width: 0px; border-right-width: 1px; border-bottom-width: 0px; border-left-width: 0px}
+.textOrgan { font-size: 14px; line-height: 20px; color: #CC6600}
+a:active {  font-size: 12px; line-height: 18px; color: #996600}
+a:hover {  font-size: 12px; line-height: 18px; color: #000099}
+a:link {  font-size: 12px; line-height: 18px; color: #333333}
+a:visited {  font-size: 12px; line-height: 18px; color: #666666}
+.buttonText {  font-size: 12px; line-height: 25px; color: #333333; background-image: url(image/button.gif); background-position: center center; background-attachment: fixed; background-repeat: no-repeat; margin-top: 2px; margin-right: 2px; margin-bottom: 2px; margin-left: 2px; white-space: normal; clip:   rect(   ); height: 24px; width: 177px}
+.textB2 { font-size: 12px; line-height: 20px; color: #CC3300}
+.bgRtext { font-size: 12px; line-height: 20px; color: #FFFFFF; text-align: justify ; background-color: #FF6600; height: 20px; width: 100px; clip:   rect(   )}
+.bgRtext12 { font-size: 12px; line-height: 20px; color: #FFFFFF; text-align: justify ; background-color: #FF0000}
+.bgOtext12 { font-size: 12px; line-height: 20px; color: #FFFFFF; text-align: justify ; background-color: #FF6600}
+.bgYtext12 { font-size: 12px; line-height: 20px; color: #FFFFFF; text-align: justify ; background-color: #FFCC00}
+.bgGtext12 { font-size: 12px; line-height: 20px; color: #FFFFFF; text-align: justify ; background-color: #669933}
+.bgGGtext12 { font-size: 12px; line-height: 20px; color: #FFFFFF; text-align: justify ; background-color: #66CC00}
+.bgBluetext12 { font-size: 12px; line-height: 20px; color: #FFFFFF; text-align: justify ; background-color: #3366CC}
+.textSucces { font-size: 12px; line-height: 24px; color: #333333; text-align: left}
+.textupdBORDER { font-size: 12px; line-height: 24px; color: #333333; border-color: #999999 black; clip:      rect(   ); background-position: center center; height: 30px; width: 400px; border-style: dotted; border-top-width: 1px; border-right-width: 0px; border-bottom-width: 1px; border-left-width: 0px}

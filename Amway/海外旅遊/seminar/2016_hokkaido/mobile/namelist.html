@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html manifest="demo.appcache">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2016傑出直銷商領導人海外旅遊研討會-遨遊北海道</title>
+<link href="./stylesheets/font.css" rel="stylesheet" type="text/css">
+<link href="./stylesheets/main.css" rel="stylesheet" type="text/css">
+<style>
+.table_namelist td, .table_namelist th {
+	width: 50%;
+}
+.table_namelist td:nth-of-type(1), .table_namelist th:nth-of-type(1) {
+	width: 50%;
+}
+th, td {
+	padding: 2% 0;
+}
+</style>
+<script type='text/javascript'>
+    setTimeout('countdown()', 1000);
+
+    function countdown() {
+        var s = document.getElementById('timer');
+        s.innerHTML = s.innerHTML - 1;
+        if (s.innerHTML == 0)
+            window.location = 'https://www.amway.com.tw/seminar/2016_hokkaido/mobile/';
+        else
+            setTimeout('countdown()', 1000);
+    }
+</script>
+</head>
+<body>
+<!--hamburger nav-->
+<nav id="ham-nav">
+  <ul>
+    <li><a href="intro.html">北海道介紹</a></li>
+    <li><a href="schedule.html">行程表</a></li>
+    <li><a href="viewpoint.html">旅遊景點</a></li>
+    <li><a href="hotel.html">酒店介紹</a></li>
+    <li><a href="remind.html">旅遊小叮嚀</a></li>
+    
+    <li><a href="online.html">現場報導</a></li>
+    <li><a href="namelist.html">符合名單</a></li>
+    <li><a href="rule.html">實施要則</a></li>
+    <!--li><a target="_blank" href="北海道海外旅遊研討會旅遊攻略專刊.pdf">手冊下載</a></li-->
+    <li><a href="index.html">回首頁</a></li>
+  </ul>
+</nav>
+<div id="wrap">
+  <header>
+    <div id="header" class="posi-relative"> <img usemap="#headerImg" src="./images/common/header.png" class="img-default ver-middle tab-transparent"> <img src="./images/common/hamburger2.png" id="hamburger">
+      <map name="headerImg">
+        <area shape="rect" coords="8,6,93,62" href="index.html" alt="back">
+      </map>
+    </div>
+  </header>
+  <div id="main">
+    <div id="title" class="posi-relative"> <img src="./images/common/title.png" class="img-default ver-middle">
+      <div class="title-name">符合名單</div>
+    </div>
+    <div id="content" class="posi-relative">
+      <p>&nbsp;</p><p align="center">因活動結束名單移除。 <br><span id='timer'>3</span> 秒後，為您跳轉本站首頁。</p>
+    </div><!--content-->
+  </div>
+  <footer> <img src="./images/common/footer.png" class="footer"> <img src="./images/common/snowman.png" class="koala">
+    <div class="clearFix"></div>
+  </footer>
+  <div class="mask"></div>
+  <div class="info"></div>
+  <div id="backTop" class="hidden"></div>
+</div>
+<script src="./javascripts/jquery-1.11.2.js" type="text/javascript"></script> 
+<script type="text/javascript" src="./javascripts/jquery-ui.min.js"></script> 
+<script type="text/javascript" src="./javascripts/jquery.rwdImageMaps.min.js"></script> 
+<script src="./javascripts/hamburger.js" type="text/javascript"></script> 
+<script src="./javascripts/main.js" type="text/javascript"></script>
+</body>
+</html>

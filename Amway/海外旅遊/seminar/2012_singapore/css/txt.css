@@ -1,0 +1,76 @@
+@charset "utf-8";
+.more {
+	font-size: 11px;
+	line-height: normal;
+	color: #cc9900;
+}
+.more a{
+	color: #cc9900;
+		line-height: normal;
+	
+	text-decoration: none;
+}
+.more a:hover {
+	color: #cc9900;
+		line-height: normal;
+	text-decoration: underline;	
+}.WT {
+	color: #FFFFFF;
+	font-size: 11px;
+	line-height: normal;
+}
+.txt_1 {
+	color: #dca95a;
+}
+.txt_2 {
+	color: #fdc060;
+	font-size: 13px;
+	font-weight: bold;
+}
+.td_txt {
+	line-height: 150%;
+}
+.TXT_H2{
+
+	color: #083336;
+	line-height: normal;
+}
+.TXT_H2 a{
+
+	color: #083336;
+	line-height: normal;
+	text-decoration: underline;
+}
+.TXT_H2 a:hover{
+
+	color: #083336;
+	line-height: normal;
+	text-decoration: none;
+}
+.TXT_H3{
+	font-weight: bold;
+	color: #083336;
+	font-size: 15px;
+}
+.td_RED {
+	color: #FFFF99;
+	font-weight: bold;
+}
+.WT2 {
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+}
+.WT2 a{
+	color: #FFFFFF;
+	font-size: 12px;
+	line-height: normal;
+	text-decoration: underline;
+}
+.WT2 a:hover {
+	color: #FFFFFF;
+	font-size: 12px;
+	line-height: normal;
+	text-decoration: none;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>2014傑出直銷商領導人海外旅遊研討會</title>
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/webber_style.css" type="text/css" />
+    <script type='text/javascript'>
+    setTimeout('countdown()', 1000);
+
+    function countdown() {
+        var s = document.getElementById('timer');
+        s.innerHTML = s.innerHTML - 1;
+        if (s.innerHTML == 0)
+            window.location = 'https://www.amway.com.tw/seminar/2014_EA_AsiaCruise/';
+        else
+            setTimeout('countdown()', 1000);
+    }
+  </script>
+</head>
+
+<body>
+    <div class="amway">
+        <div class="Top">
+            <div class="logo"><a href="index.html"><img src="images/logo.jpg" width="274" height="57" /></a></div>
+            <div class="new1"></div>
+            <a href="movie.html">
+                <div class="new2"></div>
+            </a>
+            <ul class="Menu">
+                <!--<a class="bt06" href="movie.html"><li class="bt06"><div class="pt20"><span style="font-size:12px;">►</span> 精彩影片</div></li></a>-->
+                <a class="bt05" href="media.html">
+                    <li class="bt05">
+                        <div class="pt20">現場報導</div>
+                    </li>
+                </a>
+                <a class="bt04" href="partners.html">
+                    <li class="bt04">
+                        <div class="pt20">參加夥伴</div>
+                    </li>
+                </a>
+                <a class="bt03" href="notes.html">
+                    <li class="bt03">
+                        <div class="pt20">旅遊叮嚀</div>
+                    </li>
+                </a>
+                <a class="bt02" href="schedule.html">
+                    <li class="bt02">
+                        <div class="pt20">行程說明</div>
+                    </li>
+                </a>
+                <a class="bt01" href="intro.html">
+                    <li class="bt01">
+                        <div class="pt20">遊輪介紹</div>
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <div class="Main">
+            <div class="bannerSmall"></div>
+            <div class="Bottom">
+                <div class="cntWrap">
+                    <div class="ml33">
+                        <div class="bread">首頁》參加夥伴》海外旅遊符合名單</div>
+                    </div>
+                    <div id="content">
+                        <div class="subMenu5">
+                            <ul>
+                                <li><a href="partners.html">首次出席</a></li>
+                                <li><a href="partners2.html">符合名單</a></li>
+                            </ul>
+                        </div>
+                        <div class="rCnt">
+                            <div>
+                                <img src="images/partner/p-ttl2.jpg" />
+                            </div>
+                            <div class="box article2" style="min-height:780px;">
+                                <p>&nbsp;</p><p align="center">因活動結束名單移除。 <span id='timer'>3</span> 秒後，為您跳轉本站首頁。</p>
+                            </div>
+                            <!--back to Top-->
+                            <div style="text-align:center;">
+                                <p id="back-top">
+                                    <a href="partners2.html#top" style="text-decoration:none;"><span> - 回上方 - </span></a>
+                                </p>
+                            </div>
+                            <!--/back to Top-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Footer">安麗日用品股份有限公司 版權所有 © 2014 Amway Taiwan Company Limited. All Rights Reserved.</div>
+    </div>
+</body>
+<!-- back to Top -->
+<script>
+$(document).ready(function() {
+
+    // hide #back-top first
+    $("#back-top").hide();
+
+    // fade in #back-top
+    $(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 100) {
+                $('#back-top').fadeIn();
+            } else {
+                $('#back-top').fadeOut();
+            }
+        });
+
+        // scroll body to 0px on click
+        $('#back-top a').click(function() {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+    });
+
+});
+</script>
+<!--GA tracking code-->
+<script>
+(function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+ga('create', 'UA-51165417-1', 'amway.com.tw');
+ga('send', 'pageview');
+</script>
+<!--/GA tracking code-->
+
+</html>

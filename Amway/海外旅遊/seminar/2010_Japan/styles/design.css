@@ -1,0 +1,56 @@
+﻿@charset "UTF-8";
+
+/* ============================
+	Base Structure
+	Last Update 2007.6.22
+ ============================ */
+
+.trip_01{
+	background-image: url(../images/pic01.jpg);
+}
+
+.word01{
+	color:#333333;
+	font-size:14px;
+	text-align: justify;	
+}
+
+.word01 a{
+	color:#333333;
+	font-size:14px;
+	
+}
+
+
+.word01 a:hover{
+	color:#333333;
+	font-size:14px;
+	text-decoration:underline;
+	
+}
+
+.title02{
+	font-size:13px;
+	color:#333333;
+	line-height:20px;
+		padding-top:0px;
+	padding-bottom:50px;
+	width:625px;
+}
+
+.form{
+	border: 1px dashed #F9ACC5;
+	padding: 6px;
+	color:#333333;
+	font-size:14PX;
+	
+}
+.form2{
+	padding-top:6px;
+	padding-bottom:6px;
+	color:#333333;
+	font-size:14PX;
+	line-height:30px;
+	
+}
+
