@@ -1,2 +1,0 @@
-$(document).ready(function(){$(".download-banner .icon-close").click(function(){$(".download-banner").addClass("hide")});$(".list-item").length?$(".empty-panel").addClass("hide"):$(".empty-panel").removeClass("hide");$(".date").mobiscroll().date({defaultValue:new Date,min:new Date,theme:"ios",display:"bottom",lang:"zh",layout:"fixed",onSet:function(e,d){var a=d.getVal(),b=new Date(a);a=""+(b.getMonth()+1);var c=""+b.getDate();b=b.getFullYear();2>a.length&&(a="0"+a);2>c.length&&(c="0"+c);a=[b,a,c].join("-");
-window.location.href=""+a}})});

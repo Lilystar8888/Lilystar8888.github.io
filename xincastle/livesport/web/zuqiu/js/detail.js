@@ -1,2 +1,0 @@
-$(document).ready(function(){$(".nano").nanoScroller();$(".nano").nanoScroller({alwaysVisible:!0,scroll:"top"});"100"===$(".shine").text()&&$(".shengryu").addClass("full");var d=$(window).height();$(document).height()>d&&$(window).scroll(function(){var a=$(".navbar, .infobanner, .page-info, .info-banner, .zhishu-data-nav, #marqueeit, #ssCarousel"),b=$("#breadnav"),c=$(".live-area");0<$(window).scrollTop()?(a.addClass("hide"),b.addClass("sticky"),c.css("margin-top","120px")):(a.removeClass("hide"),
-b.removeClass("sticky"),c.css("margin-top","0px"))})});
