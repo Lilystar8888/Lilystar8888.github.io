@@ -1,1 +1,0 @@
-﻿<%@ Application Language="C#" Inherits="wwwins.Lib.Common.GlobalBase" %>
